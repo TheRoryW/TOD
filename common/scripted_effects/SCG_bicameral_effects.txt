@@ -1,0 +1,35 @@
+# 根据人民大会授权与政党会协调度，更新两院政治的即时状态。
+SCG_liangyuan_zhengzhi_gengxin = {
+	remove_ideas = SCG_liangyuan_zhengzhi_zhengchang
+	remove_ideas = SCG_liangyuan_zhengzhi_weiji
+	if = {
+		limit = {
+			check_variable = { SCG.renmin_shouquan > 69 }
+			check_variable = { SCG.dangji_xietiao > 69 }
+		}
+		set_variable = { SCG_liangyuan_zhengzhi_wending = 0.08 }
+		set_variable = { SCG_liangyuan_zhengzhi_zhengzhi = 0.08 }
+		set_variable = { SCG_liangyuan_zhengzhi_chanchu = 0.03 }
+		set_variable = { SCG_liangyuan_zhengzhi_xiaofei = -0.02 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { SCG.renmin_shouquan < 30 }
+				check_variable = { SCG.dangji_xietiao < 30 }
+			}
+		}
+		add_ideas = SCG_liangyuan_zhengzhi_weiji
+		set_variable = { SCG_liangyuan_zhengzhi_wending = -0.08 }
+		set_variable = { SCG_liangyuan_zhengzhi_zhengzhi = -0.08 }
+		set_variable = { SCG_liangyuan_zhengzhi_chanchu = -0.03 }
+		set_variable = { SCG_liangyuan_zhengzhi_xiaofei = 0.03 }
+	}
+	else = {
+		add_ideas = SCG_liangyuan_zhengzhi_zhengchang
+		set_variable = { SCG_liangyuan_zhengzhi_wending = 0.00 }
+		set_variable = { SCG_liangyuan_zhengzhi_zhengzhi = 0.03 }
+		set_variable = { SCG_liangyuan_zhengzhi_chanchu = 0.00 }
+		set_variable = { SCG_liangyuan_zhengzhi_xiaofei = 0.00 }
+	}
+}

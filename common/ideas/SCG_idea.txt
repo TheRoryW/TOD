@@ -327,7 +327,55 @@ ideas = {
 			}
 		}
 	}
-	TOD_foreign_minister = { 
+		SCG_liangyuan_xietiao = {
+			name = SCG_liangyuan_xietiao
+			picture = SCG_hongjun
+			allowed = { tag = SCG }
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.10
+				research_speed_factor = 0.03
+			}
+		}
+		SCG_liangyuan_zhengzhi_zhengchang = {
+			name = SCG_liangyuan_zhengzhi_zhengchang
+			picture = SCG_hongjun
+			allowed = { tag = SCG }
+			modifier = {
+				political_power_gain = 0.03
+			}
+		}
+		SCG_liangyuan_zhengzhi_weiji = {
+			name = SCG_liangyuan_zhengzhi_weiji
+			picture = SCG_hongjun
+			allowed = { tag = SCG }
+			modifier = {
+				stability_factor = -0.08
+				political_power_gain = -0.08
+			}
+		}
+		SCG_chongjian_sichuan = {
+			name = SCG_chongjian_sichuan
+			picture = SCG_xinxingqiye
+			allowed = { tag = SCG }
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.08
+				stability_factor = 0.05
+			}
+		}
+		SCG_zhonghua_shehuizhuyi_gongheguo = {
+			name = SCG_zhonghua_shehuizhuyi_gongheguo
+			picture = SCG_hongjun
+			allowed = { tag = SCG }
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				construction_speed_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+	TOD_foreign_minister = {
 		#陈毅
 		SCG_chen_yi = {
 			allowed = { tag = SCG }

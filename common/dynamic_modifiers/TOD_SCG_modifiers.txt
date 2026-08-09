@@ -41,3 +41,12 @@ SCG_minbing = {
 	production_factory_max_efficiency_factor = SCG_minbing_xiaolv
 	industrial_capacity_factory = SCG_minbing_chanchu
 }
+
+# 社会主义多党两院制
+SCG_liangyuan_zhengzhi = {
+	icon = SCG_idea_renminjundui
+	stability_factor = SCG_liangyuan_zhengzhi_wending
+	political_power_gain = SCG_liangyuan_zhengzhi_zhengzhi
+	industrial_capacity_factory = SCG_liangyuan_zhengzhi_chanchu
+	consumer_goods_factor = SCG_liangyuan_zhengzhi_xiaofei
+}

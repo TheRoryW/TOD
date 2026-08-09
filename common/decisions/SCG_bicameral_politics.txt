@@ -1,0 +1,205 @@
+SCG_liangyuan_zhengzhi_categories = {
+	SCG_zhaokai_renmin_dahui = {
+		icon = GFX_decision_generic_political_address
+		cost = 30
+		days_remove = 30
+		days_re_enable = 120
+		available = { has_political_power > 29 }
+		remove_effect = {
+			add_to_variable = { SCG.renmin_shouquan = 8 }
+			add_to_variable = { SCG.dangji_xietiao = -2 }
+			add_stability = 0.01
+			SCG_liangyuan_zhengzhi_gengxin = yes
+		}
+	}
+	SCG_kuadangpai_xietiao = {
+		icon = GFX_decision_generic_political_address
+		cost = 30
+		days_remove = 30
+		days_re_enable = 120
+		available = { has_political_power > 29 }
+		remove_effect = {
+			add_to_variable = { SCG.renmin_shouquan = -2 }
+			add_to_variable = { SCG.dangji_xietiao = 8 }
+			add_political_power = 10
+			SCG_liangyuan_zhengzhi_gengxin = yes
+		}
+	}
+	SCG_yunxu_shaoshudang_xiuzheng = {
+		icon = GFX_decision_generic_political_address
+		cost = 35
+		days_remove = 45
+		days_re_enable = 150
+		available = {
+			has_political_power > 34
+			check_variable = { SCG.dangji_xietiao < 90 }
+		}
+		remove_effect = {
+			add_to_variable = { SCG.dangji_xietiao = 7 }
+			add_to_variable = { SCG.renmin_shouquan = 2 }
+			add_stability = 0.01
+			SCG_liangyuan_zhengzhi_gengxin = yes
+		}
+	}
+	SCG_zhengfu_xinren_biaojue = {
+		icon = GFX_decision_generic_political_address
+		cost = 50
+		days_remove = 30
+		days_re_enable = 180
+		available = {
+			has_political_power > 49
+			check_variable = { SCG.renmin_shouquan > 49 }
+			check_variable = { SCG.dangji_xietiao > 49 }
+		}
+		remove_effect = {
+			add_to_variable = { SCG.renmin_shouquan = 4 }
+			add_to_variable = { SCG.dangji_xietiao = 4 }
+			add_political_power = 40
+			add_stability = 0.02
+			SCG_liangyuan_zhengzhi_gengxin = yes
+		}
+	}
+}
+
+SCG_chongjian_categories = {
+	SCG_huifu_chengdu_gongchang = {
+		icon = GFX_decision_generic_factory
+		cost = 35
+		days_remove = 45
+		fire_only_once = yes
+		available = { has_political_power > 34 }
+		remove_effect = {
+			add_to_variable = { SCG.chongjian = 15 }
+			add_to_variable = { SCG_neizhanhoudetudi_gongchangchanchu = 0.12 }
+			add_to_variable = { SCG_neizhanhoudetudi_shengchanzengzhang = 0.05 }
+		}
+	}
+	SCG_xiufu_chengyu_tielu = {
+		icon = GFX_decision_generic_construction
+		cost = 35
+		days_remove = 45
+		fire_only_once = yes
+		available = { has_political_power > 34 }
+		remove_effect = {
+			add_to_variable = { SCG.chongjian = 15 }
+			add_to_variable = { SCG_neizhanhoudetudi_jianzaosudu = 0.06 }
+			add_to_variable = { SCG_neizhanhoudetudi_sunhao = -0.03 }
+		}
+	}
+	SCG_wending_chengshi_liangshi = {
+		icon = GFX_decision_generic_factory
+		cost = 30
+		days_remove = 30
+		fire_only_once = yes
+		available = { has_political_power > 29 }
+		remove_effect = {
+			add_to_variable = { SCG.chongjian = 15 }
+			add_to_variable = { SCG_neizhanhoudetudi_xiaofeiping = -0.10 }
+			add_stability = 0.02
+		}
+	}
+	SCG_anzhi_fuyuan_shibing = {
+		icon = GFX_decision_generic_political_address
+		cost = 30
+		days_remove = 30
+		fire_only_once = yes
+		available = { has_political_power > 29 }
+		remove_effect = {
+			add_to_variable = { SCG.chongjian = 15 }
+			add_to_variable = { SCG_neizhanhoudetudi_zhaomu = 0.12 }
+			add_to_variable = { SCG_neizhanhoudetudi_gaizhuang = 0.06 }
+		}
+	}
+	SCG_huifu_jiaoyu_yiliao = {
+		icon = GFX_decision_generic_political_address
+		cost = 40
+		days_remove = 45
+		fire_only_once = yes
+		available = { has_political_power > 39 }
+		remove_effect = {
+			add_to_variable = { SCG.chongjian = 15 }
+			add_to_variable = { SCG_neizhanhoudetudi_keyan = 0.08 }
+			add_to_variable = { SCG_neizhanhoudetudi_diqugongye = 0.08 }
+			add_stability = 0.02
+		}
+	}
+}
+
+SCG_quanguo_geming_categories = {
+	SCG_zhichi_quanguo_shehuizhuyi_dangpai = {
+		icon = GFX_decision_generic_political_address
+		cost = 50
+		days_remove = 45
+		days_re_enable = 180
+		available = { has_political_power > 49 }
+		remove_effect = {
+			add_to_variable = { SCG.renmin_shouquan = 6 }
+			add_to_variable = { SCG.dangji_xietiao = 6 }
+			add_stability = 0.02
+			SCG_liangyuan_zhengzhi_gengxin = yes
+		}
+	}
+	SCG_geming_jieguan_GOS = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = GOS }
+		available = { NOT = { has_war_with = GOS } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = GOS type = annex_everything } }
+	}
+	SCG_geming_jieguan_ROC = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = ROC }
+		available = { NOT = { has_war_with = ROC } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = ROC type = annex_everything } }
+	}
+	SCG_geming_jieguan_XBJ = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = XBJ }
+		available = { NOT = { has_war_with = XBJ } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = XBJ type = annex_everything } }
+	}
+	SCG_geming_jieguan_STG = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = STG }
+		available = { NOT = { has_war_with = STG } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = STG type = annex_everything } }
+	}
+	SCG_geming_jieguan_XIN = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = XIN }
+		available = { NOT = { has_war_with = XIN } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = XIN type = annex_everything } }
+	}
+	SCG_geming_jieguan_GPS = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = GPS }
+		available = { NOT = { has_war_with = GPS } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = GPS type = annex_everything } }
+	}
+	SCG_geming_jieguan_SRC = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = SRC }
+		available = { NOT = { has_war_with = SRC } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = SRC type = annex_everything } }
+	}
+}

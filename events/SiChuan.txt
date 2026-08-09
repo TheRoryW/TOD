@@ -389,3 +389,45 @@ country_event = {
 		create_wargoal = { target = STG type = annex_everything }
 	}
 }
+
+# 清政系全国制宪完成
+country_event = {
+	id = TODSIC.1010
+	title = TODSIC.1010.t
+	desc = TODSIC.1010.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1010.a
+		add_political_power = 50
+	}
+}
+
+# 四川社会主义两院制宪法
+country_event = {
+	id = TODSIC.1011
+	title = TODSIC.1011.t
+	desc = TODSIC.1011.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1011.a
+		SCG_liangyuan_zhengzhi_gengxin = yes
+	}
+}
+
+# 社会主义全国制宪完成
+country_event = {
+	id = TODSIC.1012
+	title = TODSIC.1012.t
+	desc = TODSIC.1012.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1012.a
+		add_political_power = 50
+	}
+}

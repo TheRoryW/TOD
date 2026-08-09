@@ -1,0 +1,20 @@
+# 两条四川路线都须结束主要割据政权，才可召开全国制宪会议。
+SIC_china_unified = {
+	NOT = { country_exists = GOS }
+	NOT = { country_exists = ROC }
+	NOT = { country_exists = XBJ }
+	NOT = { country_exists = STG }
+	NOT = { country_exists = XIN }
+	NOT = { country_exists = GPS }
+	NOT = { country_exists = SRC }
+}
+
+SCG_china_unified = {
+	NOT = { country_exists = GOS }
+	NOT = { country_exists = ROC }
+	NOT = { country_exists = XBJ }
+	NOT = { country_exists = STG }
+	NOT = { country_exists = XIN }
+	NOT = { country_exists = GPS }
+	NOT = { country_exists = SRC }
+}

@@ -42,4 +42,14 @@ SIC_junshigongye = {
 	production_factory_max_efficiency_factor = SIC_junshigongye_shangxian
 }
 
+# 清政系宪政试验
+SIC_qingzhengxi_shiyan = {
+	icon = SIC_jingjishiyanqu
+	stability_factor = SIC_qingzhengxi_shiyan_wending
+	political_power_gain = SIC_qingzhengxi_shiyan_zhengzhi
+	research_speed_factor = SIC_qingzhengxi_shiyan_keyan
+	consumer_goods_factor = SIC_qingzhengxi_shiyan_xiaofei
+	army_org_factor = SIC_qingzhengxi_shiyan_jundui
+}
+
 

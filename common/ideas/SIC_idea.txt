@@ -447,7 +447,29 @@ ideas = {
 			}
 		}
 	}
-	TOD_foreign_minister = { 
+		SIC_xianzheng_chenggong = {
+			name = SIC_xianzheng_chenggong
+			picture = SIC_jingjishiyanqu
+			allowed = { original_tag = SIC }
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+				research_speed_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		SIC_daming_lixian_guo = {
+			name = SIC_daming_lixian_guo
+			picture = SIC_chongjiantianfu
+			allowed = { original_tag = SIC }
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				construction_speed_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+	TOD_foreign_minister = {
 		SIC_hu_jingyi = {
 			allowed = { tag = SIC }
 			available = {}

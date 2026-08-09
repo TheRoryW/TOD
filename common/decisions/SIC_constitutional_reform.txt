@@ -1,0 +1,132 @@
+SIC_qingzhengxi_gaige_categories = {
+	SIC_kaizhan_shehui_diaocha = {
+		icon = GFX_decision_generic_political_address
+		cost = 25
+		days_remove = 30
+		days_re_enable = 120
+		available = { has_political_power > 24 }
+		remove_effect = {
+			add_to_variable = { SIC.minzhong = -5 }
+			add_to_variable = { SIC.gongye = -2 }
+			add_to_variable = { SIC.qingzhengxi = 5 }
+			add_to_variable = { SIC.xianzheng = 3 }
+			add_stability = 0.01
+		}
+	}
+	SIC_shengfu_yusuan_shenji = {
+		icon = GFX_decision_generic_political_address
+		cost = 35
+		days_remove = 45
+		days_re_enable = 150
+		available = { has_political_power > 34 }
+		remove_effect = {
+			add_to_variable = { SIC.qingzhengxi = 7 }
+			add_to_variable = { SIC.xianzheng = 5 }
+			add_to_variable = { SIC_qingzhengxi_shiyan_zhengzhi = 0.02 }
+			add_stability = 0.01
+		}
+	}
+	SIC_baozhang_xiaomin_chanquan = {
+		icon = GFX_decision_generic_protection
+		cost = 30
+		days_remove = 30
+		days_re_enable = 120
+		available = { has_political_power > 29 }
+		remove_effect = {
+			add_to_variable = { SIC.minzhong = -6 }
+			add_to_variable = { SIC.xianzheng = 5 }
+			add_stability = 0.02
+		}
+	}
+	SIC_yu_junfang_xieshang = {
+		icon = GFX_decision_generic_political_address
+		cost = 40
+		days_remove = 45
+		days_re_enable = 180
+		available = { has_political_power > 39 }
+		remove_effect = {
+			add_to_variable = { SIC.xianzheng = 7 }
+			add_to_variable = { SIC_qingzhengxi_shiyan_jundui = 0.01 }
+			add_war_support = -0.02
+		}
+	}
+}
+
+SIC_xianzhengtongyi_categories = {
+	SIC_zhichi_quanguo_zhixianpai = {
+		icon = GFX_decision_generic_political_address
+		cost = 50
+		days_remove = 45
+		days_re_enable = 180
+		available = { has_political_power > 49 }
+		remove_effect = {
+			add_to_variable = { SIC.qingzhengxi = 8 }
+			add_to_variable = { SIC.xianzheng = 5 }
+			add_stability = 0.02
+			add_political_power = 25
+		}
+	}
+	SIC_xianzheng_taofa_GOS = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = GOS }
+		available = { NOT = { has_war_with = GOS } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = GOS type = annex_everything } }
+	}
+	SIC_xianzheng_taofa_ROC = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = ROC }
+		available = { NOT = { has_war_with = ROC } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = ROC type = annex_everything } }
+	}
+	SIC_xianzheng_taofa_XBJ = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = XBJ }
+		available = { NOT = { has_war_with = XBJ } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = XBJ type = annex_everything } }
+	}
+	SIC_xianzheng_taofa_STG = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = STG }
+		available = { NOT = { has_war_with = STG } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = STG type = annex_everything } }
+	}
+	SIC_xianzheng_taofa_XIN = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = XIN }
+		available = { NOT = { has_war_with = XIN } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = XIN type = annex_everything } }
+	}
+	SIC_xianzheng_taofa_GPS = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = GPS }
+		available = { NOT = { has_war_with = GPS } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = GPS type = annex_everything } }
+	}
+	SIC_xianzheng_taofa_SRC = {
+		icon = GFX_decision_generic_political_address
+		visible = { country_exists = SRC }
+		available = { NOT = { has_war_with = SRC } }
+		cost = 35
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = { declare_war_on = { target = SRC type = annex_everything } }
+	}
+}
