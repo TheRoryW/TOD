@@ -383,6 +383,22 @@ spriteTypes = {
 		name = "GFX_HUN_daidongqitadiqu"
 		texturefile = "gfx/HUN/focus/GFX_HUN_daidongqitadiqu.png"
 	}
+	spriteType = {
+		name = "GFX_HUN_choudiaorenshou"
+		texturefile = "gfx/HUN/focus/GFX_HUN_juxingdaxuan.dds"
+	}
+	spriteType = {
+		name = "GFX_HUN_chongqihuoerdi"
+		texturefile = "gfx/HUN/focus/GFX_HUN_juxingdaxuan.dds"
+	}
+	spriteType = {
+		name = "GFX_HUN_jiaqiangrenyuanpeixun"
+		texturefile = "gfx/HUN/focus/GFX_HUN_juxingdaxuan.dds"
+	}
+	spriteType = {
+		name = "GFX_HUN_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/MNG/MNG_basic_medium_art.png"
+	}
 
 
 

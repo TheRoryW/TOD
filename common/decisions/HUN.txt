@@ -37,7 +37,7 @@ HUN_gyorjihuajueyi = {
 				has_state_flag = HUN_duonaoheliuyu
 				### num_of_factories < 10 # country trigger is invalid in state scope
 			}
-			has_completed_focus = HUN_touziduonaohejingjidai
+			has_completed_focus = HUN_fazhanduonaohejinjidai
 		}
         cost = 50
 		modifier = {civilian_factory_use = 10}

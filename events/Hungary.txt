@@ -1,4 +1,102 @@
 add_namespace = TODhungary
+add_namespace = HUN
+
+# Danube recovery programme
+country_event = {
+	id = HUN.101
+	title = HUN.101.t
+	desc = HUN.101.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	is_triggered_only = yes
+
+	option = {
+		name = HUN.101.a
+		add_stability = 0.03
+		add_political_power = 50
+	}
+	option = {
+		name = HUN.101.b
+		add_political_power = 75
+		army_experience = 10
+	}
+}
+
+# Danubian civic compact
+country_event = {
+	id = HUN.102
+	title = HUN.102.t
+	desc = HUN.102.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	is_triggered_only = yes
+
+	option = {
+		name = HUN.102.a
+		add_political_power = 35
+	}
+	option = {
+		name = HUN.102.b
+		add_manpower = 5000
+	}
+}
+
+# Frontier detachments
+country_event = {
+	id = HUN.103
+	title = HUN.103.t
+	desc = HUN.103.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	is_triggered_only = yes
+
+	option = {
+		name = HUN.103.a
+		add_political_power = 25
+	}
+	option = {
+		name = HUN.103.b
+		add_manpower = 2500
+	}
+}
+
+# Danube flotilla volunteers
+country_event = {
+	id = HUN.104
+	title = HUN.104.t
+	desc = HUN.104.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	is_triggered_only = yes
+
+	option = {
+		name = HUN.104.a
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = naval_equipment
+		}
+	}
+	option = {
+		name = HUN.104.b
+		add_political_power = 25
+	}
+}
+
+# Foreign-policy review
+country_event = {
+	id = HUN.105
+	title = HUN.105.t
+	desc = HUN.105.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	is_triggered_only = yes
+
+	option = {
+		name = HUN.105.a
+		add_stability = 0.03
+	}
+	option = {
+		name = HUN.105.b
+		add_war_support = 0.03
+		army_experience = 10
+	}
+}
 #蒂萨宣布退休
 country_event = {
 	id = TODhungary.1
@@ -16,6 +114,80 @@ country_event = {
 		ai_chance = { factor = 100 }
 		add_stability = -0.02
 	}
+}
+
+# 东墙在下诺夫哥罗德、列宁格勒与伏尔加下游突破后，执行既定俄罗斯和谈。
+country_event = {
+	id = TODhungary.36
+	title = TODhungary.36.t
+	desc = TODhungary.36.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		tag = HUN
+		has_war_with = RUS
+		195 = { controller = { OR = { tag = HUN is_in_faction_with = HUN } } }
+		217 = { controller = { OR = { tag = HUN is_in_faction_with = HUN } } }
+		252 = { controller = { OR = { tag = HUN is_in_faction_with = HUN } } }
+	}
+	option = {
+		name = TODhungary.36.a
+		213 = { set_state_owner_to = FIN }
+		215 = { set_state_owner_to = FIN }
+		216 = { set_state_owner_to = FIN }
+		146 = { set_state_owner_to = FIN }
+		195 = { set_state_owner_to = FIN }
+		208 = { set_state_owner_to = BLT }
+		209 = { set_state_owner_to = BLT }
+		210 = { set_state_owner_to = BLT }
+		191 = { set_state_owner_to = BLT }
+		242 = { set_state_owner_to = BLR }
+		243 = { set_state_owner_to = BLR }
+		224 = { set_state_owner_to = BLR }
+		225 = { set_state_owner_to = UKR }
+		220 = { set_state_owner_to = UKR }
+		240 = { set_state_owner_to = UKR }
+		221 = { set_state_owner_to = UKR }
+		137 = { set_state_owner_to = UKR }
+		95 = { set_state_owner_to = POL }
+		RUS = {
+			if = { limit = { NOT = { country_exists = CAU } } release = CAU }
+			if = { limit = { NOT = { country_exists = ARM } } release = ARM }
+			if = { limit = { NOT = { country_exists = GEO } } release = GEO }
+			if = { limit = { NOT = { country_exists = AZR } } release = AZR }
+			release = KYR
+			release = SIB
+			release = FET
+		}
+		SIB = { change_tag_from = RUS }
+		RUS = { set_autonomy = { target = FET autonomy_state = autonomy_puppet } }
+		BLR = { set_autonomy = { target = BLT autonomy_state = autonomy_puppet } }
+		every_country = { limit = { is_in_faction_with = HUN has_war_with = RUS } white_peace = RUS }
+		if = { limit = { has_war_with = RUS } white_peace = RUS }
+		country_event = { id = TODhungary.37 days = 30 }
+		set_global_flag = TOD_EAST_WALL_RUSSIAN_SETTLEMENT_DONE
+	}
+}
+
+country_event = {
+	id = TODhungary.37
+	title = TODhungary.37.t
+	desc = TODhungary.37.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	is_triggered_only = yes
+	trigger = { tag = HUN country_exists = SER }
+	option = { name = TODhungary.37.a ai_chance = { factor = 100 } SER = { country_event = { id = TODhungary.38 days = 1 } } }
+}
+
+country_event = {
+	id = TODhungary.38
+	title = TODhungary.38.t
+	desc = TODhungary.38.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	is_triggered_only = yes
+	trigger = { tag = SER country_exists = HUN }
+	option = { name = TODhungary.38.a HUN = { set_autonomy = { target = SER autonomy_state = autonomy_puppet } } }
 }
 #右翼做出行动
 country_event = {
@@ -330,11 +502,13 @@ country_event = {
 	option = { 
 		name = TODhungary.13.a
 		ai_chance = { factor = 50 }
+		add_ideas = HUN_Jozsef_Szell
 		country_event = { id = TODhungary.14}
 	}
 	option = { 
 		name = TODhungary.13.b
 		ai_chance = { factor = 50 }
+		add_ideas = HUN_Kalman_Daranyi
 		country_event = { id = TODhungary.14}
 	}
 }
@@ -353,11 +527,13 @@ country_event = {
 	option = { 
 		name = TODhungary.14.a
 		ai_chance = { factor = 50 }
+		add_ideas = HUN_Gyula_Karolyi
 		country_event = { id = TODhungary.15}
 	}
 	option = { 
 		name = TODhungary.14.b
 		ai_chance = { factor = 50 }
+		add_ideas = HUN_Lajos_Walko
 		country_event = { id = TODhungary.15}
 	}
 }
@@ -376,10 +552,12 @@ country_event = {
 	option = { 
 		name = TODhungary.15.a
 		ai_chance = { factor = 50 }
+		add_ideas = HUN_Tihamer_Fabinyi
 	}
 	option = { 
 		name = TODhungary.15.b
 		ai_chance = { factor = 50 }
+		add_ideas = HUN_Lajos_Remenyi_Schneller
 	}
 }
 #科技投资
@@ -686,13 +864,6 @@ country_event = {
 			uses = 1
 			category = air_equipment
 		}
-		HUN = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = air_equipment
-			}
-		}
 	}
 	option = { 
 		name = TODhungary.34.b
@@ -728,6 +899,16 @@ news_event = {
 			}
 			BLR = { add_to_faction = HUN }
 		}
+		if = {
+			limit = {
+				country_exists = UKR
+				UKR = {
+					NOT = { is_in_faction_with = HUN }
+					NOT = { has_war_with = HUN }
+				}
+			}
+			UKR = { add_to_faction = HUN }
+		}
 	}
 	option = { 
 		trigger = {
@@ -753,5 +934,75 @@ news_event = {
 			}
 		}
 		name = TODhungary.35.c
+	}
+}
+
+# 东墙四国的政府立场共同决定是否接受德国的共同抗俄提议。
+country_event = {
+	id = TODhungary.100
+	title = TODhungary.100.t
+	desc = TODhungary.100.d
+	picture = GFX_report_event_german_parade_paris
+	is_triggered_only = yes
+	option = {
+		name = TODhungary.100.a
+		ai_chance = {
+			base = 15
+			modifier = {
+				factor = 4
+				OR = {
+					has_government = social_democrat
+					has_government = agroindustrial_socialism
+					has_government = moderate_socialism
+					has_government = council_socialism
+					has_government = vanguard_socialism
+				}
+			}
+			modifier = {
+				factor = 2
+				POL = {
+					is_in_faction_with = HUN
+					OR = {
+						has_government = social_democrat
+						has_government = agroindustrial_socialism
+						has_government = moderate_socialism
+						has_government = council_socialism
+						has_government = vanguard_socialism
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				UKR = {
+					is_in_faction_with = HUN
+					OR = {
+						has_government = social_democrat
+						has_government = agroindustrial_socialism
+						has_government = moderate_socialism
+						has_government = council_socialism
+						has_government = vanguard_socialism
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				BLR = {
+					is_in_faction_with = HUN
+					OR = {
+						has_government = social_democrat
+						has_government = agroindustrial_socialism
+						has_government = moderate_socialism
+						has_government = council_socialism
+						has_government = vanguard_socialism
+					}
+				}
+			}
+		}
+		GER = { country_event = { id = TODgermany.1006 days = 1 } }
+	}
+	option = {
+		name = TODhungary.100.b
+		ai_chance = { base = 85 }
+		GER = { country_event = { id = TODgermany.1007 days = 1 } }
 	}
 }
