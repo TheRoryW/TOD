@@ -790,12 +790,13 @@ country_event = {
 	
 	option = { 
 		name = TODhungary.28.a
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 100 }
 		add_ideas = HUN_buchangluomaniya
 	}
 	option = { 
 		name = TODhungary.28.b
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 0 }
+		set_country_flag = HUN_release_romania_as_puppet
 	}
 }
 #解决摩尔多瓦问题
@@ -812,12 +813,13 @@ country_event = {
 	
 	option = { 
 		name = TODhungary.29.a
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 100 }
 		add_ideas = HUN_buchangmoerduowa
 	}
 	option = { 
 		name = TODhungary.29.b
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 0 }
+		set_country_flag = HUN_release_moldova_as_puppet
 	}
 }
 #裁军
@@ -1004,5 +1006,64 @@ country_event = {
 		name = TODhungary.100.b
 		ai_chance = { base = 85 }
 		GER = { country_event = { id = TODgermany.1007 days = 1 } }
+	}
+}
+
+# 奥匈军事代表团
+country_event = {
+	id = HUN.106
+	title = HUN.106.t
+	desc = HUN.106.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	is_triggered_only = yes
+	option = {
+		name = HUN.106.a
+		ai_chance = { factor = 50 }
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+	}
+	option = {
+		name = HUN.106.b
+		ai_chance = { factor = 50 }
+		army_experience = 20
+	}
+}
+
+# 意大利合作提案
+country_event = {
+	id = HUN.107
+	title = HUN.107.t
+	desc = HUN.107.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	is_triggered_only = yes
+	option = {
+		name = HUN.107.a
+		ai_chance = { factor = 50 }
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+	}
+	option = {
+		name = HUN.107.b
+		ai_chance = { factor = 50 }
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_equipment }
+	}
+}
+
+# 巴尔干会议
+country_event = {
+	id = HUN.108
+	title = HUN.108.t
+	desc = HUN.108.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	is_triggered_only = yes
+	option = {
+		name = HUN.108.a
+		ai_chance = { factor = 50 }
+		add_political_power = 25
+		add_stability = 0.03
+	}
+	option = {
+		name = HUN.108.b
+		ai_chance = { factor = 50 }
+		army_experience = 20
+		add_war_support = 0.03
 	}
 }

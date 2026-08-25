@@ -56,6 +56,25 @@ def focus_block(text: str, focus_id: str) -> str:
     return braced_block_after(text, f"id = {focus_id}")
 
 
+def direct_child_blocks(text: str, label: str) -> list[str]:
+    """Return balanced direct blocks beginning with ``label = {`` in ``text``."""
+    blocks: list[str] = []
+    for match in re.finditer(r"(?m)^\s*" + re.escape(label) + r"\s*=\s*\{", text):
+        open_brace = match.end() - 1
+        depth = 0
+        for index in range(open_brace, len(text)):
+            if text[index] == "{":
+                depth += 1
+            elif text[index] == "}":
+                depth -= 1
+                if depth == 0:
+                    blocks.append(text[match.start() : index + 1])
+                    break
+        else:
+            raise AssertionError(f"Unclosed {label!r} block")
+    return blocks
+
+
 def top_level_character_block(text: str, character_id: str) -> str:
     """Return a character block directly contained by the characters container."""
     container = re.search(r"(?m)^\s*characters\s*=\s*\{", text)
@@ -309,6 +328,112 @@ class HungaryContentTests(unittest.TestCase):
                     len(option_names),
                     f"{event_id} must define exactly two option names",
                 )
+
+    def test_diplomatic_focuses_have_concrete_effects(self) -> None:
+        required_focuses = (
+            "HUN_junshihezuo",
+            "HUN_duiyijiaoliu",
+            "HUN_duohuikeluodiya",
+            "HUN_ganyuyidali",
+            "HUN_xiangnankuozhang",
+            "HUN_pinggufaguo",
+            "HUN_wengusaierweiya",
+            "HUN_jierubaergan",
+            "HUN_baerganbaquan",
+            "HUN_kejihezuo",
+            "HUN_junshijiaoliu",
+        )
+
+        for focus_id in required_focuses:
+            with self.subTest(focus_id=focus_id):
+                self.assertNotRegex(
+                    focus_block(self.focus, focus_id),
+                    r"completion_reward\s*=\s*\{\s*\}",
+                    f"{focus_id} must have a visible gameplay effect",
+                )
+
+    def test_left_nationality_route_uses_player_only_puppet_settlements(self) -> None:
+        self_determination = focus_block(self.focus, "HUN_zunzhongminzuzijue")
+        self.assertNotIn(
+            "set_state_owner",
+            self_determination,
+            "Left-wing self-determination must not hand Hungarian states to an independent tag.",
+        )
+
+        expected_settlements = {
+            "ROM": ("TODhungary.28", "HUN_buchangluomaniya", "HUN_release_romania_as_puppet"),
+            "MOL": ("TODhungary.29", "HUN_buchangmoerduowa", "HUN_release_moldova_as_puppet"),
+        }
+        for tag, (event_id, integration_idea, puppet_flag) in expected_settlements.items():
+            with self.subTest(tag=tag, contract="focus settlement"):
+                self.assertIn(f"release_puppet = {tag}", self_determination)
+                self.assertRegex(
+                    self_determination,
+                    r"set_autonomy\s*=\s*\{\s*target\s*=\s*"
+                    + tag
+                    + r"\s+autonomy_state\s*=\s*autonomy_puppet\s*\}",
+                )
+
+            event = braced_block_after(self.events, f"id = {event_id}")
+            option_blocks = direct_child_blocks(event, "option")
+            integration_option = next(
+                option for option in option_blocks if f"add_ideas = {integration_idea}" in option
+            )
+            puppet_option = next(
+                option for option in option_blocks if f"set_country_flag = {puppet_flag}" in option
+            )
+            with self.subTest(tag=tag, contract="AI integrates"):
+                self.assertRegex(
+                    integration_option,
+                    r"ai_chance\s*=\s*\{\s*factor\s*=\s*100\s*\}",
+                )
+            with self.subTest(tag=tag, contract="AI never releases"):
+                self.assertRegex(
+                    puppet_option,
+                    r"ai_chance\s*=\s*\{\s*factor\s*=\s*0\s*\}",
+                )
+
+    def test_east_wall_ai_contract_is_preserved(self) -> None:
+        east_wall = focus_block(self.focus, "HUN_dongqiang")
+        ai_blocks = direct_child_blocks(east_wall, "ai_will_do")
+        self.assertEqual(1, len(ai_blocks), "East Wall must have one AI weighting block")
+        self.assertEqual(
+            "ai_will_do={base=100modifier={add=100}}",
+            re.sub(r"\s+", "", ai_blocks[0]),
+            "East Wall must retain its existing strong default AI tendency.",
+        )
+
+    def test_diplomatic_focus_events_are_called_once_and_localised(self) -> None:
+        expected_callers = {
+            "HUN.106": "HUN_junshihezuo",
+            "HUN.107": "HUN_duiyijiaoliu",
+            "HUN.108": "HUN_jierubaergan",
+        }
+        focus_ids = re.findall(r"(?m)^\s*id\s*=\s*(HUN_[A-Za-z0-9_]+)\s*$", self.focus)
+
+        for event_id, expected_caller in expected_callers.items():
+            event = braced_block_after(self.events, f"id = {event_id}")
+            callers = [
+                focus_id
+                for focus_id in focus_ids
+                if re.search(
+                    r"\bcountry_event\s*=\s*\{\s*id\s*=\s*"
+                    + re.escape(event_id)
+                    + r"\b",
+                    focus_block(self.focus, focus_id),
+                )
+            ]
+            self.assertEqual([expected_caller], callers)
+            self.assertRegex(event, r"(?m)^\s*is_triggered_only\s*=\s*yes\s*$")
+
+            for localisation_path in LOCALISATION_PATHS:
+                localisation = localisation_path.read_text(encoding="utf-8-sig")
+                for suffix in ("t", "d", "a", "b"):
+                    self.assertRegex(
+                        localisation,
+                        r"(?m)^\s*" + re.escape(f"{event_id}.{suffix}") + r":",
+                        f"{localisation_path.relative_to(ROOT)} is missing {event_id}.{suffix}",
+                    )
 
     def test_active_hungary_roster_has_no_czech_copied_content(self) -> None:
         copied_character_ids = {

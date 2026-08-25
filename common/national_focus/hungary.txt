@@ -1808,7 +1808,8 @@ focus_tree = {
 		available = {}
 
 		completion_reward = {
-			custom_effect_tooltip = HUN.6.tt
+			custom_effect_tooltip = HUN_zunzhongminzuzijue_xiaoguo
+			HUN_clear_left_minority_disputes_effect = yes
 			hidden_effect = {
 				if = {
 					limit = { has_idea = HUN_buchangsiluofake }
@@ -1819,12 +1820,18 @@ focus_tree = {
 					664 = { add_core_of = HUN }
 				}
 				if = {
-					limit = { NOT = {has_idea = HUN_buchangluomaniya }}
-					ROM = {
-						set_state_owner = 84
-						set_state_owner = 83
-						set_state_owner = 82
+					limit = {
+						has_country_flag = HUN_release_romania_as_puppet
+						NOT = { country_exists = ROM }
 					}
+					release_puppet = ROM
+				}
+				if = {
+					limit = {
+						has_country_flag = HUN_release_romania_as_puppet
+						ROM = { is_subject_of = HUN }
+					}
+					set_autonomy = { target = ROM autonomy_state = autonomy_puppet }
 				}
 				if = {
 					limit = { has_idea = HUN_buchangluomaniya }
@@ -1833,13 +1840,18 @@ focus_tree = {
 					82 = { add_core_of = HUN }
 				}
 				if = {
-					limit = { NOT = {has_idea = HUN_buchangmoerduowa }}
-					MOL = {
-						set_state_owner = 79
-						set_state_owner = 979
-						set_state_owner = 956
-						set_state_owner = 80
+					limit = {
+						has_country_flag = HUN_release_moldova_as_puppet
+						NOT = { country_exists = MOL }
 					}
+					release_puppet = MOL
+				}
+				if = {
+					limit = {
+						has_country_flag = HUN_release_moldova_as_puppet
+						MOL = { is_subject_of = HUN }
+					}
+					set_autonomy = { target = MOL autonomy_state = autonomy_puppet }
 				}
 				if = {
 					limit = { has_idea = HUN_buchangmoerduowa }
@@ -1985,8 +1997,7 @@ focus_tree = {
 		ai_will_do = {base = 10}
 		available = {}
 
-		completion_reward = {
-		}
+		completion_reward = {}
 	}
 	#坚持本国制造
 	focus = {
@@ -3110,7 +3121,16 @@ focus_tree = {
 		ai_will_do = {base = 10}
 		available = {}
 
-		completion_reward = {}
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+			if = {
+				limit = { country_exists = AUS AUS = { NOT = { has_war_with = HUN } } }
+				add_opinion_modifier = { target = AUS modifier = HUN_austrian_military_mission }
+				AUS = { add_opinion_modifier = { target = HUN modifier = HUN_austrian_military_mission } }
+			}
+			country_event = { id = HUN.106 }
+		}
 	}
 	#对意交流
 	focus = {
@@ -3129,7 +3149,15 @@ focus_tree = {
 		ai_will_do = {base = 10}
 		available = {}
 
-		completion_reward = {}
+		completion_reward = {
+			add_political_power = 25
+			if = {
+				limit = { country_exists = ITA ITA = { NOT = { has_war_with = HUN } } }
+				add_opinion_modifier = { target = ITA modifier = HUN_italian_danubian_exchange }
+				ITA = { add_opinion_modifier = { target = HUN modifier = HUN_italian_danubian_exchange } }
+			}
+			country_event = { id = HUN.107 }
+		}
 	}
 	#夺回克罗地亚
 	focus = {
@@ -3148,7 +3176,11 @@ focus_tree = {
 		ai_will_do = {base = 10}
 		available = {}
 
-		completion_reward = {}
+		completion_reward = {
+			add_state_claim = 103
+			add_state_claim = 109
+			army_experience = 10
+		}
 	}
 	#干预意大利内战
 	focus = {
@@ -3167,7 +3199,14 @@ focus_tree = {
 		ai_will_do = {base = 10}
 		available = {}
 
-		completion_reward = {}
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
+			if = {
+				limit = { country_exists = ITA ITA = { NOT = { has_war_with = HUN } } }
+				ITA = { add_opinion_modifier = { target = HUN modifier = HUN_italian_danubian_exchange } }
+			}
+		}
 	}
 	#向南扩张
 	focus = {
@@ -3189,7 +3228,12 @@ focus_tree = {
 		}
 		available = {}
 
-		completion_reward = {}
+		completion_reward = {
+			add_state_claim = 105
+			add_state_claim = 108
+			add_war_support = 0.05
+			add_political_power = 25
+		}
 	}
 	#重新评估法国
 	focus = {
@@ -3208,7 +3252,14 @@ focus_tree = {
 		ai_will_do = {base = 10}
 		available = {}
 
-		completion_reward = {}
+		completion_reward = {
+			add_political_power = 50
+			if = {
+				limit = { country_exists = FRA FRA = { NOT = { has_war_with = HUN } } }
+				add_opinion_modifier = { target = FRA modifier = HUN_french_reassessment }
+				FRA = { add_opinion_modifier = { target = HUN modifier = HUN_french_reassessment } }
+			}
+		}
 	}
 	#稳固塞尔维亚
 	focus = {
@@ -3227,7 +3278,15 @@ focus_tree = {
 		ai_will_do = {base = 10}
 		available = {}
 
-		completion_reward = {}
+		completion_reward = {
+			add_stability = 0.05
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+			if = {
+				limit = { country_exists = SER SER = { NOT = { has_war_with = HUN } } }
+				add_opinion_modifier = { target = SER modifier = HUN_balkan_conference }
+				SER = { add_opinion_modifier = { target = HUN modifier = HUN_balkan_conference } }
+			}
+		}
 	}
 	#加强与保加利亚关系
 	focus = {
@@ -3276,7 +3335,10 @@ focus_tree = {
 		ai_will_do = {base = 10}
 		available = {}
 
-		completion_reward = {}
+		completion_reward = {
+			add_political_power = 25
+			country_event = { id = HUN.108 }
+		}
 	}
 	#进军瓦拉几亚
 	focus = {
@@ -3316,7 +3378,15 @@ focus_tree = {
 		ai_will_do = {base = 10}
 		available = {}
 
-		completion_reward = {}
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.05
+			army_experience = 25
+			if = {
+				limit = { country_exists = SER SER = { NOT = { has_war_with = HUN } } }
+				SER = { add_opinion_modifier = { target = HUN modifier = HUN_balkan_conference } }
+			}
+		}
 	}
 	#向东合作
 	focus = {
@@ -3425,7 +3495,10 @@ focus_tree = {
 		}
 		available = {}
 
-		completion_reward = {}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+		}
 	}
 	#军事交流
 	focus = {
@@ -3447,7 +3520,10 @@ focus_tree = {
 		}
 		available = {}
 
-		completion_reward = {}
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+		}
 	}
 	#“东墙”
 	focus = {
