@@ -14,7 +14,10 @@ STG_difangjunfa = {
 		targets = { state = 831 }
 		days_remove = 30
 		fire_only_once = yes
-		ai_will_do = { base = 10 }
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
 		remove_effect = { 
 			country_event = { id = TOD_STG.42 }
 			set_country_flag = STG_lianxisichuan
@@ -34,7 +37,10 @@ STG_difangjunfa = {
 		targets = { state = 330 }
 		days_remove = 30
 		fire_only_once = yes
-		ai_will_do = { base = 10 }
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
 		remove_effect = { 
 			country_event = { id = TOD_STG.47 }
 			set_country_flag = STG_lianximobei
@@ -54,7 +60,10 @@ STG_difangjunfa = {
 		targets = { state = 325 }
 		days_remove = 30
 		fire_only_once = yes
-		ai_will_do = { base = 10 }
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
 		remove_effect = { 
 			country_event = { id = TOD_STG.51 }
 			set_country_flag = STG_lianxixinan
@@ -92,7 +101,10 @@ STG_difangjunfa = {
 		targets = { state = 328 }
 		days_remove = 30
 		fire_only_once = yes
-		ai_will_do = { base = 10 }
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
 		remove_effect = { 
 			country_event = { id = TOD_STG.59 }
 			set_country_flag = STG_lianxiguandong
@@ -115,7 +127,10 @@ STG_difangjunfa = {
 		targets = { state = 831 }
 		days_remove = 30
 		fire_only_once = yes
-		ai_will_do = { base = 10 }
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
 		remove_effect = { 
 			country_event = { id = TOD_STG.63 }
 		}
@@ -137,7 +152,10 @@ STG_difangjunfa = {
 		targets = { state = 330 }
 		days_remove = 30
 		fire_only_once = yes
-		ai_will_do = { base = 10 }
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
 		remove_effect = { 
 			country_event = { id = TOD_STG.67 }
 		}
@@ -159,7 +177,10 @@ STG_difangjunfa = {
 		targets = { state = 325 }
 		days_remove = 30
 		fire_only_once = yes
-		ai_will_do = { base = 10 }
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
 		remove_effect = { 
 			country_event = { id = TOD_STG.71 }
 		}
@@ -181,9 +202,38 @@ STG_difangjunfa = {
 		targets = { state = 328 }
 		days_remove = 30
 		fire_only_once = yes
-		ai_will_do = { base = 10 }
-		remove_effect = { 
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
+		remove_effect = {
 			country_event = { id = TOD_STG.75 }
+		}
+	}
+	# 征讨云南：云南存在时显示；AI 仅在无其他战争时发动。
+	STG_zhengtaoyunnan = {
+		icon = ger_military_buildup
+		visible = { country_exists = YUN }
+		allowed = { tag = STG }
+		available = {
+			country_exists = YUN
+			NOT = { has_war = yes }
+		}
+		cost = 15
+		on_map_mode = map_and_decisions_view
+		days_remove = 30
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					country_exists = YUN
+					NOT = { has_war = yes }
+				}
+				declare_war_on = { target = YUN type = annex_everything }
+			}
 		}
 	}
 }

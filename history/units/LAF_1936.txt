@@ -290,3 +290,33 @@ units = {
 		start_equipment_factor = 1
 	}
 }
+units = {
+	# 大明北洋舰队（37 艘）的半数：3 战列、4 轻巡、12 驱逐。
+	fleet = {
+		name = "兰芳海峡舰队"
+		naval_base = 1316
+		task_force = {
+			name = "兰芳主力分舰队"
+			location = 1316
+			ship = { name = "LAF 海峡 BB 01" definition = battleship start_experience_factor = 0.35 equipment = { ship_hull_heavy_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 BB 02" definition = battleship start_experience_factor = 0.35 equipment = { ship_hull_heavy_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 BB 03" definition = battleship start_experience_factor = 0.35 equipment = { ship_hull_heavy_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 CL 01" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 CL 02" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 CL 03" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 CL 04" definition = light_cruiser start_experience_factor = 0.35 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 DD 01" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 DD 02" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 DD 03" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 DD 04" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 DD 05" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 DD 06" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 DD 07" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 DD 08" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 DD 09" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 DD 10" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 DD 11" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = LAF } } }
+			ship = { name = "LAF 海峡 DD 12" definition = destroyer start_experience_factor = 0.35 equipment = { ship_hull_light_1 = { amount = 1 owner = LAF } } }
+		}
+	}
+}

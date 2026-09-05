@@ -370,6 +370,191 @@ ideas = {
 				army_speed_factor = 0.1
 			}
 		}
+		SIC_gongkai_caizheng = {
+			name = SIC_gongkai_caizheng
+			picture = SIC_jingjishiyanqu
+			allowed = { original_tag = SIC }
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.05
+				consumer_goods_factor = -0.02
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		SIC_jundui_tuichu_zhengzhi = {
+			name = SIC_jundui_tuichu_zhengzhi
+			picture = SIC_hunluandejundui
+			allowed = { original_tag = SIC }
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+				command_power_gain_mult = -0.10
+				training_time_army_factor = 0.10
+				army_org_factor = -0.05
+			}
+		}
+		SIC_sichuan_jibenfa_idea = {
+			name = SIC_sichuan_jibenfa_idea
+			picture = SIC_jingjishiyanqu
+			allowed = { original_tag = SIC }
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				research_speed_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		SIC_zeren_neige_idea = {
+			name = SIC_zeren_neige_idea
+			picture = SIC_jingjishiyanqu
+			allowed = { original_tag = SIC }
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.08
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		SIC_laogong_ziben_xieshang = {
+			name = SIC_laogong_ziben_xieshang
+			picture = SIC_jingjishiyanqu
+			allowed = { original_tag = SIC }
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.02
+				production_factory_efficiency_gain_factor = 0.08
+				industrial_capacity_factory = 0.05
+			}
+		}
+		SIC_xianzheng_tongyi_dongyuan = {
+			name = SIC_xianzheng_tongyi_dongyuan
+			picture = SIC_dongyuanqinwang
+			allowed = { original_tag = SIC }
+			modifier = {
+				war_support_factor = 0.15
+				political_power_gain = 0.15
+				mobilization_speed = 0.20
+				justify_war_goal_time = -0.20
+			}
+		}
+		SIC_quanguo_tongyi_shichang = {
+			name = SIC_quanguo_tongyi_shichang
+			picture = SIC_chongjiantianfu
+			allowed = { original_tag = SIC }
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		SIC_xianfa_guominjun = {
+			name = SIC_xianfa_guominjun
+			picture = SIC_dongyuanqinwang
+			allowed = { original_tag = SIC }
+			modifier = {
+				army_org_factor = 0.10
+				army_morale_factor = 0.10
+				army_attack_factor = 0.08
+				army_defence_factor = 0.08
+				experience_gain_army_factor = 0.15
+			}
+		}
+		SIC_quanguo_xianzheng_gangyao = {
+			name = SIC_quanguo_xianzheng_gangyao
+			picture = SIC_jingjishiyanqu
+			allowed = { original_tag = SIC }
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				compliance_growth = 0.15
+				resistance_growth = -0.15
+			}
+		}
+		SIC_xianzheng_chenggong = {
+			name = SIC_xianzheng_chenggong
+			picture = SIC_jingjishiyanqu
+			allowed = { original_tag = SIC }
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.20
+				research_speed_factor = 0.08
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		SIC_daming_lixian_guo = {
+			name = SIC_daming_lixian_guo_idea
+			picture = SIC_chongjiantianfu
+			allowed = { original_tag = SIC }
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.20
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		SIC_chuanjun_baoding_chongtu = {
+			name = SIC_chuanjun_baoding_chongtu
+			picture = SIC_hunluandejundui
+			allowed = { original_tag = SIC }
+			modifier = {
+				stability_factor = -0.08
+				political_power_gain = -0.10
+				military_leader_cost_factor = 0.15
+			}
+		}
+		SIC_xinan_wubei_xuetang = {
+			name = SIC_xinan_wubei_xuetang
+			picture = SIC_zhaowujunxiao
+			allowed = { original_tag = SIC }
+			modifier = {
+				experience_gain_army_factor = 0.15
+				military_leader_cost_factor = -0.25
+				land_doctrine_cost_factor = -0.05
+			}
+		}
+		SIC_nanbei_lingdaoquan_zhengyi = {
+			name = SIC_nanbei_lingdaoquan_zhengyi
+			picture = SIC_hunluandejundui
+			allowed = { original_tag = SIC }
+			modifier = {
+				political_power_gain = -0.10
+				improve_relations_maintain_cost_factor = 0.25
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		SIC_nanbei_junxu_xieding = {
+			name = SIC_nanbei_junxu_xieding
+			picture = SIC_junshigongye
+			allowed = { original_tag = SIC }
+			modifier = {
+				industrial_capacity_factory = 0.08
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+		SIC_nanbei_junxu_tixi_bengkui = {
+			name = SIC_nanbei_junxu_tixi_bengkui
+			picture = SIC_hunluandejundui
+			allowed = { original_tag = SIC }
+			modifier = {
+				industrial_capacity_factory = -0.15
+				production_factory_efficiency_gain_factor = -0.20
+				army_org_factor = -0.10
+			}
+		}
+		SIC_daming_junzheng_guo_idea = {
+			name = SIC_daming_junzheng_guo_idea
+			picture = SIC_chongjiantianfu
+			allowed = { original_tag = SIC }
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.10
+				industrial_capacity_factory = 0.10
+				war_support_factor = 0.10
+			}
+		}
 	}
 	### 内阁 ###
 
@@ -447,28 +632,6 @@ ideas = {
 			}
 		}
 	}
-		SIC_xianzheng_chenggong = {
-			name = SIC_xianzheng_chenggong
-			picture = SIC_jingjishiyanqu
-			allowed = { original_tag = SIC }
-			modifier = {
-				stability_factor = 0.10
-				political_power_gain = 0.10
-				research_speed_factor = 0.05
-				consumer_goods_factor = -0.03
-			}
-		}
-		SIC_daming_lixian_guo = {
-			name = SIC_daming_lixian_guo
-			picture = SIC_chongjiantianfu
-			allowed = { original_tag = SIC }
-			modifier = {
-				stability_factor = 0.10
-				political_power_gain = 0.15
-				construction_speed_factor = 0.05
-				war_support_factor = 0.05
-			}
-		}
 	TOD_foreign_minister = {
 		SIC_hu_jingyi = {
 			allowed = { tag = SIC }

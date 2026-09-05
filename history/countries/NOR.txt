@@ -26,7 +26,7 @@ oob = "empty"
 	create_country_leader = {
 		name = "Thorvald Stauning"
 		desc = "POLITICS_THORVALD_STAUNING_DESC"
-		picture = "Portrait_DEN_Thorvald_Stauning.png"
+		picture = "gfx/leaders/DEN/Portrait_DEN_Thorvald_Stauning.png"
 		expire = "1965.1.1"
 		ideology = social_democrat_subtype
 	}

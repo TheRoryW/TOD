@@ -1831,7 +1831,7 @@ focus_tree = {
 						has_country_flag = HUN_release_romania_as_puppet
 						ROM = { is_subject_of = HUN }
 					}
-					set_autonomy = { target = ROM autonomy_state = autonomy_puppet }
+					set_autonomy = { target = ROM autonomous_state = autonomy_puppet }
 				}
 				if = {
 					limit = { has_idea = HUN_buchangluomaniya }
@@ -1851,7 +1851,7 @@ focus_tree = {
 						has_country_flag = HUN_release_moldova_as_puppet
 						MOL = { is_subject_of = HUN }
 					}
-					set_autonomy = { target = MOL autonomy_state = autonomy_puppet }
+					set_autonomy = { target = MOL autonomous_state = autonomy_puppet }
 				}
 				if = {
 					limit = { has_idea = HUN_buchangmoerduowa }
@@ -3563,6 +3563,7 @@ focus_tree = {
 					country_exists = UKR
 					UKR = {
 						NOT = { has_war_with = HUN }
+						NOT = { is_in_faction_with = HUN }
 					}
 				}
 				UKR = {
@@ -3570,35 +3571,42 @@ focus_tree = {
 						limit = { is_in_faction = yes NOT = { is_in_faction_with = HUN } }
 						leave_faction = yes
 					}
-					add_to_faction = HUN
 				}
+				add_to_faction = UKR
 			}
 			# 东墙的既定成员：波兰。波兰可能已经在法国阵营，先退出旧阵营再加入。
 			if = {
 				limit = {
 					country_exists = POL
-					POL = { NOT = { has_war_with = HUN } }
+					POL = {
+						NOT = { has_war_with = HUN }
+						NOT = { is_in_faction_with = HUN }
+					}
 				}
 				POL = {
 					if = {
 						limit = { is_in_faction = yes NOT = { is_in_faction_with = HUN } }
 						leave_faction = yes
 					}
-					add_to_faction = HUN
 				}
+				add_to_faction = POL
+				POL = { set_country_flag = TOD_EAST_WALL_POLAND_MEMBER }
 			}
 			if = {
 				limit = {
 					country_exists = BLR
-					BLR = { NOT = { has_war_with = HUN } }
+					BLR = {
+						NOT = { has_war_with = HUN }
+						NOT = { is_in_faction_with = HUN }
+					}
 				}
 				BLR = {
 					if = {
 						limit = { is_in_faction = yes NOT = { is_in_faction_with = HUN } }
 						leave_faction = yes
 					}
-					add_to_faction = HUN
 				}
+				add_to_faction = BLR
 			}
 			news_event = { id = TODhungary.35 }
 		 }

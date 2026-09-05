@@ -51,7 +51,7 @@ SPR_CA_HISTORICAL = {
 	fallback_name = "Crucero Pesado %d"
 
 	unique = {
-		"Canarias" "Baleares" "Navarra" "Reina Regente" "Cataluña" "Extremadura" "Vizcaya" "Blas de Lezo" "Sevilla" "Huelva" "Vizcaya" "Granada" 
+		"Canarias" "Baleares" "Navarra" "Reina Regente" "Cataluña" "Extremadura" "Vizcaya" "Blas de Lezo" "Sevilla" "Huelva" "Granada" 
 	}
 }
 

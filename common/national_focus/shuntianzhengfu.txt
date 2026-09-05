@@ -163,7 +163,6 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 300 }
 			add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 50 variant_name = "辽阳造 昌德卌三年式 白山机车总厂 “烛龙” 试制铁甲轻战车"}
-			load_oob = shuntian_zhuangjia
 		}
 	}
 	#组织黄河会战

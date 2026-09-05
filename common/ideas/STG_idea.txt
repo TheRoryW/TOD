@@ -214,7 +214,7 @@ ideas = {
 	### 内阁 ###
 
 	TOD_minister_head = { 
-		MNG_zhurongkun_neizheng = {
+		MNG_zhurongkung_neizheng = {
 			allowed = { tag = STG }
 			available = {
 				always = no
@@ -317,7 +317,7 @@ ideas = {
 		}
 	}
 	TOD_economy_minister = {
-		MNG_zhurongkun_jingji = {
+		MNG_zhurongkung_jingji = {
 			allowed = { tag = STG }
 			available = { always = no }
 			cancel_if_invalid = no

@@ -3,7 +3,7 @@ characters={
 		name=ARG_Agustin_Pedro_Justo
 		portraits={
 			civilian={
-				large="gfx/leaders/ARG/ARG_Agustin_Pedro_Justo.tga"
+				large="gfx/leaders/ARG/ARG_Agustin_Pedro_Justo.png"
 			}
 		}
 		country_leader={
@@ -18,7 +18,7 @@ characters={
 		name=ARG_Juan_Domingo_Peron
 		portraits={
 			civilian={
-				large="gfx/leaders/ARG/ARG_Juan_Domingo_Peron.tga"
+				large="gfx/leaders/ARG/ARG_Juan_Domingo_Peron.png"
 			}
 		}
 		country_leader={

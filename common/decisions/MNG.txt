@@ -647,47 +647,18 @@ MNG_chongjiandaming_categories = {
     MNG_chongjiandaming_decision = {
 		icon = ger_military_buildup
         available = {
-            OR = {
-                tag = STG
-                NOT = {country_exists = STG}
-                STG = {is_puppet_of = ROOT}
-            }
-            OR = {
-                tag = XBJ
-                NOT = {country_exists = XBJ}
-                XBJ = {is_puppet_of = ROOT}
-            }
-            OR = {
-                tag = GOS
-                NOT = {country_exists = GOS}
-                GOS = {is_puppet_of = ROOT}
-            }
-            OR = {
-                tag = SRC
-                NOT = {country_exists = SRC}
-                SRC = {is_puppet_of = ROOT}
-            }
-            OR = {
-                tag = ROC
-                NOT = {country_exists = ROC}
-                ROC = {is_puppet_of = ROOT}
-            }
-            OR = {
-                NOT = {country_exists = MOB}
-                MOB = {is_puppet_of = ROOT}
-            }
-            OR = {
-                NOT = {country_exists = SCG}
-                SCG = {is_puppet_of = ROOT}
-            }
-            OR = {
-                NOT = {country_exists = GPS}
-                GPS = {is_puppet_of = ROOT}
-            }
-            OR = {
-                NOT = {country_exists = SIC}
-                SIC = {is_puppet_of = ROOT}
-            }
+			TOD_china_unified_for_ming_civil_war = yes
+			OR = {
+				NOT = { tag = SIC }
+				OR = {
+					has_country_flag = SIC_daming_junxian_ready
+					has_country_flag = SIC_daming_junzheng_ready
+				}
+			}
+			OR = {
+				NOT = { tag = SCG }
+				has_country_flag = SCG_quanguo_xianfa_ready
+			}
 		}
 		fire_only_once = yes
         ai_will_do = {
@@ -713,10 +684,7 @@ MNG_chongjiandaming_categories = {
             }
             if = {
                 limit = {
-                    OR = {
-                        tag = SCG
-                        tag = SRC
-                    }
+                    tag = SRC
                 }
                 set_cosmetic_tag = SRC_tongyi
                 country_event = { id = mingcivwar.1004 }
@@ -726,17 +694,171 @@ MNG_chongjiandaming_categories = {
                 set_cosmetic_tag = ROC_tongyi
                 country_event = { id = mingcivwar.1005 }
             }
+            if = {
+                limit = { tag = SIC has_country_flag = SIC_daming_junzheng_ready }
+                set_cosmetic_tag = SIC_daming_junzheng_guo
+				add_ideas = SIC_daming_junzheng_guo_idea
+				if = {
+					limit = { has_country_flag = SIC_wubei_exile_route }
+					country_event = { id = TODSIC.1039 }
+				}
+				else = {
+					country_event = { id = TODSIC.1040 }
+				}
+            }
+            else_if = {
+                limit = { tag = SIC has_country_flag = SIC_daming_junxian_ready }
+                set_cosmetic_tag = SIC_daming_lixian_guo
+				add_ideas = SIC_daming_lixian_guo
+                country_event = { id = TODSIC.1010 }
+            }
+            if = {
+                limit = { tag = SCG }
+                set_cosmetic_tag = SCG_zhonghua_shehuizhuyi_gongheguo
+				add_ideas = SCG_zhonghua_shehuizhuyi_gongheguo
+                country_event = { id = TODSIC.1012 }
+            }
             every_other_country = {
                 limit = {
-                    is_puppet_of = ROOT
+                    is_subject_of = ROOT
                     is_ming_tag = yes
                 }
-                ROOT = {annex_country = { target = PREV transfer_troops = no }}
                 every_unit_leader = {
                     set_nationality = ROOT
                 }
+                ROOT = { annex_country = { target = PREV transfer_troops = yes } }
             }
         }
+    }
+}
+
+MNG_SIC_hebing_categories = {
+    MNG_SIC_hebing_yaoqing_ROC = {
+        icon = GFX_decision_generic_political_address
+        visible = { country_exists = ROC }
+        available = {
+            is_neighbor_of = ROC
+            NOT = { has_war_with = ROC }
+            NOT = { has_country_flag = MNG_SIC_ROC_hebing_tanpanpolie }
+			NOT = { has_country_flag = SIC_hebing_tanpan_jinxingzhong }
+        }
+        cost = 50
+		days_remove = 0
+        fire_only_once = yes
+		remove_effect = {
+			set_country_flag = SIC_hebing_tanpan_jinxingzhong
+			ROC = { country_event = { id = mingcivwar.1100 days = 1 } }
+		}
+    }
+    MNG_SIC_hebing_yaoqing_SRC = {
+        icon = GFX_decision_generic_political_address
+        visible = { country_exists = SRC }
+        available = {
+            is_neighbor_of = SRC
+            NOT = { has_war_with = SRC }
+            NOT = { has_country_flag = MNG_SIC_SRC_hebing_tanpanpolie }
+			NOT = { has_country_flag = SIC_hebing_tanpan_jinxingzhong }
+        }
+        cost = 50
+		days_remove = 0
+        fire_only_once = yes
+		remove_effect = {
+			set_country_flag = SIC_hebing_tanpan_jinxingzhong
+			SRC = { country_event = { id = mingcivwar.1106 days = 1 } }
+		}
+    }
+    MNG_SIC_taofa_ROC = {
+        icon = GFX_decision_generic_political_address
+        visible = { country_exists = ROC }
+        available = {
+            is_neighbor_of = ROC
+            NOT = { has_war_with = ROC }
+            has_country_flag = MNG_SIC_ROC_hebing_tanpanpolie
+			NOT = { has_country_flag = SIC_hebing_tanpan_jinxingzhong }
+        }
+        cost = 35
+        days_remove = 21
+        fire_only_once = yes
+        remove_effect = { declare_war_on = { target = ROC type = annex_everything } }
+    }
+    MNG_SIC_taofa_SRC = {
+        icon = GFX_decision_generic_political_address
+        visible = { country_exists = SRC }
+        available = {
+            is_neighbor_of = SRC
+            NOT = { has_war_with = SRC }
+            has_country_flag = MNG_SIC_SRC_hebing_tanpanpolie
+			NOT = { has_country_flag = SIC_hebing_tanpan_jinxingzhong }
+        }
+        cost = 35
+        days_remove = 21
+        fire_only_once = yes
+        remove_effect = { declare_war_on = { target = SRC type = annex_everything } }
+    }
+}
+
+MNG_SCG_hebing_categories = {
+    MNG_SCG_hebing_yaoqing_ROC = {
+        icon = GFX_decision_generic_political_address
+        visible = { country_exists = ROC }
+        available = {
+            is_neighbor_of = ROC
+            NOT = { has_war_with = ROC }
+            NOT = { has_country_flag = MNG_SCG_ROC_hebing_tanpanpolie }
+			NOT = { has_country_flag = SCG_hebing_tanpan_jinxingzhong }
+        }
+        cost = 50
+		days_remove = 0
+        fire_only_once = yes
+		remove_effect = {
+			set_country_flag = SCG_hebing_tanpan_jinxingzhong
+			ROC = { country_event = { id = mingcivwar.1112 days = 1 } }
+		}
+    }
+    MNG_SCG_hebing_yaoqing_SRC = {
+        icon = GFX_decision_generic_political_address
+        visible = { country_exists = SRC }
+        available = {
+            is_neighbor_of = SRC
+            NOT = { has_war_with = SRC }
+            NOT = { has_country_flag = MNG_SCG_SRC_hebing_tanpanpolie }
+			NOT = { has_country_flag = SCG_hebing_tanpan_jinxingzhong }
+        }
+        cost = 50
+		days_remove = 0
+        fire_only_once = yes
+		remove_effect = {
+			set_country_flag = SCG_hebing_tanpan_jinxingzhong
+			SRC = { country_event = { id = mingcivwar.1118 days = 1 } }
+		}
+    }
+    MNG_SCG_taofa_ROC = {
+        icon = GFX_decision_generic_political_address
+        visible = { country_exists = ROC }
+        available = {
+            is_neighbor_of = ROC
+            NOT = { has_war_with = ROC }
+            has_country_flag = MNG_SCG_ROC_hebing_tanpanpolie
+			NOT = { has_country_flag = SCG_hebing_tanpan_jinxingzhong }
+        }
+        cost = 35
+        days_remove = 21
+        fire_only_once = yes
+        remove_effect = { declare_war_on = { target = ROC type = annex_everything } }
+    }
+    MNG_SCG_taofa_SRC = {
+        icon = GFX_decision_generic_political_address
+        visible = { country_exists = SRC }
+        available = {
+            is_neighbor_of = SRC
+            NOT = { has_war_with = SRC }
+            has_country_flag = MNG_SCG_SRC_hebing_tanpanpolie
+			NOT = { has_country_flag = SCG_hebing_tanpan_jinxingzhong }
+        }
+        cost = 35
+        days_remove = 21
+        fire_only_once = yes
+        remove_effect = { declare_war_on = { target = SRC type = annex_everything } }
     }
 }
 

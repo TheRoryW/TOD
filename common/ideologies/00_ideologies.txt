@@ -27,7 +27,7 @@ ideologies = {
 		ai_neutral = yes
 		can_be_boosted = no
 	}
-	
+
 	council_socialism = {
 		types = {
 			council_socialism_subtype = {} #generic
@@ -56,7 +56,7 @@ ideologies = {
 		can_be_boosted = no
 
 	}
-	
+
 	moderate_socialism = {
 		types = {
 			moderate_socialism_subtype = {} #generic
@@ -84,7 +84,7 @@ ideologies = {
 		can_be_boosted = no
 
 	}
-	
+
 	agroindustrial_socialism = {
 		types = {
 			agroindustrial_socialism_subtype = {} #generic
@@ -112,7 +112,7 @@ ideologies = {
 		can_be_boosted = no
 
 	}
-	
+
 	social_democrat = {
 		types = {
 			social_democrat_subtype = {}
@@ -168,7 +168,7 @@ ideologies = {
 		ai_neutral = yes
 		can_be_boosted = no
 	}
-	
+
 	consociationalism = {
 		types = {
 			consociationalism_subtype = {}
@@ -277,7 +277,7 @@ ideologies = {
 		ai_neutral = yes
 		can_be_boosted = no
 	}
-	
+
 	sacred_revivalism = {
 		types = {
 			sacred_revivalism_subtype = {}

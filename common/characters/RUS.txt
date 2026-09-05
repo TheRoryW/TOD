@@ -3,7 +3,7 @@ characters={
 		name = RUS_Mikhail_4
 		portraits={
 			civilian={
-				large="gfx/leaders/RUS/Portrait_RUS_Mikhail_IV_workbook.png"
+				large="gfx/leaders/RUS/Portrait_RUS_Mikhail_IV.png"
 			}
 		}
 		country_leader={
@@ -18,7 +18,7 @@ characters={
 		name=RUS_Pavel_Nikolayevich_Milyukov
 		portraits={
 			civilian={
-				large="gfx/leaders/RUS/Portrait_RUS_Alexandria_IV.tga"
+				large="gfx/leaders/RUS/Portrait_RUS_Alexandria_IV.png"
 			}
 		}
 		country_leader={
@@ -33,7 +33,7 @@ characters={
 		name=RUS_Alexander_Nikolayevich_potlesov
 		portraits={
 			civilian={
-				large="gfx/leaders/RUS/Portrait_RUS_Alexandria_IV.tga"
+				large="gfx/leaders/RUS/Portrait_RUS_Alexandria_IV.png"
 			}
 		}
 		country_leader={
@@ -48,7 +48,7 @@ characters={
 		name=RUS_Mikhail_Gordeevich_Drozdovsky
 		portraits={
 			civilian={
-				large="gfx/leaders/RUS/Portrait_RUS_Alexandria_IV.tga"
+				large="gfx/leaders/RUS/Portrait_RUS_Alexandria_IV.png"
 			}
 		}
 		country_leader={
@@ -63,7 +63,7 @@ characters={
 		name=RUS_Anastasy_Vonsiatsky
 		portraits={
 			civilian={
-				large="gfx/leaders/RUS/Portrait_RUS_Alexandria_IV.tga"
+				large="gfx/leaders/RUS/Portrait_RUS_Alexandria_IV.png"
 			}
 		}
 		country_leader={
@@ -78,7 +78,7 @@ characters={
 		name=RUS_Vyacheslav_Mikhailovich_Molotov
 		portraits={
 			civilian={
-				large="gfx/leaders/RUS/Portrait_RUS_Alexandria_IV.tga"
+				large="gfx/leaders/RUS/Portrait_RUS_Alexandria_IV.png"
 			}
 		}
 		country_leader={

@@ -1,6 +1,13 @@
 ideas = {
 	country = {
 		# These small compatibility definitions replace IDs used by loaded base scripts.
+		german_advisors = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = { land_doctrine_cost_factor = -0.10 }
+		}
+
 		idea_CHI_central_government_integration_pressure = {
 			picture = ast_classify_aliens
 			allowed = { always = no }
@@ -96,5 +103,103 @@ ideas = {
 				production_cost_max_ship_hull_carrier = 10750
 			}
 		}
+
+		# Loaded British MIO conditions still query these Iraqi treaty IDs.
+		IRQ_anglo_iraqi_treaty = {
+			allowed = { original_tag = IRQ }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = IRQ_anglo-iraqi_treaty
+			modifier = {
+				stability_factor = -0.20
+				political_power_factor = -0.10
+			}
+		}
+
+		IRQ_anglo_iraqi_mutual_defense_agreement = {
+			allowed = {
+				original_tag = IRQ
+			}
+			cancel = {
+				has_war_with = ENG
+			}
+			removal_cost = -1
+			picture = IRQ_anglo-iraqi_treaty
+			modifier = {
+				stability_factor = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+
+		IRQ_mutual_defense_agreement = {
+			allowed = { original_tag = IRQ }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = IRQ_anglo-iraqi_treaty
+		}
+
+		# Louisiana focus rewards reference these IDs while common/ideas is replaced.
+		FRL_the_conservative_choice = {
+			allowed = { original_tag = FRL }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		POL_a_new_sejm_idea = {
+			allowed = {
+				OR = {
+					original_tag = POL
+					original_tag = FRL
+				}
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
+
+		# Database IDs queried by loaded 1.19 MIO and scripted systems.
+		PRC_mediating_general_secretary_idea = {
+			allowed = { original_tag = PRC }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+		}
+		PRC_mediating_general_secretary_idea_drifting_left = {
+			name = PRC_mediating_general_secretary_idea
+			allowed = { original_tag = PRC }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+		}
+		PRC_mediating_general_secretary_idea_drifting_right = {
+			name = PRC_mediating_general_secretary_idea
+			allowed = { original_tag = PRC }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+		}
+
+		CZE_army_readiness_1 = { allowed = { original_tag = CZE } allowed_civil_war = { always = yes } removal_cost = -1 picture = generic_production_bonus }
+		CZE_army_readiness_2 = { name = CZE_army_readiness_1 allowed = { original_tag = CZE } allowed_civil_war = { always = yes } removal_cost = -1 picture = generic_production_bonus }
+		CZE_army_readiness_3 = { name = CZE_army_readiness_1 allowed = { original_tag = CZE } allowed_civil_war = { always = yes } removal_cost = -1 picture = generic_production_bonus }
+		CZE_army_readiness_4 = { name = CZE_army_readiness_1 allowed = { original_tag = CZE } allowed_civil_war = { always = yes } removal_cost = -1 picture = generic_production_bonus }
+		CZE_army_readiness_5 = { name = CZE_army_readiness_1 allowed = { original_tag = CZE } allowed_civil_war = { always = yes } removal_cost = -1 picture = generic_production_bonus }
+
+		FIN_sisu_1 = { allowed = { original_tag = FIN } allowed_civil_war = { always = yes } removal_cost = -1 picture = generic_production_bonus }
+		FIN_sisu_2 = { name = FIN_sisu_1 allowed = { original_tag = FIN } allowed_civil_war = { always = yes } removal_cost = -1 picture = generic_production_bonus }
+		FIN_sisu_3 = { name = FIN_sisu_1 allowed = { original_tag = FIN } allowed_civil_war = { always = yes } removal_cost = -1 picture = generic_production_bonus }
+		FIN_sisu_4 = { name = FIN_sisu_1 allowed = { original_tag = FIN } allowed_civil_war = { always = yes } removal_cost = -1 picture = generic_production_bonus }
+		FIN_sisu_5 = { name = FIN_sisu_1 allowed = { original_tag = FIN } allowed_civil_war = { always = yes } removal_cost = -1 picture = generic_production_bonus }
 	}
 }

@@ -3660,7 +3660,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_GRE_yutuerqidetongmen_shine"
-		texturefile = "gfx/interface/goals/GRE_yutuerqidetongmen.png"
+		texturefile = "gfx/interface/goals/GRE_yutuerqidetongmeng.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_unknown.dds"

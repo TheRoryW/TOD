@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 FOCUS_PATH = ROOT / "common" / "national_focus" / "hungary.txt"
 EVENTS_PATH = ROOT / "events" / "Hungary.txt"
+GER_EVENTS_PATH = ROOT / "events" / "GER.txt"
 CHARACTERS_PATH = ROOT / "common" / "characters" / "HUN.txt"
 HISTORY_PATH = ROOT / "history" / "countries" / "HUN.txt"
 SPRITES_PATH = ROOT / "interface" / "HUN_pictures.gfx"
@@ -114,6 +115,7 @@ class HungaryContentTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.focus = uncommented(FOCUS_PATH.read_text(encoding="utf-8-sig"))
         cls.events = uncommented(EVENTS_PATH.read_text(encoding="utf-8-sig"))
+        cls.germany_events = uncommented(GER_EVENTS_PATH.read_text(encoding="utf-8-sig"))
         cls.characters = uncommented(CHARACTERS_PATH.read_text(encoding="utf-8-sig"))
         cls.history = uncommented(HISTORY_PATH.read_text(encoding="utf-8-sig"))
         cls.sprites = uncommented(SPRITES_PATH.read_text(encoding="utf-8-sig"))
@@ -371,7 +373,7 @@ class HungaryContentTests(unittest.TestCase):
                     self_determination,
                     r"set_autonomy\s*=\s*\{\s*target\s*=\s*"
                     + tag
-                    + r"\s+autonomy_state\s*=\s*autonomy_puppet\s*\}",
+                    + r"\s+autonomous_state\s*=\s*autonomy_puppet\s*\}",
                 )
 
             event = braced_block_after(self.events, f"id = {event_id}")
@@ -401,6 +403,28 @@ class HungaryContentTests(unittest.TestCase):
             "ai_will_do={base=100modifier={add=100}}",
             re.sub(r"\s+", "", ai_blocks[0]),
             "East Wall must retain its existing strong default AI tendency.",
+        )
+
+    def test_east_wall_marks_poland_as_a_persistent_member(self) -> None:
+        """A transient faction relation must not let a later event remove Poland."""
+        east_wall = focus_block(self.focus, "HUN_dongqiang")
+        self.assertRegex(
+            east_wall,
+            r"POL\s*=\s*\{\s*set_country_flag\s*=\s*"
+            r"TOD_EAST_WALL_POLAND_MEMBER\s*\}",
+            "Poland must retain an East Wall membership marker after joining.",
+        )
+
+    def test_german_western_war_event_does_not_remove_marked_poland(self) -> None:
+        """Germany's Western-war cleanup must not eject an established East Wall member."""
+        western_war_news = braced_block_after(self.germany_events, "id = TODgermany.1004")
+        leave_poland = western_war_news.index("POL = { leave_faction = yes }")
+        safeguard = western_war_news[max(0, leave_poland - 700) : leave_poland]
+        self.assertRegex(
+            safeguard,
+            r"NOT\s*=\s*\{\s*has_country_flag\s*=\s*"
+            r"TOD_EAST_WALL_POLAND_MEMBER\s*\}",
+            "The Western-war cleanup must skip Poland after it has joined East Wall.",
         )
 
     def test_diplomatic_focus_events_are_called_once_and_localised(self) -> None:

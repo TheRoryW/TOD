@@ -649,6 +649,10 @@ MNG_release_STG = {#MNG释放STG顺天政府
 			#		delete_unit_template_and_units = { division_template = "Loyalist Militia" }
 			#	}
 
+			if = {
+				limit = { NOT = { country_exists = STG } }
+				release = STG
+			}
 		}
 			STG = { transfer_technology = yes }
 

@@ -26,7 +26,7 @@ set_politics = {
 create_country_leader = {
 	name = "Friedrich Christian"
 	desc = "POLITICS_FRIEDRICH_CHRISTIAN_DESC"
-	picture = "Portrait_SAX_Friedrich_Christian.png"
+	picture = "gfx/leaders/SAX/Portrait_SAX_Friedrich_Christian.png"
 	expire = "1965.1.1"
 	ideology = authoritarian_oligarchy_subtype
 }

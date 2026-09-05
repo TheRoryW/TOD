@@ -17,7 +17,7 @@ set_popularities = {
 create_country_leader = {
 	name = "沈法"
 	desc = "POLITICS_SIM_VAR_DESC"
-	picture = "Portrait_KHM_Sim_Var.png"
+	picture = "gfx/leaders/KHM/Portrait_KHM_Sim_Var.png"
 	expire = "1965.1.1"
 	ideology = national_corporatism_subtype
 }
@@ -25,7 +25,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "翁谦山"
 	desc = "POLITICS_JIN_YUTING_DESC"
-	picture = "Portrait_SIA_Jin_Yuting.png"
+	picture = "gfx/leaders/SIA/Portrait_SIA_Jin_Yuting.png"
 	expire = "1965.1.1"
 	ideology = liberal_democracy_subtype
 }
@@ -33,7 +33,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "宋双"
 	desc = "POLITICS_CHEN_JIAXIANG_DESC"
-	picture = "Portrait_SIA_Chen_Jiaxiang.png"
+	picture = "gfx/leaders/SIA/Portrait_SIA_Chen_Jiaxiang.png"
 	expire = "1965.1.1"
 	ideology = social_democrat_subtype
 }
@@ -41,7 +41,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "诺罗敦·苏他罗"
 	desc = "POLITICS_WU_BIE_DESC"
-	picture = "Portrait_SIA_Wu_Bie.png"
+	picture = "gfx/leaders/SIA/Portrait_SIA_Wu_Bie.png"
 	expire = "1965.1.1"
 	ideology = conservative_democracy_subtype
 }

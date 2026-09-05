@@ -263,7 +263,7 @@ ideas = {
 			allowed_to_remove = {
 				OR = {
 					surrender_progress > 0.75
-					NOT = { has_government = communism }
+					NOT = { has_government = vanguard_socialism }
 				}
 			}
 
@@ -292,7 +292,7 @@ ideas = {
 			allowed_to_remove = {
 				OR = {
 					surrender_progress > 0.75
-					NOT = { has_government = communism }
+					NOT = { has_government = vanguard_socialism }
 				}
 			}
 

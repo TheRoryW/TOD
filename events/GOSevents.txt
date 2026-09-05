@@ -515,7 +515,7 @@ country_event = {
 		GOS = {
 			set_autonomy = {
 				target = ROOT
-				autonomy_state = tod_ming_zhishudusi
+				autonomous_state = tod_ming_zhishudusi
 			}
 		}
 	}

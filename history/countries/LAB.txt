@@ -26,7 +26,7 @@ set_politics = {
 create_country_leader = {
 	name = "Juozas Tūbelis"
 	desc = "POLITICS_JUOZAS_TUBELIS_DESC"
-	picture = "Portrait_LAB_Juozas_Tūbelis.png"
+	picture = "gfx/leaders/LAB/Portrait_LAB_Juozas_Tūbelis.png"
 	expire = "1965.1.1"
 	ideology = liberal_democracy_subtype
 }

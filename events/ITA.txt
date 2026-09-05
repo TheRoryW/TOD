@@ -1,24 +1,32 @@
 add_namespace = TODItaly
 #意大利跑路
-country_event = { 
+country_event = {
 	id = TODItaly.1
 	title = TODItaly.1.t
 	desc =TODItaly.1.d
 	picture = GFX_report_event_chinese_soldiers_fighting
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag =  ITA
-		has_war_with = GER
+		OR = {
+			has_war_with = GER
+			has_war_with = ENG
+			any_country = {
+				original_tag = FRA
+				has_war_with = ROOT
+			}
+		}
         OR = {
             2 = { is_controlled_by = GER }
             2 = { is_controlled_by = ENG }
+			2 = { controller = { original_tag = FRA } }
         }
-		surrender_progress > 0.7
+		surrender_progress > 0.70
 
 	}
-	
+
 	option = { # 成为德国傀儡
 		name = TODItaly.1.a
 		trigger = { is_ai = no }
@@ -42,9 +50,9 @@ country_event = {
 	title = TODItaly.14.t
 	desc = TODItaly.14.d
 	picture = GFX_report_event_german_parade_paris
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = TODItaly.14.a
 		ai_chance = {
@@ -53,14 +61,12 @@ country_event = {
 		every_country = {
 			limit = {
 				OR = {
-					tag = ITA
+					original_tag = ITA
 					is_puppet_of = ITA
 				}
 			}
 			every_country = {
-				limit = {
-					has_war_with = PREV
-				}
+				limit = { has_war_with = PREV }
 				white_peace = PREV
 			}
 		}
@@ -103,8 +109,8 @@ country_event = {
 				elections_allowed = no
 			}
 			every_state = {
-				limit = { 
-					is_core_of = ITA 
+				limit = {
+					is_core_of = ITA
 					NOT = {
 						OR = {
 							state = 448
@@ -125,12 +131,6 @@ country_event = {
 			set_popularities = {
 				council_socialism = 100
 			}
-			ITA = {
-				set_nationality = {
-					target_country = PREV
-					character = ITA_Palmiro_Togliatti
-				}
-			}
 			448 = {set_state_owner_to = ITA}
 			1083 = {set_state_owner_to = ITA}
 			449 = {set_state_owner_to = ITA}
@@ -141,15 +141,6 @@ country_event = {
 			662 = {set_state_owner_to = ITA}
 			661 = {set_state_owner_to = ITA}
 			273 = {set_state_owner_to = ITA}
-			add_country_leader_role = {
-				character = ITA_Palmiro_Togliatti
-				country_leader = {
-					ideology = council_socialism_subtype 
-					expire = "1965.1.1.1"
-					id = -1
-				}
-				promote_leader = yes 
-			}
 
 			if = {
 				limit = {  ITA = { has_country_flag = become_deguokuilei } }
@@ -159,14 +150,12 @@ country_event = {
 		every_country = {
 			limit = {
 				OR = {
-					tag = ITA
+					original_tag = ITA
 					is_puppet_of = ITA
 				}
 			}
 			every_country = {
-				limit = {
-					has_war_with = PREV
-				}
+				limit = { has_war_with = PREV }
 				white_peace = PREV
 			}
 		}

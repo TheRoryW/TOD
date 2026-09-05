@@ -1,0 +1,47 @@
+ideas = {
+	industrial_concern = {
+		MNG_guojia_tielu_zongju = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MNG }
+			available = { }
+			traits = { industrial_concern }
+			research_bonus = { construction_tech = 0.10 }
+			modifier = {
+				production_speed_rail_way_factor = 0.10
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		MNG_shuntian_jianshe_zonggongshu = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MNG }
+			available = { }
+			traits = { industrial_concern }
+			research_bonus = { construction_tech = 0.10 }
+			modifier = { production_speed_industrial_complex_factor = 0.10 }
+		}
+		MNG_dongbei_gongye_jituan = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MNG }
+			available = { }
+			traits = { industrial_concern }
+			research_bonus = { industry = 0.10 }
+			modifier = { production_factory_efficiency_gain_factor = 0.05 }
+		}
+		MNG_hanjiang_youse_jituan = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MNG }
+			available = { }
+			traits = { industrial_concern }
+			research_bonus = { excavation_tech = 0.10 }
+			modifier = { local_resources_factor = 0.10 }
+		}
+		MNG_yangzi_dianqihua_kaifaju = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = MNG }
+			available = { }
+			traits = { electronics_concern }
+			research_bonus = { electronics = 0.10 }
+			modifier = { research_speed_factor = 0.03 }
+		}
+	}
+}

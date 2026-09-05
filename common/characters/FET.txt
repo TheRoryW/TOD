@@ -3,7 +3,7 @@ characters={
 		name= FET_Mikhail_Konstantinovich_Ditherichs
 		portraits={
 			civilian={
-				large="gfx/leaders/FET/Portrait_FET_Mikhail_Konstantinovich_Ditherichs_workbook.png"
+				large="gfx/leaders/FET/Portrait_FET_Mikhail_Konstantinovich_Ditherichs.png"
 			}
 		}
 		country_leader={

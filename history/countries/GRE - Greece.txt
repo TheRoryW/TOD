@@ -91,7 +91,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Elisfrios Venizelos"
 	desc = "POLITICS_ELISFRIOS_VENIZELOS_DESC"
-	picture = "Portrait_GRE_Elisfrios_Venizelos.png"
+	picture = "gfx/leaders/GRE/Portrait_GRE_Elisfrios_Venizelos.png"
 	expire = "1965.1.1"
 	ideology = liberal_democracy_subtype
 }

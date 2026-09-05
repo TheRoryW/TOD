@@ -1,0 +1,6 @@
+SCG_geming_waijiao_categories = {
+	priority = 145
+	icon = generic_political_discourse
+	allowed = { tag = SCG }
+	visible = { has_completed_focus = SCG_chengli_geming_waijiao_lianluochu }
+}

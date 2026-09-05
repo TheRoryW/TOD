@@ -1,429 +1,528 @@
-# division_template = {
-# 	name = "昌德卌四年型近卫步兵师"	#步兵师
-# 	division_names_group = XBJ_INF_01
-# 	regiments = {
-# 		infantry = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 		infantry = {
-# 			x = 0
-# 			y = 1
-# 		}
-# 		infantry = {
-# 			x = 0
-# 			y = 2
-# 		}
-# 		infantry = {
-# 			x = 0
-# 			y = 3
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 0
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 1
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 2
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 3
-# 		}
-#         infantry = {
-# 			x = 2
-# 			y = 0
-# 		}
-# 		artillery_brigade = {
-# 			x = 2
-# 			y = 1
-# 		}
-#         artillery_brigade = {
-# 			x = 2
-# 			y = 2
-# 		}
-#         artillery_brigade = {
-# 			x = 2
-# 			y = 3
-# 		}
-# 	}
-# 	support = {
-# 		engineer = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 		artillery = {
-# 			x = 0
-# 			y = 1
-# 		}
-#         recon = {
-# 			x = 0
-# 			y = 2
-# 		}
-# 	}
-# }
+division_template = {
+	name = "昌德卌四年型甲种步兵师"	#步兵师
+	regiments = {
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0}
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0}
+		infantry = { x = 2 y = 1 }
+        infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0}
+	}
+	support = {
+		engineer = { x = 0 y = 0}
+	}
+}
 
-# division_template = {
-# 	name = "昌德卌四年型西域驻屯步兵师"	#步兵师
-# 	division_names_group = XBJ_INF_02
-# 	regiments = {
-# 		infantry = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 		infantry = {
-# 			x = 0
-# 			y = 1
-# 		}
-# 		infantry = {
-# 			x = 0
-# 			y = 2
-# 		}
-# 		infantry = {
-# 			x = 0
-# 			y = 3
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 0
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 1
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 2
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 3
-# 		}
-#         infantry = {
-# 			x = 2
-# 			y = 0
-# 		}
-# 		artillery_brigade = {
-# 			x = 2
-# 			y = 1
-# 		}
-# 	}
-# 	support = {
-# 		engineer = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 	}
-# }
+division_template = {
+	name = "昌德卌四年型甲种战车师"	#装甲师
+	regiments = {
+		heavy_armor = { x = 0 y = 0}
+		heavy_armor = { x = 0 y = 1 }
+        medium_armor = { x = 0 y = 2 }
+        medium_armor = { x = 0 y = 3}
+		infantry = { x = 1 y = 0}
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3}
+	}
+	support = {
+        artillery = { x = 0 y = 0}
+	}
+}
 
-# division_template = {
-# 	name = "昌德卌四年型西域卫戍步兵旅"	#卫戍旅
-# 	division_names_group = XBJ_INF_03
-# 	regiments = {
-# 		infantry = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 		infantry = {
-# 			x = 0
-# 			y = 1
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 0
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 1
-# 		}
-# 	}
-# 	support = {
-# 		engineer = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 	}
-# }
+division_template = {
+	name = "昌德卌四年型省军步兵师"	#步兵师
+	regiments = {
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0}
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
 
-# division_template = {
-# 	name = "昌德卌四年型治安骑警旅"	#骑兵旅
-# 	division_names_group = XBJ_CAV_01
-# 	regiments = {
-# 		cavalry = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 		cavalry = {
-# 			x = 0
-# 			y = 1
-# 		}
-# 		cavalry = {
-# 			x = 0
-# 			y = 2
-# 		}
-# 		cavalry = {
-# 			x = 0
-# 			y = 3
-# 		}
-# 	}
-# 	support = {
-# 		military_police = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 	}
-# }
+division_template = {
+	name = "昌德卌四年型乙种步兵师"	#步兵师
+	regiments = {
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0}
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0}
+		infantry = { x = 2 y = 1 }
+        infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0}
+	}
+}
 
-# division_template = {
-# 	name = "昌德卌四年型西域骑行步兵师"	#骑兵师
-# 	division_names_group = XBJ_CAV_02
-# 	regiments = {
-# 		cavalry = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 		cavalry = {
-# 			x = 0
-# 			y = 1
-# 		}
-# 		cavalry = {
-# 			x = 0
-# 			y = 2
-# 		}
-# 		cavalry = {
-# 			x = 0
-# 			y = 3
-# 		}
-#         cavalry = {
-# 			x = 1
-# 			y = 0
-# 		}
-# 		cavalry = {
-# 			x = 1
-# 			y = 1
-# 		}
-# 		cavalry = {
-# 			x = 1
-# 			y = 2
-# 		}
-# 		cavalry = {
-# 			x = 1
-# 			y = 3
-# 		}
-# 	}
-# 	support = {
-# 		artillery = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 		recon = {
-# 			x = 0
-# 			y = 1
-# 		}
-# 	}
-# }
+division_template = {
+	name = "昌德卌四年型乙种战车师"	#装甲师
+	regiments = {
+		light_armor = { x = 0 y = 0}
+		light_armor = { x = 0 y = 1 }
+        medium_armor = { x = 0 y = 2 }
+        medium_armor = { x = 0 y = 3}
+		cavalry = { x = 1 y = 0}
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3}
+	}
+	support = {
+        artillery = { x = 0 y = 0}
+	}
+}
 
-# division_template = {
-# 	name = "昌德卌四年型关陇军甲种步兵师"	#步兵师
-# 	division_names_group = XBJ_INF_04
-# 	regiments = {
-# 		infantry = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 		infantry = {
-# 			x = 0
-# 			y = 1
-# 		}
-# 		infantry = {
-# 			x = 0
-# 			y = 2
-# 		}
-# 		infantry = {
-# 			x = 0
-# 			y = 3
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 0
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 1
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 2
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 3
-# 		}
-#         infantry = {
-# 			x = 2
-# 			y = 0
-# 		}
-# 		artillery_brigade = {
-# 			x = 2
-# 			y = 1
-# 		}
-# 	}
-# 	support = {
-# 		engineer = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 	}
-# }
+division_template = {
+	name = "骑行步兵师"	#骑兵师
+	regiments = {
+		cavalry = { x = 0 y = 0}
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0}
+		cavalry = { x = 1 y = 1 }
+        cavalry = { x = 2 y = 0}
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0}
+		recon = { x = 0 y = 1 }
+	}
+}
 
-# division_template = {
-# 	name = "昌德卌四年型关陇军乙种步兵师"	#步兵师
-# 	division_names_group = XBJ_INF_05
-# 	regiments = {
-# 		infantry = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 		infantry = {
-# 			x = 0
-# 			y = 1
-# 		}
-# 		infantry = {
-# 			x = 0
-# 			y = 2
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 0
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 1
-# 		}
-# 		infantry = {
-# 			x = 1
-# 			y = 2
-# 		}
-# 		infantry = {
-# 			x = 2
-# 			y = 0
-# 		}
-# 		infantry = {
-# 			x = 2
-# 			y = 1
-# 		}
-#         infantry = {
-# 			x = 2
-# 			y = 2
-# 		}
-# 	}
-# 	support = {
-# 		artillery = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 	}
-# }
+division_template = {
+	name = "昌德卌四年型近卫步兵师"	#步兵师
+	division_names_group = XBJ_INF_01
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 0
+			y = 3
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 2
+		}
+		infantry = {
+			x = 1
+			y = 3
+		}
+        infantry = {
+			x = 2
+			y = 0
+		}
+		artillery_brigade = {
+			x = 2
+			y = 1
+		}
+        artillery_brigade = {
+			x = 2
+			y = 2
+		}
+        artillery_brigade = {
+			x = 2
+			y = 3
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		artillery = {
+			x = 0
+			y = 1
+		}
+        recon = {
+			x = 0
+			y = 2
+		}
+	}
+}
 
-# division_template = {
-# 	name = "昌德卌五年型关陇军骑行步兵师"	#骑兵师
-# 	division_names_group = XBJ_CAV_03
-# 	regiments = {
-# 		cavalry = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 		cavalry = {
-# 			x = 0
-# 			y = 1
-# 		}
-# 		cavalry = {
-# 			x = 0
-# 			y = 2
-# 		}
-# 		cavalry = {
-# 			x = 1
-# 			y = 0
-# 		}
-#         cavalry = {
-# 			x = 1
-# 			y = 1
-# 		}
-# 		cavalry = {
-# 			x = 1
-# 			y = 2
-# 		}
-# 	}
-# 	support = {
-# 		artillery = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 		recon = {
-# 			x = 0
-# 			y = 1
-# 		}
-# 	}
-# }
+division_template = {
+	name = "昌德卌四年型西域驻屯步兵师"	#步兵师
+	division_names_group = XBJ_INF_02
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 0
+			y = 3
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 2
+		}
+		infantry = {
+			x = 1
+			y = 3
+		}
+        infantry = {
+			x = 2
+			y = 0
+		}
+		artillery_brigade = {
+			x = 2
+			y = 1
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+	}
+}
 
-# division_template = {
-# 	name = "昌德卌五年型近卫战车师"	#装甲师
-# 	division_names_group = XBJ_PAZ_01
-# 	regiments = {
-# 		medium_armor = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 		medium_armor = {
-# 			x = 0
-# 			y = 1
-# 		}
-#         medium_armor = {
-# 			x = 0
-# 			y = 2
-# 		}
-#         medium_armor = {
-# 			x = 0
-# 			y = 3
-# 		}
-# 		motorized = {
-# 			x = 1
-# 			y = 0
-# 		}
-# 		motorized = {
-# 			x = 1
-# 			y = 1
-# 		}
-# 		motorized = {
-# 			x = 1
-# 			y = 2
-# 		}
-# 		motorized = {
-# 			x = 1
-# 			y = 3
-# 		}
-# 	}
-# 	support = {
-# 		engineer = {
-# 			x = 0
-# 			y = 0
-# 		}
-# 		mot_recon = {
-# 			x = 0
-# 			y = 1
-# 		}
-#         artillery = {
-# 			x = 0
-# 			y = 2
-# 		}
-# 	}
-# }
+division_template = {
+	name = "昌德卌四年型西域卫戍步兵旅"	#卫戍旅
+	division_names_group = XBJ_INF_03
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+	}
+}
 
-#单位位置#
+division_template = {
+	name = "昌德卌四年型治安骑警旅"	#骑兵旅
+	division_names_group = XBJ_CAV_01
+	regiments = {
+		cavalry = {
+			x = 0
+			y = 0
+		}
+		cavalry = {
+			x = 0
+			y = 1
+		}
+		cavalry = {
+			x = 0
+			y = 2
+		}
+		cavalry = {
+			x = 0
+			y = 3
+		}
+	}
+	support = {
+		military_police = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+division_template = {
+	name = "昌德卌四年型西域骑行步兵师"	#骑兵师
+	division_names_group = XBJ_CAV_02
+	regiments = {
+		cavalry = {
+			x = 0
+			y = 0
+		}
+		cavalry = {
+			x = 0
+			y = 1
+		}
+		cavalry = {
+			x = 0
+			y = 2
+		}
+		cavalry = {
+			x = 0
+			y = 3
+		}
+        cavalry = {
+			x = 1
+			y = 0
+		}
+		cavalry = {
+			x = 1
+			y = 1
+		}
+		cavalry = {
+			x = 1
+			y = 2
+		}
+		cavalry = {
+			x = 1
+			y = 3
+		}
+	}
+	support = {
+		artillery = {
+			x = 0
+			y = 0
+		}
+		recon = {
+			x = 0
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "昌德卌四年型关陇军甲种步兵师"	#步兵师
+	division_names_group = XBJ_INF_04
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 0
+			y = 3
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 2
+		}
+		infantry = {
+			x = 1
+			y = 3
+		}
+        infantry = {
+			x = 2
+			y = 0
+		}
+		artillery_brigade = {
+			x = 2
+			y = 1
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+division_template = {
+	name = "昌德卌四年型关陇军乙种步兵师"	#步兵师
+	division_names_group = XBJ_INF_05
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 2
+		}
+		infantry = {
+			x = 2
+			y = 0
+		}
+		infantry = {
+			x = 2
+			y = 1
+		}
+        infantry = {
+			x = 2
+			y = 2
+		}
+	}
+	support = {
+		artillery = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+division_template = {
+	name = "昌德卌五年型关陇军骑行步兵师"	#骑兵师
+	division_names_group = XBJ_CAV_03
+	regiments = {
+		cavalry = {
+			x = 0
+			y = 0
+		}
+		cavalry = {
+			x = 0
+			y = 1
+		}
+		cavalry = {
+			x = 0
+			y = 2
+		}
+		cavalry = {
+			x = 1
+			y = 0
+		}
+        cavalry = {
+			x = 1
+			y = 1
+		}
+		cavalry = {
+			x = 1
+			y = 2
+		}
+	}
+	support = {
+		artillery = {
+			x = 0
+			y = 0
+		}
+		recon = {
+			x = 0
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "昌德卌五年型近卫战车师"	#装甲师
+	division_names_group = XBJ_PAZ_01
+	regiments = {
+		medium_armor = {
+			x = 0
+			y = 0
+		}
+		medium_armor = {
+			x = 0
+			y = 1
+		}
+        medium_armor = {
+			x = 0
+			y = 2
+		}
+        medium_armor = {
+			x = 0
+			y = 3
+		}
+		motorized = {
+			x = 1
+			y = 0
+		}
+		motorized = {
+			x = 1
+			y = 1
+		}
+		motorized = {
+			x = 1
+			y = 2
+		}
+		motorized = {
+			x = 1
+			y = 3
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		mot_recon = {
+			x = 0
+			y = 1
+		}
+        artillery = {
+			x = 0
+			y = 2
+		}
+	}
+}
+
+# 单位位置
 # units = {
 # 	division = {
 # 		division_name = {
@@ -1740,7 +1839,7 @@ units = {
 		division_template = "昌德卌四年型甲种步兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
-	} 
+	}
 	division= {
 		name = "西北乙种第11步兵师"
 		location =13465
@@ -1769,7 +1868,7 @@ units = {
 		division_template = "骑行步兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
-	} 
+	}
 	division= {
 		name = "西北第36骑行旅"
 		location =12846
@@ -1784,14 +1883,14 @@ units = {
 		division_template = "骑行步兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
-	} 
+	}
 	division= {
 		name = "西北第38骑行旅"
 		location =13458
 		division_template = "骑行步兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
-	} 
+	}
 }
 
 #航空队
@@ -1807,7 +1906,7 @@ air_wings = {
 
 air_wings = {
 	1210 = {
-		tactical_bomber_0 = {
+		tac_bomber_equipment_0 = {
 			owner = "XBJ"
 			amount = 25
 		}

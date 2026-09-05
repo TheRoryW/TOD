@@ -3,7 +3,7 @@ characters={
 		name=BRA_Washington_Luis_Pereira_de_Sousa
 		portraits={
 			civilian={
-				large="gfx/leaders/BRA/BRA_Washington_Luis_Pereira_de_Sousa.tga"
+				large="gfx/leaders/BRA/BRA_Washington_Luis_Pereira_de_Sousa.png"
 			}
 		}
 		country_leader={
@@ -18,7 +18,7 @@ characters={
 		name=BRA_Getulio_Dornelles_Vargas
 		portraits={
 			civilian={
-				large="gfx/leaders/BRA/BRA_Getulio_Dornelles_Vargas.tga"
+				large="gfx/leaders/BRA/BRA_Getulio_Dornelles_Vargas.png"
 			}
 		}
 		country_leader={

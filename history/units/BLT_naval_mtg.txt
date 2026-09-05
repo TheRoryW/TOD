@@ -5,15 +5,15 @@ units = {
 		task_force = {
 			name = "BLT_Baltic_Squadron"
 			location = 9340
-			ship = { name = "BLT Destroyer 1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BLT version_name = "Interwar Destroyer" } } }
-			ship = { name = "BLT Destroyer 2" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BLT version_name = "Interwar Destroyer" } } }
-			ship = { name = "BLT Destroyer 3" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BLT version_name = "Interwar Destroyer" } } }
-			ship = { name = "BLT Destroyer 4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BLT version_name = "Interwar Destroyer" } } }
+			ship = { name = "BLT Destroyer 1 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BLT version_name = "Interwar Destroyer" } } }
+			ship = { name = "BLT Destroyer 2 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BLT version_name = "Interwar Destroyer" } } }
+			ship = { name = "BLT Destroyer 3 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BLT version_name = "Interwar Destroyer" } } }
+			ship = { name = "BLT Destroyer 4 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BLT version_name = "Interwar Destroyer" } } }
 		}
 		task_force = {
 			name = "BLT_Submarine_Flotilla"
 			location = 9340
-			ship = { name = "BLT Submarine 1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BLT version_name = "Interwar Submarine" } } }
+			ship = { name = "BLT Submarine 1 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BLT version_name = "Interwar Submarine" } } }
 		}
 	}
 }

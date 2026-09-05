@@ -21,7 +21,7 @@ TOD_annexation_decisions = {
 			release_puppet = BRM
 			set_autonomy = {
 				target = BRM
-				autonomy_state = autonomy_puppet
+				autonomous_state = autonomy_puppet
 			}
 		}
 	}

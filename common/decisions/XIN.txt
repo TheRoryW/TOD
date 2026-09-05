@@ -80,12 +80,11 @@ XIN_BRM_war = {
         is_good = yes
         days_mission_timeout = 365
         timeout_effect = {
-            white_peace = BRM
         }
         complete_effect = {
             set_autonomy = {
                 target = BRM
-                autonomy_state = autonomy_puppet
+                autonomous_state = autonomy_puppet
             }
         }
     }
@@ -96,10 +95,8 @@ XIN_BRM_war = {
         is_good = yes
         days_mission_timeout = 365
         timeout_effect = {
-            white_peace = XIN
         }
         complete_effect = {
-            white_peace = XIN
         }
     }
 

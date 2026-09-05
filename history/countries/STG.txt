@@ -1,8 +1,5 @@
 capital = 608
 
-oob = "STG_1937"
-
-
 set_politics = {
 	ruling_party = leader_despotism
 	last_election = "1935.3.14"
@@ -598,4 +595,3 @@ if = {
 
 
 ### Corps Commander
-

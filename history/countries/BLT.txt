@@ -4,6 +4,17 @@ oob = "BLT_1936"
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+	}
 	set_naval_oob = "BLT_naval_mtg"
 	else = {
 		set_naval_oob = "BLT_naval_legacy"

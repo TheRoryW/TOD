@@ -1,16 +1,16 @@
 ﻿
 focus_tree = {
 	id = Italian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = ITA
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 2000 y = 2000 }
@@ -22,7 +22,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -33,7 +33,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -58,14 +58,14 @@ focus_tree = {
 		y = 1
 
 		cost = 2
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 10}
 		available = {}
-		
+
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -76,21 +76,20 @@ focus_tree = {
 		icon = GFX_focus_ITA_gongdangwenti
 		x = 9
 		y = 2
-		
+
 		prerequisite = { focus = ITA_1935niandezongjie}
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 90}
 		available = {
-			### has_political_power = 150	 # invalid equality form; keep as reference
 			has_political_power > 149
 		}
-		
+
 		completion_reward = {}
 	}
 	#邀请墨索里尼
@@ -99,24 +98,24 @@ focus_tree = {
 		icon = GFX_focus_ITA_yaoqingmosuolini
 		x = 9
 		y = 3
-		
+
 		prerequisite = { focus = ITA_gongdangwenti}
 
 		cost = 1
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 100}
 		available = {}
-		
+
 		completion_reward = {
 				set_power_balance = {
 					id = ITA_power_balance
-					left_side = ITA_mussolini_side 
+					left_side = ITA_mussolini_side
 					right_side = ITA_grand_council_side
-					set_default = yes 
+					set_default = yes
 				}
 
 		}
@@ -127,19 +126,19 @@ focus_tree = {
 		icon = GFX_focus_ITA_jiyumosuolinibufenquanli
 		x = 8
 		y = 4
-		
+
 		prerequisite = { focus = ITA_yaoqingmosuolini}
 		mutually_exclusive = { focus =  ITA_jiyumosuolinijiaodaquanli}
 
 		cost = 1
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 50}
 		available = {}
-		
+
 		completion_reward = {
 			ITA_bop_low_decrease_effect = yes
 		}
@@ -150,19 +149,19 @@ focus_tree = {
 		icon = GFX_focus_ITA_jiyumosuolinijiaodaquanli
 		x = 10
 		y = 4
-		
+
 		prerequisite = { focus = ITA_yaoqingmosuolini}
 		mutually_exclusive = { focus =  ITA_jiyumosuolinibufenquanli}
 
 		cost = 1
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 50}
 		available = {}
-		
+
 		completion_reward = {
 			ITA_bop_high_decrease_effect = yes
 	}
@@ -173,18 +172,18 @@ focus_tree = {
 		icon = GFX_focus_ITA_mosuolinideyijian
 		x = 9
 		y = 5
-		
+
 		prerequisite = {focus = ITA_jiyumosuolinibufenquanli focus = ITA_jiyumosuolinijiaodaquanli}
 
 		cost = 1
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 100}
 		available = {}
-		
+
 		completion_reward = {
 			ITA_bop_very_low_decrease_effect = yes
 		}
@@ -195,18 +194,18 @@ focus_tree = {
 		icon = GFX_focus_ITA_junxuwenti
 		x = 5
 		y = 6
-		
+
 		prerequisite = { focus = ITA_mosuolinideyijian}
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 40}
 		available = {}
-		
+
 		completion_reward = {}
 	}
 	#扩大生产
@@ -215,18 +214,18 @@ focus_tree = {
 		icon = GFX_focus_ITA_kuodashengchan
 		x = 4
 		y = 7
-		
+
 		prerequisite = { focus = ITA_junxuwenti}
 
 		cost = 10
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 15}
 		available = {}
-		
+
 		completion_reward = {}
 	}
 	#从外国购买武器
@@ -235,18 +234,18 @@ focus_tree = {
 		icon = GFX_focus_ITA_congwaiguogoumaiwuqi
 		x = 6
 		y = 7
-		
+
 		prerequisite = { focus = ITA_junxuwenti}
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 15}
 		available = {}
-		
+
 		completion_reward = {
 			add_political_power = -50
 		}
@@ -257,18 +256,18 @@ focus_tree = {
 		icon = GFX_focus_ITA_zuozhanjihua
 		x = 9
 		y = 6
-		
+
 		prerequisite = { focus = ITA_mosuolinideyijian}
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 40}
 		available = {}
-		
+
 		completion_reward = {}
 	}
 	#踹开墨索里尼
@@ -277,19 +276,19 @@ focus_tree = {
 		icon = GFX_focus_ITA_chuaikaimosuolini
 		x = 8
 		y = 7
-		
+
 		prerequisite = { focus = ITA_zuozhanjihua}
 		mutually_exclusive = { focus = ITA_yumosuolinigongtongshangyi }
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 50}
 		available = {}
-		
+
 		completion_reward = {
 			ITA_bop_very_low_increase_effect = yes
 		}
@@ -300,19 +299,19 @@ focus_tree = {
 		icon = GFX_focus_ITA_yumosuolinigongtongshangyi
 		x = 10
 		y = 7
-		
+
 		prerequisite = { focus = ITA_zuozhanjihua}
 		mutually_exclusive = { focus = ITA_chuaikaimosuolini }
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 50}
 		available = {}
-		
+
 		completion_reward = {
 			ITA_bop_very_low_decrease_effect = yes
 		}
@@ -323,19 +322,19 @@ focus_tree = {
 		icon = GFX_focus_ITA_wanchengbushu
 		x = 9
 		y = 9
-		
+
 		prerequisite = { focus = ITA_chuaikaimosuolini focus = ITA_yumosuolinigongtongshangyi}
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 100}
 		available = {
 		}
-		
+
 		completion_reward = {}
 	}
 	#军队问题
@@ -344,18 +343,18 @@ focus_tree = {
 		icon = GFX_focus_ITA_junduiwenti
 		x = 14
 		y = 6
-		
+
 		prerequisite = { focus = ITA_mosuolinideyijian}
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 40}
 		available = {}
-		
+
 		completion_reward = {}
 	}
 	#处理黑衫军
@@ -364,18 +363,18 @@ focus_tree = {
 		icon = GFX_focus_ITA_chuliheishanjun
 		x = 12
 		y = 7
-		
+
 		prerequisite = { focus = ITA_junduiwenti}
 
 		cost = 1
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 50}
 		available = {}
-		
+
 		completion_reward = {
 			add_political_power = -60
 		}
@@ -386,19 +385,19 @@ focus_tree = {
 		icon = GFX_focus_ITA_hunbian
 		x = 11
 		y = 8
-		
+
 		prerequisite = { focus = ITA_chuliheishanjun}
 		mutually_exclusive = { focus = ITA_xinjun }
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 50}
 		available = {}
-		
+
 		completion_reward = {
 			ITA_bop_very_low_decrease_effect = yes
 		}
@@ -409,19 +408,19 @@ focus_tree = {
 		icon = GFX_focus_ITA_xinjun
 		x = 13
 		y = 8
-		
+
 		prerequisite = { focus = ITA_chuliheishanjun}
 		mutually_exclusive = { focus = ITA_hunbian }
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 50}
 		available = {}
-		
+
 		completion_reward = {
 			ITA_bop_low_decrease_effect = yes
 		}
@@ -432,18 +431,18 @@ focus_tree = {
 		icon = GFX_focus_ITA_quebaozhongcheng
 		x = 16
 		y = 7
-		
+
 		prerequisite = { focus = ITA_junduiwenti}
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 50}
 		available = {}
-		
+
 		completion_reward = {
 			add_political_power = -60
 		}
@@ -454,18 +453,18 @@ focus_tree = {
 		icon = GFX_focus_ITA_shenrudiying
 		x = 15
 		y = 8
-		
+
 		prerequisite = { focus = ITA_quebaozhongcheng}
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 10}
 		available = {}
-		
+
 		completion_reward = {}
 	}
 	#清洗间谍
@@ -474,18 +473,18 @@ focus_tree = {
 		icon = GFX_focus_ITA_qingxijiandie
 		x = 17
 		y = 8
-		
+
 		prerequisite = { focus = ITA_quebaozhongcheng}
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 10}
 		available = {}
-		
+
 		completion_reward = {}
 	}
 	#向法国派出使团
@@ -494,18 +493,18 @@ focus_tree = {
 		icon = GFX_focus_ITA_xiangfaguopaichushituan
 		x = 14
 		y = 2
-		
+
 		prerequisite = { focus = ITA_1935niandezongjie}
 
 		cost = 1
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 100}
 		available = {}
-		
+
 		completion_reward = {}
 	}
 	#经济管制政策
@@ -514,18 +513,18 @@ focus_tree = {
 		icon = GFX_focus_ITA_jingjiguanzhizhengce
 		x = 19
 		y = 2
-		
+
 		prerequisite = { focus = ITA_1935niandezongjie}
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 100}
 		available = {}
-		
+
 		completion_reward = {
 			add_ideas = low_economic_mobilisation
 		}
@@ -536,21 +535,20 @@ focus_tree = {
 		icon = GFX_focus_ITA_nanfanggongyezhenxing
 		x = 18
 		y = 3
-		
+
 		prerequisite = { focus = ITA_jingjiguanzhizhengce}
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 10}
 		available = {}
-		
+
 		completion_reward = {
 			117 = {
-### 				limit = {  # limit is trigger, not effect
 				if = {
 					limit = {
 					free_building_slots = {
@@ -568,7 +566,6 @@ focus_tree = {
 				}
 			}
 			156 = {
-### 				limit = {  # limit is trigger, not effect
 				if = {
 					limit = {
 					free_building_slots = {
@@ -593,21 +590,20 @@ focus_tree = {
 		icon = GFX_focus_ITA_junshitouzi
 		x = 18
 		y = 4
-		
+
 		prerequisite = { focus = ITA_nanfanggongyezhenxing}
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 10}
 		available = {}
-		
+
 		completion_reward = {
 			117 = {
-### 				limit = {  # limit is trigger, not effect
 				if = {
 					limit = {
 					free_building_slots = {
@@ -625,7 +621,6 @@ focus_tree = {
 				}
 			}
 			156 = {
-### 				limit = {  # limit is trigger, not effect
 				if = {
 					limit = {
 					free_building_slots = {
@@ -650,18 +645,18 @@ focus_tree = {
 		icon = GFX_focus_ITA_jianshaozhengfukaizhi
 		x = 20
 		y = 4
-		
+
 		prerequisite = { focus = ITA_choudiaozhimindizijin}
 
 		cost = 3
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 10}
 		available = {}
-		
+
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -671,19 +666,19 @@ focus_tree = {
 		id = ITA_choudiaozhimindizijin
 		icon = GFX_focus_ITA_choudiaozhimindizijin
 		x = 20
-		y = 3	
-		
+		y = 3
+
 		prerequisite = { focus = ITA_jingjiguanzhizhengce}
 
 		cost = 5
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		ai_will_do = {factor = 100}
 		available = {}
-		
+
 		completion_reward = {
 			add_political_power = 100
 		}

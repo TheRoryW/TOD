@@ -776,11 +776,7 @@ country_event = {
 			GPS = {country_event = { id = GPSevents.9 days = 252 } }   #1937.9.20	
 			GPS = {country_event = { id = GPSevents.35 days = 277 } }   #1937.10.15	
 			retire_character = MNG_1_yu_zhishan
-			retire_character = MNG_1_lian_chengji
 			retire_character = MNG_1_yang_yuting
-			retire_character = MNG_1_chen_duxiu
-			retire_character = MNG_1_du_jiceng
-			retire_character = MNG_1_li_dazhao
 			retire_character = MNG_1_ma_zhanshan
 			retire_character = MNG_1_wu_junsheng
 			retire_character = MNG_1_zhang_zuoxiang
@@ -818,19 +814,15 @@ country_event = {
 		MNG = {
 			set_autonomy = {
 				target = GPS
-				autonomy_state = tod_ming_tongzhidusi
+				autonomous_state = tod_ming_tongzhidusi
 			}
 			hidden_effect = {
 				transfer_units_fraction= {
 					target = GPS
-					size = 1
 					stockpile_ratio = 0.15
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
 				GPS = {
 					transfer_navy = {
@@ -896,19 +888,15 @@ country_event = {
 		MNG = {
 			set_autonomy = {
 				target = GPS
-				autonomy_state = tod_ming_tongzhidusi
+				autonomous_state = tod_ming_tongzhidusi
 			}
 			hidden_effect = {
 				transfer_units_fraction= {
 					target = GPS
-					size = 1
 					stockpile_ratio = 0.15
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
 				GPS = {
 					transfer_navy = {
@@ -977,26 +965,25 @@ country_event = {
 	option = { 
 		name = mingcivwar.77.a
 		complete_national_focus = MNG_soubudatonghui
-		MNG = {
-			set_autonomy = {
-				target = ROC
-				autonomy_state = tod_ming_tongzhidusi
-			}
-			hidden_effect = {
-				transfer_units_fraction= {
+		if = {
+			limit = { country_exists = ROC }
+			MNG = {
+				set_autonomy = {
 					target = ROC
-					size = 1
-					stockpile_ratio = 0.15
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					autonomous_state = tod_ming_tongzhidusi
 				}
-				ROC = {
-					transfer_navy = {
-						target = MNG
+				hidden_effect = {
+					transfer_units_fraction= {
+						target = ROC
+						stockpile_ratio = 0.15
+						army_ratio = 0
+						navy_ratio = 0
+						air_ratio = 0
+					}
+					ROC = {
+						transfer_navy = {
+							target = MNG
+						}
 					}
 				}
 			}
@@ -1008,47 +995,57 @@ country_event = {
 			delete_unit_template_and_units = { division_template = "昌德卌四年型华南乙种步兵师" }
 			delete_unit_template_and_units = { division_template = "昌德卌四年型华南甲种战车师" }
 			delete_unit_template_and_units = { division_template = "昌德卌四年型华南乙种战车师" }
-			ROC = {
-				add_state_core = 821
-				transfer_state = 821
+			if = {
+				limit = { country_exists = ROC }
+				ROC = {
+					add_state_core = 821
+					transfer_state = 821
+				}
 			}
-			ROC = {
-				add_state_core = 1194
-				transfer_state = 1194
+			if = {
+				limit = { country_exists = ROC }
+				ROC = {
+					add_state_core = 1194
+					transfer_state = 1194
+				}
 			}
 		}
-		ROC = {
-			hidden_effect = {
-				set_cosmetic_tag = ROC_ming
-				load_oob = "ROC_1937"
-				set_politics = {
-					ruling_party =  leader_despotism
-					last_election = "1936.1.1"
-					election_frequency = 48
-					elections_allowed = no
-				}
+		if = {
+			limit = { country_exists = ROC }
+			ROC = {
+				hidden_effect = {
+					set_cosmetic_tag = ROC_ming
+					load_oob = "ROC_1937"
+					set_politics = {
+						ruling_party =  leader_despotism
+						last_election = "1936.1.1"
+						election_frequency = 48
+						elections_allowed = no
+					}
 			
-				set_popularities = {
-					vanguard_socialism = 0
-					council_socialism = 2
-					moderate_socialism = 5
-					agroindustrial_socialism = 8
-					social_democrat = 10
-					consociationalism = 15
-					liberal_democracy = 5
-					conservative_democracy = 5
-					authoritarian_oligarchy = 0
-					leader_despotism = 45
-					sacred_revivalism = 0
-					national_corporatism = 5
-				}
+					set_popularities = {
+						vanguard_socialism = 0
+						council_socialism = 2
+						moderate_socialism = 5
+						agroindustrial_socialism = 8
+						social_democrat = 10
+						consociationalism = 15
+						liberal_democracy = 5
+						conservative_democracy = 5
+						authoritarian_oligarchy = 0
+						leader_despotism = 45
+						sacred_revivalism = 0
+						national_corporatism = 5
+					}
 
-				inherit_technology = MNG
+					inherit_technology = MNG
+				}
 			}
 		}
 	}
 	option = { 
 		name = mingcivwar.77.b
+		trigger = { country_exists = ROC }
 		ROC = {change_tag_from = ROOT}
 		MNG_release_ROC = yes
 		MNG = {
@@ -1057,7 +1054,7 @@ country_event = {
 		MNG = {
 			set_autonomy = {
 				target = ROC
-				autonomy_state = tod_ming_tongzhidusi
+				autonomous_state = tod_ming_tongzhidusi
 			}
 			hidden_effect = {
 				delete_unit_template_and_units = { division_template = "昌德卌四年型华南近卫步兵师" }
@@ -1067,14 +1064,10 @@ country_event = {
 				delete_unit_template_and_units = { division_template = "昌德卌四年型华南乙种战车师" }
 				transfer_units_fraction= {
 					target = ROC
-					size = 1
 					stockpile_ratio = 0.15
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
 				ROC = {
 					transfer_navy = {
@@ -1233,26 +1226,12 @@ country_event = {
 			MNG = {
 				transfer_units_fraction= {
 					target = XBJ
-					size = 1
 					stockpile_ratio = 0.2
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
-				retire_character = MNG_4_Zhu_Juanshen
-				retire_character = MNG_4_Fan_Jingsheng
-				retire_character = MNG_4_Jin_Shuren
 				retire_character = MNG_4_Jiang_Baili
-				retire_character = MNG_4_Ma_Hongbing
-				retire_character = MNG_4_Zhu_Ruichi
-				retire_character = MNG_4_Ehmetjan_Qasim
-				retire_character = MNG_4_Chen_Cheng
-				retire_character = MNG_4_Zunun_Taipov
-				retire_character = MNG_4_Du_Qianxue
-				retire_character = MNG_4_Fan_Yaonan
 				retire_character = MNG_4_Jiang_Dingwen
 				retire_character = MNG_4_Cheng_Xixian
 				retire_character = MNG_4_Gao_Jun
@@ -1382,14 +1361,10 @@ country_event = {
 			hidden_effect = {
 				transfer_units_fraction= {
 					target = XBJ
-					size = 1
 					stockpile_ratio = 0.2
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
 				MNG = {country_event = { id = mingcivwar.79 days = 2 } }
 			}
@@ -1468,37 +1443,19 @@ country_event = {
 			MNG = {
 				transfer_units_fraction= {
 					target = GOS
-					size = 1
 					stockpile_ratio = 0.22
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
 			#领导人
-				retire_character = MNG_2_characters_wwkx
-				retire_character = MNG_2_characters_zxz
-				retire_character = MNG_2_characters_yk
-				retire_character = MNG_2_characters_wsh
-				retire_character = MNG_2_characters_zzd
-				retire_character = MNG_2_characters_xbh
-				retire_character = MNG_2_characters_lyz
-				retire_character = MNG_2_characters_hjw
-				retire_character = MNG_2_characters_qym
 				retire_character = MNG_2_characters_scz
-				retire_character = MNG_2_characters_zyx
-				retire_character = MNG_2_characters_zbj
 			#将领	
 				retire_character = MNG_2_ctk
-				retire_character = MNG_2_scz
 				retire_character = MNG_2_lz
 				retire_character = MNG_2_lg
 				retire_character = MNG_2_hj
 				retire_character = MNG_2_jyw
-				retire_character = MNG_2_zzx
-				retire_character = MNG_2_zzx
 				retire_character = MNG_2_cyb
 				retire_character = MNG_2_gzt
 				retire_character = MNG_2_llj
@@ -1622,37 +1579,19 @@ country_event = {
 			MNG = {
 				transfer_units_fraction= {
 					target = GOS
-					size = 1
 					stockpile_ratio = 0.22
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
 				#领导人
-					retire_character = MNG_2_characters_wwkx
-					retire_character = MNG_2_characters_zxz
-					retire_character = MNG_2_characters_yk
-					retire_character = MNG_2_characters_wsh
-					retire_character = MNG_2_characters_zzd
-					retire_character = MNG_2_characters_xbh
-					retire_character = MNG_2_characters_lyz
-					retire_character = MNG_2_characters_hjw
-					retire_character = MNG_2_characters_qym
 					retire_character = MNG_2_characters_scz
-					retire_character = MNG_2_characters_zyx
-					retire_character = MNG_2_characters_zbj
 				#将领	
 					retire_character = MNG_2_ctk
-					retire_character = MNG_2_scz
 					retire_character = MNG_2_lz
 					retire_character = MNG_2_lg
 					retire_character = MNG_2_hj
 					retire_character = MNG_2_jyw
-					retire_character = MNG_2_zzx
-					retire_character = MNG_2_zzx
 					retire_character = MNG_2_cyb
 					retire_character = MNG_2_gzt
 					retire_character = MNG_2_llj
@@ -1785,33 +1724,20 @@ country_event = {
 			MNG = {
 				transfer_units_fraction= {
 					target = XIN
-					size = 1
 					stockpile_ratio = 0.11
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
 				transfer_units_fraction= {
 					target = SIC
-					size = 1
 					stockpile_ratio = 0.15
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
-				retire_character = MNG_5_He_Guoguang
-				retire_character = MNG_5_Zhang_lan
-				retire_character = MNG_5_Zeng_Qi
 				retire_character = MNG_5_Yang_Sen
-				retire_character = MNG_5_Yin_Changheng
 				retire_character = MNG_5_Xiong_Kewu
-				retire_character = MNG_5_Wang_Youmu
 				retire_character = MNG_5_wang_zanxu
 				retire_character = MNG_5_wang_lingji
 				retire_character = MNG_5_liu_chengxun
@@ -1893,33 +1819,20 @@ country_event = {
 			MNG = {
 				transfer_units_fraction= {
 					target = XIN
-					size = 1
 					stockpile_ratio = 0.11
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
 				transfer_units_fraction= {
 					target = SIC
-					size = 1
 					stockpile_ratio = 0.15
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
-				retire_character = MNG_5_He_Guoguang
-				retire_character = MNG_5_Zhang_lan
-				retire_character = MNG_5_Zeng_Qi
 				retire_character = MNG_5_Yang_Sen
-				retire_character = MNG_5_Yin_Changheng
 				retire_character = MNG_5_Xiong_Kewu
-				retire_character = MNG_5_Wang_Youmu
 				retire_character = MNG_5_wang_zanxu
 				retire_character = MNG_5_wang_lingji
 				retire_character = MNG_5_liu_chengxun
@@ -2001,33 +1914,20 @@ country_event = {
 			MNG = {
 				transfer_units_fraction= {
 					target = XIN
-					size = 1
 					stockpile_ratio = 0.11
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
 				transfer_units_fraction= {
 					target = SIC
-					size = 1
 					stockpile_ratio = 0.15
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
-				retire_character = MNG_5_He_Guoguang
-				retire_character = MNG_5_Zhang_lan
-				retire_character = MNG_5_Zeng_Qi
 				retire_character = MNG_5_Yang_Sen
-				retire_character = MNG_5_Yin_Changheng
 				retire_character = MNG_5_Xiong_Kewu
-				retire_character = MNG_5_Wang_Youmu
 				retire_character = MNG_5_wang_zanxu
 				retire_character = MNG_5_wang_lingji
 				retire_character = MNG_5_liu_chengxun
@@ -2066,14 +1966,10 @@ country_event = {
 			MNG = {
 				transfer_units_fraction= {
 					target = MOB
-					size = 1
 					stockpile_ratio = 0.07
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
 			}
 			MNG = {country_event = { id = mingcivwar.82 days = 1} }
@@ -2091,14 +1987,10 @@ country_event = {
 			MNG = {
 				transfer_units_fraction= {
 					target = MOB
-					size = 1
 					stockpile_ratio = 0.07
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
 			}
 			MNG = {country_event = { id = mingcivwar.82 days = 1} }
@@ -2217,37 +2109,25 @@ country_event = {
 			MNG = {
 				transfer_units_fraction= {
 					target = LSM
-					size = 1
 					stockpile_ratio = 0.10
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 
 				}
 				transfer_units_fraction= {
 					target = MLJ
-					size = 1
 					stockpile_ratio = 0.10
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
 				transfer_units_fraction= {
 					target = HWH
-					size = 1
 					stockpile_ratio = 0.10
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
+					army_ratio = 0
+					navy_ratio = 0
+					air_ratio = 0
 				}
 			}
 			LSM = {
@@ -2294,27 +2174,6 @@ country_event = {
 		hidden_effect = {
 			dismantle_faction = yes
 			MNG = {
-				transfer_units_fraction= {
-					target = STG
-					size = 1
-					stockpile_ratio = 0.25
-					keep_unit_leaders = {
-						
-					}
-					keep_unit_leaders_trigger = {
-						has_trait = MNG_damingjungguan
-					}
-				}
-				retire_character = MNG_3_zhu_rongkun
-				retire_character = MNG_3_zhu_rongkun_kongjun
-				retire_character = MNG_3_zhu_rongkun_haijun
-				retire_character = MNG_3_yi_xinhui
-				retire_character = MNG_3_wang_yongjiang
-				retire_character = MNG_3_zhu_qichen
-				retire_character = MNG_3_liang_ruhao
-				retire_character = MNG_3_chen_yilong
-				retire_character = MNG_3_bai_lang
-				retire_character = MNG_3_zhou_enlai
 				retire_character = MNG_3_sun_chuanfang
 				retire_character = MNG_3_yan_xishan
 				retire_character = MNG_3_wang_shizheng
@@ -2351,10 +2210,6 @@ country_event = {
 				retire_character = MNG_3_wu_mingling
 				retire_character = MNG_3_tang_xiangming
 				retire_character = MNG_3_qi_kuiyuan
-				retire_character = MNG_3_zunhuangrangyishe
-				retire_character = MNG_3_cai_yuanpei
-				retire_character = MNG_3_ge_gongzhen
-				retire_character = MNG_3_zhao_shiyan 
 			}
 		}
 	}
@@ -2373,9 +2228,20 @@ country_event = {
 				# load_oob = "STG_NAVAL"
 		}
 		MNG_release_STG = yes
-		hidden_effect = {
-			load_oob = "STG_1937"
-			load_oob = "STG_air"
+		MNG = {
+			transfer_units_fraction = {
+				target = STG
+				stockpile_ratio = 0.25
+				army_ratio = 0
+				navy_ratio = 0
+				air_ratio = 0
+			}
+		}
+		STG = {
+			hidden_effect = {
+				load_oob = "STG_1937"
+				load_oob = "STG_air"
+			}
 		}
 		STG = {
 			change_tag_from = ROOT
@@ -2476,6 +2342,366 @@ news_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {name = mingcivwar.1005.a}
+}
+
+# Sichuan constitutional government: merger talks with the Republican Army.
+country_event = {
+	id = mingcivwar.1100
+	title = mingcivwar.1100.t
+	desc = mingcivwar.1100.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1100.a
+		ai_chance = { factor = 50 }
+		SIC = { country_event = { id = mingcivwar.1101 days = 1 } }
+	}
+	option = {
+		name = mingcivwar.1100.b
+		ai_chance = { factor = 50 }
+		SIC = { country_event = { id = mingcivwar.1102 days = 1 } }
+	}
+}
+country_event = {
+	id = mingcivwar.1101
+	title = mingcivwar.1101.t
+	desc = mingcivwar.1101.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1101.a
+		ROC = { every_unit_leader = { set_nationality = SIC } }
+		annex_country = { target = ROC transfer_troops = yes }
+		SIC_Sichuan_integration_effect = yes
+	}
+}
+country_event = {
+	id = mingcivwar.1102
+	title = mingcivwar.1102.t
+	desc = mingcivwar.1102.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1102.a
+		ai_chance = { factor = 50 }
+		ROC = { country_event = { id = mingcivwar.1103 days = 1 } }
+	}
+	option = {
+		name = mingcivwar.1102.b
+		ai_chance = { factor = 50 }
+		ROC = { country_event = { id = mingcivwar.1104 days = 1 } }
+	}
+}
+country_event = {
+	id = mingcivwar.1103
+	title = mingcivwar.1103.t
+	desc = mingcivwar.1103.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1103.a
+		SIC = {
+			clr_country_flag = SIC_hebing_tanpan_jinxingzhong
+			every_unit_leader = { set_nationality = ROC }
+		}
+		annex_country = { target = SIC transfer_troops = yes }
+	}
+}
+country_event = {
+	id = mingcivwar.1104
+	title = mingcivwar.1104.t
+	desc = mingcivwar.1104.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = mingcivwar.1104.a SIC = { country_event = { id = mingcivwar.1105 days = 1 } } }
+}
+country_event = {
+	id = mingcivwar.1105
+	title = mingcivwar.1105.t
+	desc = mingcivwar.1105.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1105.a
+		set_country_flag = MNG_SIC_ROC_hebing_tanpanpolie
+		clr_country_flag = SIC_hebing_tanpan_jinxingzhong
+	}
+}
+
+# Sichuan constitutional government: merger talks with the Northeast Red Army.
+country_event = {
+	id = mingcivwar.1106
+	title = mingcivwar.1106.t
+	desc = mingcivwar.1106.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1106.a
+		ai_chance = { factor = 30 }
+		SIC = { country_event = { id = mingcivwar.1107 days = 1 } }
+	}
+	option = {
+		name = mingcivwar.1106.b
+		ai_chance = { factor = 70 }
+		SIC = { country_event = { id = mingcivwar.1108 days = 1 } }
+	}
+}
+country_event = {
+	id = mingcivwar.1107
+	title = mingcivwar.1107.t
+	desc = mingcivwar.1107.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1107.a
+		SRC = { every_unit_leader = { set_nationality = SIC } }
+		annex_country = { target = SRC transfer_troops = yes }
+		SIC_Sichuan_integration_effect = yes
+	}
+}
+country_event = {
+	id = mingcivwar.1108
+	title = mingcivwar.1108.t
+	desc = mingcivwar.1108.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1108.a
+		ai_chance = { factor = 50 }
+		SRC = { country_event = { id = mingcivwar.1109 days = 1 } }
+	}
+	option = {
+		name = mingcivwar.1108.b
+		ai_chance = { factor = 50 }
+		SRC = { country_event = { id = mingcivwar.1110 days = 1 } }
+	}
+}
+country_event = {
+	id = mingcivwar.1109
+	title = mingcivwar.1109.t
+	desc = mingcivwar.1109.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1109.a
+		SIC = {
+			clr_country_flag = SIC_hebing_tanpan_jinxingzhong
+			every_unit_leader = { set_nationality = SRC }
+		}
+		annex_country = { target = SIC transfer_troops = yes }
+	}
+}
+country_event = {
+	id = mingcivwar.1110
+	title = mingcivwar.1110.t
+	desc = mingcivwar.1110.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = mingcivwar.1110.a SIC = { country_event = { id = mingcivwar.1111 days = 1 } } }
+}
+country_event = {
+	id = mingcivwar.1111
+	title = mingcivwar.1111.t
+	desc = mingcivwar.1111.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1111.a
+		set_country_flag = MNG_SIC_SRC_hebing_tanpanpolie
+		clr_country_flag = SIC_hebing_tanpan_jinxingzhong
+	}
+}
+
+# Sichuan Revolutionary Government: merger talks with the Republican Army.
+country_event = {
+	id = mingcivwar.1112
+	title = mingcivwar.1112.t
+	desc = mingcivwar.1112.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1112.a
+		ai_chance = { factor = 50 }
+		SCG = { country_event = { id = mingcivwar.1113 days = 1 } }
+	}
+	option = {
+		name = mingcivwar.1112.b
+		ai_chance = { factor = 50 }
+		SCG = { country_event = { id = mingcivwar.1114 days = 1 } }
+	}
+}
+country_event = {
+	id = mingcivwar.1113
+	title = mingcivwar.1113.t
+	desc = mingcivwar.1113.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1113.a
+		ROC = { every_unit_leader = { set_nationality = SCG } }
+		annex_country = { target = ROC transfer_troops = yes }
+		SCG_Sichuan_integration_effect = yes
+	}
+}
+country_event = {
+	id = mingcivwar.1114
+	title = mingcivwar.1114.t
+	desc = mingcivwar.1114.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1114.a
+		ai_chance = { factor = 50 }
+		ROC = { country_event = { id = mingcivwar.1115 days = 1 } }
+	}
+	option = {
+		name = mingcivwar.1114.b
+		ai_chance = { factor = 50 }
+		ROC = { country_event = { id = mingcivwar.1116 days = 1 } }
+	}
+}
+country_event = {
+	id = mingcivwar.1115
+	title = mingcivwar.1115.t
+	desc = mingcivwar.1115.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1115.a
+		SCG = {
+			clr_country_flag = SCG_hebing_tanpan_jinxingzhong
+			every_unit_leader = { set_nationality = ROC }
+		}
+		annex_country = { target = SCG transfer_troops = yes }
+	}
+}
+country_event = {
+	id = mingcivwar.1116
+	title = mingcivwar.1116.t
+	desc = mingcivwar.1116.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = mingcivwar.1116.a SCG = { country_event = { id = mingcivwar.1117 days = 1 } } }
+}
+country_event = {
+	id = mingcivwar.1117
+	title = mingcivwar.1117.t
+	desc = mingcivwar.1117.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1117.a
+		set_country_flag = MNG_SCG_ROC_hebing_tanpanpolie
+		clr_country_flag = SCG_hebing_tanpan_jinxingzhong
+	}
+}
+
+# Sichuan Revolutionary Government: merger talks with the Northeast Red Army.
+country_event = {
+	id = mingcivwar.1118
+	title = mingcivwar.1118.t
+	desc = mingcivwar.1118.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1118.a
+		ai_chance = { factor = 30 }
+		SCG = { country_event = { id = mingcivwar.1119 days = 1 } }
+	}
+	option = {
+		name = mingcivwar.1118.b
+		ai_chance = { factor = 70 }
+		SCG = { country_event = { id = mingcivwar.1120 days = 1 } }
+	}
+}
+country_event = {
+	id = mingcivwar.1119
+	title = mingcivwar.1119.t
+	desc = mingcivwar.1119.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1119.a
+		SRC = { every_unit_leader = { set_nationality = SCG } }
+		annex_country = { target = SRC transfer_troops = yes }
+		SCG_Sichuan_integration_effect = yes
+	}
+}
+country_event = {
+	id = mingcivwar.1120
+	title = mingcivwar.1120.t
+	desc = mingcivwar.1120.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1120.a
+		ai_chance = { factor = 50 }
+		SRC = { country_event = { id = mingcivwar.1121 days = 1 } }
+	}
+	option = {
+		name = mingcivwar.1120.b
+		ai_chance = { factor = 50 }
+		SRC = { country_event = { id = mingcivwar.1122 days = 1 } }
+	}
+}
+country_event = {
+	id = mingcivwar.1121
+	title = mingcivwar.1121.t
+	desc = mingcivwar.1121.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1121.a
+		SCG = {
+			clr_country_flag = SCG_hebing_tanpan_jinxingzhong
+			every_unit_leader = { set_nationality = SRC }
+		}
+		annex_country = { target = SCG transfer_troops = yes }
+	}
+}
+country_event = {
+	id = mingcivwar.1122
+	title = mingcivwar.1122.t
+	desc = mingcivwar.1122.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = mingcivwar.1122.a SCG = { country_event = { id = mingcivwar.1123 days = 1 } } }
+}
+country_event = {
+	id = mingcivwar.1123
+	title = mingcivwar.1123.t
+	desc = mingcivwar.1123.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mingcivwar.1123.a
+		set_country_flag = MNG_SCG_SRC_hebing_tanpanpolie
+		clr_country_flag = SCG_hebing_tanpan_jinxingzhong
+	}
 }
 
 

@@ -3,7 +3,7 @@ characters={
 		name= UKR_Volodimir_kirilovich_venichenko
 		portraits={
 			civilian={
-				large="gfx/leaders/UKR/Portrait_UKR_Volodimir_kirilovich_venichenko.jpg"
+				large="gfx/leaders/UKR/Portrait_UKR_Volodimir_kirilovich_venichenko.png"
 			}
 		}
 		country_leader={

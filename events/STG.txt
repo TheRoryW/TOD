@@ -229,6 +229,8 @@ country_event = {
 			check_variable = { STG_wubeixi_jiaquan > STG_tianzi_jiaquan }
 		}
 		complete_national_focus = STG_wubeijueqi
+		clr_global_flag = TOD_STG_wubei_in_exile
+		set_global_flag = TOD_STG_wubei_in_power
 	}
 	option = {
 		name = TOD_STG.11.b
@@ -237,6 +239,8 @@ country_event = {
 			check_variable = { STG_xungui_jiaquan > STG_tianzi_jiaquan }
 		}
 		complete_national_focus = STG_xunguizhangquan
+		clr_global_flag = TOD_STG_wubei_in_power
+		set_global_flag = TOD_STG_wubei_in_exile
 	}
 	option = {
 		name = TOD_STG.11.c
@@ -245,6 +249,8 @@ country_event = {
 			check_variable = { STG_tianzi_jiaquan > STG_xungui_jiaquan }
 		}
 		complete_national_focus = STG_shengxinduduan
+		clr_global_flag = TOD_STG_wubei_in_power
+		set_global_flag = TOD_STG_wubei_in_exile
 	}
 }
 #夜宴
@@ -1177,7 +1183,7 @@ country_event = {
 		name = TOD_STG.65.a
 		set_autonomy = {
 			target = SIC
-			autonomy_state = autonomy_puppet
+			autonomous_state = autonomy_puppet
 		}
 	}
 }
@@ -1252,7 +1258,7 @@ country_event = {
 		name = TOD_STG.69.a
 		set_autonomy = {
 			target = MOB
-			autonomy_state = autonomy_puppet
+			autonomous_state = autonomy_puppet
 		}
 	}
 }
@@ -1327,7 +1333,7 @@ country_event = {
 		name = TOD_STG.73.a
 		set_autonomy = {
 			target = XIN
-			autonomy_state = autonomy_puppet
+			autonomous_state = autonomy_puppet
 		}
 
 	}
@@ -1404,7 +1410,7 @@ country_event = {
 		name = TOD_STG.77.a
 		set_autonomy = {
 			target = GPS
-			autonomy_state = autonomy_puppet
+			autonomous_state = autonomy_puppet
 		}
 
 	}

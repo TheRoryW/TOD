@@ -24,7 +24,7 @@ oob = "empty"
 create_country_leader = {
 	name = "Rafael Trujillo"
 	desc = "POLITICS_Rafael_DESC"
-	picture = "Portrait_HDF_Rafael_Trujillo.png"
+	picture = "gfx/leaders/HDF/Portrait_HDF_Rafael_Trujillo.png"
 	expire = "1965.1.1"
 	ideology = leader_despotism_subtype
 }

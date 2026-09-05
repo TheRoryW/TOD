@@ -4,3 +4,7 @@
 BLR:0 "白俄罗斯-立陶宛联邦"
 BLR_DEF:0 "白俄罗斯-立陶宛联邦"
 BLR_ADJ:0 "白俄罗斯-立陶宛"
+
+### 人物 ###
+BLR_Provisional_Committee:0 "白俄罗斯-立陶宛临时委员会"
+BLR_Provisional_Committee_desc:0 "由各地代表组成的临时委员会，在国家制度完成前负责维持联邦的日常治理。"

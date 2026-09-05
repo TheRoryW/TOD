@@ -1,0 +1,234 @@
+TOD_sichuan_chengdu_arsenal_organization = { # 成都兵工厂（四川兵工厂）
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = {
+		OR = {
+			tag = SIC
+			tag = SCG
+			original_tag = SIC
+			original_tag = SCG
+		}
+	}
+	available = {
+		owner = {
+			controls_state = 831
+		}
+	}
+	add_trait = {
+		token = TOD_sichuan_mio_trait_chengdu_standard
+		name = TOD_sichuan_mio_trait_chengdu_standard
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+		position = { x = 9 y = 0 }
+		available = {
+			FROM = {
+				OR = {
+					has_completed_focus = SIC_sichuan_moshi
+					has_completed_focus = SCG_shixingjihuajingji
+				}
+			}
+		}
+		equipment_bonus = { reliability = 0.10 }
+		production_bonus = { production_efficiency_gain_factor = 0.05 }
+	}
+	add_trait = {
+		token = TOD_sichuan_mio_trait_wubei_rifle_standard
+		name = TOD_sichuan_mio_trait_wubei_rifle_standard
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+		position = { x = 9 y = 2 }
+		available = { FROM = { has_completed_focus = SIC_tongyi_junxu_biaozhun } }
+		equipment_bonus = { reliability = 0.05 }
+		production_bonus = { production_cost_factor = -0.05 }
+	}
+}
+
+TOD_sichuan_chongqing_weapon_repair_organization = { # 重庆武器修理所
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_artillery_manufacturer_2
+	allowed = {
+		OR = {
+			tag = SIC
+			tag = SCG
+			original_tag = SIC
+			original_tag = SCG
+		}
+	}
+	available = {
+		owner = {
+			controls_state = 830
+		}
+	}
+	add_trait = {
+		token = TOD_sichuan_mio_trait_chongqing_repair
+		name = TOD_sichuan_mio_trait_chongqing_repair
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+		position = { x = 9 y = 0 }
+		available = { FROM = { OR = { has_completed_focus = SIC_baozhengjungong has_completed_focus = SCG_junduizhuanyehua } } }
+		equipment_bonus = { reliability = 0.12 }
+		production_bonus = { production_resource_need_factor = -0.05 }
+	}
+	add_trait = {
+		token = TOD_sichuan_mio_trait_wubei_artillery_standard
+		name = TOD_sichuan_mio_trait_wubei_artillery_standard
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+		position = { x = 9 y = 2 }
+		available = { FROM = { has_completed_focus = SIC_tongyi_junxu_biaozhun } }
+		equipment_bonus = { reliability = 0.10 }
+		production_bonus = { production_resource_need_factor = -0.05 }
+	}
+}
+
+TOD_sichuan_chongqing_ammunition_organization = { # 川康绥靖公署重庆子弹厂
+	include = generic_support_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+	allowed = {
+		OR = {
+			tag = SIC
+			tag = SCG
+			original_tag = SIC
+			original_tag = SCG
+		}
+	}
+	available = {
+		owner = {
+			controls_state = 830
+		}
+	}
+	add_trait = {
+		token = TOD_sichuan_mio_trait_ammunition_orders
+		name = TOD_sichuan_mio_trait_ammunition_orders
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = { x = 9 y = 0 }
+		available = { FROM = { OR = { has_completed_focus = SIC_zhengfudingdan has_completed_focus = SCG_shixingjihuajingji } } }
+		production_bonus = {
+			production_cost_factor = -0.05
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+	add_trait = {
+		token = TOD_sichuan_mio_trait_wubei_ammunition_order
+		name = TOD_sichuan_mio_trait_wubei_ammunition_order
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+		special_trait_background = yes
+		position = { x = 9 y = 2 }
+		available = { FROM = { has_completed_focus = SIC_tongyi_junxu_biaozhun } }
+		production_bonus = {
+			production_efficiency_gain_factor = 0.10
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+}
+
+TOD_sichuan_huaxing_machine_organization = { # 华西兴业公司华兴机器厂
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = {
+		OR = {
+			tag = SIC
+			tag = SCG
+			original_tag = SIC
+			original_tag = SCG
+		}
+	}
+	available = {
+		owner = {
+			controls_state = 830
+		}
+	}
+	add_trait = {
+		token = TOD_sichuan_mio_trait_huaxing_machine
+		name = TOD_sichuan_mio_trait_huaxing_machine
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+		position = { x = 9 y = 0 }
+		available = { FROM = { OR = { has_completed_focus = SIC_baozhengjungong has_completed_focus = SCG_yizhiqusheng } } }
+		equipment_bonus = {
+			soft_attack = 0.05
+			reliability = 0.05
+		}
+	}
+	add_trait = {
+		token = TOD_sichuan_mio_trait_wubei_machinegun_order
+		name = TOD_sichuan_mio_trait_wubei_machinegun_order
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		position = { x = 9 y = 2 }
+		available = { FROM = { has_completed_focus = SIC_tongyi_junxu_biaozhun } }
+		equipment_bonus = { soft_attack = 0.05 }
+		production_bonus = { production_cost_factor = -0.03 }
+	}
+}
+
+TOD_sichuan_beichuan_railway_organization = { # 北川铁路公司
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+	allowed = {
+		OR = {
+			tag = SIC
+			tag = SCG
+			original_tag = SIC
+			original_tag = SCG
+		}
+	}
+	available = {
+		owner = {
+			controls_state = 830
+		}
+	}
+	add_trait = {
+		token = TOD_sichuan_mio_trait_wubei_signal_standard
+		name = TOD_sichuan_mio_trait_wubei_signal_standard
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+		position = { x = 9 y = 2 }
+		available = {
+			FROM = { has_completed_focus = SIC_tongyi_junxu_biaozhun }
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.10
+		}
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+}
+
+TOD_sichuan_minsheng_machine_works_organization = { # 民生机器厂
+	include = generic_raider_ship_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+	allowed = {
+		OR = {
+			tag = SIC
+			tag = SCG
+			original_tag = SIC
+			original_tag = SCG
+		}
+	}
+	available = {
+		owner = {
+			controls_state = 830
+		}
+	}
+}
+
+TOD_sichuan_zhonghua_shipyard_organization = { # 中华机器厂（中华造船厂）
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+	allowed = {
+		OR = {
+			tag = SIC
+			tag = SCG
+			original_tag = SIC
+			original_tag = SCG
+		}
+	}
+	available = {
+		owner = {
+			controls_state = 830
+		}
+	}
+}

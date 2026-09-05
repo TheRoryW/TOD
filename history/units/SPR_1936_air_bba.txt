@@ -1,0 +1,21 @@
+air_wings = {
+	# Madrid: main fighter and bomber group
+	41 = {
+		small_plane_airframe_0 = { owner = "SPR" amount = 136 }
+		small_plane_airframe_0 = { owner = "SPR" amount = 96 }
+		medium_plane_airframe_0 = { owner = "SPR" amount = 60 }
+	}
+	# Sevilla/Barcelona: western and eastern air groups
+	169 = {
+		small_plane_airframe_0 = { owner = "SPR" amount = 96 }
+		small_plane_airframe_0 = { owner = "SPR" amount = 96 }
+		medium_plane_airframe_0 = { owner = "SPR" amount = 90 }
+		large_plane_airframe_0 = { owner = "SPR" amount = 24 }
+	}
+	# Murcia: Mediterranean and naval air groups
+	168 = {
+		small_plane_airframe_0 = { owner = "SPR" amount = 48 }
+		medium_plane_airframe_0 = { owner = "SPR" amount = 30 }
+		small_plane_naval_bomber_airframe_0 = { owner = "SPR" amount = 24 }
+	}
+}

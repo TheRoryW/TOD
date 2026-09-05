@@ -4,22 +4,22 @@
 joining_rule_non_fascist = {
 	type = joining_rules
 	visible = {
-		NOT = { has_government = fascism }
+		NOT = { has_government = national_corporatism }
 	}
 	ai_will_do = {
 		base = 0
 		modifier = {
 			add = 1
-			NOT = { has_government = fascism }
+			NOT = { has_government = national_corporatism }
 		}
 		modifier = {
 			add = 1
-			has_government = communism
+			has_government = vanguard_socialism
 		}
 	}
 	trigger = {
 		NOT = {
-			has_government = fascism
+			has_government = national_corporatism
 		}
 		IF = {
 			limit = { NOT = { has_rule = can_join_opposite_factions } }
@@ -34,12 +34,12 @@ joining_rule_democratic_non_aligned = {
 		base = 0
 	}
 	available = {
-		has_government = democratic
+		has_government = liberal_democracy
 	}
 	trigger = {
 		OR = {
-			has_government = democratic
-			has_government = neutrality
+			has_government = liberal_democracy
+			has_government = conservative_democracy
 		}
 		IF = {
 			limit = { NOT = { has_rule = can_join_opposite_factions } }
@@ -84,11 +84,11 @@ joining_rule_neighbors_only = {
 		base = 0
 		modifier = {
 			add = 1
-			has_government = neutrality
-			has_war = no 
+			has_government = conservative_democracy
+			has_war = no
 		}
 	}
-	
+
 	trigger = {
 		any_neighbor_country = {
 			is_in_faction_with = FROM
@@ -129,7 +129,7 @@ joining_rule_africa_only = {
 		base = 0
 		modifier = {
 			add = 1
-			is_faction_leader = yes 
+			is_faction_leader = yes
 			capital_scope = { is_on_continent = africa }
 		}
 	}
@@ -213,7 +213,7 @@ joining_rule_nordics_only = {
 	visible = {
 		capital_scope = {
 			OR = {
-				region = 275 
+				region = 275
 				region = 10
 				region = 11
 				region = 192
@@ -223,10 +223,10 @@ joining_rule_nordics_only = {
 				region = 278
 				region = 13
 				region = 161
-				region = 36 
-				region = 45 
+				region = 36
+				region = 45
 				region = 12
-				region = 265 
+				region = 265
 			}
 		}
 	}
@@ -246,7 +246,7 @@ joining_rule_nordics_only = {
 			tooltip = has_nordic_capital_state_tt
 			capital_scope = {
 				OR = {
-					region = 275 
+					region = 275
 					region = 10
 					region = 11
 					region = 192
@@ -256,10 +256,10 @@ joining_rule_nordics_only = {
 					region = 278
 					region = 13
 					region = 161
-					region = 36 
-					region = 45 
+					region = 36
+					region = 45
 					region = 12
-					region = 265 
+					region = 265
 				}
 			}
 		}
@@ -273,9 +273,9 @@ joining_rule_balkans_only = {
 		OR = {
 			original_tag = HUN
 			original_tag = AUS
-			original_tag = ROM 
-			original_tag = TUR 
-			original_tag = GRE 
+			original_tag = ROM
+			original_tag = TUR
+			original_tag = GRE
 			capital_scope = {
 				OR = {
 					state = 102
@@ -321,11 +321,11 @@ joining_rule_balkans_only = {
 					state = 78
 					state = 80
 					state = 341
-					state = 797  
+					state = 797
 				}
 			}
 		}
-		
+
 	}
 	can_remove = {
 		faction_manifest_fulfillment > 0.85
@@ -386,7 +386,7 @@ joining_rule_balkans_only = {
 					state = 78
 					state = 80
 					state = 341
-					state = 797  
+					state = 797
 				}
 			}
 		}
@@ -399,10 +399,10 @@ joining_rule_baltics_only = {
 		capital_scope = {
 			OR = {
 				region = 37
-				state = 763 
-				state = 784  
-				state = 208  
-				state = 209   
+				state = 763
+				state = 784
+				state = 208
+				state = 209
 			}
 		}
 	}
@@ -423,10 +423,10 @@ joining_rule_baltics_only = {
 			capital_scope = {
 				OR = {
 					region = 37
-					state = 763 
-					state = 784  
-					state = 208  
-					state = 209   
+					state = 763
+					state = 784
+					state = 208
+					state = 209
 				}
 			}
 		}
@@ -486,23 +486,23 @@ joining_rule_islamic_only = {
 			original_tag = TMS
 			original_tag = KKP
 			original_tag = SIN
-			original_tag = KAS                  
-			original_tag = CRI              
-			original_tag = KOS              
-			original_tag = KUR      
-			original_tag = BLC      
-			original_tag = IMO      
-			original_tag = KLT      
-			original_tag = KBK      
-			original_tag = DJI      
-			original_tag = HAR      
-			original_tag = SEN      
-			original_tag = GAM      
-			original_tag = GNB      
-			original_tag = SIE      
-			original_tag = VOL      
-			original_tag = GNA      
-			original_tag = XSM      
+			original_tag = KAS
+			original_tag = CRI
+			original_tag = KOS
+			original_tag = KUR
+			original_tag = BLC
+			original_tag = IMO
+			original_tag = KLT
+			original_tag = KBK
+			original_tag = DJI
+			original_tag = HAR
+			original_tag = SEN
+			original_tag = GAM
+			original_tag = GNB
+			original_tag = SIE
+			original_tag = VOL
+			original_tag = GNA
+			original_tag = XSM
 			original_tag = SIK
 			original_tag = KHM
 			original_tag = GSM
@@ -510,7 +510,7 @@ joining_rule_islamic_only = {
 			original_tag = KUM
 			original_tag = SAB
 			original_tag = BRN
-			original_tag = CHM  
+			original_tag = CHM
 			original_tag = AFG
 		}
 	}
@@ -578,23 +578,23 @@ joining_rule_islamic_only = {
 				original_tag = TMS
 				original_tag = KKP
 				original_tag = SIN
-				original_tag = KAS                  
-				original_tag = CRI              
-				original_tag = KOS              
-				original_tag = KUR      
-				original_tag = BLC      
-				original_tag = IMO      
-				original_tag = KLT      
-				original_tag = KBK      
-				original_tag = DJI      
-				original_tag = HAR      
-				original_tag = SEN      
-				original_tag = GAM      
-				original_tag = GNB      
-				original_tag = SIE      
-				original_tag = VOL      
-				original_tag = GNA      
-				original_tag = XSM      
+				original_tag = KAS
+				original_tag = CRI
+				original_tag = KOS
+				original_tag = KUR
+				original_tag = BLC
+				original_tag = IMO
+				original_tag = KLT
+				original_tag = KBK
+				original_tag = DJI
+				original_tag = HAR
+				original_tag = SEN
+				original_tag = GAM
+				original_tag = GNB
+				original_tag = SIE
+				original_tag = VOL
+				original_tag = GNA
+				original_tag = XSM
 				original_tag = SIK
 				original_tag = KHM
 				original_tag = GSM
@@ -602,7 +602,7 @@ joining_rule_islamic_only = {
 				original_tag = KUM
 				original_tag = SAB
 				original_tag = BRN
-				original_tag = CHM  
+				original_tag = CHM
 				original_tag = AFG
 			}
 		}
@@ -693,16 +693,16 @@ joining_rule_east_asia_only = {
 			original_tag = KUM
 			original_tag = MON
 			original_tag = TAN
-			original_tag = TIB 
-			original_tag = FOR  
-			original_tag = OKN   
-			original_tag = EZO    
-			original_tag = ANU     
-			WTT_is_chinese_country = yes 
+			original_tag = TIB
+			original_tag = FOR
+			original_tag = OKN
+			original_tag = EZO
+			original_tag = ANU
+			WTT_is_chinese_country = yes
 		}
 	}
 	can_remove = {
-		faction_manifest_fulfillment > 0.95	
+		faction_manifest_fulfillment > 0.95
 	}
 	trigger = {
 		custom_trigger_tooltip = {
@@ -713,12 +713,12 @@ joining_rule_east_asia_only = {
 				original_tag = KUM
 				original_tag = MON
 				original_tag = TAN
-				original_tag = TIB 
-				original_tag = FOR 
-				original_tag = OKN 
-				original_tag = EZO 
-				original_tag = ANU 
-				WTT_is_chinese_country = yes 
+				original_tag = TIB
+				original_tag = FOR
+				original_tag = OKN
+				original_tag = EZO
+				original_tag = ANU
+				WTT_is_chinese_country = yes
 			}
 		}
 	}
@@ -735,7 +735,7 @@ joining_rule_asia_pacific_ocenania_only = {
 			capital_scope = { is_on_continent = australia }
 		}
 	}
-	
+
 	trigger = {
 		OR = {
 			capital_scope = { is_on_continent = asia }
@@ -751,9 +751,9 @@ joining_rule_asia_only = {
 	}
 	visible = {
 		capital_scope = { is_on_continent = asia }
-			
+
 	}
-	
+
 	trigger = {
 		capital_scope = { is_on_continent = asia }
 	}

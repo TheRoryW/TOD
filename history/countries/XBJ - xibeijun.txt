@@ -1,9 +1,5 @@
 ﻿capital = 744
 
-#军队编制
-
-oob = "XBJ_1937"
-
 #政党比例
 
 set_politics = {

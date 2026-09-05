@@ -1,0 +1,117 @@
+SCG_postwar_economy_categories = {
+	SCG_zhiding_shengchan_zhibiao = {
+		icon = GFX_decision_generic_factory
+		visible = { has_completed_focus = SCG_chanyelianzhenghe }
+		available = { has_political_power > 39 }
+		cost = 40
+		days_remove = 120
+		days_re_enable = 180
+		ai_will_do = { base = 8 }
+		remove_effect = {
+			add_to_variable = { SCG.chongjian = 5 }
+			add_timed_idea = { idea = SCG_jihua_shengchan_zhibiao days = 90 }
+			SCG_liangyuan_zhengzhi_gengxin = yes
+		}
+	}
+	SCG_jizhong_zhongdian_gongye_lian = {
+		icon = GFX_decision_generic_factory
+		visible = { has_completed_focus = SCG_chanyelianzhenghe }
+		available = { has_political_power > 49 }
+		cost = 50
+		days_remove = 180
+		days_re_enable = 240
+		ai_will_do = { base = 7 }
+		remove_effect = {
+			add_to_variable = { SCG.chongjian = 5 }
+			add_timed_idea = { idea = SCG_zhongdian_gongye_lian days = 90 }
+			SCG_liangyuan_zhengzhi_gengxin = yes
+		}
+	}
+	SCG_tiaozheng_liangshi_shougoujia = {
+		icon = GFX_decision_generic_political_address
+		visible = { has_completed_focus = SCG_gongyefanbunongye }
+		available = { has_political_power > 34 }
+		cost = 35
+		days_remove = 120
+		days_re_enable = 180
+		ai_will_do = { base = 8 }
+		remove_effect = {
+			add_to_variable = { SCG.chongjian = 5 }
+			remove_ideas = SCG_nongminfandui
+			add_timed_idea = { idea = SCG_liangshi_shougou_tiaozheng days = 90 }
+			SCG_liangyuan_zhengzhi_gengxin = yes
+		}
+	}
+	SCG_butie_nongye_jixie = {
+		icon = GFX_decision_generic_factory
+		visible = { has_completed_focus = SCG_gongyefanbunongye }
+		available = { has_political_power > 49 }
+		cost = 50
+		days_remove = 180
+		days_re_enable = 240
+		ai_will_do = { base = 7 }
+		remove_effect = {
+			add_to_variable = { SCG.chongjian = 5 }
+			add_timed_idea = { idea = SCG_nongji_butie days = 90 }
+			SCG_liangyuan_zhengzhi_gengxin = yes
+		}
+	}
+	SCG_kuoda_hezuoshe = {
+		icon = GFX_decision_generic_factory
+		visible = { has_completed_focus = SCG_nongyegongrengaizao }
+		available = { has_political_power > 39 }
+		cost = 40
+		days_remove = 120
+		days_re_enable = 180
+		ai_will_do = { base = 8 }
+		remove_effect = {
+			add_to_variable = { SCG.chongjian = 4 }
+			add_stability = 0.02
+			add_timed_idea = { idea = SCG_hezuoshe_kuozhang days = 90 }
+			SCG_liangyuan_zhengzhi_gengxin = yes
+		}
+	}
+	SCG_jianli_gongren_jishu_weiyuanhui = {
+		icon = GFX_decision_generic_factory
+		visible = { has_completed_focus = SCG_nongyegongrengaizao }
+		available = { has_political_power > 49 }
+		cost = 50
+		days_remove = 180
+		days_re_enable = 240
+		ai_will_do = { base = 7 }
+		remove_effect = {
+			add_to_variable = { SCG.chongjian = 5 }
+			add_timed_idea = { idea = SCG_gongren_jishu_weiyuanhui days = 90 }
+			SCG_liangyuan_zhengzhi_gengxin = yes
+		}
+	}
+	SCG_fafang_shengchan_xukezheng = {
+		icon = GFX_decision_generic_factory
+		visible = { has_completed_focus = SCG_hunhejingjitizhi }
+		available = { has_political_power > 34 }
+		cost = 35
+		days_remove = 120
+		days_re_enable = 180
+		ai_will_do = { base = 8 }
+		remove_effect = {
+			add_to_variable = { SCG.chongjian = 5 }
+			add_timed_idea = { idea = SCG_shengchan_xukezheng days = 90 }
+			SCG_liangyuan_zhengzhi_gengxin = yes
+		}
+	}
+	SCG_jianguan_siren_ziben = {
+		icon = GFX_decision_generic_political_address
+		visible = { has_completed_focus = SCG_hunhejingjitizhi }
+		available = { has_political_power > 44 }
+		cost = 45
+		days_remove = 150
+		days_re_enable = 210
+		ai_will_do = { base = 7 }
+		remove_effect = {
+			add_to_variable = { SCG.chongjian = 4 }
+			add_political_power = 25
+			add_timed_idea = { idea = SCG_siren_ziben_jianguan days = 90 }
+			SCG_liangyuan_zhengzhi_gengxin = yes
+		}
+	}
+}

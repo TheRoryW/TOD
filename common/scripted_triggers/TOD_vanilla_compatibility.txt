@@ -293,3 +293,139 @@ is_literally_china = {
 		original_tag = HBC
 	}
 }
+
+is_literally_china_not_prc = {
+	OR = {
+		original_tag = CHI
+		original_tag = GXC
+		original_tag = YUN
+		original_tag = SHX
+		original_tag = XSM
+		original_tag = SIK
+		original_tag = GDC
+		original_tag = SND
+		original_tag = SIC
+		original_tag = NXM
+		original_tag = GSM
+		original_tag = XIC
+		original_tag = KHM
+		original_tag = KUM
+		original_tag = RNG
+		original_tag = HBC
+	}
+}
+
+# Tooltip-only designer checks required by the loaded Italian MIO definitions.
+ITA_is_northern_designer = {
+	custom_trigger_tooltip = {
+		tooltip = ITA_northern_designer_tt
+		hidden_trigger = { always = yes }
+	}
+}
+
+ITA_is_southern_designer = {
+	custom_trigger_tooltip = {
+		tooltip = ITA_southern_designer_tt
+		hidden_trigger = { always = yes }
+	}
+}
+
+ITA_is_northern_designer_improved = {
+	custom_trigger_tooltip = {
+		tooltip = ITA_northern_designer_improved_tt
+		hidden_trigger = { always = yes }
+	}
+}
+
+ITA_is_southern_designer_improved = {
+	custom_trigger_tooltip = {
+		tooltip = ITA_southern_designer_improved_tt
+		hidden_trigger = { always = yes }
+	}
+}
+
+NOR_prep_his_mod_remove_trigger = {
+	NOR = {
+		OR = {
+			NOT = { owns_state = PREV }
+			AND = {
+				has_war = no
+				has_capitulated = yes
+				exists = no
+			}
+		}
+	}
+}
+
+NOR_prep_fasc_mod_remove_trigger = {
+	NOR = {
+		OR = {
+			NOT = { owns_state = PREV }
+			AND = {
+				has_war = no
+				has_capitulated = yes
+				exists = no
+			}
+		}
+	}
+}
+
+CZE_RUT_is_not_its_own_thing = {
+	# RUT is not present in TOD's replaced country database.
+	always = yes
+}
+
+wuw_HUN_does_not_have_trianon = {
+	custom_trigger_tooltip = {
+		tooltip = wuw_HUN_does_not_have_trianon_tt
+		hidden_trigger = { always = yes }
+	}
+}
+
+CHI_northern_mandate_states = {
+	OR = {
+		region = 149
+		region = 256
+		region = 148
+		region = 266
+		region = 259
+		region = 260
+		region = 262
+		region = 87
+		region = 258
+		region = 257
+		region = 147
+	}
+}
+
+CHI_southern_mandate_states = {
+	OR = {
+		region = 142
+		region = 228
+		region = 292
+		region = 229
+		region = 294
+		region = 295
+		region = 188
+		region = 160
+		region = 187
+		region = 159
+		region = 158
+		region = 93
+		region = 293
+		region = 141
+		region = 146
+	}
+}
+
+CHI_greater_game_states = {
+	OR = {
+		region = 136
+		region = 268
+		region = 270
+		region = 267
+		region = 269
+		region = 162
+		region = 251
+	}
+}

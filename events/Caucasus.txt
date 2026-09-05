@@ -1,0 +1,123 @@
+add_namespace = TODCaucasus
+
+# 革命阵线由亚美尼亚自身建立，格鲁吉亚与阿塞拜疆由各自国家进入阵线。
+country_event = {
+	id = TODCaucasus.0
+	title = TODCaucasus.0.t
+	desc = TODCaucasus.0.d
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		tag = ARM
+		date > 1938.2.28
+		RUS = { has_country_flag = TOD_RUS_asian_governorates_integrated }
+	}
+	option = {
+		name = TODCaucasus.0.a
+		if = { limit = { is_in_faction = yes } leave_faction = yes }
+		create_faction = CAU_red_front
+		if = {
+			limit = { country_exists = GEO }
+			GEO = {
+				if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			add_to_faction = GEO
+		}
+		if = {
+			limit = { country_exists = AZR }
+			AZR = {
+				if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			add_to_faction = AZR
+		}
+		set_global_flag = TOD_CAU_revolution_front_created
+	}
+}
+
+# 高加索总督区自行发动对革命阵线的战争。
+country_event = {
+	id = TODCaucasus.1
+	title = TODCaucasus.1.t
+	desc = TODCaucasus.1.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		tag = CAU
+		date > 1938.2.28
+		RUS = { has_country_flag = TOD_RUS_asian_governorates_integrated }
+		has_global_flag = TOD_CAU_revolution_front_created
+	}
+	option = {
+		name = TODCaucasus.1.a
+		if = { limit = { country_exists = ARM NOT = { has_war_with = ARM } } declare_war_on = { target = ARM type = annex_everything } }
+		if = { limit = { country_exists = GEO NOT = { has_war_with = GEO } } declare_war_on = { target = GEO type = annex_everything } }
+		if = { limit = { country_exists = AZR NOT = { has_war_with = AZR } } declare_war_on = { target = AZR type = annex_everything } }
+		set_country_flag = TOD_CAU_revolutionary_war_started
+		RUS = { set_country_flag = TOD_RUS_caucasus_war_started }
+	}
+}
+
+# 革命阵线获胜后，不改 CAU 标签；高加索政权改由布琼尼领导。
+country_event = {
+	id = TODCaucasus.2
+	title = TODCaucasus.2.t
+	desc = TODCaucasus.2.d
+	picture = GFX_report_event_soviet_tanks
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		OR = {
+			tag = ARM
+			tag = GEO
+			tag = AZR
+		}
+		has_global_flag = TOD_CAU_revolution_front_created
+		has_war_with = CAU
+		CAU = {
+			has_country_flag = TOD_CAU_revolutionary_war_started
+			OR = {
+				218 = { is_controlled_by = ROOT }
+				surrender_progress > 0.5
+			}
+		}
+	}
+	option = {
+		name = TODCaucasus.2.a
+		CAU = {
+			if = { limit = { has_war_with = ARM } white_peace = ARM }
+			if = { limit = { has_war_with = GEO } white_peace = GEO }
+			if = { limit = { has_war_with = AZR } white_peace = AZR }
+			set_politics = { ruling_party = vanguard_socialism elections_allowed = no }
+			set_popularities = { vanguard_socialism = 100 }
+			promote_character = CAU_Semyon_Mikhailovich_Budyonny
+			# 从俄国独立：解除傀儡关系，否则无法加入革命阵线
+			if = {
+				limit = { is_subject_of = RUS }
+				RUS = { end_puppet = CAU }
+			}
+			if = { limit = { is_in_faction = yes } leave_faction = yes }
+			set_country_flag = TOD_CAU_budyonny_government
+		}
+		ARM = { add_to_faction = CAU }
+		set_global_flag = TOD_CAU_war_concluded
+	}
+}
+
+# 若总督区获胜，也明确结束这一阶段，避免俄罗斯永久等待。
+country_event = {
+	id = TODCaucasus.3
+	title = TODCaucasus.3.t
+	desc = TODCaucasus.3.d
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		tag = CAU
+		has_country_flag = TOD_CAU_revolutionary_war_started
+		NOT = { has_war_with = ARM }
+		NOT = { has_war_with = GEO }
+		NOT = { has_war_with = AZR }
+		NOT = { has_global_flag = TOD_CAU_war_concluded }
+	}
+	option = { name = TODCaucasus.3.a set_global_flag = TOD_CAU_war_concluded }
+}

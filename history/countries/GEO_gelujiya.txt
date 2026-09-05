@@ -1,8 +1,20 @@
-capital = 968
+capital = 972
 
 #军队编制
 
-oob = "empty"
+oob = "GEO_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	radio = 1
+	basic_train = 1
+}
 
 #政党比例
 
@@ -15,5 +27,9 @@ set_politics = {
 
 set_popularities = {
 	social_democrat = 100
+}
+
+add_ideas = {
+	limited_conscription
 }
 recruit_character = GEO_Tsereteli

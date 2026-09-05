@@ -1,0 +1,851 @@
+================================================================================
+HOI4 错误日志分析报告 - 2026-08-20 21:35:05
+================================================================================
+
+总错误数: 28089
+总行数: 28089
+
+--------------------------------------------------------------------------------
+错误分类统计:
+--------------------------------------------------------------------------------
+💀 [FATAL               ]    10 条 - 致命错误（可能导致崩溃）
+🟡 [GFX_TEXTURE         ]   468 条 - GFX/纹理错误
+🟡 [AUDIO               ]    24 条 - 音频错误
+🟡 [SYNTAX_SCRIPT       ]   214 条 - 语法/脚本错误
+🟢 [TECH_FOCUS          ]     6 条 - 科技/国策错误
+🟢 [DLC_MOD             ]     5 条 - DLC/Mod 错误
+🟢 [WARNING             ]    81 条 - 警告信息
+🟢 [OTHER               ] 27281 条 - OTHER
+
+================================================================================
+
+================================================================================
+[FATAL] 致命错误（可能导致崩溃） - 共 10 条 (显示前 10 条)
+================================================================================
+
+行 2173:
+  [20:36:45][1936.01.01.01][gui.cpp:931]: Undefined GUI_TYPE: country_filter - This will most likely >>>crash<<< the game
+
+行 2175:
+  [20:36:45][1936.01.01.01][gui.cpp:931]: Undefined GUI_TYPE: country_filter - This will most likely >>>crash<<< the game
+
+行 2177:
+  [20:36:45][1936.01.01.01][gui.cpp:931]: Undefined GUI_TYPE: country_filter - This will most likely >>>crash<<< the game
+
+行 2179:
+  [20:36:45][1936.01.01.01][gui.cpp:931]: Undefined GUI_TYPE: country_filter - This will most likely >>>crash<<< the game
+
+行 2181:
+  [20:36:45][1936.01.01.01][gui.cpp:931]: Undefined GUI_TYPE: country_filter - This will most likely >>>crash<<< the game
+
+行 2183:
+  [20:36:45][1936.01.01.01][gui.cpp:931]: Undefined GUI_TYPE: country_filter - This will most likely >>>crash<<< the game
+
+行 2185:
+  [20:36:45][1936.01.01.01][gui.cpp:931]: Undefined GUI_TYPE: country_filter - This will most likely >>>crash<<< the game
+
+行 2187:
+  [20:36:45][1936.01.01.01][gui.cpp:931]: Undefined GUI_TYPE: country_filter - This will most likely >>>crash<<< the game
+
+行 2295:
+  [20:39:06][1936.01.01.01][gui.cpp:931]: Undefined GUI_TYPE: invite_faction_diplomacy_controller - This will most likely >>>crash<<< the game
+
+行 2297:
+  [20:39:06][1936.01.01.01][gui.cpp:931]: Undefined GUI_TYPE: invite_faction_diplomacy_controller - This will most likely >>>crash<<< the game
+
+================================================================================
+[GFX_TEXTURE] GFX/纹理错误 - 共 468 条 (显示前 50 条)
+================================================================================
+
+行 112:
+  [20:36:07][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/TUR_fangkuanrudangbiaozhun.png
+
+行 113:
+  [20:36:07][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/TUR_fangkuanrudangbiaozhun.png'
+
+行 114:
+  [20:36:07][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/interface/goals/TUR_fangkuanrudangbiaozhun.png for spritetype GFX_TUR_fangkuanrudangbiaozhun
+
+行 115:
+  [20:36:07][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/TUR_weichidangneituanjie.png
+
+行 116:
+  [20:36:07][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/TUR_weichidangneituanjie.png'
+
+行 117:
+  [20:36:07][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/interface/goals/TUR_weichidangneituanjie.png for spritetype GFX_TUR_weichidangneituanjie
+
+行 118:
+  [20:36:07][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/GPS/focus/GFX_GPS_chongquanchuji.png
+
+行 119:
+  [20:36:07][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/GPS/focus/GFX_GPS_chongquanchuji.png'
+
+行 120:
+  [20:36:07][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/GPS/focus/GFX_GPS_chongquanchuji.png for spritetype GFX_GPS_chongquanchuji_shine
+
+行 121:
+  [20:36:07][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/TUR_shouquanqizhipai.png
+
+行 122:
+  [20:36:07][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/TUR_shouquanqizhipai.png'
+
+行 123:
+  [20:36:07][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/interface/goals/TUR_shouquanqizhipai.png for spritetype GFX_TUR_shouquanqizhipai
+
+行 124:
+  [20:36:07][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/TUR_kaimoerzhuyideyanxu.png
+
+行 125:
+  [20:36:07][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/TUR_kaimoerzhuyideyanxu.png'
+
+行 126:
+  [20:36:07][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/interface/goals/TUR_kaimoerzhuyideyanxu.png for spritetype GFX_TUR_kaimoerzhuyideyanxu
+
+行 127:
+  [20:36:08][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/TUR_kaifangzhengfuzhiwei.png
+
+行 128:
+  [20:36:08][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/TUR_kaifangzhengfuzhiwei.png'
+
+行 129:
+  [20:36:08][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/interface/goals/TUR_kaifangzhengfuzhiwei.png for spritetype GFX_TUR_kaifangzhengfuzhiwei
+
+行 130:
+  [20:36:08][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/TUR_shouquanganglingpai.png
+
+行 131:
+  [20:36:08][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/TUR_shouquanganglingpai.png'
+
+行 132:
+  [20:36:08][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/interface/goals/TUR_shouquanganglingpai.png for spritetype GFX_TUR_shouquanganglingpai
+
+行 133:
+  [20:36:08][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/GFX_GER_de_yi_zhi_shao_nian_xian_feng_dui.png
+
+行 134:
+  [20:36:08][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/GFX_GER_de_yi_zhi_shao_nian_xian_feng_dui.png'
+
+行 135:
+  [20:36:08][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/TUR_fangsongshehuiguanzhi.png
+
+行 136:
+  [20:36:08][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/TUR_fangsongshehuiguanzhi.png'
+
+行 137:
+  [20:36:08][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/interface/goals/TUR_fangsongshehuiguanzhi.png for spritetype GFX_TUR_fangsongshehuiguanzhi
+
+行 138:
+  [20:36:08][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/TUR_kaimoerzhuyideweilai.png
+
+行 139:
+  [20:36:08][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/TUR_kaimoerzhuyideweilai.png'
+
+行 140:
+  [20:36:08][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/interface/goals/TUR_kaimoerzhuyideweilai.png for spritetype GFX_TUR_kaimoerzhuyideweilai
+
+行 141:
+  [20:36:08][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/TUR_ankalazhichun.png
+
+行 142:
+  [20:36:08][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/TUR_ankalazhichun.png'
+
+行 143:
+  [20:36:08][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/interface/goals/TUR_ankalazhichun.png for spritetype GFX_TUR_ankalazhichun
+
+行 144:
+  [20:36:09][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx//interface//tiles//tiled_window_thin_border_kr2.dds
+
+行 145:
+  [20:36:09][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx//interface//tiles//tiled_window_thin_border_kr2.dds'
+
+行 146:
+  [20:36:09][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/GPS/focus/GFX_GPS_quanlitangdudushiquan.png
+
+行 147:
+  [20:36:09][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/GPS/focus/GFX_GPS_quanlitangdudushiquan.png'
+
+行 148:
+  [20:36:09][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/GPS/focus/GFX_GPS_quanlitangdudushiquan.png for spritetype GFX_GPS_quanlitangdudushiquan_shine
+
+行 149:
+  [20:36:09][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/GPS/focus/GFX_GPS_quanlitangdudushiquan.png for spritetype GFX_GPS_quanlitangdudushiquan_shine
+
+行 150:
+  [20:36:09][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/GFX_GER_cheng_li_ji_ti_nong_zhuang_he_zuo_she.png
+
+行 151:
+  [20:36:09][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/GFX_GER_cheng_li_ji_ti_nong_zhuang_he_zuo_she.png'
+
+行 152:
+  [20:36:09][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/interface/goals/GFX_GER_cheng_li_ji_ti_nong_zhuang_he_zuo_she.png for spritetype GFX_GER_cheng_li_ji_ti_nong_zhuang_
+  ... (216 字符)
+
+行 153:
+  [20:36:09][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/TUR_sanwujihuadeshouweigongzuo.png
+
+行 154:
+  [20:36:09][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/TUR_sanwujihuadeshouweigongzuo.png'
+
+行 155:
+  [20:36:09][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/interface/goals/TUR_sanwujihuadeshouweigongzuo.png for spritetype GFX_TUR_sanwujihuadeshouweigongzuo
+
+行 156:
+  [20:36:09][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/GFX_GER_hong_se_feitelie.png
+
+行 157:
+  [20:36:09][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/GFX_GER_hong_se_feitelie.png'
+
+行 158:
+  [20:36:09][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/interface/goals/GFX_GER_hong_se_feitelie.png for spritetype GFX_GER_hong_se_feitelie_shine
+
+行 159:
+  [20:36:09][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/interface/goals/TUR_gongrenzhiqing.png
+
+行 160:
+  [20:36:09][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/interface/goals/TUR_gongrenzhiqing.png'
+
+行 161:
+  [20:36:09][no_game_date][spritetype.cpp:330]: >>>Error<<< initialising texture: gfx/interface/goals/TUR_gongrenzhiqing.png for spritetype GFX_TUR_gongrenzhiqing
+
+... 还有 418 条类似错误 ...
+
+================================================================================
+[AUDIO] 音频错误 - 共 24 条 (显示前 24 条)
+================================================================================
+
+行 6:
+  [20:36:01][no_game_date][pdx_audio_sdl.cpp:963]: Sound with name 'sfx_ui_sd_module_turret_01' already added
+
+行 7:
+  [20:36:01][no_game_date][assetfactory_audio.cpp:467]: Could not load sound file 'sound/menu/sfx_ui_sd_module_turrent_01.wav' in  file: sound/sound.asset line: 730
+
+行 8:
+  [20:36:01][no_game_date][pdx_audio_sdl.cpp:963]: Sound with name 'sfx_ui_sd_module_sonar_01' already added
+
+行 9:
+  [20:36:01][no_game_date][assetfactory_audio.cpp:467]: Could not load sound file 'sound/menu/sfx_ui_sd_module_sonar_01.wav' in  file: sound/sound.asset line: 734
+
+行 10:
+  [20:36:01][no_game_date][pdx_audio_sdl.cpp:963]: Sound with name 'sfx_ui_sd_module_misc_01' already added
+
+行 11:
+  [20:36:01][no_game_date][assetfactory_audio.cpp:467]: Could not load sound file 'sound/menu/sfx_ui_sd_module_misc_01.wav' in  file: sound/sound.asset line: 738
+
+行 12:
+  [20:36:01][no_game_date][pdx_audio_sdl.cpp:963]: Sound with name 'sfx_ui_sd_module_engine_01' already added
+
+行 13:
+  [20:36:01][no_game_date][assetfactory_audio.cpp:467]: Could not load sound file 'sound/menu/sfx_ui_sd_module_engine_01.wav' in  file: sound/sound.asset line: 742
+
+行 14:
+  [20:36:01][no_game_date][pdx_audio_sdl.cpp:963]: Sound with name 'GER_train_equipment_3-001' already added
+
+行 15:
+  [20:36:01][no_game_date][assetfactory_audio.cpp:467]: Could not load sound file 'sound/nsb_wavs/GER_train_equipment_3-001.wav' in  file: sound/sound.asset line: 3317
+
+行 16:
+  [20:36:01][no_game_date][pdx_audio_sdl.cpp:963]: Sound with name 'GER_train_equipment_3-002' already added
+
+行 17:
+  [20:36:01][no_game_date][assetfactory_audio.cpp:467]: Could not load sound file 'sound/nsb_wavs/GER_train_equipment_3-002.wav' in  file: sound/sound.asset line: 3322
+
+行 18:
+  [20:36:01][no_game_date][pdx_audio_sdl.cpp:963]: Sound with name 'GER_train_equipment_3-003' already added
+
+行 19:
+  [20:36:01][no_game_date][assetfactory_audio.cpp:467]: Could not load sound file 'sound/nsb_wavs/GER_train_equipment_3-003.wav' in  file: sound/sound.asset line: 3327
+
+行 20:
+  [20:36:02][no_game_date][pdx_audio.cpp:960]: Sound effect with name 'sfx_ui_sd_module_turret' already added
+
+行 21:
+  [20:36:02][no_game_date][pdx_audio.cpp:960]: Sound effect with name 'sfx_ui_sd_module_sonar' already added
+
+行 22:
+  [20:36:02][no_game_date][pdx_audio.cpp:960]: Sound effect with name 'sfx_ui_sd_module_default' already added
+
+行 23:
+  [20:36:02][no_game_date][pdx_audio.cpp:960]: Sound effect with name 'sfx_ui_sd_module_engine' already added
+
+行 24:
+  [20:36:02][no_game_date][pdx_audio.cpp:960]: Sound effect with name 'GER_train_equipment_3' already added
+
+行 25:
+  [20:36:02][no_game_date][pdx_audio.cpp:1118]: SoundEffect 'sfx_ui_sd_module_turret' already has category 'UI', old category will be overwritten
+
+行 26:
+  [20:36:02][no_game_date][pdx_audio.cpp:1118]: SoundEffect 'sfx_ui_sd_module_sonar' already has category 'UI', old category will be overwritten
+
+行 27:
+  [20:36:02][no_game_date][pdx_audio.cpp:1118]: SoundEffect 'sfx_ui_sd_module_default' already has category 'UI', old category will be overwritten
+
+行 28:
+  [20:36:02][no_game_date][pdx_audio.cpp:1118]: SoundEffect 'sfx_ui_sd_module_engine' already has category 'UI', old category will be overwritten
+
+行 29:
+  [20:36:02][no_game_date][pdx_audio.cpp:1118]: SoundEffect 'GER_train_equipment_3' already has category 'nonControllableEntities', old category will be overwritten
+
+================================================================================
+[SYNTAX_SCRIPT] 语法/脚本错误 - 共 214 条 (显示前 50 条)
+================================================================================
+
+行 659:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: is_literally_china_not_prc, near line: 61" in file: "common/military_industrial_organization/organizations/CHI_organizati
+  ... (221 字符)
+
+行 661:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: is_literally_china_not_prc, near line: 758" in file: "common/military_industrial_organization/organizations/CHI_organizat
+  ... (223 字符)
+
+行 663:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: is_literally_china_not_prc, near line: 894" in file: "common/military_industrial_organization/organizations/CHI_organizat
+  ... (223 字符)
+
+行 665:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: is_literally_china_not_prc, near line: 981" in file: "common/military_industrial_organization/organizations/CHI_organizat
+  ... (223 字符)
+
+行 667:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: is_literally_china_not_prc, near line: 1088" in file: "common/military_industrial_organization/organizations/CHI_organiza
+  ... (225 字符)
+
+行 669:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: wuw_HUN_does_not_have_trianon, near line: 981" in file: "common/military_industrial_organization/organizations/ENG_organi
+  ... (226 字符)
+
+行 671:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_northern_designer, near line: 57" in file: "common/military_industrial_organization/organizations/ITA_organization
+  ... (219 字符)
+
+行 673:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_northern_designer, near line: 163" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 675:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_northern_designer, near line: 235" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 677:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_southern_designer, near line: 275" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 679:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_southern_designer, near line: 315" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 681:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_southern_designer, near line: 356" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 683:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_northern_designer, near line: 430" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 685:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_northern_designer, near line: 471" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 687:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_northern_designer, near line: 590" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 689:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_northern_designer, near line: 631" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 691:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_southern_designer, near line: 692" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 693:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_southern_designer, near line: 733" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 695:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_northern_designer, near line: 788" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 697:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_northern_designer, near line: 905" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 699:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_northern_designer, near line: 958" in file: "common/military_industrial_organization/organizations/ITA_organizatio
+  ... (221 字符)
+
+行 701:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_northern_designer, near line: 1037" in file: "common/military_industrial_organization/organizations/ITA_organizati
+  ... (223 字符)
+
+行 703:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: ITA_is_northern_designer, near line: 1078" in file: "common/military_industrial_organization/organizations/ITA_organizati
+  ... (223 字符)
+
+行 705:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: PHI_vicente_lava, near line: 403" in file: "common/military_industrial_organization/organizations/JAP_organization.txt" n
+  ... (213 字符)
+
+行 707:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: PHI_vicente_lava, near line: 913" in file: "common/military_industrial_organization/organizations/JAP_organization.txt" n
+  ... (213 字符)
+
+行 709:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: PHI_vicente_lava, near line: 1658" in file: "common/military_industrial_organization/organizations/JAP_organization.txt" 
+  ... (215 字符)
+
+行 711:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: PHI_vicente_lava, near line: 2856" in file: "common/military_industrial_organization/organizations/JAP_organization.txt" 
+  ... (215 字符)
+
+行 713:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: PHI_vicente_lava, near line: 2962" in file: "common/military_industrial_organization/organizations/JAP_organization.txt" 
+  ... (215 字符)
+
+行 715:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: NOR_johan_ludwig_mowinckel, near line: 153" in file: "common/military_industrial_organization/organizations/NOR_organizat
+  ... (223 字符)
+
+行 717:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: PHI_vicente_lava, near line: 167" in file: "common/military_industrial_organization/organizations/PHI_organization.txt" n
+  ... (213 字符)
+
+行 719:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: PHI_vicente_lava, near line: 303" in file: "common/military_industrial_organization/organizations/PHI_organization.txt" n
+  ... (213 字符)
+
+行 721:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: is_literally_china_not_prc, near line: 149" in file: "common/military_industrial_organization/organizations/SOV_organizat
+  ... (223 字符)
+
+行 723:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: PHI_vicente_lava, near line: 206" in file: "common/military_industrial_organization/organizations/USA_organization.txt" n
+  ... (213 字符)
+
+行 725:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: PHI_vicente_lava, near line: 433" in file: "common/military_industrial_organization/organizations/USA_organization.txt" n
+  ... (213 字符)
+
+行 727:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: PHI_vicente_lava, near line: 700" in file: "common/military_industrial_organization/organizations/USA_organization.txt" n
+  ... (213 字符)
+
+行 729:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: PHI_vicente_lava, near line: 1530" in file: "common/military_industrial_organization/organizations/USA_organization.txt" 
+  ... (215 字符)
+
+行 823:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: CHI_northern_mandate_states, near line: 586" in file: "common/collections/collections.txt" near line: 587
+
+行 825:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: CHI_southern_mandate_states, near line: 596" in file: "common/collections/collections.txt" near line: 597
+
+行 827:
+  [20:36:14][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: CHI_greater_game_states, near line: 606" in file: "common/collections/collections.txt" near line: 607
+
+行 997:
+  [20:36:16][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: fascism, near line: 1141" in file: "common/operations/00_operations.txt" near line: 1142
+
+行 1000:
+  [20:36:16][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: communism, near line: 1147" in file: "common/operations/00_operations.txt" near line: 1148
+
+行 1003:
+  [20:36:16][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: democratic, near line: 1153" in file: "common/operations/00_operations.txt" near line: 1154
+
+行 1006:
+  [20:36:16][no_game_date][trigger.cpp:568]: >>>Error<<<: "Unknown trigger-type: neutrality, near line: 1159" in file: "common/operations/00_operations.txt" near line: 1160
+
+行 1427:
+  [20:36:20][no_game_date][persistent.cpp:67]: >>>Error<<<: "Unknown modifier: neutrality_drift, near line: 101" in file: "common/bop/BRA.txt" near line: 101
+
+行 1428:
+  [20:36:20][no_game_date][persistent.cpp:67]: >>>Error<<<: "Unknown modifier: neutrality_drift, near line: 121" in file: "common/bop/BRA.txt" near line: 121
+
+行 1429:
+  [20:36:20][no_game_date][persistent.cpp:67]: >>>Error<<<: "Unknown modifier: neutrality_drift, near line: 145" in file: "common/bop/BRA.txt" near line: 145
+
+行 1430:
+  [20:36:20][no_game_date][persistent.cpp:67]: >>>Error<<<: "Unknown modifier: political_advisor_cost_factor, near line: 33" in file: "common/bop/ITA.txt" near line: 33
+
+行 1431:
+  [20:36:20][no_game_date][persistent.cpp:67]: >>>Error<<<: "Unknown modifier: political_advisor_cost_factor, near line: 48" in file: "common/bop/ITA.txt" near line: 48
+
+行 1432:
+  [20:36:20][no_game_date][persistent.cpp:67]: >>>Error<<<: "Unknown modifier: political_advisor_cost_factor, near line: 77" in file: "common/bop/ITA.txt" near line: 77
+
+行 1433:
+  [20:36:20][no_game_date][persistent.cpp:67]: >>>Error<<<: "Unknown modifier: political_advisor_cost_factor, near line: 108" in file: "common/bop/ITA.txt" near line: 108
+
+... 还有 164 条类似错误 ...
+
+================================================================================
+[TECH_FOCUS] 科技/国策错误 - 共 6 条 (显示前 6 条)
+================================================================================
+
+行 1404:
+  [20:36:20][no_game_date][database_scoped_variables.h:60]: >>>invalid<<< database object for effect/trigger:  file: common/focus_inlay_windows/ast_right_vs_left_campaign_empty_inlay_window.txt line: 9 
+  ... (276 字符)
+
+行 1405:
+  [20:36:20][no_game_date][database_scoped_variables.h:60]: >>>invalid<<< database object for effect/trigger:  file: common/focus_inlay_windows/ast_right_vs_left_campaign_inlay_window.txt line: 10 democ
+  ... (271 字符)
+
+行 1406:
+  [20:36:20][no_game_date][database_scoped_variables.h:60]: >>>invalid<<< database object for effect/trigger:  file: common/focus_inlay_windows/ger_inner_circle_inlay_window.txt line: 9 fascism. use var
+  ... (257 字符)
+
+行 1407:
+  [20:36:20][no_game_date][database_scoped_variables.h:60]: >>>invalid<<< database object for effect/trigger:  file: common/focus_inlay_windows/jap_imperial_influence_inlay_window.txt line: 46 communism
+  ... (266 字符)
+
+行 1408:
+  [20:36:20][no_game_date][database_scoped_variables.h:60]: >>>invalid<<< database object for effect/trigger:  file: common/focus_inlay_windows/jap_imperial_influence_inlay_window.txt line: 50 communism
+  ... (266 字符)
+
+行 27966:
+  [21:05:08][1939.08.06.01][effectimplementation.cpp:2001]: common/national_focus/dongbeihongjun.txt:429: add_ideas: >>>Invalid<<< idea: SRC_yiwu. If you wanted to reference a variable, you need to expl
+  ... (240 字符)
+
+================================================================================
+[DLC_MOD] DLC/Mod 错误 - 共 5 条 (显示前 5 条)
+================================================================================
+
+行 1:
+  [20:35:59][no_game_date][dlc.cpp:142]: incorrect checksum for DLC
+
+行 2:
+  [20:35:59][no_game_date][dlc.cpp:218]: >>>Invalid<<< supported_version in  file: mod/ugc_2243912940.mod line: 10
+
+行 3:
+  [20:35:59][no_game_date][dlc.cpp:218]: >>>Invalid<<< supported_version in  file: mod/ugc_2445956833.mod line: 8
+
+行 4:
+  [20:35:59][no_game_date][dlc.cpp:218]: >>>Invalid<<< supported_version in  file: mod/ugc_2781363716.mod line: 10
+
+行 5:
+  [20:35:59][no_game_date][dlc.cpp:218]: >>>Invalid<<< supported_version in  file: mod/ugc_3720295810.mod line: 10
+
+================================================================================
+[WARNING] 警告信息 - 共 81 条 (显示前 50 条)
+================================================================================
+
+行 30:
+  [20:36:02][no_game_date][bitmapfont.cpp:561]: lineHeight (23) in 'gfx/fonts/Arial_20.fnt' does not match previous fontfiles in font 'loadscreen_tip'
+
+行 31:
+  [20:36:02][no_game_date][bitmapfont.cpp:576]: base (20) in 'gfx/fonts/Arial_20.fnt' does not match previous fontfiles in font 'loadscreen_tip'
+
+行 32:
+  [20:36:02][no_game_date][bitmapfont.cpp:576]: base (26) in 'gfx/fonts/Arial_26.fnt' does not match previous fontfiles in font 'loadscreen_header'
+
+行 33:
+  [20:36:03][no_game_date][bitmapfont.cpp:561]: lineHeight (16) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'standard_font'
+
+行 34:
+  [20:36:03][no_game_date][bitmapfont.cpp:576]: base (14) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'standard_font'
+
+行 35:
+  [20:36:03][no_game_date][bitmapfont.cpp:561]: lineHeight (16) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'chat_input_font'
+
+行 36:
+  [20:36:03][no_game_date][bitmapfont.cpp:576]: base (14) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'chat_input_font'
+
+行 38:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (18) in 'gfx/fonts/Arial_16.fnt' does not match previous fontfiles in font 'hoi_20b'
+
+行 39:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (16) in 'gfx/fonts/Arial_16.fnt' does not match previous fontfiles in font 'hoi_18b'
+
+行 40:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (30) in 'gfx/fonts/Arial_26.fnt' does not match previous fontfiles in font 'vic_36'
+
+行 41:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (23) in 'gfx/fonts/Arial_20b.fnt' does not match previous fontfiles in font 'hoi4_typewriter22'
+
+行 42:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (20) in 'gfx/fonts/Arial_20b.fnt' does not match previous fontfiles in font 'hoi4_typewriter22'
+
+行 43:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (30) in 'gfx/fonts/Arial_26.fnt' does not match previous fontfiles in font 'hoi_arrow_font'
+
+行 44:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (26) in 'gfx/fonts/Arial_26.fnt' does not match previous fontfiles in font 'hoi_arrow_font'
+
+行 45:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (14) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'Main_16'
+
+行 46:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (30) in 'gfx/fonts/Arial_26.fnt' does not match previous fontfiles in font 'vic_36_black'
+
+行 47:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (16) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'garamond_14'
+
+行 48:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (14) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'garamond_14'
+
+行 49:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (14) in 'gfx/fonts/Arial_14s.fnt' does not match previous fontfiles in font 'hoi_16mbs'
+
+行 50:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (84) in 'gfx/fonts/hoi_mapfont4.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 51:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (70) in 'gfx/fonts/hoi_mapfont4.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 52:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (93) in 'gfx/fonts/mapfont_chn_0.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 53:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (80) in 'gfx/fonts/mapfont_chn_0.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 54:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (93) in 'gfx/fonts/mapfont_chn_1.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 55:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (80) in 'gfx/fonts/mapfont_chn_1.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 56:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (93) in 'gfx/fonts/mapfont_chn_2.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 57:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (80) in 'gfx/fonts/mapfont_chn_2.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 58:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (93) in 'gfx/fonts/mapfont_chn_3.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 59:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (80) in 'gfx/fonts/mapfont_chn_3.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 60:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (93) in 'gfx/fonts/mapfont_chn_4.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 61:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (80) in 'gfx/fonts/mapfont_chn_4.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 62:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (93) in 'gfx/fonts/mapfont_chn_5.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 63:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (80) in 'gfx/fonts/mapfont_chn_5.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 64:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (93) in 'gfx/fonts/mapfont_chn_6.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 65:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (80) in 'gfx/fonts/mapfont_chn_6.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 66:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (93) in 'gfx/fonts/mapfont_chn_7.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 67:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (80) in 'gfx/fonts/mapfont_chn_7.fnt' does not match previous fontfiles in font 'tahoma_60'
+
+行 68:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (16) in 'gfx/fonts/Arial_16.fnt' does not match previous fontfiles in font 'vic_18_black'
+
+行 69:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (23) in 'gfx/fonts/Arial_20s.fnt' does not match previous fontfiles in font 'nsb_hoi_24header'
+
+行 70:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (20) in 'gfx/fonts/Arial_20s.fnt' does not match previous fontfiles in font 'nsb_hoi_24header'
+
+行 71:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (14) in 'gfx/fonts/Arial_14b.fnt' does not match previous fontfiles in font 'hoi4_typewriter16'
+
+行 72:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (30) in 'gfx/fonts/Arial_26s.fnt' does not match previous fontfiles in font 'nsb_hoi_36header'
+
+行 73:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (26) in 'gfx/fonts/Arial_26s.fnt' does not match previous fontfiles in font 'nsb_hoi_36header'
+
+行 74:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (23) in 'gfx/fonts/Arial_20.fnt' does not match previous fontfiles in font 'vic_22'
+
+行 75:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (20) in 'gfx/fonts/Arial_20.fnt' does not match previous fontfiles in font 'vic_22'
+
+行 76:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (16) in 'gfx/fonts/Arial_16s.fnt' does not match previous fontfiles in font 'hoi_18mbs'
+
+行 77:
+  [20:36:04][no_game_date][bitmapfont.cpp:561]: lineHeight (18) in 'gfx/fonts/Arial_16s.fnt' does not match previous fontfiles in font 'hoi_20bs'
+
+行 78:
+  [20:36:04][no_game_date][bitmapfont.cpp:576]: base (14) in 'gfx/fonts/Arial_14.fnt' does not match previous fontfiles in font 'ToolTip_Font'
+
+行 79:
+  [20:36:05][no_game_date][bitmapfont.cpp:561]: lineHeight (23) in 'gfx/fonts/Arial_20.fnt' does not match previous fontfiles in font 'hoi_22chat'
+
+行 80:
+  [20:36:05][no_game_date][bitmapfont.cpp:576]: base (20) in 'gfx/fonts/Arial_20.fnt' does not match previous fontfiles in font 'hoi_22chat'
+
+... 还有 31 条类似错误 ...
+
+================================================================================
+[OTHER] OTHER - 共 27281 条 (显示前 50 条)
+================================================================================
+
+行 37:
+  [20:36:04][no_game_date][graphics.cpp:1280]: No font with name suxin_20
+
+行 186:
+  [20:36:10][no_game_date][pdxassetutil.cpp:1098]: Duplicate texture 'GER_paratrooper_diffuse.dds' found (current path 'gfx/models/units/special_forces/GER_paratrooper_diffuse.dds', previous path 'gfx/m
+  ... (241 字符)
+
+行 187:
+  [20:36:10][no_game_date][pdxassetutil.cpp:1098]: Duplicate texture 'GER_paratrooper_normal.dds' found (current path 'gfx/models/units/special_forces/GER_paratrooper_normal.dds', previous path 'gfx/mod
+  ... (238 字符)
+
+行 188:
+  [20:36:10][no_game_date][pdxassetutil.cpp:1098]: Duplicate texture 'GER_paratrooper_snow_diffuse.dds' found (current path 'gfx/models/units/special_forces/GER_paratrooper_snow_diffuse.dds', previous p
+  ... (256 字符)
+
+行 189:
+  [20:36:10][no_game_date][pdxassetutil.cpp:1098]: Duplicate texture 'GER_paratrooper_snow_normal.dds' found (current path 'gfx/models/units/special_forces/GER_paratrooper_snow_normal.dds', previous pat
+  ... (253 字符)
+
+行 190:
+  [20:36:10][no_game_date][pdxassetutil.cpp:1098]: Duplicate texture 'GER_paratrooper_snow_specular.dds' found (current path 'gfx/models/units/special_forces/GER_paratrooper_snow_specular.dds', previous
+  ... (259 字符)
+
+行 191:
+  [20:36:10][no_game_date][pdxassetutil.cpp:1098]: Duplicate texture 'GER_paratrooper_specular.dds' found (current path 'gfx/models/units/special_forces/GER_paratrooper_specular.dds', previous path 'gfx
+  ... (244 字符)
+
+行 192:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 英格兰南部 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 193:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 英格兰南部 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 194:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 瑞典南部 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 195:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 瑞典南部 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 196:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 红海 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 197:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 红海 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 198:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 榜葛剌湾 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 199:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 榜葛剌湾 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 200:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 阿非利卡海岸 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 201:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 阿非利卡海岸 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 202:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 莫桑比克海峡 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 203:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 莫桑比克海峡 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 204:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 阿拉伯海 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 205:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 阿拉伯海 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 206:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 檀香海 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 207:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 檀香海 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 208:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 墨西哥海岸 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 209:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 墨西哥海岸 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 210:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 运河区西侧 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 211:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 运河区西侧 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 212:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 南美海岸 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 213:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 南美海岸 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 214:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 秘鲁海岸 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 215:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 秘鲁海岸 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 216:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 挪威南部 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 217:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 挪威南部 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 218:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 东太平洋海脊 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 219:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 东太平洋海脊 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 220:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 中北太平洋 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 221:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 中北太平洋 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 222:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 远南太平洋 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 223:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 远南太平洋 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 224:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 中南太平洋 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 225:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 中南太平洋 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 226:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 青丘海 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 227:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 青丘海 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 228:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 东北太平洋 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 229:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 东北太平洋 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 230:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 波斯 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 231:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 波斯 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 232:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 北美东海岸 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+行 233:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:191]: 北美东海岸 Region temperature doesn't cover the whole year, ending on 21.11 instead of 30.11
+
+行 234:
+  [20:36:10][no_game_date][strategicregiontemplate.cpp:172]: 北美西海岸 Region has overlapping temperature intervals: 4.11 <= 30.11
+
+... 还有 27231 条类似错误 ...
+
+================================================================================
+修复建议:
+================================================================================
+
+1. [GFX_TEXTURE] 缺失 222 个纹理文件
+   建议: 创建占位符文件或使用正确的文件路径

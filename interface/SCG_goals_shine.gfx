@@ -863,5 +863,24 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	
+	SpriteType = { name = "GFX_SCG_renminjundui_shine" texturefile = "gfx/SCG/focus/GFX_SCG_renminjundui.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_jianlizhengwei_shine" texturefile = "gfx/SCG/focus/GFX_SCG_jianlizhengwei.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_chongzugemingjundui_shine" texturefile = "gfx/SCG/focus/GFX_SCG_chongzugemingjundui.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_guanbingpingdeng_shine" texturefile = "gfx/SCG/focus/GFX_SCG_guanbingpingdeng.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_jianliminbingzhidu_shine" texturefile = "gfx/SCG/focus/GFX_SCG_jianliminbingzhidu.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_minbingweifu_shine" texturefile = "gfx/SCG/focus/GFX_SCG_minbingweifu.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_minbingweizhu_shine" texturefile = "gfx/SCG/focus/GFX_SCG_minbingweizhu.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_youqiubiying_shine" texturefile = "gfx/SCG/focus/GFX_SCG_youqiubiying.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_ziligengsheng_shine" texturefile = "gfx/SCG/focus/GFX_SCG_ziligengsheng.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_zhuangbeixiafang_shine" texturefile = "gfx/SCG/focus/GFX_SCG_zhuangbeixiafang.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_shenruqunzhong_shine" texturefile = "gfx/SCG/focus/GFX_SCG_shenruqunzhong.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_zizaowuqi_shine" texturefile = "gfx/SCG/focus/GFX_SCG_zizaowuqi.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_junduizhuanyehua_shine" texturefile = "gfx/SCG/focus/GFX_SCG_junduizhuanyehua.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_yiliangqusheng_shine" texturefile = "gfx/SCG/focus/GFX_SCG_yiliangqusheng.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_yizhiqusheng_shine" texturefile = "gfx/SCG/focus/GFX_SCG_yizhiqusheng.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_kuodazhuangbeishengchan_shine" texturefile = "gfx/SCG/focus/GFX_SCG_kuodazhuangbeishengchan.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_huoliyanfa_shine" texturefile = "gfx/SCG/focus/GFX_SCG_huoliyanfa.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_tishengzhuangbeishuiping_shine" texturefile = "gfx/SCG/focus/GFX_SCG_tishengzhuangbeishuiping.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_tishengchanpingongyi_shine" texturefile = "gfx/SCG/focus/GFX_SCG_tishengchanpingongyi.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
+	SpriteType = { name = "GFX_SCG_quanfuwuzhuang_shine" texturefile = "gfx/SCG/focus/GFX_SCG_quanfuwuzhuang.png" effectFile = "gfx/FX/buttonstate.lua" legacy_lazy_load = no }
 }

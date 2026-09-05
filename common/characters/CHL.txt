@@ -18,7 +18,7 @@ characters = {
 		name=CHL_zhang_boqi
 		portraits={
 			civilian={
-				large="gfx/leaders/CHL/CHL_zhang_boqi.tga"
+				large="gfx/leaders/CHL/CHL_zhang_boqi.png"
 			}
 		}
 		country_leader={
@@ -32,7 +32,7 @@ characters = {
 		name=CHL_zhou_yiqun
 		portraits={
 			civilian={
-				large="gfx/leaders/CHL/CHL_zhou_yiqun.tga"
+				large="gfx/leaders/CHL/CHL_zhou_yiqun.png"
 			}
 		}
 		country_leader={

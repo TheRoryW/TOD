@@ -48,6 +48,11 @@ spriteTypes = {
 		name = "GFX_event_news_bg"
 		texturefile = "gfx/interface/event_news_bg.dds"
 	}
+
+	spriteType = {
+		name = "GFX_event_news_pic_overlay"
+		texturefile = "gfx/interface/event_news_pic_overlay.dds"
+	}
 	
 	##########################################
 	### EVENT WINDOW

@@ -26,7 +26,7 @@ set_politics = {
 create_country_leader = {
 	name = "Zheng Yongqing"
 	desc = "POLITICS_ZHENG_YONGQING_DESC"
-	picture = "Portrait_LPC_Zheng_Yongqing.png"
+	picture = "gfx/leaders/LPC/Portrait_LPC_Zheng_Yongqing.png"
 	expire = "1965.1.1"
 	ideology = authoritarian_oligarchy_subtype
 }

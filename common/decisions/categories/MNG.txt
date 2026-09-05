@@ -49,3 +49,17 @@ MNG_chongjiandaming_categories = {
         }
      }
 }
+
+MNG_SIC_hebing_categories = {
+	priority = 3
+	icon = generic_political_discourse
+	allowed = { tag = SIC }
+	visible = { has_completed_focus = SIC_quanguo_zhixianpai_dahui }
+}
+
+MNG_SCG_hebing_categories = {
+	priority = 3
+	icon = generic_political_discourse
+	allowed = { tag = SCG }
+	visible = { has_completed_focus = SCG_quanguo_shehuizhuyi_zhengdang_huiyi }
+}

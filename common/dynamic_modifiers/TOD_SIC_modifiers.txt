@@ -52,4 +52,16 @@ SIC_qingzhengxi_shiyan = {
 	army_org_factor = SIC_qingzhengxi_shiyan_jundui
 }
 
+# 武备总会：数值由 SIC_wubei_integration_gengxin 按整合度阶段维护。
+SIC_wubei_zonghui = {
+	icon = SIC_hunluandejundui
+	stability_factor = SIC_wubei_zonghui_wending
+	political_power_gain = SIC_wubei_zonghui_zhengzhi
+	army_org_factor = SIC_wubei_zonghui_zuzhi
+	planning_speed = SIC_wubei_zonghui_jihua
+	industrial_capacity_factory = SIC_wubei_zonghui_chanchu
+	military_industrial_organization_funds_gain = SIC_wubei_zonghui_jungong
+	mobilization_speed = SIC_wubei_zonghui_dongyuan
+}
+
 

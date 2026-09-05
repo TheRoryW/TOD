@@ -72,6 +72,14 @@ ideas = {
 		}
 	
 
+    FRL_consociationalism_will_fix_idea = {
+        picture = FRL_political_crisis
+        modifier = {
+            stability_weekly = 0.001
+            political_power_gain = 0.1
+            drift_defence_factor = 0.1
+        }
+    }
     ### Stub ideas for Louisiana focus tree ###
     FRL_cointelpro_idea = {
         picture = FRL_great_depression
@@ -230,6 +238,14 @@ ideas = {
     FRL_USMC_3 = {
         picture = FRL_great_depression
         modifier = { modifier_army_sub_unit_marine_attack_factor = 0.15 }
+    }
+    FRL_citizens_rights_idea = {
+        picture = FRL_great_depression
+        modifier = { stability_factor = 0.05 }
+    }
+    FRL_dispel_injustice_idea = {
+        picture = FRL_great_depression
+        modifier = { stability_factor = 0.05 }
     }
 
     }

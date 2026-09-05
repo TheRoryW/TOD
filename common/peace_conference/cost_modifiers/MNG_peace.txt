@@ -18,4 +18,16 @@ peace_action_modifiers = {
 
         cost_multiplier = 0.25 # Reduced by ~75%
     }
+
+    # 大明分裂势力之间的地块统一按低成本处理，避免点数耗尽造成漏拿州。
+    damingneizhan_take_all_states = {
+        category = is_core
+        peace_action_type = take_states
+        enable = {
+            ROOT = { is_ming_tag = yes }
+            ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { is_ming_tag = yes }
+        }
+        cost_multiplier = 0.5
+    }
 }

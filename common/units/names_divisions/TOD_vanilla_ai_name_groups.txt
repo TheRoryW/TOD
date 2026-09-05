@@ -4,7 +4,7 @@
 GER_MOT_02 = {
 	name = "Motorized Divisions"
 	for_countries = { GER }
-	can_use = { has_government = fascism }
+	can_use = { has_government = national_corporatism }
 	division_types = { "motorized" }
 	fallback_name = "%d. Infanterie-Division (mot)"
 	ordered = { 1 = { "%d. Infanterie-Division (mot)" } }
@@ -13,7 +13,7 @@ GER_MOT_02 = {
 GER_MEC_01 = {
 	name = "Panzergrenadier Divisions"
 	for_countries = { GER }
-	can_use = { has_government = fascism }
+	can_use = { has_government = national_corporatism }
 	division_types = { "mechanized" }
 	fallback_name = "%d. Panzergrenadier-Division"
 	ordered = { 1 = { "%d. Panzergrenadier-Division" } }
@@ -31,7 +31,7 @@ GER_GAR_01 = {
 GER_Arm_01 = {
 	name = "Panzer Divisions"
 	for_countries = { GER }
-	can_use = { has_government = fascism }
+	can_use = { has_government = national_corporatism }
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 	fallback_name = "%d. Panzer-Division"
 	ordered = { 1 = { "%d. Panzer-Division" } }

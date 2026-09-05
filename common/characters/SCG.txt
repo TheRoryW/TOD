@@ -134,7 +134,7 @@ characters={
 		}
 		advisor={
 			slot = army_chief
-			idea_token = SCG_chen_dasan
+			idea_token = SCG_fu_zhong
 			allowed = { tag = SCG }
 			traits = { army_chief_planning_1 }
 		}

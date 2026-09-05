@@ -261,15 +261,7 @@ country_event = {
 		complete_national_focus = SRC_dongbeigemingdahuizhaokai
 		complete_national_focus = SRC_chenduxiuzhuxi
 		SRC_chen_duxiu = {
-			add_country_leader_role = {
-				promote_leader = yes
-				country_leader = {
-					### ideology = moderate_socialism # 国家领导人角色必须使用具体的 subtype
-					ideology = moderate_socialism_subtype
-					expire = "1965.1.1.1"
-					traits = {}
-				}
-			}
+			promote_character = { ideology = moderate_socialism_subtype }
 		}
 		mark_focus_tree_layout_dirty = yes
 	}
@@ -290,15 +282,7 @@ country_event = {
 		complete_national_focus = SRC_dongbeigemingdahuizhaokai
 		complete_national_focus = SRC_renfuchenzhuxi
 		SRC_ren_fuchen = {
-			add_country_leader_role = {
-				promote_leader = yes
-				country_leader = {
-					### ideology = vanguard_socialism # 国家领导人角色必须使用具体的 subtype
-					ideology = vanguard_socialism_subtype
-					expire = "1965.1.1.1"
-					traits = {}
-				}
-			}
+			promote_character = { ideology = vanguard_socialism_subtype }
 		}
 		SRC = {country_event = { id = SRCevents.16 } } 
 		mark_focus_tree_layout_dirty = yes
@@ -321,15 +305,7 @@ country_event = {
 		complete_national_focus = SRC_dongbeigemingdahuizhaokai
 		complete_national_focus = SRC_lidazhaozhuxi
 		SRC_li_dazhao = {
-			add_country_leader_role = {
-				promote_leader = yes
-				country_leader = {
-					### ideology = council_socialism # 国家领导人角色必须使用具体的 subtype
-					ideology = council_socialism_subtype
-					expire = "1965.1.1.1"
-					traits = {}
-				}
-			}
+			promote_character = { ideology = council_socialism_subtype }
 		}
 		mark_focus_tree_layout_dirty = yes
 	}

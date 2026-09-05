@@ -239,7 +239,7 @@ units = {
 			ship = { name = "漓江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
 			ship = { name = "桂江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
 			ship = { name = "柳江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
-			ship = { name = "淮河" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
+			ship = { name = "淮河 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
 			ship = { name = "嫩江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
 			ship = { name = "松花江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
 			ship = { name = "阳澄湖" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
@@ -253,7 +253,7 @@ units = {
 			ship = { name = "长桥海" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
 			ship = { name = "千岛湖" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
 			ship = { name = "淀山湖" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
-			ship = { name = "扬之水" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = MNG } } }
+			ship = { name = "扬之水 II" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = MNG } } }
 			ship = { name = "委蛇" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = MNG } } }
 			ship = { name = "竹猗" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = MNG } } }
 			ship = { name = "褧衣" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = MNG } } }
@@ -284,7 +284,7 @@ units = {
 			ship = { name = "唐风" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = MNG } } }
 			ship = { name = "蟋蟀" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = MNG } } }
 			ship = { name = "山有枢" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = MNG } } }
-			ship = { name = "扬之水" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = MNG } } }
+			ship = { name = "扬之水 III" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = MNG } } }
 			ship = { name = "椒聊" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = MNG } } }
 			ship = { name = "绸缪" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = MNG } } }
 			ship = { name = "杕杜" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = MNG } } }
@@ -331,13 +331,13 @@ units = {
 			name = "北洋舰队"
 			location = 7532 
 			ship = { name = "敬亭山" definition = battleship start_experience_factor = 0.25 equipment = { battleship_1 = { amount = 1 owner = MNG  } } }	
-			ship = { name = "龙虎山" definition = battleship start_experience_factor = 0.25 equipment = { battleship_1 = { amount = 1 owner = MNG  } } }		
+			ship = { name = "龙虎山 II" definition = battleship start_experience_factor = 0.25 equipment = { battleship_1 = { amount = 1 owner = MNG  } } }		
 			ship = { name = "青城山" definition = battleship start_experience_factor = 0.25 equipment = { battleship_1 = { amount = 1 owner = MNG  } } }		
 			ship = { name = "齐云山" definition = battleship start_experience_factor = 0.25 equipment = { battleship_1 = { amount = 1 owner = MNG  } } }		
 			ship = { name = "梵净山" definition = battleship start_experience_factor = 0.25 equipment = { battleship_1 = { amount = 1 owner = MNG  } } }		
 			ship = { name = "三清山" definition = battleship start_experience_factor = 0.25 equipment = { battleship_1 = { amount = 1 owner = MNG  } } }					
 			ship = { name = "玄武湖" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
-			ship = { name = "镜泊湖" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
+			ship = { name = "镜泊湖 II" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
 			ship = { name = "微山湖" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
 			ship = { name = "巴尔喀什湖" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
 			ship = { name = "白洋淀" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MNG  } } }
@@ -348,7 +348,7 @@ units = {
 			ship = { name = "终南" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	
 			ship = { name = "黄鸟" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	
 			ship = { name = "晨风" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	
-			ship = { name = "无衣" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	
+			ship = { name = "无衣 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	
 			ship = { name = "渭阳" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	
 			ship = { name = "权舆" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	
 			ship = { name = "墓门" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	
@@ -357,7 +357,7 @@ units = {
 			ship = { name = "株林" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	
 			ship = { name = "泽陂" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	
 			ship = { name = "桧风" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	
-			ship = { name = "羔裘" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }		
+			ship = { name = "羔裘 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }		
 			ship = { name = "素冠" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	
 			ship = { name = "仲行" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	
 			ship = { name = "隰有" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MNG } } }	

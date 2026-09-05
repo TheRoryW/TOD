@@ -4,20 +4,20 @@
 
 ######################################################################
 
-###  ##   ##  ### ###  ##  #  #      ## ###  ###  ##  ### ### ###  ##  
-#   #  # #  #  #   #  #  # ## #     #   #  # #   #  #  #  #    #  #  # 
-##  #### #     #   #  #  # # ##      #  ###  ##  #     #  ##   #  #    
-#   #  # #  #  #   #  #  # #  #       # #    #   #  #  #  #    #  #  # 
-#   #  #  ##   #  ###  ##  #  #     ##  #    ###  ##  ### #   ###  ##  
+###  ##   ##  ### ###  ##  #  #      ## ###  ###  ##  ### ### ###  ##
+#   #  # #  #  #   #  #  # ## #     #   #  # #   #  #  #  #    #  #  #
+##  #### #     #   #  #  # # ##      #  ###  ##  #     #  ##   #  #
+#   #  # #  #  #   #  #  # #  #       # #    #   #  #  #  #    #  #  #
+#   #  #  ##   #  ###  ##  #  #     ##  #    ###  ##  ### #   ###  ##
 
 ######################################################################
 
 
- ##  #   # ###  ## 
-#  #  # #   #  #   
-####   #    #   #  
-#  #  # #   #    # 
-#  # #   # ### ##  
+ ##  #   # ###  ##
+#  #  # #   #  #
+####   #    #   #
+#  #  # #   #    #
+#  # #   # ### ##
 
 
 
@@ -41,7 +41,7 @@ faction_goal_secure_european_continent = {
 							is_in_faction_with = ROOT
 							has_capitulated = yes
 							exists = no
-							is_subject_of = ROOT 
+							is_subject_of = ROOT
 						}
 					}
 				}
@@ -53,7 +53,7 @@ faction_goal_secure_european_continent = {
 	complete_effect = {
 		add_faction_power_projection = 100
 		custom_effect_tooltip = generic_skip_one_line_tt
-		every_faction_member = { 
+		every_faction_member = {
 			tooltip = INFLUENCE_ABOVE_30_PERCENT
 			visible_when_empty = yes
 			limit = {
@@ -80,7 +80,7 @@ faction_goal_secure_north_africa = {
 		OR = {
 			FROM = { original_tag = ITA }
 			any_allied_country = {
-				original_tag = ITA 
+				original_tag = ITA
 			}
 		}
 	}
@@ -113,7 +113,7 @@ faction_goal_secure_north_africa = {
 				faction_influence_rank < 3
 			}
 			add_faction_initiative = 1
-			add_political_power = 100 
+			add_political_power = 100
 		}
 	}
 	ai_will_do = {
@@ -146,7 +146,7 @@ faction_goal_high_seas_fleet = {
 		}
 	}
 	completed = {
-		has_war_with_major = yes 
+		has_war_with_major = yes
 		count_in_collection = {
 			collection = {
 				input = game:scope
@@ -165,7 +165,7 @@ faction_goal_high_seas_fleet = {
 		every_collection_element = {
 			input = {
 				input = game:scope
-				operators =  { 
+				operators =  {
 					faction_members
 					limit = {
 						num_of_naval_factories > 0
@@ -192,11 +192,11 @@ faction_goal_high_seas_fleet = {
 }
 
 
-### #  # ###      ##  #   #   ### ###  ## 
- #  #  # #       #  # #   #    #  #   #   
- #  #### ##      #### #   #    #  ##   #  
- #  #  # #       #  # #   #    #  #     # 
- #  #  # ###     #  # ### ### ### ### ## 
+### #  # ###      ##  #   #   ### ###  ##
+ #  #  # #       #  # #   #    #  #   #
+ #  #### ##      #### #   #    #  ##   #
+ #  #  # #       #  # #   #    #  #     #
+ #  #  # ###     #  # ### ### ### ### ##
 
 faction_goal_the_arteries_of_trade = {
 	name = the_arteries_of_trade_goal_name
@@ -232,7 +232,7 @@ faction_goal_the_arteries_of_trade = {
 			has_naval_control = 100
 			has_naval_control = 104
 			has_naval_control = 71
-			has_naval_control = 60	
+			has_naval_control = 60
 			has_naval_control = 48
 			has_naval_control = 61
 			has_naval_control = 62
@@ -289,7 +289,7 @@ faction_goal_imperial_glory = {
 		longest_war_length > 36
 		count_triggers = {
 			amount = 3 # Add triggers to count below
-			
+
 			1021 = { is_controlled_by_ROOT_or_ally = yes } # Singapore
 			118 = { is_controlled_by_ROOT_or_ally = yes } # Gibraltar
 			116 = { is_controlled_by_ROOT_or_ally = yes } # Malta
@@ -308,8 +308,8 @@ faction_goal_imperial_glory = {
 		every_collection_element = {
 			input = {
 				input = game:scope
-				operators =  { 
-					faction_members 
+				operators =  {
+					faction_members
 					limit = {
 						owns_any_state_of = {
 							 1021
@@ -320,7 +320,7 @@ faction_goal_imperial_glory = {
 						}
 					}
 				}
-				
+
 				name = OWNS_LISTED_STATE
 			}
 			custom_effect_tooltip = OWNS_LISTED_STATE
@@ -375,8 +375,8 @@ faction_goal_guardians_of_peace = {
 	visible = {
 		date < 1939.1.1
 		FROM = {
-			NOT = { has_government = fascism }
-			NOT = { has_government = communism }
+			NOT = { has_government = national_corporatism }
+			NOT = { has_government = vanguard_socialism }
 			NOT = { has_country_flag = guardians_of_peace_been_at_war_flag }
 		}
 	}
@@ -407,18 +407,18 @@ faction_goal_guardians_of_peace = {
 		base = 0
 		modifier = {
 			add = 1
-			has_government = democratic
+			has_government = liberal_democracy
 		}
 	}
 }
 
 ###########################################################
 
- ##  ### #  # ### ###  ###  ##       ##   ##   ##  #    ## 
-#    #   ## # #   #  #  #  #  #     #    #  # #  # #   #   
-# ## ##  # ## ##  ###   #  #        # ## #  # #### #    #  
-#  # #   #  # #   #  #  #  #  #     #  # #  # #  # #     # 
- ##  ### #  # ### #  # ###  ##       ##   ##  #  # ### ##  
+ ##  ### #  # ### ###  ###  ##       ##   ##   ##  #    ##
+#    #   ## # #   #  #  #  #  #     #    #  # #  # #   #
+# ## ##  # ## ##  ###   #  #        # ## #  # #### #    #
+#  # #   #  # #   #  #  #  #  #     #  # #  # #  # #     #
+ ##  ### #  # ### #  # ###  ##       ##   ##  #  # ### ##
 
 ###########################################################
 
@@ -477,8 +477,8 @@ faction_goal_marine_corps = {
 			every_collection_element = {
 				input = {
 					input = game:scope
-					operators = { 
-						faction_members 
+					operators = {
+						faction_members
 						limit = {
 							OR = {
 								has_tech = marines
@@ -490,7 +490,7 @@ faction_goal_marine_corps = {
 					name = ALL_FACTION_MEMBERS_WITH_AMPHIBIOUS_TECH
 				}
 				random_character = {
-					tooltip = ONE_GENERAL	
+					tooltip = ONE_GENERAL
 					visible_when_empty = yes
 					limit = {
 						is_army_leader = yes
@@ -508,7 +508,7 @@ faction_goal_marine_corps = {
 		custom_effect_tooltip = ALL_FACTION_MEMBERS_WITH_AMPHIBIOUS_TECH
 		effect_tooltip = {
 			random_character = {
-				tooltip = ONE_GENERAL	
+				tooltip = ONE_GENERAL
 				visible_when_empty = yes
 				limit = {
 					is_army_leader = yes
@@ -580,8 +580,8 @@ faction_goal_airborne_corps = {
 			every_collection_element = {
 				input = {
 					input = game:scope
-					operators = { 
-						faction_members 
+					operators = {
+						faction_members
 						limit = {
 							has_tech = paratroopers
 						}
@@ -589,7 +589,7 @@ faction_goal_airborne_corps = {
 					name = ALL_FACTION_MEMBERS_WITH_PARATROOPERS_TECH
 				}
 				random_character = {
-					tooltip = ONE_GENERAL	
+					tooltip = ONE_GENERAL
 					visible_when_empty = yes
 					limit = {
 						is_army_leader = yes
@@ -607,7 +607,7 @@ faction_goal_airborne_corps = {
 		custom_effect_tooltip = ALL_FACTION_MEMBERS_WITH_PARATROOPERS_TECH
 		effect_tooltip = {
 			random_character = {
-				tooltip = ONE_GENERAL	
+				tooltip = ONE_GENERAL
 				visible_when_empty = yes
 				limit = {
 					is_army_leader = yes
@@ -671,8 +671,8 @@ faction_goal_mountaineer_corps = {
 			every_collection_element = {
 				input = {
 					input = game:scope
-					operators = { 
-						faction_members 
+					operators = {
+						faction_members
 						limit = {
 							has_tech = tech_mountaineers
 						}
@@ -680,7 +680,7 @@ faction_goal_mountaineer_corps = {
 					name = ALL_FACTION_MEMBERS_WITH_MOUNTAINEERS_TECH
 				}
 				random_character = {
-					tooltip = ONE_GENERAL	
+					tooltip = ONE_GENERAL
 					visible_when_empty = yes
 					limit = {
 						is_army_leader = yes
@@ -698,7 +698,7 @@ faction_goal_mountaineer_corps = {
 		custom_effect_tooltip = ALL_FACTION_MEMBERS_WITH_MOUNTAINEERS_TECH
 		effect_tooltip = {
 			random_character = {
-				tooltip = ONE_GENERAL	
+				tooltip = ONE_GENERAL
 				visible_when_empty = yes
 				limit = {
 					is_army_leader = yes
@@ -763,8 +763,8 @@ faction_goal_submarine_force = {
 		every_collection_element = {
 			input = {
 				input = game:scope
-				operators = { 
-					faction_members 
+				operators = {
+					faction_members
 					limit = {
 						has_navy_size = {
 							size > 24
@@ -775,10 +775,10 @@ faction_goal_submarine_force = {
 				name = ALL_FACTION_MEMBERS_WITH_25_SUBMARINES
 			}
 			random_character = {
-				tooltip = ONE_ADMIRAL	
+				tooltip = ONE_ADMIRAL
 				visible_when_empty = yes
 				limit = {
-					is_navy_leader = yes 
+					is_navy_leader = yes
 					NOT = { has_trait = seawolf }
 					NOT = { has_trait = ironside }
 					NOT = { has_trait = battleship_adherent }
@@ -851,8 +851,8 @@ faction_goal_convoy_escort_force = {
 		every_collection_element = {
 			input = {
 				input = game:scope
-				operators = { 
-					faction_members 
+				operators = {
+					faction_members
 					limit = {
 						has_navy_size = {
 							size > 24
@@ -863,7 +863,7 @@ faction_goal_convoy_escort_force = {
 				name = ALL_FACTION_MEMBERS_WITH_25_SCREENING_SHIPS
 			}
 			random_character = {
-				tooltip = ONE_ADMIRAL	
+				tooltip = ONE_ADMIRAL
 				visible_when_empty = yes
 				limit = {
 					is_navy_leader = yes
@@ -936,8 +936,8 @@ faction_goal_air_superiority = {
 		every_collection_element = {
 			input = {
 				input = game:scope
-				operators = { 
-					faction_members 
+				operators = {
+					faction_members
 					limit = {
 						has_deployed_air_force_size = {
 							size > 249
@@ -1019,7 +1019,7 @@ faction_goal_industrial_expansion = {
 		custom_effect_tooltip = generic_skip_one_line_tt
 		every_faction_member = {
 			tooltip = AT_LEAST_50_CIVS
-			visible_when_empty = yes 
+			visible_when_empty = yes
 			limit = {
 				num_of_civilian_factories > 49
 			}
@@ -1069,8 +1069,8 @@ faction_goal_industrial_research = {
 		collection_size = {
 				input = {
 					input = game:scope
-					operators =  { 
-						faction_members 
+					operators =  {
+						faction_members
 					}
 				}
 				value > 4
@@ -1081,7 +1081,7 @@ faction_goal_industrial_research = {
 		custom_effect_tooltip = generic_skip_one_line_tt
 		every_faction_member = {
 			tooltip = INFLUENCE_ABOVE_30_PERCENT
-			visible_when_empty = yes 
+			visible_when_empty = yes
 			limit = {
 				faction_influence_ratio > 0.3
 			}
@@ -1095,8 +1095,8 @@ faction_goal_industrial_research = {
 			collection_size = {
 				input = {
 					input = game:scope
-					operators =  { 
-						faction_members 
+					operators =  {
+						faction_members
 					}
 				}
 				value < 5
@@ -1142,7 +1142,7 @@ faction_goal_a_military_base = {
 		custom_effect_tooltip = generic_skip_one_line_tt
 		every_faction_member = {
 			tooltip = AT_LEAST_50_MILS
-			visible_when_empty = yes 
+			visible_when_empty = yes
 			limit = {
 				num_of_military_factories > 49
 			}

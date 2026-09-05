@@ -1,5 +1,8 @@
 ﻿l_english:
 
 ### 国家 ###
-SYR_authoritarian_oligarchy:0 "法属叙利亚"
+SYR:0 "French Levant"
+SYR_DEF:0 "the French Levant"
+SYR_ADJ:0 "Levantine"
+SYR_authoritarian_oligarchy:0 "French Levant"
 

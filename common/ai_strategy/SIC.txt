@@ -17,44 +17,44 @@ SIC_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = paratroopers
-		value = 10
+		value = 0
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = mountaineers
-		value = 10
+		value = 20
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = marines
-		value = 10
+		value = 0
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 25
+		value = 10
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 75
+		value = 90
 	}
 	
 	#Air unit factors
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
-		value = 75 # From 70 to 75
+		value = 55
 	}
 	
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
-		value = 0
+		value = 30
 	}
 	
 	ai_strategy = {
@@ -76,53 +76,65 @@ SIC_unit_production = {
 	}
 	
 	
-	# Naval unit factors
+	# 内陆政权不分配造舰比重，仅保留统一后运输所需的少量船团。
 	ai_strategy = {
 		type = unit_ratio
 		id = capital_ship
-		value = 25 # from 15 to 25
+		value = 0
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = submarine
-		value = 40 #from 50 to 40
+		value = 0
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
-		value = 20
+		value = 0
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = convoy
-		value = 20
+		value = 5
 	}
 	
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
-		value = 20
+		value = 10
 	}
 	
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
-		value = 35
+		value = 45
 	}
 	
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
-		value = 25
+		value = 30
 	}
 	
 	ai_strategy = {
 		type = equipment_production_factor
 		id = armor
-		value = 0
+		value = 5
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = support
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = 15
 	}
 	
 	ai_strategy = {

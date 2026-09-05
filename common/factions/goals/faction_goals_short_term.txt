@@ -4,20 +4,20 @@
 
 ######################################################################
 
-###  ##   ##  ### ###  ##  #  #      ## ###  ###  ##  ### ### ###  ##  
-#   #  # #  #  #   #  #  # ## #     #   #  # #   #  #  #  #    #  #  # 
-##  #### #     #   #  #  # # ##      #  ###  ##  #     #  ##   #  #    
-#   #  # #  #  #   #  #  # #  #       # #    #   #  #  #  #    #  #  # 
-#   #  #  ##   #  ###  ##  #  #     ##  #    ###  ##  ### #   ###  ##  
+###  ##   ##  ### ###  ##  #  #      ## ###  ###  ##  ### ### ###  ##
+#   #  # #  #  #   #  #  # ## #     #   #  # #   #  #  #  #    #  #  #
+##  #### #     #   #  #  # # ##      #  ###  ##  #     #  ##   #  #
+#   #  # #  #  #   #  #  # #  #       # #    #   #  #  #  #    #  #  #
+#   #  #  ##   #  ###  ##  #  #     ##  #    ###  ##  ### #   ###  ##
 
 ######################################################################
 
 
- ##  #   # ###  ## 
-#  #  # #   #  #   
-####   #    #   #  
-#  #  # #   #    # 
-#  # #   # ### ##  
+ ##  #   # ###  ##
+#  #  # #   #  #
+####   #    #   #
+#  #  # #   #    #
+#  # #   # ### ##
 
 
 faction_goal_one_germany = {
@@ -30,15 +30,15 @@ faction_goal_one_germany = {
 			original_tag = GER
 		}
 	}
-	cancel = { 
+	cancel = {
 		FROM = {
-			NOT = { has_government = fascism }
+			NOT = { has_government = national_corporatism }
 		}
 	}
 	completed = {
 		any_country_with_original_tag = {
 			original_tag_to_check = AUS
-			exists = no 
+			exists = no
 		}
 		any_country_with_original_tag = {
 			original_tag_to_check = GER
@@ -57,11 +57,11 @@ faction_goal_one_germany = {
 }
 
 
-#  #  ##  ##  
-#  # #   #  # 
-#  #  #  #### 
-#  #   # #  # 
- ##  ##  #  # 
+#  #  ##  ##
+#  # #   #  #
+#  #  #  ####
+#  #   # #  #
+ ##  ##  #  #
 
 
 faction_goal_building_up_guam = {
@@ -72,14 +72,14 @@ faction_goal_building_up_guam = {
 	visible = {
 		FROM = { tag = USA}
 	}
-	cancel = { 
+	cancel = {
 		FROM = { NOT = { controls_state = 638 } }
 	}
 	completed = {
 		638 = { naval_base > 2 }
 	}
 	complete_effect = {
-		add_faction_power_projection = 100 
+		add_faction_power_projection = 100
 		custom_effect_tooltip = THE_FACTION_LEADER
 		add_faction_initiative = 1
 		add_war_support = 0.02
@@ -90,21 +90,21 @@ faction_goal_building_up_guam = {
 }
 
 
-### #  # ###      ##  #   #   ### ###  ## 
- #  #  # #       #  # #   #    #  #   #   
- #  #### ##      #### #   #    #  ##   #  
- #  #  # #       #  # #   #    #  #     # 
- #  #  # ###     #  # ### ### ### ### ## 
+### #  # ###      ##  #   #   ### ###  ##
+ #  #  # #       #  # #   #    #  #   #
+ #  #### ##      #### #   #    #  ##   #
+ #  #  # #       #  # #   #    #  #     #
+ #  #  # ###     #  # ### ### ### ### ##
 
 
 ### none!
 
 
- ##  #  # ### #  #  ##  
-#  # #  #  #  ## # #  # 
-#    ####  #  # ## #### 
-#  # #  #  #  #  # #  # 
- ##  #  # ### #  # #  # 
+ ##  #  # ### #  #  ##
+#  # #  #  #  ## # #  #
+#    ####  #  # ## ####
+#  # #  #  #  #  # #  #
+ ##  #  # ### #  # #  #
 
 
 faction_goal_guerilla_expansion = {
@@ -135,8 +135,8 @@ faction_goal_guerilla_expansion = {
 		every_collection_element = {
 			input = {
 				input = game:scope
-				operators =  { 
-					faction_members 
+				operators =  {
+					faction_members
 					limit = {
 						check_variable = { THIS.guerilla_counter > 2 }
 					}
@@ -164,7 +164,7 @@ faction_goal_north_subjugated = {
 	visible = {
 		FROM = {
 			original_tag = CHI
-			has_faction_template = faction_template_chinese_united_front 
+			has_faction_template = faction_template_chinese_united_front
 			NOT = {
 				has_country_flag = CHI_tour_the_south_flag
 				has_country_flag = CHI_tour_the_west_flag
@@ -201,13 +201,13 @@ faction_goal_north_subjugated = {
 		every_collection_element = {
 			input = {
 				input = game:scope
-				operators =  { 
+				operators =  {
 					faction_members
 					limit = {
 						is_subject = yes
 					}
 				}
-				
+
 				name = ALL_FACTION_MEMBERS
 			}
 			custom_effect_tooltip = ALL_FACTION_MEMBERS
@@ -244,7 +244,7 @@ faction_goal_unlock_research = {
 			}
 			add_to_temp_variable = { total_techs = num_researched_technologies }
 		}
-		
+
 		multiply_temp_variable = {
 			var = total_techs
 			value = 1.20
@@ -257,7 +257,7 @@ faction_goal_unlock_research = {
 		scope:faction = {
 			hidden_trigger = {
 				tooltip_evaluation = eval
-				set_temp_variable = { unlock_military_techs_researched_compare = 0 }			
+				set_temp_variable = { unlock_military_techs_researched_compare = 0 }
 				all_collection_elements = {
 					collection = {
 						input = game:scope
@@ -320,7 +320,7 @@ faction_goal_unlock_military = {
 			}
 			add_to_temp_variable = { total_divs = num_armies }
 		}
-		
+
 		multiply_temp_variable = {
 			var = total_divs
 			value = 1.20
@@ -333,7 +333,7 @@ faction_goal_unlock_military = {
 		scope:faction = {
 			hidden_trigger = {
 				tooltip_evaluation = eval
-				set_temp_variable = { unlock_compare = 0 }			
+				set_temp_variable = { unlock_compare = 0 }
 				all_collection_elements = {
 					collection = {
 						input = game:scope
@@ -382,7 +382,7 @@ faction_goal_west_subjugated = {
 	visible = {
 		FROM = {
 			original_tag = CHI
-			has_faction_template = faction_template_chinese_united_front 
+			has_faction_template = faction_template_chinese_united_front
 			NOT = {
 				has_country_flag = CHI_tour_the_south_flag
 				has_country_flag = CHI_tour_the_north_flag
@@ -419,13 +419,13 @@ faction_goal_west_subjugated = {
 		every_collection_element = {
 			input = {
 				input = game:scope
-				operators =  { 
+				operators =  {
 					faction_members
 					limit = {
 						is_subject = yes
 					}
 				}
-				
+
 				name = ALL_FACTION_MEMBERS
 			}
 			custom_effect_tooltip = ALL_FACTION_MEMBERS
@@ -448,7 +448,7 @@ faction_goal_south_subjugated = {
 	visible = {
 		FROM = {
 			original_tag = CHI
-			has_faction_template = faction_template_chinese_united_front 
+			has_faction_template = faction_template_chinese_united_front
 			NOT = {
 				has_country_flag = CHI_tour_the_north_flag
 				has_country_flag = CHI_tour_the_west_flag
@@ -476,13 +476,13 @@ faction_goal_south_subjugated = {
 		every_collection_element = {
 			input = {
 				input = game:scope
-				operators =  { 
+				operators =  {
 					faction_members
 					limit = {
 						is_subject = yes
 					}
 				}
-				
+
 				name = ALL_FACTION_MEMBERS
 			}
 			custom_effect_tooltip = ALL_FACTION_MEMBERS
@@ -498,11 +498,11 @@ faction_goal_south_subjugated = {
 }
 
 
- ###  ##  ###   ##  #  # 
-   # #  # #  # #  # ## # 
-   # #### ###  #### # ## 
-#  # #  # #    #  # #  # 
- ##  #  # #    #  # #  # 
+ ###  ##  ###   ##  #  #
+   # #  # #  # #  # ## #
+   # #### ###  #### # ##
+#  # #  # #    #  # #  #
+ ##  #  # #    #  # #  #
 
 
 faction_goal_coastal_security = {
@@ -531,9 +531,9 @@ faction_goal_coastal_security = {
 		every_collection_element = {
 			input = {
 				input = game:scope
-				operators =  { 
-					faction_members 
-				}	
+				operators =  {
+					faction_members
+				}
 				name = ALL_FACTION_MEMBERS
 			}
 			navy_experience = 50
@@ -549,11 +549,11 @@ faction_goal_coastal_security = {
 }
 
 
- ##  ##  #   # ### ### ###     #  # #  # ###  ##  #  # 
-#   #  # #   #  #  #    #      #  # ## #  #  #  # ## # 
- #  #  #  # #   #  ##   #      #  # # ##  #  #  # # ## 
-  # #  #  # #   #  #    #      #  # #  #  #  #  # #  # 
-##   ##    #   ### ###  #       ##  #  # ###  ##  #  # 
+ ##  ##  #   # ### ### ###     #  # #  # ###  ##  #  #
+#   #  # #   #  #  #    #      #  # ## #  #  #  # ## #
+ #  #  #  # #   #  ##   #      #  # # ##  #  #  # # ##
+  # #  #  # #   #  #    #      #  # #  #  #  #  # #  #
+##   ##    #   ### ###  #       ##  #  # ###  ##  #  #
 
 
 faction_goal_production_quotas = {
@@ -668,11 +668,11 @@ faction_goal_stall_the_fascist_threat = {
 
 ##########################################################
 
- ##  ### #  # ### ###  ###  ##       ##   ##   ##  #    ## 
-#    #   ## # #   #  #  #  #  #     #    #  # #  # #   #   
-# ## ##  # ## ##  ###   #  #        # ## #  # #### #    #  
-#  # #   #  # #   #  #  #  #  #     #  # #  # #  # #     # 
- ##  ### #  # ### #  # ###  ##       ##   ##  #  # ### ##  
+ ##  ### #  # ### ###  ###  ##       ##   ##   ##  #    ##
+#    #   ## # #   #  #  #  #  #     #    #  # #  # #   #
+# ## ##  # ## ##  ###   #  #        # ## #  # #### #    #
+#  # #   #  # #   #  #  #  #  #     #  # #  # #  # #     #
+ ##  ### #  # ### #  # ###  ##       ##   ##  #  # ### ##
 
 ##########################################################
 
@@ -691,22 +691,22 @@ faction_goal_growing_the_faction = {
 		num_faction_members > 4
 	}
 	complete_effect = {
-		add_faction_power_projection = 50 
+		add_faction_power_projection = 50
 		custom_effect_tooltip = generic_skip_one_line_tt
 		custom_effect_tooltip = THE_FACTION_LEADER
 		add_faction_initiative = 1
 	}
 	ai_will_do = {
 		base = 0
-		modifier = {  
+		modifier = {
 			add = 1
 			num_faction_members < 5
 		}
-		modifier = {  
+		modifier = {
 			add = 1
 			num_faction_members < 4
 		}
-		modifier = {  
+		modifier = {
 			add = 3
 			num_faction_members < 3
 		}
@@ -743,13 +743,13 @@ faction_goal_spy_master = {
 		custom_effect_tooltip = THE_SPY_MASTER
 		add_faction_initiative = 1
 		custom_effect_tooltip = generic_skip_one_line_tt
-		every_faction_member = { 
+		every_faction_member = {
 			limit = {
 				has_intelligence_agency = no
 			}
 			create_intelligence_agency = yes
 		}
-		every_faction_member = { 
+		every_faction_member = {
 			limit = {
 				has_intelligence_agency = yes
 				NOT = { has_done_agency_upgrade  = upgrade_form_department }
@@ -764,7 +764,7 @@ faction_goal_spy_master = {
 			}
 			upgrade_intelligence_agency = upgrade_crypto_strength
 		}
-		every_faction_member = { 
+		every_faction_member = {
 			limit = {
 				has_intelligence_agency = yes
 				has_done_agency_upgrade = upgrade_crypto_strength
@@ -774,7 +774,7 @@ faction_goal_spy_master = {
 			add_faction_initiative = 1
 			upgrade_intelligence_agency = upgrade_crypto_strength_2
 		}
-		every_faction_member = { 
+		every_faction_member = {
 			limit = {
 				has_intelligence_agency = yes
 				NOT = { agency_upgrade_number > 30 }
@@ -798,7 +798,7 @@ faction_goal_spy_master = {
 	}
 	ai_will_do = {
 		base = 1
-		modifier = {  
+		modifier = {
 			add = 2
 			has_intelligence_agency = yes
 		}
@@ -830,7 +830,7 @@ faction_goal_convoy_sufficiency = {
 		custom_effect_tooltip = generic_skip_one_line_tt
 		every_faction_member = {
 			tooltip = AT_LEAST_200_CONVOYS
-			visible_when_empty = yes 
+			visible_when_empty = yes
 			limit = {
 				has_navy_size = {
 				    size > 199
@@ -842,7 +842,7 @@ faction_goal_convoy_sufficiency = {
 	}
 	ai_will_do = {
 		base = 1
-		modifier = {  
+		modifier = {
 			add = -1
 			collection_size = {
 				input = {
@@ -857,7 +857,7 @@ faction_goal_convoy_sufficiency = {
 				value < 1
 			}
 		}
-		modifier = {  
+		modifier = {
 			add = 1
 			OR = {
 				original_tag = ENG
@@ -867,7 +867,7 @@ faction_goal_convoy_sufficiency = {
 				original_tag = FRA
 			}
 		}
-		modifier = {  
+		modifier = {
 			add = 1
 			collection_size = {
 				input = {
@@ -898,7 +898,7 @@ faction_goal_ensure_military_r_d = {
 					input = game:all_states
 					operators = {
 						limit = {
-							is_controlled_by_ROOT_or_ally = yes 
+							is_controlled_by_ROOT_or_ally = yes
 							land_facility > 0
 						}
 					}
@@ -911,7 +911,7 @@ faction_goal_ensure_military_r_d = {
 					input = game:all_states
 					operators = {
 						limit = {
-							is_controlled_by_ROOT_or_ally = yes 
+							is_controlled_by_ROOT_or_ally = yes
 							naval_facility > 0
 						}
 					}
@@ -924,7 +924,7 @@ faction_goal_ensure_military_r_d = {
 					input = game:all_states
 					operators = {
 						limit = {
-							is_controlled_by_ROOT_or_ally = yes 
+							is_controlled_by_ROOT_or_ally = yes
 							air_facility > 0
 						}
 					}
@@ -940,7 +940,7 @@ faction_goal_ensure_military_r_d = {
 				input = game:all_states
 				operators = {
 					limit = {
-						is_controlled_by_ROOT_or_ally = yes 
+						is_controlled_by_ROOT_or_ally = yes
 						land_facility > 0
 					}
 				}
@@ -953,7 +953,7 @@ faction_goal_ensure_military_r_d = {
 				input = game:all_states
 				operators = {
 					limit = {
-						is_controlled_by_ROOT_or_ally = yes 
+						is_controlled_by_ROOT_or_ally = yes
 						naval_facility > 0
 					}
 				}
@@ -966,7 +966,7 @@ faction_goal_ensure_military_r_d = {
 				input = game:all_states
 				operators = {
 					limit = {
-						is_controlled_by_ROOT_or_ally = yes 
+						is_controlled_by_ROOT_or_ally = yes
 						air_facility > 0
 					}
 				}
@@ -1095,7 +1095,7 @@ faction_goal_military_infrastructure = {
 				operators = {
 					limit = {
 						is_core_of = CONTROLLER
-						is_controlled_by_ROOT_or_ally = yes 
+						is_controlled_by_ROOT_or_ally = yes
 						any_neighbor_state = {
 							controller = {
 								NOT = { is_in_faction_with = ROOT }
@@ -1115,7 +1115,7 @@ faction_goal_military_infrastructure = {
 				input = game:all_states
 				operators = {
 					limit = {
-						is_controlled_by_ROOT_or_ally = yes 
+						is_controlled_by_ROOT_or_ally = yes
 						any_neighbor_state = {
 							controller = {
 								NOT = { is_in_faction_with = ROOT }
@@ -1139,7 +1139,7 @@ faction_goal_military_infrastructure = {
 	}
 	ai_will_do = {
 		base = 0
-		modifier = {  
+		modifier = {
 			add = 1
 			has_war = no
 		}
@@ -1240,16 +1240,16 @@ faction_goal_an_armored_fist = {
 		add_faction_power_projection = 200
 		custom_effect_tooltip = ALL_FACTION_MEMBERS
 		every_faction_member = {
-			army_experience = 50 
+			army_experience = 50
 			random_character = {
-				tooltip = ONE_PANZER_GENERAL	
+				tooltip = ONE_PANZER_GENERAL
 				visible_when_empty = yes
 				limit = {
-					is_unit_leader = yes 
+					is_unit_leader = yes
 					OR = {
 						has_trait = armor_officer
 						has_trait = panzer_leader
-						has_trait = panzer_expert 
+						has_trait = panzer_expert
 					}
 				}
 				gain_xp = 400
@@ -1282,16 +1282,16 @@ faction_goal_an_infantry_army = {
 		add_faction_power_projection = 200
 		custom_effect_tooltip = ALL_FACTION_MEMBERS
 		every_faction_member = {
-			army_experience = 50 
+			army_experience = 50
 			random_character = {
 				tooltip = ONE_INFANTRY_GENERAL
 				visible_when_empty = yes
 				limit = {
-					is_unit_leader = yes 
+					is_unit_leader = yes
 					OR = {
 						has_trait = infantry_officer
 						has_trait = infantry_leader
-						has_trait = infantry_expert 
+						has_trait = infantry_expert
 					}
 				}
 				gain_xp = 400

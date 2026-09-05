@@ -509,7 +509,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRL_end_invisible_persecution"
 			add_political_power = 50
-			add_ideas = FRL_end_invisible_persecution
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 	}

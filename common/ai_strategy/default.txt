@@ -134,7 +134,7 @@ default_unit_production_super_heavies = {
 		num_of_military_factories > 150 # nly if we have loads of factories
 		date > 1943.6.1 # Lets wait until late war
 		NOT = { has_tech = main_battle_tank_chassis } # Abandon Super heavy projects if we start doing modern tanks instead
-		NOT = { has_government = democratic } # Let the authoritarian regimes spend money on this 
+		NOT = { has_government = liberal_democracy } # Let the authoritarian regimes spend money on this
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -1276,6 +1276,143 @@ if_we_can_build_v2_rockets_we_want_v2_rockets = {
 		value = 1
 	}
 }
+
+# 大北方战争中点的优势方必须将增援和攻势集中到唯一敌手；随临时精神/战争结束自动失效。
+TOD_FIN_nordic_unification_offensive_ai = {
+	allowed = { original_tag = FIN }
+	enable = {
+		has_idea = FIN_nordic_unification_offensive
+		country_exists = SWE
+		has_war_with = SWE
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = force_concentration_factor
+		value = 80
+	}
+	ai_strategy = {
+		type = force_concentration_target_weight
+		tag = SWE
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = SWE
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SWE
+		ratio = 0.0
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+
+TOD_SWE_nordic_unification_offensive_ai = {
+	allowed = { original_tag = SWE }
+	enable = {
+		has_idea = SWE_nordic_unification_offensive
+		country_exists = FIN
+		has_war_with = FIN
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = force_concentration_factor
+		value = 80
+	}
+	ai_strategy = {
+		type = force_concentration_target_weight
+		tag = FIN
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = FIN
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = FIN
+		ratio = 0.0
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+
+# 兰周冲突爆发后，双方将兵力和进攻命令集中于唯一对手，避免长期消极对峙。
+TOD_ZHR_lanfang_war_offensive_ai = {
+	allowed = { original_tag = ZHR }
+	enable = {
+		country_exists = LAF
+		has_war_with = LAF
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = force_concentration_factor
+		value = 80
+	}
+	ai_strategy = {
+		type = force_concentration_target_weight
+		tag = LAF
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = LAF
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = LAF
+		ratio = 0.0
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+
+TOD_LAF_lanfang_war_offensive_ai = {
+	allowed = { original_tag = LAF }
+	enable = {
+		country_exists = ZHR
+		has_war_with = ZHR
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = force_concentration_factor
+		value = 80
+	}
+	ai_strategy = {
+		type = force_concentration_target_weight
+		tag = ZHR
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = ZHR
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = ZHR
+		ratio = 0.0
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+
 if_we_can_build_sams_we_want_sams = {
 	enable = {
 		is_special_project_completed = sp:sp_rockets_ground_to_air_missile

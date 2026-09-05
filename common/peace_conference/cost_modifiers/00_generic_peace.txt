@@ -71,8 +71,8 @@ peace_action_modifiers = {
         peace_action_type = { take_states puppet liberate force_government }
 
         enable = {
-            FROM.FROM.FROM = { 
-				is_controlled_by = ROOT 
+            FROM.FROM.FROM = {
+				is_controlled_by = ROOT
 				compliance > 0 #To prevent capitulation-occupation kicking in
 			}
         }
@@ -86,7 +86,7 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = take_states
         enable = {
-            ROOT = { has_government = fascism }
+            ROOT = { has_government = national_corporatism }
         }
         cost_multiplier = 0.9
     }
@@ -96,7 +96,7 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = liberate
         enable = {
-            ROOT = { has_government = fascism }
+            ROOT = { has_government = national_corporatism }
         }
         cost_multiplier = 1.3
     }
@@ -106,7 +106,7 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = puppet
         enable = {
-            ROOT = { has_government = fascism }
+            ROOT = { has_government = national_corporatism }
         }
         cost_multiplier = 0.95
     }
@@ -116,7 +116,7 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = take_states
         enable = {
-            ROOT = { has_government = communism } # should use negotiator or taker???
+            ROOT = { has_government = vanguard_socialism } # should use negotiator or taker???
         }
         cost_multiplier = 1.0
     }
@@ -126,7 +126,7 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = liberate
         enable = {
-            ROOT = { has_government = communism }
+            ROOT = { has_government = vanguard_socialism }
         }
         cost_multiplier = 1.3
     }
@@ -136,7 +136,7 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = puppet
         enable = {
-            ROOT = { has_government = communism }
+            ROOT = { has_government = vanguard_socialism }
         }
         cost_multiplier = 0.9
     }
@@ -146,7 +146,7 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = take_states
         enable = {
-            ROOT = { has_government = democratic }
+            ROOT = { has_government = liberal_democracy }
             NOT = { # state is not taker's core
                 FROM.FROM.FROM = { is_core_of = ROOT.FROM }
             }
@@ -159,8 +159,8 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = liberate
         enable = {
-            ROOT = { has_government = democratic }
-            ROOT.FROM = { has_government = democratic }
+            ROOT = { has_government = liberal_democracy }
+            ROOT.FROM = { has_government = liberal_democracy }
         }
         cost_multiplier = 0.9
     }
@@ -170,8 +170,8 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = force_government
         enable = {
-            ROOT = { has_government = democratic }
-            ROOT.FROM = { has_government = fascism }
+            ROOT = { has_government = liberal_democracy }
+            ROOT.FROM = { has_government = national_corporatism }
         }
         cost_multiplier = 0.9
     }
@@ -181,8 +181,8 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = force_government
         enable = {
-            ROOT = { has_government = democratic }
-            ROOT.FROM = { has_government = communism }
+            ROOT = { has_government = liberal_democracy }
+            ROOT.FROM = { has_government = vanguard_socialism }
         }
         cost_multiplier = 0.9
     }
@@ -192,7 +192,7 @@ peace_action_modifiers = {
         category = ideology
         peace_action_type = puppet
         enable = {
-            ROOT = { has_government = democratic }
+            ROOT = { has_government = liberal_democracy }
         }
         cost_multiplier = 1.2
     }
@@ -219,7 +219,7 @@ peace_action_modifiers = {
     }
 
 
-    # Test to see if we can apply Defensive War modifiers where appropriate without adding a separate wargoal 
+    # Test to see if we can apply Defensive War modifiers where appropriate without adding a separate wargoal
     defensive_war_liberate = {
         category = defensive_war # Should possibly be a "wargoal" category. Esp if we move other wrgoals to here
         peace_action_type = { liberate force_government }
@@ -317,6 +317,75 @@ peace_action_modifiers = {
         cost_multiplier = 0.5
     }
 
+    # 俄罗斯对东墙和芬兰的既定结算，确保和平会议分数足以完成设定结果。
+    TOD_RUS_puppet_east_wall = {
+        category = other
+        peace_action_type = puppet
+        enable = {
+            ROOT = { tag = RUS }
+            ROOT.FROM = { tag = ROOT }
+            FROM.FROM = {
+                OR = {
+                    tag = POL
+                    tag = HUN
+                }
+            }
+        }
+        cost_multiplier = 0.10
+    }
+
+    TOD_RUS_take_finland_cores = {
+        category = is_core
+        peace_action_type = take_states
+        enable = {
+            ROOT = { tag = RUS }
+            ROOT.FROM = { tag = ROOT }
+            FROM.FROM = {
+                OR = {
+                    tag = FIN
+                    tag = SWE
+                }
+            }
+            FROM.FROM.FROM = { is_core_of = FIN }
+        }
+        cost_multiplier = 0.10
+    }
+
+    TOD_RUS_puppet_scandinavia = {
+        category = other
+        peace_action_type = puppet
+        enable = {
+            ROOT = { tag = RUS }
+            ROOT.FROM = { tag = ROOT }
+            OR = {
+                AND = {
+                    ROOT = { has_country_flag = TOD_RUS_northern_phase_two_started }
+                    FROM.FROM = { tag = SWE }
+                }
+                AND = {
+                    ROOT = { has_country_flag = TOD_RUS_northern_finished_winner_SWE }
+                    FROM.FROM = { tag = SWE }
+                }
+                AND = {
+                    ROOT = { has_country_flag = TOD_RUS_northern_finished_winner_FIN }
+                    FROM.FROM = { tag = FIN }
+                }
+            }
+        }
+        cost_multiplier = 0.10
+    }
+
+    TOD_XIN_puppet_BRM = {
+        category = other
+        peace_action_type = puppet
+        enable = {
+            ROOT = { tag = XIN }
+            ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { tag = BRM }
+        }
+        cost_multiplier = 0.10
+    }
+
 
     eat_the_rich = {
         category = ideology
@@ -327,8 +396,8 @@ peace_action_modifiers = {
             ROOT.FROM = { tag = ROOT }
             ROOT.FROM.FROM = {
                 is_major = yes
-				NOT = { has_government = fascism }
-				NOT = { has_government = neutrality }
+				NOT = { has_government = national_corporatism }
+				NOT = { has_government = conservative_democracy }
             }
         }
         cost_multiplier = 0.80
@@ -341,7 +410,7 @@ peace_action_modifiers = {
 
         enable = {
             ROOT = {
-                has_government = democratic
+                has_government = liberal_democracy
                 is_major = yes
             }
             ROOT.FROM.FROM = {

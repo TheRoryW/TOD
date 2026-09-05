@@ -26,7 +26,7 @@ oob = "empty"
 	create_country_leader = {
 		name = "Paul Behnvke"
 		desc = "POLITICS_PAUL_BEHNVKE_DESC"
-		picture = "Portrait_LAM_Paul_Behnvke.png"
+		picture = "gfx/leaders/LAM/Portrait_LAM_Paul_Behnvke.png"
 		expire = "1965.1.1"
 		ideology = moderate_socialism_subtype
 	}

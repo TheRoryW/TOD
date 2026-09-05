@@ -165,7 +165,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_HUN_daidongqitadiqu"
-		texturefile = "gfx/HUN/focus/GFX_HUN_daidongqitadiqu.dds"
+		texturefile = "gfx/HUN/focus/GFX_HUN_daidongqitadiqu.png"
 	}
 	spriteType = {
 		name = "GFX_HUN_kejitouzi"

@@ -11,7 +11,7 @@ mobile_infantry = {
         always = yes
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 95
@@ -21,7 +21,7 @@ mobile_infantry = {
             factor = 0.5
             is_major = no
         }
-    
+
     }
 
     # EFFECTS
@@ -166,9 +166,9 @@ large_unit_tactics = {
     effect = {
 
     }
-   
+
     #OTHER BASE REWARDS
-    
+
     category_all_infantry = {
         supply_consumption = -0.01
     }
@@ -197,7 +197,7 @@ large_unit_tactics = {
                 soft_attack = 0.1
             }
             army_morale = 0.2
-            
+
         }
         motorization_initiative = {
         #5
@@ -243,7 +243,7 @@ assault_infantry = {
     # EFFECTS
 
     #OTHER BASE REWARDS
-    artillery = {   
+    artillery = {
         soft_attack = 0.1
     }
 
@@ -363,7 +363,7 @@ mounted_infantry = {
         has_dlc = "No Compromise, No Surrender"
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 0.5
@@ -400,7 +400,7 @@ mounted_infantry = {
                     max_organisation = 5
                     add = yes
                 }
-            } 
+            }
             category_cavalry = {
                 max_organisation = 5
             }
@@ -411,11 +411,11 @@ mounted_infantry = {
                 ap_attack = 0.2
             }
 
-        
+
 }        beasts_of_war = {
             category_cavalry = {
-                maximum_speed = 0.5 
-                max_strength = 0.05 
+                maximum_speed = 0.5
+                max_strength = 0.05
             }
             recon = {
                 maximum_speed = 0.5
@@ -449,7 +449,7 @@ commandos = {
     xp_type = army
 
     available = {
-       
+
     }
     visible = {
         has_dlc = "No Compromise, No Surrender"
@@ -458,7 +458,7 @@ commandos = {
 
     ai_will_do = { base = 0 }
     enable_tactic = tactic_infantry_charge
-    
+
     logistics_company = {
         battalion_mult = {
             category = category_light_infantry
@@ -470,7 +470,7 @@ commandos = {
     # EFFECTS
 
     rewards = {
-        isolated_combat_elements = { 
+        isolated_combat_elements = {
             category_light_infantry = {
                 supply_consumption = -0.01
                 reliability = 0.05
@@ -483,7 +483,7 @@ commandos = {
             }
              helicopter_field_hospital = {
                 casualty_trickleback = 0.05
-            }           
+            }
 
         }
         security_zone_operations = {
@@ -504,8 +504,8 @@ commandos = {
             category_vehicle_infantry = {
                 reliability = 0.05
                 breakthrough = 0.1
-            } 
-            
+            }
+
         }
         rigorous_training_regimen = {
             recon = {
@@ -526,7 +526,7 @@ commandos = {
                     soft_attack = 0.1
                 }
             }
-            
+
             infantry = {
                 desert = {
                     attack = 0.05
@@ -552,7 +552,7 @@ commandos = {
                 soft_attack = 0.1
                 breakthrough = 0.1
             }
-            
+
 
         }
     }
@@ -568,14 +568,14 @@ irregulars = {
     xp_type = army
 
     available = {
-        
+
     }
     visible = {
         has_dlc = "No Compromise, No Surrender"
     }
 
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 2
@@ -603,7 +603,7 @@ irregulars = {
     # EFFECTS
 
     rewards = {
-        service_by_lot = { 
+        service_by_lot = {
             mobilization_speed = 0.05
         }
         partisan_regiments = {
@@ -618,15 +618,15 @@ irregulars = {
             }
         }
 
-        
+
         improvised_officer_groups = {
             category_light_infantry = {
                 max_organisation = 10
                 soft_attack = 0.1
                 breakthrough = 0.1
             }
-            
-            
+
+
         }
         levee_en_masse = {
             conscription = 0.02
@@ -657,7 +657,7 @@ peoples_war = {
     name = SUBDOCTRINE_PEOPLES_WAR
     description = SUBDOCTRINE_PEOPLES_WAR_DESC
     icon = GFX_doctrine_peoples_war_medium
-   
+
     xp_cost = 50
     xp_type = army
 
@@ -668,11 +668,11 @@ peoples_war = {
                     original_tag = INS
                 }
             }
-            has_government = communism
+            has_government = vanguard_socialism
         }
         else = {
             OR = {
-                has_government = communism
+                has_government = vanguard_socialism
                 AND = {
                     original_tag = INS
                     has_completed_focus = INS_underground_revolution
@@ -731,7 +731,7 @@ peoples_war = {
                max_organisation = 10
                breakthrough = 0.2
             }
-            
+
 
 
         }
@@ -786,7 +786,7 @@ great_war_infantry = {
                     entrenchment = 0.05
                 }
             }
-            
+
         }
         sapping_operations = {
             category_light_infantry = {

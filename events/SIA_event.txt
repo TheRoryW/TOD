@@ -64,7 +64,7 @@ country_event = {   #内战事件
 		ROS = {
 			declare_war_on = { target = SIA type = annex_everything }
 		}
-		set_autonomy = { target = LAN autonomy_state = autonomy_free }
+		set_autonomy = { target = LAN autonomous_state = autonomy_free }
 		leave_faction = yes
 		SIA = {
 			transfer_units_fraction = {
@@ -86,7 +86,7 @@ country_event = {   #内战事件
 			declare_war_on = { target = SIA type = annex_everything }
 		}
 		SIA = {
-			set_autonomy = { target = LAN autonomy_state = autonomy_free }
+			set_autonomy = { target = LAN autonomous_state = autonomy_free }
 			leave_faction = yes
 		}
 		SIA = {

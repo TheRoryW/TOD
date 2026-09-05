@@ -2,6 +2,23 @@ capital = 195
 
 oob = "RUS_1936"
 
+# 俄罗斯具备维持既有大军的基础技术，但刻意落后于德、法、英和东墙一档。
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	basic_train = 1
+	gwtank = 1
+}
+
 country_event = { id = TODRussia.1 days = 30 }
 
 set_politics = {

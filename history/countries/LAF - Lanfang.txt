@@ -2,6 +2,27 @@
 
 oob = "LAF_1936"
 
+# 海峡分舰队所需的 1936 年基础舰体与模块；不额外提高陆军科技。
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+	}
+	else = {
+		set_technology = {
+			early_destroyer = 1
+			early_light_cruiser = 1
+			early_battleship = 1
+		}
+	}
+}
+
 MNG = {
 	if = {
 		limit = {

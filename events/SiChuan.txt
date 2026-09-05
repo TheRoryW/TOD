@@ -182,7 +182,7 @@ country_event = {
 		SIC = { 
 			set_autonomy = {
 				target = SIC
-				autonomy_state = autonomy_puppet
+				autonomous_state = autonomy_puppet
 			}
 		}
 	}
@@ -335,7 +335,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = TODSIC.1007.a
-		add_ideas = SCG_gonghui
+		add_ideas = SCG_gongrenhezuoshe
 	}
 }
 
@@ -371,7 +371,7 @@ country_event = {
 		STG = {
 			set_autonomy = {
 				target = SIC
-				autonomy_state = autonomy_dominion
+				autonomous_state = autonomy_dominion
 			}
 		}
 	}
@@ -430,4 +430,617 @@ country_event = {
 		name = TODSIC.1012.a
 		add_political_power = 50
 	}
+}
+
+# 四川恢复基本秩序
+country_event = {
+	id = TODSIC.1013
+	title = TODSIC.1013.t
+	desc = TODSIC.1013.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1013.a
+	}
+}
+
+# 天府之治
+country_event = {
+	id = TODSIC.1014
+	title = TODSIC.1014.t
+	desc = TODSIC.1014.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1014.a
+	}
+}
+
+# 川渝屹立
+country_event = {
+	id = TODSIC.1015
+	title = TODSIC.1015.t
+	desc = TODSIC.1015.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1015.a
+	}
+}
+
+# 逐鹿中原
+country_event = {
+	id = TODSIC.1016
+	title = TODSIC.1016.t
+	desc = TODSIC.1016.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1016.a
+	}
+}
+
+# 清政系四川试验启动
+country_event = {
+	id = TODSIC.1017
+	title = TODSIC.1017.t
+	desc = TODSIC.1017.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1017.a
+		add_to_variable = { SIC.qingzhengxi = 2 }
+		SIC_qingzhengxi_xianzheng_gengxin = yes
+	}
+}
+
+# 军队退出政治
+country_event = {
+	id = TODSIC.1018
+	title = TODSIC.1018.t
+	desc = TODSIC.1018.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1018.a
+		add_stability = 0.02
+		add_war_support = -0.02
+	}
+}
+
+# 四川基本法公布
+country_event = {
+	id = TODSIC.1019
+	title = TODSIC.1019.t
+	desc = TODSIC.1019.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1019.a
+		add_political_power = 50
+		add_stability = 0.03
+	}
+}
+
+# 宪政救国宣言
+country_event = {
+	id = TODSIC.1020
+	title = TODSIC.1020.t
+	desc = TODSIC.1020.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1020.a
+		add_war_support = 0.05
+		add_political_power = 35
+	}
+}
+
+# 四川模式成形
+country_event = {
+	id = TODSIC.1021
+	title = TODSIC.1021.t
+	desc = TODSIC.1021.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1021.a
+		add_stability = 0.05
+		add_political_power = 50
+	}
+}
+
+# 武备系路线事件
+country_event = {
+	id = TODSIC.1030
+	title = TODSIC.1030.t
+	desc = TODSIC.1030.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1030.a }
+}
+country_event = {
+	id = TODSIC.1031
+	title = TODSIC.1031.t
+	desc = TODSIC.1031.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1031.a
+		country_event = { id = TODSIC.1034 days = 7 }
+	}
+}
+country_event = {
+	id = TODSIC.1032
+	title = TODSIC.1032.t
+	desc = TODSIC.1032.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1032.a }
+}
+country_event = {
+	id = TODSIC.1033
+	title = TODSIC.1033.t
+	desc = TODSIC.1033.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1033.a
+		army_experience = 10
+	}
+}
+country_event = {
+	id = TODSIC.1034
+	title = TODSIC.1034.t
+	desc = TODSIC.1034.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1034.a }
+}
+country_event = {
+	id = TODSIC.1035
+	title = TODSIC.1035.t
+	desc = TODSIC.1035.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1035.a }
+}
+country_event = {
+	id = TODSIC.1036
+	title = TODSIC.1036.t
+	desc = TODSIC.1036.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1036.a }
+}
+country_event = {
+	id = TODSIC.1037
+	title = TODSIC.1037.t
+	desc = TODSIC.1037.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1037.a }
+}
+country_event = {
+	id = TODSIC.1038
+	title = TODSIC.1038.t
+	desc = TODSIC.1038.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1038.a }
+}
+country_event = {
+	id = TODSIC.1039
+	title = TODSIC.1039.t
+	desc = TODSIC.1039.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1039.a
+		news_event = { id = TODSIC.1041 days = 1 }
+	}
+}
+country_event = {
+	id = TODSIC.1040
+	title = TODSIC.1040.t
+	desc = TODSIC.1040.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1040.a
+		news_event = { id = TODSIC.1042 days = 1 }
+	}
+}
+news_event = {
+	id = TODSIC.1041
+	title = TODSIC.1041.t
+	desc = TODSIC.1041.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	major = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1041.a }
+}
+news_event = {
+	id = TODSIC.1042
+	title = TODSIC.1042.t
+	desc = TODSIC.1042.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	major = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1042.a }
+}
+# 由处理南北领导权争议时调用；保留为隐藏检查节点，方便后续接入更细的顺天关系事件。
+country_event = {
+	id = TODSIC.1043
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { has_country_flag = SIC_wubei_collaboration_route }
+	option = {
+		name = TODSIC.1043.a
+		remove_ideas = SIC_nanbei_lingdaoquan_zhengyi
+		add_ideas = SIC_nanbei_junxu_xieding
+	}
+}
+
+# 四川革命政府：革命胜利后的经济、外交与两院政治事件
+country_event = {
+	id = TODSIC.1050
+	title = TODSIC.1050.t
+	desc = TODSIC.1050.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1050.a }
+}
+country_event = {
+	id = TODSIC.1051
+	title = TODSIC.1051.t
+	desc = TODSIC.1051.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1051.a }
+}
+country_event = {
+	id = TODSIC.1052
+	title = TODSIC.1052.t
+	desc = TODSIC.1052.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1052.a }
+}
+country_event = {
+	id = TODSIC.1053
+	title = TODSIC.1053.t
+	desc = TODSIC.1053.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1053.a }
+}
+country_event = {
+	id = TODSIC.1054
+	title = TODSIC.1054.t
+	desc = TODSIC.1054.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = no
+	is_triggered_only = yes
+	option = { name = TODSIC.1054.a }
+}
+country_event = {
+	id = TODSIC.1055
+	title = TODSIC.1055.t
+	desc = TODSIC.1055.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = no
+	is_triggered_only = yes
+	option = { name = TODSIC.1055.a }
+}
+country_event = {
+	id = TODSIC.1056
+	title = TODSIC.1056.t
+	desc = TODSIC.1056.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = no
+	is_triggered_only = yes
+	option = { name = TODSIC.1056.a }
+}
+country_event = {
+	id = TODSIC.1057
+	title = TODSIC.1057.t
+	desc = TODSIC.1057.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = no
+	is_triggered_only = yes
+	option = { name = TODSIC.1057.a }
+}
+country_event = {
+	id = TODSIC.1058
+	title = TODSIC.1058.t
+	desc = TODSIC.1058.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1058.a }
+}
+country_event = {
+	id = TODSIC.1059
+	title = TODSIC.1059.t
+	desc = TODSIC.1059.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1059.a }
+}
+country_event = {
+	id = TODSIC.1060
+	title = TODSIC.1060.t
+	desc = TODSIC.1060.d
+	picture = GFX_tao_lun_jun_shi
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1060.a
+		add_to_variable = { SCG.renmin_shouquan = 8 }
+		add_to_variable = { SCG.dangji_xietiao = -4 }
+		add_political_power = -25
+		clr_country_flag = SCG_liangyuan_weiji_jinxingzhong
+		SCG_liangyuan_zhengzhi_gengxin = yes
+	}
+	option = {
+		name = TODSIC.1060.b
+		add_to_variable = { SCG.renmin_shouquan = -4 }
+		add_to_variable = { SCG.dangji_xietiao = 8 }
+		add_stability = 0.01
+		clr_country_flag = SCG_liangyuan_weiji_jinxingzhong
+		SCG_liangyuan_zhengzhi_gengxin = yes
+	}
+	option = {
+		name = TODSIC.1060.c
+		add_to_variable = { SCG.renmin_shouquan = 4 }
+		add_to_variable = { SCG.dangji_xietiao = 4 }
+		add_political_power = -50
+		clr_country_flag = SCG_liangyuan_weiji_jinxingzhong
+		SCG_liangyuan_zhengzhi_gengxin = yes
+		country_event = { id = TODSIC.1061 days = 7 }
+	}
+}
+country_event = {
+	id = TODSIC.1061
+	title = TODSIC.1061.t
+	desc = TODSIC.1061.d
+	picture = GFX_tao_lun_jun_shi
+	is_triggered_only = yes
+	option = {
+		name = TODSIC.1061.a
+		add_stability = 0.02
+		SCG_liangyuan_zhengzhi_gengxin = yes
+	}
+}
+country_event = {
+	id = TODSIC.1062
+	title = TODSIC.1062.t
+	desc = TODSIC.1062.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1062.a }
+}
+country_event = {
+	id = TODSIC.1063
+	title = TODSIC.1063.t
+	desc = TODSIC.1063.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1063.a }
+}
+country_event = {
+	id = TODSIC.1064
+	title = TODSIC.1064.t
+	desc = TODSIC.1064.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1064.a }
+}
+country_event = {
+	id = TODSIC.1065
+	title = TODSIC.1065.t
+	desc = TODSIC.1065.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1065.a }
+}
+country_event = {
+	id = TODSIC.1066
+	title = TODSIC.1066.t
+	desc = TODSIC.1066.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1066.a }
+}
+country_event = {
+	id = TODSIC.1067
+	title = TODSIC.1067.t
+	desc = TODSIC.1067.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1067.a }
+}
+country_event = {
+	id = TODSIC.1068
+	title = TODSIC.1068.t
+	desc = TODSIC.1068.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1068.a }
+}
+country_event = {
+	id = TODSIC.1069
+	title = TODSIC.1069.t
+	desc = TODSIC.1069.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1069.a }
+}
+country_event = {
+	id = TODSIC.1070
+	title = TODSIC.1070.t
+	desc = TODSIC.1070.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1070.a }
+}
+country_event = {
+	id = TODSIC.1071
+	title = TODSIC.1071.t
+	desc = TODSIC.1071.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1071.a }
+}
+country_event = {
+	id = TODSIC.1072
+	title = TODSIC.1072.t
+	desc = TODSIC.1072.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1072.a }
+}
+country_event = {
+	id = TODSIC.1073
+	title = TODSIC.1073.t
+	desc = TODSIC.1073.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1073.a }
+}
+country_event = {
+	id = TODSIC.1074
+	title = TODSIC.1074.t
+	desc = TODSIC.1074.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1074.a }
+}
+country_event = {
+	id = TODSIC.1075
+	title = TODSIC.1075.t
+	desc = TODSIC.1075.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1075.a }
+}
+country_event = {
+	id = TODSIC.1076
+	title = TODSIC.1076.t
+	desc = TODSIC.1076.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1076.a }
+}
+country_event = {
+	id = TODSIC.1077
+	title = TODSIC.1077.t
+	desc = TODSIC.1077.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1077.a }
+}
+country_event = {
+	id = TODSIC.1078
+	title = TODSIC.1078.t
+	desc = TODSIC.1078.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1078.a }
+}
+country_event = {
+	id = TODSIC.1079
+	title = TODSIC.1079.t
+	desc = TODSIC.1079.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1079.a }
+}
+country_event = {
+	id = TODSIC.1080
+	title = TODSIC.1080.t
+	desc = TODSIC.1080.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1080.a }
+}
+country_event = {
+	id = TODSIC.1081
+	title = TODSIC.1081.t
+	desc = TODSIC.1081.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1081.a }
+}
+country_event = {
+	id = TODSIC.1082
+	title = TODSIC.1082.t
+	desc = TODSIC.1082.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1082.a }
+}
+country_event = {
+	id = TODSIC.1083
+	title = TODSIC.1083.t
+	desc = TODSIC.1083.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1083.a }
+}
+country_event = {
+	id = TODSIC.1084
+	title = TODSIC.1084.t
+	desc = TODSIC.1084.d
+	picture = GFX_tao_lun_jun_shi
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { name = TODSIC.1084.a }
 }

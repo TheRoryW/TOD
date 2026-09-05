@@ -8,13 +8,149 @@ units= {
 			name = "Escuadrón de El Ferrol"
 			location = 758  # Ferrol/Coruna
 			ship = { name = "ARE España" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
-			ship = { name = "ARE Libertad" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
-			ship = { name = "ARE Almirante Cervera" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Libertad II" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Almirante Cervera II" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
 			# Flotilla de Destructores de El Ferrol
-			ship = { name = "ARE Alsedo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
-			ship = { name = "ARE Velasco" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
-			ship = { name = "ARE Lazaga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
-            ship = { name = "ARE Sanchez Barcaiztegui" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class"} } }
+			ship = { name = "ARE Alsedo II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Velasco II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Lazaga II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+            ship = { name = "ARE Sanchez Barcaiztegui II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class"} } }
+		}
+	}
+	fleet = {
+		name = "Reserva de la Armada Republicana"
+		naval_base = 10024
+		task_force = {
+			name = "Fuerza de reserva"
+			location = 10024
+			ship = { name = "Reserva BB 001 II" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "Reserva BB 002 II" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "Reserva BB 003 II" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "Reserva BB 004 II" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "Reserva BB 005 II" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "Reserva CA 006 II" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Canarias Class" } } }
+			ship = { name = "Reserva CA 007 II" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Canarias Class" } } }
+			ship = { name = "Reserva CA 008 II" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Canarias Class" } } }
+			ship = { name = "Reserva CA 009 II" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Canarias Class" } } }
+			ship = { name = "Reserva CA 010 II" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Canarias Class" } } }
+			ship = { name = "Reserva CA 011 II" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Canarias Class" } } }
+			ship = { name = "Reserva CA 012 II" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Canarias Class" } } }
+			ship = { name = "Reserva CL 013 II" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "Reserva CL 014 II" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "Reserva CL 015 II" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "Reserva CL 016 II" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "Reserva CL 017 II" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "Reserva DD 018 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 019 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 020 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 021 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 022 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 023 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 024 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 025 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 026 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 027 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 028 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 029 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 030 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 031 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 032 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 033 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 034 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 035 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 036 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 037 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 038 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 039 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 040 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 041 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 042 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 043 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 044 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 045 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 046 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 047 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 048 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 049 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 050 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 051 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 052 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 053 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 054 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 055 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 056 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 057 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 058 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 059 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 060 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 061 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 062 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 063 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 064 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva DD 065 II" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "Reserva SS 066 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 067 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 068 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 069 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 070 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 071 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 072 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 073 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 074 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 075 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 076 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 077 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 078 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 079 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 080 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 081 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 082 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 083 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 084 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 085 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 086 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 087 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 088 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 089 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 090 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 091 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 092 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 093 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 094 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 095 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 096 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 097 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 098 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 099 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 100 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 101 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 102 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 103 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 104 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 105 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 106 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 107 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 108 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 109 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 110 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 111 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 112 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 113 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 114 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 115 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 116 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 117 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 118 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 119 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 120 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 121 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 122 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 123 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 124 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 125 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 126 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 127 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
+			ship = { name = "Reserva SS 128 II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
 		}
 	}
 }

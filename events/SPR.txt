@@ -1,24 +1,32 @@
 add_namespace = TODspain
 #西班牙跑路
-country_event = { 
+country_event = {
 	id = TODspain.1
 	title = TODspain.1.t
 	desc =TODspain.1.d
 	picture = GFX_report_event_chinese_soldiers_fighting
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag =  SPR
-		has_war_with = ENG
+		OR = {
+			has_war_with = GER
+			has_war_with = ENG
+			any_country = {
+				original_tag = FRA
+				has_war_with = ROOT
+			}
+		}
         OR = {
             41 = { is_controlled_by = GER }
             41 = { is_controlled_by = ENG }
+			41 = { controller = { original_tag = FRA } }
         }
-		surrender_progress > 0.6
+		surrender_progress > 0.70
 
 	}
-	
+
 	option = { # 成为英国傀儡
 		name = TODspain.1.a
 		trigger = { is_ai = no }
@@ -42,25 +50,25 @@ country_event = {
 	title = TODspain.14.t
 	desc = TODspain.14.d
 	picture = GFX_report_event_ENGman_parade_paris
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = TODspain.14.a
 		ai_chance = {
 			factor = 50
 		}
-		every_country = {
-			limit = {
+			every_country = {
+				limit = {
 				OR = {
-					tag = SPR
+					original_tag = SPR
 					is_puppet_of = SPR
 				}
 			}
+			if = { limit = { has_war_with = GER } white_peace = GER }
+			if = { limit = { has_war_with = ENG } white_peace = ENG }
 			every_country = {
-				limit = {
-					has_war_with = PREV
-				}
+				limit = { original_tag = FRA has_war_with = PREV }
 				white_peace = PREV
 			}
 		}
@@ -115,7 +123,7 @@ country_event = {
 					character = SPR_Francisco_Franco
 				}
 			}
-			
+
 			699 = { set_state_owner_to = SPR }
 			783 = { set_state_owner_to = SPR }
 			290 = { set_state_owner_to = SPR }
@@ -123,11 +131,11 @@ country_event = {
 			add_country_leader_role = {
 				character = SPR_Francisco_Franco
 				country_leader = {
-					ideology = national_corporatism_subtype 
+					ideology = national_corporatism_subtype
 					expire = "1965.1.1.1"
 					id = -1
 				}
-				promote_leader = yes 
+				promote_leader = yes
 			}
 			if = {
 				limit = {  SPR = { has_country_flag = become_deguokuilei } }
@@ -137,14 +145,14 @@ country_event = {
 		every_country = {
 			limit = {
 				OR = {
-					tag = SPR
+					original_tag = SPR
 					is_puppet_of = SPR
 				}
 			}
+			if = { limit = { has_war_with = GER } white_peace = GER }
+			if = { limit = { has_war_with = ENG } white_peace = ENG }
 			every_country = {
-				limit = {
-					has_war_with = PREV
-				}
+				limit = { original_tag = FRA has_war_with = PREV }
 				white_peace = PREV
 			}
 		}

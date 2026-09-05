@@ -161,8 +161,8 @@ country_event = {
 			release = FET
 		}
 		SIB = { change_tag_from = RUS }
-		RUS = { set_autonomy = { target = FET autonomy_state = autonomy_puppet } }
-		BLR = { set_autonomy = { target = BLT autonomy_state = autonomy_puppet } }
+		RUS = { set_autonomy = { target = FET autonomous_state = autonomy_puppet } }
+		BLR = { set_autonomy = { target = BLT autonomous_state = autonomy_puppet } }
 		every_country = { limit = { is_in_faction_with = HUN has_war_with = RUS } white_peace = RUS }
 		if = { limit = { has_war_with = RUS } white_peace = RUS }
 		country_event = { id = TODhungary.37 days = 30 }
@@ -187,7 +187,7 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers_fighting
 	is_triggered_only = yes
 	trigger = { tag = SER country_exists = HUN }
-	option = { name = TODhungary.38.a HUN = { set_autonomy = { target = SER autonomy_state = autonomy_puppet } } }
+	option = { name = TODhungary.38.a HUN = { set_autonomy = { target = SER autonomous_state = autonomy_puppet } } }
 }
 #右翼做出行动
 country_event = {
@@ -899,7 +899,7 @@ news_event = {
 					NOT = { has_war_with = HUN }
 				}
 			}
-			BLR = { add_to_faction = HUN }
+			HUN = { add_to_faction = BLR }
 		}
 		if = {
 			limit = {
@@ -909,7 +909,7 @@ news_event = {
 					NOT = { has_war_with = HUN }
 				}
 			}
-			UKR = { add_to_faction = HUN }
+			HUN = { add_to_faction = UKR }
 		}
 	}
 	option = { 

@@ -1147,14 +1147,14 @@ GOS_decision_l_3_fn = {  #法案
 			base = 0.02		
 			modifier = {
 				factor = 50	
-				has_stability > 80
+				has_stability > 0.8
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
 			}	
 			modifier = {
 				factor = 5	
-				has_stability > 60
+				has_stability > 0.6
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
@@ -1196,14 +1196,14 @@ GOS_decision_l_3_fn = {  #法案
 			base = 0.02	
 			modifier = {
 				factor = 50	
-				has_stability > 80
+				has_stability > 0.8
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
 			}	
 			modifier = {
 				factor = 5	
-				has_stability > 60
+				has_stability > 0.6
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
@@ -1245,14 +1245,14 @@ GOS_decision_l_3_fn = {  #法案
 			base = 0.02		
 			modifier = {
 				factor = 50	
-				has_stability > 80
+				has_stability > 0.8
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
 			}	
 			modifier = {
 				factor = 5	
-				has_stability > 60
+				has_stability > 0.6
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
@@ -1306,14 +1306,14 @@ GOS_decision_l_3_fn = {  #法案
 			base = 0.02	
 			modifier = {
 				factor = 50	
-				has_stability > 80
+				has_stability > 0.8
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
 			}	
 			modifier = {
 				factor = 5	
-				has_stability > 60
+				has_stability > 0.6
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
@@ -1349,14 +1349,14 @@ GOS_decision_l_3_fn = {  #法案
 			base = 0.02	
 			modifier = {
 				factor = 50	
-				has_stability > 80
+				has_stability > 0.8
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
 			}	
 			modifier = {
 				factor = 5	
-				has_stability > 60
+				has_stability > 0.6
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
@@ -1398,14 +1398,14 @@ GOS_decision_l_3_fn = {  #法案
 			base = 0.02		
 			modifier = {
 				factor = 50	
-				has_stability > 80
+				has_stability > 0.8
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
 			}	
 			modifier = {
 				factor = 5	
-				has_stability > 60
+				has_stability > 0.6
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
@@ -1447,14 +1447,14 @@ GOS_decision_l_3_fn = {  #法案
 			base = 0.02	
 			modifier = {
 				factor = 50	
-				has_stability > 80
+				has_stability > 0.8
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
 			}	
 			modifier = {
 				factor = 5	
-				has_stability > 60
+				has_stability > 0.6
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
@@ -1496,14 +1496,14 @@ GOS_decision_l_3_fn = {  #法案
 			base = 0.02	
 			modifier = {
 				factor = 50	
-				has_stability > 80
+				has_stability > 0.8
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
 			}	
 			modifier = {
 				factor = 5	
-				has_stability > 60
+				has_stability > 0.6
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
@@ -1547,14 +1547,14 @@ GOS_decision_l_3_fn = {  #法案
 			base = 0.02	
 			modifier = {
 				factor = 50	
-				has_stability > 80
+				has_stability > 0.8
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
 			}	
 			modifier = {
 				factor = 5	
-				has_stability > 60
+				has_stability > 0.6
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
@@ -1615,14 +1615,14 @@ GOS_decision_l_3_fn = {  #法案
 			base = 0.02	
 			modifier = {
 				factor = 50	
-				has_stability > 80
+				has_stability > 0.8
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}
 			}	
 			modifier = {
 				factor = 5	
-				has_stability > 60
+				has_stability > 0.6
 				check_variable = {
 					GOS_VAR_tzqw > 0.5
 				}

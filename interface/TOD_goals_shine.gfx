@@ -930,10 +930,10 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_GER_cheng_li_ji_ti_nong_zhuang_he_zuo_she_shine"
-		texturefile = "gfx/interface/goals/GFX_GER_cheng_li_ji_ti_nong_zhuang_he_zuo_she.png"
+		texturefile = "gfx/interface/goals/GER_cheng_li_ji_ti_nong_zhuang_he_zuo_she.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GER_cheng_li_ji_ti_nong_zhuang_he_zuo_she.png"
+			animationmaskfile = "gfx/interface/goals/GER_cheng_li_ji_ti_nong_zhuang_he_zuo_she.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -946,7 +946,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GER_cheng_li_ji_ti_nong_zhuang_he_zuo_she.png"
+			animationmaskfile = "gfx/interface/goals/GER_cheng_li_ji_ti_nong_zhuang_he_zuo_she.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -962,10 +962,10 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_GER_tu_di_fa_ling_shine"
-		texturefile = "gfx/interface/goals/GFX_GER_tu_di_fa_ling.png"
+		texturefile = "gfx/interface/goals/GER_tu_di_fa_ling.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GER_tu_di_fa_ling.png"
+			animationmaskfile = "gfx/interface/goals/GER_tu_di_fa_ling.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -978,7 +978,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GER_tu_di_fa_ling.png"
+			animationmaskfile = "gfx/interface/goals/GER_tu_di_fa_ling.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -997,7 +997,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GER_de_yi_zhi_shao_nian_xian_feng_dui.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GER_de_yi_zhi_shao_nian_xian_feng_dui.png"
+			animationmaskfile = "gfx/interface/goals/GER_de_yi_zhi_shao_nian_xian_feng_dui.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1010,7 +1010,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GER_de_yi_zhi_shao_nian_xian_feng_dui.png"
+			animationmaskfile = "gfx/interface/goals/GER_de_yi_zhi_shao_nian_xian_feng_dui.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1410,10 +1410,10 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_GER_hong_se_feitelie_shine"
-		texturefile = "gfx/interface/goals/GFX_GER_hong_se_feitelie.png"
+		texturefile = "gfx/interface/goals/GER_hong_se_feitelie.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GER_hong_se_feitelie.png"
+			animationmaskfile = "gfx/interface/goals/GER_hong_se_feitelie.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1426,7 +1426,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GER_hong_se_feitelie.png"
+			animationmaskfile = "gfx/interface/goals/GER_hong_se_feitelie.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -8071,10 +8071,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_HUN_daidongqitadiqu_shine"
-		texturefile = "gfx/HUN/focus/GFX_HUN_daidongqitadiqu.dds"
+		texturefile = "gfx/HUN/focus/GFX_HUN_daidongqitadiqu.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/HUN/focus/GFX_HUN_daidongqitadiqu.dds"
+			animationmaskfile = "gfx/HUN/focus/GFX_HUN_daidongqitadiqu.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -8087,7 +8087,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/HUN/focus/GFX_HUN_daidongqitadiqu.dds"
+			animationmaskfile = "gfx/HUN/focus/GFX_HUN_daidongqitadiqu.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -11013,10 +11013,10 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_GRE_yutuerqidetongmen_shine"
-		texturefile = "gfx/interface/goals/GRE_yutuerqidetongmen.png"
+		texturefile = "gfx/interface/goals/GRE_yutuerqidetongmeng.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GRE_yutuerqidetongmen.png"
+			animationmaskfile = "gfx/interface/goals/GRE_yutuerqidetongmeng.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -11029,7 +11029,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GRE_yutuerqidetongmen.png"
+			animationmaskfile = "gfx/interface/goals/GRE_yutuerqidetongmeng.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -15974,10 +15974,10 @@ spriteTypes = {
 	
 	SpriteType = { #凯末尔主义的未来
 		name = "GFX_TUR_kaimoerzhuyideweilai"
-		texturefile = "gfx/interface/goals/TUR_kaimoerzhuyideweilai.png"
+		texturefile = "gfx/TUR/focus/TUR_kaimoerzhuyideweilai.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_kaimoerzhuyideweilai.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_kaimoerzhuyideweilai.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -15990,7 +15990,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_kaimoerzhuyideweilai.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_kaimoerzhuyideweilai.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16006,10 +16006,10 @@ spriteTypes = {
 	
 	SpriteType = { #授权纲领派
 		name = "GFX_TUR_shouquanganglingpai"
-		texturefile = "gfx/interface/goals/TUR_shouquanganglingpai.png"
+		texturefile = "gfx/TUR/focus/TUR_shouquanganglingpai.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_shouquanganglingpai.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_shouquanganglingpai.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16022,7 +16022,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_shouquanganglingpai.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_shouquanganglingpai.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16038,10 +16038,10 @@ spriteTypes = {
 	
 	SpriteType = { #授权旗帜派
 		name = "GFX_TUR_shouquanqizhipai"
-		texturefile = "gfx/interface/goals/TUR_shouquanqizhipai.png"
+		texturefile = "gfx/TUR/focus/TUR_shouquanqizhipai.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_shouquanqizhipai.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_shouquanqizhipai.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16054,7 +16054,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_shouquanqizhipai.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_shouquanqizhipai.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16070,10 +16070,10 @@ spriteTypes = {
 	
 	SpriteType = { #维持党内团结
 		name = "GFX_TUR_weichidangneituanjie"
-		texturefile = "gfx/interface/goals/TUR_weichidangneituanjie.png"
+		texturefile = "gfx/TUR/focus/TUR_weichidangneituanjie.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_weichidangneituanjie.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_weichidangneituanjie.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16086,7 +16086,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_weichidangneituanjie.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_weichidangneituanjie.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16102,10 +16102,10 @@ spriteTypes = {
 	
 	SpriteType = { #三五计划的收尾工作
 		name = "GFX_TUR_sanwujihuadeshouweigongzuo"
-		texturefile = "gfx/interface/goals/TUR_sanwujihuadeshouweigongzuo.png"
+		texturefile = "gfx/TUR/focus/TUR_sanwujihuadeshouweigongzuo.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_sanwujihuadeshouweigongzuo.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_sanwujihuadeshouweigongzuo.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16118,7 +16118,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_sanwujihuadeshouweigongzuo.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_sanwujihuadeshouweigongzuo.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16134,10 +16134,10 @@ spriteTypes = {
 	
 	SpriteType = { #维护公务员体系
 		name = "GFX_TUR_weihugongwuyuanxitong"
-		texturefile = "gfx/interface/goals/TUR_weihugongwuyuanxitong.png"
+		texturefile = "gfx/TUR/focus/TUR_weihugongwuyuanxitong.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_weihugongwuyuanxitong.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_weihugongwuyuanxitong.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16150,7 +16150,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_weihugongwuyuanxitong.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_weihugongwuyuanxitong.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16166,10 +16166,10 @@ spriteTypes = {
 	
 	SpriteType = { #工人之情
 		name = "GFX_TUR_gongrenzhiqing"
-		texturefile = "gfx/interface/goals/TUR_gongrenzhiqing.png"
+		texturefile = "gfx/TUR/focus/TUR_gongrenzhiqing.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_gongrenzhiqing.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_gongrenzhiqing.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16182,7 +16182,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_gongrenzhiqing.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_gongrenzhiqing.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16198,10 +16198,10 @@ spriteTypes = {
 	
 	SpriteType = { #减少个人宣传
 		name = "GFX_TUR_jianshaogerenxuanchuan"
-		texturefile = "gfx/interface/goals/TUR_jianshaogerenxuanchuan.png"
+		texturefile = "gfx/TUR/focus/TUR_jianshaogerenxuanchuan.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_jianshaogerenxuanchuan.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_jianshaogerenxuanchuan.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16214,7 +16214,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_jianshaogerenxuanchuan.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_jianshaogerenxuanchuan.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16230,10 +16230,10 @@ spriteTypes = {
 	
 	SpriteType = { #强化个人崇拜
 		name = "GFX_TUR_qianghuagerencongbai"
-		texturefile = "gfx/interface/goals/TUR_qianghuagerencongbai.png"
+		texturefile = "gfx/TUR/focus/TUR_qianghuagerencongbai.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_qianghuagerencongbai.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_qianghuagerencongbai.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16246,7 +16246,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_qianghuagerencongbai.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_qianghuagerencongbai.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16262,10 +16262,10 @@ spriteTypes = {
 	
 	SpriteType = { #开放政府职位
 		name = "GFX_TUR_kaifangzhengfuzhiwei"
-		texturefile = "gfx/interface/goals/TUR_kaifangzhengfuzhiwei.png"
+		texturefile = "gfx/TUR/focus/TUR_kaifangzhengfuzhiwei.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_kaifangzhengfuzhiwei.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_kaifangzhengfuzhiwei.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16278,7 +16278,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_kaifangzhengfuzhiwei.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_kaifangzhengfuzhiwei.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16294,10 +16294,10 @@ spriteTypes = {
 	
 	SpriteType = { #放宽入党标准
 		name = "GFX_TUR_fangkuanrudangbiaozhun"
-		texturefile = "gfx/interface/goals/TUR_fangkuanrudangbiaozhun.png"
+		texturefile = "gfx/TUR/focus/TUR_fangkuanrudangbiaozhun.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_fangkuanrudangbiaozhun.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_fangkuanrudangbiaozhun.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16310,7 +16310,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_fangkuanrudangbiaozhun.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_fangkuanrudangbiaozhun.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16326,10 +16326,10 @@ spriteTypes = {
 	
 	SpriteType = { #放松社会管制
 		name = "GFX_TUR_fangsongshehuiguanzhi"
-		texturefile = "gfx/interface/goals/TUR_fangsongshehuiguanzhi.png"
+		texturefile = "gfx/TUR/focus/TUR_fangsongshehuiguanzhi.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_fangsongshehuiguanzhi.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_fangsongshehuiguanzhi.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16342,7 +16342,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_fangsongshehuiguanzhi.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_fangsongshehuiguanzhi.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16358,10 +16358,10 @@ spriteTypes = {
 	
 	SpriteType = { #稳定高于一切
 		name = "GFX_TUR_wendinggaoyuyiqie"
-		texturefile = "gfx/interface/goals/TUR_wendinggaoyuyiqie.png"
+		texturefile = "gfx/TUR/focus/TUR_wendinggaoyuyiqie.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_wendinggaoyuyiqie.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_wendinggaoyuyiqie.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16374,7 +16374,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_wendinggaoyuyiqie.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_wendinggaoyuyiqie.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16390,10 +16390,10 @@ spriteTypes = {
 	
 	SpriteType = { #安卡拉之春
 		name = "GFX_TUR_ankalazhichun"
-		texturefile = "gfx/interface/goals/TUR_ankalazhichun.png"
+		texturefile = "gfx/TUR/focus/TUR_ankalazhichun.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_ankalazhichun.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_ankalazhichun.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16406,7 +16406,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_ankalazhichun.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_ankalazhichun.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16423,10 +16423,10 @@ spriteTypes = {
 	
 	SpriteType = { #凯末尔主义的延续
 		name = "GFX_TUR_kaimoerzhuyideyanxu"
-		texturefile = "gfx/interface/goals/TUR_kaimoerzhuyideyanxu.png"
+		texturefile = "gfx/TUR/focus/TUR_kaimoerzhuyideyanxu.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_kaimoerzhuyideyanxu.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_kaimoerzhuyideyanxu.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16439,7 +16439,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR_kaimoerzhuyideyanxu.png"
+			animationmaskfile = "gfx/TUR/focus/TUR_kaimoerzhuyideyanxu.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -16776,37 +16776,6 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_GPS_quanlitangdudushiquan_shine"
-		texturefile = "gfx/GPS/focus/GFX_GPS_quanlitangdudushiquan.png"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/GPS/focus/GFX_GPS_quanlitangdudushiquan.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/GPS/focus/GFX_GPS_quanlitangdudushiquan.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
 		name = "GFX_weiyuchoumou_shine"
 		texturefile = "gfx/interface/goals/XBJ/GFX_weiyuchoumou.png"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -16837,38 +16806,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	SpriteType = {
-		name = "GFX_GPS_quanlitangdudushiquan_shine"
-		texturefile = "gfx/GPS/focus/GFX_GPS_quanlitangdudushiquan.png"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/GPS/focus/GFX_GPS_quanlitangdudushiquan.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/GPS/focus/GFX_GPS_quanlitangdudushiquan.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-
 	SpriteType = {
 		name = "GFX_GPS_fenhuadangdijiangling_shine"
 		texturefile = "gfx/GPS/focus/GFX_GPS_fenhuadangdijiangling.png"
@@ -17784,38 +17721,6 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/GPS/focus/GFX_GPS_jinjuejiduansixiang.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-
-	SpriteType = {
-		name = "GFX_GPS_chongquanchuji_shine"
-		texturefile = "gfx/GPS/focus/GFX_GPS_chongquanchuji.png"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/GPS/focus/GFX_GPS_chongquanchuji.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 2.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/GPS/focus/GFX_GPS_chongquanchuji.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

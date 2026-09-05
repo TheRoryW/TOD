@@ -114,7 +114,7 @@
 #  recruit_character = ROC_characters_huananjiaofusi
 #  recruit_character = ROC_characters_jinlonghuichaoshanfenduo
 #  recruit_character = ROC_characters_huananjunguohui
-#  #将领	
+#  #将领
 #  recruit_character = ROC_zhangxiaozhun
 #  recruit_character = ROC_zhangshaozeng
 #  recruit_character = ROC_dengkeng
@@ -166,7 +166,7 @@
 
 # #开局变量等设定
 capital = 1047 #广州
-# oob = "ROC_1937"
+oob = "ROC_1937"
 
 #基础
 	set_politics = {

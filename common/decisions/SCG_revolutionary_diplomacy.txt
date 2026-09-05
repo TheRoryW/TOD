@@ -1,0 +1,62 @@
+SCG_geming_waijiao_categories = {
+	SCG_zhengqu_zhengzhi_chengren = {
+		icon = GFX_decision_generic_political_address
+		available = { has_political_power > 49 check_variable = { SCG.geming_shengwang > 9 } }
+		cost = 50
+		days_remove = 45
+		days_re_enable = 150
+		ai_will_do = { base = 7 }
+		remove_effect = {
+			add_to_variable = { SCG.geming_shengwang = -10 }
+			add_political_power = 25
+			SCG_geming_shengwang_gengxin = yes
+			country_event = { id = TODSIC.1054 days = 1 }
+		}
+	}
+	SCG_yuanzhu_shehuizhuyi_youdang = {
+		icon = GFX_decision_generic_political_address
+		available = { has_political_power > 39 check_variable = { SCG.geming_shengwang > 9 } }
+		cost = 40
+		days_remove = 30
+		days_re_enable = 120
+		ai_will_do = { base = 6 }
+		remove_effect = {
+			add_to_variable = { SCG.geming_shengwang = -10 }
+			add_to_variable = { SCG.dangji_xietiao = 5 }
+			add_stability = 0.02
+			SCG_liangyuan_zhengzhi_gengxin = yes
+			SCG_geming_shengwang_gengxin = yes
+			country_event = { id = TODSIC.1055 days = 1 }
+		}
+	}
+	SCG_paiqian_gongnong_daibiaotuan = {
+		icon = GFX_decision_generic_political_address
+		available = { has_political_power > 34 check_variable = { SCG.geming_shengwang > 7 } }
+		cost = 35
+		days_remove = 30
+		days_re_enable = 120
+		ai_will_do = { base = 7 }
+		remove_effect = {
+			add_to_variable = { SCG.geming_shengwang = -8 }
+			add_to_variable = { SCG.renmin_shouquan = 5 }
+			add_to_variable = { SCG.geming_shengwang = 5 }
+			SCG_liangyuan_zhengzhi_gengxin = yes
+			SCG_geming_shengwang_gengxin = yes
+			country_event = { id = TODSIC.1056 days = 1 }
+		}
+	}
+	SCG_jianli_geming_lianluochu = {
+		icon = GFX_decision_generic_political_address
+		available = { has_political_power > 59 check_variable = { SCG.geming_shengwang > 14 } }
+		cost = 60
+		days_remove = 60
+		days_re_enable = 180
+		ai_will_do = { base = 6 }
+		remove_effect = {
+			add_to_variable = { SCG.geming_shengwang = -15 }
+			add_timed_idea = { idea = SCG_geming_waijiao_lianluowang days = 180 }
+			SCG_geming_shengwang_gengxin = yes
+			country_event = { id = TODSIC.1057 days = 1 }
+		}
+	}
+}

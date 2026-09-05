@@ -116,7 +116,7 @@ characters={
 		name=HUN_Tibor_Eckhardt_Pozsonyi
 		portraits={
 			civilian={
-				large="gfx/leaders/HUN/HUN_Tibor_Eckhardt_Pozsonyi.png"
+				large="gfx/leaders/HUN/HUN_Tibor_Eckhardt_Pozsonyi.jpg"
 			}
 		}
 		country_leader={
@@ -144,7 +144,7 @@ characters={
 		name=HUN_Tibor_Szamuely
 		portraits={
 			civilian={
-				large="gfx/leaders/HUN/Tibor Szamuely.png"
+				large="gfx/leaders/HUN/Tibor Szamuely.jpg"
 			}
 		}
 		country_leader={

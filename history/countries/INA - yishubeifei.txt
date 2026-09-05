@@ -26,7 +26,7 @@ oob = "oob"
 	create_country_leader = {
 	name = "伊塔洛·加里波第"
 	desc = "POLITICS_Italo_Gariboldi_DESC"
-	picture = "Portrait_INA_Italo_Gariboldi.tga"
+	picture = "gfx/leaders/INA/Portrait_INA_Italo_Gariboldi.tga"
 	expire = "1965.1.1"
 	ideology = leader_despotism_subtype
 }

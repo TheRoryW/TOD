@@ -171,11 +171,10 @@ ideas = {
 			
 			allowed = { tag = SCG }
 			modifier = {
-				industrial_capacity_factory = 0.1
-				consumer_goods_factor =	0.1
-				political_power_cost = 0.02
-				line_change_production_efficiency_factor = -0.2
-				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.075
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = 0.05
+				stability_factor = -0.025
 			}
 		}
 		#全产业链
@@ -186,8 +185,11 @@ ideas = {
 			
 			allowed = { tag = SCG }
 			modifier = {
-				industrial_capacity_factory = 0.1
-				consumer_goods_factor =	-0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
 			}
 		}
 		#工农剪刀差
@@ -198,8 +200,11 @@ ideas = {
 			
 			allowed = { tag = SCG }
 			modifier = {
-				industrial_capacity_factory = 0.2
-				consumer_goods_factor =	0.2
+				industrial_capacity_factory = 0.10
+				production_speed_arms_factory_factor = 0.10
+				local_resources_factor = 0.075
+				consumer_goods_factor = 0.05
+				stability_factor = -0.04
 			}
 		}
 		#农业机械化
@@ -210,8 +215,11 @@ ideas = {
 			
 			allowed = { tag = SCG }
 			modifier = {
-				industrial_capacity_factory = 0.2
-				consumer_goods_factor =	-0.2
+				production_speed_arms_factory_factor = 0.20
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.05
+				stability_factor = -0.08
 			}
 		}
 		#社会主义经济
@@ -222,10 +230,11 @@ ideas = {
 			
 			allowed = { tag = SCG }
 			modifier = {
-				industrial_capacity_factory = 0.1
-				consumer_goods_factor =	-0.1
-				line_change_production_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.04
+				production_factory_efficiency_gain_factor = 0.075
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.025
+				stability_factor = 0.04
 			}
 		}
 		#城乡一体化
@@ -236,7 +245,11 @@ ideas = {
 			
 			allowed = { tag = SCG }
 			modifier = {
-				industrial_capacity_factory = 0.3
+				industrial_capacity_factory = 0.08
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.08
 			}
 		}
 		#组建市场
@@ -247,8 +260,10 @@ ideas = {
 			
 			allowed = { tag = SCG }
 			modifier = {
-				political_power_cost = 0.02
-				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.025
+				war_support_factor = -0.025
 			}
 		}
 		#社会主义市场经济
@@ -259,8 +274,11 @@ ideas = {
 			
 			allowed = { tag = SCG }
 			modifier = {
-				industrial_capacity_factory = 0.1
-				consumer_goods_factor = -0.2
+				production_speed_industrial_complex_factor = 0.20
+				production_factory_efficiency_gain_factor = 0.10
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				war_support_factor = -0.05
 			}
 		}
 		#政委
@@ -288,8 +306,111 @@ ideas = {
 				attrition = 0.1
 			}
 		}
+		SCG_liangyuan_xietiao = {
+			name = SCG_liangyuan_xietiao
+			picture = SCG_hongjun
+			allowed = { tag = SCG }
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.10
+				research_speed_factor = 0.03
+			}
+		}
+		SCG_liangyuan_zhengzhi_zhengchang = {
+			name = SCG_liangyuan_zhengzhi_zhengchang
+			picture = SCG_hongjun
+			allowed = { tag = SCG }
+			modifier = { political_power_gain = 0.03 }
+		}
+		SCG_liangyuan_zhengzhi_weiji = {
+			name = SCG_liangyuan_zhengzhi_weiji
+			picture = SCG_hongjun
+			allowed = { tag = SCG }
+			modifier = {
+				stability_factor = -0.08
+				political_power_gain = -0.08
+			}
+		}
+		SCG_chongjian_sichuan = {
+			name = SCG_chongjian_sichuan
+			picture = SCG_xinxingqiye
+			allowed = { tag = SCG }
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.08
+				stability_factor = 0.05
+			}
+		}
+		SCG_zhonghua_shehuizhuyi_gongheguo = {
+			name = SCG_zhonghua_shehuizhuyi_gongheguo
+			picture = SCG_hongjun
+			allowed = { tag = SCG }
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				production_speed_buildings_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		SCG_jihua_shengchan_zhibiao = {
+			name = SCG_jihua_shengchan_zhibiao
+			picture = SCG_jihuajingji
+			allowed = { tag = SCG }
+			modifier = { industrial_capacity_factory = 0.05 }
+		}
+		SCG_zhongdian_gongye_lian = {
+			name = SCG_zhongdian_gongye_lian
+			picture = SCG_chanyelianzhenghe
+			allowed = { tag = SCG }
+			modifier = { production_speed_buildings_factor = 0.10 }
+		}
+		SCG_liangshi_shougou_tiaozheng = {
+			name = SCG_liangshi_shougou_tiaozheng
+			picture = SCG_wendingliangshigongji
+			allowed = { tag = SCG }
+			modifier = { stability_factor = 0.03 }
+		}
+		SCG_nongji_butie = {
+			name = SCG_nongji_butie
+			picture = SCG_nongyejixiehua
+			allowed = { tag = SCG }
+			modifier = { local_resources_factor = 0.10 }
+		}
+		SCG_hezuoshe_kuozhang = {
+			name = SCG_hezuoshe_kuozhang
+			picture = SCG_jitinongzhuang
+			allowed = { tag = SCG }
+			modifier = { stability_factor = 0.02 }
+		}
+		SCG_gongren_jishu_weiyuanhui = {
+			name = SCG_gongren_jishu_weiyuanhui
+			picture = SCG_xinxingqiye
+			allowed = { tag = SCG }
+			modifier = { research_speed_factor = 0.05 }
+		}
+		SCG_shengchan_xukezheng = {
+			name = SCG_shengchan_xukezheng
+			picture = SCG_zujianshichang
+			allowed = { tag = SCG }
+			modifier = { production_speed_industrial_complex_factor = 0.10 }
+		}
+		SCG_siren_ziben_jianguan = {
+			name = SCG_siren_ziben_jianguan
+			picture = SCG_gongyouqiye
+			allowed = { tag = SCG }
+			modifier = { political_power_gain = 0.03 }
+		}
+		SCG_geming_waijiao_lianluowang = {
+			name = SCG_geming_waijiao_lianluowang
+			picture = SCG_lianhezhengfu
+			allowed = { tag = SCG }
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.10
+				political_power_gain = 0.03
+			}
+		}
 	}
-	TOD_minister_head = { 
+	TOD_minister_head = {
 		#杨闇公
 		SCG_yang_angong = {
 			allowed = { tag = SCG }
@@ -327,54 +448,6 @@ ideas = {
 			}
 		}
 	}
-		SCG_liangyuan_xietiao = {
-			name = SCG_liangyuan_xietiao
-			picture = SCG_hongjun
-			allowed = { tag = SCG }
-			modifier = {
-				stability_factor = 0.08
-				political_power_gain = 0.10
-				research_speed_factor = 0.03
-			}
-		}
-		SCG_liangyuan_zhengzhi_zhengchang = {
-			name = SCG_liangyuan_zhengzhi_zhengchang
-			picture = SCG_hongjun
-			allowed = { tag = SCG }
-			modifier = {
-				political_power_gain = 0.03
-			}
-		}
-		SCG_liangyuan_zhengzhi_weiji = {
-			name = SCG_liangyuan_zhengzhi_weiji
-			picture = SCG_hongjun
-			allowed = { tag = SCG }
-			modifier = {
-				stability_factor = -0.08
-				political_power_gain = -0.08
-			}
-		}
-		SCG_chongjian_sichuan = {
-			name = SCG_chongjian_sichuan
-			picture = SCG_xinxingqiye
-			allowed = { tag = SCG }
-			modifier = {
-				production_speed_buildings_factor = 0.10
-				industrial_capacity_factory = 0.08
-				stability_factor = 0.05
-			}
-		}
-		SCG_zhonghua_shehuizhuyi_gongheguo = {
-			name = SCG_zhonghua_shehuizhuyi_gongheguo
-			picture = SCG_hongjun
-			allowed = { tag = SCG }
-			modifier = {
-				stability_factor = 0.10
-				political_power_gain = 0.15
-				construction_speed_factor = 0.05
-				war_support_factor = 0.05
-			}
-		}
 	TOD_foreign_minister = {
 		#陈毅
 		SCG_chen_yi = {

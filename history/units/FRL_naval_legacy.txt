@@ -106,11 +106,11 @@ units = {
 			ship = { name = "纳木错" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "比克罗西级" } } }	
 			ship = { name = "天池" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "比克罗西级" } } }	
 			ship = { name = "太湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "比克罗西级" } } }
-			ship = { name = "纳木错" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "比克罗西级" } } }	
-			ship = { name = "天池" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "比克罗西级" } } }	
-			ship = { name = "太湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "比克罗西级" } } }	
-			ship = { name = "天池" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "比克罗西级" } } }	
-			ship = { name = "太湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "比克罗西级" } } }
+			ship = { name = "纳木错 II" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "比克罗西级" } } }	
+			ship = { name = "天池 II" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "比克罗西级" } } }	
+			ship = { name = "太湖 II" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "比克罗西级" } } }	
+			ship = { name = "天池 III" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "比克罗西级" } } }	
+			ship = { name = "太湖 III" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "比克罗西级" } } }
 			ship = { name = "西湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
 			ship = { name = "鄱阳湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
 			ship = { name = "洞庭湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
@@ -119,8 +119,8 @@ units = {
 			ship = { name = "日月潭" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
 			ship = { name = "滇池" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
 			ship = { name = "镜泊湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
-			ship = { name = "滇池" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
-			ship = { name = "镜泊湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }	
+			ship = { name = "滇池 II" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
+			ship = { name = "镜泊湖 II" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }	
 			ship = { name = "国风" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
 			ship = { name = "周南" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
 			ship = { name = "关雎" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
@@ -141,16 +141,16 @@ units = {
 			ship = { name = "鹊巢" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
 			ship = { name = "采蘩" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
 			ship = { name = "草虫" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "汉广" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "汝坟" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "巧笑" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "美目" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "采萧" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "麟之趾" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "召南" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "鹊巢" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "采蘩" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "草虫" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "汉广 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "汝坟 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "巧笑 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "美目 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "采萧 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "麟之趾 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "召南 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "鹊巢 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "采蘩 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "草虫 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
 		}
 	}				
 				
@@ -161,72 +161,72 @@ units = {
 		task_force = {
 			name = "大西洋舰队第二支队"
 			location = 13010
-			ship = { name = "国风" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "周南" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "关雎" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "葛覃" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "卷耳" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "樛木" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "螽斯" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "桃夭" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "兔罝" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "芣苢" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "汉广" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "汝坟" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "巧笑" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "美目" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "采萧" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "麟之趾" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "召南" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "鹊巢" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "采蘩" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
-			ship = { name = "草虫" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "国风 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "周南 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "关雎 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "葛覃 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "卷耳 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "樛木 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "螽斯 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "桃夭 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "兔罝 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "芣苢 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "汉广 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "汝坟 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "巧笑 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "美目 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "采萧 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "麟之趾 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "召南 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "鹊巢 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "采蘩 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
+			ship = { name = "草虫 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "B级"} } }
 		}
 		task_force = {				
 			name = "大西洋舰队第一支队"			
 			location = 7590 
-			ship = { name = "西湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
-			ship = { name = "鄱阳湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
-			ship = { name = "洞庭湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
-			ship = { name = "青海湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
-			ship = { name = "巢湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
-			ship = { name = "日月潭" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
-			ship = { name = "滇池" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
-			ship = { name = "镜泊湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
-			ship = { name = "滇池" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
-			ship = { name = "镜泊湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }	
-			ship = { name = "滇池" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
-			ship = { name = "镜泊湖" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }	
-			ship = { name = "国风" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "周南" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "关雎" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "葛覃" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "卷耳" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "樛木" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "螽斯" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "桃夭" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "兔罝" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "芣苢" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "汉广" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "汝坟" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "巧笑" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "美目" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "采萧" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "麟之趾" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "召南" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "鹊巢" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "采蘩" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "草虫" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "汉广" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "汝坟" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "巧笑" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "美目" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "采萧" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "麟之趾" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "召南" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "鹊巢" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "采蘩" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
-			ship = { name = "草虫" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "西湖 II" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
+			ship = { name = "鄱阳湖 II" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
+			ship = { name = "洞庭湖 II" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
+			ship = { name = "青海湖 II" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
+			ship = { name = "巢湖 II" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
+			ship = { name = "日月潭 II" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
+			ship = { name = "滇池 III" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
+			ship = { name = "镜泊湖 III" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
+			ship = { name = "滇池 IV" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
+			ship = { name = "镜泊湖 IV" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }	
+			ship = { name = "滇池 V" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }
+			ship = { name = "镜泊湖 V" definition = light_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRL version_name = "贝尔坦级"} } }	
+			ship = { name = "国风 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "周南 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "关雎 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "葛覃 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "卷耳 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "樛木 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "螽斯 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "桃夭 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "兔罝 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "芣苢 III" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "汉广 IV" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "汝坟 IV" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "巧笑 IV" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "美目 IV" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "采萧 IV" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "麟之趾 IV" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "召南 IV" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "鹊巢 IV" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "采蘩 IV" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "草虫 IV" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "汉广 V" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "汝坟 V" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "巧笑 V" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "美目 V" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "采萧 V" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "麟之趾 V" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "召南 V" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "鹊巢 V" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "采蘩 V" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
+			ship = { name = "草虫 V" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRL version_name = "A级"} } }
 		}					
 	}
 }

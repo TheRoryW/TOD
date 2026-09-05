@@ -1,5 +1,5 @@
 ﻿capital = 845 #辽阳
-oob = "empty"
+oob = "SRC_1937"
 
 
 
@@ -93,15 +93,6 @@ recruit_character = SRC_wang_yongqing
 recruit_character = SRC_wang_minjing
 recruit_character = SRC_sa_shijun
 recruit_character = SRC_deng_zhaoxiang
-
-retire_character = SRC_yang_jingyu
-retire_character = SRC_xu_xiangqian
-retire_character = SRC_zhu_rui
-retire_character = SRC_wang_yongqing
-retire_character = SRC_wang_minjing
-retire_character = SRC_sa_shijun
-retire_character = SRC_deng_zhaoxiang
-
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
