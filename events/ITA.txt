@@ -131,16 +131,16 @@ country_event = {
 			set_popularities = {
 				council_socialism = 100
 			}
-			448 = {set_state_owner_to = ITA}
-			1083 = {set_state_owner_to = ITA}
-			449 = {set_state_owner_to = ITA}
-			450 = {set_state_owner_to = ITA}
-			451 = {set_state_owner_to = ITA}
-			663 = {set_state_owner_to = ITA}
-			1084 = {set_state_owner_to = ITA}
-			662 = {set_state_owner_to = ITA}
-			661 = {set_state_owner_to = ITA}
-			273 = {set_state_owner_to = ITA}
+			ITA = { transfer_state = 448 }
+			ITA = { transfer_state = 1083 }
+			ITA = { transfer_state = 449 }
+			ITA = { transfer_state = 450 }
+			ITA = { transfer_state = 451 }
+			ITA = { transfer_state = 663 }
+			ITA = { transfer_state = 1084 }
+			ITA = { transfer_state = 662 }
+			ITA = { transfer_state = 661 }
+			ITA = { transfer_state = 273 }
 
 			if = {
 				limit = {  ITA = { has_country_flag = become_deguokuilei } }

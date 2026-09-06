@@ -254,7 +254,6 @@ ZIM = "countries/Zimbabwe.txt"
 ACH = "countries/Asian.txt"	
 ANN = "countries/Asian.txt"	
 ADE = "countries/WestEur.txt"	
-ADE = "countries/WestEur.txt"	
 ARM = "countries/ARM.txt"	
 BAV = "countries/WestEur.txt"	
 BLT = "countries/WestEur.txt"	
@@ -360,3 +359,4 @@ NAV = "countries/Navarra.txt" #纳瓦拉地区 Navarra
 
 # 印度次大陆势力
 ORI = "countries/ORI.txt" #奥里萨公国 Orissa
+ROR = "countries/ROR.txt" #俄罗斯共和国 Republic of Russia（东墙扶植，TODhungary.36创建）

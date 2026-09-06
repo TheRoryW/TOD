@@ -96,7 +96,6 @@ SRC_xueshuminzhu = {
 	research_speed_factor = SRC_xueshuminzhu_keyan
 	stability_factor = SRC_xueshuminzhu_wendingdu
 	special_project_speed_factor = SRC_xueshuminzhu_teshu
-	scientist_experience_gain_factor = SRC_xueshuminzhu_kexuejia
 	industrial_capacity_factory = SRC_xueshuminzhu_gongchangchanchu
 	industrial_capacity_dockyard = SRC_xueshuminzhu_wuchangchanchu
 }
@@ -132,15 +131,14 @@ SRC_jingweihui = {
 	local_building_slots_factor = SRC_jingweihui_diqugongye
 	industrial_capacity_factory = SRC_jingweihui_minchangongchang
 	industrial_capacity_dockyard = SRC_jingweihui_wuchangchanchu
-	resource_gain_factor = SRC_jingweihui_ziyuan
 	local_resources_coal_factor = SRC_jingweihui_meitan
+	local_resources_factor = SRC_jingweihui_ziyuan
 }
 #革命文化
 SRC_gemingwenhua = {
 	enable = { always = yes }
 	icon = GFX_idea_SRC_gemingwenhua
 	research_speed_factor = SRC_gemingwenhua_keyan
-	research_bonus = { industry = SRC_gemingwenhua_gongye }
 	special_project_speed_factor = SRC_gemingwenhua_teshu
 	production_factory_max_efficiency_factor = SRC_gemingwenhua_gongchangxiaolv
 	stability_factor = SRC_gemingwenhua_wendingdu
@@ -148,7 +146,7 @@ SRC_gemingwenhua = {
 	political_power_factor = SRC_gemingwenhua_zhengzhidianshu
 	special_project_facility_supply_consumption_factor = SRC_gemingwenhua_sheshi_buji
 	production_factory_efficiency_gain_factor = SRC_gemingwenhua_shengchan_xiaolv
-	production_factory_efficiency_factor = SRC_gemingwenhua_shengchan_baochi
+	production_factory_max_efficiency_factor = SRC_gemingwenhua_shengchan_baochi
 }
 #革命同盟
 SRC_gemingtongmeng = {
@@ -166,11 +164,11 @@ SRC_gaigewei = {
 	icon = GFX_idea_SRC_gaigewei
 	production_factory_start_efficiency_factor = 0.1
 	production_speed_infrastructure_factor = SRC_gaigewei_jichusheshi
-	railway_construction_speed_factor = SRC_gaigewei_tielu
+	production_speed_rail_way_factor = SRC_gaigewei_tielu
 	conversion_cost_civ_to_mil_factor = SRC_gaigewei_minzhuanjun
 	conversion_cost_mil_to_civ_factor = -0.15
 	local_building_slots_factor = SRC_gaigewei_diqugongye
-	production_speed_civilian_factory_factor = SRC_gaigewei_minchangongchang
+	production_speed_industrial_complex_factor = SRC_gaigewei_minchangongchang
 	monthly_population = SRC_gaigewei_yue_renkou
 }
 
@@ -179,13 +177,12 @@ SRC_zhumenhuanxintian = {
 	enable = { always = yes }
 	icon = GFX_idea_SRC_zhumenhuanxintian
 	research_speed_factor = SRC_gemingwenhua_keyan
-	research_bonus = { industry = SRC_gemingwenhua_gongye }
 	special_project_speed_factor = SRC_gemingwenhua_teshu
 	stability_factor = SRC_gemingwenhua_wendingdu
 	war_support_factor = SRC_gemingwenhua_zhanzhengzhichi
 	special_project_facility_supply_consumption_factor = SRC_gemingwenhua_sheshi_buji
 	production_factory_efficiency_gain_factor = SRC_gemingwenhua_shengchan_xiaolv
-	production_factory_efficiency_factor = SRC_gemingwenhua_shengchan_baochi
+	production_factory_max_efficiency_factor = SRC_gemingwenhua_shengchan_baochi
 	production_speed_industrial_complex_factor = SRC_zhumenhuanxintian_minchangongchang
 	conversion_cost_civ_to_mil_factor = SRC_zhumenhuanxintian_minzhuanjun
 }

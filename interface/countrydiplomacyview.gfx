@@ -724,7 +724,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_diplo_trade_entry_bg"
-		textureFile = "gfx/interface/diplo_trade_entry_bg.dds"
+		textureFile = "gfx/interface/tradeview/diplo_trade_entry_bg.dds"
 	}
 
 	spriteType = {

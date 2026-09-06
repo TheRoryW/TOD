@@ -133,37 +133,123 @@ country_event = {
 	}
 	option = {
 		name = TODhungary.36.a
-		213 = { set_state_owner_to = FIN }
-		215 = { set_state_owner_to = FIN }
-		216 = { set_state_owner_to = FIN }
-		146 = { set_state_owner_to = FIN }
-		195 = { set_state_owner_to = FIN }
-		208 = { set_state_owner_to = BLT }
-		209 = { set_state_owner_to = BLT }
-		210 = { set_state_owner_to = BLT }
-		191 = { set_state_owner_to = BLT }
-		242 = { set_state_owner_to = BLR }
-		243 = { set_state_owner_to = BLR }
-		224 = { set_state_owner_to = BLR }
-		225 = { set_state_owner_to = UKR }
-		220 = { set_state_owner_to = UKR }
-		240 = { set_state_owner_to = UKR }
-		221 = { set_state_owner_to = UKR }
-		137 = { set_state_owner_to = UKR }
-		95 = { set_state_owner_to = POL }
+		FIN = { transfer_state = 213 }
+		FIN = { transfer_state = 215 }
+		FIN = { transfer_state = 216 }
+		FIN = { transfer_state = 146 }
+		FIN = { transfer_state = 195 }
+		BLT = { transfer_state = 208 }
+		BLT = { transfer_state = 209 }
+		BLT = { transfer_state = 210 }
+		BLT = { transfer_state = 191 }
+		BLR = { transfer_state = 242 }
+		BLR = { transfer_state = 243 }
+		BLR = { transfer_state = 194 }
+		BLR = { transfer_state = 204 }
+		BLR = { transfer_state = 206 }
+		BLR = { transfer_state = 207 }
+		BLR = { transfer_state = 241 }
+		BLR = { transfer_state = 224 }
+		UKR = { transfer_state = 225 }
+		UKR = { transfer_state = 220 }
+		UKR = { transfer_state = 240 }
+		UKR = { transfer_state = 221 }
+		UKR = { transfer_state = 137 }
+		POL = { transfer_state = 95 }
+		# 先释放附庸层（远东等），避免其地块被后续扫入ROR
 		RUS = {
 			if = { limit = { NOT = { country_exists = CAU } } release = CAU }
 			if = { limit = { NOT = { country_exists = ARM } } release = ARM }
 			if = { limit = { NOT = { country_exists = GEO } } release = GEO }
 			if = { limit = { NOT = { country_exists = AZR } } release = AZR }
-			release = KYR
-			release = SIB
-			release = FET
 		}
-		SIB = { change_tag_from = RUS }
-		RUS = { set_autonomy = { target = FET autonomous_state = autonomy_puppet } }
+		FET = { transfer_state = 562 }
+		FET = { transfer_state = 563 }
+		FET = { transfer_state = 564 }
+		FET = { transfer_state = 565 }
+		FET = { transfer_state = 566 }
+		FET = { transfer_state = 574 }
+		FET = { transfer_state = 575 }
+		FET = { transfer_state = 637 }
+		FET = { transfer_state = 644 }
+		FET = { transfer_state = 889 }
+		FET = { transfer_state = 1192 }
+		# 草原总督区/西伯利亚总督区复国：归还其全部原有地块
+		KYR = { transfer_state = 402 }
+		KYR = { transfer_state = 404 }
+		KYR = { transfer_state = 406 }
+		KYR = { transfer_state = 407 }
+		KYR = { transfer_state = 582 }
+		KYR = { transfer_state = 583 }
+		KYR = { transfer_state = 588 }
+		KYR = { transfer_state = 590 }
+		KYR = { transfer_state = 652 }
+		KYR = { transfer_state = 1159 }
+		KYR = { transfer_state = 1161 }
+		SIB = { transfer_state = 40 }
+		SIB = { transfer_state = 516 }
+		SIB = { transfer_state = 567 }
+		SIB = { transfer_state = 568 }
+		SIB = { transfer_state = 569 }
+		SIB = { transfer_state = 570 }
+		SIB = { transfer_state = 576 }
+		SIB = { transfer_state = 577 }
+		SIB = { transfer_state = 578 }
+		# 俄国解体：全部残余领土成立俄罗斯共和国（逐州转移）
+		ROR = { transfer_state = 205 }
+		ROR = { transfer_state = 214 }
+		ROR = { transfer_state = 219 }
+		ROR = { transfer_state = 222 }
+		ROR = { transfer_state = 223 }
+		ROR = { transfer_state = 239 }
+		ROR = { transfer_state = 244 }
+		ROR = { transfer_state = 246 }
+		ROR = { transfer_state = 247 }
+		ROR = { transfer_state = 248 }
+		ROR = { transfer_state = 249 }
+		ROR = { transfer_state = 250 }
+		ROR = { transfer_state = 251 }
+		ROR = { transfer_state = 252 }
+		ROR = { transfer_state = 253 }
+		ROR = { transfer_state = 254 }
+		ROR = { transfer_state = 255 }
+		ROR = { transfer_state = 256 }
+		ROR = { transfer_state = 257 }
+		ROR = { transfer_state = 258 }
+		ROR = { transfer_state = 260 }
+		ROR = { transfer_state = 262 }
+		ROR = { transfer_state = 263 }
+		ROR = { transfer_state = 264 }
+		ROR = { transfer_state = 265 }
+		ROR = { transfer_state = 351 }
+		ROR = { transfer_state = 397 }
+		ROR = { transfer_state = 398 }
+		ROR = { transfer_state = 399 }
+		ROR = { transfer_state = 400 }
+		ROR = { transfer_state = 401 }
+		ROR = { transfer_state = 651 }
+		ROR = { transfer_state = 945 }
+		ROR = { transfer_state = 946 }
+		# 俄国残部迁都斯维尔德洛夫斯克（叶卡捷琳堡）
+		RUS = {
+			set_capital = { state = 653 }
+		}
 		BLR = { set_autonomy = { target = BLT autonomous_state = autonomy_puppet } }
-		every_country = { limit = { is_in_faction_with = HUN has_war_with = RUS } white_peace = RUS }
+		BLT = { set_cosmetic_tag = TOD_BLT_republic }
+		# 俄罗斯共和国：与匈牙利同政体，加入东墙
+		ROR = {
+			set_politics = {
+				ruling_party = authoritarian_oligarchy
+				elections_allowed = no
+			}
+			set_capital = { state = 945 }
+			promote_character = ROR_Pavel_Nikolayevich_Milyukov
+		}
+		hidden_effect = {
+			RUS = { retire_character = RUS_Pavel_Nikolayevich_Milyukov }
+		}
+		HUN = { add_to_faction = ROR }
+		every_country = { limit = { has_war_with = RUS } white_peace = RUS }
 		if = { limit = { has_war_with = RUS } white_peace = RUS }
 		country_event = { id = TODhungary.37 days = 30 }
 		set_global_flag = TOD_EAST_WALL_RUSSIAN_SETTLEMENT_DONE

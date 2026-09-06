@@ -182,7 +182,8 @@ ideas = {
 		}
 		SRC_chen_dongbeilaodongdaxue_display = {
 			picture = GFX_idea_SRC_gemingwenhua
-			modifier = { research_bonus = { industry = 0.1 } stability_factor = 0.05 special_project_speed_factor = 0.1 }
+			research_bonus = { industry = 0.1 }
+			modifier = { stability_factor = 0.05 special_project_speed_factor = 0.1 }
 		}
 		SRC_chen_qianghuaqingniangongzuo_display = {
 			picture = GFX_idea_SRC_gemingwenhua
@@ -190,7 +191,7 @@ ideas = {
 		}
 		SRC_chen_shehuizhuyijiebanren_display = {
 			picture = GFX_idea_SRC_gemingwenhua
-			modifier = { production_factory_efficiency_gain_factor = 0.05 production_factory_efficiency_factor = 0.1 }
+			modifier = { production_factory_efficiency_gain_factor = 0.05 production_factory_max_efficiency_factor = 0.1 }
 		}
 		SRC_chen_gemingtongyizhanxian_display = {
 			picture = GFX_idea_SRC_gemingtongmeng
@@ -210,7 +211,7 @@ ideas = {
 		}
 		SRC_chen_shumaiqiye_display = {
 			picture = GFX_idea_SRC_gaigewei
-			modifier = { production_speed_infrastructure_factor = 0.1 railway_construction_speed_factor = 0.1 local_building_slots_factor = 0.1 }
+			modifier = { production_speed_infrastructure_factor = 0.1 production_speed_rail_way_factor = 0.1 local_building_slots_factor = 0.1 }
 		}
 		SRC_chen_tudigaige_display = {
 			picture = GFX_idea_SRC_gaigewei
@@ -218,7 +219,7 @@ ideas = {
 		}
 		SRC_chen_tieguodundae_display = {
 			picture = GFX_idea_SRC_gaigewei
-			modifier = { production_speed_civilian_factory_factor = 0.15 conversion_cost_civ_to_mil_factor = -0.05 }
+			modifier = { production_speed_industrial_complex_factor = 0.15 conversion_cost_civ_to_mil_factor = -0.05 }
 		}
 		SRC_chen_zhumenhuanxintian_display = {
 			picture = GFX_idea_SRC_zhumenhuanxintian
@@ -226,7 +227,7 @@ ideas = {
 		}
 		# 李大钊线国策效果显示用空壳 idea。
 		SRC_li_dongbeigaoxiaozizhihui_display = { picture = GFX_idea_SRC_xueshuminzhu modifier = { custom_modifier_tooltip = SRC_li_dongbeigaoxiaozizhihui_display_tt } }
-		SRC_li_xinwenhuasichao_display = { picture = GFX_idea_SRC_xinwenhuasichao modifier = { stability_factor = 0.1 special_project_speed_factor = 0.1 scientist_experience_gain_factor = 0.15 } }
+		SRC_li_xinwenhuasichao_display = { picture = GFX_idea_SRC_xinwenhuasichao modifier = { stability_factor = 0.1 special_project_speed_factor = 0.1 } }
 		SRC_li_jicengminzhu_display = { picture = GFX_idea_SRC_xinwenhuasichao modifier = { industrial_capacity_factory = 0.05 industrial_capacity_dockyard = 0.1 } }
 		SRC_li_gemingweiyuanhui_display = { picture = GFX_idea_SRC_gemingzhengfu modifier = { custom_modifier_tooltip = SRC_li_gemingweiyuanhui_display_tt } }
 		SRC_li_zhengzhidaminzhu_display = { picture = GFX_idea_SRC_renminminzhu modifier = { conscription_factor = 0.1 mobilization_speed = 0.15 } }
@@ -234,7 +235,7 @@ ideas = {
 		SRC_li_guojiajingjiweiyuanhui_display = { picture = GFX_idea_SRC_jingweihui modifier = { custom_modifier_tooltip = SRC_li_guojiajingjiweiyuanhui_display_tt } }
 		SRC_li_guanxizaipingheng_display = { picture = GFX_idea_SRC_jingweihui modifier = { production_speed_buildings_factor = 0.05 local_resources_coal_factor = 0.05 } }
 		SRC_li_nongyehezuohua_display = { picture = GFX_idea_SRC_jingweihui modifier = { local_building_slots_factor = 0.25 } }
-		SRC_li_xiechan_display = { picture = GFX_idea_SRC_jingweihui modifier = { industrial_capacity_factory = 0.05 industrial_capacity_dockyard = 0.05 resource_gain_factor = 0.1 } }
+		SRC_li_xiechan_display = { picture = GFX_idea_SRC_jingweihui modifier = { industrial_capacity_factory = 0.05 industrial_capacity_dockyard = 0.05 local_resources_factor = 0.1 } }
 		SRC_li_chiqizhiyinweilai_display = { picture = GFX_idea_SRC_chiqizhiyinweilai modifier = { production_factory_max_efficiency_factor = 0.1 } }
 		# swap_ideas 的移除对象必须无 modifier，避免 tooltip 将上一阶段效果反向结算为负值。
 		SRC_ren_jihuashengchan_display_blank = { picture = GFX_idea_SRC_jihuashengchan modifier = {} }
@@ -427,7 +428,6 @@ ideas = {
 			cancel_if_invalid = no
 			traits = {
 				TOD_security_minister
-				SRC_sifaduli
 			}
 		}
 		SRC_wang_ligong = {

@@ -124,9 +124,9 @@ country_event = {
 				}
 			}
 
-			699 = { set_state_owner_to = SPR }
-			783 = { set_state_owner_to = SPR }
-			290 = { set_state_owner_to = SPR }
+			SPR = { transfer_state = 699 }
+			SPR = { transfer_state = 783 }
+			SPR = { transfer_state = 290 }
 
 			add_country_leader_role = {
 				character = SPR_Francisco_Franco

@@ -586,10 +586,8 @@ country_event = {
 		# 俄罗斯攻占赫尔辛基：割让列宁格勒周边的芬兰卡累利阿。
 		if = {
 			limit = { 111 = { is_controlled_by = RUS } }
-			146 = {
-				set_state_owner_to = RUS
-				set_state_controller_to = RUS
-			}
+			RUS = { transfer_state = 146 }
+146 = { set_state_controller_to = RUS }
 		}
 		# 北欧攻占圣彼得堡：以当前控制者获得完整科拉半岛。
 		else_if = {

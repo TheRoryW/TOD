@@ -91,13 +91,64 @@ country_event = {
 	}
 	option = {
 		name = TODfrance.16.a
-		# 德国傀儡持有三国核心，因此先在其领土上释放，再由法国直接确立宗主关系。
+		# 战胜德国：全部德国核心州强制归还德国傀儡
+		every_state = {
+			limit = { is_core_of = GER }
+			set_state_owner_to = GER
+		}
+		# 在德国领土上释放莱茵/巴伐利亚/奥地利三个法国仆从国
 		if = { limit = { NOT = { country_exists = RIN } } GER = { release = RIN } }
-		if = { limit = { country_exists = RIN } set_autonomy = { target = RIN autonomous_state = autonomy_puppet } }
 		if = { limit = { NOT = { country_exists = BAV } } GER = { release = BAV } }
-		if = { limit = { country_exists = BAV } set_autonomy = { target = BAV autonomous_state = autonomy_puppet } }
 		if = { limit = { NOT = { country_exists = AUS } } GER = { release = AUS } }
+		# 莱茵领再划入1142与56
+		RIN = { transfer_state = 1142 }
+		RIN = { transfer_state = 56 }
+		# 确立宗主关系
+		if = { limit = { country_exists = RIN } set_autonomy = { target = RIN autonomous_state = autonomy_puppet } }
+		if = { limit = { country_exists = BAV } set_autonomy = { target = BAV autonomous_state = autonomy_puppet } }
 		if = { limit = { country_exists = AUS } set_autonomy = { target = AUS autonomous_state = autonomy_puppet } }
+		# 英国本部各州归还英国傀儡
+		every_state = {
+			limit = { is_core_of = ENG }
+			set_state_owner_to = ENG
+		}
+		# 德国与英国改为与法国相同意识形态并加入法国同盟
+		GER = { set_politics = { ruling_party = liberal_democracy elections_allowed = no } }
+		GER = { set_popularities = { liberal_democracy = 60 conservative_democracy = 25 social_democrat = 15 } }
+		GER = {
+			GER_Paul_Levi = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = liberal_democracy_subtype
+						expire = "1965.1.1.1"
+						traits = {}
+					}
+				}
+			}
+		}
+		ENG = { set_politics = { ruling_party = liberal_democracy elections_allowed = no } }
+		ENG = { set_popularities = { liberal_democracy = 60 conservative_democracy = 30 social_democrat = 10 } }
+		ENG = {
+			ENG_Rotha_Lintorn = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = liberal_democracy_subtype
+						expire = "1965.1.1.1"
+						traits = {}
+					}
+				}
+			}
+		}
+		if = {
+			limit = { FRA = { is_faction_leader = yes } }
+			FRA = { add_to_faction = GER add_to_faction = ENG }
+		}
+		else = {
+			FRA = { create_faction = TOD_FRA_continent_pact }
+			FRA = { add_to_faction = GER add_to_faction = ENG }
+		}
 		set_global_flag = TOD_FRA_generation_peace_settlement
 		news_event = { id = TODfrance.17 days = 1 }
 	}
@@ -141,6 +192,7 @@ country_event = {
 			}
 		}
 		FRA = { set_cosmetic_tag = FRA_liuwang }
+		FRA = {
 		if = {
 			limit = { 42 = { owner = { original_tag = FRA } } }
 			transfer_state = 42
@@ -185,6 +237,7 @@ country_event = {
 			limit = { 1076 = { owner = { original_tag = FRA } } }
 			transfer_state = 1076
             add_state_core = 1076
+		}
 		}
 		if = {
 			limit = { 6 = { owner = { original_tag = FRA } } }
@@ -328,13 +381,13 @@ country_event = {
 					character = FRA_Cachin_Marcel
 				}
 			}
-			1079 = { set_state_owner_to = FRA }
-			1078 = { set_state_owner_to = FRA }
-			1077 = { set_state_owner_to = FRA }
-			1080 = { set_state_owner_to = FRA }
-			459 = { set_state_owner_to = FRA }
-			513 = { set_state_owner_to = FRA }
-			460 = { set_state_owner_to = FRA }
+			FRA = { transfer_state = 1079 }
+			FRA = { transfer_state = 1078 }
+			FRA = { transfer_state = 1077 }
+			FRA = { transfer_state = 1080 }
+			FRA = { transfer_state = 459 }
+			FRA = { transfer_state = 513 }
+			FRA = { transfer_state = 460 }
 
 			if = {
 				limit = { FRA = { has_country_flag = become_deguokuilei } }

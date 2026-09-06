@@ -218,9 +218,5 @@ ENG_food_trade:0 "粮食贸易"
 ENG_food_trade_desc:0 ""
 ENG_expand_grain_reserves:0 "扩充粮食储备"
 ENG_expand_grain_reserves_desc:0 ""
-
-
-
-
-
-
+ENG_liberal_democracy_DEF:0 "不列颠王国"
+ENG_liberal_democracy_ADJ:0 "不列颠"

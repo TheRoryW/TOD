@@ -281,8 +281,10 @@ country_event = {
                     transfer_state = 657
                 }
             }
-            714 = { set_state_owner_to = SRC set_state_controller_to = GPS }
-            715 = { set_state_owner_to = GPS set_state_controller_to = SRC }
+            SRC = { transfer_state = 714 }
+714 = { set_state_controller_to = GPS }
+            GPS = { transfer_state = 715 }
+715 = { set_state_controller_to = SRC }
             if = {
                 limit = { country_exists = SRC }
                 SRC = {
