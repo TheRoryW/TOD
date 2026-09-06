@@ -1,0 +1,540 @@
+add_namespace = gosrichang
+add_namespace = GOS_focus
+
+#猫校长！
+country_event = { 
+	id = gosrichang.1
+	title = gosrichang.1.t
+	desc = gosrichang.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = GOS}
+	option = {
+		name = gosrichang.1.a #日常
+	}
+}
+
+country_event = { 
+	id = GOS_focus.1
+	title = GOS_focus.1.t
+	desc = GOS_focus.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = GOS}
+	option = {
+		name = GOS_focus.1.a 
+		complete_national_focus = GOS_focus_213
+
+	}
+}
+
+country_event = { 
+	id = GOS_focus.2
+	title = GOS_focus.2.t
+	desc = GOS_focus.2.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+		date > 1937.9.27
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = GOS_focus.3
+				days = 35
+			}
+		}
+	}
+	option = {
+		name = GOS_focus.2.a 
+		set_cosmetic_tag = GOS_yingtian_tag
+		complete_national_focus = GOS_focus_0
+		add_dynamic_modifier = {
+			modifier = GOS_dynamic_modifiers_tzqw
+		}
+		custom_effect_tooltip = GOS_tooltip_foc_0
+		set_country_flag = FLAG_GOS_decision_tzngpx_unlocked
+		add_ideas = GOS_idea_ngjsbd
+
+		set_variable = { #大同会势力
+			VAR_GOS_dth_sl = 0
+		}
+		set_variable = { #管学系势力
+			VAR_GOS_gxx_sl = 300
+		}
+		set_variable = { #军队势力
+			VAR_GOS_jd_sl = 100
+		}
+
+		set_variable = { #大同会支持度
+			VAR_GOS_dth_zcd = 0
+		}
+		set_variable = { #管学系支持度
+			VAR_GOS_gxx_zcd = 0.80
+		}
+		set_variable = { #军队支持度
+			VAR_GOS_jd_zcd = 0.50
+		}
+
+		GOS_scripted_effects_tzqw_js = yes
+		# load_oob = GOS_NAVAL
+	}
+}
+country_event = { 
+	id = GOS_focus.3
+	title = GOS_focus.3.t
+	desc = GOS_focus.3.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.3.a 
+		complete_national_focus = GOS_focus_1
+		custom_effect_tooltip = GOS_tooltip_dth_sl_100_add
+		custom_effect_tooltip = GOS_tooltip_dth_zcd_02_add
+		custom_effect_tooltip = GOS_tooltip_gxx_zcd_02_subtract
+		custom_effect_tooltip = GOS_tooltip_jd_zcd_02_subtract
+		add_to_variable = { 
+			VAR_GOS_dth_sl = 100
+		}
+		add_to_variable = { 
+			VAR_GOS_dth_zcd = 0.2
+		}
+		add_to_variable = { 
+			VAR_GOS_gxx_zcd = -0.2
+		}
+		add_to_variable = { 
+			VAR_GOS_jd_zcd = -0.2
+		}
+	}
+}
+country_event = { 
+	id = GOS_focus.4
+	title = GOS_focus.4.t
+	desc = GOS_focus.4.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.4.a 
+		add_to_variable = { 
+			VAR_GOS_jd_sl = 20
+		}
+		custom_effect_tooltip = GOS_tooltip_jd_sl_20_add
+	}
+}
+country_event = { 
+	id = GOS_focus.5
+	title = GOS_focus.5.t
+	desc = GOS_focus.5.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.5.a 
+		custom_effect_tooltip = GOS_tooltip_dth_sl_5_add
+		custom_effect_tooltip = GOS_tooltip_gxx_sl_5_add
+		custom_effect_tooltip = GOS_tooltip_dth_zcd_002_add
+		add_to_variable = { 
+			VAR_GOS_dth_sl = 5
+		}
+		add_to_variable = { 
+			VAR_GOS_gxx_sl = 5
+		}
+		add_to_variable = { 
+			VAR_GOS_dth_zcd = 0.02
+		}
+	}
+}
+country_event = { 
+	id = GOS_focus.6
+	title = GOS_focus.6.t
+	desc = GOS_focus.6.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.6.a 
+		
+	}
+}
+country_event = { 
+	id = GOS_focus.7
+	title = GOS_focus.7.t
+	desc = GOS_focus.7.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.7.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.8
+	title = GOS_focus.8.t
+	desc = GOS_focus.8.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.8.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.9
+	title = GOS_focus.9.t
+	desc = GOS_focus.9.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.9.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.10
+	title = GOS_focus.10.t
+	desc = GOS_focus.10.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.10.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.11
+	title = GOS_focus.11.t
+	desc = GOS_focus.11.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.11.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.12
+	title = GOS_focus.12.t
+	desc = GOS_focus.12.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.12.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.13
+	title = GOS_focus.13.t
+	desc = GOS_focus.13.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.13.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.14
+	title = GOS_focus.14.t
+	desc = GOS_focus.14.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.14.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.15
+	title = GOS_focus.15.t
+	desc = GOS_focus.15.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.15.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.16
+	title = GOS_focus.16.t
+	desc = GOS_focus.16.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.16.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.17
+	title = GOS_focus.17.t
+	desc = GOS_focus.17.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.17.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.18
+	title = GOS_focus.18.t
+	desc = GOS_focus.18.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.18.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.19
+	title = GOS_focus.19.t
+	desc = GOS_focus.19.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.19.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.20
+	title = GOS_focus.20.t
+	desc = GOS_focus.20.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.20.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.21
+	title = GOS_focus.21.t
+	desc = GOS_focus.21.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.21.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.22
+	title = GOS_focus.22.t
+	desc = GOS_focus.22.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.22.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.23
+	title = GOS_focus.23.t
+	desc = GOS_focus.23.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.23.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.24
+	title = GOS_focus.24.t
+	desc = GOS_focus.24.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.24.a 
+		country_event = {
+			id = GOS_focus.25
+		}
+	}
+}
+country_event = { 
+	id = GOS_focus.25
+	title = GOS_focus.25.t
+	desc = GOS_focus.25.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.25.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.26
+	title = GOS_focus.26.t
+	desc = GOS_focus.26.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.26.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.27
+	title = GOS_focus.27.t
+	desc = GOS_focus.27.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.27.a 
+	}
+}
+country_event = { 
+	id = GOS_focus.999
+	title = GOS_focus.999.t
+	desc = GOS_focus.999.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GOS
+	}
+	option = {
+		name = GOS_focus.999.a 
+		GOS = {
+			set_autonomy = {
+				target = ROOT
+				autonomous_state = tod_ming_zhishudusi
+			}
+		}
+	}
+	option = {
+		name = GOS_focus.999.b 
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

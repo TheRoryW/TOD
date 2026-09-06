@@ -103,7 +103,7 @@ units = {
 			ship = { name = "VMS G-67" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 			ship = { name = "VMS V-68" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 			ship = { name = "VMS V-69" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-			ship = { name = "VMS V-70" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "VMS V-70 II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 			ship = { name = "VMS V-71" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 			ship = { name = "VMS V-72" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 			ship = { name = "VMS V-74" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
@@ -185,7 +185,7 @@ units = {
 		task_force = {
 			name = "II. U-Boots-Flot"
 			location = 6389
-			ship = { name = "VMS U-191" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER } } }
+			ship = { name = "VMS U-191 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER } } }
 			ship = { name = "VMS U-192" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER } } }
 			ship = { name = "VMS U-193" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER } } }
 			ship = { name = "VMS U-194" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER } } }

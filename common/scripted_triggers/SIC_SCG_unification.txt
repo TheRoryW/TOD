@@ -1,0 +1,17 @@
+# 大明内战全国统一的共同割据政权清单。
+TOD_china_unified_for_ming_civil_war = {
+	OR = { tag = MNG NOT = { country_exists = MNG } MNG = { is_subject_of = ROOT } }
+	OR = { tag = GOS NOT = { country_exists = GOS } GOS = { is_subject_of = ROOT } }
+	OR = { tag = ROC NOT = { country_exists = ROC } ROC = { is_subject_of = ROOT } }
+	OR = { tag = SRC NOT = { country_exists = SRC } SRC = { is_subject_of = ROOT } }
+	OR = { tag = STG NOT = { country_exists = STG } STG = { is_subject_of = ROOT } }
+	OR = { tag = XBJ NOT = { country_exists = XBJ } XBJ = { is_subject_of = ROOT } }
+	OR = { tag = XIN NOT = { country_exists = XIN } XIN = { is_subject_of = ROOT } }
+	OR = { tag = GPS NOT = { country_exists = GPS } GPS = { is_subject_of = ROOT } }
+	OR = { tag = MOB NOT = { country_exists = MOB } MOB = { is_subject_of = ROOT } }
+	OR = { tag = SIC NOT = { country_exists = SIC } SIC = { is_subject_of = ROOT } }
+	OR = { tag = SCG NOT = { country_exists = SCG } SCG = { is_subject_of = ROOT } }
+}
+
+SIC_china_unified = { TOD_china_unified_for_ming_civil_war = yes }
+SCG_china_unified = { TOD_china_unified_for_ming_civil_war = yes }

@@ -4,7 +4,6 @@ state={
 
 	history={
 		add_core_of = PAR
-		add_core_of = ARG
 		owner = PAR
 		buildings = {
 			infrastructure = 2

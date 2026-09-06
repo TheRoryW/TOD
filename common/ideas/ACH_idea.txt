@@ -18,8 +18,11 @@ ideas = {
 				trade_opinion_factor = -0.20
 				min_export = +0.4
 				research_speed_factor = +0.07
-				socialism_drift = +0.01
-				liberalism_drift = +0.01
+				vanguard_socialism_drift = +0.01
+					council_socialism_drift = +0.01
+					moderate_socialism_drift = +0.01
+					agroindustrial_socialism_drift = +0.01
+				liberal_democracy_drift = +0.01
 			}
 		}
 		ACH_3 = {
@@ -28,7 +31,8 @@ ideas = {
 				stability_factor = -0.20
 				political_power_gain = -0.15
 				consumer_goods_factor = +0.25
-				building_slot = -0.2
+				### building_slot = -0.2 # invalid modifier name kept for reference
+				global_building_slots_factor = -0.2
 				monthly_population = +0.33
 				local_resources = +0.35
 			}
@@ -51,9 +55,10 @@ ideas = {
 				war_support_factor = -0.10
 				stability_factor = +0.1
 				opinion_gain_monthly_same_ideology = +60.0
-				foreign_subversive_activities = +0.2
-				reformism_drift = +0.02
-				liberalism_drift = +0.01
+				### foreign_subversive_activities = +0.2 # original misspelling kept for reference
+				foreign_subversive_activites = +0.2
+				social_democrat_drift = +0.02
+				liberal_democracy_drift = +0.01
 			}	
 		}
 	}

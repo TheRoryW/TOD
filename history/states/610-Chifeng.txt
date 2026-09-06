@@ -2,19 +2,35 @@
 state={
 	id=610
 	name="STATE_610"
-
+	resources = {
+		steel = 22
+		coal = 8
+	}
 	history={
 		owner = MNG
 		add_core_of = MNG
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 		victory_points = {
-			11855 1
+			11855 5
+		}
+		victory_points = {
+			7633 1
+		}
+		victory_points = {
+			934 1
+		}
+		victory_points = {
+			13518 1
 		}
 	}
 
 	provinces={
 		934 972 3814 3828 3881 6837 6852 6898 6988 7575 7633 9873 9927 10331 10499 11855 11886 13516 13517 13518 13519 
 	}
-	manpower=0
+	manpower=2151855
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=six
 }

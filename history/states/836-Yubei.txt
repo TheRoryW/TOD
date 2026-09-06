@@ -2,19 +2,23 @@
 state={
 	id=836
 	name="STATE_836"
-
+	resources={
+		coal = 6
+	}
 	history={
 		owner = MNG
 		add_core_of = MNG
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 1
 
 		}
 		victory_points = {
-			4144 1 
+			4144 5
 		}
-
+		victory_points = {
+			1139 2
+		}
 	}
 
 	provinces={
@@ -22,5 +26,5 @@ state={
 	}
 	manpower=4637511
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category=eight
 }

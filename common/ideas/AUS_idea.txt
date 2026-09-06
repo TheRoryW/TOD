@@ -1,0 +1,150 @@
+ideas = {    
+	country = {
+		AUS_diguodebengkui = {
+			picture = AUS_diguodebengkui
+			modifier = {
+				political_power_gain = -0.25
+				consumer_goods_factor = -0.1
+				stability_factor = 0.1
+				production_speed_buildings_factor = -0.2
+			}
+		}
+		AUS_duoshizhiqiu = {
+			picture = AUS_duoshizhiqiu
+			modifier = {
+				stability_weekly = -0.07
+				monthly_population = -0.1
+			}
+		}
+		AUS_changbaizhijun = {
+			picture = AUS_changbaizhijun
+			modifier = {
+				army_morale_factor = -0.1
+				land_reinforce_rate = -0.05
+				experience_loss_factor = 0.05
+			}
+		}
+		AUS_pingyijinren = {
+			picture = AUS_pingyijinren
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		AUS_gonggongjiaoyu = {
+			picture = AUS_gonggongjiaoyu
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		AUS_jiangdifushui = {
+			picture = AUS_gonggongjiaoyu
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		AUS_jinrongganggan = {
+			picture = AUS_gonggongjiaoyu
+			modifier = {
+				industrial_capacity_factory = 0.15
+			}
+		}
+		AUS_aodilishanghui = {
+			picture = AUS_gonggongjiaoyu
+			modifier = {
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+	
+	TOD_minister_head = { ### Head of Government ###
+		AUS_Karl_Renner = {
+			allowed = { original_tag = AUS }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				conservative_democracy
+				hog_pragmatic_statesman
+			}
+		}
+		AUS_Adolf_Scharf = {
+			allowed = { original_tag = AUS }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				conservative_democracy
+				hog_pragmatic_statesman
+			}
+		}
+		AUS_Theodor_Korner = {
+			allowed = { original_tag = AUS }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				conservative_democracy
+				hog_pragmatic_statesman
+			}
+		}
+	}
+	
+	TOD_foreign_minister = { ### foreign minister ###
+		AUS_Zdenek_Fierlinger  = {
+			allowed = { original_tag = AUS }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				conservative_democracy
+				hog_pragmatic_statesman
+			}
+		}
+		AUS_David_Josef_Bach = {
+			allowed = { original_tag = AUS }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				conservative_democracy
+				hog_pragmatic_statesman
+			}
+		}
+		AUS_Hugo_Breitner   = {
+			allowed = { original_tag = AUS }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				conservative_democracy
+				hog_pragmatic_statesman
+			}
+		}
+	}
+	TOD_economy_minister = { ### economy minister ###
+		AUS_Otto_Bauer = {
+			allowed = { original_tag = AUS }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				conservative_democracy
+				hog_pragmatic_statesman
+			}
+		}
+		AUS_Antonin_Hampl = {
+			allowed = { original_tag = AUS }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				conservative_democracy
+				hog_pragmatic_statesman
+			}
+		}
+		AUS_Wilhelm_Ellenbogen = {
+			allowed = { original_tag = AUS }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				conservative_democracy
+				hog_pragmatic_statesman
+			}
+		}
+	}
+	TOD_security_minister = { ### security minister ###
+	}
+}

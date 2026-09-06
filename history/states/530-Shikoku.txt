@@ -1,27 +1,35 @@
-state=
-{
-	id=530
-	name="STATE_530"
-	manpower = 3010000
-	state_category = six
-	history=
-	{
+state = {
+	id = 530
+	name = "STATE_530"
+	manpower = 3757282
+	state_category = five
+
+	history = {
 		owner = WJP
 		add_core_of = WJP
-		
-		victory_points = {
-			7197 3
-		}
-		victory_points = {
-			9965 3
-		}
-		
+
+		add_to_array = { state_victory_points = 4179 }
+		add_to_array = { state_victory_points = 7197 }
+
+		victory_points = { 4179 5 } #Matsuyama
+		victory_points = { 7197 5 } #Kochi
+
 		buildings = {
-			infratructure = 1
-			industrial_complex = 1
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			
+			air_base = 3
+
+
+			7197 = {
+				naval_base = 6
+			}
 		}
 	}
-	provinces={
+
+	provinces = {
 		4094 4179 7046 7197 9965 11997 12028
 	}
 }

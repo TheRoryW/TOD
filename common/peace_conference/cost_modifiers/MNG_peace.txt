@@ -1,0 +1,33 @@
+# Scripted cost modifiers for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_action_modifiers = {
+    generic_is_core = {
+        category = is_core
+        peace_action_type = take_states
+
+        enable = {
+            FROM.FROM.FROM = {
+                is_core_of = MNG
+            }
+            ROOT = {
+                is_ming_tag = yes
+            }
+			ROOT.FROM = { tag = ROOT }
+        }
+
+        cost_multiplier = 0.25 # Reduced by ~75%
+    }
+
+    # 大明分裂势力之间的地块统一按低成本处理，避免点数耗尽造成漏拿州。
+    damingneizhan_take_all_states = {
+        category = is_core
+        peace_action_type = take_states
+        enable = {
+            ROOT = { is_ming_tag = yes }
+            ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { is_ming_tag = yes }
+        }
+        cost_multiplier = 0.5
+    }
+}

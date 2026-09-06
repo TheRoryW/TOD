@@ -4,19 +4,19 @@ state={
 
 	history={
 		owner = DEN
-、
+
 		buildings = {
-			infrastructure = 8
+			infrastructure = 3
 			industrial_complex = 1
+			dockyard = 1
 
 
 		}
 		add_core_of = DEN
-		add_core_of = GER
 
 	}
 	provinces={
-		332 11251 
+		332 11251
 	}
 	manpower=135340
 	buildings_max_level_factor=1.000

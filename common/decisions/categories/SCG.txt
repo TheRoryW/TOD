@@ -1,0 +1,15 @@
+SCG_quanchuanqiyi_categories = {
+	icon = gre_faction_management
+
+	allowed = {
+		tag = SCG
+	}
+	visible = {
+		tag = SCG
+		has_completed_focus = SCG_lianluoqitachengshi
+		NOT = {  
+			has_country_flag = SCG_gemingchenggong 
+			has_completed_focus = SCG_quanchuanqiyi
+		}
+	}
+}

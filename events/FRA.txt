@@ -1,0 +1,414 @@
+add_namespace = TODfrance
+#法国跑路
+country_event = {
+	id = TODfrance.1
+	title = TODfrance.1.t
+	desc =TODfrance.1.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		has_war_with = GER
+        OR = {
+            16 = { is_controlled_by = GER }
+            16 = { is_controlled_by = ENG }
+        }
+		# 仅在接近投降时处理流亡/傀儡，避免战争打到一半就触发白和。
+		surrender_progress > 0.8
+
+	}
+
+	option = { # 成为德国傀儡
+		name = TODfrance.1.a
+		trigger = { is_ai = no }
+		set_country_flag = become_deguokuilei
+		GER = { country_event = TODfrance.14 }
+		custom_effect_tooltip = TODfrance.1_tt
+	}
+	option = { # 流亡北非
+		name = TODfrance.1.b
+		ai_chance = {
+			factor = 100
+		}
+		set_global_flag = fall_of_france
+		save_global_event_target_as = free_france
+		GER = { country_event = TODfrance.14 }
+		custom_effect_tooltip = TODfrance.1.b_tt
+	}
+}
+
+# 法国击败德国并建立德国傀儡后，直接加入东墙对俄罗斯的战争；不变更法国原有阵营。
+country_event = {
+	id = TODfrance.15
+	title = TODfrance.15.t
+	desc = TODfrance.15.d
+	picture = GFX_report_event_german_parade_paris
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		tag = FRA
+		NOT = { has_war_with = RUS }
+		country_exists = HUN
+		country_exists = RUS
+		OR = {
+			NOT = { country_exists = GER }
+			GER = { is_puppet_of = FRA }
+		}
+		HUN = {
+			is_faction_leader = yes
+			has_war_with = RUS
+		}
+		RUS = { NOT = { has_capitulated = yes } }
+	}
+	option = {
+		name = TODfrance.15.a
+		add_to_war = {
+			targeted_alliance = HUN
+			enemy = RUS
+			hostility_reason = asked_to_join
+		}
+	}
+}
+
+# 法国在和平会议中取得英德傀儡后，立即落实既定的中欧分区，避免 AI 和谈遗漏附庸国。
+country_event = {
+	id = TODfrance.16
+	title = TODfrance.16.t
+	desc = TODfrance.16.d
+	picture = GFX_report_event_german_parade_paris
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		tag = FRA
+		country_exists = GER
+		country_exists = ENG
+		GER = { is_puppet_of = FRA }
+		ENG = { is_puppet_of = FRA }
+		NOT = { has_war_with = GER }
+		NOT = { has_war_with = ENG }
+	}
+	option = {
+		name = TODfrance.16.a
+		# 战胜德国：全部德国核心州强制归还德国傀儡
+		every_state = {
+			limit = { is_core_of = GER }
+			set_state_owner_to = GER
+		}
+		# 在德国领土上释放莱茵/巴伐利亚/奥地利三个法国仆从国
+		if = { limit = { NOT = { country_exists = RIN } } GER = { release = RIN } }
+		if = { limit = { NOT = { country_exists = BAV } } GER = { release = BAV } }
+		if = { limit = { NOT = { country_exists = AUS } } GER = { release = AUS } }
+		# 莱茵领再划入1142与56
+		RIN = { transfer_state = 1142 }
+		RIN = { transfer_state = 56 }
+		# 确立宗主关系
+		if = { limit = { country_exists = RIN } set_autonomy = { target = RIN autonomous_state = autonomy_puppet } }
+		if = { limit = { country_exists = BAV } set_autonomy = { target = BAV autonomous_state = autonomy_puppet } }
+		if = { limit = { country_exists = AUS } set_autonomy = { target = AUS autonomous_state = autonomy_puppet } }
+		# 英国本部各州归还英国傀儡
+		every_state = {
+			limit = { is_core_of = ENG }
+			set_state_owner_to = ENG
+		}
+		# 德国与英国改为与法国相同意识形态并加入法国同盟
+		GER = { set_politics = { ruling_party = liberal_democracy elections_allowed = no } }
+		GER = { set_popularities = { liberal_democracy = 60 conservative_democracy = 25 social_democrat = 15 } }
+		GER = {
+			GER_Paul_Levi = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = liberal_democracy_subtype
+						expire = "1965.1.1.1"
+						traits = {}
+					}
+				}
+			}
+		}
+		ENG = { set_politics = { ruling_party = liberal_democracy elections_allowed = no } }
+		ENG = { set_popularities = { liberal_democracy = 60 conservative_democracy = 30 social_democrat = 10 } }
+		ENG = {
+			ENG_Rotha_Lintorn = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology = liberal_democracy_subtype
+						expire = "1965.1.1.1"
+						traits = {}
+					}
+				}
+			}
+		}
+		if = {
+			limit = { FRA = { is_faction_leader = yes } }
+			FRA = { add_to_faction = GER add_to_faction = ENG }
+		}
+		else = {
+			FRA = { create_faction = TOD_FRA_continent_pact }
+			FRA = { add_to_faction = GER add_to_faction = ENG }
+		}
+		set_global_flag = TOD_FRA_generation_peace_settlement
+		news_event = { id = TODfrance.17 days = 1 }
+	}
+}
+
+news_event = {
+	id = TODfrance.17
+	title = TODfrance.17.t
+	desc = TODfrance.17.d
+	picture = GFX_report_event_german_parade_paris
+	major = yes
+	is_triggered_only = yes
+	option = { name = TODfrance.17.a }
+}
+
+#法国被傀儡
+country_event = {
+	id = TODfrance.14
+	title = TODfrance.14.t
+	desc = TODfrance.14.d
+	picture = GFX_report_event_german_parade_paris
+
+	is_triggered_only = yes
+
+	option = {
+		name = TODfrance.14.a
+		ai_chance = {
+			factor = 50
+		}
+		every_country = {
+			limit = {
+				OR = {
+					original_tag = FRA
+					is_puppet_of = FRA
+				}
+			}
+		# 只处理法国及其附庸，结束它们与所有敌人的战争，再建立流亡政府。
+			every_country = {
+				limit = { has_war_with = PREV }
+				white_peace = PREV
+			}
+		}
+		FRA = { set_cosmetic_tag = FRA_liuwang }
+		FRA = {
+		if = {
+			limit = { 42 = { owner = { original_tag = FRA } } }
+			transfer_state = 42
+            add_state_core = 42
+		}
+		if = {
+			limit = { 51 = { owner = { original_tag = FRA } } }
+			transfer_state = 51
+            add_state_core = 51
+		}
+		if = {
+			limit = { 960 = { owner = { original_tag = FRA } } }
+			transfer_state = 960
+            add_state_core = 960
+		}
+		if = {
+			limit = { 961 = { owner = { original_tag = FRA } } }
+			transfer_state = 961
+            add_state_core = 961
+		}
+		if = {
+			limit = { 942 = { owner = { original_tag = FRA } } }
+			transfer_state = 942
+            add_state_core = 942
+		}
+		if = {
+			limit = { 8 = { owner = { original_tag = FRA } } }
+			transfer_state = 8
+            add_state_core = 8
+		}
+		if = {
+			limit = { 1144 = { owner = { original_tag = FRA } } }
+			transfer_state = 1144
+            add_state_core = 1144
+		}
+		if = {
+			limit = { 28 = { owner = { original_tag = FRA } } }
+			transfer_state = 28
+            add_state_core = 28
+		}
+		if = {
+			limit = { 1076 = { owner = { original_tag = FRA } } }
+			transfer_state = 1076
+            add_state_core = 1076
+		}
+		}
+		if = {
+			limit = { 6 = { owner = { original_tag = FRA } } }
+			HOL = {transfer_state = 6}
+            HOL = {add_state_core = 6}
+		}
+		if = {
+			limit = { 1140 = { owner = { original_tag = FRA } } }
+			HOL = {transfer_state = 1140}
+            HOL = {add_state_core = 1140}
+		}
+		if = {
+			limit = { 34 = { owner = { original_tag = FRA } } }
+			HOL = {transfer_state = 34}
+            HOL = {add_state_core = 34}
+		}
+
+		FRA = {
+			set_capital = { state = 459 }
+			hidden_effect = {dismantle_faction = yes }
+			start_civil_war = {
+				ideology = vanguard_socialism
+				size = 0.9
+				capital = 16
+				states = all
+                states_filter = {
+                    is_core_of = FRA
+					NOT = {
+						OR = {
+							is_core_of = HOL
+							is_core_of = GER
+							state = 1079
+							state = 1077
+							state = 1078
+							state = 1080
+							state = 459
+							state = 513
+							state = 460
+						}
+					}
+                }
+			}
+			add_ideas = FRA_yongbutouxiang
+			every_state = {
+				limit = {
+					OR = {
+						state = 1079
+						state = 1077
+						state = 1078
+						state = 1080
+						state = 459
+						state = 513
+						state = 460
+					}
+				}
+				set_state_controller_to = FRA
+			}
+		}
+		random_other_country = {
+			limit = { original_tag = FRA has_government = vanguard_socialism }
+			ROOT = { puppet = PREV }
+			# 仅结束流亡政府与本土傀儡之间的内战；不得结束宗主国对西班牙、意大利的既有战争。
+			FRA = {
+				if = { limit = { has_war_with = PREV } white_peace = PREV }
+			}
+			set_capital = { state = 16 }
+			set_politics = {
+				ruling_party = vanguard_socialism
+				elections_allowed = no
+			}
+			set_popularities = {
+				vanguard_socialism = 100
+			}
+			# 本土法国傀儡随德国（若德国战争已结束则随英国）继续对西班牙、意大利作战。
+			if = {
+				limit = {
+					GER = { has_war_with = SPR }
+					NOT = { has_war_with = SPR }
+				}
+				add_to_war = {
+					targeted_alliance = GER
+					enemy = SPR
+					hostility_reason = asked_to_join
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = { has_war_with = SPR }
+					NOT = { has_war_with = SPR }
+				}
+				add_to_war = {
+					targeted_alliance = ENG
+					enemy = SPR
+					hostility_reason = asked_to_join
+				}
+			}
+			if = {
+				limit = {
+					GER = { has_war_with = ITA }
+					NOT = { has_war_with = ITA }
+				}
+				add_to_war = {
+					targeted_alliance = GER
+					enemy = ITA
+					hostility_reason = asked_to_join
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = { has_war_with = ITA }
+					NOT = { has_war_with = ITA }
+				}
+				add_to_war = {
+					targeted_alliance = ENG
+					enemy = ITA
+					hostility_reason = asked_to_join
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = FRA
+					NOT = {
+						OR = {
+							is_core_of = HOL
+							is_core_of = GER
+							state = 1079
+							state = 1077
+							state = 1078
+							state = 1080
+							state = 459
+							state = 513
+							state = 460
+						}
+					}
+				}
+				set_state_controller_to = PREV
+			}
+			FRA = {
+				set_nationality = {
+					target_country = PREV
+					character = FRA_Cachin_Marcel
+				}
+			}
+			FRA = { transfer_state = 1079 }
+			FRA = { transfer_state = 1078 }
+			FRA = { transfer_state = 1077 }
+			FRA = { transfer_state = 1080 }
+			FRA = { transfer_state = 459 }
+			FRA = { transfer_state = 513 }
+			FRA = { transfer_state = 460 }
+
+			if = {
+				limit = { FRA = { has_country_flag = become_deguokuilei } }
+				change_tag_from = FRA
+			}
+		}
+		# 仅在德国通过此流程击败法国后开放其东进谈判；法国胜利不会误触发。
+		GER = { set_country_flag = TOD_GER_WESTERN_VICTORY }
+		### 旧的全敌白和会切断本土法国傀儡随德国、英国对西班牙和意大利作战的战争关系，保留供日后查阅。
+		### every_country = {
+		### 	limit = {
+		### 		OR = {
+		### 			original_tag = FRA
+		### 			is_puppet_of = FRA
+		### 		}
+		### 	}
+		### 	every_country = {
+		### 		limit = { has_war_with = PREV }
+		### 		white_peace = PREV
+		### 	}
+		### }
+	}
+
+}

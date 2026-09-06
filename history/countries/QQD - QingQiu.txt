@@ -1,23 +1,39 @@
 capital = 915
 
-oob = "empty"
+oob = "QQD_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	tech_mountaineers = 1
+}
 
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = liberal_democracy
 	last_election = "1934.6.15"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservatism = 42
-	liberalism = 54
-	radicalism = 4
+	vanguard_socialism = 4 #先锋社会主义
+	council_socialism = 0 #委员会社会主义
+	moderate_socialism = 0 #温和社会主义
+	agroindustrial_socialism = 0 #农业社会主义
+	#
+	social_democrat = 0 #社会民主主义
+	liberal_democracy = 54 #自由民主主义
+	#
+	consociationalism = 42 #调和民主主义
+	conservative_democracy = 0 #保守民主主义
+	authoritarian_oligarchy = 0 #威权主义
+	#
+	leader_despotism = 0 #领袖主义
+	sacred_revivalism = 0 #神圣复兴主义
+	national_corporatism = 0 #法团主义
 }
-
-create_country_leader = {
-	name = "乔映霞"
-	picture = "Portrait_QQD_Qiao_Ying_Xia.png"
-	expire = "1965.1.1"
-	ideology = liberalism_subtype
-}
+recruit_character = QQD_Qiao_YingXia

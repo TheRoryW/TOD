@@ -1,0 +1,60 @@
+# 中央大明从各地选拔的代表性军工机构；原所属势力的记录保持不变。
+MNG_qiantang_engineering_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_qiantanggongchengjixiejituan
+	allowed = { tag = MNG }
+}
+
+MNG_wuyi_heavy_industry_organization = {
+	include = generic_heavy_tank_organization
+	icon = GFX_wuyizhonggongjituan
+	allowed = { tag = MNG }
+}
+
+MNG_changjiang_arms_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_changjiangbingqizhizaosuo
+	allowed = { tag = MNG }
+}
+
+MNG_luoyang_ordnance_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_STG_luoyangjunxugongchengzongwubu
+	allowed = { tag = MNG }
+}
+
+MNG_tangshan_heavy_machine_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_STG_tangshanzhongxingjixiezhizaochang
+	allowed = { tag = MNG }
+}
+
+MNG_baoding_aircraft_organization = {
+	include = generic_cas_aircraft_organization
+	icon = GFX_idea_STG_huangjiabaodingfeijishejiju
+	allowed = { tag = MNG }
+}
+
+MNG_kaifeng_aviation_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_STG_kaifenghangkongjituan
+	allowed = { tag = MNG }
+}
+
+MNG_datong_heavy_aircraft_organization = {
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_STG_datongzhongxingfeijizhizaoju
+	allowed = { tag = MNG }
+}
+
+MNG_jiangnan_naval_repair_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_guolijiangnanshuishixiuzaochang
+	allowed = { tag = MNG }
+}
+
+MNG_fuzhou_shipyard_organization = {
+	include = generic_submarine_organization
+	icon = GFX_idea_ROC_fuzhouchuanzhengju_organization
+	allowed = { tag = MNG }
+}

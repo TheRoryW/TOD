@@ -4,9 +4,9 @@ autonomy_state = {
 	default = yes
 	is_puppet = yes
 
-	min_freedom_level = 0.25
+	min_freedom_level = 0.0
 
-	manpower_influence = 0.9
+	manpower_influence = 0.5
 
 	rule = {
 		can_not_declare_war = yes
@@ -60,7 +60,7 @@ autonomy_state = {
 	can_take_level = {
 		custom_trigger_tooltip = {
 			tooltip = can_raise_autonomy_level
-			has_country_flag = KR_can_raise_autonomy_level
+			always = no
 		}
 	}
 

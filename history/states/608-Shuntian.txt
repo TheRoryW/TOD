@@ -2,15 +2,15 @@
 state={
 	id=608
 	name="STATE_608"
-	resources={
-		steel=64
+	resources = {
+		steel = 48
 	}
 
 	history={
 		owner = MNG
 		add_core_of = MNG
 		buildings = {
-			infrastructure = 9
+			infrastructure = 4
 			arms_factory = 2
 			industrial_complex = 2
 			air_base = 8
@@ -19,10 +19,16 @@ state={
 			9843 50 
 		}
 		victory_points = {
-			13415 20 
+			13415 10 
 		}
 		victory_points = {
-			13414 20 
+			13414 10 
+		}
+		victory_points = {
+			4140 5 
+		}
+		victory_points = {
+			13417 2 
 		}
 	}
 
@@ -31,5 +37,5 @@ state={
 	}
 	manpower=7328456
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category=twelve
 }

@@ -62,7 +62,7 @@ units = {
 			ship = { name = "明珠" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = YZR version_name = "蓬莱级"} } }
 			ship = { name = "森平" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = YZR version_name = "沃谷级"} } }
 			ship = { name = "河源" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = YZR version_name = "沃谷级"} } }
-			ship = { name = "河州" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = YZR version_name = "沃谷级"} } }
+			ship = { name = "河州 II" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = YZR version_name = "沃谷级"} } }
 			ship = { name = "蟠屿" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = YZR version_name = "妙屿级"} } }
 			ship = { name = "桃屿" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = YZR version_name = "妙屿级"} } }
 			ship = { name = "韬屿" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = YZR version_name = "妙屿级"} } }

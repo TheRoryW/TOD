@@ -1,0 +1,418 @@
+#内阁派系势力变动	
+	defined_text = {  #军事法案
+		name = GET_GOS_ngjsbd_js_name_txt
+		text = {
+			trigger = {
+				not ={has_country_flag = FLAG_GOS_decision_fn_js_complete }
+			}
+			localization_key = GET_GOS_ngjsbd_js_name_txt_1
+		}
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_decision_fn_js_complete		
+			}
+			localization_key = GET_GOS_ngjsbd_js_name_txt_2
+		}	
+	}
+	defined_text = {  #战争状态
+		name = GET_GOS_ngjsbd_zzzt_name_txt
+		text = {
+			trigger = {
+				has_war = yes
+			}
+			localization_key = GET_GOS_ngjsbd_zzzt_name_txt_1
+		}
+		text = {
+			trigger = {
+				not = {
+					has_war = yes
+				}
+			}
+			localization_key = GET_GOS_ngjsbd_zzzt_name_txt_2
+		}	
+	}
+	defined_text = {  #经济法案
+		name = GET_GOS_ngjsbd_jj_name_txt
+		text = {
+			trigger = {
+				not ={has_country_flag = FLAG_GOS_decision_fn_jj_complete }
+				or = {
+					has_idea = war_economy
+					has_idea = tot_economic_mobilisation
+				}
+			}
+			localization_key = GET_GOS_ngjsbd_jj_name_txt_1
+		}
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_decision_fn_jj_complete		
+			}
+			localization_key = GET_GOS_ngjsbd_jj_name_txt_2
+		}	
+	}
+	defined_text = {  #财产法案
+		name = GET_GOS_ngjsbd_cc_name_txt
+		text = {
+			trigger = {
+				not ={has_country_flag = FLAG_GOS_decision_fn_cc_complete }
+				check_variable = { 
+					VAR_GOS_jjms_wjd > 50
+				}
+			}
+			localization_key = GET_GOS_ngjsbd_cc_name_txt_1
+		}
+		text = {
+			trigger = {	
+				not ={has_country_flag = FLAG_GOS_decision_fn_cc_complete }
+				check_variable = { 
+					VAR_GOS_jjms_wjd < 51
+				}
+			}
+			localization_key = GET_GOS_ngjsbd_cc_name_txt_2
+		}
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_decision_fn_cc_complete		
+			}
+			localization_key = GET_GOS_ngjsbd_cc_name_txt_3
+		}	
+	}
+	defined_text = {  #人权法案
+		name = GET_GOS_ngjsbd_rq_name_txt
+		text = {
+			trigger = {
+				not ={has_country_flag = FLAG_GOS_decision_fn_rq_complete }
+			}
+			localization_key = GET_GOS_ngjsbd_rq_name_txt_1
+		}
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_decision_fn_rq_complete		
+			}
+			localization_key = GET_GOS_ngjsbd_rq_name_txt_2
+		}	
+	}
+
+#江南明军
+	defined_text = {  #江南明军
+		name = GET_GOS_idea_jnmj_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_idea_name_jnmj		
+					has_country_flag = FLAG_GOS_idea_name_xsbf
+				}
+			}
+			localization_key = GET_GOS_idea_jnmj_name_txt_1
+		}
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_idea_name_jnmj		
+				not = {
+					has_country_flag = FLAG_GOS_idea_name_xsbf
+				}
+			}
+			localization_key = GET_GOS_idea_jnmj_name_txt_2
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_idea_name_xsbf		
+			}
+			localization_key = GET_GOS_idea_jnmj_name_txt_3
+		}	
+	}
+
+
+
+
+
+
+
+#制造商名称
+	defined_text = {  #灵山土木工程建筑集团
+		name = GET_GOS_zzs_lstm_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_zzs_lstm_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_zzs_lstm_name_txt_2
+		}	
+	}
+	defined_text = {  #私立岳麓书院
+		name = GET_GOS_zzs_slsy_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_zzs_slsy_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_zzs_slsy_name_txt_2
+		}	
+	}
+	defined_text = {  #国立应天中央大学堂
+		name = GET_GOS_zzs_ytzy_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_zzs_ytzy_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_zzs_ytzy_name_txt_2
+		}	
+	}
+	defined_text = {  #汉江有色金属制备集团
+		name = GET_GOS_zzs_hjys_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_zzs_hjys_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_zzs_hjys_name_txt_2
+		}	
+	}
+	defined_text = {  #帝国扬子电气化开发局
+		name = GET_GOS_zzs_dgyz_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_zzs_dgyz_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_zzs_dgyz_name_txt_2
+		}	
+	}
+
+
+	defined_text = {  #钱塘工程机械集团
+		name = GET_GOS_organization_tank_qtgcjt_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_organization_tank_qtgcjt_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_organization_tank_qtgcjt_name_txt_2
+		}	
+	}
+	defined_text = {  #五一集团会社
+		name = GET_GOS_organization_tank_wyjt_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_organization_tank_wyjt_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_organization_tank_wyjt_name_txt_2
+		}	
+	}
+
+	defined_text = {  #钱塘远洋船舶集团
+		name = GET_GOS_organization_ship_qtyy_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_organization_ship_qtyy_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_organization_ship_qtyy_name_txt_2
+		}	
+	}
+	defined_text = {  #国立江南水师修造厂
+		name = GET_GOS_organization_ship_gljn_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_organization_ship_gljn_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_organization_ship_gljn_name_txt_2
+		}	
+	}
+	defined_text = {  #南通舰艇公司
+		name = GET_GOS_organization_ship_ntjt_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_organization_ship_ntjt_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_organization_ship_ntjt_name_txt_2
+		}	
+	}
+
+	defined_text = {  #御日联合航空集团
+		name = GET_GOS_organization_plane_yrlh_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_organization_plane_yrlh_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_organization_plane_yrlh_name_txt_2
+		}	
+	}
+	defined_text = {  #升力先进技术研究所
+		name = GET_GOS_organization_plane_sljs_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_organization_plane_sljs_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_organization_plane_sljs_name_txt_2
+		}	
+	}
+	defined_text = {  #国立九如飞行设计院
+		name = GET_GOS_organization_plane_gljr_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_organization_plane_gljr_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_organization_plane_gljr_name_txt_2
+		}	
+	}
+
+	defined_text = {  #长江兵器制作所
+		name = GET_GOS_organization_infantry_cjbq_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_organization_infantry_cjbq_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_organization_infantry_cjbq_name_txt_2
+		}	
+	}
+	defined_text = {  #虎贲高等火炮铸造所
+		name = GET_GOS_organization_infantry_hbgd_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_organization_infantry_hbgd_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_organization_infantry_hbgd_name_txt_2
+		}	
+	}
+	defined_text = {  #黄鹤民用机车会社
+		name = GET_GOS_organization_infantry_hhmy_name_txt
+		text = {
+			trigger = {
+				not = {
+					has_country_flag = FLAG_GOS_zzs_name_change		
+				}
+			}
+			localization_key = GET_GOS_organization_infantry_hhmy_name_txt_1
+		}	
+		text = {
+			trigger = {
+				has_country_flag = FLAG_GOS_zzs_name_change		
+			}
+			localization_key = GET_GOS_organization_infantry_hhmy_name_txt_2
+		}	
+	}
+
+
+
+
+
+
+
+
+#
+#	

@@ -3,12 +3,26 @@ characters={
 		name=BRA_Washington_Luis_Pereira_de_Sousa
 		portraits={
 			civilian={
-				large="gfx/leaders/BRA/Portrait_BRA_Washington_Luis_Pereira_de_Sousa.tga"
+				large="gfx/leaders/BRA/BRA_Washington_Luis_Pereira_de_Sousa.png"
 			}
 		}
 		country_leader={
-			ideology=conservatism_subtype
+			ideology=conservative_democracy_subtype
 			desc = "POLITICS_Washington_Luis_Pereira_de_Sousa_DESC"
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BRA_Getulio_Dornelles_Vargas = {
+		name=BRA_Getulio_Dornelles_Vargas
+		portraits={
+			civilian={
+				large="gfx/leaders/BRA/BRA_Getulio_Dornelles_Vargas.png"
+			}
+		}
+		country_leader={
+			ideology=national_corporatism_subtype
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

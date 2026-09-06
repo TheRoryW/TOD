@@ -6,16 +6,22 @@ state={
 	history={
 		owner = MNG
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 2
 
 		}
 		victory_points = {
-			1099 10 
+			1171 10 
 		}
 		victory_points = {
-			1125 2 
+			1125 5 
+		}
+		victory_points = {
+			1099 5 
+		}
+		victory_points = {
+			4105 2 
 		}
 		add_core_of = MNG
 

@@ -1,0 +1,36 @@
+state = {
+	id = 1220
+	name = "STATE_1220"
+	manpower = 3986501
+	state_category = seven
+
+	resources = {
+		aluminium = 12
+	}
+
+	history = {
+		owner = EDO
+		add_core_of = EDO
+
+		add_to_array = { state_victory_points = 1113 }
+		add_to_array = { state_victory_points = 7016 }
+
+		victory_points = { 1113 15 } #Utsunomiya
+		victory_points = { 7016 15 } #Mito
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			synthetic_refinery = 1
+
+			fuel_silo = 1
+
+			air_base = 3
+		}
+	}
+
+	provinces = {
+		993 1113 4100 7016 11908
+	}
+}

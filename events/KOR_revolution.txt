@@ -1,0 +1,68 @@
+add_namespace = KOR_rev
+
+country_event = {
+    id = KOR_rev.1
+    title = KOR_rev.1.t
+    desc = KOR_rev.1.d
+    picture = GFX_report_event_generic_revolution
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = KOR_rev.1.a  # 镇压革命
+        ROK = {
+            transfer_state = 799  # 将 庆尚 省份移交给 ROK
+            add_state_core = 799  # 设置 庆尚 为 ROK 的核心
+            transfer_state = 802  # 将 清津 省份移交给 ROK
+            add_state_core = 802  # 设置 清津 为 ROK 的核心
+            transfer_state = 803  # 将 咸镜 省份移交给 ROK
+            add_state_core = 803  # 设置 咸镜 为 ROK 的核心
+            add_state_core = 804
+            add_state_core = 527
+            add_state_core = 525
+            add_state_core = 801
+            add_state_core = 797
+            add_state_core = 800
+            inherit_technology = KOR
+        }
+        ROK = {
+            declare_war_on = {
+                target = KOR
+                type = civil_war
+            }
+            load_oob = "ROK_1938"
+        }
+        KOR = {
+            remove_ideas = KOR_idea_buzhengzhiguo
+        }
+    }
+
+    option = {
+        name = KOR_rev.1.b  # 朝鲜革命军独立
+        ROK = {
+            transfer_state = 799  # 将 庆尚 省份移交给 ROK
+            add_state_core = 799  # 设置 庆尚 为 ROK 的核心
+            transfer_state = 802  # 将 清津 省份移交给 ROK
+            add_state_core = 802  # 设置 清津 为 ROK 的核心
+            transfer_state = 803  # 将 咸镜 省份移交给 ROK
+            add_state_core = 803  # 设置 咸镜 为 ROK 的核心
+            add_state_core = 804
+            add_state_core = 527
+            add_state_core = 525
+            add_state_core = 801
+            add_state_core = 797
+            add_state_core = 800
+            inherit_technology = KOR
+        }
+        ROK = {change_tag_from = ROOT}
+        ROK = {
+            declare_war_on = {
+                target = KOR
+                type = civil_war
+            }
+            load_oob = "ROK_1938"
+        }
+        KOR = {
+            remove_ideas = KOR_idea_buzhengzhiguo
+        }
+    }
+}

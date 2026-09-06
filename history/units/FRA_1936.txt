@@ -1,0 +1,1039 @@
+##### Division Templates #####
+division_template = {#九步（一铲一炮)
+	name = "Division d'Infanterie"		
+	# Represents: Division d'Infanterie (Series A and B), Div. d'Inf. de Forteresse
+	# Difference is their equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {#九步（一炮）
+	name = "Division Coloniale"		
+	# Represents: Div. d'Inf. Coloniale, Div. d'Inf. Nord-Africaine
+	# Difference from DI is their equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
+	}
+}
+division_template = {#九摩（一炮一铲一摩侦）
+	name = "Division d'Infanterie Motorisée"	# Division d'Infanterie Motorisée
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }      # Recon Group consisted of 26 ACs + motorcycles
+		artillery = { x = 0 y = 1 }  # Heavy Arty Regiment had 1x 155mm, 1x 105mm battalions
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {#十二山地
+	name = "Division d'Infanterie Alpine"	# Division d'Infanterie Alpine
+	# Note: trimmed to 3x Rgts w/ arty bn added, 1939
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	# Chasseurs Alpins (HOI3 elites)
+		mountaineers = { x = 2 y = 1 }	# Chasseurs Alpins (HOI3 elites)
+		mountaineers = { x = 2 y = 2 }	# Chasseurs Alpins (HOI3 elites)
+		mountaineers = { x = 3 y = 0 }	# Chasseurs Alpins (HOI3 elites)
+		mountaineers = { x = 3 y = 1 }	# Chasseurs Alpins (HOI3 elites)
+		mountaineers = { x = 3 y = 2 }	# Chasseurs Alpins (HOI3 elites)
+	}
+}
+division_template = {#四骑（一侦）
+	name = "Division de Cavalerie" 	# Division de Cavalerie
+	# Note: Transformed to DLC, DLM divisions, 1936-39 
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon Group consisted of 64 ACs/scout cars
+	}
+}
+division_template = {
+	name = "Division Légère Mécanique" 		# Division Légère Mécanique
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }		# Bn. of Hotchkiss, then Souma (Med.) tanks
+		light_armor = { x = 0 y = 1 }		# Bn. of Hotchkiss tanks
+		motorized = { x = 1 y = 0 }			# Brigade of 2x Rgts., 2 Bns. each (later 1 Rgt. of 3x Bns.)
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }      # Recon Group consisted of 42 ACs + motorcycles
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {#四轻坦
+	name = "Brigade de Chars de Combat" 	# Brigade de Chars de Combat, independent armor brigades of 2x Rgts., 2 Bns. each
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+	}
+}
+division_template = {#六步
+	name = "Brigade Coloniale"			# Represents: 2xRgt colonial forces and , usually with old equipment
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+##### OOB #####
+units = {
+	##### 装甲军团 四轻坦师#####
+	division= {	
+		name = "第一装甲师"
+		location = 11506
+		division_template = "Brigade de Chars de Combat" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" } }
+	}
+	division= {	
+		name = "第二装甲师"
+		location = 9523
+		division_template = "Brigade de Chars de Combat" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" } }
+	}
+	division= {	
+		name = "第三装甲师"
+		location = 11518
+		division_template = "Brigade de Chars de Combat" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" } }
+	}
+	division= {	
+		name = "第四装甲师"
+		location = 11506
+		division_template = "Brigade de Chars de Combat" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" } }
+	}
+	division= {	
+		name = "第五装甲师"
+		location = 516
+		division_template = "Brigade de Chars de Combat" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" } }
+	}
+	division= {	
+		name = "第六装甲师"
+		location = 11531
+		division_template = "Brigade de Chars de Combat" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" } }
+	}
+	##### 北非驻守军团 六个六步师#####
+	division= {	
+		name = "阿尔及尔第一步兵师"
+		location = 7132
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "阿尔及尔第二步兵师"
+		location = 7132
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "阿尔及尔第三步兵师"
+		location = 1145
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "阿尔及尔第四步兵师"
+		location = 1145
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "阿尔及尔第五步兵师"
+		location = 12051
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "阿尔及尔第六步兵师"
+		location = 12051
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	##### 北法兰西驻守军团 五个六步师#####
+	division= {	
+		name = "第31步兵师"
+		location = 11548
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第32步兵师"
+		location = 11420
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第33步兵师"
+		location = 11563
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第34步兵师"
+		location = 120355251
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第35步兵师"
+		location = 11465
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	##### 南法兰西驻守军团 五个六步师#####
+	division= {	
+		name = "第36步兵师"
+		location = 6657
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第37步兵师"
+		location = 9737
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第38步兵师"
+		location = 9853
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第39步兵师"
+		location = 6766
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第40步兵师"
+		location = 9909
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	##### 东部驻守军团 五个六步师#####
+	division= {	
+		name = "第41步兵师"
+		location = 678
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第42步兵师"
+		location = 9503
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第43步兵师"
+		location = 6469
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第44步兵师"
+		location = 11531
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第45步兵师"
+		location = 587
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	##### 比利时驻守军团 四个六步师#####
+	division= {	
+		name = "第46步兵师"
+		location = 11519
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第47步兵师"
+		location = 6583
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第48步兵师"
+		location = 4598
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第49步兵师"
+		location = 516
+		division_template = "Brigade Coloniale" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	#####东部兵团 九步（一铲一炮）#####
+	division= {	
+		name = "第1步兵师"
+		location = 516
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第2步兵师"
+		location = 11519
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第3步兵师"
+		location = 587
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第4步兵师"
+		location = 6469
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第5步兵师"
+		location = 11531
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第6步兵师"
+		location = 11531
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第7步兵师"
+		location = 9503
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第8步兵师"
+		location = 678
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第9步兵师"
+		location = 11531
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第10步兵师"
+		location = 516
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	#####北法驻守兵团 九步（一铲一炮）#####
+	division= {	
+		name = "第11步兵师"
+		location = 11483
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第12步兵师"
+		location = 11483
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第13步兵师"
+		location = 575
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第14步兵师"
+		location = 11548
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第15步兵师"
+		location = 11548
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第16步兵师"
+		location = 11563
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第17步兵师"
+		location = 9495
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第18步兵师"
+		location = 6536
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第19步兵师"
+		location = 3552
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第20步兵师"
+		location = 11465
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	#####南法兰西驻守军团 九步（一铲一炮）#####
+	division= {	
+		name = "第21步兵师"
+		location = 6657
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第22步兵师"
+		location = 9737
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第23步兵师"
+		location = 3671
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第24步兵师"
+		location = 651
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第25步兵师"
+		location = 620
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第26步兵师"
+		location = 6766
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第27步兵师"
+		location = 9853
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第28步兵师"
+		location = 9898
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第29步兵师"
+		location = 11834
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第30步兵师"
+		location = 9909
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	#####摩托化兵团 九摩（一炮一铲一摩侦）#####
+	division= {	
+		name = "第1机动师"
+		location = 11506
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第2机动师"
+		location = 9523
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第3机动师"
+		location = 11518
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第4机动师"
+		location = 7132
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第5机动师"
+		location = 9909
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第6机动师"
+		location = 6613
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第7机动师"
+		location = 3594
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第8机动师"
+		location = 9434
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第9机动师"
+		location = 11548
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第10机动师"
+		location = 6583
+		division_template = "Division d'Infanterie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	#####骑兵师 四骑（一侦）#####
+	division= {	
+		name = "第1骑兵师"
+		location = 6583
+		division_template = "Division de Cavalerie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第2骑兵师"
+		location = 6583
+		division_template = "Division de Cavalerie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第3骑兵师"
+		location = 778
+		division_template = "Division de Cavalerie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第4骑兵师"
+		location = 3594
+		division_template = "Division de Cavalerie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第5骑兵师"
+		location = 6613
+		division_template = "Division de Cavalerie" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	#####山地师 十二山地#####
+	division= {	
+		name = "第山地师"
+		location = 6766
+		division_template = "Division d'Infanterie Alpine" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第2山地师"
+		location = 6766
+		division_template = "Division d'Infanterie Alpine" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第3山地师"
+		location = 9882
+		division_template = "Division d'Infanterie Alpine" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "第4山地师"
+		location = 743
+		division_template = "Division d'Infanterie Alpine" 		#  
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+}
+###################
+
+units = {
+	# 以原版法国舰种比例为基准扩充；所有舰艇均在本 mod OOB 内定义。
+	fleet = {
+		name = "Force de l’Atlantique"
+		naval_base = 3552
+		task_force = {
+			name = "Escadre de Brest"
+			location = 3552
+			ship = { name = "Atlantique CV 01" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique CV 02" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique BB 01" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique BB 02" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique BB 03" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique BB 04" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique CA 01" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique CA 02" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique CA 03" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique CA 04" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique CA 05" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique CL 01" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique CL 02" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique CL 03" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique CL 04" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique CL 05" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 05" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 06" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 07" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 08" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 09" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 10" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 11" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 12" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 13" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 14" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 15" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 16" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 17" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 18" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 19" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 20" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 21" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 22" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 23" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 24" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 25" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique DD 26" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+		}
+		task_force = {
+			name = "Flottille sous-marine de Brest"
+			location = 3552
+			ship = { name = "Atlantique SS 01" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 02" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 03" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 04" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 05" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 06" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 07" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 08" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 09" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 10" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 11" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 12" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 13" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 14" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 15" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 16" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 17" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 18" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 19" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 20" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 21" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 22" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 23" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 24" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 25" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 26" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 27" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 28" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 29" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 30" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 31" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Atlantique SS 32" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+		}
+	}
+}
+
+units = {
+	# 以原版法国舰种比例为基准扩充；所有舰艇均在本 mod OOB 内定义。
+	fleet = {
+		name = "Force de la Méditerranée"
+		naval_base = 911
+		task_force = {
+			name = "Escadre de Toulon"
+			location = 911
+			ship = { name = "Méditerranée BB 01" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée BB 02" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée BB 03" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée BB 04" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée CA 01" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée CA 02" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée CA 03" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée CA 04" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée CA 05" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée CA 06" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée CL 01" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée CL 02" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée CL 03" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée CL 04" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée CL 05" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée CL 06" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 05" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 06" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 07" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 08" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 09" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 10" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 11" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 12" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 13" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 14" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 15" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 16" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 17" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 18" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 19" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 20" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 21" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 22" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 23" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 24" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 25" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée DD 26" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+		}
+		task_force = {
+			name = "Flottille sous-marine de Toulon"
+			location = 911
+			ship = { name = "Méditerranée SS 01" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 02" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 03" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 04" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 05" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 06" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 07" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 08" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 09" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 10" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 11" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 12" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 13" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 14" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 15" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 16" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 17" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 18" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 19" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 20" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 21" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 22" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 23" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 24" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 25" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 26" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 27" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 28" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 29" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 30" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Méditerranée SS 31" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+		}
+	}
+}
+
+units = {
+	# 以原版法国舰种比例为基准扩充；所有舰艇均在本 mod OOB 内定义。
+	fleet = {
+		name = "Force d’Outre-mer"
+		naval_base = 7132
+		task_force = {
+			name = "Escorte d’Oran"
+			location = 7132
+			ship = { name = "Outre-mer DD 01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 05" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 06" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 07" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 08" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 09" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 10" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 11" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 12" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 13" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 14" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 15" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 16" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 17" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 18" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 19" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 20" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 21" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 22" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 23" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 24" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 25" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer DD 26" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+		}
+		task_force = {
+			name = "Flottille sous-marine d’Oran"
+			location = 7132
+			ship = { name = "Outre-mer SS 01" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 02" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 03" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 04" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 05" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 06" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 07" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 08" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 09" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 10" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 11" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 12" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 13" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 14" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 15" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 16" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 17" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 18" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 19" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 20" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 21" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 22" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 23" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 24" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 25" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 26" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 27" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 28" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 29" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 30" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 31" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Outre-mer SS 32" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+		}
+	}
+	fleet = {
+		name = "Réserve de la Marine Nationale"
+		naval_base = 911
+		task_force = {
+			name = "Groupe de réserve de Toulon"
+			location = 911
+			ship = { name = "Réserve BB 01" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve BB 02" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve CA 03" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve CA 04" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve CA 05" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve CL 06" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve CL 07" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve CL 08" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 09" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 10" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 11" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 12" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 13" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 14" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 15" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 16" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 17" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 18" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 19" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 20" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 21" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 22" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 23" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 24" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 25" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 26" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 27" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 28" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 29" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 30" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 31" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 32" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 33" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve DD 34" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 35" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 36" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 37" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 38" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 39" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 40" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 41" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 42" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 43" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 44" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 45" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 46" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 47" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 48" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 49" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 50" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 51" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 52" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 53" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 54" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 55" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 56" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 57" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 58" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 59" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 60" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 61" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 62" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 63" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 64" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Réserve SS 65" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA } } }
+		}
+	}
+}

@@ -1,17 +1,7 @@
 spriteTypes = {
 	
-	spriteType = {
-		name = "GFX_idea_JAP_overseas_japanese_in_sanchen"
-		texturefile = "gfx/interface/ideas/ideas/JAP_overseas_japanese_in_sanchen.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_WJP_slave_of_dragon"
-		texturefile = "gfx/interface/ideas/ideas/WJP_slave_of_dragon.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_WJP_rice_unrest"
-		texturefile = "gfx/interface/ideas/ideas/WJP_rice_unrest.dds"
-	}
+
+#MNG
 	spriteType = {
 		name = "GFX_idea_MNG_Undesirable_economic_recovery"
 		texturefile = "gfx/interface/ideas/ideas/MNG_Undesirable_economic_recovery.dds"
@@ -32,6 +22,7 @@ spriteTypes = {
 		name = "GFX_idea_MNG_Dominant_power_of_Far_East"
 		texturefile = "gfx/interface/ideas/ideas/MNG_Dominant_power_of_Far_East.dds"
 	}
+#CHA	
 	spriteType = {
 		name = "GFX_idea_CHA_limited_international_trade"
 		texturefile = "gfx/interface/ideas/ideas/CHA_limited_international_trade.dds"
@@ -40,6 +31,7 @@ spriteTypes = {
 		name = "GFX_idea_CHA_qing_gang"
 		texturefile = "gfx/interface/ideas/ideas/CHA_qing_gang.dds"
 	}
+#ANN	
 	spriteType = {
 		name = "GFX_idea_ANN_celestial_tribute_country"
 		texturefile = "gfx/interface/ideas/ideas/ANN_celestial_tribute_country.dds"
@@ -60,6 +52,7 @@ spriteTypes = {
 		name = "GFX_idea_ANN_indochina_railway"
 		texturefile = "gfx/interface/ideas/ideas/ANN_indochina_railway.dds"
 	}
+#LAN	
 	spriteType = {
 		name = "GFX_idea_LAN_bangkok_edict"
 		texturefile = "gfx/interface/ideas/ideas/LAN_bangkok_edict.dds"
@@ -72,6 +65,7 @@ spriteTypes = {
 		name = "GFX_idea_LAN_the_influence_of_the_labor_party"
 		texturefile = "gfx/interface/ideas/ideas/LAN_the_influence_of_the_labor_party.dds"
 	}
+#SIA	
 	spriteType = {
 		name = "GFX_idea_SIA_the_aftermath_of_the_gengwu_financial_crisis"
 		texturefile = "gfx/interface/ideas/ideas/SIA_the_aftermath_of_the_gengwu_financial_crisis.dds"
@@ -84,6 +78,7 @@ spriteTypes = {
 		name = "GFX_idea_SIA_guerrillas_of_the_party_of_labor"
 		texturefile = "gfx/interface/ideas/ideas/SIA_guerrillas_of_the_party_of_labor.dds"
 	}	
+#KHM	
 	spriteType = {
 		name = "GFX_idea_KHM_the_aftermath_of_the_gengwu_financial_crisis"
 		texturefile = "gfx/interface/ideas/ideas/KHM_the_aftermath_of_the_gengwu_financial_crisis.dds"
@@ -96,6 +91,7 @@ spriteTypes = {
 		name = "GFX_idea_KHM_king_norodom_sutharot"
 		texturefile = "gfx/interface/ideas/ideas/KHM_king_norodom_sutharot.dds"
 	}
+#EZO	
 	spriteType = {
 		name = "GFX_idea_EZO_colonical_dominion"
 		texturefile = "gfx/interface/ideas/ideas/EZO_colonical_dominion.dds"
@@ -116,6 +112,7 @@ spriteTypes = {
 		name = "GFX_idea_EZO_the_aftermath_of_the_gengwu_financial_crisis"
 		texturefile = "gfx/interface/ideas/ideas/EZO_the_aftermath_of_the_gengwu_financial_crisis.dds"
 	}
+#RYU	
 	spriteType = {
 		name = "GFX_idea_RYU_gaige"
 		texturefile = "gfx/interface/ideas/RYU/RYU_gaige.png"
@@ -132,4 +129,125 @@ spriteTypes = {
 		name = "GFX_idea_RYU_yifuxingshichang"
 		texturefile = "gfx/interface/ideas/RYU/RYU_yifuxingshichang.png"
 	}
-}  	
+#SRC (东北红军)
+	spriteType = {
+		name = "GFX_idea_SRC_qiyireqing"
+		texturefile = "gfx/interface/ideas/SRC/SRC_qiyireqing.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_qiyireqing"
+		texturefile = "gfx/interface/ideas/SRC/SRC_qiyireqing.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_gemingchiweidui"
+		texturefile = "gfx/interface/ideas/SRC/SRC_gemingchiweidui.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_gemingjunshiweiyuanhui_1"
+		texturefile = "gfx/interface/ideas/SRC/SRC_gemingjunshiweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_gongrenhuchangreqing"
+		texturefile = "gfx/interface/ideas/SRC/SRC_gongrenhuchangreqing.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_siliedeshehui"
+		texturefile = "gfx/interface/ideas/SRC/SRC_siliedeshehui.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_zhonghuagongnonghongjun"
+		texturefile = "gfx/interface/ideas/SRC/SRC_zhonghuagongnonghongjun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_tongchanguojijunshiguwentuan"
+		texturefile = "gfx/interface/ideas/SRC/SRC_tongchanguojijunshiguwentuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_buwangkulaojichou"
+		texturefile = "gfx/interface/ideas/SRC/SRC_buwangkulaojichou.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_dangdelingdao"
+		texturefile = "gfx/interface/ideas/SRC/SRC_dangdelingdao.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_renminminzhu"
+		texturefile = "gfx/interface/ideas/SRC/SRC_renminminzhu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_jingweihui"
+		texturefile = "gfx/interface/ideas/SRC/SRC_jingweihui.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_gemingwenhua"
+		texturefile = "gfx/interface/ideas/SRC/SRC_gemingwenhua.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_gemingtongmeng"
+		texturefile = "gfx/interface/ideas/SRC/SRC_gemingtongmeng.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_gaigewei"
+		texturefile = "gfx/interface/ideas/SRC/SRC_gaigewei.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_hongjun"
+		texturefile = "gfx/interface/ideas/SRC/SRC_hongjun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_gemingjunshiweiyuanhui_3"
+		texturefile = "gfx/interface/ideas/SRC/SRC_gemingjunshiweiyuanhui_3.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_gemingjunshiweiyuanhui_4"
+		texturefile = "gfx/interface/ideas/SRC/SRC_gemingjunshiweiyuanhui_4.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_gemingjunshiweiyuanhui_5"
+		texturefile = "gfx/interface/ideas/SRC/SRC_gemingjunshiweiyuanhui_5.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_hongkongjun"
+		texturefile = "gfx/interface/ideas/SRC/SRC_hongkongjun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_honghaijun"
+		texturefile = "gfx/interface/ideas/SRC/SRC_honghaijun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_gemingzhengfu"
+		texturefile = "gfx/interface/ideas/SRC/SRC_gemingzhengfu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_xueshuminzhu"
+		texturefile = "gfx/interface/ideas/SRC/SRC_xueshuminzhu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_xinwenhuasichao"
+		texturefile = "gfx/interface/ideas/SRC/SRC_xinwenhuasichao.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_yiwujihua"
+		texturefile = "gfx/interface/ideas/SRC/SRC_yiwujihua.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_hongxingzhaoyaodongfang"
+		texturefile = "gfx/interface/ideas/SRC/SRC_hongxingzhaoyaodongfang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_zhumenhuanxintian"
+		texturefile = "gfx/interface/ideas/SRC/SRC_zhumenhuanxintian.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_chiqizhiyinweilai"
+		texturefile = "gfx/interface/ideas/SRC/SRC_chiqizhiyinweilai.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_wuchanjiejiminzhu"
+		texturefile = "gfx/interface/ideas/SRC/SRC_wuchanjiejiminzhu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_jihuashengchan"
+		texturefile = "gfx/interface/ideas/SRC/SRC_jihuashengchan.png"
+	}
+}

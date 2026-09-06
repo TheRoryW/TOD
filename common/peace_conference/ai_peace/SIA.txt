@@ -1,0 +1,19 @@
+
+peace_ai_desires = {
+    xianluoneizhan = {
+        peace_action_type = take_states
+        enable = {
+            FROM.FROM.FROM = {
+                is_core_of = SIA
+            }
+            ROOT = {
+                OR = {
+                    tag = SIA
+                    tag = ROS
+                }
+            }
+			ROOT.FROM = { tag = ROOT }
+        }
+        ai_desire = 200
+    }
+}

@@ -1,0 +1,11 @@
+HUN_clear_left_minority_disputes_effect = {
+	every_owned_state = {
+		remove_dynamic_modifier = { modifier = HUN_shaoshuminzufenzheng }
+		remove_dynamic_modifier = { modifier = HUN_shaoshuminzufenzheng_wanquankongzhi }
+		remove_dynamic_modifier = { modifier = HUN_shaoshuminzufenzheng_qingweisaoluan }
+		remove_dynamic_modifier = { modifier = HUN_shaoshuminzufenzheng_jibenkekong }
+		remove_dynamic_modifier = { modifier = HUN_shaoshuminzufenzheng_mianqiangkekong }
+		remove_dynamic_modifier = { modifier = HUN_shaoshuminzufenzheng_yanzhongshikong }
+		remove_dynamic_modifier = { modifier = HUN_shaoshuminzufenzheng_wufawutian }
+	}
+}

@@ -1,0 +1,122 @@
+add_namespace = Finland
+
+#大北方战争 1937.10
+country_event = {
+	id = Finland.1
+	title = Finland.1.t
+	desc = Finland.1.d
+	
+	fire_only_once = yes
+	trigger = {
+		date > 1937.9.30
+		tag = FIN
+	}
+	
+	option = {
+		name = Finland.1.a 
+		declare_war_on = { target = SWE type = annex_everything }
+	}
+}
+
+#芬兰胜利
+country_event = {
+	id = Finland.2
+	title = Finland.2.t
+	desc = Finland.2.d
+	picture = GFX_report_event_generic_run_on_the_banks
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FIN
+		OR = {
+			NOT = { country_exists = SWE }
+			SWE = { has_capitulated = yes }
+		}
+	}
+
+	option = {
+		name = Finland.2.a
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = NOR
+					is_core_of = SWE
+				}
+			}
+			add_core_of = FIN
+		}
+		annex_country = { target = NOR }
+		set_cosmetic_tag = FIN_USSR
+		set_global_flag = TOD_great_northern_war_concluded
+	}
+}
+
+#芬兰胜利
+country_event = {
+	id = Finland.3
+	title = Finland.3.t
+	desc = Finland.3.d
+	picture = GFX_report_event_generic_run_on_the_banks
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWE
+		OR = {
+			NOT = { country_exists = FIN }
+			FIN = { has_capitulated = yes }
+		}
+	}
+
+	option = {
+		name = Finland.3.a
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = NOR
+					is_core_of = FIN
+				}
+			}
+			add_core_of = SWE
+		}
+		annex_country = { target = NOR }
+		set_global_flag = TOD_great_northern_war_concluded
+	}
+}
+
+# 大北方战争自 1937.10.01 开始；1938.03.17 是至俄罗斯介入窗口（1938.09.01）的中点。
+# 仅比较仍在交战的芬兰与瑞典；投降倾向较低的一方获得对另一方的持续决定性攻势，直到俄罗斯介入时清除。
+country_event = {
+	id = Finland.4
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		date > 1938.3.16
+		country_exists = SWE
+		has_war_with = SWE
+		NOT = { has_capitulated = yes }
+		SWE = { NOT = { has_capitulated = yes } }
+		NOT = { has_global_flag = TOD_great_northern_war_concluded }
+	}
+
+	option = {
+		name = Finland.4.a
+		set_temp_variable = { FIN_nordic_surrender = surrender_progress }
+		SWE = { set_temp_variable = { ROOT.SWE_nordic_surrender = surrender_progress } }
+		if = {
+			limit = {
+				check_variable = { var = FIN_nordic_surrender value = SWE_nordic_surrender compare = less_than }
+			}
+			add_ideas = FIN_nordic_unification_offensive
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = SWE_nordic_surrender value = FIN_nordic_surrender compare = less_than }
+			}
+			SWE = { add_ideas = SWE_nordic_unification_offensive }
+		}
+	}
+}
+

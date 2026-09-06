@@ -1,0 +1,431 @@
+# Vanilla definitions required by TOD while common/scripted_triggers remains replaced.
+# Ported from the installed vanilla files; TOD-specific definitions remain in their original files.
+
+anti_submarine_strategy_required_trigger = {
+	OR = {
+		AND = {
+			tag = ENG
+			not = { is_in_faction_with = GER }
+			GER = {
+				has_navy_size = {
+					type = submarine
+					size > 30
+				}
+			}
+		}
+		AND = {
+			tag = USA
+			not = { is_in_faction_with = GER }
+			GER = {
+				has_navy_size = {
+					type = submarine
+					size > 30
+				}
+			}
+		}
+		AND = {
+			tag = JAP
+			not = { is_in_faction_with = USA }
+		}
+		AND = {
+			has_war = yes
+			any_enemy_country = {
+				has_navy_size = {
+					type = submarine
+					size > 30
+				}
+			}
+		}
+		convoy_threat > 0.3
+	}
+}
+
+enemy_has_equal_or_better_radar_tech_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = enemy_has_equal_or_better_radar_tech_trigger_tt
+		if = {
+			limit = {
+				ROOT = {
+					has_tech = radio_detection
+					NOT = {
+						has_tech = cavity_magnatron
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_tech = radio_detection
+					has_tech = cavity_magnatron
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_tech = cavity_magnatron
+
+				}
+			}
+			FROM = {
+				has_tech = cavity_magnatron
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					NOT = {
+						has_tech = centimetric_radar
+					}
+				}
+			}
+			FROM = {
+				has_tech = centimetric_radar
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_tech = centimetric_radar
+					NOT = {
+						has_tech = phased_array
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_tech = centimetric_radar
+					has_tech = phased_array
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_tech = phased_array
+					NOT = {
+						has_tech = monopulse_radar
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_tech = phased_array
+					has_tech = monopulse_radar
+				}
+			}
+		}
+		#no more steps needed because end of research tree is reached
+	}
+}
+
+has_any_byz_cosmetic_tag = {
+	OR = {
+		has_cosmetic_tag = BYZ_UNIFIED
+		has_cosmetic_tag = BYZ_UNIFIED_communism
+		has_cosmetic_tag = BYZ_UNIFIED_democratic
+		has_cosmetic_tag = BYZ_UNIFIED_fascism
+		has_cosmetic_tag = BYZ_UNIFIED_neutrality
+	}
+}
+
+has_large_ally_not_pick_closed_economy = {
+	any_of_scopes = {
+		array = faction_members
+
+		NOT = { tag = PREV }
+		num_of_military_factories > 30
+	}
+}
+
+is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
+	is_subject = no
+	if = {
+		limit = {
+			original_tag = ITA
+		}
+		NOT = { FROM = { original_tag = YUG } }
+	}
+
+	if = {
+		limit = {
+			original_tag = POL
+		}
+		NOT = { FROM = { original_tag = DNZ } }
+	}
+	if = {
+		limit = {
+			original_tag = TUR
+		}
+		NOT = { FROM = { original_tag = KUR } }
+	}
+	NOT = {
+		FROM = {
+			original_tag = SDL
+		}
+	}
+	NOT = {
+		any_country_with_original_tag = {
+			original_tag_to_check = FROM
+			is_puppet_of = PREV # if already created one do not create another
+			### has_autonomy_state = autonomy_collaboration_government # autonomy state is not loaded by this mod
+			always = no
+		}
+	}
+}
+
+is_controlled_by_ROOT_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = is_controlled_by_ROOT_or_ally
+		CONTROLLER = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+}
+
+should_play_south_american_music = {
+	capital_scope = { is_on_continent = south_america }
+}
+
+state_is_fully_controlled_by_ROOT_or_subject = {
+	custom_trigger_tooltip = {
+		tooltip = state_is_fully_controlled_by_ROOT_or_subject_tt
+		OR = {
+			is_fully_controlled_by = ROOT
+			controller = {
+				is_subject_of = ROOT
+				has_full_control_of_state = PREV
+			}
+		}
+	}
+}
+
+ETH_is_horn_of_africa_original_tag = {
+	OR = {
+		original_tag = ETH
+		original_tag = SOM
+		original_tag = ERI
+		original_tag = DJI
+		original_tag = AFA
+		original_tag = HAR
+		original_tag = TIG
+		original_tag = BEG
+		original_tag = GBA
+		original_tag = SID
+		original_tag = ORO
+		original_tag = QEM
+	}
+}
+
+has_air_academy = {
+	IF = {
+		limit = { 
+			original_tag = ETH 
+		}
+		custom_trigger_tooltip = {
+			tooltip = has_air_academy_tt 
+			### has_completed_focus = ETH_debre_zeyit_air_force_training_center # vanilla focus tree is not loaded
+			always = no
+		}
+	}
+}
+
+has_air_force_command = {
+	IF = {
+		limit = { 
+			original_tag = ETH 
+		}
+		custom_trigger_tooltip = {
+			tooltip = has_air_force_command_tt 
+			### has_completed_focus = ETH_the_ethiopian_air_force # vanilla focus tree is not loaded
+			always = no
+		}
+	}
+}
+
+has_military_academy = {
+	IF = {
+		limit = { 
+			original_tag = ETH 
+		}
+		custom_trigger_tooltip = {
+			tooltip = has_military_academy_tt 
+			### has_completed_focus = ETH_ecole_militaire_haile_selassie_1er # vanilla focus tree is not loaded
+			always = no
+		}
+	}
+}
+
+has_naval_academy = {
+	IF = {
+		limit = { 
+			original_tag = ETH 
+		}
+		custom_trigger_tooltip = {
+			tooltip = has_naval_academy_tt 
+			### has_completed_focus = ETH_asmera_naval_college # vanilla focus tree is not loaded
+			always = no
+		}
+	}
+}
+
+is_literally_china = {
+	OR = {
+		original_tag = CHI
+		original_tag = PRC
+		original_tag = GXC
+		original_tag = YUN
+		original_tag = SHX
+		original_tag = XSM
+		original_tag = SIK
+		original_tag = GDC
+		original_tag = SND
+		original_tag = SIC
+		original_tag = NXM
+		original_tag = GSM
+		original_tag = XIC
+		original_tag = KHM
+		original_tag = KUM
+		original_tag = RNG
+		original_tag = HBC
+	}
+}
+
+is_literally_china_not_prc = {
+	OR = {
+		original_tag = CHI
+		original_tag = GXC
+		original_tag = YUN
+		original_tag = SHX
+		original_tag = XSM
+		original_tag = SIK
+		original_tag = GDC
+		original_tag = SND
+		original_tag = SIC
+		original_tag = NXM
+		original_tag = GSM
+		original_tag = XIC
+		original_tag = KHM
+		original_tag = KUM
+		original_tag = RNG
+		original_tag = HBC
+	}
+}
+
+# Tooltip-only designer checks required by the loaded Italian MIO definitions.
+ITA_is_northern_designer = {
+	custom_trigger_tooltip = {
+		tooltip = ITA_northern_designer_tt
+		hidden_trigger = { always = yes }
+	}
+}
+
+ITA_is_southern_designer = {
+	custom_trigger_tooltip = {
+		tooltip = ITA_southern_designer_tt
+		hidden_trigger = { always = yes }
+	}
+}
+
+ITA_is_northern_designer_improved = {
+	custom_trigger_tooltip = {
+		tooltip = ITA_northern_designer_improved_tt
+		hidden_trigger = { always = yes }
+	}
+}
+
+ITA_is_southern_designer_improved = {
+	custom_trigger_tooltip = {
+		tooltip = ITA_southern_designer_improved_tt
+		hidden_trigger = { always = yes }
+	}
+}
+
+NOR_prep_his_mod_remove_trigger = {
+	NOR = {
+		OR = {
+			NOT = { owns_state = PREV }
+			AND = {
+				has_war = no
+				has_capitulated = yes
+				exists = no
+			}
+		}
+	}
+}
+
+NOR_prep_fasc_mod_remove_trigger = {
+	NOR = {
+		OR = {
+			NOT = { owns_state = PREV }
+			AND = {
+				has_war = no
+				has_capitulated = yes
+				exists = no
+			}
+		}
+	}
+}
+
+CZE_RUT_is_not_its_own_thing = {
+	# RUT is not present in TOD's replaced country database.
+	always = yes
+}
+
+wuw_HUN_does_not_have_trianon = {
+	custom_trigger_tooltip = {
+		tooltip = wuw_HUN_does_not_have_trianon_tt
+		hidden_trigger = { always = yes }
+	}
+}
+
+CHI_northern_mandate_states = {
+	OR = {
+		region = 149
+		region = 256
+		region = 148
+		region = 266
+		region = 259
+		region = 260
+		region = 262
+		region = 87
+		region = 258
+		region = 257
+		region = 147
+	}
+}
+
+CHI_southern_mandate_states = {
+	OR = {
+		region = 142
+		region = 228
+		region = 292
+		region = 229
+		region = 294
+		region = 295
+		region = 188
+		region = 160
+		region = 187
+		region = 159
+		region = 158
+		region = 93
+		region = 293
+		region = 141
+		region = 146
+	}
+}
+
+CHI_greater_game_states = {
+	OR = {
+		region = 136
+		region = 268
+		region = 270
+		region = 267
+		region = 269
+		region = 162
+		region = 251
+	}
+}

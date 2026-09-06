@@ -46,7 +46,7 @@ country_event = {
 
 		option = {
 		name = DBG.radicalism1
-			set_politics = { ruling_party = radicalism } 
+			set_politics = { ruling_party = sacred_revivalism } 
 			add_ideas = RadNat_type
 			country_event = DBG.3
 		}
@@ -76,7 +76,7 @@ country_event = {
 		
 		option = {
 		name = DBG.radicalism1
-			set_politics = { ruling_party = radicalism } 
+			set_politics = { ruling_party = sacred_revivalism } 
 			add_ideas = RadNat_type
 			country_event = DBG.2
 		}
@@ -108,20 +108,20 @@ country_event = {
 
 		option = {
  		name = DBG.socialism1
-			set_politics = { ruling_party = socialism } 
+			set_politics = { ruling_party = moderate_socialism } 
 			add_ideas = SocPar_type
 			country_event = DBG.5
 			
 		}
 		
 		option = {
-			name = DBG.socialism2
+			name = DBG.moderate_socialism2
 			add_ideas = SocMrk_type
 			country_event = DBG.5
 		}
 		
 		option = {
-			name = DBG.socialism3
+			name = DBG.moderate_socialism3
 			add_ideas = SocLux_type
 			country_event = DBG.5
 		}
@@ -146,20 +146,20 @@ country_event = {
 
 		option = {
  		name = DBG.socialism1
-			set_politics = { ruling_party = socialism } 
+			set_politics = { ruling_party = moderate_socialism } 
 			add_ideas = SocPar_type
 			country_event = DBG.4
 			
 		}
 		
 		option = {
-			name = DBG.socialism2
+			name = DBG.moderate_socialism2
 			add_ideas = SocMrk_type
 			country_event = DBG.4
 		}
 		
 		option = {
-			name = DBG.socialism3
+			name = DBG.moderate_socialism3
 			add_ideas = SocLux_type
 			country_event = DBG.4
 		}
@@ -183,20 +183,20 @@ country_event = {
 
 		option = {
  		name = DBG.reformism1
-			set_politics = { ruling_party = reformism } 
+			set_politics = { ruling_party = social_democrat } 
 			add_ideas = RefDem_type
 			country_event = DBG.7
 			
 		}
 
 		option = {
-			name = DBG.reformism3
+			name = DBG.social_democrat3
 			add_ideas = RefSoc_type
 			country_event = DBG.7
 		}		
 
 		option = {
-			name = DBG.reformism3
+			name = DBG.social_democrat3
 			add_ideas = RefSoc_type
 			country_event = DBG.7
 		}
@@ -220,7 +220,7 @@ country_event = {
 
 		option = {
  		name = DBG.reformism1
-			set_politics = { ruling_party = reformism } 
+			set_politics = { ruling_party = social_democrat } 
 			add_ideas = RefDem_type
 			country_event = DBG.6
 			
@@ -228,13 +228,13 @@ country_event = {
 
 
 		option = {
-			name = DBG.reformism3
+			name = DBG.social_democrat3
 			add_ideas = RefSoc_type
 			country_event = DBG.7
 		}		
 		
 		option = {
-			name = DBG.reformism3
+			name = DBG.social_democrat3
 			add_ideas = RefTon_type
 			country_event = DBG.6
 		}
@@ -256,23 +256,23 @@ country_event = {
 
 
 	is_triggered_only = yes
-
+#要改
 		option = {
  		name = DBG.liberalism1
-			set_politics = { ruling_party = liberalism } 
+			set_politics = { ruling_party = liberal_democracy } 
 			add_ideas = LibSoc_type
 			country_event = DBG.9
 			
 		}
 		
 		option = {
-			name = DBG.liberalism2
+			name = DBG.liberal_democracy2
 			add_ideas = LibMrk_type
 			country_event = DBG.9
 		}
 
 		option = {
-			name = DBG.liberalism3
+			name = DBG.liberal_democracy3
 			add_ideas = LibRev_type
 			country_event = DBG.9
 		}	
@@ -296,20 +296,20 @@ country_event = {
 
 		option = {
  		name = DBG.liberalism1
-			set_politics = { ruling_party = liberalism } 
+			set_politics = { ruling_party = liberal_democracy } 
 			add_ideas = LibSoc_type
 			country_event = DBG.8
 			
 		}
 		
 		option = {
-			name = DBG.liberalism2
+			name = DBG.liberal_democracy2
 			add_ideas = LibMrk_type
 			country_event = DBG.8
 		}
 
 		option = {
-			name = DBG.liberalism3
+			name = DBG.liberal_democracy3
 			add_ideas = LibRev_type
 			country_event = DBG.9
 		}		
@@ -334,14 +334,14 @@ country_event = {
 
 		option = {
  		name = DBG.conservatism1
-			set_politics = { ruling_party = conservatism } 
+			set_politics = { ruling_party = conservative_democracy } 
 			add_ideas = ConSoc_type
 			country_event = DBG.11
 			
 		}
 		
 		option = {
-			name = DBG.conservatism2
+			name = DBG.conservative_democracy2
 			add_ideas = ConTrd_type
 			country_event = DBG.11
 		}
@@ -365,14 +365,14 @@ country_event = {
 
 		option = {
  		name = DBG.conservatism1
-			set_politics = { ruling_party = conservatism } 
+			set_politics = { ruling_party = conservative_democracy } 
 			add_ideas = ConSoc_type
 			country_event = DBG.10
 			
 		}
 		
 		option = {
-			name = DBG.conservatism2
+			name = DBG.conservative_democracy2
 			add_ideas = ConTrd_type
 			country_event = DBG.10
 		}
@@ -397,21 +397,21 @@ country_event = {
 	is_triggered_only = yes
 
 		option = {
- 		name = DBG.authoritarianism1
-			set_politics = { ruling_party = authoritarianism } 
+ 		name = DBG.authoritarian_oligarchy1
+			set_politics = { ruling_party = authoritarian_oligarchy } 
 			add_ideas = AthDem_type
 			country_event = DBG.13
 			
 		}
 		
 		option = {
-			name = DBG.authoritarianism2
+			name = DBG.authoritarian_oligarchy2
 			add_ideas = AthOlg_type
 			country_event = DBG.13
 		}
 		option = {
-			name = DBG.authoritarianism3
-			add_ideas = AthCfc_type
+			name = DBG.authoritarian_oligarchy3
+			### add_ideas = AthCfc_type
 			country_event = DBG.13
 		}
 	
@@ -433,21 +433,21 @@ country_event = {
 	is_triggered_only = yes
 
 		option = {
- 		name = DBG.authoritarianism1
-			set_politics = { ruling_party = authoritarianism } 
+ 		name = DBG.authoritarian_oligarchy1
+			set_politics = { ruling_party = authoritarian_oligarchy } 
 			add_ideas = AthDem_type
 			country_event = DBG.12
 			
 		}
 		
 		option = {
-			name = DBG.authoritarianism2
+			name = DBG.authoritarian_oligarchy2
 			add_ideas = AthOlg_type
 			country_event = DBG.12
 		}
 		option = {
-			name = DBG.authoritarianism3
-			add_ideas = AthCfc_type
+			name = DBG.authoritarian_oligarchy3
+			### add_ideas = AthCfc_type
 			country_event = DBG.12
 		}
 	
@@ -470,14 +470,14 @@ country_event = {
 
 		option = {
  		name = DBG.despotism1
-			set_politics = { ruling_party = despotism } 
+			set_politics = { ruling_party = leader_despotism } 
 			add_ideas = DesDic_type
 			country_event = DBG.15
 			
 		}
 		
 		option = {
-			name = DBG.despotism2
+			name = DBG.leader_despotism2
 			add_ideas = DesMnc_type
 			country_event = DBG.15
 		}
@@ -501,14 +501,14 @@ country_event = {
 
 		option = {
  		name = DBG.despotism1
-			set_politics = { ruling_party = despotism } 
+			set_politics = { ruling_party = leader_despotism } 
 			add_ideas = DesDic_type
 			country_event = DBG.14
 			
 		}
 		
 		option = {
-			name = DBG.despotism2
+			name = DBG.leader_despotism2
 			add_ideas = DesMnc_type
 			country_event = DBG.14
 		}
@@ -531,20 +531,20 @@ country_event = {
 	is_triggered_only = yes
 
 		option = {
- 		name = DBG.totalism1
-			set_politics = { ruling_party = totalism } 
+ 		name = DBG.national_corporatism1
+			set_politics = { ruling_party = national_corporatism } 
 			add_ideas = TotItg_type
 			country_event = DBG.17
 			
 		}
 		
 		option = {
-			name = DBG.totalism2
+			name = DBG.national_corporatism2
 			add_ideas = TotRvv_type
 			country_event = DBG.17
 		}
 		option = {
-			name = DBG.totalism3
+			name = DBG.national_corporatism3
 			add_ideas = TotFmt_type
 			country_event = DBG.17
 		}
@@ -564,20 +564,20 @@ country_event = {
 	is_triggered_only = yes
 
 		option = {
- 		name = DBG.totalism1
-			set_politics = { ruling_party = totalism } 
+ 		name = DBG.national_corporatism1
+			set_politics = { ruling_party = national_corporatism } 
 			add_ideas = TotItg_type
 			country_event = DBG.16
 			
 		}
 		
 		option = {
-			name = DBG.totalism2
+			name = DBG.national_corporatism2
 			add_ideas = TotRvv_type
 			country_event = DBG.16
 		}
 		option = {
-			name = DBG.totalism3
+			name = DBG.national_corporatism3
 			add_ideas = TotFmt_type
 			country_event = DBG.16
 		}

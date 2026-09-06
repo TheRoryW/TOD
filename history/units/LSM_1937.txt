@@ -1,0 +1,175 @@
+division_template = {
+	name = "昌德卌四年型省军步兵师"	#步兵师
+	regiments = {
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0}
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "昌德卌四年型乙种步兵师"	#步兵师
+	regiments = {
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0}
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0}
+		infantry = { x = 2 y = 1 }
+        infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "骑行步兵师"	#骑兵师
+	regiments = {
+		cavalry = { x = 0 y = 0}
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0}
+		cavalry = { x = 1 y = 1 }
+        cavalry = { x = 2 y = 0}
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0}
+		recon = { x = 0 y = 1 }
+	}
+}
+
+units = {
+    #北吕宋#
+	division= {
+		name = "南洋乙种第1步兵师"
+		location =4368
+		division_template = "昌德卌四年型乙种步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division= {
+		name = "吕宋第1步兵旅"
+		location =4368
+		division_template = "昌德卌四年型省军步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	} 
+	division= {
+		name = "南洋第1骑行旅"
+		location =4368
+		division_template = "骑行步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	} 
+	division= {
+		name = "南洋第2骑行旅"
+		location =4368
+		division_template = "骑行步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	} 
+    #中吕宋#
+
+	division= {
+		name = "吕宋第2步兵旅"
+		location =10165
+		division_template = "昌德卌四年型省军步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division= {
+		name = "南洋第3骑行旅"
+		location =10165
+		division_template = "骑行步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	} 	
+    #吕宋城#
+	division= {
+		name = "南洋乙种第2步兵师"
+		location =10265
+		division_template = "昌德卌四年型乙种步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division= {
+		name = "南洋第4骑行旅"
+		location =10265
+		division_template = "骑行步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	} 
+	division= {
+		name = "南洋第5骑行旅"
+		location =10265
+		division_template = "骑行步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	} 
+    #南吕宋#
+	division= {
+		name = "南洋第6骑行旅"
+		location =10272
+		division_template = "骑行步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division= {
+		name = "吕宋第3步兵旅"
+		location =10272
+		division_template = "昌德卌四年型省军步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	} 
+    #宿务#
+	division= {
+		name = "南洋第7骑行旅"
+		location =1368
+		division_template = "骑行步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division= {
+		name = "吕宋第4步兵旅"
+		location =1368
+		division_template = "昌德卌四年型省军步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	} 
+    #萨马#
+	division= {
+		name = "南洋第8骑行旅"
+		location =4373
+		division_template = "骑行步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division= {
+		name = "吕宋第5步兵旅"
+		location =4373
+		division_template = "昌德卌四年型省军步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	} 
+    #巴拉望#
+	division= {
+		name = "南洋第9骑行旅"
+		location =7419
+		division_template = "骑行步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division= {
+		name = "吕宋第6步兵旅"
+		location =7419
+		division_template = "昌德卌四年型省军步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	} 
+}

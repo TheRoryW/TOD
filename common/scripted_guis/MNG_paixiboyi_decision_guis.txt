@@ -1,0 +1,120 @@
+scripted_gui = {
+	MNG_paixiboyi_button = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "MNG_paixiboyi_bg"
+		visible = {
+			original_tag = MNG
+		}
+		effects = {
+			MNG_paixiboyi_button_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = MNG_paixiboyi_GUI_open 
+						}
+					}
+					set_country_flag = MNG_paixiboyi_GUI_open
+				}
+				else_if = {
+					limit = {
+						has_country_flag = MNG_paixiboyi_GUI_open 
+					}
+					clr_country_flag = MNG_paixiboyi_GUI_open 
+				}
+			}
+		}
+	}
+	MNG_paixiboyi_GUI_window = {
+		context_type = player_context
+		window_name = "MNG_paixiboyi_GUI_window"
+		visible = {
+			has_country_flag = MNG_paixiboyi_GUI_open 
+			original_tag = MNG
+		}
+		properties = {
+			party_leader_portrait = {
+				image = "[MNG_party_leader_portrait]"
+			}
+			party_mid = {
+				image = "[MNG_party_mid]"
+			}
+		}
+		effects = {
+			MNG_party_1_click = {
+				set_variable = {MNG_party_num = 3}
+			}
+			MNG_party_2_click = {
+				set_variable = {MNG_party_num = 1}
+			}
+			MNG_party_3_click = {
+				set_variable = {MNG_party_num = 0}
+			}
+			MNG_party_4_click = {
+				set_variable = {MNG_party_num = 2}
+			}
+			MNG_party_5_click = {
+				set_variable = {MNG_party_num = 4}
+			}
+			close_button_click = {
+				clr_country_flag = MNG_paixiboyi_GUI_open
+			}
+			MNG_party_up_click = {
+				MNG_party_up_click_effect = yes
+			}
+			MNG_party_down_click = {
+				MNG_party_down_click_effect = yes
+			}
+		}
+		triggers = {
+			MNG_party_up_click_enabled = {
+				OR = {
+					# 紫禁系 (使用独立冷却)
+					AND = {
+						check_variable = { MNG_party_num = 0 }
+						NOT = { has_country_flag = party_up_selected_zijinxi }
+						NOT = { has_political_power < MNG_boyidianshu }
+					}
+					# 其他派系 (共享全局冷却)
+					AND = {
+						OR = {
+							check_variable = { MNG_party_num = 1 }  # 武备系
+							check_variable = { MNG_party_num = 2 }  # 管学系
+							check_variable = { MNG_party_num = 3 }  # 交通系
+							check_variable = { MNG_party_num = 4 }  # 清政系
+						}
+						NOT = { has_country_flag = party_up_selected }
+						NOT = { has_political_power < MNG_boyidianshu }
+					}
+				}
+			}
+			MNG_party_down_click_enabled = {
+				# 其他派系 (共享全局冷却)
+				AND = {
+					OR = {
+						# 每个派系单独检查编号和影响力
+						AND = {
+							check_variable = { MNG_party_num = 1 }  # 武备系
+							check_variable = { MNG_wubeixi > 5 }    # 影响力>5
+						}
+						AND = {
+							check_variable = { MNG_party_num = 2 }  # 管学系
+							check_variable = { MNG_guanxuexi > 5 }
+						}
+						AND = {
+							check_variable = { MNG_party_num = 3 }  # 交通系
+							check_variable = { MNG_jiaotongxi > 5 }
+						}
+						AND = {
+							check_variable = { MNG_party_num = 4 }  # 清政系
+							check_variable = { MNG_qingzhengxi > 5 }
+						}
+					}
+					NOT = { has_country_flag = party_down_selected }
+					NOT = { has_political_power < MNG_boyidianshu }
+					NOT = { check_variable = { MNG_party_num = 0 } }  # 紫禁系不适用
+				}
+			}
+		}
+	}
+}

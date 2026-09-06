@@ -3,11 +3,14 @@ state={
 	id=194
 	name="STATE_194" # Mozyr
 	manpower = 934632
-	
+	resources ={
+		coal = 1
+	}
 	state_category = rural
 
 	history={
-		owner = LAB
+		### owner = RUS # 原开局归属，保留以便回溯
+		owner = BLR
 		buildings = {
 			infrastructure = 1
 			air_base = 3
@@ -16,7 +19,8 @@ state={
 			6232 1
 		}
 		add_core_of = RUS
-		add_core_of = LAB
+		add_core_of = BLR
+
 	}
 
 	provinces={

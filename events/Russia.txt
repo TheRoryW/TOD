@@ -1,0 +1,714 @@
+add_namespace = TODRussia
+
+# 俄罗斯开局选举：1936 年 1 月底，符合流程文档中的“前两个月”。
+country_event = {
+	id = TODRussia.1
+	title = TODRussia.1.t
+	desc = TODRussia.1.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	is_triggered_only = yes
+
+	option = {
+		name = TODRussia.1.a
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = conservative_democracy
+			elections_allowed = yes
+		}
+		set_popularities = {
+			conservative_democracy = 55
+			liberal_democracy = 20
+			social_democrat = 15
+			leader_despotism = 10
+		}
+		set_country_flag = TOD_RUS_election_finished
+	}
+	option = {
+		name = TODRussia.1.b
+		set_politics = {
+			ruling_party = liberal_democracy
+			elections_allowed = yes
+		}
+		set_popularities = {
+			conservative_democracy = 20
+			liberal_democracy = 55
+			social_democrat = 15
+			leader_despotism = 10
+		}
+		set_country_flag = TOD_RUS_election_finished
+	}
+	option = {
+		name = TODRussia.1.c
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+		set_popularities = {
+			conservative_democracy = 15
+			liberal_democracy = 20
+			social_democrat = 55
+			leader_despotism = 10
+		}
+		set_country_flag = TOD_RUS_election_finished
+	}
+	option = {
+		name = TODRussia.1.e
+		set_politics = {
+			ruling_party = leader_despotism
+			elections_allowed = no
+		}
+		set_popularities = {
+			conservative_democracy = 10
+			liberal_democracy = 10
+			social_democrat = 10
+			leader_despotism = 70
+		}
+		set_country_flag = TOD_RUS_election_finished
+	}
+	option = {
+		name = TODRussia.1.f
+		set_politics = {
+			ruling_party = national_corporatism
+			elections_allowed = no
+		}
+		set_popularities = {
+			conservative_democracy = 10
+			liberal_democracy = 10
+			leader_despotism = 10
+			national_corporatism = 70
+		}
+		set_country_flag = TOD_RUS_election_finished
+	}
+	option = {
+		name = TODRussia.1.g
+		set_politics = {
+			ruling_party = vanguard_socialism
+			elections_allowed = no
+		}
+		set_popularities = {
+			conservative_democracy = 10
+			liberal_democracy = 10
+			leader_despotism = 10
+			vanguard_socialism = 70
+		}
+		set_country_flag = TOD_RUS_election_finished
+	}
+}
+
+# 1936 年春夏：整合西部及西伯利亚总督区，高加索、草原和远东留待后续阶段。
+country_event = {
+	id = TODRussia.2
+	title = TODRussia.2.t
+	desc = TODRussia.2.d
+	picture = GFX_report_event_german_parade_paris
+	fire_only_once = yes
+	trigger = {
+		tag = RUS
+		date > 1936.2.28
+		has_country_flag = TOD_RUS_election_finished
+	}
+	option = {
+		name = TODRussia.2.a
+		if = {
+			limit = { country_exists = BLT }
+			annex_country = { target = BLT transfer_troops = yes }
+		}
+		if = {
+			limit = { country_exists = SIB }
+			annex_country = { target = SIB transfer_troops = yes }
+		}
+		set_country_flag = TOD_RUS_western_governorates_integrated
+	}
+}
+
+# 1937 年：大明内战结束后的远东、草原整合窗口。
+country_event = {
+	id = TODRussia.3
+	title = TODRussia.3.t
+	desc = TODRussia.3.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	trigger = {
+		tag = RUS
+		date > 1937.2.28
+		has_country_flag = TOD_RUS_western_governorates_integrated
+	}
+	option = {
+		name = TODRussia.3.a
+		if = {
+			limit = { country_exists = FET }
+			annex_country = { target = FET transfer_troops = yes }
+		}
+		if = {
+			limit = { country_exists = KYR }
+			annex_country = { target = KYR transfer_troops = yes }
+		}
+		set_country_flag = TOD_RUS_asian_governorates_integrated
+	}
+}
+
+# 1938 年下半年：北欧阶段结束后，帝俄发动第一次冬季战争。
+country_event = {
+	id = TODRussia.5
+	title = TODRussia.5.t
+	desc = TODRussia.5.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	trigger = {
+		tag = RUS
+		date > 1938.8.31
+		OR = {
+			has_country_flag = TOD_RUS_caucasus_war_started
+			NOT = { country_exists = CAU }
+		}
+		OR = {
+			has_global_flag = TOD_CAU_war_concluded
+			NOT = { country_exists = CAU }
+		}
+		# 不再等待芬兰—瑞典旧北方战争的结算；俄罗斯先完成芬兰阶段。
+		# 高加索战争结束后才进入冬季战争；不能只按日期跳过未完成的战事。
+		OR = {
+			NOT = { country_exists = CAU }
+			CAU = {
+				NOT = { has_war_with = ARM }
+				NOT = { has_war_with = GEO }
+				NOT = { has_war_with = AZR }
+			}
+		}
+		# 北方战争尚未结算时先攻芬兰；已结算时只攻击实际持有芬兰核心地的一方。
+		OR = {
+			AND = {
+				NOT = { has_global_flag = TOD_great_northern_war_concluded }
+			}
+			AND = {
+				has_global_flag = TOD_great_northern_war_concluded
+				any_state = {
+					is_core_of = FIN
+					is_owned_by = FIN
+				}
+			}
+			AND = {
+				has_global_flag = TOD_great_northern_war_concluded
+				any_state = {
+					is_core_of = FIN
+					is_owned_by = SWE
+				}
+			}
+			AND = {
+				has_global_flag = TOD_great_northern_war_concluded
+				NOT = {
+					any_state = {
+						is_core_of = FIN
+						NOT = { is_owned_by = ROOT }
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = TODRussia.5.a
+		hidden_effect = {
+			if = { limit = { country_exists = FIN } FIN = { remove_ideas = FIN_nordic_unification_offensive } }
+			if = { limit = { country_exists = SWE } SWE = { remove_ideas = SWE_nordic_unification_offensive } }
+		}
+		if = {
+			limit = {
+				NOT = { has_global_flag = TOD_great_northern_war_concluded }
+				country_exists = FIN
+				NOT = { has_war_with = FIN }
+			}
+			declare_war_on = { target = FIN type = annex_everything }
+			if = {
+				limit = { country_exists = NOR NOT = { has_war_with = NOR } }
+				declare_war_on = { target = NOR type = annex_everything }
+			}
+			if = {
+				limit = { country_exists = SWE NOT = { has_war_with = SWE } }
+				declare_war_on = { target = SWE type = puppet_wargoal_focus }
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_flag = TOD_great_northern_war_concluded
+				any_state = {
+					is_core_of = FIN
+					is_owned_by = FIN
+				}
+				NOT = { has_war_with = FIN }
+			}
+			set_country_flag = TOD_RUS_northern_finished_winner_FIN
+			declare_war_on = { target = FIN type = puppet_wargoal_focus }
+		}
+		else_if = {
+			limit = {
+				has_global_flag = TOD_great_northern_war_concluded
+				any_state = {
+					is_core_of = FIN
+					is_owned_by = SWE
+				}
+				NOT = { has_war_with = SWE }
+			}
+			set_country_flag = TOD_RUS_northern_finished_winner_SWE
+			declare_war_on = { target = SWE type = puppet_wargoal_focus }
+		}
+		add_war_support = 0.10
+		set_country_flag = TOD_RUS_winter_war_started
+	}
+}
+
+# 1939 年春：按十二种意识形态的实际支持率确认俄罗斯或苏俄路线。
+country_event = {
+	id = TODRussia.6
+	title = TODRussia.6.t
+	desc = TODRussia.6.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	trigger = {
+		tag = RUS
+		date > 1939.2.28
+		has_country_flag = TOD_RUS_winter_war_started
+		has_country_flag = TOD_RUS_northern_settlement_completed
+	}
+	option = {
+		name = TODRussia.6.a
+		# 先锋社会主义必须是全部十二种意识形态中支持率最高的一种，才进入苏俄路线。
+		set_temp_variable = { RUS_vanguard_support = party_popularity@vanguard_socialism }
+		set_temp_variable = { RUS_national_corporatism_support = party_popularity@national_corporatism }
+		set_temp_variable = { RUS_sacred_revivalism_support = party_popularity@sacred_revivalism }
+		set_temp_variable = { RUS_leader_despotism_support = party_popularity@leader_despotism }
+		set_temp_variable = { RUS_authoritarian_oligarchy_support = party_popularity@authoritarian_oligarchy }
+		set_temp_variable = { RUS_conservative_democracy_support = party_popularity@conservative_democracy }
+		set_temp_variable = { RUS_liberal_democracy_support = party_popularity@liberal_democracy }
+		set_temp_variable = { RUS_consociationalism_support = party_popularity@consociationalism }
+		set_temp_variable = { RUS_social_democrat_support = party_popularity@social_democrat }
+		set_temp_variable = { RUS_agroindustrial_socialism_support = party_popularity@agroindustrial_socialism }
+		set_temp_variable = { RUS_moderate_socialism_support = party_popularity@moderate_socialism }
+		set_temp_variable = { RUS_council_socialism_support = party_popularity@council_socialism }
+		if = {
+			limit = {
+				check_variable = { var = RUS_vanguard_support value = RUS_national_corporatism_support compare = greater_than }
+				check_variable = { var = RUS_vanguard_support value = RUS_sacred_revivalism_support compare = greater_than }
+				check_variable = { var = RUS_vanguard_support value = RUS_leader_despotism_support compare = greater_than }
+				check_variable = { var = RUS_vanguard_support value = RUS_authoritarian_oligarchy_support compare = greater_than }
+				check_variable = { var = RUS_vanguard_support value = RUS_conservative_democracy_support compare = greater_than }
+				check_variable = { var = RUS_vanguard_support value = RUS_liberal_democracy_support compare = greater_than }
+				check_variable = { var = RUS_vanguard_support value = RUS_consociationalism_support compare = greater_than }
+				check_variable = { var = RUS_vanguard_support value = RUS_social_democrat_support compare = greater_than }
+				check_variable = { var = RUS_vanguard_support value = RUS_agroindustrial_socialism_support compare = greater_than }
+				check_variable = { var = RUS_vanguard_support value = RUS_moderate_socialism_support compare = greater_than }
+				check_variable = { var = RUS_vanguard_support value = RUS_council_socialism_support compare = greater_than }
+			}
+			set_country_flag = TOD_RUS_soviet_route
+			set_politics = {
+				ruling_party = vanguard_socialism
+				elections_allowed = no
+			}
+		}
+		else = {
+			set_country_flag = TOD_RUS_russian_route
+		}
+		set_country_flag = TOD_RUS_route_confirmed
+	}
+}
+
+# 1939 年下半年：东墙战争，按流程对乌克兰、白俄罗斯、波兰和匈牙利开战。
+country_event = {
+	id = TODRussia.7
+	title = TODRussia.7.t
+	desc = TODRussia.7.d
+	picture = GFX_report_event_german_parade_paris
+	fire_only_once = yes
+	trigger = {
+		tag = RUS
+		date > 1939.8.31
+		has_country_flag = TOD_RUS_route_confirmed
+		# 北欧两阶段均已结算后，才可转入东墙战争。
+		has_country_flag = TOD_RUS_northern_settlement_completed
+	}
+	option = {
+		name = TODRussia.7.a
+		if = {
+			limit = { country_exists = UKR NOT = { has_war_with = UKR } }
+			declare_war_on = { target = UKR type = annex_everything }
+		}
+		if = {
+			limit = { country_exists = BLR NOT = { has_war_with = BLR } }
+			declare_war_on = { target = BLR type = annex_everything }
+		}
+		if = {
+			limit = { country_exists = POL NOT = { has_war_with = POL } }
+			declare_war_on = { target = POL type = annex_everything }
+		}
+		if = {
+			limit = { country_exists = HUN NOT = { has_war_with = HUN } }
+			declare_war_on = { target = HUN type = annex_everything }
+		}
+		set_country_flag = TOD_RUS_east_europe_war_started
+	}
+}
+
+# 1940 年春：帝俄中欧战争。
+country_event = {
+	id = TODRussia.8
+	title = TODRussia.8.t
+	desc = TODRussia.8.d
+	picture = GFX_report_event_german_parade_paris
+	fire_only_once = yes
+	trigger = {
+		tag = RUS
+		date > 1940.2.28
+		has_country_flag = TOD_RUS_east_europe_war_started
+		has_country_flag = TOD_RUS_russian_route
+		# 必须先彻底击败东墙：乌克兰、白俄罗斯被吞并，波兰、匈牙利成为俄罗斯傀儡，不能仅因停战就转而对德开战。
+		NOT = { has_war_with = UKR }
+		NOT = { has_war_with = BLR }
+		NOT = { has_war_with = POL }
+		NOT = { has_war_with = HUN }
+		NOT = { country_exists = UKR }
+		NOT = { country_exists = BLR }
+		POL = { is_puppet_of = ROOT }
+		HUN = { is_puppet_of = ROOT }
+	}
+	option = {
+		name = TODRussia.8.a
+		if = {
+			limit = {
+				country_exists = FRA
+				country_exists = GER
+				GER = { is_puppet_of = FRA }
+				NOT = { has_war_with = FRA }
+			}
+			declare_war_on = { target = FRA type = annex_everything }
+			set_country_flag = TOD_RUS_french_war_started
+		}
+		else_if = {
+			limit = { country_exists = GER NOT = { has_war_with = GER } }
+			declare_war_on = { target = GER type = annex_everything }
+		}
+		set_country_flag = TOD_RUS_central_europe_war_started
+	}
+}
+
+# 1940 年下半年：苏俄路线支持德国并对法国开战。
+country_event = {
+	id = TODRussia.9
+	title = TODRussia.9.t
+	desc = TODRussia.9.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	trigger = {
+		tag = RUS
+		date > 1940.8.31
+		has_country_flag = TOD_RUS_east_europe_war_started
+		has_country_flag = TOD_RUS_soviet_route
+		# 苏俄路线同样等待东墙战争结束，但不会等待帝俄路线的对德战争。
+		NOT = { has_war_with = FRA }
+		NOT = { has_war_with = UKR }
+		NOT = { has_war_with = BLR }
+		NOT = { has_war_with = POL }
+		NOT = { has_war_with = HUN }
+		# 苏俄路线只有在东墙已经完成政治结算后，才对法国展开下一阶段战争。
+		NOT = { country_exists = UKR }
+		NOT = { country_exists = BLR }
+		POL = { is_puppet_of = ROOT }
+		HUN = { is_puppet_of = ROOT }
+	}
+	option = {
+		name = TODRussia.9.a
+		if = {
+			limit = { country_exists = FRA NOT = { has_war_with = FRA } }
+			declare_war_on = { target = FRA type = annex_everything }
+			set_country_flag = TOD_RUS_french_war_started
+		}
+	}
+}
+
+# 1941 年：俄罗斯—法国战争，承接法国对德战争的结果。
+country_event = {
+	id = TODRussia.10
+	title = TODRussia.10.t
+	desc = TODRussia.10.d
+	picture = GFX_report_event_german_parade_paris
+	fire_only_once = yes
+	trigger = {
+		tag = RUS
+		date > 1941.2.28
+		has_country_flag = TOD_RUS_russian_route
+		has_country_flag = TOD_RUS_central_europe_war_started
+		NOT = { has_country_flag = TOD_RUS_french_war_started }
+		# 仅在法国通过和谈将德国变为傀儡后，俄罗斯才将目标转向法国。
+		country_exists = FRA
+		country_exists = GER
+		GER = { is_puppet_of = FRA }
+		NOT = { has_war_with = GER }
+		NOT = { has_war_with = FRA }
+	}
+	option = {
+		name = TODRussia.10.a
+		declare_war_on = { target = FRA type = annex_everything }
+		add_war_support = 0.10
+		set_country_flag = TOD_RUS_french_war_started
+	}
+}
+
+# 大北方战争未结算时，俄罗斯先结束芬兰阶段，随后只处理瑞典。
+country_event = {
+	id = TODRussia.11
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		tag = RUS
+		has_country_flag = TOD_RUS_winter_war_started
+		NOT = { has_country_flag = TOD_RUS_northern_finished_winner_FIN }
+		NOT = { has_country_flag = TOD_RUS_northern_finished_winner_SWE }
+		NOT = { has_country_flag = TOD_RUS_northern_phase_two_started }
+		NOT = { has_country_flag = TOD_RUS_northern_settlement_completed }
+		NOT = { has_war_with = FIN }
+		NOT = { has_war_with = NOR }
+		OR = {
+			NOT = { country_exists = FIN }
+			FIN = { is_puppet_of = ROOT }
+		}
+		NOT = {
+			any_state = {
+				is_core_of = FIN
+				NOT = { is_owned_by = ROOT }
+			}
+		}
+	}
+	option = {
+		name = TODRussia.11.a
+		if = {
+			limit = { country_exists = FIN }
+			annex_country = { target = FIN transfer_troops = yes }
+		}
+		if = {
+			limit = {
+				country_exists = SWE
+				NOT = { SWE = { is_puppet_of = ROOT } }
+				NOT = { has_war_with = SWE }
+			}
+			declare_war_on = { target = SWE type = puppet_wargoal_focus }
+		}
+		if = {
+			limit = {
+				country_exists = SWE
+				NOT = { SWE = { is_puppet_of = ROOT } }
+			}
+			set_country_flag = TOD_RUS_northern_phase_two_started
+		}
+		else = {
+			set_country_flag = TOD_RUS_northern_settlement_completed
+		}
+	}
+}
+
+# 瑞典阶段或北方战争已结算后的唯一胜者阶段结束后，进入东墙流程。
+country_event = {
+	id = TODRussia.12
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		tag = RUS
+		NOT = { has_country_flag = TOD_RUS_northern_settlement_completed }
+		NOT = { has_war_with = NOR }
+		OR = {
+			NOT = { country_exists = NOR }
+			NOR = { is_puppet_of = ROOT }
+		}
+		OR = {
+			AND = {
+				has_country_flag = TOD_RUS_northern_phase_two_started
+				NOT = { has_war_with = SWE }
+				OR = {
+					NOT = { country_exists = SWE }
+					SWE = { is_puppet_of = ROOT }
+				}
+			}
+			AND = {
+				has_country_flag = TOD_RUS_northern_finished_winner_FIN
+				NOT = { has_war_with = FIN }
+				OR = {
+					NOT = { country_exists = FIN }
+					FIN = { is_puppet_of = ROOT }
+				}
+				NOT = {
+					any_state = {
+						is_core_of = FIN
+						NOT = { is_owned_by = ROOT }
+					}
+				}
+			}
+			AND = {
+				has_country_flag = TOD_RUS_northern_finished_winner_SWE
+				NOT = { has_war_with = SWE }
+				OR = {
+					NOT = { country_exists = SWE }
+					SWE = { is_puppet_of = ROOT }
+				}
+				NOT = {
+					any_state = {
+						is_core_of = FIN
+						NOT = { is_owned_by = ROOT }
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = TODRussia.11.a
+		set_country_flag = TOD_RUS_northern_settlement_completed
+	}
+}
+
+# 第一次北欧战争陷入僵持一年后，按苏芬战争式有限目标结算，阻止俄罗斯与北欧无限鏖战。
+country_event = {
+	id = TODRussia.13
+	title = TODRussia.13.t
+	desc = TODRussia.13.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		tag = RUS
+		has_country_flag = { flag = TOD_RUS_winter_war_started days > 365 }
+		NOT = { has_country_flag = TOD_RUS_northern_settlement_completed }
+		OR = {
+			has_war_with = FIN
+			has_war_with = SWE
+			has_war_with = NOR
+		}
+	}
+	option = {
+		name = TODRussia.13.a
+		# 俄罗斯攻占赫尔辛基：割让列宁格勒周边的芬兰卡累利阿。
+		if = {
+			limit = { 111 = { is_controlled_by = RUS } }
+			RUS = { transfer_state = 146 }
+146 = { set_state_controller_to = RUS }
+		}
+		# 北欧攻占圣彼得堡：以当前控制者获得完整科拉半岛。
+		else_if = {
+			limit = {
+				195 = {
+					controller = {
+						OR = {
+							tag = FIN
+							tag = SWE
+							tag = NOR
+						}
+					}
+				}
+			}
+			195 = { controller = { save_event_target_as = TOD_RUS_nordic_winter_war_winner } }
+			event_target:TOD_RUS_nordic_winter_war_winner = {
+				transfer_state = 213
+				transfer_state = 216
+			}
+		}
+		# 其他情况视作无胜者，回到战前边界。
+		if = { limit = { has_war_with = FIN } white_peace = FIN }
+		if = { limit = { has_war_with = SWE } white_peace = SWE }
+		if = { limit = { has_war_with = NOR } white_peace = NOR }
+		set_country_flag = TOD_RUS_northern_settlement_completed
+	}
+}
+
+# 若北欧战争在一年内通过其他和谈结束，也必须解除后续东墙流程的等待状态。
+country_event = {
+	id = TODRussia.14
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		tag = RUS
+		has_country_flag = TOD_RUS_winter_war_started
+		NOT = { has_country_flag = TOD_RUS_northern_settlement_completed }
+		NOT = { has_war_with = FIN }
+		NOT = { has_war_with = SWE }
+		NOT = { has_war_with = NOR }
+	}
+	option = {
+		name = TODRussia.11.a
+		set_country_flag = TOD_RUS_northern_settlement_completed
+	}
+}
+
+# 东墙战争持续一年且俄罗斯已明显失地时，尚独立的北欧国家加入东墙一侧参战。
+country_event = {
+	id = TODRussia.15
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		tag = RUS
+		has_country_flag = { flag = TOD_RUS_east_europe_war_started days > 365 }
+		NOT = { has_country_flag = TOD_RUS_nordic_intervention }
+		surrender_progress > 0.10
+		country_exists = HUN
+		HUN = {
+			has_war_with = RUS
+			NOT = { has_capitulated = yes }
+		}
+	}
+	option = {
+		name = TODRussia.11.a
+		if = {
+			limit = {
+				country_exists = FIN
+				FIN = {
+					NOT = { has_war_with = RUS }
+					NOT = { is_subject_of = RUS }
+					NOT = { has_capitulated = yes }
+				}
+			}
+			FIN = {
+				add_to_war = {
+					targeted_alliance = HUN
+					enemy = RUS
+					hostility_reason = asked_to_join
+				}
+				add_war_support = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SWE
+				SWE = {
+					NOT = { has_war_with = RUS }
+					NOT = { is_subject_of = RUS }
+					NOT = { has_capitulated = yes }
+				}
+			}
+			SWE = {
+				add_to_war = {
+					targeted_alliance = HUN
+					enemy = RUS
+					hostility_reason = asked_to_join
+				}
+				add_war_support = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = NOR
+				NOR = {
+					NOT = { has_war_with = RUS }
+					NOT = { is_subject_of = RUS }
+					NOT = { has_capitulated = yes }
+				}
+			}
+			NOR = {
+				add_to_war = {
+					targeted_alliance = HUN
+					enemy = RUS
+					hostility_reason = asked_to_join
+				}
+				add_war_support = 0.10
+			}
+		}
+		set_country_flag = TOD_RUS_nordic_intervention
+	}
+}

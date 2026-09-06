@@ -1,0 +1,24 @@
+
+units = {
+	division= {	
+		location = 13325
+		division_template = "工人赤卫队"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		location = 13328
+		division_template = "工人赤卫队"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		location = 6999
+		division_template = "工人赤卫队"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		location = 6999
+		division_template = "革命士兵团"
+		start_experience_factor = 0.2
+	}
+}
+	

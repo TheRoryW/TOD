@@ -1,14 +1,11 @@
-state={
-	id=813
-	name="STATE_813"
-	resources={
-		steel=22
-	}
+state = {
+	id = 813
+	name = "STATE_813"
 
-	history={
+	history = {
 	    owner = MNG
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 1
 			dockyard = 1
 			industrial_complex = 1
@@ -20,16 +17,21 @@ state={
 
 
 		victory_points = {
-			4196 15 
+			4196 20 
 		}
-
+		victory_points = {
+			7027 3
+		}
+		victory_points = {
+			10069 2
+		}
 		add_core_of = MNG
 	}
 
-	provinces={
+	provinces = {
 		1094 1166 4169 4196 7027 10069 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	state_category = seven
+	manpower = 5400000
+	buildings_max_level_factor = 1.000
+	state_category = nine
 }

@@ -1,0 +1,9 @@
+
+units = {
+	division= {	
+		location = 10856
+		division_template = "工人赤卫队"
+		start_experience_factor = 0.1
+	}
+}
+	

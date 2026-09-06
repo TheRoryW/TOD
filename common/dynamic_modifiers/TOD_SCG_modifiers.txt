@@ -1,0 +1,52 @@
+#内战后的土地
+SCG_neizhanhoudetudi = {
+	icon = SCG_neizhanhoudetudi
+	industrial_capacity_factory = SCG_neizhanhoudetudi_gongchangchanchu
+	consumer_goods_factor = SCG_neizhanhoudetudi_xiaofeiping
+	local_building_slots_factor = SCG_neizhanhoudetudi_diqugongye
+	research_speed_factor = SCG_neizhanhoudetudi_keyan
+	production_speed_buildings_factor = SCG_neizhanhoudetudi_jianzaosudu
+	conscription_factor = SCG_neizhanhoudetudi_zhaomu
+	line_change_production_efficiency_factor = SCG_neizhanhoudetudi_gaizhuang
+	production_factory_max_efficiency_factor = SCG_neizhanhoudetudi_zuidashengchan
+	production_factory_efficiency_gain_factor = SCG_neizhanhoudetudi_shengchanzengzhang
+    attrition = SCG_neizhanhoudetudi_sunhao
+}
+#人民军队
+SCG_idea_renminjundui = {
+	icon = SCG_idea_renminjundui
+	army_attack_factor = SCG_idea_renminjundui_gongji
+	army_defence_factor = SCG_idea_renminjundui_fangyu
+	army_org_factor = SCG_idea_renminjundui_zuzhidu
+	land_reinforce_rate = SCG_idea_renminjundui_zengyuan
+	supply_consumption_factor = SCG_idea_renminjundui_buji
+	mobilization_speed = SCG_idea_renminjundui_dongyuan
+	conscription = SCG_idea_renminjundui_renkou
+	industrial_capacity_factory = SCG_idea_renminjundui_chanchu
+}
+#民兵
+SCG_minbing = {
+	icon = SCG_minbing
+	conscription = SCG_minbing_renkou
+	modifier_army_sub_unit_militia_attack_factor = SCG_minbing_gongji
+	modifier_army_sub_unit_militia_defence_factor = SCG_minbing_fangyu
+	modifier_army_sub_unit_militia_speed_factor = SCG_minbing_sudu
+	modifier_army_sub_unit_militia_max_org_factor = SCG_minbing_zuzhi
+	mobilization_speed = SCG_minbing_dongyuan
+	recon_factor = SCG_minbing_zhengcha
+	supply_consumption_factor = SCG_minbing_buji
+	attrition = SCG_minbing_sunhao
+	production_speed_arms_factory_factor = SCG_minbing_jungong
+	army_morale_factor = SCG_minbing_huifu
+	production_factory_max_efficiency_factor = SCG_minbing_xiaolv
+	industrial_capacity_factory = SCG_minbing_chanchu
+}
+
+# 社会主义多党两院制
+SCG_liangyuan_zhengzhi = {
+	icon = SCG_idea_renminjundui
+	stability_factor = SCG_liangyuan_zhengzhi_wending
+	political_power_gain = SCG_liangyuan_zhengzhi_zhengzhi
+	industrial_capacity_factory = SCG_liangyuan_zhengzhi_chanchu
+	consumer_goods_factor = SCG_liangyuan_zhengzhi_xiaofei
+}

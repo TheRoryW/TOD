@@ -1,0 +1,964 @@
+add_namespace = GPSevents
+#关东招抚司通告
+country_event = {
+	id = GPSevents.1
+	title = GPSevents.1.t
+	desc =GPSevents.1.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = GPS}
+	
+	option = { 
+		name = GPSevents.1.a
+		hidden_effect = {
+			every_unit_leader = {
+				add_unit_leader_trait = MNG_damingjungguan
+			}
+		}
+	}
+}
+#颁布紧急戒严令
+country_event = {
+	id = GPSevents.2
+	title = GPSevents.2.t
+	desc =GPSevents.2.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = GPS}
+	
+	option = { 
+		name = GPSevents.2.a
+	}
+}
+#《劳动界》海外特刊（头条内容）
+country_event = {
+	id = GPSevents.3
+	title = GPSevents.3.t
+	desc =GPSevents.3.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = GPS}
+	
+	option = { 
+		name = GPSevents.3.a
+        add_manpower = -100
+        add_war_support = 0.01
+	}
+	option = { 
+		name = GPSevents.3.b
+        add_manpower = -100
+        add_stability = 0.01
+	}
+}
+#《周饶日报》关东司镇压东北各地抗议游行
+country_event = {
+	id = GPSevents.4
+	title = GPSevents.4.t
+	desc =GPSevents.4.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = GPS}
+	
+	option = { 
+		name = GPSevents.4.a
+	}
+}
+#关内生变，局势不稳
+country_event = {
+	id = GPSevents.5
+	title = GPSevents.5.t
+	desc =GPSevents.5.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = GPS}
+	
+	option = { 
+		name = GPSevents.5.a
+	}
+}
+#辽阳起义
+country_event = {
+	id = GPSevents.6
+	title = GPSevents.6.t
+	desc =GPSevents.6.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { tag = GPS }
+	
+	immediate = {
+		hidden_effect = {
+			GPS = {
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁甲种战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型辽宁近卫战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁近卫步兵师" }
+			}
+		}
+	}
+
+	option = { 
+		name = GPSevents.6.a
+		set_country_flag = GPS_liaoyangqiyi
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = GPS_tanyaqiyi
+		716 = { set_demilitarized_zone = yes }
+		846 = { set_demilitarized_zone = yes }
+		845 = { set_demilitarized_zone = yes }
+		745 = { set_demilitarized_zone = yes }
+		1218 = { set_demilitarized_zone = yes }
+		610 = { set_demilitarized_zone = yes }
+		715 = { set_demilitarized_zone = yes }
+	}
+}
+#沈阳生变
+country_event = {
+	id = GPSevents.7
+	title = GPSevents.7.t
+	desc =GPSevents.7.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = GPS}
+	
+	option = {
+		ai_chance = { base = 10 }
+		name = GPSevents.7.a
+        add_to_variable = { GPS_bai = 1 } 
+	}
+	option = {
+		ai_chance = { base = 10 }
+		name = GPSevents.7.b
+        add_to_variable = { GPS_sheng = 1 } 
+	}
+}
+#分散攻击、主攻一方？
+country_event = {
+	id = GPSevents.8
+	title = GPSevents.8.t
+	desc =GPSevents.8.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = GPS}
+	
+	option = {
+		ai_chance = { base = 10 }
+		name = GPSevents.8.a
+        add_to_variable = { GPS_bai = 1 } 
+	}
+	option = {
+		ai_chance = { base = 10 }
+		name = GPSevents.8.b
+        add_to_variable = { GPS_sheng = 1 } 
+	}
+}
+#决战沈阳
+country_event = {
+	id = GPSevents.9
+	title = GPSevents.9.t
+	desc =GPSevents.9.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = GPS}
+	
+	option = { 
+		ai_chance = { base = 10 }
+		name = GPSevents.9.a
+        if = {
+			limit = {check_variable = { GPS_sheng > GPS_bai}}
+            GPS = {country_event = { id = GPSevents.10 days = 2 } }
+		}
+        if = {
+			limit = {check_variable = { GPS_sheng = GPS_bai}}
+            GPS = {country_event = { id = GPSevents.10 days = 2 } }
+		}
+        if = {
+			limit = {check_variable = { GPS_sheng < GPS_bai}}
+            GPS = {country_event = { id = GPSevents.11 days = 2 } }
+		}
+	}
+	option = { 
+		ai_chance = { base = 10 }
+		name = GPSevents.9.b
+        if = {
+			limit = {check_variable = { GPS_sheng > GPS_bai}}
+            GPS = {country_event = { id = GPSevents.10 days = 2 } }
+		}
+        if = {
+			limit = {check_variable = { GPS_sheng = GPS_bai}}
+            GPS = {country_event = { id = GPSevents.11 days = 2 } }
+		}
+        if = {
+			limit = {check_variable = { GPS_sheng < GPS_bai}}
+            GPS = {country_event = { id = GPSevents.11 days = 2 } }
+		}
+	}
+}
+#明军攻克沈阳
+country_event = {
+	id = GPSevents.10
+	title = GPSevents.10.t
+	desc =GPSevents.10.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = GPS}
+	
+	option = { 
+		ai_chance = { base = 10 }
+		name = GPSevents.10.a
+		SRC = {
+			transfer_state = 1218
+			transfer_state = 716
+			transfer_state = 845
+			transfer_state = 745
+		}
+		GPS = { complete_national_focus = GPS_gongqushenyang}
+		SRC = { complete_national_focus = SRC_no_longer_a_slave}
+		mark_focus_tree_layout_dirty = yes
+		716 = { set_demilitarized_zone = no }
+		846 = { set_demilitarized_zone = no }
+		845 = { set_demilitarized_zone = no }
+		745 = { set_demilitarized_zone = no }
+		hidden_effect = {
+			SRC = {
+				load_oob = SRC_1937
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁甲种战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型辽宁近卫战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁近卫步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型近卫步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型卫戍步兵旅" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌八年实验机动步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型山地步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型海军陆战队师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型甲种战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型乙种战车师" }
+				inherit_technology = GPS
+				set_research_slots = 3
+			}
+			GPS ={
+				hidden_effect = {
+				transfer_units_fraction = {
+					target = SRC
+					size = 1
+					stockpile_ratio = 0.7
+					navy_ratio = 0
+					air_ratio = 0.3
+					keep_unit_leaders_trigger = {
+						has_trait = MNG_damingjungguan
+					}
+				}
+			}
+			}
+
+		}
+	}
+	option = { 
+		ai_chance = { base = 10 }
+		name = GPSevents.10.b
+		SRC = {
+			transfer_state = 1218
+			transfer_state = 716
+			transfer_state = 845
+			transfer_state = 745
+		}
+		GPS = { complete_national_focus = GPS_gongqushenyang}
+		SRC = { complete_national_focus = SRC_no_longer_a_slave}
+		SRC = {change_tag_from = ROOT}
+		716 = { set_demilitarized_zone = no }
+		846 = { set_demilitarized_zone = no }
+		845 = { set_demilitarized_zone = no }
+		745 = { set_demilitarized_zone = no }
+		hidden_effect = {
+			SRC = {
+				load_oob = "SRC_1937"
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁甲种战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型辽宁近卫战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁近卫步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型近卫步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型卫戍步兵旅" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌八年实验机动步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型山地步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型海军陆战队师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型甲种战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型乙种战车师" }
+				inherit_technology = GPS
+				set_research_slots = 3
+			}
+			GPS = {
+				hidden_effect = {
+				transfer_units_fraction = {
+					target = SRC
+					size = 1
+					stockpile_ratio = 0.7
+					navy_ratio = 0
+					air_ratio = 0.3
+					keep_unit_leaders_trigger = {
+						has_trait = MNG_damingjungguan
+					}
+				}
+				}
+			}
+		}
+	}
+}
+#明军攻势受阻
+country_event = {
+	id = GPSevents.11
+	title = GPSevents.11.t
+	desc =GPSevents.11.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = GPS}
+
+	option = { 
+		ai_chance = { base = 10 }
+		name = GPSevents.11.a
+		GPS = { complete_national_focus = GPS_gongshishoucuo}
+		SRC = { complete_national_focus = SRC_no_longer_a_slave}
+		SRC = {
+			transfer_state = 846
+			transfer_state = 716
+			transfer_state = 845
+			transfer_state = 745
+			inherit_technology = GPS
+			set_research_slots = 3
+		}
+		GPS = {
+			hidden_effect = {
+				transfer_units_fraction = {
+					target = SRC
+					size = 1
+					stockpile_ratio = 0.7
+					navy_ratio = 0
+					air_ratio = 0.5
+					keep_unit_leaders_trigger = {
+						has_trait = MNG_damingjungguan
+					}
+				}
+			}
+		}
+		716 = { set_demilitarized_zone = no }
+		846 = { set_demilitarized_zone = no }
+		845 = { set_demilitarized_zone = no }
+		745 = { set_demilitarized_zone = no }
+		hidden_effect = {
+			SRC = {
+				load_oob = "SRC_1937"
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁甲种战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型辽宁近卫战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁近卫步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型近卫步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型卫戍步兵旅" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌八年实验机动步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型山地步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型海军陆战队师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型甲种战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型乙种战车师" }
+			}
+		}
+	}
+	option = { 
+		ai_chance = { base = 10 }
+		name = GPSevents.11.b
+		SRC = {
+			transfer_state = 846
+			transfer_state = 716
+			transfer_state = 845
+			transfer_state = 745
+			inherit_technology = GPS
+			set_research_slots = 3
+		}
+		GPS = {
+			hidden_effect = {
+				transfer_units_fraction = {
+					target = SRC
+					size = 1
+					stockpile_ratio = 0.7
+					navy_ratio = 0
+					air_ratio = 0.5
+					keep_unit_leaders_trigger = {
+						has_trait = MNG_damingjungguan
+					}
+				}
+			}
+		}
+		GPS = { complete_national_focus = GPS_gongshishoucuo}
+		SRC = { complete_national_focus = SRC_no_longer_a_slave}
+		SRC = {change_tag_from = ROOT}
+		716 = { set_demilitarized_zone = no }
+		846 = { set_demilitarized_zone = no }
+		845 = { set_demilitarized_zone = no }
+		745 = { set_demilitarized_zone = no }
+		hidden_effect = {
+			SRC = {
+				load_oob = "SRC_1937"
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁甲种战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型辽宁近卫战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽宁近卫步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型近卫步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型近卫战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型卫戍步兵旅" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌八年实验机动步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型山地步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型海军陆战队师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型甲种战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型乙种战车师" }
+			}
+		}
+	}
+}
+#辽西失守
+country_event = {
+	id = GPSevents.12
+	title = GPSevents.12.t
+	desc =GPSevents.12.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1937.9.22
+		tag = GPS
+        GPS = { NOT = {has_country_flag = MNG_gongrenyundongbeizhenya} }
+    }
+	immediate = {
+		hidden_effect = {
+			1218 = { set_demilitarized_zone = no }
+			610 = { set_demilitarized_zone = no }
+			715 = { set_demilitarized_zone = no }
+			GPS = {
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型辽西乙种步兵师" }
+			}
+		}
+	}
+	option = { 
+		name = GPSevents.12.a
+        SRC = {country_event = { id = SRCevents.1 } } 
+		SRC = {
+			transfer_state = 715
+			add_state_core = 715
+			transfer_state = 1218
+			add_state_core = 1218
+			transfer_state = 610
+			add_state_core = 610
+		}
+	}
+}
+#稳固辽西局面
+country_event = {
+	id = GPSevents.13
+	title = GPSevents.13.t
+	desc =GPSevents.13.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1937.9.22
+		tag = GPS
+        GPS = { has_country_flag = MNG_gongrenyundongbeizhenya }
+    }
+	immediate = {
+		hidden_effect = {
+			1218 = { set_demilitarized_zone = no }
+			610 = { set_demilitarized_zone = no }
+			715 = { set_demilitarized_zone = no }
+		}
+	}
+	option = { 
+		name = GPSevents.13.a
+        SRC = {country_event = { id = SRCevents.2 } } 
+        add_stability = 0.03
+	}
+}
+#研究战法：
+country_event = {
+	id = GPSevents.14
+	title = GPSevents.14.t
+	desc =GPSevents.14.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {tag = GPS}
+	
+	option = { 
+		name = GPSevents.14.a
+	}
+}
+#关东招抚司通告
+country_event = {
+	id = GPSevents.15
+	title = GPSevents.15.t
+	desc =GPSevents.15.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {tag = GPS}
+	
+	option = { 
+		name = GPSevents.15.a
+	}
+}
+#汤玉麟突发恶疾
+country_event = {
+	id = GPSevents.16
+	title = GPSevents.16.t
+	desc =GPSevents.16.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {tag = GPS}
+	
+	option = { 
+		name = GPSevents.16.a
+	}
+	option = { 
+		name = GPSevents.16.b
+	}
+}
+#关东招抚司军政委员会成立
+country_event = {
+	id = GPSevents.17
+	title = GPSevents.17.t
+	desc =GPSevents.17.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {tag = GPS}
+	
+	option = { 
+		name = GPSevents.17.a
+	}
+	option = { 
+		name = GPSevents.17.b
+	}
+}
+#维护大明海外利益
+country_event = {
+	id = GPSevents.18
+	title = GPSevents.18.t
+	desc =GPSevents.18.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {tag = GPS}
+	
+	option = { 
+		name = GPSevents.18.a
+	}
+}
+#朝鲜归附
+country_event = {
+	id = GPSevents.19
+	title = GPSevents.19.t
+	desc =GPSevents.19.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {tag = GPS}
+	
+	option = { 
+		name = GPSevents.19.a
+	}
+}
+#霞仪，日本归附
+country_event = {
+	id = GPSevents.20
+	title = GPSevents.20.t
+	desc =GPSevents.20.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {tag = GPS}
+	
+	option = { 
+		name = GPSevents.20.a
+	}
+}
+#戡平匪乱
+country_event = {
+	id = GPSevents.21
+	title = GPSevents.21.t
+	desc =GPSevents.21.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = GPS
+		NOT = { country_exists = SRC }
+		has_country_flag = GPS_liaoyangqiyi
+		date > 1937.12.22
+	}
+	
+	option = { 
+		name = GPSevents.21.a
+		set_country_flag = GPS_pingluanshengli
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+#汤都督打响关东剿匪第一枪
+country_event = {
+	id = GPSevents.22
+	title = GPSevents.22.t
+	desc =GPSevents.22.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.22.a
+	}
+}
+#壶酒控军权
+country_event = {
+	id = GPSevents.23
+	title = GPSevents.23.t
+	desc =GPSevents.23.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.23.a
+	}
+}
+#都督的橄榄枝
+country_event = {
+	id = GPSevents.24
+	title = GPSevents.24.t
+	desc =GPSevents.24.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.24.a
+	}
+}
+#开府仪同三司
+country_event = {
+	id = GPSevents.25
+	title = GPSevents.25.t
+	desc =GPSevents.25.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.25.a
+	}
+}
+#维持军管
+country_event = {
+	id = GPSevents.26
+	title = GPSevents.26.t
+	desc =GPSevents.26.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.26.a
+	}
+}
+#解散工协
+country_event = {
+	id = GPSevents.27
+	title = GPSevents.27.t
+	desc =GPSevents.27.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.27.a
+	}
+}
+#解散工协
+country_event = {
+	id = GPSevents.28
+	title = GPSevents.28.t
+	desc =GPSevents.28.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.28.a
+	}
+}
+#追剿赤匪
+country_event = {
+	id = GPSevents.29
+	title = GPSevents.29.t
+	desc =GPSevents.29.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.29.a
+	}
+}
+#红祸肃清，东北解放！
+country_event = {
+	id = GPSevents.30
+	title = GPSevents.30.t
+	desc =GPSevents.30.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.30.a
+	}
+}
+#得饶人处且饶人
+country_event = {
+	id = GPSevents.31
+	title = GPSevents.31.t
+	desc =GPSevents.31.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.31.a
+	}
+}
+#厂里又整幺蛾子了
+country_event = {
+	id = GPSevents.32
+	title = GPSevents.32.t
+	desc =GPSevents.32.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.32.a
+	}
+	option = { 
+		name = GPSevents.32.b
+	}
+}
+#关东人的情关东人的爱
+country_event = {
+	id = GPSevents.33
+	title = GPSevents.33.t
+	desc =GPSevents.33.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.33.a
+	}
+}
+#厂里不出岔子，全靠这双铁拳
+country_event = {
+	id = GPSevents.34
+	title = GPSevents.34.t
+	desc =GPSevents.34.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.34.a
+	}
+}
+#失控
+country_event = {
+	id = GPSevents.35
+	title = GPSevents.35.t
+	desc =GPSevents.35.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = { tag = GPS }
+	
+	option = { 
+		name = GPSevents.35.a
+	}
+}
+#开战
+country_event = {
+	id = GPSevents.36
+	title = GPSevents.36.t
+	desc =GPSevents.36.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+
+	trigger = { 
+		date > 1937.10.10
+		tag = GPS
+	 }
+	
+	
+	option = { 
+		name = GPSevents.36.a
+		declare_war_on = { target = SRC type = annex_everything }
+	}
+}
+
+
+
+

@@ -5,15 +5,20 @@ state={
 	history={
 		owner = MNG
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			industrial_complex = 2
 			dockyard = 1
 
 		}
 		victory_points = {
-			4001 5 
+			4001 10 
 		}
-
+		victory_points = {
+			4091 5 
+		}
+		victory_points = {
+			1089 2 
+		}
 		add_core_of = mng
 
 	}
@@ -22,5 +27,5 @@ state={
 	}
 	manpower=5836190
 	buildings_max_level_factor=1.000
-	state_category=ten
+	state_category=nine
 }

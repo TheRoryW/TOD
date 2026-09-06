@@ -33,6 +33,8 @@ set_technology = {
 	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
 	engine_tech_1 = 1
+	tech_trucks = 1
+	basic_train = 1
 	
 	aa_lmg = 1
 	aa_cannon_1 = 1
@@ -72,13 +74,13 @@ every_owned_state = {
 	set_compliance = 40
 	set_resistance = 10
 	set_garrison_strength = 0.5
-	set_variable = { HUN_shaominfankang = -0.3 }
-	add_dynamic_modifier = { modifier = HUN_shaoshuminzufenzheng }
+	add_dynamic_modifier = { modifier = HUN_shaoshuminzufenzheng_mianqiangkekong }
 }
 
 create_equipment_variant = {
 	name = "Toldi tartály I.típusa"
 	type = light_tank_chassis_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 	parent_version = 0
 	modules = {
 		main_armament_slot = tank_small_cannon
@@ -94,6 +96,12 @@ create_equipment_variant = {
 	}
 		icon = "GFX_HUN_basic_light_tank_medium"
 }
+
+set_autonomy = {
+	target = MOL
+	autonomous_state =  autonomy_puppet
+	freedom_level = 0.2
+}
 country_lock_all_division_template = yes
 
 recruit_character = HUN_Istvan_Tisza
@@ -108,7 +116,7 @@ recruit_character = HUN_karoly_beregfy
 recruit_character = HUN_lajos_veress
 recruit_character = HUN_ferenc_feketehalmyczeydner
 recruit_character = HUN_Aurel_Stromfeld
-recruit_character = HUN_istvan_szechenyi
+### recruit_character = HUN_istvan_szechenyi
 recruit_character = HUN_francois_deak
 recruit_character = HUN_gyorgy_jendrassik
 recruit_character = HUN_jeno_ratz
@@ -130,34 +138,18 @@ recruit_character = HUN_kalman_daranyi
 recruit_character = HUN_lajos_remenyi_schneller
 recruit_character = HUN_gusztav_gratz
 recruit_character = HUN_gyula_gombos_de_jakfa
-recruit_character = HUN_otto_von_habsburg
-recruit_character = HUN_franz_friedrich
-recruit_character = HUN_vojtyech_luzha
-recruit_character = HUN_josef_shnejdarek
-recruit_character = HUN_richard_tesarzhik
-recruit_character = HUN_sergej_vojcechovsky
-recruit_character = HUN_frantishek_havlik
-recruit_character = HUN_rudolf_viest
-recruit_character = HUN_alois_vicherek
-recruit_character = HUN_antonin_hasal
-recruit_character = HUN_jaroslav_fajfr
-recruit_character = HUN_jan_golian
-recruit_character = HUN_karel_janousek
-recruit_character = HUN_josef_frantisek
-recruit_character = HUN_ludvik_krejci
-recruit_character = HUN_karel_vaclav_petrik
-recruit_character = HUN_karel_kuttelwascher
-recruit_character = HUN_ludvik_svoboda
-recruit_character = HUN_frantisek_havel
-recruit_character = HUN_stefan_osusky
-recruit_character = HUN_ferdinand_catlos
-recruit_character = HUN_jozef_tiso
-recruit_character = HUN_vojtech_tuka
-recruit_character = HUN_konrad_henlein
-recruit_character = HUN_gustav_husak
+### recruit_character = HUN_otto_von_habsburg
+### recruit_character = HUN_franz_friedrich
 recruit_character = HUN_Janos_Zichy
-recruit_character = HUN_Kalman_Daranyi
-recruit_character = HUN_Pal_Teleki
+### recruit_character = HUN_Kalman_Daranyi
+### recruit_character = HUN_Pal_Teleki
 recruit_character = HUN_Ausztriai_Josef_Agohst_foherceg
 recruit_character = HUN_Tibor_Eckhardt_Pozsonyi
 recruit_character = HUN_Janos_Vazsonyi
+
+
+recruit_character = HUN_miklos_horthy
+retire_character = HUN_miklos_horthy
+
+
+

@@ -1,0 +1,34 @@
+capital = 627
+
+#军队编制
+
+oob = "empty"
+
+#政党比例
+
+set_politics = {
+	ruling_party = authoritarian_oligarchy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}	
+
+set_popularities = {
+	authoritarian_oligarchy = 100
+}
+recruit_character = TAC_SONG_WU
+recruit_character = TAC_ZHOU_LAN
+recruit_character = TAC_segma_SHE
+recruit_character = TAC_HAO_YU
+recruit_character = TAC_QIAO_BIN
+
+
+
+
+
+
+
+
+
+
+

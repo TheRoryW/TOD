@@ -1,0 +1,16 @@
+capital = 271
+
+set_oob = "ETH_1936_bba"
+
+set_politics = {
+	ruling_party = leader_despotism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	leader_despotism = 100
+}
+
+recruit_character = ETH_Haile_Selassie

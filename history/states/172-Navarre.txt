@@ -3,16 +3,17 @@ state={
 	name="STATE_172"
 
 	history={
-		owner = KSN
+		owner = SPR
 		add_core_of = NAV
 		victory_points = {
 			3933 1
 		}
 		buildings = {
+			arms_factory = 1
+			industrial_complex = 2
 			infrastructure = 2
 		}
 		add_core_of = SPR
-
 	}
 
 	provinces={

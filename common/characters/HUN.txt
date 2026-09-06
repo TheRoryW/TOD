@@ -44,7 +44,7 @@ characters={
 		name=HUN_Istvan_Tisza
 		portraits={
 			civilian={
-				large="gfx/leaders/HUN/Portrait_HUN_Tisza-István.dds"
+				large="gfx/leaders/HUN/Portrait_HUN_Tisza-István.png"
 			}
 		}
 		country_leader={
@@ -116,7 +116,7 @@ characters={
 		name=HUN_Tibor_Eckhardt_Pozsonyi
 		portraits={
 			civilian={
-				large="gfx/leaders/HUN/HUN_Tibor_Eckhardt_Pozsonyi.png"
+				large="gfx/leaders/HUN/HUN_Tibor_Eckhardt_Pozsonyi.jpg"
 			}
 		}
 		country_leader={
@@ -144,7 +144,7 @@ characters={
 		name=HUN_Tibor_Szamuely
 		portraits={
 			civilian={
-				large="gfx/leaders/HUN/Tibor Szamuely.png"
+				large="gfx/leaders/HUN/Tibor Szamuely.jpg"
 			}
 		}
 		country_leader={
@@ -170,6 +170,7 @@ characters={
 
 	HUN_geza_lakatos={
 		name=HUN_geza_lakatos
+		can_be_captured = no
 		portraits={
 			army={
 				large="GFX_Portrait_hungary_geza_lakatos"
@@ -188,6 +189,7 @@ characters={
 
 	HUN_ivan_hindy={
 		name=HUN_ivan_hindy
+		can_be_captured = no
 		portraits={
 			army={
 				large="GFX_Portrait_hungary_ivan_hindy"
@@ -207,6 +209,7 @@ characters={
 
 	HUN_karoly_beregfy={
 		name=HUN_karoly_beregfy
+		can_be_captured = no
 		portraits={
 			army={
 				large="GFX_Portrait_hungary_karoly_beregfy"
@@ -225,6 +228,7 @@ characters={
 
 	HUN_lajos_veress={
 		name=HUN_lajos_veress
+		can_be_captured = no
 		portraits={
 			army={
 				large="GFX_Portrait_hungary_lajos_veress"
@@ -244,6 +248,7 @@ characters={
 
 	HUN_ferenc_feketehalmyczeydner={
 		name=HUN_ferenc_feketehalmyczeydner
+		can_be_captured = no
 		portraits={
 			army={
 				large="GFX_Portrait_hungary_ferenc_feketehalmy_czeydner"
@@ -262,6 +267,7 @@ characters={
 	
 	HUN_Aurel_Stromfeld={
 		name=HUN_Aurél_Stromfeld
+		can_be_captured = no
 		portraits={
 			army={
 				large="gfx/leaders/HUN/Aurél Stromfeld.png"
@@ -334,6 +340,15 @@ characters={
 				small="GFX_idea_HUN_ferenc_szombathelyi"
 			}
 		}
+		corps_commander={
+			traits={ hill_fighter }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
 		advisor={
 			slot = army_chief
 			idea_token = HUN_ferenc_szombathelyi
@@ -356,6 +371,15 @@ characters={
 			army={
 				small="GFX_idea_HUN_hugo_sonyi"
 			}
+		}
+		corps_commander={
+			traits={ engineer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
 		}
 		advisor={
 			slot = army_chief
@@ -505,6 +529,15 @@ characters={
 				small="GFX_idea_HUN_dezso_laszlo"
 			}
 		}
+		corps_commander={
+			traits={ organizer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
 		advisor={
 			slot = high_command
 			idea_token = HUN_dezso_laszlo
@@ -552,6 +585,14 @@ characters={
 			army={
 				small="GFX_idea_HUN_henrik_werth"
 			}
+		}
+		field_marshal={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
 		}
 		advisor={
 			slot = high_command
@@ -665,24 +706,24 @@ characters={
 		}
 	}
 
-	HUN_kalman_daranyi={
-		name=HUN_kalman_daranyi
-		portraits={
-			army={
-				small="GFX_idea_HUN_kalman_daranyi"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_kalman_daranyi
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				smooth_talking_charmer 
-			}
-		}
-	}
+	### HUN_kalman_daranyi={ # 与 HUN_Kalman_Daranyi 大小写不区分，重复 ID 保留
+	### 	name=HUN_kalman_daranyi
+	### 	portraits={
+	### 		army={
+	### 			small="GFX_idea_HUN_kalman_daranyi"
+	### 		}
+	### 	}
+	### 	advisor={
+	### 		slot = political_advisor
+	### 		idea_token = HUN_kalman_daranyi
+	### 		allowed = {
+	### 			original_tag = HUN
+	### 		}
+	### 		traits = {
+	### 			smooth_talking_charmer 
+	### 		}
+	### 	}
+	### }
 
 	HUN_zoltan_tildy={
 		name=HUN_zoltan_tildy
@@ -790,553 +831,38 @@ characters={
 		}
 	}
 
-	HUN_vojtyech_luzha={
-		name=HUN_vojtyech_luzha
-		portraits={
-			army={
-				large="GFX_Portrait_czechoslovakia_vojtech_luza"
-				small="gfx/interface/ideas/idea_CZE_vojtech_luza.dds"
-			}
-		}
-		field_marshal={
-			traits={ offensive_doctrine fast_planner }
-			skill=3
-			attack_skill=4
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
+	HUN_miklos_horthy = {
+		name = HUN_miklos_horthy
 
-	HUN_josef_shnejdarek={
-		name=HUN_josef_shnejdarek
-		portraits={
-			army={
-				large="GFX_Portrait_czechoslovakia_josef_snejdarek"
-				small="gfx/interface/ideas/idea_CZE_josef_snejdarek.dds"
+		portraits = {
+			navy = { #Can become Navy leader and therefore navy advisor
+				large = "GFX_Portrait_hungary_miklos_horthy_admiral"
+				small = "GFX_idea_HUN_miklos_horthy_admiral"
 			}
 		}
-		field_marshal={
-			traits={ defensive_doctrine thorough_planner }
-			skill=3
-			attack_skill=3
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=-1
+		navy_leader = {
+			traits = { gunnery_expert navy_media_personality superior_tactician }
+			skill = 3
+			legacy_id = 556 #Navy Miklos
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 4
 		}
-	}
-
-	HUN_richard_tesarzhik={
-		name=HUN_richard_tesarzhik
-		portraits={
-			army={
-				large="GFX_Portrait_czechoslovakia_richard_tesarik"
-				small="gfx/interface/ideas/idea_CZE_richard_tesarik.dds"
-			}
-		}
-		corps_commander={
-			traits={ armor_officer }
-			skill=2
-			attack_skill=4
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-
-	HUN_sergej_vojcechovsky={
-		name=HUN_sergej_vojcechovsky
-		portraits={
-			army={
-				large="GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
-				small="gfx/interface/ideas/idea_CZE_sergej_vojcechovsky.dds"
-			}
-		}
-		corps_commander={
-			traits={ winter_specialist }
-			skill=3
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-
-
-	### THEORISTS ###
-
-	HUN_karel_vaclav_petrik={
-		name="Karel Václav Petrík"
-		portraits={
-			army={
-				small="GFX_idea_CZE_karel_vaclav_petrik"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = HUN_karel_vaclav_petrik
-			ledger = army
-			allowed = {
-				original_tag = HUN
-			}
-			
-			traits = {
-				military_theorist
-			}
-		}		
-	}
-
-	HUN_alois_vicherek={
-		name=HUN_alois_vicherek
-		portraits={
-			army={
-				small="GFX_idea_CZE_alois_vicherek"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = HUN_alois_vicherek
-			ledger = air
-			allowed = {
-				original_tag = HUN
-			}
-			
-			traits = {
-				air_warfare_theorist
-			}
-		}
-	}
-
-
-	### ARMY CHIEFS ###
-
-	HUN_rudolf_viest={
-		name=HUN_rudolf_viest
-		portraits={
-			army={
-				small="GFX_idea_CZE_rudolf_viest"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = HUN_rudolf_viest
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 0.500
-			}
-		}
-	}
-
-	HUN_ludvik_krejci={
-		name=HUN_ludvik_krejci
-		portraits={
-			army={
-				small="GFX_idea_CZE_ludvik_krejci"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = HUN_ludvik_krejci
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				army_chief_defensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	HUN_ludvik_svoboda={
-		name=HUN_ludvik_svoboda
-		portraits={
-			army={
-				small="GFX_idea_CZE_ludvik_svoboda"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = HUN_ludvik_svoboda
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				army_chief_morale_3
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
-
-	### NAVY CHIEFS ###
-
-	# Klement Gottwald up there (Communist Country Leader -> Stalinism)
-
-	HUN_antonin_hasal={
-		name=HUN_antonin_hasal
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_3"
-			}
-		}
-		advisor={
+		advisor = {
 			slot = navy_chief
-			idea_token = HUN_antonin_hasal
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				navy_chief_maneuver_2
-			}
+			idea_token = HUN_miklos_horthy
+			allowed = { original_tag = HUN }
+			available = { }
+
+			traits = { navy_chief_reform_2 }
+
 			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+
+			ai_will_do = { factor = 2 }
+
 		}
 	}
-
-	### AIR CHIEFS ###
-
-	HUN_karel_janousek={
-		name=HUN_karel_janousek
-		portraits={
-			army={
-				small="GFX_idea_CZE_karel_janousek"
-			}
-		}
-		advisor={
-			slot = air_chief
-			idea_token = HUN_karel_janousek
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				air_chief_safety_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	HUN_jaroslav_fajfr={
-		name=HUN_jaroslav_fajfr
-		portraits={
-			army={
-				small="GFX_idea_CZE_jaroslav_fajfr"
-			}
-		}
-		advisor={
-			slot = air_chief
-			idea_token = HUN_jaroslav_fajfr
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				air_chief_ground_support_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-
-	### MILITARY HIGH COMMAND ###
-
-	HUN_jan_golian={
-		name=HUN_jan_golian
-		portraits={
-			army={
-				small="GFX_idea_CZE_jan_golian"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = HUN_jan_golian
-			ledger = army
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				army_regrouping_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-	
-	HUN_josef_frantisek={
-		name=HUN_josef_frantisek
-		portraits={
-			army={
-				small="GFX_idea_CZE_josef_frantisek"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = HUN_josef_frantisek
-			ledger = air
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				air_air_superiority_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	HUN_karel_kuttelwascher={
-		name=HUN_karel_kuttelwascher
-		portraits={
-			army={
-				small="GFX_idea_CZE_karel_kuttelwascher"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = HUN_karel_kuttelwascher
-			ledger = air
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				air_air_combat_training_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	
-	HUN_frantisek_havel={
-		name=HUN_frantisek_havel
-		portraits={
-			army={
-				small="GFX_idea_CZE_frantisek_havel"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = HUN_frantisek_havel
-			ledger = army
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				army_logistics_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-
-	### POLITICAL ADVISORS ###
-
-	HUN_vojtech_tuka={
-		name=HUN_vojtech_tuka
-		portraits={
-			army={
-				small="GFX_idea_CZE_vojtech_tuka"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_vojtech_tuka
-			allowed  = {
-				original_tag  = HUN
-			}
-			traits  = {
-				prince_of_terror 
-			}
-		}
-	}
-
-	HUN_ferdinand_catlos={
-		name=HUN_ferdinand_catlos
-		portraits={
-			army={
-				small="GFX_idea_CZE_ferdinand_catlos"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_ferdinand_catlos
-			allowed  = {
-				original_tag  = HUN
-			}
-			traits  = {
-				quartermaster_general 
-			}
-		}
-	}
-
-	HUN_jozef_tiso={
-		name=HUN_jozef_tiso
-		portraits={
-			army={
-				small="GFX_idea_CZE_jozef_tiso"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_jozef_tiso
-			allowed  = {
-				original_tag  = HUN
-			}
-			traits  = {
-				backroom_backstabber 
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}	
-	}
-
-	HUN_stefan_osusky={
-		name=HUN_stefan_osusky
-		portraits={
-			army={
-				small="GFX_idea_CZE_stefan_osusky"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_stefan_osusky
-			allowed  = {
-				original_tag  = HUN
-			}
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus  = HUN_democratic_bastion 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				democratic_reformer 
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}
-	}
-
-	HUN_gustav_husak={
-		name=HUN_gustav_husak
-		portraits={
-			army={
-				small="GFX_idea_CZE_gustav_husak"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_gustav_husak
-			allowed  = {
-				original_tag  = HUN
-			}
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus  = HUN_go_left 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				communist_revolutionary 
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}
-	}
-	
-	HUN_konrad_henlein={
-		name=HUN_konrad_henlein
-		portraits={
-			army={
-				small="GFX_idea_CZE_konrad_henlein"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_konrad_henlein
-			allowed  = {
-				original_tag  = HUN
-			}
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus  = HUN_go_right 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				fascist_demagogue 
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}		
-	}
-
 	
 
 	# Illusive Gentleman auto-generated

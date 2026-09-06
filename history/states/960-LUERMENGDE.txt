@@ -1,7 +1,9 @@
 state={
 	id=960
 	name="STATE_960"
-
+	resources={
+		coal = 12
+	}
 	history={
 		owner = FRA
 
@@ -18,7 +20,9 @@ state={
 			}
 
 		}
-
+		victory_points = {
+			11562 1 
+		}
 	}
 	provinces={
 		3444 11562 

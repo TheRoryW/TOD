@@ -1,6 +1,18 @@
 capital = 361
 
-oob = "empty"
+oob = "USA_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+}
 
 set_politics = {
 	ruling_party = authoritarian_oligarchy
@@ -24,13 +36,8 @@ set_popularities = {
 	vanguard_socialism = 0
 }
 
-create_country_leader = {
-	name = "Herbert Henry Lehman"
-	desc = "POLITICS_LEHMAN_DESC"
-	picture = "Portrait_USA_Herbert_Henry_Lehman.png"
-	expire = "1965.1.1"
-	ideology = authoritarian_oligarchy_subtype
-}
+recruit_character = USA_Herbert_Henry_Lehman
+recruit_character = USA_George_Catlett_Marshall
 
 add_ideas = {
 	USA_army_mobilization 
@@ -48,7 +55,7 @@ if = {
 	}
 	set_autonomy = {
 		target = SMT
-		autonomous_state =  kr_default_puppet
+		autonomous_state =  autonomy_puppet
 		freedom_level = 0.2
 	}
 	else = {
@@ -60,7 +67,7 @@ if = {
 create_field_marshal = {# 麦克阿瑟
 	name = "Douglas MacArthur"
 	desc = "USA_DOUGLAS_MACARTHUR_ARMY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
 	traits = {
 		offensive_doctrine
 		brilliant_strategist
@@ -80,7 +87,7 @@ create_field_marshal = {# 麦克阿瑟
 create_corps_commander = {# 克拉倫斯·許布納 
 	name = "Clarence Huebner"
 	desc = "USA_CLARENCE_HUEBNER_ARMY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Clarence_Huebner_KR.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Clarence_Huebner.dds"
 	traits = {
 		harsh_leader
 	}
@@ -94,7 +101,7 @@ create_corps_commander = {# 克拉倫斯·許布納
 create_corps_commander = {# 爱德华·H·布鲁克斯
 	name = "Edward H. Brooks"
 	desc = "USA_EDWARD_BROOKS_ARMY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Edward_Brooks_KR.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Edward_Brooks.dds"
 	traits = {
 		trait_engineer
 		trait_reckless
@@ -110,7 +117,7 @@ create_corps_commander = {# 爱德华·H·布鲁克斯
 create_corps_commander = {# 约瑟夫·史迪威
 	name = "Joseph Stilwell"
 	desc = "USA_JOSEPH_STILWELL_ARMY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Joseph_Stilwell_KR.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Joseph_Stilwell.dds"
 	traits = {
 		politically_connected
 		infantry_officer
@@ -127,7 +134,7 @@ create_corps_commander = {# 约瑟夫·史迪威
 create_corps_commander = {# 伦纳德·格罗
 	name = "Leonard Gerow"
 	desc = "USA_LEONARD_GEROW_ARMY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Leonard_Gerow_KR.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Leonard_T_Gerow.dds"
 	traits = { armor_officer }
 	skill = 2
 	attack_skill = 2
@@ -139,7 +146,7 @@ create_corps_commander = {# 伦纳德·格罗
 create_corps_commander = {# 奥马尔·布莱德利
 	name = "Omar Bradley"
 	desc = "USA_OMAR_BRADLEY_ARMY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Omar_Bradley_KR.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Omar_Bradley.dds"
 	traits = {
 		trait_engineer
 		trait_cautious
@@ -156,7 +163,7 @@ create_corps_commander = {# 奥马尔·布莱德利
 create_corps_commander = {# 德怀特·艾森豪威尔
 	name = "Dwight D. Eisenhower"
 	desc = "USA_DWIGHT_EISENHOWER_ARMY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Dwight_Eisenhower_army.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Dwight_D_Eisenhower.dds"
 	traits = {
 		organizer
 		trait_cautious
@@ -172,7 +179,7 @@ create_corps_commander = {# 德怀特·艾森豪威尔
 create_corps_commander = {# 埃德温·F·哈丁
 	name = "Edwin F. Harding"
 	desc = "USA_EDWIN_HARDING_ARMY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_edwin_harding.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_land_1.dds"
 	traits = {
 		career_officer
 		commando
@@ -189,7 +196,7 @@ create_corps_commander = {# 埃德温·F·哈丁
 create_corps_commander = {# 斯梅德利·巴特勒
 	name = "Smedley Butler"
 	desc = "USA_SMEDLEY_BUTLER_ARMY_DESC"
-	portrait_path = "gfx/leaders/CSA/Portrait_CSA_smedly_butler_G.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_land_2.dds"
 	traits = {
 		offensive_doctrine
 		inspirational_leader
@@ -205,7 +212,7 @@ create_corps_commander = {# 斯梅德利·巴特勒
 create_corps_commander = {# 乔治·范·霍恩·莫斯利
 	name = "George Van Horn Moseley"
 	desc = "USA_GEORGE_VAN_HORN_MOSELEY_ARMY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_George_Van_Horn_Moseley.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_land_3.dds"
 	traits = {
 		politically_connected
 		brilliant_strategist
@@ -220,7 +227,7 @@ create_corps_commander = {# 乔治·范·霍恩·莫斯利
 create_corps_commander = {# 乔治·巴顿
 	name = "George S. Patton"
 	desc = "USA_GEORGE_PATTON_ARMY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_george_patton.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_George_S_Patton.dds"
 	traits = {
 		trickster
 		armor_officer
@@ -237,7 +244,7 @@ create_corps_commander = {# 乔治·巴顿
 create_corps_commander = {# 福克斯·康纳
 	name = "Fox Conner"
 	desc = "USA_FOX_CONNER_ARMY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Fox_Conner.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_land_4.dds"
 	traits = {
 		old_guard
 		politically_connected
@@ -252,7 +259,7 @@ create_corps_commander = {# 福克斯·康纳
 create_corps_commander = {# 约翰·L·德威特
 	name = "John L. DeWitt"
 	desc = "USA_JOHN_DEWITT_ARMY_DESC"
-	portrait_path = "gfx/leaders/PSA/Portrait_PSA_John_Lesesne_DeWitt.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_land_5.dds"
 	traits = {
 		inflexible_strategist
 		trait_cautious
@@ -269,7 +276,7 @@ create_corps_commander = {# 约翰·L·德威特
 create_navy_leader = {# 小威廉·哈尔西
 	name = "William Halsey Jr."
 	desc = "USA_WILLIAM_HALSEY_JR_NAVY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_William_Halsey_Jr.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_William_Halsey_Jr.dds"
 	traits = {
 		superior_tactician
 		spotter
@@ -285,7 +292,7 @@ create_navy_leader = {# 小威廉·哈尔西
 create_navy_leader = {# 雷蒙德·斯普鲁恩斯
 	name = "Raymond A. Spruance"
 	desc = "USA_RAYMOND_SPRUANCE_NAVY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Raymond_Spruance.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Raymond_A_Spruance.dds"
 	traits = {
 		superior_tactician
 		aviation_enthusiast
@@ -301,7 +308,7 @@ create_navy_leader = {# 雷蒙德·斯普鲁恩斯
 create_navy_leader = {# 托马斯·金凯德
 	name = "Thomas C. Kinkaid"
 	desc = "USA_THOMAS_KINKAID_NAVY_DESC"
-	portrait_path = "gfx/leaders/NEE/Portrait_NEE_thomas_kinkaid.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Generic_navy_1.dds"
 	traits = { ironside bold }
 	skill = 3
 	attack_skill = 2
@@ -313,7 +320,7 @@ create_navy_leader = {# 托马斯·金凯德
 create_navy_leader = {# 欧尼斯特·金
 	name = "Ernest King"
 	desc = "USA_ERNEST_KING_NAVY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Ernest_King.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Earnest_King.dds"
 	traits = {
 		superior_tactician
 		ironside
@@ -330,7 +337,7 @@ create_navy_leader = {# 欧尼斯特·金
 create_navy_leader = {# 哈罗德·斯塔克
 	name = "Harold Rainsford Stark"
 	desc = "USA_HAROLD_RAINSFORD_STARK_NAVY_DESC"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Harold_Stark.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Harold_Rainsford_Stark.dds"
 	traits = { old_guard_navy spotter }
 	skill = 2
 	attack_skill = 1

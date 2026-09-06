@@ -1,0 +1,68 @@
+air_wings = {
+	29 = {
+		small_plane_airframe_0 = {
+			owner = "FRA"
+			amount = 192
+			version_name = "D.500"
+		}
+		small_plane_airframe_0 = {
+			owner = "FRA"
+			amount = 192
+			version_name = "D.510"
+		}
+		large_plane_airframe_0 = {
+			owner = "FRA"
+			amount = 120
+			version_name = "F.222"
+		}
+	}
+	18 = {
+			small_plane_airframe_0 = {
+			owner = "FRA"
+			amount = 192
+			version_name = "D.510"
+		}
+	}
+	21 = {
+		small_plane_airframe_0 = {
+			owner = "FRA"
+			amount = 192
+			version_name = "NiD 62"
+		}
+		medium_plane_airframe_0 = {
+			owner = "FRA"
+			amount = 180
+			version_name = "Amiot 143"
+		}
+		large_plane_airframe_0 = {
+			owner = "FRA"
+			amount = 48
+			version_name = "F.222"
+		}
+	}
+	458 = {
+		small_plane_airframe_0 = {
+			owner = "FRA"
+			amount = 96
+			version_name = "NiD 62"
+		}
+		medium_plane_airframe_0 = {
+			owner = "FRA"
+			amount = 60
+			version_name = "Amiot 143"
+		}
+	}
+	15 = {
+		small_plane_naval_bomber_airframe_0 = {
+			owner = "FRA"
+			amount = 48
+			version_name = "Latecoere 296"
+		}
+	}
+	"Atlantique CV 01" = {
+		cv_small_plane_airframe_0 = { owner = "FRA" amount = 20 version_name = "D.371" }
+		cv_small_plane_airframe_0 = { owner = "FRA" amount = 20 version_name = "D.371" }
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "FRA" amount = 20 version_name = "PL.7" }
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "FRA" amount = 20 version_name = "PL.7" }
+	}
+}

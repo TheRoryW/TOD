@@ -1,0 +1,96 @@
+###西北军特殊机制
+#军官团与地主
+XBJ_officers_and_landlords_dm = {
+	enable = { always = yes }
+	army_org_factor = officers_influence_army_org
+	max_planning = officers_influence_war_support_factor_max_planning
+	war_support_factor = officers_influence_war_support_factor_max_planning
+	production_factory_max_efficiency_factor = landlords_influence_max_efficiency_factor
+	political_power_factor = landlords_influence_political_power_gain_stability
+	stability_factor = landlords_influence_political_power_gain_stability
+}
+#社群团结
+XBJ_shequn_tuanjie_dm = {
+	enable = { always = yes }
+	consumer_goods_factor = tuanjie_cunsumer_goods
+	war_support_factor = tuanjie_war_support
+	stability_factor = tuanjie_stability
+}
+
+###西北军决议
+#金融管制
+XBJ_quanmian_jieguan_1_dm = {
+    enable = { always = yes }
+    political_power_cost = 0.01
+}
+#物价管制
+XBJ_quanmian_jieguan_2_dm = {
+    enable = { always = yes }
+    consumer_goods_factor = -0.15
+}
+#协调运输
+XBJ_quanmian_jieguan_4_dm = {
+    enable = { always = yes }
+    production_factory_efficiency_gain_factor = 0.05
+}
+#军工优先使用原料
+XBJ_quanmian_jieguan_5_dm = {
+    enable = { always = yes }
+    production_factory_efficiency_gain_factor = 0.025
+    industrial_capacity_factory = 0.05
+    production_speed_buildings_factor = -0.025
+}
+#关陇阴云
+XBJ_guanlong_yingyun_dm = {
+	enable = { always = yes }
+	monthly_population = -0.1
+}
+#定量配给物资
+XBJ_jieyue_changyi_2_dm = {
+    enable = { always = yes }
+    consumer_goods_factor = -0.15
+}
+#拖欠部分货款
+XBJ_jieyue_changyi_3_dm = {
+    enable = { always = yes }
+    political_power_gain = 0.2
+}
+#斗志涣散
+XBJ_douzhi_huansan_dm = {
+	icon = XBJ_Backward_Region
+	enable = { always = yes }
+	army_attack_factor = -0.05
+	army_defence_factor = -0.05
+}
+#伊犁金矿
+XBJ_kuangchan_kaifa_1_1_dm = {
+	enable = { always = yes }
+	icon = GFXss_modifiers_tur_pan_turkic_propaganda
+	consumer_goods_factor = -0.15
+}
+#边疆将领
+XBJ_The_Frontier_Generals_and_Rural_Junkers = {
+	enable = { always = yes }
+	icon = GFX_idea_XBJ_The_Frontier_Generals_and_Rural_Junkers
+        experience_gain_army = xbj_bianjun_army_ex
+        army_chief_cost_factor = xbj_bianjun_chief_cost
+        planning_speed = xbj_bianjun_plan_speed
+        max_planning = xbj_bianjun_max_planning
+        research_speed_factor = xbj_bianjun_research
+        political_power_factor = xbj_bianjun_pp
+        weekly_manpower = xbj_bianjun_manpower
+        consumer_goods_factor = xbj_bianjun_good
+        army_artillery_attack_factor = xbj_bianjun_paobing
+        grant_medal_cost_factor = xbj_bianjun_shouxun
+        experience_loss_factor = xbj_bianjun_jingyanshibing
+        army_morale_factor = xbj_bianjun_zuzhiduhuifu
+        surrender_limit = xbj_bianjun_touxiang
+}
+#调查局
+XBJ_diaochaju = {
+	enable = { always = yes }
+    icon = GFX_idea_DEN_occupation_laws
+    decryption_power_factor = xbj_diaochaju_poyi
+    operative_slot = xbj_diaochaju_tegong
+	opinion_gain_monthly_factor = xbj_diaochaju_gaishan
+}

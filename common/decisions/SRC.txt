@@ -1,0 +1,794 @@
+SRC_baoweigongrenzhengquan_categories = {
+	
+	SRC_baoweigongrenzhengquan = {
+
+		allowed = { tag = SRC } 
+		available = { NOT = { country_exists = GPS } }
+		activation = {
+			has_completed_focus = SRC_workers_pickets
+            country_exists = GPS
+		}
+		ai_will_do = { base = 100 }
+		is_good = yes
+		days_mission_timeout = 30
+		days_re_enable = 0
+		
+		timeout_effect = {
+			add_equipment_to_stockpile = {
+		        type = infantry_equipment
+		        amount = 500
+	        }
+		}
+	}
+}
+
+#各地中央局活动
+SRC_lianxigeming = {
+	### allowed = { always = no } # always is not accepted in this category scope
+	### allowed = { tag = SRC } # category container does not accept an allowed block
+
+	#建立华北局（晋冀鲁豫）
+	SRC_jianlihuabeizhongyangju = {
+		icon = generic_communism
+		
+		visible = {
+			tag = SRC
+			NOT = { has_country_flag = SRC_huabeizhongyangju_established }
+		}
+		
+		available = {
+			country_exists = STG
+			OR = {
+				# 河北+顺天府（冀中、冀南、宣化、冀北、冀东、顺天）
+				1111 = { is_controlled_by = STG }
+				614 = { is_controlled_by = STG }
+				611 = { is_controlled_by = STG }
+				839 = { is_controlled_by = STG }
+				609 = { is_controlled_by = STG }
+				608 = { is_controlled_by = STG }
+				# 山西（晋西、晋中、晋南、雁北）
+				1131 = { is_controlled_by = STG }
+				615 = { is_controlled_by = STG }
+				841 = { is_controlled_by = STG }
+				840 = { is_controlled_by = STG }
+				# 山东（鲁西、胶东、鲁北、鲁南）
+				597 = { is_controlled_by = STG }
+				743 = { is_controlled_by = STG }
+				838 = { is_controlled_by = STG }
+				837 = { is_controlled_by = STG }
+				# 河南（豫北、豫东、河洛、豫西、豫南、信阳）
+				836 = { is_controlled_by = STG }
+				607 = { is_controlled_by = STG }
+				1118 = { is_controlled_by = STG }
+				835 = { is_controlled_by = STG }
+				834 = { is_controlled_by = STG }
+				833 = { is_controlled_by = STG }
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				# 河北+顺天府
+				state = 1111
+				state = 614
+				state = 611
+				state = 839
+				state = 609
+				state = 608
+				# 山西
+				state = 1131
+				state = 615
+				state = 841
+				state = 840
+				# 山东
+				state = 597
+				state = 743
+				state = 838
+				state = 837
+				# 河南
+				state = 836
+				state = 607
+				state = 1118
+				state = 835
+				state = 834
+				state = 833
+			}
+		}
+		
+		cost = 100
+		days_remove = 60
+		fire_only_once = yes
+		
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = SRC_huabeizhongyangju_established
+				random_state = {
+					limit = {
+						OR = {
+							# 河北+顺天府
+							state = 1111
+							state = 614
+							state = 611
+							state = 839
+							state = 609
+							state = 608
+							# 山西
+							state = 1131
+							state = 615
+							state = 841
+							state = 840
+							# 山东
+							state = 597
+							state = 743
+							state = 838
+							state = 837
+							# 河南
+							state = 836
+							state = 607
+							state = 1118
+							state = 835
+							state = 834
+							state = 833
+						}
+						is_controlled_by = STG
+					}
+					set_state_flag = SRC_huabeizhongyangju_location
+				}
+			}
+			add_political_power = -50
+			add_stability = 0.05
+			custom_effect_tooltip = SRC_jianlihuabeizhongyangju_tt
+		}
+		
+		remove_effect = {
+			set_country_flag = SRC_huabeizhongyangju_active
+			add_ideas = SRC_huabeizhongyangju_idea
+			country_event = { id = SRC_zhongyangju.1 }
+		}
+		
+		ai_will_do = { factor = 100 }
+	}
+#建立东北局（黑、吉、镇、辽、宁）
+	SRC_jianlidongbeiju = {
+		icon = generic_communism
+
+		visible = {
+			tag = SRC
+			NOT = { has_country_flag = SRC_dongbeiju_established }
+		}
+
+		available = {
+			has_country_flag = SRC_huabeizhongyangju_active
+		}
+
+		cost = 100
+		days_remove = 45
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = SRC_dongbeiju_established
+			add_political_power = -50
+			custom_effect_tooltip = SRC_jianlidongbeiju_tt
+		}
+
+		remove_effect = {
+			set_country_flag = SRC_dongbeiju_active
+			add_ideas = SRC_dongbeiju_idea
+			country_event = { id = SRC_zhongyangju.2 }
+		}
+
+		ai_will_do = { factor = 100 }
+	}
+
+	#建立东南局（苏、皖、浙、闽、赣、台）
+	SRC_jianlidongnanju = {
+		icon = generic_communism
+
+		visible = {
+			tag = SRC
+			NOT = { has_country_flag = SRC_dongnanju_established }
+		}
+
+		available = {
+			has_country_flag = SRC_huabeizhongyangju_active
+		}
+
+		cost = 100
+		days_remove = 45
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = SRC_dongnanju_established
+			add_political_power = -50
+			custom_effect_tooltip = SRC_jianlidongnanju_tt
+		}
+
+		remove_effect = {
+			set_country_flag = SRC_dongnanju_active
+			add_ideas = SRC_dongnanju_idea
+			country_event = { id = SRC_zhongyangju.3 }
+		}
+
+		ai_will_do = { factor = 100 }
+	}
+
+	#建立中南局（鄂、湘、粤、桂）
+	SRC_jianlizhongnanju = {
+		icon = generic_communism
+
+		visible = {
+			tag = SRC
+			NOT = { has_country_flag = SRC_zhongnanju_established }
+		}
+
+		available = {
+			has_country_flag = SRC_huabeizhongyangju_active
+		}
+
+		cost = 100
+		days_remove = 45
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = SRC_zhongnanju_established
+			add_political_power = -50
+			custom_effect_tooltip = SRC_jianlizhongnanju_tt
+		}
+
+		remove_effect = {
+			set_country_flag = SRC_zhongnanju_active
+			add_ideas = SRC_zhongnanju_idea
+			country_event = { id = SRC_zhongyangju.4 }
+		}
+
+		ai_will_do = { factor = 100 }
+	}
+
+	#建立西南局（川、黔、滇）
+	SRC_jianlixinanju = {
+		icon = generic_communism
+
+		visible = {
+			tag = SRC
+			NOT = { has_country_flag = SRC_xinanju_established }
+		}
+
+		available = {
+			has_country_flag = SRC_huabeizhongyangju_active
+		}
+
+		cost = 100
+		days_remove = 45
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = SRC_xinanju_established
+			add_political_power = -50
+			custom_effect_tooltip = SRC_jianlixinanju_tt
+		}
+
+		remove_effect = {
+			set_country_flag = SRC_xinanju_active
+			add_ideas = SRC_xinanju_idea
+			country_event = { id = SRC_zhongyangju.5 }
+		}
+
+		ai_will_do = { factor = 100 }
+	}
+
+	#建立西北局（陕、甘、朔、青）
+	SRC_jianlixibeiju = {
+		icon = generic_communism
+
+		visible = {
+			tag = SRC
+			NOT = { has_country_flag = SRC_xibeiju_established }
+		}
+
+		available = {
+			has_country_flag = SRC_huabeizhongyangju_active
+		}
+
+		cost = 100
+		days_remove = 45
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = SRC_xibeiju_established
+			add_political_power = -50
+			custom_effect_tooltip = SRC_jianlixibeiju_tt
+		}
+
+		remove_effect = {
+			set_country_flag = SRC_xibeiju_active
+			add_ideas = SRC_xibeiju_idea
+			country_event = { id = SRC_zhongyangju.6 }
+		}
+
+		ai_will_do = { factor = 100 }
+	}
+
+	#建立漠北局（岭北、开平）
+	SRC_jianlimobeiju = {
+		icon = generic_communism
+
+		visible = {
+			tag = SRC
+			NOT = { has_country_flag = SRC_mobeiju_established }
+		}
+
+		available = {
+			has_country_flag = SRC_huabeizhongyangju_active
+		}
+
+		cost = 100
+		days_remove = 45
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = SRC_mobeiju_established
+			add_political_power = -50
+			custom_effect_tooltip = SRC_jianlimobeiju_tt
+		}
+
+		remove_effect = {
+			set_country_flag = SRC_mobeiju_active
+			add_ideas = SRC_mobeiju_idea
+			country_event = { id = SRC_zhongyangju.7 }
+		}
+
+		ai_will_do = { factor = 100 }
+	}
+
+	# 中央局活动：鼓动工人运动（三线可用，强度：任 > 李 > 陈）
+	SRC_huodong_gudonggongrenyundong = {
+		icon = generic_communism
+
+		visible = {
+			always = no
+		}
+
+		available = {
+			SRC_has_any_chairman_route = yes
+		}
+
+		cost = 75
+		days_remove = 21
+		days_re_enable = 45
+
+		remove_effect = {
+			SRC_selected_bureau_worker_activity_effect = yes
+			custom_effect_tooltip = SRC_mobei_activity_worker_effect_tt
+		}
+
+		ai_will_do = { factor = 10 }
+	}
+
+	# 中央局活动：组织地下同志（三线可用）
+	SRC_huodong_zuzhidixiatongzhi = {
+		icon = generic_communism
+
+		visible = {
+			always = no
+		}
+
+		available = {
+			SRC_has_any_chairman_route = yes
+		}
+
+		cost = 60
+		days_remove = 21
+		days_re_enable = 45
+
+		remove_effect = {
+			SRC_selected_bureau_underground_activity_effect = yes
+			custom_effect_tooltip = SRC_mobei_activity_underground_effect_tt
+		}
+
+		ai_will_do = { factor = 10 }
+	}
+
+	# 中央局活动：建立革命政府（三线可用）
+	SRC_huodong_jianligemingzhengfu = {
+		icon = generic_communism
+
+		visible = {
+			always = no
+		}
+
+		available = {
+			SRC_has_any_chairman_route = yes
+		}
+
+		cost = 80
+		days_remove = 28
+		days_re_enable = 70
+
+		remove_effect = {
+			SRC_selected_bureau_revgov_activity_effect = yes
+			custom_effect_tooltip = SRC_mobei_activity_revgov_effect_tt
+		}
+
+		ai_will_do = { factor = 10 }
+	}
+
+	# 中央局活动：鼓动农民运动（三线可用）
+	SRC_huodong_gudongnongminyundong = {
+		icon = generic_communism
+
+		visible = {
+			always = no
+		}
+
+		available = {
+			SRC_has_any_chairman_route = yes
+		}
+
+		cost = 70
+		days_remove = 21
+		days_re_enable = 45
+
+		remove_effect = {
+			SRC_selected_bureau_peasant_activity_effect = yes
+			custom_effect_tooltip = SRC_mobei_activity_peasant_effect_tt
+		}
+
+		ai_will_do = { factor = 10 }
+	}
+
+	# 中央局活动：发动学生运动（李、陈线）
+	SRC_huodong_fadongxueshengyundong = {
+		icon = generic_communism
+
+		visible = {
+			always = no
+		}
+
+		available = {
+			SRC_has_student_activity_route = yes
+		}
+
+		cost = 70
+		days_remove = 21
+		days_re_enable = 60
+
+		remove_effect = {
+			SRC_selected_bureau_student_activity_effect = yes
+			custom_effect_tooltip = SRC_mobei_activity_student_effect_tt
+		}
+
+		ai_will_do = { factor = 10 }
+	}
+
+	# 中央局活动：组织商人运动（李线）
+	SRC_huodong_zuzhishangrenyundong = {
+		icon = generic_communism
+
+		visible = {
+			always = no
+		}
+
+		available = {
+			SRC_has_business_activity_route = yes
+		}
+
+		cost = 75
+		days_remove = 21
+		days_re_enable = 60
+
+		remove_effect = {
+			SRC_selected_bureau_business_activity_effect = yes
+			custom_effect_tooltip = SRC_mobei_activity_business_effect_tt
+		}
+
+		ai_will_do = { factor = 10 }
+	}
+}
+#军事建设
+SRC_junshijianshe_catagories = {
+	#人民战争
+	SRC_renminzhanzheng = {
+
+		allowed = { tag = SRC } 
+		available = { has_idea = extensive_conscription }
+		days_remove = 30
+		custom_cost_trigger = {
+            has_political_power > 50
+            has_army_experience > 25
+		}
+		ai_will_do = { base = 10 }
+        fire_only_once = yes
+		custom_cost_text = SRC_renminzhanzheng_huafei
+        complete_effect = { 
+			hidden_effect = {
+				add_political_power = -50
+				army_experience = -25
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SRC_renminzhanzheng_xiaoguo
+			add_to_variable = { SRC_gemingjunshiweiyuanhui_shiyirenkouxishu = 0.1 }
+			set_country_flag = SRC_renminzhanzheng_wancheng
+		}
+	}
+	#运动战
+	SRC_yundongzhan = {
+
+		allowed = { tag = SRC } 
+		available = { has_tech = tech_recon3 }
+		days_remove = 30
+		custom_cost_trigger = {
+            has_political_power > 50
+            has_army_experience > 25
+		}
+		ai_will_do = { base = 10 }
+        fire_only_once = yes
+		custom_cost_text = SRC_renminzhanzheng_huafei
+        complete_effect = { 
+			hidden_effect = {
+				add_political_power = -50
+				army_experience = -25
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SRC_yundongzhang_xiaoguo
+			add_to_variable = { SRC_gemingjunshiweiyuanhui_dixingchengfa = 0.05 }
+			set_country_flag = SRC_yundongzhan_wancheng
+		}
+	}
+	#步坦协同
+	SRC_butanxietong = {
+
+		allowed = { tag = SRC } 
+		available = {
+			OR = {
+				has_tech = improved_medium_tank_chassis
+				has_tech = improved_heavy_tank_chassis
+			}
+
+		}
+		days_remove = 30
+		custom_cost_trigger = {
+            has_political_power > 50
+            has_army_experience > 25
+		}
+		ai_will_do = { base = 10 }
+        fire_only_once = yes
+		custom_cost_text = SRC_renminzhanzheng_huafei
+        complete_effect = { 
+			hidden_effect = {
+				add_political_power = -50
+				army_experience = -25
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SRC_butanxietong_xiaoguo
+			add_to_variable = { SRC_gemingjunshiweiyuanhui_yidongzuzhidu = -0.2 }
+			set_country_flag =SRC_butanxietong_wancheng
+		}
+	}
+	#三三制
+	SRC_sansanzhi = {
+
+		allowed = { tag = SRC } 
+		available = {
+			OR = {
+				has_completed_focus = SRC_zhonghuagongnonghongjun
+			}
+		}
+		ai_will_do = { base = 10 }
+		days_remove = 30
+		custom_cost_trigger = {
+            has_political_power > 50
+            has_army_experience > 25
+		}
+        fire_only_once = yes
+		custom_cost_text = SRC_renminzhanzheng_huafei
+        complete_effect = { 
+			hidden_effect = {
+				add_political_power = -50
+				army_experience = -25
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SRC_sansanzhi_xiaoguo
+			add_to_variable = { SRC_gemingjunshiweiyuanhui_zuzhidu = 0.05 }
+			set_country_flag = SRC_sansanzhi_wancheng
+		}
+	}
+	#大纵深作战理论
+	SRC_dazongshen = {
+
+		allowed = { tag = SRC } 
+		available = {
+			OR = {
+				has_completed_focus = SRC_zhonghuagongnonghongjun
+			}
+		}
+		ai_will_do = { base = 10 }
+		days_remove = 30
+		custom_cost_trigger = {
+            has_political_power > 50
+            has_army_experience > 25
+		}
+        fire_only_once = yes
+		custom_cost_text = SRC_renminzhanzheng_huafei
+        complete_effect = { 
+			hidden_effect = {
+				add_political_power = -50
+				army_experience = -25
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SRC_dazongshen_xiaoguo
+			add_to_variable = { SRC_gemingjunshiweiyuanhui_tupo = 0.05 }
+			set_country_flag = SRC_dazongshen_wancheng
+		}
+	}
+	#中华革命军事理论
+	SRC_zhonghuagemingjunshililun = {
+
+		allowed = { tag = SRC } 
+		available = { 
+			has_country_flag = SRC_renminzhanzheng_wancheng
+			has_country_flag = SRC_yundongzhan_wancheng
+			has_country_flag = SRC_butanxietong_wancheng
+			has_country_flag = SRC_sansanzhi_wancheng
+			has_country_flag = SRC_dazongshen_wancheng
+		 }
+		ai_will_do = { base = 10 }
+		days_remove = 30
+		custom_cost_trigger = {
+            has_political_power > 50
+            has_army_experience > 25
+		}
+        fire_only_once = yes
+		custom_cost_text = SRC_renminzhanzheng_huafei
+        complete_effect = { 
+			hidden_effect = {
+				add_political_power = -50
+				army_experience = -25
+			}
+		}
+		remove_effect = {
+			remove_dynamic_modifier = { modifier = SRC_gemingjunshiweiyuanhui_4}
+			add_dynamic_modifier = { modifier = SRC_gemingjunshiweiyuanhui_5 }
+		}
+	}
+}
+#宣战
+SRC_xuanzhan_catagories = {
+	#向顺天宣战
+	SRC_shuntiankaizhan = {
+
+		allowed = { tag = SRC } 
+		available = { is_neighbor_of = STG }
+		visible = { has_completed_focus = SRC_huishiruguan }
+		ai_will_do = { base = 10 }
+		days_remove = 30
+        fire_only_once = yes
+		cost = 50
+		remove_effect = {
+			declare_war_on = { target = STG type = annex_everything }
+		}
+	}
+	#向西北军宣战
+	SRC_xiebikaizhan = {
+
+		allowed = { tag = SRC } 
+		available = { is_neighbor_of = XBJ }
+		visible = { has_completed_focus = SRC_huishiruguan }
+		ai_will_do = { base = 10 }
+		days_remove = 30
+        fire_only_once = yes
+		cost = 50
+		remove_effect = {
+			declare_war_on = { target = XBJ type = annex_everything }
+		}
+	}
+	#向七省联合宣战
+	SRC_qishenkaizhan = {
+
+		allowed = { tag = SRC } 
+		available = { is_neighbor_of = GOS }
+		visible = { has_completed_focus = SRC_huishiruguan }
+		ai_will_do = { base = 10 }
+		days_remove = 30
+        fire_only_once = yes
+		cost = 50
+		remove_effect = {
+			declare_war_on = { target = GOS type = annex_everything }
+		}
+	}
+	#广州共和军
+	SRC_guangzhoukaizhan = {
+
+		allowed = { tag = SRC } 
+		available = {
+			is_neighbor_of = ROC
+			OR = {
+				NOT = { has_global_flag = global_flag_ROC_SRC_hetan }
+				has_global_flag = global_flag_hetan_ROC_SRC_fail
+			}
+		}
+		visible = { has_completed_focus = SRC_gemingjinxindaodi }
+		ai_will_do = { base = 10 }
+		days_remove = 30
+        fire_only_once = yes
+		cost = 50
+		remove_effect = {
+			declare_war_on = { target = ROC type = annex_everything }
+		}
+	}
+	#向西南都督府宣战
+	SRC_xinankaizhan = {
+
+		allowed = { tag = SRC } 
+		available = { is_neighbor_of = XIN }
+		visible = { has_completed_focus = SRC_gemingjinxindaodi }
+		ai_will_do = { base = 10 }
+		days_remove = 30
+        fire_only_once = yes
+		cost = 50
+		remove_effect = {
+			declare_war_on = { target = XIN type = annex_everything }
+		}
+	}
+	#四川宣战
+	SRC_sichuankaizhan = {
+
+		allowed = { tag = SRC } 
+		available = { is_neighbor_of = SIC }
+		visible = { has_completed_focus = SRC_gemingjinxindaodi }
+		ai_will_do = { base = 10 }
+		days_remove = 30
+        fire_only_once = yes
+		cost = 50
+		remove_effect = {
+			declare_war_on = { target = SIC type = annex_everything }
+		}
+	}
+	#岭北宣战
+	SRC_lingbeikaizhan = {
+
+		allowed = { tag = SRC } 
+		available = { is_neighbor_of = MOB }
+		visible = { has_completed_focus = SRC_gemingjinxindaodi }
+		ai_will_do = { base = 10 }
+		days_remove = 30
+        fire_only_once = yes
+		cost = 50
+		remove_effect = {
+			declare_war_on = { target = MOB type = annex_everything }
+		}
+	}
+	#合并四川红军
+	SRC_SCGkaizhan = {
+
+		allowed = { tag = SRC } 
+		available = { is_neighbor_of = SCG }
+		visible = { country_exists = SCG }
+		ai_will_do = { base = 100 }
+		days_remove = 30
+        fire_only_once = yes
+		cost = 50
+		remove_effect = {
+			annex_country = {
+				target = SCG
+			}
+            every_state = {
+                limit = {
+                    is_core_of = SCG
+                }
+                add_core_of = SRC
+                remove_core_of = SCG
+            }
+            SCG = {
+                every_unit_leader = {
+                    set_nationality = SRC
+                }
+            }
+		}
+	}
+}
+

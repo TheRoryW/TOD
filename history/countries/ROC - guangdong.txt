@@ -1,0 +1,634 @@
+﻿# capital = 1047 #广州
+# # oob = "ROC_1937_1"
+
+# #基础
+# 	set_politics = {
+# 		ruling_party =  social_democrat
+# 		last_election = "1936.1.1"
+# 		election_frequency = 48
+# 		elections_allowed = no
+# 	}
+
+# 	set_popularities = {
+# 		##先锋
+# 		vanguard_socialism = 1
+# 		##委员会
+# 		council_socialism = 4
+# 		##温和
+# 		moderate_socialism = 18
+# 		##工农
+# 		agroindustrial_socialism = 5
+# 		##社民
+# 		social_democrat = 40
+# 		##调和民主
+# 		consociationalism = 4
+# 		##自由民
+# 		liberal_democracy = 16
+# 		##保保
+# 		conservative_democracy = 5
+# 		##寡头专制
+# 		authoritarian_oligarchy = 5
+# 		##领袖意识
+# 		leader_despotism = 1
+# 		##神圣复兴
+# 		sacred_revivalism = 1
+# 		##国家法团主义
+# 		national_corporatism = 0
+# 	}
+
+# 	#稳定、战支
+# 	set_stability = 0.70
+# 	set_war_support = 0.75
+# 	##油量
+# 	set_fuel_ratio = 0.2
+# 	#科研槽
+# 	set_research_slots = 3
+# 	set_convoys = 0
+
+# #科技
+# 	set_technology = {
+# 		### Tanks ###
+# 		gwtank_chassis = 1
+# 		basic_light_tank_chassis = 1
+# 		improved_light_tank_chassis = 1
+# 		basic_heavy_tank_chassis = 1
+# 		engine_tech_1 = 1
+# 		engine_tech_2 = 1
+# 		armor_tech_1 = 1
+# 		armor_tech_2 = 1
+# 		### INF ###
+# 		infantry_weapons = 1
+# 		infantry_weapons1 = 1
+# 		tech_support = 1
+# 		tech_mountaineers = 1
+# 		marines = 1
+# 		tech_engineers = 1
+# 		tech_recon = 1
+# 		motorised_infantry = 1
+# 		gw_artillery = 1
+# 		### AIR ###
+# 		early_fighter = 1
+# 		naval_bomber1 = 1
+# 		early_bomber = 1
+
+# 		cv_early_fighter = 1
+# 		cv_naval_bomber1 = 1
+# 	}
+
+# #民族精神
+# 	add_ideas = {#开局法律
+# 		export_focus
+# 		volunteer_only
+# 		war_economy
+# 	}
+# 	add_ideas = {#内阁
+# 		ROC_idea_DongBiwu
+# 		ROC_idea_WangZhengting
+# 		ROC_idea_YuShude
+# 		ROC_idea_FangShengdong
+# 	}
+# 	add_ideas = {#国家精神
+# 		ROC_idea_zhonghuagonghezhenyingdebaolei
+# 		ROC_idea_gonghejun
+# 		ROC_idea_meihuazhihai
+# 		ROC_idea_zhudatonghuizhizongzhu
+# 		ROC_idea_weigongheerzhan
+# 		ROC_idea_minzhongduidatonglixiangrenkedu_A
+# 		ROC_idea_datongdangdequanwei
+# 	}
+# 	add_ideas = {
+
+# 	}
+
+# #人物
+#  #领导人
+#  recruit_character = ROC_characters_kelin
+#  recruit_character = ROC_characters_dongbiwu
+#  recruit_character = ROC_characters_huangyanpei
+#  recruit_character = ROC_characters_chenzanxian
+#  recruit_character = ROC_characters_xiaminghan
+#  recruit_character = ROC_characters_xiaxi
+#  recruit_character = ROC_characters_yangzhongchuo
+#  recruit_character = ROC_characters_chenqun
+#  recruit_character = ROC_characters_hezhonghan
+#  recruit_character = ROC_characters_huananjiaofusi
+#  recruit_character = ROC_characters_jinlonghuichaoshanfenduo
+#  recruit_character = ROC_characters_huananjunguohui
+#  #将领
+#  recruit_character = ROC_zhangxiaozhun
+#  recruit_character = ROC_zhangshaozeng
+#  recruit_character = ROC_dengkeng
+#  recruit_character = ROC_lijishen
+#  recruit_character = ROC_chenmingshu
+#  recruit_character = ROC_yuzuobai
+#  recruit_character = ROC_dengyanda
+#  recruit_character = ROC_xueyue
+#  recruit_character = ROC_limingrui
+#  recruit_character = ROC_jiangxianyun
+#  recruit_character = ROC_helong
+#  recruit_character = ROC_zhangfakui
+#  recruit_character = ROC_chengeng
+#  recruit_character = ROC_zhoushidi
+#  recruit_character = ROC_ludeming
+#  recruit_character = ROC_wangerzhuo
+#  recruit_character = ROC_wangyaowu
+#  recruit_character = ROC_lizhangda
+#  recruit_character = ROC_jinfozhuang
+#  recruit_character = ROC_guanlinzheng
+#  recruit_character = ROC_xujishen
+#  recruit_character = ROC_duyuming
+#  recruit_character = ROC_zhuyunqing
+#  recruit_character = ROC_huangqixiang
+#  recruit_character = ROC_caoyuan
+#  recruit_character = ROC_huangzaixin
+#  recruit_character = ROC_xuguangda
+#  recruit_character = ROC_liuchouxi
+#  recruit_character = ROC_duandechang
+#  recruit_character = ROC_caishenxi
+#  recruit_character = ROC_linjianzhang
+#  recruit_character = ROC_chengbiguang
+#  recruit_character = ROC_yangshuzhuang
+#  recruit_character = ROC_chenshaokuan
+#  recruit_character = ROC_chence
+#  recruit_character = ROC_lizhilong
+#  recruit_character = ROC_duxigui
+#  recruit_character = ROC_chenjiliang
+#  recruit_character = ROC_linzun
+
+#  #部长，理论家
+#  recruit_character = ROC_yangxianyi
+#  recruit_character = ROC_huangguangrui
+#  recruit_character = ROC_wangbi
+#  recruit_character = ROC_changqiankun
+#  recruit_character = ROC_liufuji
+# #  recruit_character = ROC_wangganchang
+# #  recruit_character = ROC_wuyouxun
+
+# #开局变量等设定
+capital = 1047 #广州
+oob = "ROC_1937"
+
+#基础
+	set_politics = {
+		ruling_party =  leader_despotism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		##先锋
+		vanguard_socialism = 0
+		##委员会
+		council_socialism = 2
+		##温和
+		moderate_socialism = 5
+		##工农
+		agroindustrial_socialism = 8
+		##社民
+		social_democrat = 10
+		##调和民主
+		consociationalism = 15
+		##自由民
+		liberal_democracy = 5
+		##保保
+		conservative_democracy = 5
+		##寡头专制
+		authoritarian_oligarchy = 0
+		##领袖意识
+		leader_despotism = 45
+		##神圣复兴
+		sacred_revivalism = 0
+		##国家法团主义
+		national_corporatism = 5
+	}
+
+	#稳定、战支
+	set_stability = 0.70
+	set_war_support = 0.75
+	##油量
+	set_fuel_ratio = 0.2
+	#科研槽
+	set_research_slots = 3
+	set_convoys = 0
+
+#科技
+	set_technology = {
+		### Tanks ###
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+		engine_tech_2 = 1
+		armor_tech_1 = 1
+		armor_tech_2 = 1
+		### INF ###
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		tech_support = 1
+		tech_mountaineers = 1
+		marines = 1
+		tech_engineers = 1
+		tech_recon = 1
+		motorised_infantry = 1
+		gw_artillery = 1
+		### AIR ###
+		early_fighter = 1
+		naval_bomber1 = 1
+		early_bomber = 1
+
+		cv_early_fighter = 1
+		cv_naval_bomber1 = 1
+	}
+
+#民族精神
+	add_ideas = {#开局法律
+		export_focus
+		volunteer_only
+		war_economy
+	}
+	add_ideas = {#内阁
+		ROC_idea_WangShijing
+		ROC_idea_Longjiguang
+		ROC_idea_Chenzhuan
+		ROC_idea_Wangkemin
+	}
+	add_ideas = {#国家精神
+		MNG_Unsettled_Republicians
+	}
+	add_ideas = {
+
+	}
+
+#人物
+ #领导人
+ recruit_character = ROC_characters_huananjiaofusi
+ recruit_character = ROC_characters_kelin
+ recruit_character = ROC_characters_dongbiwu
+ recruit_character = ROC_characters_huangyanpei
+ recruit_character = ROC_characters_chenzanxian
+ recruit_character = ROC_characters_xiaminghan
+ recruit_character = ROC_characters_xiaxi
+ recruit_character = ROC_characters_yangzhongchuo
+ recruit_character = ROC_characters_chenqun
+ recruit_character = ROC_characters_hezhonghan
+ recruit_character = ROC_characters_lizhun
+ recruit_character = ROC_characters_jinlonghuichaoshanfenduo
+ recruit_character = ROC_characters_huananjunguohui
+
+ recruit_character = ROC_zhangxiaozhun
+ recruit_character = ROC_zhangshaozeng
+ recruit_character = ROC_dengkeng
+ recruit_character = ROC_lijishen
+ recruit_character = ROC_chenmingshu
+ recruit_character = ROC_yuzuobai
+ recruit_character = ROC_dengyanda
+ recruit_character = ROC_xueyue
+ recruit_character = ROC_limingrui
+ recruit_character = ROC_jiangxianyun
+ recruit_character = ROC_helong
+ recruit_character = ROC_zhangfakui
+ recruit_character = ROC_chengeng
+ recruit_character = ROC_zhoushidi
+ recruit_character = ROC_ludeming
+ recruit_character = ROC_wangerzhuo
+ recruit_character = ROC_wangyaowu
+ recruit_character = ROC_lizhangda
+ recruit_character = ROC_jinfozhuang
+ recruit_character = ROC_guanlinzheng
+ recruit_character = ROC_xujishen
+ recruit_character = ROC_duyuming
+ recruit_character = ROC_zhuyunqing
+ recruit_character = ROC_huangqixiang
+ recruit_character = ROC_caoyuan
+ recruit_character = ROC_huangzaixin
+ recruit_character = ROC_xuguangda
+ recruit_character = ROC_liuchouxi
+ recruit_character = ROC_duandechang
+ recruit_character = ROC_caishenxi
+ recruit_character = ROC_linjianzhang
+ recruit_character = ROC_chengbiguang
+ recruit_character = ROC_yangshuzhuang
+recruit_character = ROC_chenshaokuan
+### recruit_character = ROC_chence
+recruit_character = ROC_lizhilong
+ recruit_character = ROC_duxigui
+ recruit_character = ROC_chenjiliang
+ recruit_character = ROC_linzun
+ recruit_character = ROC_zhaosheng
+ recruit_character = ROC_tangrongbing
+ recruit_character = ROC_wuzhixin
+ recruit_character = ROC_lishijia
+ recruit_character = ROC_xufengzao
+ recruit_character = ROC_caozhongyuan
+#  #部长，理论家
+ recruit_character = ROC_yangxianyi
+ recruit_character = ROC_huangguangrui
+ recruit_character = ROC_wangbi
+ recruit_character = ROC_changqiankun
+ recruit_character = ROC_liufuji
+ recruit_character = ROC_anjiaju
+ recruit_character = ROC_wangganchang
+ recruit_character = ROC_fengru
+ recruit_character = ROC_wuyouxun
+#  recruit_character = ROC_wangganchang
+#  recruit_character = ROC_wuyouxun
+ retire_character = ROC_anjiaju
+ retire_character = ROC_caozhongyuan
+ retire_character = ROC_zhaosheng
+ retire_character = ROC_tangrongbing
+ retire_character = ROC_wuzhixin
+ retire_character = ROC_lishijia
+ retire_character = ROC_xufengzao
+ retire_character = ROC_zhangxiaozhun
+ retire_character = ROC_zhangshaozeng
+ retire_character = ROC_dengkeng
+ retire_character = ROC_lijishen
+ retire_character = ROC_chenmingshu
+ retire_character = ROC_yuzuobai
+ retire_character = ROC_dengyanda
+ retire_character = ROC_xueyue
+ retire_character = ROC_limingrui
+ retire_character = ROC_jiangxianyun
+ retire_character = ROC_helong
+ retire_character = ROC_zhangfakui
+ retire_character = ROC_chengeng
+ retire_character = ROC_zhoushidi
+ retire_character = ROC_ludeming
+ retire_character = ROC_wangerzhuo
+ retire_character = ROC_wangyaowu
+ retire_character = ROC_lizhangda
+ retire_character = ROC_jinfozhuang
+ retire_character = ROC_guanlinzheng
+ retire_character = ROC_xujishen
+ retire_character = ROC_duyuming
+ retire_character = ROC_zhuyunqing
+ retire_character = ROC_huangqixiang
+ retire_character = ROC_caoyuan
+ retire_character = ROC_huangzaixin
+ retire_character = ROC_xuguangda
+ retire_character = ROC_liuchouxi
+ retire_character = ROC_duandechang
+ retire_character = ROC_caishenxi
+ retire_character = ROC_linjianzhang
+ retire_character = ROC_chengbiguang
+ retire_character = ROC_yangshuzhuang
+retire_character = ROC_chenshaokuan
+### retire_character = ROC_chence
+retire_character = ROC_lizhilong
+ retire_character = ROC_duxigui
+ retire_character = ROC_chenjiliang
+ retire_character = ROC_linzun
+
+#  #部长，理论家
+ retire_character = ROC_yangxianyi
+ retire_character = ROC_huangguangrui
+ retire_character = ROC_wangbi
+ retire_character = ROC_changqiankun
+ retire_character = ROC_liufuji
+ retire_character = ROC_characters_huananjiaofusi
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	### Variants ###
+	# 潜艇 #
+	create_equipment_variant = {
+		name = "贰佰千字文级"
+		type = ship_hull_submarine_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "壹佰千字文级"
+		type = ship_hull_submarine_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	# 驱逐舰 #
+	create_equipment_variant = {
+		name = "国风级"
+		type = ship_hull_light_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "国风级（甲型）"
+		type = ship_hull_light_2
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "国风级（乙型）"
+		type = ship_hull_light_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "国风级（丙型）"
+		type = ship_hull_light_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	# 轻型巡洋舰 #
+	create_equipment_variant = {
+		name = "泊级"
+		type = ship_hull_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "湖级"
+		type = ship_hull_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+
+	# 重型巡洋舰 #
+	create_equipment_variant = {
+		name = "江级"
+		type = ship_hull_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+	}
+
+	# 战列巡洋舰 #
+	create_equipment_variant = {
+		name = "丘级"
+		type = ship_hull_heavy_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bc_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# 战列舰 #
+	create_equipment_variant = {
+		name = "岳级"
+		type = ship_hull_heavy_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "山级"
+		type = ship_hull_heavy_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = yes
+	}
+	# 航空母舰 #
+	create_equipment_variant = {
+		name = "星级"
+		type = ship_hull_carrier_conversion_bb
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = ship_deck_space
+		}
+		obsolete = yes
+	}
+}

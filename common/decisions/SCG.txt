@@ -1,0 +1,158 @@
+#全川起义
+SCG_quanchuanqiyi_categories = {
+	
+	SIC_chuannanqiyi = {
+		icon = ger_military_buildup
+		
+		allowed = { tag = SCG } 
+		target_trigger = {}
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 751 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = { base = 10 }
+		remove_effect = { 
+			custom_effect_tooltip = SCG.tt.2
+			751 = { add_core_of = SCG }
+		}
+	}
+	SIC_chuanbeiqiyi = {
+		icon = ger_military_buildup
+		
+		allowed = { tag = SCG } 
+		target_trigger = {}
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 832 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = { base = 10 }
+		remove_effect = { 
+			custom_effect_tooltip = SCG.tt.2
+			832 = {add_core_of = SCG}
+		}
+	}
+	SIC_chuandongqiyi = {
+		icon = ger_military_buildup
+		
+		allowed = { tag = SCG } 
+		target_trigger = {}
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 605 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = { base = 10 }
+		remove_effect = { 
+			custom_effect_tooltip = SCG.tt.2
+			605 = {add_core_of = SCG}
+		}
+	}
+	SIC_chongqingqiyi = {
+		icon = ger_military_buildup
+		
+		allowed = { tag = SCG } 
+		target_trigger = {}
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 830 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = { base = 10 }
+		remove_effect = { 
+			custom_effect_tooltip = SCG.tt.2
+			830 = {add_core_of = SCG}
+		}
+	}
+	SIC_chuanbianqiyi = {
+		icon = ger_military_buildup
+		
+		allowed = { tag = SCG } 
+		target_trigger = {}
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 752 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = { base = 10 }
+		remove_effect = { 
+			custom_effect_tooltip = SCG.tt.2
+			752 = {add_core_of = SCG}
+		}
+	}
+	SIC_chuanxinanqiyi = {
+		icon = ger_military_buildup
+		
+		allowed = { tag = SCG } 
+		target_trigger = {}
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 1219 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = { base = 10 }
+		remove_effect = { 
+			custom_effect_tooltip = SCG.tt.2
+			1219 = {add_core_of = SCG}
+		}
+	}
+	SIC_ganziqiyi = {
+		icon = ger_military_buildup
+		
+		allowed = { tag = SCG } 
+		target_trigger = {}
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 1107 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = { base = 10 }
+		remove_effect = { 
+			custom_effect_tooltip = SCG.tt.2
+			1107 = {add_core_of = SCG}
+		}
+	}
+	
+	SIC_xizangqiyi = {
+		icon = ger_military_buildup
+		
+		allowed = { tag = SCG } 
+		target_trigger = {}
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 601 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = { base = 10 }
+		remove_effect = { 
+			custom_effect_tooltip = SCG.tt.2
+			601 = {add_core_of = SCG}
+			1106 = {add_core_of = SCG}
+			1254 = {add_core_of = SCG}
+			757 = {add_core_of = SCG}
+			322 = {add_core_of = SCG}
+			1127 = {add_core_of = SCG}
+			758 = {add_core_of = SCG}
+			787 = {add_core_of = SCG}
+		}
+	}
+
+
+}

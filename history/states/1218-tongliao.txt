@@ -1,0 +1,27 @@
+state={
+	id=1218
+	name="STATE_1218"
+	resources={
+		coal = 12
+	}
+	history={
+		owner = MNG
+		add_core_of = MNG
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			1499 5
+		}
+	}
+
+	provinces={
+		1499 4514 11903 12478 13520 1638
+	}
+	manpower=400000
+	buildings_max_level_factor=1.000
+	state_category=town
+}
+
+

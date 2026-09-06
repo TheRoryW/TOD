@@ -12,15 +12,13 @@ state={
 			9948 3 
 		}
 		buildings = {
-			infrastructure = 1
-			arms_factory = 1
-			industrial_complex = 1
+			infrastructure = 2
 
 		}
 
 	}
-	manpower=0
+	manpower=409948
 	buildings_max_level_factor=1.000
-	state_category=six
+	state_category=two
 	local_supplies=0.000
 }

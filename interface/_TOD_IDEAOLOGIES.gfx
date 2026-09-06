@@ -10,8 +10,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_moderate socialism_group"
-		texturefile = "gfx/interface/ideologies/moderate socialism_group.png"
+		name = "GFX_ideology_moderate_socialism_group"
+		texturefile = "gfx/interface/ideologies/moderate_socialism_group.png"
 	}
 	
 	spriteType = {
@@ -57,6 +57,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_national_corporatism_group"
 		texturefile = "gfx/interface/ideologies/national_corporatism_group.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_datonglism_subtype"
+		texturefile = "gfx/interface/ideologies/datonglism_group.png"
+	}	
+
+	spriteType = {
+		name = "GFX_ideology_HeZhong_Socialism_subtype"
+		texturefile = "gfx/interface/ideologies/HeZhong_Socialism_group.png"
 	}
 
 	spriteType = {
@@ -132,7 +142,10 @@ spriteTypes = {
 		name = "GFX_national_corporatism_small"
 		texturefile = "gfx/interface/ideologies/national_corporatism_small.png"
 	}
-
+	spriteType = {
+		name = "GFX_datonglism_small"
+		texturefile = "gfx/interface/ideologies/datonglism_small.png"
+	}
 
 
 }

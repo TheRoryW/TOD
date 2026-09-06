@@ -31,3 +31,4 @@ units= {
 			ship = { name = "AEM Lazaga13" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USM version_name = "Alsedo Class" } } }
 		}
 	}
+}

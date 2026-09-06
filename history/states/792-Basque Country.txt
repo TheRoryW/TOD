@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = KSN
+		owner = SPR
 		victory_points = {
 			740 10
 		}
@@ -15,13 +15,13 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 1
+			dockyard = 1
 			740 = {
 				naval_base = 1
 			}
 			air_base = 1
 		}
-		add_core_of = SPR
-
+		add_core_of = SPR 
 	}
 
 	provinces={

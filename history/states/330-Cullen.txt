@@ -1,15 +1,20 @@
 
-state={
-	id=330
-	name="STATE_330"
+state = {
+	id = 330
+	name = "STATE_330"
 	
-	resources={
-		tungsten=20
+	resources = {
+		tungsten = 20
+		steel = 20
 	}
 
 	history={
 		owner = MNG
 		add_core_of = MNG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
 		victory_points = {
 			4801 5 
 		}
@@ -24,5 +29,5 @@ state={
 	}
 	manpower=562810
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category=five
 }

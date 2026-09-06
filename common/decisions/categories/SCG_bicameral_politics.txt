@@ -1,0 +1,20 @@
+SCG_liangyuan_zhengzhi_categories = {
+	priority = 110
+	icon = generic_political_discourse
+	allowed = { tag = SCG }
+	visible = { has_completed_focus = SCG_geminghou_diyici_huiyi }
+}
+
+SCG_chongjian_categories = {
+	priority = 115
+	icon = generic_economy
+	allowed = { tag = SCG }
+	visible = { has_completed_focus = SCG_geminghou_diyici_huiyi }
+}
+
+SCG_quanguo_geming_categories = {
+	priority = 140
+	icon = generic_political_discourse
+	allowed = { tag = SCG }
+	visible = { has_completed_focus = SCG_quanguo_shehuizhuyi_zhengdang_huiyi }
+}

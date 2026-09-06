@@ -1,0 +1,14 @@
+
+units = {
+	division= {	
+		location = 4925
+		division_template = "革命士兵团"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		location = 4925
+		division_template = "革命士兵团"
+		start_experience_factor = 0.1
+	}
+}
+	

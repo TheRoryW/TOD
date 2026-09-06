@@ -6,13 +6,21 @@ state={
 		owner = MNG
 		add_core_of = MNG
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = {
-			7459 2 
+			7459 5
 		}
-
+		victory_points = {
+			10434 3
+		}
+		victory_points = {
+			13374 2
+		}
+		victory_points = {
+			13373 2
+		}
 	}
 
 	provinces={

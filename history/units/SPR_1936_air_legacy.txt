@@ -1,0 +1,18 @@
+air_wings = {
+	41 = {
+		fighter_equipment_0 = { owner = "SPR" amount = 136 }
+		fighter_equipment_0 = { owner = "SPR" amount = 96 }
+		tac_bomber_equipment_1 = { owner = "SPR" amount = 60 }
+	}
+	169 = {
+		fighter_equipment_0 = { owner = "SPR" amount = 96 }
+		fighter_equipment_0 = { owner = "SPR" amount = 96 }
+		tac_bomber_equipment_1 = { owner = "SPR" amount = 90 }
+		tac_bomber_equipment_0 = { owner = "SPR" amount = 24 }
+	}
+	168 = {
+		fighter_equipment_0 = { owner = "SPR" amount = 48 }
+		tac_bomber_equipment_1 = { owner = "SPR" amount = 30 }
+		nav_bomber_equipment_1 = { owner = "SPR" amount = 24 }
+	}
+}

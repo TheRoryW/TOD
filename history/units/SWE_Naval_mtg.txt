@@ -166,7 +166,7 @@ units = {
 			ship = { name = "HSwMUB-017" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "whale Class" } } }
 			ship = { name = "HSwMUB-018" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "whale Class" } } }
 			ship = { name = "HSwMUB-019" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "whale Class" } } }
-			ship = { name = "HSwMUB-020" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "whale Class" } } }
+			ship = { name = "HSwMUB-020 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "whale Class" } } }
 			ship = { name = "HSwMUB-100" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "whale Class" } } }
 			ship = { name = "HSwMUB-101" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "whale Class" } } }
 			ship = { name = "HSwMUB-102" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SWE version_name = "whale Class" } } }

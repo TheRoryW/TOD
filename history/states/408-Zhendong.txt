@@ -7,10 +7,11 @@ state={
 		owner = MNG
 		add_core_of = MNG
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			industrial_complex = 1
 			arms_factory = 1
 			dockyard = 1
+			air_base = 4
 			957 = {
 				naval_base = 8
 			}
@@ -19,7 +20,10 @@ state={
 			957 15 
 		}
 		victory_points = {
-			3977 1 
+			3977 3 
+		}
+		victory_points = {
+			783 1 
 		}
 
 	}
@@ -29,5 +33,5 @@ state={
 	}
 	manpower=1317321
 	buildings_max_level_factor=1.000
-	state_category=six
+	state_category=seven
 }

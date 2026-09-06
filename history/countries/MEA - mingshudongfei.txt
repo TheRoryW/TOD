@@ -1,0 +1,16 @@
+capital = 546
+
+set_oob = "MEA_1936"
+
+set_politics = {
+	ruling_party = authoritarian_oligarchy
+	last_election = "1931.12.12"
+	election_frequency = 68
+	elections_allowed = no
+}
+
+set_popularities = {
+	authoritarian_oligarchy = 100
+}
+
+recruit_character = MEA_zhang_zongchang

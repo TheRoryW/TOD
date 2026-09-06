@@ -1,0 +1,1434 @@
+﻿capital = 608
+
+#军队编制
+
+oob = "MNG_1936"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# set_naval_oob = "MNG_Naval_mtg"
+	# else = { set_naval_oob = "MNG_Naval_legacy" }
+}
+1193 = { add_dynamic_modifier = { modifier = asian_heart } }
+1128 = { add_dynamic_modifier = { modifier = Fuyu_rare_earth_group } }
+617 = { add_dynamic_modifier = { modifier = Yuanye_Oilfield } }
+1113 = { add_dynamic_modifier = { modifier = Yumen_Oilfield } }
+756 = { add_dynamic_modifier = { modifier = Gansu_mining_and_mining_group } }
+843 = { add_dynamic_modifier = { modifier = Saishang_jiangnan } }
+744 = { add_dynamic_modifier = { modifier = Fertile_soil } }
+324 = { add_dynamic_modifier = { modifier = Forgotten_land } }
+759 = { add_dynamic_modifier = { modifier = Forgotten_land } }
+1129 = { add_dynamic_modifier = { modifier = Forgotten_land } }
+287 = { add_dynamic_modifier = { modifier = Forgotten_land } }
+755 = { add_dynamic_modifier = { modifier = Desolate_land } }
+746 = { add_dynamic_modifier = { modifier = Desolate_land } }
+set_country_flag = MNG_dongyantielutongche_1
+
+
+set_convoys = 800
+add_dynamic_modifier = { modifier = MNG_xianzhenghuidebuhe }
+add_dynamic_modifier = { modifier = MNG_A_Suspected_Army }
+add_dynamic_modifier = { modifier = MNG_gonghepaideweixie }
+add_ideas = {
+	MNG_Undesirable_economic_recovery
+	MNG_Dominant_power_of_Far_East
+
+	MNG_zhang_wei_han_hog_con
+	MNG_zhu_zhao_xin_for_con
+	MNG_zhang_guo_gan_eco_con
+	MNG_yin_wu_lou_sec_con
+	### MNG_bao_gui_qing_carm_sco # 原 add_ideas 引用；该 ID 属于旧 minister 结构，不是可加载 idea
+	### MNG_sa_zhen_bing_cnav_ade # 原 add_ideas 引用；该 ID 属于旧 minister 结构，不是可加载 idea
+	### MNG_jiang_yan_xing_cos_sco # 原 add_ideas 引用；该 ID 属于旧 minister 结构，不是可加载 idea
+	MNG_RYU_zaochuanchang
+	### AthCfc_type  # invalid idea, disabled
+}
+add_to_variable = { MNG_zijinxi = 60 }
+add_to_variable = { MNG_wubeixi = 40 }
+add_to_variable = { MNG_guanxuexi = 35 }
+add_to_variable = { MNG_qingzhengxi = 25 }
+add_to_variable = { MNG_jiaotongxi = 25 }
+add_to_variable = { MNG_zhengxuexi = 25 }
+add_to_variable = { MNG_boyishijian_1 = 30 }
+add_to_variable = { MNG_boyishijian_2 = 52 }
+add_to_variable = { MNG_boyishijian_3 = 0 }
+add_to_variable = { MNG_boyidianshu = 15 }
+add_to_variable = { MNG_boyidianshu_fu = -15 }
+add_to_variable = { MNG_xianzhenghuidebuhe_zhengzhidian = -0.7 }
+add_to_variable = { MNG_xianzhenghuidebuhe_wendingdu = -0.2 }
+add_to_variable = { MNG_xianzhenghuidebuhe_zhanzhengzhichidu = -0.07 }
+add_to_variable = { MNG_xianzhenghuidebuhe_guwenhuafei = 0.25 }
+add_to_variable = { MNG_A_Suspected_Army_xunlianshijan = 0.2 }
+add_to_variable = { MNG_A_Suspected_Army_zhaomu = -0.25 }
+add_to_variable = { MNG_A_Suspected_Army_feihexing = -0.75 }
+add_to_variable = { MNG_A_Suspected_Army_lujunxueshuo = -0.25 }
+add_to_variable = { MNG_A_Suspected_Army_haijunxueshuo = -0.25 }
+add_to_variable = { MNG_A_Suspected_Army_zhanzhengzhichi = -0.05 }
+add_to_variable = { MNG_A_Suspected_Army_sudu = -0.25 }
+add_to_variable = { MNG_A_Suspected_Army_gongji = -0.2 }
+add_to_variable = { MNG_A_Suspected_Army_fangyu = -0.2 }
+add_to_variable = { MNG_A_Suspected_Army_zhihuidian = -0.35 }
+add_to_variable = { MNG_A_Suspected_Army_zuzhidu = -0.1 }
+add_to_variable = { MNG_A_Suspected_Army_zengyuan = -0.01 }
+add_to_variable = { MNG_A_Suspected_Army_sunhao = 0.1 }
+add_to_variable = { MNG_A_Suspected_Army_xiaofeiping = 0.8 }
+add_to_variable = { MNG_gonghepaideweixie_shemingzhuyisixiang = 0.03 }
+add_to_variable = { MNG_gonghepaideweixie_wenheshehuizhuyisixiang = 0.02 }
+add_to_variable = { MNG_gonghepaideweixie_xianfengshehuizhuyisixiang = 0.02 }
+add_to_variable = { MNG_gonghepaideweixie_wendingdu = -0.15 }
+add_to_variable = { MNG_gonghepaideweixie_zhanzhengzhichidu = -0.15 }
+add_to_variable = { MNG_gonghepaideweixie_gongchangchanchu = -0.1 }
+
+set_politics = {
+	ruling_party = authoritarian_oligarchy
+	last_election = "1888.6.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	national_corporatism = 2
+	leader_despotism = 23
+	authoritarian_oligarchy = 32
+	conservative_democracy = 20
+	liberal_democracy = 8
+	moderate_socialism = 8
+	social_democrat = 3
+	vanguard_socialism = 4
+}
+
+recruit_character = MNG_Changde
+recruit_character = MNG_characters_zxz
+recruit_character = MNG_huangmingjunguohui
+recruit_character = MNG_zunhuangrangyishe
+recruit_character = MNG_Wang_yongjiang
+recruit_character = MNG_Yang_du
+recruit_character = MNG_Shi_zhaoji
+recruit_character = MNG_Shi_jiaxiu
+recruit_character = MNG_Song_jiaoren
+recruit_character = MNG_Ke_ling
+recruit_character = MNG_Dong_Biwu
+recruit_character = MNG_Bai_lang
+recruit_character = MNG_Tongchangonghuizhongyang_1
+recruit_character = MNG_Tongchangonghuizhongyang_2
+#recruit_character = MNG_chizhang_zhujuanlin
+
+
+recruit_character = MNG_1_yu_zhishan
+### recruit_character = MNG_1_lian_chengji
+recruit_character = MNG_1_yang_yuting
+### recruit_character = MNG_1_chen_duxiu
+### recruit_character = MNG_1_du_jiceng
+### recruit_character = MNG_1_li_dazhao
+recruit_character = MNG_1_ma_zhanshan
+recruit_character = MNG_1_wu_junsheng
+recruit_character = MNG_1_zhang_zuoxiang
+recruit_character = MNG_1_wei_yisan
+recruit_character = MNG_1_meng_enyuan
+recruit_character = MNG_1_yu_zheng
+recruit_character = MNG_1_shan_duowen
+recruit_character = MNG_1_ying_detian
+recruit_character = MNG_1_sun_mingjiu
+recruit_character = MNG_1_shen_honglie
+recruit_character = MNG_1_chang_yinghuai
+recruit_character = MNG_1_xu_lanzhou
+recruit_character = MNG_1_yu_xuezhong
+recruit_character = MNG_1_wang_yizhe
+recruit_character = MNG_1_zhang_haipeng
+recruit_character = MNG_1_he_zhuguo
+recruit_character = MNG_1_wang_shuchang
+recruit_character = MNG_1_xing_shilian
+recruit_character = MNG_1_miao_jianqiu
+recruit_character = MNG_1_bao_wenyue
+recruit_character = MNG_1_zhou_zuohua
+recruit_character = MNG_1_wen_shude
+recruit_character = MNG_1_wan_fulin
+recruit_character = MNG_1_wu_yuanwu
+recruit_character = MNG_1_ying_zuoqian
+recruit_character = MNG_1_sun_liechen
+ #领导人
+	### recruit_character = MNG_2_characters_wwkx
+	### recruit_character = MNG_characters_zxz # 本文件前段已招募，避免重复分配
+	### recruit_character = MNG_2_characters_yk
+	### recruit_character = MNG_2_characters_wsh
+	### recruit_character = MNG_2_characters_zzd
+	### recruit_character = MNG_2_characters_xbh
+	### recruit_character = MNG_2_characters_lyz
+	### recruit_character = MNG_2_characters_hjw
+	### recruit_character = MNG_2_characters_qym
+	### recruit_character = MNG_2_characters_scz # 该角色已作为领导人招募，避免再次作为将领分配
+	### recruit_character = MNG_2_characters_zyx
+	### recruit_character = MNG_2_characters_zbj
+ #将领	
+	recruit_character = MNG_2_ctk
+	recruit_character = MNG_2_characters_scz
+	recruit_character = MNG_2_lz
+	recruit_character = MNG_2_lg
+	recruit_character = MNG_2_hj
+	recruit_character = MNG_2_jyw
+	recruit_character = MNG_2_zzx
+	retire_character = MNG_2_zzx
+	recruit_character = MNG_2_cyb
+	recruit_character = MNG_2_gzt
+	recruit_character = MNG_2_llj
+	recruit_character = MNG_2_hyq
+	recruit_character = MNG_2_xyn
+	recruit_character = MNG_2_sxl 
+	recruit_character = MNG_2_qdj
+	recruit_character = MNG_2_zzw 
+	recruit_character = MNG_2_zzz
+	recruit_character = MNG_2_lky
+	recruit_character = MNG_2_lk
+	recruit_character = MNG_2_xsl
+	recruit_character = MNG_2_qqq
+	recruit_character = MNG_2_xkx
+	recruit_character = MNG_2_slr
+	recruit_character = MNG_2_cqm
+	recruit_character = MNG_2_cgs
+	recruit_character = MNG_2_xsh
+	recruit_character = MNG_2_hcj
+	recruit_character = MNG_2_xyq
+	recruit_character = MNG_2_lyx 
+	recruit_character = MNG_2_dal
+	recruit_character = MNG_2_hkz
+	recruit_character = MNG_2_zxb
+	recruit_character = MNG_2_fanhanjie
+	recruit_character = MNG_2_huzongnan
+	recruit_character = MNG_2_yjs
+	recruit_character = MNG_2_hw
+	recruit_character = MNG_2_cgy
+	recruit_character = MNG_2_sl_2
+	recruit_character = MNG_2_sl_1
+ #部长，理论家
+	recruit_character = MNG_2_wurenli
+	recruit_character = MNG_2_guiyongqing
+	recruit_character = MNG_2_xhs
+	recruit_character = MNG_2_zzr
+	recruit_character = MNG_2_wlz
+	recruit_character = MNG_2_chence
+	recruit_character = MNG_2_lingxiao
+	recruit_character = MNG_2_ouyangge
+	recruit_character = MNG_2_xiasunpeng
+	recruit_character = MNG_2_ganlianao
+	recruit_character = MNG_2_liuyonggao
+	recruit_character = MNG_2_chenganqing
+	recruit_character = MNG_2_chenzhaoqiang
+	recruit_character = MNG_2_raohuaiwen
+	# recruit_character = MNG_2_qxs
+	# recruit_character = MNG_2_zzy
+
+### recruit_character = MNG_3_zhu_rongkun
+### recruit_character = MNG_3_zhu_rongkun_kongjun
+### recruit_character = MNG_3_zhu_rongkun_haijun
+### recruit_character = MNG_3_yi_xinhui
+### recruit_character = MNG_Wang_yongjiang # 本文件前段已招募，避免重复分配
+### recruit_character = MNG_3_zhu_qichen
+### recruit_character = MNG_3_liang_ruhao
+### recruit_character = MNG_3_chen_yilong
+### recruit_character = MNG_Bai_lang # 本文件前段已招募，避免重复分配
+### recruit_character = MNG_3_zhou_enlai
+recruit_character = MNG_3_sun_chuanfang
+recruit_character = MNG_3_yan_xishan
+recruit_character = MNG_3_wang_shizheng
+recruit_character = MNG_3_duan_qirui
+recruit_character = MNG_3_feng_guozhang
+recruit_character = MNG_3_qing_guoyong
+recruit_character = MNG_3_li_ruyan
+recruit_character = MNG_3_bao_bingcheng
+recruit_character = MNG_3_cai_tinggan
+recruit_character = MNG_3_qu_tongfeng
+recruit_character = MNG_3_li_yuanhong
+recruit_character = MNG_3_yuan_keding
+recruit_character = MNG_3_cai_chengxun
+recruit_character = MNG_3_cao_kun
+recruit_character = MNG_3_feng_yong
+recruit_character = MNG_3_li_chun
+recruit_character = MNG_3_shang_zheng
+recruit_character = MNG_3_jiang_dengxuan
+recruit_character = MNG_3_zhou_fengqi
+recruit_character = MNG_3_han_fuqu
+recruit_character = MNG_3_shangguan_yunxiang
+recruit_character = MNG_3_zhou_yingren
+recruit_character = MNG_3_chen_tiaoyuan
+recruit_character = MNG_3_shi_yousan
+recruit_character = MNG_3_sun_dianying
+recruit_character = MNG_3_lu_xiangting
+recruit_character = MNG_3_wang_jingguo
+recruit_character = MNG_3_cao_shijie
+recruit_character = MNG_3_li_fuying
+recruit_character = MNG_3_li_jinglin
+recruit_character = MNG_3_qing_dechun
+recruit_character = MNG_3_li_xianzhou
+recruit_character = MNG_3_wang_zhanyuan
+recruit_character = MNG_3_wu_mingling
+recruit_character = MNG_3_tang_xiangming
+recruit_character = MNG_3_qi_kuiyuan
+### recruit_character = MNG_zunhuangrangyishe # 本文件前段已招募，避免重复分配
+### recruit_character = MNG_3_cai_yuanpei
+### recruit_character = MNG_3_ge_gongzhen
+### recruit_character = MNG_3_zhao_shiyan
+
+### recruit_character = MNG_4_Zhu_Juanshen
+### recruit_character = MNG_4_Fan_Jingsheng
+### recruit_character = MNG_4_Jin_Shuren
+recruit_character = MNG_4_Jiang_Baili
+### recruit_character = MNG_4_Ma_Hongbing
+### recruit_character = MNG_4_Zhu_Ruichi
+### recruit_character = MNG_4_Ehmetjan_Qasim
+### recruit_character = MNG_4_Chen_Cheng
+### recruit_character = MNG_4_Zunun_Taipov
+### recruit_character = MNG_4_Du_Qianxue
+### recruit_character = MNG_4_Fan_Yaonan
+recruit_character = MNG_4_Jiang_Dingwen
+recruit_character = MNG_4_Cheng_Xixian
+recruit_character = MNG_4_Gao_Jun
+recruit_character = MNG_4_Ge_Jinzhang
+recruit_character = MNG_4_Guo_Jiqiao
+recruit_character = MNG_4_Guo_Jian
+recruit_character = MNG_4_Guo_Zhigang
+recruit_character = MNG_4_sunlianzhong
+recruit_character = MNG_4_Jing_Wumu
+recruit_character = MNG_4_Ma_Buqing
+recruit_character = MNG_4_Ma_Fuxiang
+recruit_character = MNG_4_Ma_Hongkui
+recruit_character = MNG_4_Sun_Yuanliang
+recruit_character = MNG_4_Wen_Chenglie
+recruit_character = MNG_4_Yang_Hucheng
+recruit_character = MNG_4_Zhang_Fenghui
+recruit_character = MNG_4_Zhang_Weixi
+recruit_character = MNG_4_Zhao_Xipin
+recruit_character = MNG_4_Zhao_Zhangcheng
+recruit_character = MNG_4_Wei_Lihuang
+recruit_character = MNG_4_Ji_Hongchang
+recruit_character = MNG_4_Chen_jinkui
+recruit_character = MNG_4_feng_zhaoquan
+recruit_character = MNG_4_Shi_Jingting
+recruit_character = MNG_4_Zhang_Zhijiang
+recruit_character = MNG_4_Li_Mingzhong
+recruit_character = MNG_4_Liu_Yufen
+recruit_character = MNG_4_Song_Zheyuan
+recruit_character = MNG_4_Lu_Zhonglin
+recruit_character = MNG_4_Shen_Jinchen
+
+### recruit_character = MNG_5_He_Guoguang
+### recruit_character = MNG_5_Zhang_lan
+### recruit_character = MNG_5_Zeng_Qi
+recruit_character = MNG_5_Yang_Sen
+### recruit_character = MNG_5_Yin_Changheng
+recruit_character = MNG_5_Xiong_Kewu
+### recruit_character = MNG_5_Wang_Youmu
+recruit_character = MNG_5_wang_zanxu
+recruit_character = MNG_5_wang_lingji
+recruit_character = MNG_5_liu_chengxun
+recruit_character = MNG_5_lai_xinghui
+recruit_character = MNG_5_deng_xihou
+recruit_character = MNG_5_wang_mingzhang
+recruit_character = MNG_5_dan_yixin
+recruit_character = MNG_5_liu_cunhou
+recruit_character = MNG_5_lv_chao
+recruit_character = MNG_5_li_jiayu
+recruit_character = MNG_5_rao_guohua
+recruit_character = MNG_5_guo_xunqi
+
+country_lock_all_division_template = yes
+
+# DIPLOMACY
+
+create_faction_from_template = faction_template_tianchao
+add_to_faction = MNG
+#add_to_faction = MOB
+#add_to_faction = UTS
+#add_to_faction = LPC
+add_to_faction = ZHR
+add_to_faction = LAF
+add_to_faction = BNG
+add_to_faction = EZO
+add_to_faction = EXN
+add_to_faction = MEA
+add_to_faction = KOR
+add_to_faction = WJP
+add_to_faction = EDO
+add_to_faction = BRM
+add_to_faction = SIA
+add_to_faction = LAN
+add_to_faction = ANN
+add_to_faction = KHM
+add_to_faction = CHA
+add_to_faction = SUL
+add_to_faction = QQD
+add_to_faction = YZR
+add_to_faction = JAV
+add_to_faction = ACH
+add_to_faction = BRN
+add_to_faction = RYU
+add_to_faction = TAC
+add_to_faction = PER
+add_to_faction = TSO
+add_to_faction = OMA
+add_to_faction = DAW
+add_to_faction = KAZ
+add_to_faction = HEX
+add_to_faction = CHL
+
+### 科技 ###
+
+set_research_slots = 4
+set_technology = {
+	tech_trucks = 1
+	basic_machine_tools = 1
+	construction1 = 1
+	excavation1 = 1
+	armor_tech_1 = 1
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			engines_1 = 1
+			engines_2 = 1
+			aa_lmg = 1
+			early_bombs = 1
+			aircraft_construction = 1
+		}
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_military_police = 1
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antiair = 1
+	# early_fighter = 1
+	# fighter1 = 1
+	# cv_early_fighter = 1
+	# cv_naval_bomber1 = 1
+	# cv_CAS1 = 1
+	# naval_bomber1 = 1
+	# CAS1 = 1
+	# early_bomber = 1
+	# tactical_bomber1 = 1
+	### superior_firepower = 1  # DLC doctrine, disabled
+	### base_strike = 1  # DLC doctrine, disabled
+	motorised_infantry = 1
+	marines = 1
+	basic_train = 1
+	tech_mountaineers = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		panzerschiffe = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		### basic_medium_battery = 1  # DLC tech, disabled
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		### basic_secondary_battery = 1  # DLC tech, disabled
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		### improved_secondary_battery = 1  # DLC tech, disabled
+		### improved_airplane_launcher = 1  # DLC tech, disabled
+	}
+}
+
+if = {
+	limit = {NOT = { has_dlc = "No Step Back" }}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = {has_dlc = "No Step Back"}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+	}
+}
+
+### 坦克设计 ###
+
+if = {
+	limit = {has_dlc = "No Step Back"}
+	create_equipment_variant = {
+		name = "辽阳造 昌德卅五年式 白山机车总厂 “应龙” 试制铁甲战车"
+		type = light_tank_chassis_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_hmg
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 0
+		}
+		obsolete = yes
+		#icon = 
+	}
+	create_equipment_variant = {
+		name = "辽阳造 昌德卌三年式 白山机车总厂 “烛龙” 试制铁甲轻战车"
+		type = light_tank_chassis_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "顺天造 昌德卌二年式 景山机车制作所 “虚耗” 试制铁甲重战车"
+		type = heavy_tank_chassis_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_cannon
+			turret_type_slot = tank_heavy_fixed_superstructure_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_small_cannon
+			special_type_slot_2 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 4
+		}
+	}
+
+	create_equipment_variant = {
+		name = "太仓造 昌德卌六年式 五一集团会社 “饕餮” 重战车"
+		type = heavy_tank_chassis_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_cannon
+			turret_type_slot = tank_heavy_three_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_hmg
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = tank_radio_1
+			special_type_slot_4 = empty
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 4
+		}
+	}
+
+	create_equipment_variant = {
+		name = "南昌造 昌德卌三年式 洪都交通运载机械厂 “夔牛” 铁甲自行炮车"
+		type = medium_tank_artillery_chassis_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_medium_fixed_superstructure_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+
+	create_equipment_variant = {
+		name = "长沙造 昌德卌五年式 国立芙蓉机器制备坊 “腓腓” 铁甲中战车"
+		type = medium_tank_chassis_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 4
+		}
+	}
+
+	create_equipment_variant = {
+		name = "杭州造 昌德卌六年式 钱塘工程机械集团 “螣蛇” 铁甲中战车"
+		type = medium_tank_chassis_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_medium_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 1
+		}
+	}
+
+}
+
+
+### 科技 ###
+
+set_research_slots = 4
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_technology = {
+		aa_lmg = 1
+		engines_1 = 1
+		early_bombs = 1
+		iw_small_airframe = 1
+		iw_medium_airframe = 1
+		iw_large_airframe = 1
+		air_torpedoe_1 = 1#空射鱼雷
+		bba_early_transport_plane = 1#运输机
+	}
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_military_police = 1
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antiair = 1
+	# early_fighter = 1
+	# fighter1 = 1
+	# cv_early_fighter = 1
+	# cv_naval_bomber1 = 1
+	# cv_CAS1 = 1
+	# naval_bomber1 = 1
+	# CAS1 = 1
+	# early_bomber = 1
+	# tactical_bomber1 = 1
+	### superior_firepower = 1  # DLC doctrine, disabled
+	### base_strike = 1  # DLC doctrine, disabled
+	motorised_infantry = 1
+	marines = 1
+	basic_train = 1
+	tech_mountaineers = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		panzerschiffe = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		### basic_medium_battery = 1  # DLC tech, disabled
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		### basic_secondary_battery = 1  # DLC tech, disabled
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		### improved_secondary_battery = 1  # DLC tech, disabled
+		### improved_airplane_launcher = 1  # DLC tech, disabled
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+	}
+}
+
+### 坦克设计 ###这是好的
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "辽阳造 昌德卅五年式 白山机车总厂 “应龙” 试制铁甲战车"
+		type = light_tank_chassis_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_hmg
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 0
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "辽阳造 昌德卌三年式 白山机车总厂 “烛龙” 试制铁甲轻战车"
+		type = light_tank_chassis_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "顺天造 昌德卌二年式 景山机车制作所 “虚耗” 试制铁甲重战车"
+		type = heavy_tank_chassis_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_cannon
+			turret_type_slot = tank_heavy_fixed_superstructure_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_small_cannon
+			special_type_slot_2 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 4
+		}
+	}
+
+	create_equipment_variant = {
+		name = "太仓造 昌德卌六年式 五一集团会社 “饕餮” 重战车"
+		type = heavy_tank_chassis_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_cannon
+			turret_type_slot = tank_heavy_three_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_hmg
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = tank_radio_1
+			special_type_slot_4 = empty
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 4
+		}
+	}
+
+	create_equipment_variant = {
+		name = "南昌造 昌德卌三年式 洪都交通运载机械厂 “夔牛” 铁甲自行炮车"
+		type = medium_tank_artillery_chassis_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_medium_fixed_superstructure_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+
+	create_equipment_variant = {
+		name = "长沙造 昌德卌五年式 国立芙蓉机器制备坊 “腓腓” 铁甲中战车"
+		type = medium_tank_chassis_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 4
+		}
+	}
+
+	create_equipment_variant = {
+		name = "杭州造 昌德卌六年式 钱塘工程机械集团 “螣蛇” 铁甲中战车"
+		type = medium_tank_chassis_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_medium_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 1
+		}
+	}
+
+}
+
+
+### 飞机 ###这是好的
+create_equipment_variant = {
+	name = "昌德卌二年式 “精卫” 双翼陆战"
+	type = small_plane_airframe_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+	modules = {
+		fixed_main_weapon_slot = light_mg_4x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "昌德卌三年式 “金鸾” 单翼轻型陆爆"
+	type = small_plane_cas_airframe_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+	modules = {
+		fixed_main_weapon_slot = bomb_locks
+		fixed_auxiliary_weapon_slot_1 = light_mg_2x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "昌德卌四年式 “梼杌” 单翼舰战"
+	type = cv_small_plane_airframe_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+	modules = {
+		fixed_main_weapon_slot = light_mg_2x
+		fixed_auxiliary_weapon_slot_1 = empty
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+}
+
+create_equipment_variant = {
+	name = "昌德卌五年式 “螭吻” 单翼舰爆"
+	type =cv_small_plane_cas_airframe_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+	modules = {
+		fixed_main_weapon_slot = bomb_locks
+		fixed_auxiliary_weapon_slot_1 = light_mg_2x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = lmg_defense_turret
+	}
+}
+
+create_equipment_variant = {
+	name = "昌德卌二年式 “獬豸” 双翼舰攻"
+	type = cv_small_plane_naval_bomber_airframe_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+	modules = {
+		fixed_main_weapon_slot = torpedo_mounting
+		fixed_auxiliary_weapon_slot_1 = empty
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = lmg_defense_turret
+	}
+}
+
+create_equipment_variant = {
+	name = "昌德卌四年式 “穷奇” 轻战甲型"
+	type = small_plane_airframe_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+	modules = {
+		fixed_main_weapon_slot = light_mg_2x
+		fixed_auxiliary_weapon_slot_1 = light_mg_2x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+}
+
+create_equipment_variant = {
+	name = "昌德卌四年式 “白鵺” 重型爆轰"
+	type = large_plane_airframe_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+	modules = {
+		fixed_main_weapon_slot = large_bomb_bay
+		fixed_auxiliary_weapon_slot_1 = empty
+		fixed_auxiliary_weapon_slot_2 = empty
+		fixed_auxiliary_weapon_slot_3 = empty
+		engine_type_slot = engine_1_4x
+		special_type_slot_1 = lmg_defense_turret
+		special_type_slot_2 = lmg_defense_turret_2x
+	}
+}
+
+create_equipment_variant = {
+	name = "昌德卌四年式 “狍鸮” 陆爆甲型"
+	type = medium_plane_airframe_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+	modules = {
+		fixed_main_weapon_slot = medium_bomb_bay
+		fixed_auxiliary_weapon_slot_1 = light_mg_2x
+		fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+		fixed_auxiliary_weapon_slot_3 = empty
+		engine_type_slot = engine_2_2x
+		special_type_slot_1 = lmg_defense_turret
+	}
+}
+
+create_equipment_variant = {
+	name = "昌德卌四年式 “金鸾” 双翼陆爆"
+	type = medium_plane_airframe_0
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+	modules = {
+		fixed_main_weapon_slot = medium_bomb_bay
+		fixed_auxiliary_weapon_slot_1 = empty
+		fixed_auxiliary_weapon_slot_2 = empty
+		fixed_auxiliary_weapon_slot_3 = empty
+		engine_type_slot = engine_1_2x
+		special_type_slot_1 = lmg_defense_turret_2x
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "昌德卌四年式 “句芒” 双翼舰战"
+	type = cv_small_plane_airframe_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+	modules = {
+		fixed_main_weapon_slot = light_mg_4x
+		fixed_auxiliary_weapon_slot_1 = empty
+		engine_type_slot = engine_1_2x
+		special_type_slot_1 = empty
+	}
+}
+
+### create_equipment_variant = {
+### 		name = “昌德卌六年式 “鲲鹏” 双翼舰攻”
+### 		type = medium_plane_airframe_0
+### 					icon = “gfx/interface/equipment/GFX_goal_unknown.dds”
+### 		modules = {
+### 			fixed_main_weapon_slot = torpedo_mounting
+### 			fixed_auxiliary_weapon_slot_1 = empty
+### 			engine_type_slot = engine_1_1x
+### 			special_type_slot_1 = lmg_defense_turret
+### 		}
+### 	}
+
+### 科技 ###
+
+set_research_slots = 4
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		panzerschiffe = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		### basic_medium_battery = 1  # DLC tech, disabled
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		### basic_secondary_battery = 1  # DLC tech, disabled
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		### improved_secondary_battery = 1  # DLC tech, disabled
+		### improved_airplane_launcher = 1  # DLC tech, disabled
+	}
+}
+### 战舰型号 ###
+
+
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Variants ###
+	# 潜艇 #
+	create_equipment_variant = {
+		name = "贰佰千字文级"
+		type = submarine_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			sub_engine_upgrade = 2
+			sub_stealth_upgrade = 2
+			sub_torpedo_upgrade = 3
+		}
+	}
+	create_equipment_variant = {
+		name = "壹佰千字文级"
+		type = submarine_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 1
+		upgrades = {
+			ship_reliability_upgrade = 2
+			sub_engine_upgrade = 0
+			sub_stealth_upgrade = 2
+			sub_torpedo_upgrade = 3
+		}
+	}
+	# 驱逐舰 #
+	create_equipment_variant = {
+		name = "国风级"
+		type = destroyer_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 1
+		}
+		obsolete = yes
+	}
+	# 轻巡洋舰 #
+	create_equipment_variant = {
+		name = "泊级"
+		type = light_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 3
+			ship_gun_upgrade = 2
+			ship_anti_air_upgrade = 3
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "湖级"
+		type = light_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 1
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 3
+			ship_gun_upgrade = 3
+			ship_anti_air_upgrade = 3
+		}
+	}
+	# 重巡洋舰 #
+	create_equipment_variant = {
+		name = "江级"
+		type = heavy_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 3
+			ship_armor_upgrade = 3
+			ship_gun_upgrade = 3
+		}
+	}
+	# 战列巡洋舰 #
+	create_equipment_variant = {
+		name = "丘级"
+		type = battle_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 3
+			ship_gun_upgrade = 2
+		}
+	}
+	# Battleships #
+	create_equipment_variant = {
+		name = "岳级"
+		type = battleship_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 3
+			ship_gun_upgrade = 3
+		}
+	}
+	create_equipment_variant = {
+		name = "山级"
+		type = battleship_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 1
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	### Variants ###
+	# 潜艇 #
+	create_equipment_variant = {
+		name = "贰佰千字文级"
+		type = ship_hull_submarine_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "壹佰千字文级"
+		type = ship_hull_submarine_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	# 驱逐舰 #
+	create_equipment_variant = {
+		name = "国风级"
+		type = ship_hull_light_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "国风级（甲型）"
+		type = ship_hull_light_2
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "国风级（乙型）"
+		type = ship_hull_light_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "国风级（丙型）"
+		type = ship_hull_light_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	# 轻型巡洋舰 #
+	create_equipment_variant = {
+		name = "泊级"
+		type = ship_hull_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "湖级"
+		type = ship_hull_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+
+	# 重型巡洋舰 #
+	create_equipment_variant = {
+		name = "江级"
+		type = ship_hull_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+	}
+
+	# 战列巡洋舰 #
+	create_equipment_variant = {
+		name = "丘级"
+		type = ship_hull_heavy_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bc_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# 战列舰 #
+	create_equipment_variant = {
+		name = "岳级"
+		type = ship_hull_heavy_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "山级"
+		type = ship_hull_heavy_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = yes
+	}
+	# 航空母舰 #
+	create_equipment_variant = {
+		name = "星级"
+		type = ship_hull_carrier_conversion_bb
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = ship_deck_space
+		}
+		obsolete = yes
+	}
+}
+
+
+
+set_air_oob = "MNG_air"

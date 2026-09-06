@@ -1,0 +1,19 @@
+
+peace_ai_desires = {
+    chaoxianneizhan = {
+        peace_action_type = take_states
+        enable = {
+            FROM.FROM.FROM = {
+                is_core_of = KOR
+            }
+            ROOT = {
+                OR = {
+                    tag = KOR
+                    tag = ROK
+                }
+            }
+			ROOT.FROM = { tag = ROOT }
+        }
+        ai_desire = 200
+    }
+}

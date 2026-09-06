@@ -1,49 +1,55 @@
 capital = 463
 
-oob = "empty"
+oob = "EXN_1936"
 
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	tech_mountaineers = 1
+}
+
+MNG = {
+	set_autonomy = {
+		target = EXN
+		autonomous_state = tod_ming_haiwaidusi
+		freedom_level = 0
+	}
+}
 set_politics = {
-	ruling_party = authoritarianism
+	ruling_party = authoritarian_oligarchy
 	last_election = "1934.6.15"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	totalism = 35
-	despotism = 35
-	authoritarianism = 40
+	vanguard_socialism = 0 #先锋社会主义
+	council_socialism = 0 #委员会社会主义
+	moderate_socialism = 0 #温和社会主义
+	agroindustrial_socialism = 0 #农业社会主义
+	#
+	social_democrat = 0 #社会民主主义
+	liberal_democracy = 0 #自由民主主义
+	#
+	consociationalism = 35 #调和民主主义
+	conservative_democracy = 0 #保守民主主义
+	authoritarian_oligarchy = 30 #威权主义
+	#
+	leader_despotism = 0 #领袖主义
+	sacred_revivalism = 0 #神圣复兴主义
+	national_corporatism = 35 #法团主义
 }
 
 
-
-create_country_leader = {
-	name = "康同璧"
-	desc = "POLITICS_KANG_TONGBI_DESC"
-	picture = "Portrait_EXN_KangTongbi.png"
-	expire = "1965.1.1"
-	ideology = authoritarianism_subtype
-}
-
-create_country_leader = {
-	name = "谢仁"
-	desc = "POLITICS_XIEREN_DESC"
-	picture = "Portrait_EXN_Xie_Ren.png"
-	expire = "1965.1.1"
-	ideology = totalism_subtype
-}
-
-create_country_leader = {
-	name = "张西卿"
-	desc = "POLITICS_ZHANGXIQIN_DESC"
-	picture = "Portrait_EXN_Zhangxiqin.png"
-	expire = "1965.1.1"
-	ideology = despotism_subtype
-}
+recruit_character = EXN_kang_tongbi
 
 add_ideas = {
-	AthCfc_types
-	LibMrk type
+	### AthCfc_types
+	### LibMrk type
 	EXN_there_are_four_books_five_classics_and_gold
 	EXN_the_little_court_of_gourmet
 	EXN_yukong_liberation_army

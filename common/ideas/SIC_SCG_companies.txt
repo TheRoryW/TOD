@@ -1,0 +1,99 @@
+ideas = {
+	industrial_concern = {
+		TOD_sichuan_minsheng_industry = { # 民生实业股份有限公司
+			picture = generic_industrial_concern_1
+			allowed = {
+				OR = {
+					original_tag = SIC
+					original_tag = SCG
+				}
+			}
+			available = {
+				controls_state = 830
+				OR = {
+					has_completed_focus = SIC_tianfuzhizhi
+					has_completed_focus = SCG_lianhezhengfu
+				}
+			}
+			traits = { industrial_concern }
+			research_bonus = { industry = 0.10 }
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				production_speed_rail_way_factor = 0.10
+				consumer_goods_factor = -0.03
+			}
+			ai_will_do = { factor = 4 }
+		}
+
+		TOD_sichuan_huaxi_industry = { # 华西兴业股份有限公司
+			picture = generic_industrial_concern_1
+			allowed = {
+				OR = {
+					original_tag = SIC
+					original_tag = SCG
+				}
+			}
+			available = {
+				controls_state = 831
+				OR = {
+					has_completed_focus = SIC_qingzhengxi_sichuan
+					has_completed_focus = SCG_zuzhigonghui
+				}
+			}
+			traits = { industrial_concern }
+			research_bonus = { construction_tech = 0.10 }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.05
+			}
+			ai_will_do = { factor = 3 }
+		}
+
+		TOD_sichuan_tianfu_coal = { # 天府煤矿公司
+			picture = generic_industrial_concern_1
+			allowed = {
+				OR = {
+					original_tag = SIC
+					original_tag = SCG
+				}
+			}
+			available = {
+				controls_state = 830
+				OR = {
+					has_completed_focus = SIC_tianfuzhizhi
+					has_completed_focus = SCG_lianhezhengfu
+				}
+			}
+			traits = { industrial_concern }
+			research_bonus = { excavation_tech = 0.10 }
+			modifier = {
+				local_resources_factor = 0.15
+				production_speed_infrastructure_factor = 0.05
+			}
+			ai_will_do = { factor = 3 }
+		}
+		TOD_sichuan_chongqing_electric = { # 重庆电力股份有限公司
+			picture = generic_industrial_concern_1
+			allowed = {
+				OR = {
+					original_tag = SIC
+					original_tag = SCG
+				}
+			}
+			available = {
+				controls_state = 830
+				OR = {
+					has_completed_focus = SIC_tianfuzhizhi
+					has_completed_focus = SCG_lianhezhengfu
+				}
+			}
+			traits = { electronics_concern }
+			research_bonus = { electronics = 0.10 }
+			modifier = {
+				research_speed_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+			}
+			ai_will_do = { factor = 3 }
+		}
+	}
+}

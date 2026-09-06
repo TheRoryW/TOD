@@ -1,0 +1,67 @@
+#昭武军校
+SIC_zhaowujunxiao = {
+	icon = SIC_zhaowujunxiao
+	training_time_army_factor = SIC_zhaowujunxiao_xunlian
+	experience_gain_army_factor = SIC_zhaowujunxiao_jingyan
+	army_attack_factor = SIC_zhaowujunxiao_gongji
+	army_defence_factor = SIC_zhaowujunxiao_fangyu
+	conscription = SIC_zhaowujunxiao_renkou
+	army_morale_factor = SIC_zhaowujunxiao_huifu
+	land_reinforce_rate = SIC_zhaowujunxiao_zengyuan
+	terrain_trait_xp_gain_factor = SIC_zhaowujunxiao_shiying
+	attrition = SIC_zhaowujunxiao_sunhao
+	experience_loss_factor = SIC_zhaowujunxiao_sunshi
+}
+#昭武空军
+SIC_zhaowukongjun = {
+	icon = SIC_zhaowukongjun
+	air_bombing_targetting = SIC_zhaowukongjun_hongzha
+	air_strategic_bomber_bombing_factor = SIC_zhaowukongjun_zhanluehongzha
+	air_cas_present_factor = SIC_zhaowukongjun_duidi
+	air_close_air_support_org_damage_factor = SIC_zhaowukongjun_duidijun
+	army_bonus_air_superiority_factor = SIC_zhaowukongjun_kongyou
+}
+#恢复经济
+SIC_huifujingji = {
+	icon = SIC_huifujingji
+	production_speed_industrial_complex_factor = 0.1
+	consumer_goods_factor = SIC_huifujingji_xiaofei
+	industrial_capacity_factory = SIC_huifujingji_chanchu
+	production_speed_buildings_factor = SIC_huifujingji_jianzao
+	production_factory_efficiency_gain_factor = SIC_huifujingji_zengzhang
+	production_factory_max_efficiency_factor = SIC_huifujingji_shangxian
+}
+#军事工业
+SIC_junshigongye = {
+	icon = SIC_junshigongye
+	production_speed_arms_factory_factor = 0.1
+	consumer_goods_factor = SIC_junshigongye_xiaofei
+	industrial_capacity_factory = SIC_junshigongye_chanchu
+	production_speed_buildings_factor = SIC_junshigongye_jianzao
+	production_factory_efficiency_gain_factor = SIC_junshigongye_zengzhang
+	production_factory_max_efficiency_factor = SIC_junshigongye_shangxian
+}
+
+# 清政系宪政试验
+SIC_qingzhengxi_shiyan = {
+	icon = SIC_jingjishiyanqu
+	stability_factor = SIC_qingzhengxi_shiyan_wending
+	political_power_gain = SIC_qingzhengxi_shiyan_zhengzhi
+	research_speed_factor = SIC_qingzhengxi_shiyan_keyan
+	consumer_goods_factor = SIC_qingzhengxi_shiyan_xiaofei
+	army_org_factor = SIC_qingzhengxi_shiyan_jundui
+}
+
+# 武备总会：数值由 SIC_wubei_integration_gengxin 按整合度阶段维护。
+SIC_wubei_zonghui = {
+	icon = SIC_hunluandejundui
+	stability_factor = SIC_wubei_zonghui_wending
+	political_power_gain = SIC_wubei_zonghui_zhengzhi
+	army_org_factor = SIC_wubei_zonghui_zuzhi
+	planning_speed = SIC_wubei_zonghui_jihua
+	industrial_capacity_factory = SIC_wubei_zonghui_chanchu
+	military_industrial_organization_funds_gain = SIC_wubei_zonghui_jungong
+	mobilization_speed = SIC_wubei_zonghui_dongyuan
+}
+
+

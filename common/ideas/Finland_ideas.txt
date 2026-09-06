@@ -35,6 +35,19 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1 
 			}
 		}
+		# 1938 年大北方战争中点判定的持续攻势，只对瑞典生效。
+		FIN_nordic_unification_offensive = {
+			picture = generic_attack_soviet_union
+			removal_cost = -1
+			modifier = {
+				attrition = -0.4
+				supply_consumption_factor = -0.4
+			}
+			targeted_modifier = {
+				tag = SWE
+				attack_bonus_against = 2.0
+			}
+		}
 
 	}
 
@@ -119,7 +132,8 @@ ideas = {
 	}
 
 #### Weapons Manufacturer ####
-	weapons_manufacturer = {
+	### weapons_manufacturer = { # invalid category name kept for reference
+	materiel_manufacturer = {
 		designer = yes
 
 		lapua = {

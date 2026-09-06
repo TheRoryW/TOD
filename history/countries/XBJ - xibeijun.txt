@@ -1,0 +1,241 @@
+﻿capital = 744
+
+#政党比例
+
+set_politics = {
+	ruling_party = authoritarian_oligarchy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	national_corporatism = 0
+	sacred_revivalism = 0
+	leader_despotism = 20
+	authoritarian_oligarchy = 40
+	conservative_democracy = 20
+	liberal_democracy = 5
+	consociationalism = 5
+	social_democrat = 5
+	agroindustrial_socialism = 0
+	moderate_socialism = 0
+	council_socialism = 0
+	vanguard_socialism = 5
+}
+
+#民族精神
+
+add_ideas = {
+	XBJ_The_Army_of_Salvation
+    XBJ_Multinational_Melting_Pot_1
+    XBJ_Backward_Region_1
+}
+#法案
+add_ideas = {
+	closed_economy
+	civilian_economy
+	volunteer_only
+}
+#内阁
+add_ideas = {
+	XBJ_Guan_zhu
+	XBJ_he_cuilian
+	XBJ_sun_mingjing
+	XBJ_cao_shiying
+}
+
+#政党领袖
+
+recruit_character = XBJ_Zhu_Juanshen
+recruit_character = XBJ_Fan_Jingsheng
+recruit_character = XBJ_Jin_Shuren
+recruit_character = XBJ_Jiang_Baili
+recruit_character = XBJ_Ma_Hongbing
+recruit_character = XBJ_Zhu_Ruichi
+recruit_character = XBJ_Ehmetjan_Qasim
+recruit_character = XBJ_Chen_Cheng
+recruit_character = XBJ_Zunun_Taipov
+recruit_character = XBJ_Du_Qianxue
+recruit_character = XBJ_Fan_Yaonan
+recruit_character = XBJ_Jiang_Dingwen
+recruit_character = XBJ_Cheng_Xixian
+recruit_character = XBJ_Gao_Jun
+recruit_character = XBJ_Ge_Jinzhang
+recruit_character = XBJ_Guo_Jiqiao
+recruit_character = XBJ_Guo_Jian
+recruit_character = XBJ_Guo_Zhigang
+recruit_character = XBJ_sunlianzhong
+recruit_character = XBJ_Jing_Wumu
+recruit_character = XBJ_Ma_Buqing
+recruit_character = XBJ_Ma_Fuxiang
+recruit_character = XBJ_Ma_Hongkui
+recruit_character = XBJ_Sun_Yuanliang
+recruit_character = XBJ_Wen_Chenglie
+recruit_character = XBJ_Yang_Hucheng
+recruit_character = XBJ_Zhang_Fenghui
+recruit_character = XBJ_Zhang_Weixi
+recruit_character = XBJ_Zhao_Xipin
+recruit_character = XBJ_Zhao_Zhangcheng
+recruit_character = XBJ_Wei_Lihuang
+recruit_character = XBJ_Ji_Hongchang
+recruit_character = XBJ_Chen_jinkui
+recruit_character = XBJ_feng_zhaoquan
+recruit_character = XBJ_Shi_Jingting
+recruit_character = XBJ_Zhang_Zhijiang
+recruit_character = XBJ_Li_Mingzhong
+recruit_character = XBJ_Liu_Yufen
+recruit_character = XBJ_Song_Zheyuan
+recruit_character = XBJ_Lu_Zhonglin
+recruit_character = XBJ_Shen_Jinchen
+
+#科技
+
+set_research_slots = 3
+
+#原版美国科技
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			engines_1 = 1
+			engines_2 = 1
+			aa_lmg = 1
+			early_bombs = 1
+			aircraft_construction = 1
+		}
+	else = {
+		set_air_oob = "USA_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+			cv_CAS1 = 1
+			naval_bomber1 = 1
+			CAS1 = 1
+			early_bomber = 1
+		}
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_military_police = 1
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	fighter1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	### superior_firepower = 1  # DLC doctrine, disabled
+	### base_strike = 1  # DLC doctrine, disabled
+	motorised_infantry = 1
+	marines = 1
+	basic_train = 1
+	tech_mountaineers = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		panzerschiffe = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		### basic_medium_battery = 1  # DLC tech, disabled
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		### basic_secondary_battery = 1  # DLC tech, disabled
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		### improved_secondary_battery = 1  # DLC tech, disabled
+		### improved_airplane_launcher = 1  # DLC tech, disabled
+	}
+}
+
+#特色决议
+add_dynamic_modifier = { modifier = XBJ_officers_and_landlords_dm }
+add_dynamic_modifier = { modifier = XBJ_shequn_tuanjie_dm }
+add_dynamic_modifier = { modifier = XBJ_The_Frontier_Generals_and_Rural_Junkers }
+set_variable = { XBJ_officers_influence = 30 }
+set_variable = { XBJ_officers_support = 50 }
+set_variable = { XBJ_landlords_influence = 50 }
+set_variable = { XBJ_landlords_support = 30 }
+set_variable = { XBJ_shequn_tuanjiedu = 25 }
+set_variable = { XBJ_shequn_zhichidu = 25 }
+set_variable = { XBJ_shequn_jinbudu = 1 }
+set_variable = { XBJ_jinbudu_speed = 0.01 }#社团民族进步程度增长乘数初始为1%
+set_variable = { xbj_bianjun_army_ex = 0.1 }
+set_variable = { xbj_bianjun_chief_cost = -0.15 }
+set_variable = { xbj_bianjun_plan_speed = -0.2 }
+set_variable = { xbj_bianjun_max_planning = 0.1 }
+set_variable = { xbj_bianjun_research = -0.25 }
+set_variable = { xbj_bianjun_pp = -0.25 }
+set_variable = { xbj_bianjun_manpower = -25 }
+set_variable = { xbj_bianjun_good = 0.45 }

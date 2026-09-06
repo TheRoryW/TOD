@@ -1,0 +1,21 @@
+defined_text = {
+    name = Get_title_news_header
+    text = {
+        trigger = {  ##顺天日报
+            original_tag = MNG 
+        }
+        localization_key = TOD_shuntian_news_header 
+    }
+
+}
+
+defined_text = {
+    name = Get_title_news_pic
+    text = {
+        trigger = {  ##顺天日报
+            original_tag = MNG 
+        }
+        localization_key = TOD_shuntian_news_pic 
+    }
+}
+

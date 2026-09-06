@@ -42,7 +42,7 @@ ideas = {
 				consumer_goods_factor =	0.06
 				command_power_gain_mult = -0.5
 				conscription_factor = 0.1
-				land_doctrine = 0.2
+				land_doctrine_cost_factor = -0.2
 				custom_modifier_tooltip = cannot_train_units_tt
 			}
 		}
@@ -76,7 +76,11 @@ ideas = {
 				political_power_cost = 0.15
 				production_factory_efficiency_gain_factor = -0.1
 				production_factory_max_efficiency_factor = -0.1
-				trade_cost_for_FRA_factor = 0.8
+				### trade_cost_for_FRA_factor = 0.8 # target-specific effect was in country modifier scope
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = 0.8
 			}
 		}
 		SWE_qianhuzhiguo = {
@@ -93,43 +97,56 @@ ideas = {
 				production_speed_buildings_factor = 0.08
 			}
 		}
-	}
-
-	political_advisor = {
-
-		SWE_thorwald_bergquist = {
-
-			picture = generic_political_advisor_europe_5
-			
-			allowed = {
-				original_tag = SWE
+		# 1938 年大北方战争中点判定的持续攻势，只对芬兰生效。
+		SWE_nordic_unification_offensive = {
+			picture = generic_attack_soviet_union
+			removal_cost = -1
+			modifier = {
+				attrition = -0.4
+				supply_consumption_factor = -0.4
 			}
-			
-			traits = { compassionate_gentleman }
-		}
-
-		SWE_osten_unden = {
-
-			picture = generic_political_advisor_europe_2
-
-			allowed = {
-				original_tag = SWE
+			targeted_modifier = {
+				tag = FIN
+				attack_bonus_against = 2.0
 			}
-			
-			traits = { silent_workhorse }
-		}
-
-		SWE_ernst_wigforss = {
-
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-			traits = { captain_of_industry }
 		}
 	}
+
+### 	political_advisor = {
+### 
+### 		SWE_thorwald_bergquist = {
+### 
+### 			picture = generic_political_advisor_europe_5
+### 			
+### 			allowed = {
+### 				original_tag = SWE
+### 			}
+### 			
+### 			traits = { compassionate_gentleman }
+### 		}
+### 
+### 		SWE_osten_unden = {
+### 
+### 			picture = generic_political_advisor_europe_2
+### 
+### 			allowed = {
+### 				original_tag = SWE
+### 			}
+### 			
+### 			traits = { silent_workhorse }
+### 		}
+### 
+### 		SWE_ernst_wigforss = {
+### 
+### 			picture = generic_political_advisor_europe_3
+### 			
+### 			allowed = {
+### 				original_tag = SWE
+### 			}
+### 			
+### 			traits = { captain_of_industry }
+### 		}
+### 	}
 
 	theorist = {
 
@@ -144,7 +161,7 @@ ideas = {
 			picture = generic_army_europe_2
 			
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine_cost_factor = -0.10
 			}
 			
 			traits = { military_theorist }
@@ -161,7 +178,7 @@ ideas = {
 			picture = generic_political_advisor_europe_1
 			
 			research_bonus = {
-				naval_doctrine = 0.10
+				naval_doctrine_cost_factor = -0.10
 			}
 			
 			traits = { naval_theorist }

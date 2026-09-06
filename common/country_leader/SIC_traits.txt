@@ -1,0 +1,117 @@
+leader_traits = {
+     #资政院的妥协者
+	zizhengyuandetuoxiezhe = { 
+        stability_factor = 0.04
+	}
+	#干吏贤臣
+	ganlixianchen = { 
+        political_power_gain = 0.2
+		consumer_goods_factor = -0.02
+	}
+	#西南柱石
+	xinanzhushi = { 
+        stability_factor = 0.05
+	}
+	#学政名师
+	xuezhengminshi = { 
+        political_power_gain = 0.4
+	}
+	#司法重臣
+	sifazhongchen = { 
+        political_power_gain = 0.4
+	}
+	#革新志士
+	gexinzhishi = { 
+       party_popularity_stability_factor  = 0.1
+	}
+	#大同主义倾向
+	datongzhuyiqingxiang = { 
+        consumer_goods_factor = -0.02
+		production_factory_max_efficiency_factor = 0.02
+	}
+	#立法干事
+	lifaganshi = { 
+		mobilization_laws_cost_factor = -0.33
+ 		trade_laws_cost_factor = -0.33
+ 		economy_cost_factor = -0.33
+	}
+	#铁血外长
+	tiexuewaizhang = { 
+		trade_opinion_factor = 0.05
+		opinion_gain_monthly_factor = 0.05
+	}
+	#新外交法制定者
+	qiangyingdeaiguozhe = { 
+		opinion_gain_monthly_factor = 0.1
+	}
+	#强硬的爱国者
+	xinwaijiaofazhidingzhe = { 
+		trade_opinion_factor = 0.05
+		stability_factor = 0.02
+	}
+	#长袖善舞
+	changxiushanwu = { 
+		trade_opinion_factor = 0.1
+	}
+	#党务工作者
+	dangwugongzuozhe = { 
+		drift_defence_factor = 0.8
+	}
+	#西南警政
+	xinanjingzheng = { 
+		compliance_gain = 0.2
+	}
+	#血手酷吏
+	xueshoukuli = { 
+		operative_slot = 1
+	}
+	#剿匪能臣
+	jiaofeinengchen = { 
+		operative_slot = 1
+	}
+	#审查长
+	shenchazhang = { 
+		intelligence_agency_defense = 0.5
+	}
+	#民权运动
+	minquanyungdong = { 
+		operative_slot = 1
+	}
+	#血光团负责人
+	xueguangtuanfuzeren = { 
+		intelligence_agency_defense = 1
+	}
+	#实业大王
+	shiyedawang = { 
+		consumer_goods_factor = -0.02
+	}
+	#前革命家
+	qiangemingjia = { 
+		consumer_goods_factor = -0.03
+	}
+	#改革求治
+	gaigeqiuzhi = { 
+		production_factory_efficiency_gain_factor = 0.05
+	}
+	#铸币专家
+	zhubizhuanjia = { 
+		consumer_goods_factor = -0.03
+	}
+	#平均地权倡导者
+	pingjundiquanchangdaozhe = { 
+		industrial_capacity_factory = 0.03
+	}
+	#政府秘书长
+	zhengfumishuzhang = { 
+		political_power_gain = 0.02
+	}
+	#西北派
+	SIC_xibeipai = {
+	}
+	#锦王派
+	SIC_jingwangpai = {
+	}
+	#清政系
+	SIC_qingzhengxi = {
+	}
+}

@@ -1,0 +1,39 @@
+
+peace_ai_desires = {
+
+    damingneizhan = {
+        peace_action_type = take_states
+        enable = {
+            FROM.FROM.FROM = {
+                is_core_of = MNG
+            }
+            ROOT = {
+                is_ming_tag = yes
+            }
+			ROOT.FROM = { tag = ROOT }
+        }
+        ai_desire = 100
+    }
+
+    # 大明内战的胜方必须优先直接接管其他大明势力的全部地块，不能因通用影响范围规则而遗留地块。
+    damingneizhan_annex_all = {
+        peace_action_type = take_states
+        enable = {
+            ROOT = { is_ming_tag = yes }
+            ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { is_ming_tag = yes }
+        }
+        ai_desire = 2000
+    }
+
+    # 内战统一不以傀儡、扶植政府或解放来替代吞并。
+    damingneizhan_no_partition = {
+        peace_action_type = { puppet force_government liberate }
+        enable = {
+            ROOT = { is_ming_tag = yes }
+            ROOT.FROM = { tag = ROOT }
+            FROM.FROM = { is_ming_tag = yes }
+        }
+        ai_desire = -2000
+    }
+}

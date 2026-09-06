@@ -1,0 +1,6 @@
+SCG_postwar_economy_categories = {
+	priority = 120
+	icon = generic_economy
+	allowed = { tag = SCG }
+	visible = { has_completed_focus = SCG_sichuan_jingji_chongjian_weiyuanhui }
+}

@@ -1,0 +1,16 @@
+capital = 772
+
+oob = "oob"
+
+set_politics = {
+	ruling_party = liberal_democracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	liberal_democracy = 100
+}
+
+recruit_character = FCG_Michel_Clemenceau

@@ -1,5 +1,5 @@
 ### 芬兰步兵师
-FIN_INF_01 = 
+FIN_INF_01 =
 {
 	name = "TTPA Jalkaväkidivisioona"
 
@@ -32,7 +32,7 @@ FIN_INF_01 =
 }
 
 ### 苏俄步兵师
-FIN_INF_SOV = 
+FIN_INF_SOV =
 {
 	name = "RKKA Strelkovaya Diviziya"
 
@@ -91,7 +91,7 @@ FIN_MOU_01 = {
 
 ### 内务师
 
-FIN_INF_02 = 
+FIN_INF_02 =
 {
 	name = "SJSK Divisioona"
 
@@ -182,7 +182,7 @@ FIN_AOR_01 = {
 
 	for_countries = { FIN }
 
-	division_types = { ""light_armor" "medium_armor" "heavy_armor" "modern_armor"" }
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	fallback_name = "%d. TTPA Panssaridivisioona"
 

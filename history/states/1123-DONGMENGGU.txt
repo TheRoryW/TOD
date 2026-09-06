@@ -4,6 +4,10 @@ state={
 
 	history={
 		owner = MNG
+		buildings = {
+			infrastructure = 1
+
+		}
 		add_core_of = MNG
 		victory_points = {
 			13533 3 
@@ -11,9 +15,9 @@ state={
 
 	}
 	provinces={
-		1743 1787 4655 10575 12539 12557 12629 13533 13534 
+		1787 4655 10575 12539 13533 13534 
 	}
-	manpower=0
+	manpower=873533
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=one
 }

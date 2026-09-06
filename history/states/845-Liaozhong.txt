@@ -3,16 +3,16 @@ state={
 	name="STATE_845"
 	resources={
 		steel=70
-		oil=4
+		oil=2
 	}
 
 	history={
 		owner = MNG
 		add_core_of = MNG
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4
 			industrial_complex = 2
-			arms_factory = 2
+			arms_factory = 3
 			dockyard = 1
 			synthetic_refinery = 1
 			air_base = 8
@@ -21,12 +21,11 @@ state={
 			}
 		}
 		victory_points = {
-			892 2 
+			892 5 
 		}
 		victory_points = {
-			13525 25 
+			13525 30 
 		}
-
 	}
 	provinces={
 		836 892 987 3895 3970 9781 11764 13524 13525 

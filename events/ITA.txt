@@ -1,0 +1,164 @@
+add_namespace = TODItaly
+#意大利跑路
+country_event = {
+	id = TODItaly.1
+	title = TODItaly.1.t
+	desc =TODItaly.1.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+
+	fire_only_once = yes
+
+	trigger = {
+		tag =  ITA
+		OR = {
+			has_war_with = GER
+			has_war_with = ENG
+			any_country = {
+				original_tag = FRA
+				has_war_with = ROOT
+			}
+		}
+        OR = {
+            2 = { is_controlled_by = GER }
+            2 = { is_controlled_by = ENG }
+			2 = { controller = { original_tag = FRA } }
+        }
+		surrender_progress > 0.70
+
+	}
+
+	option = { # 成为德国傀儡
+		name = TODItaly.1.a
+		trigger = { is_ai = no }
+		set_country_flag = become_deguokuilei
+		GER = { country_event = TODItaly.14 }
+		custom_effect_tooltip = TODItaly.1_tt
+	}
+	option = { # 流亡北非
+		name = TODItaly.1.b
+		ai_chance = {
+			factor = 100
+		}
+		GER = { country_event = TODItaly.14 }
+		custom_effect_tooltip = TODItaly.1.b_tt
+		set_country_flag = GER_dont_seize_gold_reserves_flag #Can't allow Germany to seize out gold reserves just yet
+	}
+}
+#意大利被傀儡
+country_event = {
+	id = TODItaly.14
+	title = TODItaly.14.t
+	desc = TODItaly.14.d
+	picture = GFX_report_event_german_parade_paris
+
+	is_triggered_only = yes
+
+	option = {
+		name = TODItaly.14.a
+		ai_chance = {
+			factor = 50
+		}
+		every_country = {
+			limit = {
+				OR = {
+					original_tag = ITA
+					is_puppet_of = ITA
+				}
+			}
+			every_country = {
+				limit = { has_war_with = PREV }
+				white_peace = PREV
+			}
+		}
+		 ITA = { set_cosmetic_tag =  ITA_liuwang }
+
+		 ITA = {
+			set_capital = { state = 448 }
+			hidden_effect = {leave_faction = yes }
+			start_civil_war = {
+				ideology = council_socialism
+				size = 0.9
+				capital = 16
+				states = all
+                states_filter = {
+                    is_core_of =  ITA
+					NOT = {
+						OR = {
+							state = 448
+							state = 1083
+							state = 449
+							state = 450
+							state = 451
+							state = 663
+							state = 1084
+							state = 662
+							state = 661
+							state = 273
+						}
+					}
+                }
+			}
+			add_ideas = FRA_yongbutouxiang
+		}
+		random_other_country = {
+			limit = { original_tag =  ITA has_government = council_socialism }
+			ROOT = { puppet = PREV }
+			set_capital = { state = 2 }
+			set_politics = {
+				ruling_party = council_socialism
+				elections_allowed = no
+			}
+			every_state = {
+				limit = {
+					is_core_of = ITA
+					NOT = {
+						OR = {
+							state = 448
+							state = 1083
+							state = 449
+							state = 450
+							state = 451
+							state = 663
+							state = 1084
+							state = 662
+							state = 661
+							state = 273
+						}
+					}
+				}
+				set_state_controller_to = PREV
+			}
+			set_popularities = {
+				council_socialism = 100
+			}
+			ITA = { transfer_state = 448 }
+			ITA = { transfer_state = 1083 }
+			ITA = { transfer_state = 449 }
+			ITA = { transfer_state = 450 }
+			ITA = { transfer_state = 451 }
+			ITA = { transfer_state = 663 }
+			ITA = { transfer_state = 1084 }
+			ITA = { transfer_state = 662 }
+			ITA = { transfer_state = 661 }
+			ITA = { transfer_state = 273 }
+
+			if = {
+				limit = {  ITA = { has_country_flag = become_deguokuilei } }
+				change_tag_from =  ITA
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					original_tag = ITA
+					is_puppet_of = ITA
+				}
+			}
+			every_country = {
+				limit = { has_war_with = PREV }
+				white_peace = PREV
+			}
+		}
+	}
+
+}

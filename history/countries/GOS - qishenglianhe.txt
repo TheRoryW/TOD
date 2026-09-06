@@ -1,0 +1,521 @@
+﻿capital = 613 #应天
+oob = "GOS_1937"
+
+#基础
+	set_politics = {
+		ruling_party =  consociationalism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		##先锋
+		vanguard_socialism = 0
+		##委员会
+		council_socialism = 3
+		##温和
+		moderate_socialism = 2
+		##工农
+		agroindustrial_socialism = 5
+		##社民
+		social_democrat = 5
+		##调和民主
+		consociationalism = 37
+		##自由民
+		liberal_democracy = 7
+		##保保
+		conservative_democracy = 35
+		##寡头专制
+		authoritarian_oligarchy = 5
+		##领袖意识
+		leader_despotism = 1
+		##神圣复兴
+		sacred_revivalism = 0
+		##国家法团主义
+		national_corporatism = 0
+	}
+
+	#稳定、战支
+	set_stability = 0.40
+	set_war_support = 0.05
+	##油量
+	set_fuel_ratio = 0.2
+	#科研槽
+	set_research_slots = 4
+	set_convoys = 0
+
+#科技
+	set_technology = {
+		### Tanks ###
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_medium_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+		engine_tech_2 = 1
+		armor_tech_1 = 1
+		armor_tech_2 = 1
+		### INF ###
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		tech_support = 1
+		tech_mountaineers = 1
+		marines = 1
+		tech_engineers = 1
+		tech_recon = 1
+		motorised_infantry = 1
+		gw_artillery = 1
+		### AIR ###
+		early_fighter = 1
+		naval_bomber1 = 1
+		early_bomber = 1
+
+		cv_early_fighter = 1
+		cv_naval_bomber1 = 1
+	}
+
+#民族精神
+	add_ideas = {#开局法律
+		free_trade #自由贸易
+	}
+
+	add_ideas = {#内阁
+		GOS_qym
+		GOS_zbj
+		GOS_zjj
+		GOS_gwj
+	}
+	add_ideas = { #开局民族精神
+		GOS_idea_gengwucaihuangdeyubo
+		GOS_idea_datongdangzaixingdong
+		GOS_idea_huguangliangcang
+	}
+
+	add_dynamic_modifier = {
+		modifier = GOS_dynamic_modifiers_jnmj
+	}
+
+	# 613 = {
+	# 	add_dynamic_modifier = {
+	# 		modifier = GOS_dynamic_modifiers_ytf
+	# 	}
+	# }
+	# 620 = {
+	# 	add_dynamic_modifier = {
+	# 		modifier = GOS_dynamic_modifiers_hszh
+	# 	}
+	# }
+
+#人物
+ #领导人
+	### recruit_character = GOS_characters_wwkx
+	recruit_character = GOS_characters_zxz
+	recruit_character = GOS_characters_yk
+	recruit_character = GOS_characters_wsh
+	recruit_character = GOS_characters_zzd
+	recruit_character = GOS_characters_xbh
+	recruit_character = GOS_characters_lyz
+	recruit_character = GOS_characters_hjw
+	recruit_character = GOS_characters_qym
+	### recruit_character = GOS_characters_scz # 该角色已作为领导人招募，避免再次作为将领分配
+	### recruit_character = GOS_characters_zyx
+	recruit_character = GOS_characters_zbj
+ #将领	
+	recruit_character = GOS_ctk
+	recruit_character = GOS_characters_scz
+	recruit_character = GOS_lz
+	recruit_character = GOS_lg
+	recruit_character = GOS_hj
+	recruit_character = GOS_jyw
+	recruit_character = GOS_zzx
+	retire_character = GOS_zzx
+	recruit_character = GOS_cyb
+	recruit_character = GOS_gzt
+	recruit_character = GOS_llj
+	recruit_character = GOS_hyq
+	recruit_character = GOS_xyn
+	recruit_character = GOS_sxl 
+	recruit_character = GOS_qdj
+	recruit_character = GOS_zzw 
+	recruit_character = GOS_zzz
+	recruit_character = GOS_lky
+	recruit_character = GOS_lk
+	recruit_character = GOS_xsl
+	recruit_character = GOS_qqq
+	recruit_character = GOS_xkx
+	recruit_character = GOS_slr
+	recruit_character = GOS_cqm
+	recruit_character = GOS_cgs
+	recruit_character = GOS_xsh
+	recruit_character = GOS_hcj
+	recruit_character = GOS_xyq
+	recruit_character = GOS_lyx 
+	recruit_character = GOS_dal
+	recruit_character = GOS_hkz
+	recruit_character = GOS_zxb
+	recruit_character = GOS_fanhanjie
+	recruit_character = GOS_huzongnan
+	recruit_character = GOS_yjs
+	recruit_character = GOS_hw
+	recruit_character = GOS_cgy
+	recruit_character = GOS_sl_2
+	recruit_character = GOS_sl_1
+	recruit_character = GOS_characters_xsz
+ #部长，理论家
+	recruit_character = GOS_wurenli
+	recruit_character = GOS_guiyongqing
+	recruit_character = GOS_xhs
+	recruit_character = GOS_zzr
+	recruit_character = GOS_wlz
+	recruit_character = GOS_chence
+	recruit_character = GOS_lingxiao
+	recruit_character = GOS_ouyangge
+	recruit_character = GOS_xiasunpeng
+	recruit_character = GOS_ganlianao
+	recruit_character = GOS_liuyonggao
+	recruit_character = GOS_chenganqing
+	recruit_character = GOS_chenzhaoqiang
+	recruit_character = GOS_raohuaiwen
+	# recruit_character = GOS_qxs
+	# recruit_character = GOS_zzy
+
+ #设置开局隐藏（抄kr的）
+	GOS_qqq = { retire = yes }
+	GOS_slr = { retire = yes }
+	GOS_sxl = { retire = yes }
+	GOS_lyx = { retire = yes }
+	GOS_dal = { retire = yes }
+
+#开局变量等设定
+	#默认走少帝线
+		set_country_flag = FLAG_GOS_focus_sd
+	#紧急经济模式	
+		set_variable = { #危机度
+			VAR_GOS_jjms_wjd = 50
+		}
+		set_variable = { #稳定系数
+			VAR_GOS_jjms_xs_wdd = -0.005
+		}
+		set_variable = { #消费品系数
+			VAR_GOS_jjms_xs_xfp = 0.010
+		}
+		set_variable = { #决议天数
+			VAR_GOS_jjms_days = 90
+		}
+		GOS_scripted_effects_jjms_js = yes
+	#天子内阁派系	
+		set_variable = { #大同会势力
+			VAR_GOS_dth_sl = 100
+		}
+		set_variable = { #管学系势力
+			VAR_GOS_gxx_sl = 120
+		}
+		set_variable = { #军队势力
+			VAR_GOS_jd_sl = 100
+		}
+
+		set_variable = { #大同会支持度
+			VAR_GOS_dth_zcd = 0.10
+		}
+		set_variable = { #管学系支持度
+			VAR_GOS_gxx_zcd = 0.60
+		}
+		set_variable = { #军队支持度
+			VAR_GOS_jd_zcd = 0.10
+		}
+
+		set_variable = { #天子权威
+			GOS_VAR_tzqw = 0
+		}
+
+		GOS_scripted_effects_tzqw_js = yes
+	#议院法案	 
+		set_variable = { #
+			GOS_VAR_zyyfn_political_power_gain = 0
+		}
+		set_variable = { #
+			GOS_VAR_zyyfn_war_support_factor = 0
+		}
+		set_variable = { #
+			GOS_VAR_zyyfn_consumer_goods_factor = 0
+		}
+		set_variable = { #
+			GOS_VAR_zyyfn_stability_factor = 0
+		}
+		set_variable = { #
+			GOS_VAR_zyyfn_conscription_factor = 0
+		}
+		set_variable = { #
+			GOS_VAR_zyyfn_trade_opinion_factor = 0
+		}
+		set_variable = { #
+			GOS_VAR_zyyfn_compliance_growth = 0
+		}
+		set_variable = { #
+			GOS_VAR_zyyfn_surrender_limit = 0
+		}
+	#江南明军buff	 
+		set_variable = { #
+			GOS_VAR_jnmj_army_org_factor = -0.2
+		}
+		set_variable = { #
+			GOS_VAR_jnmj_army_attack_factor = -0.1
+		}
+		set_variable = { #
+			GOS_VAR_jnmj_army_defence_factor = -0.1
+		}
+		set_variable = { #
+		GOS_VAR_jnmj_breakthrough_factor = 0
+		}
+		set_variable = { #
+			GOS_VAR_jnmj_command_power_gain_mult = 0
+		}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	### Variants ###
+	# 潜艇 #
+	create_equipment_variant = {
+		name = "贰佰千字文级"
+		type = ship_hull_submarine_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "壹佰千字文级"
+		type = ship_hull_submarine_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	# 驱逐舰 #
+	create_equipment_variant = {
+		name = "国风级"
+		type = ship_hull_light_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "国风级（甲型）"
+		type = ship_hull_light_2
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "国风级（乙型）"
+		type = ship_hull_light_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "国风级（丙型）"
+		type = ship_hull_light_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	# 轻型巡洋舰 #
+	create_equipment_variant = {
+		name = "泊级"
+		type = ship_hull_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "湖级"
+		type = ship_hull_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+
+	# 重型巡洋舰 #
+	create_equipment_variant = {
+		name = "江级"
+		type = ship_hull_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+	}
+
+	# 战列巡洋舰 #
+	create_equipment_variant = {
+		name = "丘级"
+		type = ship_hull_heavy_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bc_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# 战列舰 #
+	create_equipment_variant = {
+		name = "岳级"
+		type = ship_hull_heavy_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "山级"
+		type = ship_hull_heavy_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = yes
+	}
+	# 航空母舰 #
+	create_equipment_variant = {
+		name = "星级"
+		type = ship_hull_carrier_conversion_bb
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
+		name_group = MNG_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = ship_deck_space
+		}
+		obsolete = yes
+	}
+}
+
+
+

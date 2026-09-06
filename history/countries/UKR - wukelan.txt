@@ -1,0 +1,115 @@
+﻿capital = 202
+
+oob = "UKR_1936"
+set_naval_oob = "UKR_1936_naval"
+
+# 东墙主力陆军与黑海舰队的开局技术基线。
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	basic_train = 1
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+	}
+	else = {
+		set_technology = {
+			early_destroyer = 1
+			early_submarine = 1
+			early_light_cruiser = 1
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	create_equipment_variant = {
+		name = "乌克兰驱逐舰"
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "黑海潜艇"
+		type = ship_hull_submarine_1
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+}
+
+set_politics = {
+	ruling_party = conservative_democracy
+	last_election = "1932.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	export_focus
+	limited_conscription
+	civilian_economy
+	UKR_dulijingshen1
+	UKR_zhengzhisaodong_ruo
+	UKR_danyijingji
+	UKR_bumandegongchangzhu
+	UKR_fayuancheli
+	UKR_fubaichouwen
+}
+add_dynamic_modifier = { modifier = UKR_yeyudenongminjun }
+set_variable = { UKR_shibingsunshi = 0.2}
+set_variable = { UKR_zuzhidu = -0.3 }
+set_variable = { UKR_huifudu = -0.3 }
+set_variable = { UKR_jihuasudu = -0.5 }
+set_variable = { UKR_jihuashangxian = -0.5 }
+set_variable = { UKR_zhihuidianshu = -100 }
+set_variable = { UKR_junshangzengjia = 0 }
+set_variable = { UKR_lujunjinyan = 0 }
+set_variable = { UKR_qianhao = 5 }
+set_variable = { UKR_qianhaosudu = 0 }
+set_variable = { UKR_lujunsudu = 0 }
+set_popularities = {
+	leader_despotism = 27
+	conservative_democracy = 44
+	agroindustrial_socialism = 12
+	vanguard_socialism = 17
+}
+
+recruit_character = UKR_Volodimir_kirilovich_venichenko
+recruit_character = UKR_Simon_Vasilievich_petriula
+recruit_character = UKR_Lazar_moyseyevic_kaganovic
+recruit_character = UKR_Nikita_sergeyevich_Khrushchev
+

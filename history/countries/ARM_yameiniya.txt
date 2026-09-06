@@ -1,0 +1,35 @@
+capital = 971
+
+#军队编制
+
+oob = "ARM_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	radio = 1
+	basic_train = 1
+}
+
+#政党比例
+
+set_politics = {
+	ruling_party = agroindustrial_socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}	
+
+set_popularities = {
+	agroindustrial_socialism = 100
+}
+
+add_ideas = {
+	limited_conscription
+}
+recruit_character = ARM_Spiridonova

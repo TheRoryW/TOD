@@ -1,0 +1,23 @@
+state = {
+	id = 1222
+	name = "STATE_1222"
+	manpower = 2828122
+	state_category = six
+
+	history = {
+		owner = WJP
+		add_core_of = WJP
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			fuel_silo = 1
+		}
+	}
+
+	provinces = {
+		1167 1191 7050 7145 10052 10055 11985
+	}
+}

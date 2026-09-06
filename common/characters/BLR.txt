@@ -1,0 +1,18 @@
+characters = {
+	# 白俄罗斯-立陶宛联邦以临时委员会形式执政；在专用肖像完成前安全调用原版欧洲通用肖像。
+	BLR_Provisional_Committee = {
+		name = BLR_Provisional_Committee
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservative_democracy_subtype
+			desc = BLR_Provisional_Committee_desc
+			traits = { }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

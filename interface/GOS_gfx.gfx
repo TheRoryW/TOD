@@ -1,0 +1,459 @@
+spriteTypes = {
+	
+ #事件
+
+ #国策
+  #政治
+ 	spriteType = {
+		name = "GFX_GOS_focus_0"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_0.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_1"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_1.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_2"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_2.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_3"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_3.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_4"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_4.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_5"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_5.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_6"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_6.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_7"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_7.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_8"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_8.png"
+	}
+
+
+
+  #经济
+	spriteType = {
+		name = "GFX_GOS_focus_13"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_13.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_14"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_14.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_15"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_15.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_16"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_16.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_17"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_17.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_18"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_18.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_19"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_19.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_20"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_20.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_21"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_21.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_22"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_22.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_23"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_23.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_24"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_24.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_25"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_25.png"
+	}
+  #陆军
+  	spriteType = {
+		name = "GFX_GOS_focus_205"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_205.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_206"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_206.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_207"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_207.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_208"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_208.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_209"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_209.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_210"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_210.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_211"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_211.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_212"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_212.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_213"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_213.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_214"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_214.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_215"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_215.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_216"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_216.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_217"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_217.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_218"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_218.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_219"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_219.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_220"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_220.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_221"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_221.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_222"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_222.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_223"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_223.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_224"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_224.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_225"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_225.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_226"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_226.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_227"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_227.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_228"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_228.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_229"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_229.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_230"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_230.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_231"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_231.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_232"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_232.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_233"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_233.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_234"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_234.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_235"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_235.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_focus_236"
+		texturefile = "gfx/interface/goals/GOS/GOS_focus_236.png"
+	}
+
+ #民族精神
+	spriteType = {
+		name = "GFX_idea_GOS_zjj"
+		texturefile = "gfx/GOS/ideas/GOS_zjj.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_gtq"
+		texturefile = "gfx/GOS/ideas/GOS_gtq.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_cgp"
+		texturefile = "gfx/GOS/ideas/GOS_cgp.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_lzc"
+		texturefile = "gfx/GOS/ideas/GOS_lzc.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_zrc"
+		texturefile = "gfx/GOS/ideas/GOS_zrc.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_lyz"
+		texturefile = "gfx/GOS/ideas/GOS_lyz.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_lz"
+		texturefile = "gfx/GOS/ideas/GOS_lz.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_txs"
+		texturefile = "gfx/GOS/ideas/GOS_txs.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_gwj"
+		texturefile = "gfx/GOS/ideas/GOS_gwj.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_qym"
+		texturefile = "gfx/GOS/ideas/GOS_qym.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GOS_zfh"
+		texturefile = "gfx/GOS/ideas/GOS_zfh.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_wyz"
+		texturefile = "gfx/GOS/ideas/GOS_wyz.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_hjw"
+		texturefile = "gfx/GOS/ideas/GOS_hjw.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_qcz"
+		texturefile = "gfx/GOS/ideas/GOS_qcz.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_zbj"
+		texturefile = "gfx/GOS/ideas/GOS_zbj.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_hzh"
+		texturefile = "gfx/GOS/ideas/GOS_hzh.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GOS_dys"
+		texturefile = "gfx/GOS/ideas/GOS_dys.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_hkz"
+		texturefile = "gfx/GOS/ideas/GOS_hkz.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_zzz"
+		texturefile = "gfx/GOS/ideas/GOS_zzz.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_gengwucaihuangdeyubo"
+		texturefile = "gfx/interface/ideas/GOS/gengwuqianhuangdeyubo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_datongdangzaixingdong"
+		texturefile = "gfx/interface/ideas/GOS/renxinsibian.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_huguangliangcang"
+		texturefile = "gfx/interface/ideas/GOS/huguangliangcang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_wangchaoxinqixiang"
+		texturefile = "gfx/interface/ideas/GOS/wangchaoxinqixiang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_fangyuzuozhan"
+		texturefile = "gfx/interface/ideas/GOS/fangyuzuozhan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_junshishengchanzaodaopohuai"
+		texturefile = "gfx/interface/ideas/GOS/junshishengchanzaodaopohuai.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_baomiju"
+		texturefile = "gfx/interface/ideas/GOS/baomiju.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_jungongchanyelian"
+		texturefile = "gfx/interface/ideas/GOS/jungongchanyelian.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_dynamic_modifiers_jnmj"
+		texturefile = "gfx/interface/ideas/GOS/jiangnanmingjun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_dynamic_modifiers_tzqw"
+		texturefile = "gfx/interface/ideas/GOS/tainziquanwei.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_dynamic_modifiers_jjms"
+		texturefile = "gfx/interface/ideas/GOS/jinjijingjimoshi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_idea_qshj"
+		texturefile = "gfx/interface/ideas/GOS/qishenghaijun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_idea_haishangbazhu"
+		texturefile = "gfx/interface/ideas/GOS/haishangbazhu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GOS_idea_qskj"
+		texturefile = "gfx/interface/ideas/GOS/qishengkongjun.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_paixi_jundui"
+		texturefile = "gfx/GOS/paixi_jundui.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_paixi_datong"
+		texturefile = "gfx/GOS/paixi_datong.png"
+	}
+	spriteType = {
+		name = "GFX_GOS_paixi_guanxue"
+		texturefile = "gfx/GOS/paixi_guanxue.png"
+	}
+	spriteType = {
+		name = "GFX_qiantanggongchengjixiejituan"
+		texturefile = "gfx/GOS/organization/qiantanggongchengjixiejituan.png"
+	}
+	spriteType = {
+		name = "GFX_wuyizhonggongjituan"
+		texturefile = "gfx/GOS/organization/wuyizhonggongjituan.png"
+	}
+	spriteType = {
+		name = "GFX_qiantangyuanyangchuanbojituan"
+		texturefile = "gfx/GOS/organization/qiantangyuanyangchuanbojituan.png"
+	}
+	spriteType = {
+		name = "GFX_guolijiangnanshuishixiuzaochang"
+		texturefile = "gfx/GOS/organization/guolijiangnanshuishixiuzaochang.png"
+	}
+	spriteType = {
+		name = "GFX_nantongjiantinggongsi"
+		texturefile = "gfx/GOS/organization/nantongjiantinggongsi.png"
+	}
+	spriteType = {
+		name = "GFX_yurilianhehangkongjituan"
+		texturefile = "gfx/GOS/organization/yurilianhehangkongjituan.png"
+	}
+	spriteType = {
+		name = "GFX_shenglixianjinjishuyanjiusuo"
+		texturefile = "gfx/GOS/organization/shenglixianjinjishuyanjiusuo.png"
+	}
+	spriteType = {
+		name = "GFX_guolijiurufeixingshejiyuan"
+		texturefile = "gfx/GOS/organization/guolijiurufeixingshejiyuan.png"
+	}
+	spriteType = {
+		name = "GFX_changjiangbingqizhizaosuo"
+		texturefile = "gfx/GOS/organization/changjiangbingqizhizaosuo.png"
+	}
+	spriteType = {
+		name = "GFX_hubengaodenghuopaozhuzaosuo"
+		texturefile = "gfx/GOS/organization/hubengaodenghuopaozhuzaosuo.png"
+	}
+	spriteType = {
+		name = "GFX_huangheminyongjichechang"
+		texturefile = "gfx/GOS/organization/huangheminyongjichechang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_lingshantumugongchengjianzhujituan"
+		texturefile = "gfx/GOS/organization/lingshantumugongchengjianzhujituan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_siliyuelushuyuan"
+		texturefile = "gfx/GOS/organization/siliyuelushuyuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_guoliyingtianzhongyangdaxuetang"
+		texturefile = "gfx/GOS/organization/guoliyingtianzhongyangdaxuetang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_hangjiangyousejinshuzhibeijituan"
+		texturefile = "gfx/GOS/organization/hangjiangyousejinshuzhibeijituan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_diguoyangzidianqihuakaifaju"
+		texturefile = "gfx/GOS/organization/diguoyangzidianqihuakaifaju.png"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_shoumingyutianjishouyongchang"
+		texturefile = "gfx/GOS/shoumingyutianjishouyongchang.png"
+	}
+ #gui
+	progressbartype = { #进度条
+		name = "GFX_GOS_tzqw_txjdt_icon"
+		textureFile1 = "gfx/interface/gui/GOS/GOS_tzqw_txjdt_Full.png"
+		textureFile2 = "gfx/interface/gui/GOS/GOS_tzqw_txjdt_Empty.png"
+		size = { x = 278 y = 266 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+
+	
+
+
+
+}
+

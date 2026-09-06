@@ -1,9 +1,9 @@
 ﻿capital = 4
 
-oob = "empty"
+oob = "AUS_1936"
 
 set_politics = {
-	ruling_party = conservative_democracy
+	ruling_party = leader_despotism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -30,9 +30,12 @@ add_ideas = {
 	AUS_diguodebengkui
 	AUS_duoshizhiqiu
 	AUS_changbaizhijun
-	AUS_pingyijinren
 }
-recruit_character = AUS_Franz_Ferdinand_I
+recruit_character = AUS_Friedrich_Christian
 recruit_character = AUS_Engelbert_Dollfuss
 recruit_character = AUS_Karl_Seitz
 recruit_character = AUS_Ruth_Fischer
+
+create_faction_from_template = faction_template_nande
+add_to_faction = AUS
+add_to_faction = BAV

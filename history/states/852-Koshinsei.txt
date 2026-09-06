@@ -1,0 +1,24 @@
+state = {
+	id = 852
+	name = "STATE_852"
+	manpower = 4310000
+	state_category = six
+
+	history = {
+		owner = EDO
+		add_core_of = EDO
+
+		add_to_array = { state_victory_points = 12072 }
+		victory_points = { 12072 10 }
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+
+	provinces = {
+		7087 7157 12072 7217 11989 10128
+	}
+}

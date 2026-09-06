@@ -591,8 +591,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/syndicalist_industry.tga"
 	}
 	SpriteType = {
-		name = "GFX_goal_totalism"
-		texturefile = "gfx/interface/goals/totalism.tga"
+		name = "GFX_goal_national_corporatism"
+		texturefile = "gfx/interface/goals/national_corporatism.tga"
 	}
 	SpriteType = {
 		name = "GFX_goal_authoritarian"
@@ -5513,79 +5513,6 @@ spriteTypes = {
 		name = "GFX_goal_POL_flag"
 		texturefile = "gfx/interface/goals/POL_flag.dds"
 	}
-	### Portugal ###
-	SpriteType = {
-		name = "GFX_goal_POR_zambia"
-		texturefile = "gfx/interface/goals/POR_zambia.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_pink_map"
-		texturefile = "gfx/interface/goals/POR_pink_map.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_ban_republic"
-		texturefile = "gfx/interface/goals/POR_ban_republic.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_autonomy"
-		texturefile = "gfx/interface/goals/POR_autonomy.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_angola"
-		texturefile = "gfx/interface/goals/POR_angola.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_mozambique"
-		texturefile = "gfx/interface/goals/POR_mozambique.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_flag_of_kongo"
-		texturefile = "gfx/interface/goals/POR_flag_of_kongo.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_knights_of_portugal"
-		texturefile = "gfx/interface/goals/POR_knights_of_portugal.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_matters_of_realm"
-		texturefile = "gfx/interface/goals/POR_matters_of_realm.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_portugese_youth"
-		texturefile = "gfx/interface/goals/POR_portugese_youth.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_the_moderating_power"
-		texturefile = "gfx/interface/goals/POR_the_moderating_power.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_the_tarrafal"
-		texturefile = "gfx/interface/goals/POR_the_tarrafal.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_burden_empire"
-		texturefile = "gfx/interface/goals/POR_burden_empire.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_Imperio_Ultramarino"
-		texturefile = "gfx/interface/goals/POR_Imperio_Ultramarino.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_royal_edicts"
-		texturefile = "gfx/interface/goals/POR_royal_edicts.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_burden_empire"
-		texturefile = "gfx/interface/goals/POR_burden_empire.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_protect_mozambique"
-		texturefile = "gfx/interface/goals/POR_protect_mozambique.tga"
-	}
-	SpriteType = {
-		name = "GFX_goal_POR_protect_angola"
-		texturefile = "gfx/interface/goals/POR_protect_angola.tga"
-	}
 	### Qing ###
 	SpriteType = {
 		name = "GFX_goal_QIE_rat"
@@ -6336,62 +6263,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/SIC_kingdom_of_two_sicilies.tga"
 	}
 	### Ukraine ###
-	SpriteType = {
-		name = "GFX_goal_UKR_king"
-		texturefile = "gfx/interface/goals/UKR/UKR_king.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_UKR_stabilise_west"
-		texturefile = "gfx/interface/goals/UKR/UKR_stabilise_west.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_UKR_coat_of_arms_hetman"
-		texturefile = "gfx/interface/goals/UKR/UKR_coat_of_arms_hetman.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_UKR_coat_of_arms_republican"
-		texturefile = "gfx/interface/goals/UKR/UKR_coat_of_arms_republican.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_UKR_army"
-		texturefile = "gfx/interface/goals/UKR/UKR_army.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_UKR_airforce"
-		texturefile = "gfx/interface/goals/UKR/UKR_airforce.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_UKR_navy"
-		texturefile = "gfx/interface/goals/UKR/UKR_navy.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_UKR_contact_diaspora"
-		texturefile = "gfx/interface/goals/UKR/UKR_contact_diaspora.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_UKR_flag"
-		texturefile = "gfx/interface/goals/UKR/UKR_flag.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_UKR_iron_republic"
-		texturefile = "gfx/interface/goals/UKR/UKR_iron_republic.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_UKR_shield"
-		texturefile = "gfx/interface/goals/UKR/UKR_shield.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_UKR_a_cold_day_in_kyiv"
-		texturefile = "gfx/interface/goals/UKR/UKR_a_cold_day_in_kyiv.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_UKR_minority_rights"
-		texturefile = "gfx/interface/goals/UKR/UKR_minority_rights.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_UKR_Ukrainian_Officers"
-		texturefile = "gfx/interface/goals/UKR/UKR_Ukrainian_Officers.tga"
-	}
 	### Union of Britain ###
 	SpriteType = {
 		name = "GFX_goal_ENG_army"
@@ -7997,366 +7868,323 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/SWE_yuanchengdaji.png"
 	}
 	###   Ukraine   ###
-	SpriteType = {
-		name = "GFX_UKR_daxuan"
-		texturefile = "gfx/interface/goals/UKR/UKR_daxuan.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_dongoudeminzhubaolei"
-		texturefile = "gfx/interface/goals/UKR/UKR_dongoudeminzhubaolei.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_jixuzhengsuzhengfu"
-		texturefile = "gfx/interface/goals/UKR/UKR_jixuzhengsuzhengfu.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_fafangxiaofeiquan"
-		texturefile = "gfx/interface/goals/UKR/UKR_fafangxiaofeiquan.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_shenpanjijinfenzi"
-		texturefile = "gfx/interface/goals/UKR/UKR_shenpanjijinfenzi.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_qudifeifazuzhi"
-		texturefile = "gfx/interface/goals/UKR/UKR_qudifeifazuzhi.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_qianghualadalilaing"
-		texturefile = "gfx/interface/goals/UKR/UKR_qianghualadalilaing.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_gongyezhengheweiyuanhui"
-		texturefile = "gfx/interface/goals/UKR/UKR_gongyezhengheweiyuanhui.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_xiugaixianfa"
-		texturefile = "gfx/interface/goals/UKR/UKR_xiugaixianfa.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_UKCguangbo"
-		texturefile = "gfx/interface/goals/UKR/UKR_UKCguangbo.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_xingzhenggaige"
-		texturefile = "gfx/interface/goals/UKR/UKR_xingzhenggaige.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_gonghuidehefaquanli"
-		texturefile = "gfx/interface/goals/UKR/UKR_gonghuidehefaquanli.png"
-	}
 	#### Generic goal icons
-	SpriteType = {
-		name = "GFX_UKR_jiadatouzi"
-		texturefile = "gfx/interface/goals/UKR/UKR_jiadatouzi.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_wanshanjicengzuzhi"
-		texturefile = "gfx/interface/goals/UKR/UKR_wanshanjicengzuzhi.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_kuodajiuyegongcheng"
-		texturefile = "gfx/interface/goals/UKR/UKR_kuodajiuyegongcheng.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_chuanbopushijiazhi"
-		texturefile = "gfx/interface/goals/UKR/UKR_chuanbopushijiazhi.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_dawukelan"
-		texturefile = "gfx/interface/goals/UKR/UKR_dawukelan.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_zhenyayijianfenzi"
-		texturefile = "gfx/interface/goals/UKR/UKR_zhenyayijianfenzi.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_shuliyuanshouquanwei"
-		texturefile = "gfx/interface/goals/UKR/UKR_shuliyuanshouquanwei.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_qingniandeminzusichao"
-		texturefile = "gfx/interface/goals/UKR/UKR_qingniandeminzusichao.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_qiangdiaozhengzhichuantong"
-		texturefile = "gfx/interface/goals/UKR/UKR_qiangdiaozhengzhichuantong.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_dazaomofanjun"
-		texturefile = "gfx/interface/goals/UKR/UKR_dazaomofanjun.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_gesakexunlianfa"
-		texturefile = "gfx/interface/goals/goal_tfv_smiling_buddha.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_duixianchengnuo"
-		texturefile = "gfx/interface/goals/UKR/UKR_duixianchengnuo.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_jiazhengzhengfudingdan"
-		texturefile = "gfx/interface/goals/UKR/UKR_jiazhengzhengfudingdan.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_wukelanguofangweiyuanhui"
-		texturefile = "gfx/interface/goals/UKR/UKR_wukelanguofangweiyuanhui.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_jihuashishi"
-		texturefile = "gfx/interface/goals/UKR/UKR_jihuashishi.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_quzhueluosiren"
-		texturefile = "gfx/interface/goals/UKR/UKR_quzhueluosiren.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_huodefaguochengnuo"
-		texturefile = "gfx/interface/goals/UKR/UKR_huodefaguochengnuo.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_dongxianfangyugongcheng"
-		texturefile = "gfx/interface/goals/UKR/UKR_dongxianfangyugongcheng.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_shengchanzizhuhua"
-		texturefile = "gfx/interface/goals/UKR/UKR_shengchanzizhuhua.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_huangse_lanse"
-		texturefile = "gfx/interface/goals/UKR/UKR_huangse_lanse.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_shenshiwaijiaohuanjing"
-		texturefile = "gfx/interface/goals/UKR/UKR_shenshiwaijiaohuanjing.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_shenhuahezuo"
-		texturefile = "gfx/interface/goals/UKR/UKR_shenhuahezuo.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_qingqiuguojiyuanzhu"
-		texturefile = "gfx/interface/goals/UKR/UKR_qingqiuguojiyuanzhu.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_shoudangqichong"
-		texturefile = "gfx/interface/goals/UKR/UKR_shoudangqichong.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_jingjifuxing"
-		texturefile = "gfx/interface/goals/UKR/UKR_jingjifuxing.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_qingsuanfaguoyuanzhuchanye"
-		texturefile = "gfx/interface/goals/UKR/UKR_qingsuanfaguoyuanzhuchanye.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_kuojiandiniebohegongyejidi"
-		texturefile = "gfx/interface/goals/UKR/UKR_kuojiandiniebohegongyejidi.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_lianhetouzi"
-		texturefile = "gfx/interface/goals/UKR/UKR_lianhetouzi.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_keliwoluogezhonggongyezhongxin"
-		texturefile = "gfx/interface/goals/UKR/UKR_keliwoluogezhonggongyezhongxin.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_dinieboheshuidianzhan"
-		texturefile = "gfx/interface/goals/UKR/UKR_dinieboheshuidianzhan.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_gongxunkexuejia"
-		texturefile = "gfx/interface/goals/UKR/UKR_gongxunkexuejia.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_womendejiaoao"
-		texturefile = "gfx/interface/goals/UKR/UKR_womendejiaoao.png"
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_UKR_zhaomuxiansanrenkou"
-		texturefile = "gfx/interface/goals/UKR/UKR_zhaomuxiansanrenkou.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_tigaozhijianshuiping"
-		texturefile = "gfx/interface/goals/UKR/UKR_tigaozhijianshuiping.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_ranyouzengchanxiangmu"
-		texturefile = "gfx/interface/goals/UKR/UKR_ranyouzengchanxiangmu.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_xiyinwaiqijinzhu"
-		texturefile = "gfx/interface/goals/UKR/UKR_xiyinwaiqijinzhu.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_ruidianzhagangjishu"
-		texturefile = "gfx/interface/goals/UKR/UKR_ruidianzhagangjishu.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_deguodedianzikeji"
-		texturefile = "gfx/interface/goals/UKR/UKR_deguodedianzikeji.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_xiongyalinongyongjixie"
-		texturefile = "gfx/interface/goals/UKR/UKR_xiongyalinongyongjixie.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_xinshengdechanpinjingji"
-		texturefile = "gfx/interface/goals/UKR/UKR_xinshengdechanpinjingji.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_shouquandaili"
-		texturefile = "gfx/interface/goals/UKR/UKR_shouquandaili.png"
-	}
 	SpriteType = {
 		name = "GFX_goal_generic_major_alliance"
 		texturefile = "gfx/interface/goals/goal_generic_major_alliance.png"
 	}
 	SpriteType = {
-		name = "GFX_UKR_duoyuanlianheti"
-		texturefile = "gfx/interface/goals/UKR/UKR_duoyuanlianheti.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_gongyeanquanbaozhang"
-		texturefile = "gfx/interface/goals/UKR/UKR_gongyeanquanbaozhang.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_jingjizuowuzhongzhiqu"
-		texturefile = "gfx/interface/goals/UKR/UKR_jingjizuowuzhongzhiqu.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_guojiashengchanzhidaobu"
-		texturefile = "gfx/interface/goals/UKR/UKR_guojiashengchanzhidaobu.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_xiwangzaiheitudili"
-		texturefile = "gfx/interface/goals/UKR/UKR_xiwangzaiheitudili.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_zhongyangdianzishejiju"
-		texturefile = "gfx/interface/goals/UKR/UKR_zhongyangdianzishejiju.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_qinggongyexiandaihua"
-		texturefile = "gfx/interface/goals/UKR/UKR_qinggongyexiandaihua.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_jifudaxue"
-		texturefile = "gfx/interface/goals/UKR/UKR_jifudaxue.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_yujulongdejiaoyi"
-		texturefile = "gfx/interface/goals/UKR/UKR_yujulongdejiaoyi.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_kuodashipinchukouguimo"
-		texturefile = "gfx/interface/goals/UKR/UKR_kuodashipinchukouguimo.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_zhuanzhuguoneiyunshu"
-		texturefile = "gfx/interface/goals/UKR/UKR_zhuanzhuguoneiyunshu.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_jifuzhouyunshuzhongxin"
-		texturefile = "gfx/interface/goals/UKR/UKR_jifuzhouyunshuzhongxin.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_xiangzhenzuofang"
-		texturefile = "gfx/interface/goals/UKR/UKR_xiangzhenzuofang.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_kuodaziyuankaicai"
-		texturefile = "gfx/interface/goals/UKR/UKR_kuodaziyuankaicai.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_zhaboluoreyanjiusuo"
-		texturefile = "gfx/interface/goals/UKR/UKR_zhaboluoreyanjiusuo.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_wudongzonghegongyejidi"
-		texturefile = "gfx/interface/goals/UKR/UKR_wudongzonghegongyejidi.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_shengyuweihan"
-		texturefile = "gfx/interface/goals/UKR/UKR_shengyuweihan.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_zhengdunjunguantuan"
-		texturefile = "gfx/interface/goals/UKR/UKR_zhengdunjunguantuan.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_tigaojunxiang"
-		texturefile = "gfx/interface/goals/UKR/UKR_tigaojunxiang.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_gengxinqingxingwuqi"
-		texturefile = "gfx/interface/goals/UKR/UKR_gengxinqingxingwuqi.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_jianlipaobingying"
-		texturefile = "gfx/interface/goals/UKR/UKR_jianlipaobingying.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_jianquanzhiyuantixi"
-		texturefile = "gfx/interface/goals/UKR/UKR_jianquanzhiyuantixi.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_motuohuazizhongbudui"
-		texturefile = "gfx/interface/goals/UKR/UKR_motuohuazizhongbudui.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_xunliancaodian"
-		texturefile = "gfx/interface/goals/UKR/UKR_xunliancaodian.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_zhihuizhongshu"
-		texturefile = "gfx/interface/goals/UKR/UKR_zhihuizhongshu.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_luoshijilvguizhang"
-		texturefile = "gfx/interface/goals/UKR/UKR_luoshijilvguizhang.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_kuodapeixunguimo"
-		texturefile = "gfx/interface/goals/UKR/UKR_kuodapeixunguimo.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_xiangcundidaoxiaodui"
-		texturefile = "gfx/interface/goals/UKR/UKR_xiangcundidaoxiaodui.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_shulilaobingmofan"
-		texturefile = "gfx/interface/goals/UKR/UKR_shulilaobingmofan.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_jixingjunxunlian"
-		texturefile = "gfx/interface/goals/UKR/UKR_jixingjunxunlian.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_baoweizhepianretu"
-		texturefile = "gfx/interface/goals/UKR/UKR_baoweizhepianretu.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_aodesajunshixueyuan"
-		texturefile = "gfx/interface/goals/UKR/UKR_aodesajunshixueyuan.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_zhanshujiaoliuhui"
-		texturefile = "gfx/interface/goals/UKR/UKR_zhanshujiaoliuhui.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_leidaynjiusuo"
-		texturefile = "gfx/interface/goals/UKR/UKR_leidaynjiusuo.png"
-	}
-	SpriteType = {
-		name = "GFX_UKR_lilunshizhanhua"
-		texturefile = "gfx/interface/goals/UKR/UKR_lilunshizhanhua.png"
-	}
-	SpriteType = {
 		name = "GFX_ALA_xuanyan"
 		texturefile = "gfx/interface/goals/ALA/ALA_xuanyan.png"
+	}
+
+	### 德国军事线国策图标###
+    spriteType = {
+		name = "GFX_goal_1936nianduguofangjunshijianshebaogao"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_1936nianduguofangjunshijianshebaogao.png"
+	}
+	spriteType = {
+		name = "GFX_goal_1936nianrenminjunfazhanfangan"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_1936nianduguofangjunshijianshebaogao.png"
+	}
+	spriteType = {
+		name = "GFX_goal_zhongoudiyuanzhanlue"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_zhongoudiyuanzhanlue.png"
+	}
+	spriteType = {
+		name = "GFX_goal_gaizuzhongyangjunshiweiyuanhui"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_gaizuzhongyangjunshiweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_renminjunjunshibangongzongju"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_renminjunjunshibangongzongju.png"
+	}
+	spriteType = {
+		name = "GFX_goal_zhuanxingjingongxingjunshililiang"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_zhuanxingjingongxingjunshililiang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_quanjunzhengzhigongzuodaibiaohui"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_quanjunzhengzhigongzuodaibiaohui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_kuodashibingweiyuanhui"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_kuodashibingweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_zhengweizhigaige"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_zhengweizhigaige.png"
+	}
+	spriteType = {
+		name = "GFX_goal_zhengwuyouyujunwu"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_zhengwuyouyujunwu.png"
+	}
+	spriteType = {
+		name = "GFX_goal_zengsheqianxianweiyuanhui"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_zengsheqianxianweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_junwuyouyuzhengwu"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_junwuyouyuzhengwu.png"
+	}
+	spriteType = {
+		name = "GFX_goal_renminlujun"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_renminlujun.png"
+	}
+	spriteType = {
+		name = "GFX_goal_lujunjunxiebangongshi"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_lujunjunxiebangongshi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_tiaozhengjunduijiegou"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_tiaozhengjunduijiegou.png"
+	}
+	spriteType = {
+		name = "GFX_goal_tigaodanbinghuoli"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_tigaodanbinghuoli.png"
+	}
+	spriteType = {
+		name = "GFX_goal_touzitankegongye"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_touzitankegongye.png"
+	}
+	spriteType = {
+		name = "GFX_goal_zhanluezhanshugexin"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_zhanluezhanshugexin.png"
+	}
+	spriteType = {
+		name = "GFX_goal_yingdejunshihezuodezhongje"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_yingdejunshihezuodezhongje.png"
+	}
+	spriteType = {
+		name = "GFX_goal_tezhongzuozhandanyuan"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_tezhongzuozhandanyuan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_jianshexinxingjunshiyuanxiao"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_jianshexinxingjunshiyuanxiao.png"
+	}
+	spriteType = {
+		name = "GFX_goal_youhuahouqinxitong"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_youhuahouqinxitong.png"
+	}
+	spriteType = {
+		name = "GFX_goal_zengjiapaobingzhiyuanbudui"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_zengjiapaobingzhiyuanbudui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_renminhaijun"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_renminhaijun.png"
+	}
+	spriteType = {
+		name = "GFX_goal_haijunshigemingdezhongjian"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_haijunshigemingdezhongjian.png"
+	}
+	spriteType = {
+		name = "GFX_goal_kuodagonghaijiandui"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_kuodagonghaijiandui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_haijunhangkongliliang"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_haijunhangkongliliang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_haianhangkongjidi"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_haianhangkongjidi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_haijunfeixingxuexiao"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_haijunfeixingxuexiao.png"
+	}
+	spriteType = {
+		name = "GFX_goal_baligongshejihangkongmujian"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_baligongshejihangkongmujian.png"
+	}
+	spriteType = {
+		name = "GFX_goal_haijunshigemingdeweishi"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_haijunshigemingdeweishi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_kuaisijianduifangan"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_kuaisijianduifangan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_jianchuanxiandaihuafangan"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_jianchuanxiandaihuafangan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_leidashekongxitong"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_leidashekongxitong.png"
+	}
+	spriteType = {
+		name = "GFX_goal_tuomasimincaierhaozhanxun"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_tuomasimincaierhaozhanxun.png"
+	}
+	spriteType = {
+		name = "GFX_goal_shuixiazhanzhengshexiang"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_shuixiazhanzhengshexiang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_kuodaqiantingjidi"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_kuodaqiantingjidi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_qunlangxiji"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_qunlangxiji.png"
+	}
+	spriteType = {
+		name = "GFX_goal_mokuaihuafangan"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_mokuaihuafangan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_womendeyizhijianrenrugang"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_womendeyizhijianrenrugang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_renminkongjun"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_renminkongjun.png"
+	}
+	spriteType = {
+		name = "GFX_goal_zhuzhongqingxingfeiji"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_zhuzhongqingxingfeiji.png"
+	}
+	spriteType = {
+		name = "GFX_goal_kongdizhanshuxieshang"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_kongdizhanshuxieshang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_lunjunhangkonglianluoyuan"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_lunjunhangkonglianluoyuan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_fazhanzhongxingfeiji"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_fazhanzhongxingfeiji.png"
+	}
+	spriteType = {
+		name = "GFX_goal_zhanluedajifangan"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_zhanluedajifangan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_hangkongranyouguanliweiyuanhui"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_hangkongranyouguanliweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_mingquerenminjunduideweiyizongzhi"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_mingquerenminjunduideweiyizongzhi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_weizuguoerzhan"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_weizuguoerzhan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_weirenminerzhan"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_weirenminerzhan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_weiminzuerzhan"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_weiminzuerzhan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_xiangtongyizuguomaijin"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_xiangtongyizuguomaijin.png"
+	}
+	spriteType = {
+		name = "GFX_goal_kuodatankegongchang"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_kuodatankegongchang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_zhuangjiajiqunyunyongzhanshu"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_zhuangjiajiqunyunyongzhanshu.png"
+	}
+	spriteType = {
+		name = "GFX_goal_xiandaihuaengesigang"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_xiandaihuaengesigang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_zhiliangzhanyou"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_zhiliangzhanyou.png"
+	}
+	spriteType = {
+		name = "GFX_goal_shijiegemingjizhanliejian"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_shijiegemingjizhanliejian.png"
+	}
+	spriteType = {
+		name = "GFX_goal_womenshiwanqiangdegongnongernv"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_womenshiwanqiangdegongnongernv.png"
+	}
+	spriteType = {
+		name = "GFX_goal_kuayuegedayangkuayuequanguoshangxia"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_kuayuegedayangkuayuequanguoshangxia.png"
+	}
+	spriteType = {
+		name = "GFX_goal_ranggemingdehongqipiaoyang"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_ranggemingdehongqipiaoyang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_yuanchenghaishanghongzhaji"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_yuanchenghaishanghongzhaji.png"
+	}
+	spriteType = {
+		name = "GFX_goal_penqishixitong"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_penqishixitong.png"
+	}
+	spriteType = {
+		name = "GFX_goal_gaosufeijisheji"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_gaosufeijisheji.png"
+	}
+	spriteType = {
+		name = "GFX_goal_qijiwuqi"
+		texturefile = "gfx/interface/goals/GER/GFX_goal_qijiwuqi.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_daxuan"
+		texturefile = "gfx/interface/goals/TOD_UKR_daxuan.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_dawukelan"
+		texturefile = "gfx/interface/goals/TOD_UKR_dawukelan.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_zhenyayijianfenzi"
+		texturefile = "gfx/interface/goals/TOD_UKR_zhenyayijianfenzi.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_shuliyuanshouquanwei"
+		texturefile = "gfx/interface/goals/TOD_UKR_shuliyuanshouquanwei.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_qingniandeminzusichao"
+		texturefile = "gfx/interface/goals/TOD_UKR_qingniandeminzusichao.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_qiangdiaozhengzhichuantong"
+		texturefile = "gfx/interface/goals/TOD_UKR_qiangdiaozhengzhichuantong.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_dazaomofanjun"
+		texturefile = "gfx/interface/goals/TOD_UKR_dazaomofanjun.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_gesakexunlianfa"
+		texturefile = "gfx/interface/goals/TOD_UKR_gesakexunlianfa.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_duixianchengnuo"
+		texturefile = "gfx/interface/goals/TOD_UKR_duixianchengnuo.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_jiazhengzhengfudingdan"
+		texturefile = "gfx/interface/goals/TOD_UKR_jiazhengzhengfudingdan.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_wukelanguofangweiyuanhui"
+		texturefile = "gfx/interface/goals/TOD_UKR_wukelanguofangweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_jihuashishi"
+		texturefile = "gfx/interface/goals/TOD_UKR_jihuashishi.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_huangse_lanse"
+		texturefile = "gfx/interface/goals/TOD_UKR_huangse_lanse.png"
 	}
 }

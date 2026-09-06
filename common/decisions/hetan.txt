@@ -1,0 +1,241 @@
+ROC_SRC_decision_hetan = {
+    # ROC_SRC_decision_hetan_1 = {
+    # 	icon = ger_military_buildup
+	# 	visible = { set_global_flag = global_flag_ROC_SRC_hetan }
+	# 	allowed = { 
+	# 		OR = {
+	# 			tag = ROC
+	# 			tag = SRC
+	# 		}
+	# 	 } 
+	# 	available = { 
+	# 		AND = {
+	# 			country_exists = SRC
+	# 			country_exists = ROC
+	# 		}
+	# 	 }
+	# 	days_remove = 30
+	# 	fire_only_once = yes
+	# 	remove_effect = { 
+
+	# 	}
+    # }
+	ROC_SRC_decision_hetan_zhengzhi = {
+		icon = GFX_decision_generic_political_address
+        activation = { 
+			has_global_flag = global_flag_ROC_SRC_hetan
+			NOT = {
+				has_global_flag = global_flag_hetan_ROC_SRC_fail
+			}
+		}
+		available = {
+			has_global_flag = global_flag_hetan_ROC_SRC_fail
+		}
+		visible = {
+			NOT = {
+				has_global_flag = global_flag_hetan_ROC_SRC_fail
+			}
+			has_global_flag = global_flag_ROC_SRC_hetan
+		}
+		days_mission_timeout = 15
+        fire_only_once = yes
+        timeout_effect = { 
+            if = {
+				limit = {
+					check_variable = { ROC.ROC_SRC_hetan_zhengzhi < SRC.ROC_SRC_hetan_zhengzhi }
+				}
+				SRC = {
+					country_event = { id = ROC_SRC_hetan_event.7 }
+				}
+			}
+			else = {
+				ROC = {
+					country_event = { id = ROC_SRC_hetan_event.7 }
+				}
+			}
+        }
+	}
+	ROC_SRC_decision_hetan_junshi = {
+		icon = GFX_decision_generic_political_address
+        activation = { 
+			has_global_flag = global_flag_ROC_SRC_hetan_zhengzhi_2_complete
+			NOT = {
+				has_global_flag = global_flag_hetan_ROC_SRC_fail
+			}
+		 }
+		available = {
+			has_global_flag = global_flag_hetan_ROC_SRC_fail
+		}
+		visible = {
+			NOT = {
+				has_global_flag = global_flag_hetan_ROC_SRC_fail
+			}
+		}
+		days_mission_timeout = 15
+        fire_only_once = yes
+        timeout_effect = { 
+            if = {
+				limit = {
+					check_variable = { ROC.ROC_SRC_hetan_junshi < SRC.ROC_SRC_hetan_junshi }
+				}
+				SRC = {
+					country_event = { id = ROC_SRC_hetan_event.14 }
+				}
+			}
+            else = {
+				ROC = {
+					country_event = { id = ROC_SRC_hetan_event.14 }
+				}
+			}
+        }
+	}
+	ROC_SRC_decision_hetan_jingji = {
+		icon = GFX_decision_generic_political_address
+        activation = { 
+			has_global_flag = global_flag_ROC_SRC_hetan_junshi_2_complete
+			NOT = {
+				has_global_flag = global_flag_hetan_ROC_SRC_fail
+			}
+		 }
+		available = {
+			has_global_flag = global_flag_hetan_ROC_SRC_fail
+		}
+		days_mission_timeout = 15
+        fire_only_once = yes
+        timeout_effect = { 
+            if = {
+				limit = {
+					check_variable = { ROC.ROC_SRC_hetan_jingji < SRC.ROC_SRC_hetan_jingji }
+				}
+				SRC = {
+					country_event = { id = ROC_SRC_hetan_event.18 }
+				}
+			}
+			else = {
+				ROC = {
+					country_event = { id = ROC_SRC_hetan_event.18 }
+				}
+			}
+        }
+	}
+	ROC_SRC_decision_hetan_complete = {
+		icon = GFX_decision_generic_political_address
+        activation = { 
+			has_global_flag = global_flag_ROC_SRC_hetan_jingji_complete
+			NOT = {
+				has_global_flag = global_flag_hetan_ROC_SRC_fail
+			}
+		 }
+		available = {
+			has_global_flag = global_flag_hetan_ROC_SRC_fail
+		}
+		days_mission_timeout = 15
+        fire_only_once = yes
+        timeout_effect = { 
+			country_event = { id = ROC_SRC_hetan_event.22 }
+			if = {
+				limit = { 
+					check_variable = { ROC.ROC_SRC_hetan_var > SRC.ROC_SRC_hetan_var }
+				}
+				ROC = {
+					set_country_flag = country_flag_ROC_SRC_hetan_zhu_country
+				}
+				SRC = {
+					set_country_flag = country_flag_ROC_SRC_hetan_fu_country
+				}
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						check_variable = { ROC.ROC_SRC_hetan_var < SRC.ROC_SRC_hetan_var }
+						check_variable = { ROC.ROC_SRC_hetan_var = SRC.ROC_SRC_hetan_var }
+					}
+				}
+				SRC = {
+					set_country_flag = country_flag_ROC_SRC_hetan_zhu_country
+				}
+				ROC = {
+					set_country_flag = country_flag_ROC_SRC_hetan_fu_country
+				}
+			}
+        }
+	}
+	ROC_SRC_decision_hetan_fail = {
+		icon = GFX_decision_generic_political_address
+		visible = {
+			NOT = {
+				has_global_flag = global_flag_hetan_ROC_SRC_fail
+			}
+		}
+		available = {  }
+		ai_will_do = {
+			base = 0
+		}
+        fire_only_once = yes
+		complete_effect = {  
+			ROC = {
+				country_event = {
+					id = ROC_SRC_hetan_event.8888
+				}
+			}
+			SRC = {
+				country_event = {
+					id = ROC_SRC_hetan_event.8888
+				}
+			}
+		}	
+	}
+	ROC_SRC_decision_hetan_1 = {
+		icon = GFX_decision_generic_political_address
+		visible = {
+		}
+		available = { always = no }
+		ai_will_do = {
+			base = 0
+		}
+        fire_only_once = yes
+		complete_effect = {  
+		}	
+	}
+}
+
+ROC_SRC_deciosion_hetan_start_ca = {
+	ROC_SRC_decision_hetan_start = {
+		icon = GFX_decision_generic_political_address
+		visible = {
+			OR = {
+				AND = {
+					tag = ROC
+					has_completed_focus = dongbeiwenti
+				}
+				AND = {
+					tag = SRC
+					has_completed_focus = SRC_zhaokaitongyidahui
+				}
+			}
+			NOT = {
+				has_global_flag = global_flag_hetan_ROC_SRC_started
+			}
+		}
+		ai_will_do = {
+			factor = 500	
+	    }
+		cost = 10
+		fire_only_once = yes
+		remove_effect = {
+			set_global_flag = global_flag_hetan_ROC_SRC_started
+			if  = {
+				limit = { tag = ROC }
+				ROC = {
+					country_event = { id = ROC_SRC_hetan_event.4 }
+				}
+			}
+			else_if = {
+				limit = { tag = SRC }
+				SRC = {
+					country_event = { id = ROC_SRC_hetan_event.2 }
+				}
+			}
+		}
+	}
+}

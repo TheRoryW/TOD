@@ -1,0 +1,65 @@
+MNG_text_categories = {
+    priority = 2
+    icon = gre_faction_management
+    allowed = { 
+        original_tag = MNG
+        is_debug = yes
+     }
+}
+MNG_paixiboyi_categories = {
+	priority = 2
+	icon = gre_faction_management
+
+	scripted_gui = MNG_paixiboyi_decision_ui
+
+    allowed = { original_tag = MNG }
+}
+MNG_jinyiweizaixingdong_categories = {
+	priority = 2
+	icon = gre_faction_management
+
+    allowed = { original_tag = MNG }
+}
+MNG_jingjijianshe_categories = {
+	priority = 2
+	icon = gre_faction_management
+
+    allowed = { original_tag = MNG }
+}
+MNG_chongjiandifangzhixu_categories = {
+	priority = 2
+	icon = gre_faction_management
+
+    allowed = { 
+        is_ming_tag = yes
+        NOT = { tag = MNG }
+     }
+}
+MNG_chongjiandaming_categories = {
+	priority = 2
+	icon = gre_faction_management
+
+    allowed = { 
+        is_ming_tag = yes
+        NOT = {
+            tag = MNG
+            tag = LSM
+            tag = HWH
+            tag = MLJ
+        }
+     }
+}
+
+MNG_SIC_hebing_categories = {
+	priority = 3
+	icon = generic_political_discourse
+	allowed = { tag = SIC }
+	visible = { has_completed_focus = SIC_quanguo_zhixianpai_dahui }
+}
+
+MNG_SCG_hebing_categories = {
+	priority = 3
+	icon = generic_political_discourse
+	allowed = { tag = SCG }
+	visible = { has_completed_focus = SCG_quanguo_shehuizhuyi_zhengdang_huiyi }
+}

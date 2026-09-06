@@ -1,0 +1,477 @@
+### SRC ideas ###
+ideas = {
+	country = {
+	    SRC_qiyireqing = {
+		    picture = GFX_idea_SRC_qiyireqing
+			modifier = {
+				conscription_factor = 0.1
+				no_supply_grace = 120
+			}
+		}
+	    SRC_gemingchiweidui = {
+		    picture = GFX_idea_SRC_gemingchiweidui
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_factor = -0.2
+				army_morale_factor = 0.05
+				dig_in_speed_factor = 0.4
+				max_dig_in_factor = 0.2
+			}
+		}
+	    SRC_gemingjunshiweiyuanhui_1 = {
+		    picture = GFX_idea_SRC_gemingjunshiweiyuanhui_1
+			modifier = {
+				war_support_factor = 0.05
+				planning_speed = -0.2
+				max_planning = -0.2
+				max_command_power = -15
+				experience_gain_army = -0.03
+				experience_gain_air = -0.03
+				experience_gain_navy = -0.03
+			}
+		}
+	    SRC_gemingjunshiweiyuanhui_2 = {
+		    picture = GFX_idea_SRC_gemingjunshiweiyuanhui_2
+			modifier = {
+				war_support_factor = 0.05
+				max_command_power = -15
+			}
+		}
+	    SRC_gemingjunshiweiyuanhui_buqianghuafei = {
+		    picture = GFX_idea_SRC_gemingjunshiweiyuanhui_3
+			allowed = { always = no }
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+	    SRC_gongrenhuchangreqing = {
+		    picture = GFX_idea_SRC_gongrenhuchangreqing
+			modifier = {
+				industry_repair_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		SRC_tongchanguojideyuanzhu = {
+			picture = GFX_idea_SRC_tongchanguojideyuanzhu
+			modifier = {
+				
+			}
+		}
+		SRC_tongchanguojijunshiguwentuan = {
+			picture = GFX_idea_SRC_tongchanguojijunshiguwentuan
+			modifier = {
+				
+			}
+		}
+		SRC_zhonghuagongnonghongjun = {
+			picture = GFX_idea_SRC_zhonghuagongnonghongjun
+			modifier = {
+				
+			}
+		}
+		SRC_buwangkulaojichou = {
+			picture = GFX_idea_SRC_buwangkulaojichou
+			modifier = {
+				war_support_factor = 0.1
+				army_speed_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = GPS
+				attack_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = GPS
+				defense_bonus_against = 0.2
+			}
+		}
+
+		SRC_yiwujihua = {
+			picture = GFX_idea_SRC_yiwujihua
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		SRC_wuchanjiejiminzhu = {
+			picture = GFX_idea_SRC_wuchanjiejiminzhu
+			modifier = { compliance_growth = 0.01 }
+		}
+		SRC_wuchanjiejiwenhua = {
+			picture = GFX_idea_SRC_wuchanjiejiwenhua
+			modifier = {
+				compliance_gain = 0.01
+				stability_factor = 0.1
+			}
+		}
+		SRC_hongxingzhaoyaodongfang = {
+			picture = GFX_idea_SRC_hongxingzhaoyaodongfang
+			modifier = {
+				compliance_growth = 0.01
+				stability_factor = 0.1
+				army_attack_factor = 0.075
+			}
+		}
+		SRC_xueshuminzhu = {
+			picture = GFX_idea_SRC_xueshuminzhu
+			modifier = { custom_modifier_tooltip = SRC_li_xueshuminzhu_display_tt }
+		}
+		SRC_xinwenhuasichao = {
+			picture = GFX_idea_SRC_xinwenhuasichao
+			modifier = { custom_modifier_tooltip = SRC_li_xinwenhuasichao_display_tt }
+		}
+		SRC_gemingzhengfu = {
+			picture = GFX_idea_SRC_gemingzhengfu
+			modifier = { custom_modifier_tooltip = SRC_li_gemingzhengfu_display_tt }
+		}
+		SRC_chiqizhiyinweilai = {
+			picture = GFX_idea_SRC_chiqizhiyinweilai
+			modifier = { custom_modifier_tooltip = SRC_li_chiqizhiyinweilai_display_tt }
+		}
+		SRC_zhumenhuanxintian = {
+			picture = GFX_idea_SRC_zhumenhuanxintian
+			modifier = { custom_modifier_tooltip = SRC_chen_zhumenhuanxintian_display_tt }
+		}
+		# 任辅臣线国策效果显示用空壳 idea；实际效果由动态 modifier 或一次性国策效果提供。
+		SRC_ren_zhongyangjihuaweiyuanhui_display = {
+			picture = GFX_idea_SRC_jihuashengchan
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.1
+				local_resources_coal_factor = 0.1
+			}
+		}
+		SRC_ren_gongyeguoyouhua_display = {
+			picture = GFX_idea_SRC_jihuashengchan
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+		}
+		SRC_ren_nongyejitihua_display = {
+			picture = GFX_idea_SRC_jihuashengchan
+			modifier = {
+				local_building_slots_factor = 0.15
+				consumer_goods_factor = -0.1
+			}
+		}
+		SRC_ren_yiwujihua_display = {
+			picture = GFX_idea_SRC_jihuashengchan
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		SRC_ren_jianchilingdaoquan_display = { picture = GFX_idea_SRC_dangdelingdao modifier = { custom_modifier_tooltip = SRC_ren_jianchilingdaoquan_display_tt } }
+		SRC_ren_zhengfengyundong_display = { picture = GFX_idea_SRC_dangdelingdao modifier = { party_popularity_stability_factor = 0.2 } }
+		SRC_ren_gongxieshidaxue_display = { picture = GFX_idea_SRC_dangdelingdao modifier = { production_factory_max_efficiency_factor = 0.05 stability_factor = 0.1 } }
+		SRC_ren_qunzhong_display = { picture = GFX_idea_SRC_dangdelingdao modifier = { war_support_factor = 0.1 } }
+		SRC_ren_jianjuefanduigerenchongbai_display = { picture = GFX_idea_SRC_wuchanjiejiminzhu modifier = { custom_modifier_tooltip = SRC_ren_jianjuefanduigerenchongbai_display_tt } }
+		SRC_ren_xinwenhuayundong_display = { picture = GFX_idea_SRC_wuchanjiejiminzhu modifier = { stability_factor = 0.1 research_speed_factor = 0.05 } }
+		SRC_ren_hongxingzhaoyaodongfang_display = { picture = GFX_idea_SRC_hongxingzhaoyaodongfang modifier = { army_attack_factor = 0.1 } }
+		# 陈独秀线国策效果显示用空壳 idea；实际效果由 TOD_SRC_modifiers.txt 中的动态 modifier 提供。
+		SRC_chen_xueshuwenhuageminghua_display = {
+			picture = GFX_idea_SRC_gemingwenhua
+			modifier = { research_speed_factor = 0.1 special_project_facility_supply_consumption_factor = -0.25 }
+		}
+		SRC_chen_dongbeilaodongdaxue_display = {
+			picture = GFX_idea_SRC_gemingwenhua
+			research_bonus = { industry = 0.1 }
+			modifier = { stability_factor = 0.05 special_project_speed_factor = 0.1 }
+		}
+		SRC_chen_qianghuaqingniangongzuo_display = {
+			picture = GFX_idea_SRC_gemingwenhua
+			modifier = { stability_factor = 0.1 war_support_factor = 0.1 }
+		}
+		SRC_chen_shehuizhuyijiebanren_display = {
+			picture = GFX_idea_SRC_gemingwenhua
+			modifier = { production_factory_efficiency_gain_factor = 0.05 production_factory_max_efficiency_factor = 0.1 }
+		}
+		SRC_chen_gemingtongyizhanxian_display = {
+			picture = GFX_idea_SRC_gemingtongmeng
+			modifier = { custom_modifier_tooltip = SRC_chen_gemingtongyizhanxian_display_tt }
+		}
+		SRC_chen_gaizaozichanjieji_display = {
+			picture = GFX_idea_SRC_gemingtongmeng
+			modifier = { min_export = -0.05 civilian_intel_to_others = -15 factory_energy_consumption = -0.1 }
+		}
+		SRC_chen_datongshijieguodu_display = {
+			picture = GFX_idea_SRC_gemingtongmeng
+			modifier = { stability_factor = 0.1 industry_free_repair_factor = 0.2 }
+		}
+		SRC_chen_guojiagaigeweiyuanhui_display = {
+			picture = GFX_idea_SRC_gaigewei
+			modifier = { custom_modifier_tooltip = SRC_chen_guojiagaigeweiyuanhui_display_tt }
+		}
+		SRC_chen_shumaiqiye_display = {
+			picture = GFX_idea_SRC_gaigewei
+			modifier = { production_speed_infrastructure_factor = 0.1 production_speed_rail_way_factor = 0.1 local_building_slots_factor = 0.1 }
+		}
+		SRC_chen_tudigaige_display = {
+			picture = GFX_idea_SRC_gaigewei
+			modifier = { local_building_slots_factor = 0.15 monthly_population = 0.15 }
+		}
+		SRC_chen_tieguodundae_display = {
+			picture = GFX_idea_SRC_gaigewei
+			modifier = { production_speed_industrial_complex_factor = 0.15 conversion_cost_civ_to_mil_factor = -0.05 }
+		}
+		SRC_chen_zhumenhuanxintian_display = {
+			picture = GFX_idea_SRC_zhumenhuanxintian
+			modifier = { production_speed_industrial_complex_factor = 0.2 conversion_cost_civ_to_mil_factor = -0.05 }
+		}
+		# 李大钊线国策效果显示用空壳 idea。
+		SRC_li_dongbeigaoxiaozizhihui_display = { picture = GFX_idea_SRC_xueshuminzhu modifier = { custom_modifier_tooltip = SRC_li_dongbeigaoxiaozizhihui_display_tt } }
+		SRC_li_xinwenhuasichao_display = { picture = GFX_idea_SRC_xinwenhuasichao modifier = { stability_factor = 0.1 special_project_speed_factor = 0.1 } }
+		SRC_li_jicengminzhu_display = { picture = GFX_idea_SRC_xinwenhuasichao modifier = { industrial_capacity_factory = 0.05 industrial_capacity_dockyard = 0.1 } }
+		SRC_li_gemingweiyuanhui_display = { picture = GFX_idea_SRC_gemingzhengfu modifier = { custom_modifier_tooltip = SRC_li_gemingweiyuanhui_display_tt } }
+		SRC_li_zhengzhidaminzhu_display = { picture = GFX_idea_SRC_renminminzhu modifier = { conscription_factor = 0.1 mobilization_speed = 0.15 } }
+		SRC_li_qunzhongzhijiejiandu_display = { picture = GFX_idea_SRC_renminminzhu modifier = { war_support_factor = 0.1 military_industrial_organization_funds_gain = 0.05 } }
+		SRC_li_guojiajingjiweiyuanhui_display = { picture = GFX_idea_SRC_jingweihui modifier = { custom_modifier_tooltip = SRC_li_guojiajingjiweiyuanhui_display_tt } }
+		SRC_li_guanxizaipingheng_display = { picture = GFX_idea_SRC_jingweihui modifier = { production_speed_buildings_factor = 0.05 local_resources_coal_factor = 0.05 } }
+		SRC_li_nongyehezuohua_display = { picture = GFX_idea_SRC_jingweihui modifier = { local_building_slots_factor = 0.25 } }
+		SRC_li_xiechan_display = { picture = GFX_idea_SRC_jingweihui modifier = { industrial_capacity_factory = 0.05 industrial_capacity_dockyard = 0.05 local_resources_factor = 0.1 } }
+		SRC_li_chiqizhiyinweilai_display = { picture = GFX_idea_SRC_chiqizhiyinweilai modifier = { production_factory_max_efficiency_factor = 0.1 } }
+		# swap_ideas 的移除对象必须无 modifier，避免 tooltip 将上一阶段效果反向结算为负值。
+		SRC_ren_jihuashengchan_display_blank = { picture = GFX_idea_SRC_jihuashengchan modifier = {} }
+		SRC_ren_dangdelingdao_display_blank = { picture = GFX_idea_SRC_dangdelingdao modifier = {} }
+		SRC_ren_gemingxinren_display_blank = { picture = GFX_idea_SRC_wuchanjiejiminzhu modifier = {} }
+		SRC_li_xueshuminzhu_display_blank = { picture = GFX_idea_SRC_xueshuminzhu modifier = {} }
+		SRC_li_gemingzhengfu_display_blank = { picture = GFX_idea_SRC_gemingzhengfu modifier = {} }
+		SRC_li_jingweihui_display_blank = { picture = GFX_idea_SRC_jingweihui modifier = {} }
+		SRC_chen_gemingwenhua_display_blank = { picture = GFX_idea_SRC_gemingwenhua modifier = {} }
+		SRC_chen_gemingtongmeng_display_blank = { picture = GFX_idea_SRC_gemingtongmeng modifier = {} }
+		SRC_chen_gaigewei_display_blank = { picture = GFX_idea_SRC_gaigewei modifier = {} }
+	}
+	#顾问#
+	TOD_minister_head = { 
+		SRC_deng_zhongxia = {
+			name="邓中夏"
+			allowed = { tag = SRC }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				SRC_gongxiefuzeren
+			}
+		}
+		SRC_qian_wangchao = {
+			allowed = { tag = SRC }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				SRC_geminghanweizhe
+			}
+		}
+		# SRC_chen_duxiu = {
+		# 	name="陈独秀"
+		# 	allowed = { tag = SRC }
+		# 	cancel_if_invalid = no
+		# 	traits = {
+		# 		TOD_minister_head
+				
+		# 	}
+		# }
+		SRC_he_mengxiong = {
+			name="何孟雄"
+			allowed = { tag = SRC }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				SRC_weiyuanhuililunjia
+			}
+		}
+		SRC_yu_fangzhou = {
+			name="于方舟"
+			allowed = { tag = SRC }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				SRC_dangwugongzuozhe
+			}
+		}
+		
+	}
+	TOD_foreign_minister = { 
+		SRC_cai_hesen = {
+			name="蔡和森"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_foreign_minister
+				SRC_biganzi
+			}
+		}
+		SRC_chen_tanqiu = {
+			name="陈潭秋"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_foreign_minister
+				SRC_youdanglianluozhe
+			}
+		}
+		SRC_deng_enming = {
+			name="邓恩铭"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_foreign_minister
+				SRC_fanxiagemingfuzeren
+			}
+		}
+		SRC_hou_lijian = {
+			name="侯立鉴"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_foreign_minister
+				SRC_dixiajiaotongyuan
+			}
+		}
+		SRC_zhang_tailei= {
+			name="张太雷"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_foreign_minister
+				
+			}
+		}		
+	}
+	TOD_economy_minister = {
+		SRC_deng_hegao = {
+			name="邓鹤皋"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_economy_minister
+				SRC_dashengchanyundong
+			}
+		}
+		SRC_tang_hongjing = {
+			name="唐宏经"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_economy_minister
+				SRC_laodongbaozhangjingjilun
+			}
+		}
+		SRC_wang_jinmei = {
+			name="王尽美"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_economy_minister
+				SRC_laodongminzhujingji
+			}
+		}
+		SRC_xin_peiyuan = {
+			name="辛培源"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_economy_minister
+				SRC_ronggongxianfeng
+			}
+		}
+		SRC_fu_jingyang = {
+			name="傅景阳"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_economy_minister
+				SRC_jihuajingjitizhidizaozhe
+			}
+		}
+	}
+	TOD_security_minister = { 
+		SRC_deng_fa = {
+			name="邓发"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_security_minister
+				SRC_gemingzhijian
+			}
+		}
+		SRC_he_shuheng = {
+			name="何叔衡"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_security_minister
+				SRC_gemingfaxuejia
+			}
+		}
+		SRC_wei_changkui = {
+			name="魏长魁"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_security_minister
+			}
+		}
+		SRC_wang_ligong = {
+			name="王立功"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_security_minister
+				SRC_dixiagongzuojia
+			}
+		}
+		SRC_xie_juezai = {
+			name="谢觉哉"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_security_minister
+				SRC_gemingdetianping
+			}
+		}
+		SRC_yang_song = {
+			name="杨松"
+			picture = SRC_yang_song
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_security_minister
+				SRC_junqingweiyuanhui
+			}
+		}
+		SRC_zhao_wuchen= {
+			name="赵悟尘"
+			allowed = { tag = SRC }
+			available = {}
+			cancel_if_invalid = no
+			traits = {
+				TOD_security_minister
+				SRC_gemingcedongzhe
+			}
+		}
+	}
+}
+
+#华北中央局精神

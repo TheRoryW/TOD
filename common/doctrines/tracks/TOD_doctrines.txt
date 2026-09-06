@@ -1,0 +1,1 @@
+# Moved to common/doctrines/grand_doctrines/SRC_grand_doctrines.txt

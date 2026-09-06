@@ -3,7 +3,7 @@ focus_tree = {
 	id = MNG_start_focus
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = MNG
@@ -11,14 +11,20 @@ focus_tree = {
 	}
 	default = no
 	continuous_focus_position = { x = 2000 y = 2000 }
-	
-	
-	focus = { #中 惩前毖后
-		id = MNG_we_must_do_something
-		icon = GFX_focus_MNG_cheng_qian_bi_hou
-		x = 10
+
+#中 惩前毖后
+	focus = {
+		id = MNG_chengqianbihou
+		icon = GFX_MNG_chengqianbihou
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		
+		x = 13
 		y = 1
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 100
 		}
@@ -27,299 +33,883 @@ focus_tree = {
 			add_political_power = 100
 		}
 	}
-	
-###左###	
+
+	###左###
 
 
 	focus = { #在祀与戎
-		id = MNG_check_our_weapon
-		icon = GFX_focus_MNG_zai_si_yu_rong
-		
-	    prerequisite = {
-		  focus = MNG_we_must_do_something
-   		  }
-		relative_position_id = MNG_we_must_do_something
-        x = -5
-		y = 1
+		id = MNG_zaisiyurong
+		icon = GFX_MNG_zaisiyurong
+
+		prerequisite = {focus = MNG_chengqianbihou}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 10
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { always = no }
 		cost = 10
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
 			custom_effect_tooltip = MNG_1
-			navy_experience = 10
-			army_experience = 10
-			air_experience = 10
-			}
-	}
-	focus = { #俱收并蓄
-		id = MNG_better_to_buy
-		icon = GFX_focus_MNG_better_to_buy
-		mutually_exclusive = {
-			focus = MNG_make_in_our_country
-			}
-			
-		prerequisite = {
-		  focus = MNG_check_our_weapon
-   		  }
-		relative_position_id = MNG_check_our_weapon
-		x = -2
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 100
+			navy_experience = 15
+			army_experience = 15
+			air_experience = 15
+			custom_effect_tooltip = MNG_zaisiyurong_xiaoguo
+			add_ideas = MNG_wubeixijingsheng
 		}
-		completion_reward = {
-			custom_effect_tooltip = MNG_2
-			add_political_power = -100
-			}
 	}
-	focus = { #四牡暌暌
-		id = MNG_buy_some_tank
-		icon = GFX_focus_MNG_Si_Du_kuikui
 
-		prerequisite = {
-		  focus = MNG_better_to_buy
-   		  }
-		relative_position_id = MNG_better_to_buy
-		x = -1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			custom_effect_tooltip = MNG_3
-			add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 100 }
-			}
-	}
-	focus = { #骖鸾驭鹤
-		id = MNG_and_airplane
-		icon = GFX_focus_MNG_Can_luan_yu_he
-
-		prerequisite = {
-		  focus = MNG_better_to_buy
-   		  }
-		relative_position_id = MNG_better_to_buy
-		x = 1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			custom_effect_tooltip = MNG_4
-			add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 100 }
-		} 
-	}
-	
 	focus = { #自力更生
-		id = MNG_make_in_our_country
-		icon = GFX_focus_MNG_zi_li_geng_sheng
-		mutually_exclusive = {
-			focus = MNG_better_to_buy
-			}
-
-		prerequisite = {
-		  focus = MNG_check_our_weapon
-   		  }
-		relative_position_id = MNG_check_our_weapon
-		x = 2
-		y = 1
-		cost = 10
+		id = MNG_ziligengsheng
+		icon = GFX_MNG_ziligengsheng
+		prerequisite = {focus = MNG_zaisiyurong	}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 10
+		y = 3
+		cost = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			custom_effect_tooltip = MNG_5
-			add_political_power = -50
-			}
-	}
-	focus = { #翩其反矣
-		id = MNG_every_man_a_gun
-		icon = GFX_focus_MNG_luo_qi_jiao_gong
-
-		prerequisite = {
-		  focus = MNG_make_in_our_country
-   		  }
-		relative_position_id = MNG_make_in_our_country
-		x = -1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 100
+			custom_effect_tooltip = MNG_ziligengsheng_xiaoguo
+			add_political_power = -70
+			add_to_variable = { MNG_wubeixi = 5 } 
+			custom_effect_tooltip = MNG_wubeixiyingxiang_2
+			unlock_decision_category_tooltip = MNG_jingjijianshe_categories
 		}
-		completion_reward = {
-			custom_effect_tooltip = MNG_6
-			add_ideas = MNG_infantry_equipment
-			}
 	}
 	focus = { #艨艟御日
-		id = MNG_kantai_ready
-		icon = GFX_focus_MNG_mengchong_yu_ri
-
-		prerequisite = {
-		  focus = MNG_make_in_our_country
-   		  }
-		relative_position_id = MNG_make_in_our_country
-		x = 1
-		y = 1
-		cost = 10
+		id = MNG_mengchongyuri
+		icon = GFX_MNG_mengchongyuri
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_ziligengsheng}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 7
+		y = 4
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
 			custom_effect_tooltip = MNG_7
-			add_ideas = MNG_capital_ship
-			}
+			add_ideas = MNG_mengchongyuri_1
+			navy_experience = 25
+		}
 	}
-
-
-###右###
+	focus = { #翩其反矣
+		id = MNG_pianqifanyi
+		icon = GFX_MNG_pianqifanyi
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_ziligengsheng}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 9
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			custom_effect_tooltip = MNG_6
+			add_ideas = MNG_pianqifanyi_1
+			army_experience = 15
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 }
+		}
+	}
+	focus = { #四牡暌暌
+		id = MNG_sidukuikui
+		icon = GFX_MNG_sidukuikui
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_ziligengsheng}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 11
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			custom_effect_tooltip = MNG_3
+			add_ideas = MNG_sidukuikui
+		}
+	}
+	focus = { #骖鸾驭鹤
+		id = MNG_canluanyuhe
+		icon = GFX_MNG_canluanyuhe
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_ziligengsheng	}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 13
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			custom_effect_tooltip = MNG_4
+			add_ideas = MNG_Can_luan_yu_he
+		}
+	}
+	###右###
 
 	focus = { #民亦劳止
-		id = MNG_stimulate_the_economy
-		icon = GFX_focus_MNG_min_lao_yi_zhi
+		id = MNG_minyilaozhi
+		icon = GFX_MNG_minyilaozhi
 
-		prerequisite = {
-		  focus = MNG_we_must_do_something
-   		  }
-		relative_position_id = MNG_we_must_do_something
-		x = 5
-		y = 1
-		cost = 10
+		x = 16
+		y = 2
+		cost = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_chengqianbihou}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
 			custom_effect_tooltip = MNG_8
 			add_ideas = MNG_consumer_goods_factor
-			}
+		}
 	}
 	focus = { #斩钉截铁
-		id = MNG_the_hard_way
-		icon = GFX_focus_MNG_zhan_ding_jie_tie
-
-		prerequisite = {
-		  focus = MNG_stimulate_the_economy
-   		  }
-		mutually_exclusive = {
-			focus = MNG_the_easy_way
-		}
-		relative_position_id = MNG_stimulate_the_economy
-		x = -2
-		y = 1
+		id = MNG_zhandingjietie
+		icon = GFX_MNG_zhandingjietie
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_minyilaozhi}
+		available = { always = no }
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 16
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
 			custom_effect_tooltip = MNG_9
-			add_political_power = -100
-			}
-	}
-	focus = { #倾心秦淮
-		id = MNG_smile_to_the_money
-		icon = GFX_focus_MNG_qing_xin_qin_huai
-
-		prerequisite = {
-		  focus = MNG_the_hard_way
-   		  }
-		relative_position_id = MNG_the_hard_way
-		x = -1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 100
+			add_political_power = -50
+			unlock_decision_category_tooltip = MNG_paixiboyi_categories
 		}
-		completion_reward = {
-			custom_effect_tooltip = MNG_10
-			add_ideas = MNG_compromise_with_shi_rong
-			}
 	}
 	focus = { #仁至义尽
-		id = MNG_stop_the_army
-		icon = GFX_focus_MNG_ren_zhi_yi_jin
-
-		prerequisite = {
-		  focus = MNG_the_hard_way
-   		  }
-		relative_position_id = MNG_the_hard_way
-		x = 1
-		y = 1
-		cost = 10
+		id = MNG_renzhiyijin
+		icon = GFX_MNG_renzhiyijin
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_zhandingjietie}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 17
+		y = 4
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			custom_effect_tooltip = MNG_11
-			add_ideas = MNG_suppress_the_armed_forces_department
+			custom_effect_tooltip = MNG_renzhiyijin_xiaoguo
+			add_political_power = 30
+			add_to_variable = { MNG_wubeixi = -10 }
 		}
 	}
-	focus = { #润物无声
-		id = MNG_the_easy_way
-		icon = GFX_focus_MNG_run_wu_wu_sheng
-
-		prerequisite = {
-		  focus = MNG_stimulate_the_economy
-   		  }
-		mutually_exclusive = { 
-			focus = MNG_the_hard_way
-			}
-		relative_position_id = MNG_stimulate_the_economy
-		x = 2
-		y = 1
-		cost = 10
+	focus = { #杀鸡儆猴
+		id = MNG_shajijinghou
+		icon = GFX_MNG_shajijinghou
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_renzhiyijin}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 17
+		y = 5
+		cost = 3
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
 			custom_effect_tooltip = MNG_12
-			add_political_power = -50
-			}
+			army_experience = -5
+			add_stability = -0.05
+			add_to_variable = { MNG_A_Suspected_Army_zuzhidu = -0.05 }
+			add_to_variable = { MNG_A_Suspected_Army_sunhao = -0.1 }
+			add_to_variable = { MNG_A_Suspected_Army_zengyuan = 0.01 }
+			custom_effect_tooltip = MNG_shajijinghou_xiaoguo
+		}
 	}
-	focus = { #委信心腹
-		id = MNG_our_friends_inside
-		icon = GFX_focus_MNG_wei_xin_xin_fu
-
-		prerequisite = {
-		  focus = MNG_the_easy_way
-   		  }
-		relative_position_id = MNG_the_easy_way
-		x = -1
-		y = 1
-		cost = 10
+	#整顿官场
+	focus = {
+		id = MNG_zhengdunguanchang
+		icon = GFX_MNG_zhengdunguanchang
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_shajijinghou}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 17
+		y = 6
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
-			custom_effect_tooltip = MNG_13
-			add_ideas = MNG_support_the_forbidden_system
+			unlock_decision_category_tooltip = MNG_jinyiweizaixingdong_categories
+			add_to_variable = { MNG_boyishijian_1 = 15 }
+			add_to_variable = { MNG_boyishijian_2 = 22 }
+			custom_effect_tooltip = MNG_zhengdunguanchang_xiaoguo
 		}
 	}
-	focus = { #息事宁人
-		id = MNG_shake_hands_soldier
-		icon = GFX_focus_MNG_xi_shi_ning_ren
-
-		prerequisite = {
-		  focus = MNG_the_easy_way
-   		  }
-		relative_position_id = MNG_the_easy_way
-		x = 1
-		y = 1
-		cost = 10
+	#尺竹伍符
+	focus = {
+		id = MNG_chizhuwufu
+		icon = GFX_MNG_chizhuwufu
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_zhengdunguanchang}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 17
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_to_variable = { MNG_A_Suspected_Army_gongji = 0.2 }
+			add_to_variable = { MNG_A_Suspected_Army_fangyu = 0.2 }
+			custom_effect_tooltip = MNG_chizhuwufu_xiaoguo
+		}
+	}
+	focus = { #楚弓复得
+		id = MNG_chugongfude
+		icon = GFX_MNG_chugongfude
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_zhandingjietie}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 15
+		y = 4
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		completion_reward = {
 			custom_effect_tooltip = MNG_14
-			add_ideas = MNG_suppress_the_armed_forces_department_two
+			add_to_variable = { MNG_guanxuexi = -5 }
+			custom_effect_tooltip = MNG_chugongfude_xiaoguo
+			608 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = { #委信心腹
+		id = MNG_weixinxinfu
+		icon = GFX_MNG_weixinxinfu
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_chugongfude}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 15
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_ideas = MNG_zijinxijingsheng
+		}
+	}
+	focus = { #倾心秦淮
+		id = MNG_qingxinqinhuai
+		icon = GFX_MNG_qingxinqinhuai
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_weixinxinfu}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 15
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			custom_effect_tooltip = MNG_10
+			add_to_variable = { MNG_guanxuexi = 10 }
+			custom_effect_tooltip = MNG_qingxinqinhuai_xiaoguo
+			613 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#政清人和
+	focus = {
+		id = MNG_zhengqingrenhe
+		icon = GFX_MNG_zhengqingrenhe
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taiziyuci} } }
+		prerequisite = {focus = MNG_qingxinqinhuai}
+		allow_branch = {if = {NOT = { has_country_flag = MNG_taiziyuci }}}
+		x = 15
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 30
+			add_to_variable = { MNG_wubeixi = -10 }
+			custom_effect_tooltip = MNG_zhengqingrenhe_xiaoguo
 		}
 	}
 
-	
-	
-		
-	
+	#启动戒严
+	focus = {
+		id = MNG_qidongjieyan
+		icon = GFX_MNG_qidongjieyan
+		allow_branch = {if = {has_country_flag = MNG_taiziyuci}}
+		allow_branch = {if = { NOT = { has_country_flag = MNG_taisunjiwei}}}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taisunjiwei} } }
+		x = 7
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 15
+			add_to_variable = { MNG_zijinxi = 2 }
+			add_to_variable = { MNG_wubeixi = -2 }
+			add_to_variable = { MNG_guanxuexi = -2 }
+			add_to_variable = { MNG_qingzhengxi = -2 }
+			add_to_variable = { MNG_jiaotongxi = -2 }
+			add_to_variable = { MNG_zhengxuexi = -2 }
+			custom_effect_tooltip = MNG_qidongjieyan_xiaoguo
+		}
+	}
+	#调查太子遇刺
+	focus = {
+		id = MNG_diaochataiziyuci
+		icon = GFX_MNG_diaochataiziyuci
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taisunjiwei} } }
+		prerequisite = {focus = MNG_qidongjieyan}
+		allow_branch = {if = {has_country_flag = MNG_taiziyuci}}
+		allow_branch = {if = { NOT = { has_country_flag = MNG_taisunjiwei}}}
+		x = 7
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = { id = mingcivwar.48 }
+			add_to_variable = { MNG_zijinxi = 2 }
+			custom_effect_tooltip = MNG_diaochataiziyuci_xiaoguo
+			add_stability = 0.01
+		}
+	}
+	#清剿同产工会
+	focus = {
+		id = MNG_qingjiaotongchangonghui
+		icon = GFX_MNG_qingjiaotongchangonghui
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taisunjiwei} } }
+		prerequisite = {focus = MNG_diaochataiziyuci}
+		allow_branch = {if = {has_country_flag = MNG_taiziyuci}}
+		allow_branch = {if = { NOT = { has_country_flag = MNG_taisunjiwei}}}
+		available = { always = no }
+		x = 5
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_popularity = { ideology = vanguard_socialism popularity = -0.02 }
+			add_popularity = { ideology = moderate_socialism popularity = -0.02 }
+			add_to_variable = { MNG_gonghepaideweixie_xianfengshehuizhuyisixiang = -0.02 }
+			add_to_variable = { MNG_gonghepaideweixie_wenheshehuizhuyisixiang = -0.02 }
+			### unlock_decision_category_tooltip = MNG_zhenyagongrenyundong
+			custom_effect_tooltip = MNG_qingjiaotongchangonghui_xiaoguo
+		}
+	}
+	#搜捕大同会
+	focus = {
+		id = MNG_soubudatonghui
+		icon = GFX_MNG_soubudatonghui
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taisunjiwei} } }
+		prerequisite = {focus = MNG_qingjiaotongchangonghui}
+		allow_branch = {if = {has_country_flag = MNG_taiziyuci}}
+		allow_branch = {if = { NOT = { has_country_flag = MNG_taisunjiwei}}}
+		available = { always = no }
+		x = 5
+		y = 4
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			### unlock_decision_category_tooltip = MNG_dajinongminyundong
+			add_popularity = { ideology = social_democrat popularity = -0.02 }
+			add_to_variable = { MNG_gonghepaideweixie_shemingzhuyisixiang = -0.03 }
+			custom_effect_tooltip = MNG_soubudatonghui_xiaoguo
+		}
+	}
+	#调查涉案官员
+	focus = {
+		id = MNG_diaochasheanguanyuan
+		icon = GFX_MNG_diaochasheanguanyuan
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taisunjiwei} } }
+		prerequisite = {focus = MNG_diaochataiziyuci}
+		allow_branch = {if = {has_country_flag = MNG_taiziyuci}}
+		allow_branch = {if = { NOT = { has_country_flag = MNG_taisunjiwei}}}
+		x = 9
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = { 
+			hidden_effect = {
+				news_event = { id = mingcivwar.53 } 
+			}
+			add_political_power = 50
+			add_to_variable = { MNG_zijinxi = -3 }
+			add_to_variable = { MNG_wubeixi = -3 }
+			add_to_variable = { MNG_guanxuexi = -3 }
+			add_to_variable = { MNG_qingzhengxi = -3 }
+			add_to_variable = { MNG_jiaotongxi = -3 }
+			add_to_variable = { MNG_zhengxuexi = -3 }
+			custom_effect_tooltip = MNG_diaochasheanguanyuan_xiaoguo
+		}
+	}
+	#斩尽杀绝
+	focus = {
+		id = MNG_zhanjinshajue
+		icon = GFX_MNG_zhanjinshajue
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taisunjiwei} } }
+		prerequisite = {focus = MNG_diaochasheanguanyuan}
+		allow_branch = {if = {has_country_flag = MNG_taiziyuci}}
+		allow_branch = {if = { NOT = { has_country_flag = MNG_taisunjiwei}}}
+		x = 9
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_to_variable = { MNG_wubeixi = -10 }
+			add_to_variable = { MNG_xianzhenghuidebuhe_zhanzhengzhichidu = -0.04 }
+			custom_effect_tooltip = MNG_zhanjinshajue_xiaoguo
+			country_event = { id = mingcivwar.54 }
+			add_manpower = -3000
+		}
+	}
+	#考虑继承人
+	focus = {
+		id = MNG_kaolvjichengren
+		icon = GFX_MNG_kaolvjichengren
+		available = { always = no }
+		prerequisite = {focus = MNG_diaochataiziyuci}
+		allow_branch = {if = {has_country_flag = MNG_taiziyuci}}
+		allow_branch = {if = { NOT = { has_country_flag = MNG_taisunjiwei}}}
+		x = 7
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = { add_stability = 0.05 }
+	}
+	#全国大搜捕
+	focus = {
+		id = MNG_quanguodasoubu
+		icon = GFX_MNG_quanguodasoubu
+		x = 7
+		y = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taisunjiwei} } }
+		prerequisite = {focus = MNG_kaolvjichengren}
+		prerequisite = {focus = MNG_zhanjinshajue}
+		prerequisite = {focus = MNG_soubudatonghui}
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		allow_branch = {if = {has_country_flag = MNG_taiziyuci}}
+		allow_branch = {if = { NOT = { has_country_flag = MNG_taisunjiwei}}}
+		completion_reward = {
+			add_to_variable = { MNG_qingzhengxi = -2 }
+			custom_effect_tooltip = MNG_quanguodasoubu_xiaoguo
+			add_to_variable = { MNG_xianzhenghuidebuhe_wendingdu = -0.05 }
+			add_to_variable = { MNG_xianzhenghuidebuhe_zhengzhidian = -0.5 }
+			add_to_variable = { MNG_xianzhenghuidebuhe_shengchanxiaolv = -0.05 }
+		}
+	}
+	#整顿官员
+	focus = {
+		id = MNG_zhengdunguanyuan
+		icon = GFX_MNG_zhengdunguanyuan
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taisunjiwei} } }
+		prerequisite = {focus = MNG_quanguodasoubu}
+		allow_branch = {if = {has_country_flag = MNG_taiziyuci}}
+		allow_branch = {if = { NOT = { has_country_flag = MNG_taisunjiwei}}}
+		x = 7
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			custom_effect_tooltip = MNG_zhengdunguanyuan_xiaoguo
+			add_to_variable = { MNG_zijinxi = 5 }
+			add_to_variable = { MNG_wubeixi = -3 }
+			add_to_variable = { MNG_guanxuexi = -3 }
+			add_to_variable = { MNG_qingzhengxi = -3 }
+			add_to_variable = { MNG_jiaotongxi = -3 }
+			add_to_variable = { MNG_zhengxuexi = -3 }
+		}
+	}
+	#安抚民心
+	focus = {
+		id = MNG_anfuminxin
+		icon = GFX_MNG_anfuminxin
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = { hidden_trigger = { NOT = { has_country_flag = MNG_taisunjiwei} } }
+		prerequisite = {focus = MNG_zhengdunguanyuan}
+		allow_branch = {if = {has_country_flag = MNG_taiziyuci}}
+		allow_branch = {if = { NOT = { has_country_flag = MNG_taisunjiwei}}}
+		x = 7
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_to_variable = { MNG_xianzhenghuidebuhe_wendingdu = 0.05 }
+			add_to_variable = { MNG_xianzhenghuidebuhe_xiaofeipin = 0.02 }
+			custom_effect_tooltip = MNG_anfuminxin_xiaoguo
+		}
+	}
+
+	#太孙国策
+
+	#秉政监国
+	focus = {
+		id = MNG_bingzhengjianguo
+		icon = GFX_MNG_bingzhengjianguo
+		allow_branch = {if = {has_country_flag = MNG_taisunjiwei}}
+		x = 11
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
+	}
+	#为政以德
+	focus = {
+		id = MNG_weizhengyide
+		icon = GFX_MNG_weizhengyide
+		prerequisite = {focus = MNG_bingzhengjianguo}
+		allow_branch = {if = {has_country_flag = MNG_taisunjiwei}}
+		x = 13
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.02
+			add_to_variable = { MNG_qingzhengxi = 2 }
+			add_to_variable = { MNG_zhengxuexi = 2 }
+			custom_effect_tooltip = MNG_weizhengyide_xiaoguo
+		}
+	}
+	#民为邦本
+	focus = {
+		id = MNG_minweibangyi
+		icon = GFX_MNG_minweibangyi
+		prerequisite = {focus = MNG_weizhengyide}
+		allow_branch = {if = {has_country_flag = MNG_taisunjiwei}}
+		x = 13
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = { id = mingcivwar.59 }
+			add_political_power = 40
+			add_to_variable = { MNG_qingzhengxi = 2 }
+			add_to_variable = { MNG_guanxuexi = 2 }
+			add_to_variable = { MNG_zhengxuexi = 2 }
+			add_to_variable = { MNG_zijinxi = -5 }
+			custom_effect_tooltip = MNG_minweibangyi_xiaoguo
+		}
+	}
+	#肱股之臣
+	focus = {
+		id = MNG_gongguzhichen
+		icon = GFX_MNG_gongguzhichen
+		prerequisite = {focus = MNG_minweibangyi}
+		allow_branch = {if = {has_country_flag = MNG_taisunjiwei}}
+		x = 13
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.02
+			add_to_variable = { MNG_zijinxi = 3 }
+			custom_effect_tooltip = MNG_gongguzhichen_xiaoguo
+		}
+	}
+	#激扬浊清
+	focus = {
+		id = MNG_jiyangzhuoqing
+		icon = GFX_MNG_jiyangzhuoqing
+		prerequisite = {focus = MNG_gongguzhichen}
+		allow_branch = {if = {has_country_flag = MNG_taisunjiwei}}
+		x = 13
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+			add_to_variable = { MNG_qingzhengxi = 5 }
+			custom_effect_tooltip = MNG_jiyangzhuoqing_xiaoguo
+		}
+	}
+	#矫国革俗
+	focus = {
+		id = MNG_jiaoguogesu
+		icon = GFX_MNG_jiaoguogesu
+		prerequisite = {focus = MNG_bingzhengjianguo}
+		allow_branch = {if = {has_country_flag = MNG_taisunjiwei}}
+		x = 11
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = { id = mingcivwar.60 }
+			add_political_power = 10
+			add_stability = -0.05
+			add_to_variable = { MNG_qingzhengxi = 5 }
+			custom_effect_tooltip = MNG_jiaoguogesu_xiaoguo
+		}
+	}
+	#破旧立新
+	focus = {
+		id = MNG_pojiulixin
+		icon = GFX_MNG_pojiulixin
+		prerequisite = {focus = MNG_jiaoguogesu}
+		allow_branch = {if = {has_country_flag = MNG_taisunjiwei}}
+		x = 11
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = { id = mingcivwar.61 }
+			add_political_power = 35
+			add_to_variable = { MNG_guanxuexi = 4 }
+			add_to_variable = { MNG_wubeixi = -3 }
+			custom_effect_tooltip = MNG_pojiulixin_xiaoguo
+		}
+	}
+	#洗削更革
+	focus = {
+		id = MNG_xixuegengge
+		icon = GFX_MNG_xixuegengge
+		prerequisite = {focus = MNG_pojiulixin}
+		allow_branch = {if = {has_country_flag = MNG_taisunjiwei}}
+		x = 11
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 35
+			add_to_variable = { MNG_qingzhengxi = 2 }
+			add_to_variable = { MNG_guanxuexi = 2 }
+			add_to_variable = { MNG_wubeixi = -4 }
+			custom_effect_tooltip = MNG_xixuegengge_xiaoguo
+		}
+	}
+	#继往开来
+	focus = {
+		id = MNG_jiwangkailai
+		icon = GFX_MNG_jiwangkailai
+		prerequisite = {focus = MNG_xixuegengge}
+		allow_branch = {if = {has_country_flag = MNG_taisunjiwei}}
+		x = 11
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = MNG_Undesirable_economic_recovery_1
+				remove_idea = MNG_Undesirable_economic_recovery
+			}
+		}
+	}
+	#整军饬武
+	focus = {
+		id = MNG_zhengjunchiwu
+		icon = GFX_MNG_zhengjunchiwu
+		prerequisite = {focus = MNG_bingzhengjianguo}
+		allow_branch = {if = {has_country_flag = MNG_taisunjiwei}}
+		x = 9
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			country_event = { id = mingcivwar.64 }
+			add_to_variable = { MNG_A_Suspected_Army_sudu = 0.25 }
+			add_to_variable = { MNG_A_Suspected_Army_sunhao = -0.1 }
+			custom_effect_tooltip = MNG_zhengjunchiwu_xiaoguo
+		}
+	}
+	#有备无患
+	focus = {
+		id = MNG_youbeiwuhuan
+		icon = GFX_MNG_youbeiwuhuan
+		available = {always = no}
+		prerequisite = {focus = MNG_zhengjunchiwu}
+		allow_branch = {if = {has_country_flag = MNG_taisunjiwei}}
+		available = {always = no}
+		x = 9
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			army_experience = 25
+			add_to_variable = { MNG_jiaotongxi = 7 }
+			custom_effect_tooltip = MNG_youbeiwuhuan_xiaoguo
+		}
+	}
+	#裁汰冗弱
+	focus = {
+		id = MNG_caitairongruo
+		icon = GFX_MNG_caitairongruo
+		prerequisite = {focus = MNG_youbeiwuhuan}
+		allow_branch = {if = {has_country_flag = MNG_taisunjiwei}}
+		x = 9
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_to_variable = { MNG_A_Suspected_Army_zuzhidu= 0.1 }
+			add_to_variable = { MNG_A_Suspected_Army_zhanzhengzhichi = 0.05 }
+			custom_effect_tooltip = MNG_caitairongruo_xiaoguo
+		}
+	}
+	#黜幽陟明
+	focus = {
+		id = MNG_chuyouzhiming
+		icon = GFX_MNG_chuyouzhiming
+		prerequisite = {focus = MNG_caitairongruo}
+		allow_branch = {if = {has_country_flag = MNG_taisunjiwei}}
+		x = 9
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			custom_effect_tooltip = MNG_chuyouzhiming_xiaoguo
+			add_to_variable = { MNG_A_Suspected_Army_gongji = 0.1 }
+			add_to_variable = { MNG_A_Suspected_Army_fangyu = 0.1 }
+		}
+	}
 }
-	
+
+

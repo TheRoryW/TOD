@@ -1,0 +1,249 @@
+SIC_chuanneijushi_categories = {
+	#社会情绪
+	SIC_shehuiqingxu = { 
+		allowed = { tag = SIC } 
+		available = {check_variable = {SIC.minzhong < 19}}
+		activation = {
+			check_variable = {SIC.minzhong > 19}
+			check_variable = {SIC.minzhong < 100} 
+		}
+		is_good = no
+		days_mission_timeout = 30
+		days_re_enable = 0
+		timeout_effect = {
+			custom_effect_tooltip = SIC_shehuiqingxu.t1
+			if = {
+				limit = {check_variable = {SIC.gongye > 79}}
+				add_to_variable = { SIC.minzhong = 20 }
+				add_to_variable = { SIC.gongye = 10 }
+				add_ideas = SIC_huimiedechanyelian
+				remove_ideas = SIC_bengkuidechanyelian
+			}else_if = {
+				limit = {check_variable = {SIC.gongye > 59}}
+				add_to_variable = { SIC.minzhong = 10 }
+				add_to_variable = { SIC.gongye = 5 }
+				add_ideas = SIC_bengkuidechanyelian
+				remove_ideas = SIC_huimiedechanyelian
+				remove_ideas = SIC_huifuzhongdechanyelian
+			}else_if = {
+				limit = {check_variable = {SIC.gongye > 39}}
+				add_to_variable = { SIC.minzhong = 5 }
+				add_ideas = SIC_huifuzhongdechanyelian
+				remove_ideas = SIC_bengkuidechanyelian
+				remove_ideas = SIC_wendingdechanyelian
+			}else_if = {
+				add_ideas = SIC_wendingdechanyelian
+				remove_ideas = SIC_huifuzhongdechanyelian
+			}
+			if = {
+				limit = {
+					check_variable = { SIC.minzhong > 99 }
+					NOT = { country_exists = SCG }
+				}
+				SCG = { transfer_state = 831 }
+				SCG = { add_state_core = 831 }
+				SCG = { load_oob = "SCG_1937" }
+				country_event = { id = TODSIC.1001 }
+				add_ideas = SIC_hunluandejundui
+			}else_if = {
+				limit = {check_variable = {SIC.minzhong > 79}}
+				add_ideas = SIC_wufawutian
+				remove_ideas = SIC_chongmannuqi
+				remove_ideas = SIC_jinrukonghuang
+				remove_ideas = SIC_lueyoubuman
+				remove_ideas = SIC_wendingdequnzong
+			}else_if = {
+				limit = {check_variable = {SIC.minzhong > 59}}
+				remove_ideas = SIC_wufawutian
+				add_ideas = SIC_chongmannuqi
+				remove_ideas = SIC_jinrukonghuang
+				remove_ideas = SIC_lueyoubuman
+				remove_ideas = SIC_wendingdequnzong
+			}else_if = {
+				limit = {check_variable = {SIC.minzhong > 39}}
+				remove_ideas = SIC_wufawutian
+				remove_ideas = SIC_chongmannuqi
+				add_ideas = SIC_jinrukonghuang
+				remove_ideas = SIC_lueyoubuman
+				remove_ideas = SIC_wendingdequnzong
+			}else_if = {
+				limit = {check_variable = {SIC.minzhong > 19}}
+				remove_ideas = SIC_wufawutian
+				remove_ideas = SIC_chongmannuqi
+				remove_ideas = SIC_jinrukonghuang
+				add_ideas = SIC_lueyoubuman
+				remove_ideas = SIC_wendingdequnzong
+			}else_if = {
+				remove_ideas = SIC_wufawutian
+				remove_ideas = SIC_chongmannuqi
+				remove_ideas = SIC_jinrukonghuang
+				remove_ideas = SIC_lueyoubuman
+				add_ideas = SIC_wendingdequnzong
+			}
+			if = {
+				limit = {check_variable = {SIC.gongye > 99}}
+				set_variable = { SIC.gongye = 100 }
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = SIC_shehuiqingxu.t2
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	#补贴工厂
+	SIC_butiegongchang = {
+
+		icon = ger_military_buildup
+		
+		visible = {always = yes}
+		available = {num_of_available_civilian_factories > 4}
+		modifier = {
+			civilian_factory_use = 5
+			industrial_capacity_factory = 0.1
+		}
+		
+		ai_will_do = { base = 10 }
+		days_remove = 30
+
+		days_re_enable = 0
+		remove_effect = {
+			add_to_variable = { SIC.gongye = -5 }
+			custom_effect_tooltip = SIC_butiegongchang.t
+			if = {
+				limit = {check_variable = {SIC.minzhong > 79}}
+				add_ideas = SIC_wufawutian
+				remove_ideas = SIC_chongmannuqi
+				remove_ideas = SIC_jinrukonghuang
+				remove_ideas = SIC_lueyoubuman
+				remove_ideas = SIC_wendingdequnzong
+			}else_if = {
+				limit = {check_variable = {SIC.minzhong > 59}}
+				remove_ideas = SIC_wufawutian
+				add_ideas = SIC_chongmannuqi
+				remove_ideas = SIC_jinrukonghuang
+				remove_ideas = SIC_lueyoubuman
+				remove_ideas = SIC_wendingdequnzong
+			}else_if = {
+				limit = {check_variable = {SIC.minzhong > 39}}
+				remove_ideas = SIC_wufawutian
+				remove_ideas = SIC_chongmannuqi
+				add_ideas = SIC_jinrukonghuang
+				remove_ideas = SIC_lueyoubuman
+				remove_ideas = SIC_wendingdequnzong
+			}else_if = {
+				limit = {check_variable = {SIC.minzhong > 19}}
+				remove_ideas = SIC_wufawutian
+				remove_ideas = SIC_chongmannuqi
+				remove_ideas = SIC_jinrukonghuang
+				add_ideas = SIC_lueyoubuman
+				remove_ideas = SIC_wendingdequnzong
+			}else_if = {
+				remove_ideas = SIC_wufawutian
+				remove_ideas = SIC_chongmannuqi
+				remove_ideas = SIC_jinrukonghuang
+				remove_ideas = SIC_lueyoubuman
+				add_ideas = SIC_wendingdequnzong
+			}
+		}
+	}
+	#安抚民众
+	SIC_anfuminzhong = {
+
+		icon = ger_military_buildup
+		
+		visible = {always = yes}
+		available = {num_of_available_civilian_factories > 4}
+		modifier = {
+			civilian_factory_use = 5
+			stability_factor = 0.1
+		}
+		
+		ai_will_do = { base = 10 }
+		days_remove = 30
+		days_re_enable = 0
+		remove_effect = { 
+			add_to_variable = { SIC.minzhong = -5 }
+			custom_effect_tooltip = SIC_anfuminzhong.t
+			if = {
+				limit = {check_variable = {SIC.minzhong > 79}}
+				add_ideas = SIC_wufawutian
+				remove_ideas = SIC_chongmannuqi
+				remove_ideas = SIC_jinrukonghuang
+				remove_ideas = SIC_lueyoubuman
+				remove_ideas = SIC_wendingdequnzong
+			}else_if = {
+				limit = {check_variable = {SIC.minzhong > 59}}
+				remove_ideas = SIC_wufawutian
+				add_ideas = SIC_chongmannuqi
+				remove_ideas = SIC_jinrukonghuang
+				remove_ideas = SIC_lueyoubuman
+				remove_ideas = SIC_wendingdequnzong
+			}else_if = {
+				limit = {check_variable = {SIC.minzhong > 39}}
+				remove_ideas = SIC_wufawutian
+				remove_ideas = SIC_chongmannuqi
+				add_ideas = SIC_jinrukonghuang
+				remove_ideas = SIC_lueyoubuman
+				remove_ideas = SIC_wendingdequnzong
+			}else_if = {
+				limit = {check_variable = {SIC.minzhong > 19}}
+				remove_ideas = SIC_wufawutian
+				remove_ideas = SIC_chongmannuqi
+				remove_ideas = SIC_jinrukonghuang
+				add_ideas = SIC_lueyoubuman
+				remove_ideas = SIC_wendingdequnzong
+			}else_if = {
+				remove_ideas = SIC_wufawutian
+				remove_ideas = SIC_chongmannuqi
+				remove_ideas = SIC_jinrukonghuang
+				remove_ideas = SIC_lueyoubuman
+				add_ideas = SIC_wendingdequnzong
+			}
+		}
+	}
+	#重建产业链
+	SIC_chongjianchanyelian = {
+
+		icon = ger_military_buildup
+		
+		visible = {
+			### has_completed_focus = SIC_huifugongye # vanilla focus tree is not loaded
+			always = no
+		}
+		available = {
+			has_political_power > 0
+			num_of_available_civilian_factories > 4
+		}
+		modifier = { 
+			civilian_factory_use = 10
+			political_power_cost = 0.1
+		}
+		
+		ai_will_do = { base = 10 }
+		days_remove = 30
+		days_re_enable = 0
+		remove_effect = { 
+			add_to_variable = { SIC.gongye = -10 }
+			custom_effect_tooltip = SIC_chongjianchanyelian.t
+			if = {
+				limit = {check_variable = {SIC.gongye > 79}}
+				add_ideas = SIC_huimiedechanyelian
+				remove_ideas = SIC_bengkuidechanyelian
+			}else_if = {
+				limit = {check_variable = {SIC.gongye > 59}}
+				add_ideas = SIC_bengkuidechanyelian
+				remove_ideas = SIC_huimiedechanyelian
+				remove_ideas = SIC_huifuzhongdechanyelian
+			}else_if = {
+				limit = {check_variable = {SIC.gongye > 39}}
+				add_ideas = SIC_huifuzhongdechanyelian
+				remove_ideas = SIC_bengkuidechanyelian
+				remove_ideas = SIC_wendingdechanyelian
+			}else_if = {
+				add_ideas = SIC_wendingdechanyelian
+				remove_ideas = SIC_huifuzhongdechanyelian
+			}
+		}
+	}
+}

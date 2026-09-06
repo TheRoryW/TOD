@@ -33,7 +33,7 @@ set_technology = {
 	electronic_mechanical_engineering = 1
 	radio = 1
 	marines = 1
-	mountaineers = 1
+	tech_mountaineers = 1
 }
 
 if = {
@@ -69,43 +69,29 @@ if = {
 		basic_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		basic_medium_battery = 1
+		### basic_medium_battery = 1  # DLC tech, disabled
 		basic_heavy_battery = 1
 		basic_torpedo = 1
 		sonar = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
-		improved_secondary_battery = 1
+		### basic_secondary_battery = 1  # DLC tech, disabled
+		### improved_secondary_battery = 1  # DLC tech, disabled
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-		improved_airplane_launcher = 1
+		### improved_airplane_launcher = 1  # DLC tech, disabled
 	}
 }
 
 set_politics = {
-	ruling_party = authoritarianism
+	ruling_party = authoritarian_oligarchy
 	last_election = "1934.6.15"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	totalism = 0
-	despotism = 10
-	authoritarianism = 60
-	conservatism = 20
-	liberalism = 0
-	reformism = 0
-	socialism = 10
-	radicalism = 0
+	authoritarian_oligarchy = 100
 }
-
-create_country_leader = {
-	name = "Arthur Griffith"
-	desc = "POLITICS_ARTHUR_GRIFFITH_DESC"
-	picture = "Portrait_IRE_Arthur_Griffith.png"
-	expire = "1965.1.1"
-	ideology = authoritarianism_subtype
-}
+recruit_character = IRE_Arthur_Griffith
 

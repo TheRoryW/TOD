@@ -1,0 +1,19 @@
+capital = 314
+
+oob = "PUC_1936"
+
+set_politics = {
+	ruling_party = leader_despotism
+	last_election = "1934.6.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	leader_despotism = 78
+	conservative_democracy = 18
+	liberal_democracy = 4
+}
+recruit_character = PUC_Jorge_Ubico_Castaneda
+
+

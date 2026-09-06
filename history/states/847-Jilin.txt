@@ -1,16 +1,22 @@
 state={
 	id=847
 	name="STATE_847"
-
+	resources={
+		coal = 7
+	}
 	history={
 		owner = MNG
 		add_core_of = MNG
 		buildings = {
-			infrastructure = 7
+			infrastructure = 3
 			industrial_complex = 1
+			arms_factory = 1
 		}
 		victory_points = {
 			1567 5 
+		}
+		victory_points = {
+			9883 1 
 		}
 
 	}

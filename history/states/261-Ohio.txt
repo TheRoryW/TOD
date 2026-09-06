@@ -5,6 +5,7 @@ state={
 		steel=28 
 		aluminium=9 
 		oil=16
+		coal=13
 	}
 	
 	state_category = ten
@@ -12,7 +13,7 @@ state={
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 7
+			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 8
 

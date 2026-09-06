@@ -27,7 +27,8 @@ idea_categories = {
 		slot = mobilization_laws
 		slot = trade_laws
 		slot = economy
-		#slot = TOD_Subtype# 子意识形态界面占位符
+		### #slot = TOD_Subtype# 原来被屏蔽，导致 _TOD_SUB_Minor 的分类无效
+		slot = TOD_Subtype
 		
 		
 		ledger = civilian
@@ -49,10 +50,12 @@ idea_categories = {
 	}
 	
 	military_staff = {
-		slot = chief_of_staff
-		slot = chief_of_army
-		slot = chief_of_navy
-		slot = chief_of_air_force
+		character_slot = army_chief 
+		character_slot = navy_chief 
+		character_slot = air_chief
+		character_slot = high_command
+		character_slot = high_command
+		character_slot = high_command
 
 		ledger = invalid # must be overridden
 
@@ -66,7 +69,8 @@ idea_categories = {
 		slot = aircraft_manufacturer
 		slot = materiel_manufacturer
 		slot = industrial_concern
-		slot = theorist
+		character_slot = theorist
+		#slot = theorist
 
 		ledger = civilian
 		
@@ -74,14 +78,126 @@ idea_categories = {
 		removal_cost = 0
 	}
 	
+
+	academy_spirit = {
+		type = army_spirit
+
+		cost = 20
+		removal_cost = -1
+		
+		politics_tab = no
+		
+		ledger = hidden
+
+		slot = academy_spirit
+	}
+
+	army_spirit = {
+		type = army_spirit
+
+		cost = 35
+		removal_cost = -1
+		
+		politics_tab = no
+		
+		ledger = hidden
+		slot = army_spirit
+	}
+
+	division_command_spirit = {
+		type = army_spirit
+		
+		cost = 50
+		removal_cost = -1
+		
+		politics_tab = no
+		
+		ledger = hidden
+		slot = division_command_spirit
+	}
+
+	naval_academy_spirit = {
+		type = navy_spirit
+
+		cost = 20
+		removal_cost = -1
+		
+		politics_tab = no
+		
+		ledger = hidden
+		slot = naval_academy_spirit
+	}
+
+	navy_spirit = {
+		type = navy_spirit
+
+		cost = 35
+		removal_cost = -1
+		
+		politics_tab = no
+		
+		ledger = hidden
+		slot = navy_spirit
+	}
+
+	naval_command_spirit = {
+		type = navy_spirit
+		
+		cost = 50
+		removal_cost = -1
+		
+		politics_tab = no
+		
+		ledger = hidden
+		slot = naval_command_spirit
+	}
+
+	air_force_academy_spirit = {
+		type = air_spirit
+
+		cost = 50
+		removal_cost = -1
+		
+		politics_tab = no
+		
+		ledger = hidden
+		slot = air_force_academy_spirit
+	}
+
+	air_force_spirit = {
+		type = air_spirit
+
+		cost = 50
+		removal_cost = -1
+		
+		politics_tab = no
+		
+		ledger = hidden
+		slot = air_force_spirit
+	}
+
+	air_force_command_spirit = {
+		type = air_spirit
+		
+		politics_tab = no
+		
+		cost = 50
+		removal_cost = -1
+		
+		ledger = hidden
+		slot = air_force_command_spirit
+	}
 }
 
 
 slot_ledgers = {
-	chief_of_staff = army
-	chief_of_army = army
-	chief_of_navy = navy
-	chief_of_air_force = air
+	#chief_of_staff = army
+	#chief_of_army = army
+	#chief_of_navy = navy
+	#chief_of_air_force = air
+	army_chief = army
+	navy_chief = navy
+	air_chief = air
 	
 	tank_manufacturer = army
 	naval_manufacturer = navy
@@ -91,4 +207,5 @@ slot_ledgers = {
 	
 	mobilization_laws = civilian
 }
+
 

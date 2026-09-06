@@ -1,0 +1,36 @@
+state = {
+	id = 534
+	name = "STATE_534"
+	manpower = 3395777
+	state_category = six
+
+	resources = {
+		tungsten = 24
+	}
+	
+	history = {
+		owner = EDO
+		add_core_of = EDO
+
+		add_to_array = { state_victory_points = 1117 }
+		victory_points = { 1117 10 }
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+
+			fuel_silo = 1
+			
+			air_base = 3
+			1117 = {
+				naval_base = 6
+			}
+		}
+	}
+
+	provinces = {
+		1117 9952 11930 12007 4000
+	}
+}
+

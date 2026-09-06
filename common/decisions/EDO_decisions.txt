@@ -1,0 +1,116 @@
+EDO_decision_l_0 = { #debug
+	EDO_decision_1221_1 = {		 #
+		#icon = ger_mefo_bills		
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0			
+	    }
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {  
+			var:EDO_map_selected_state = {
+				set_variable = { gui_display_frame = 1 }
+			}	
+		}
+		remove_effect = {
+		}
+	}
+	EDO_decision_1221_2 = {		 #  
+		#icon = ger_mefo_bills		
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0			
+	    }
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {  
+			var:EDO_map_selected_state = {
+				set_variable = { gui_display_frame = 2 }
+			}	
+		}
+		remove_effect = {
+		}
+	}
+	EDO_decision_1221_3 = {		 # 
+		#icon = ger_mefo_bills		
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0			
+	    }
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {  
+			var:EDO_map_selected_state = {
+				set_variable = { gui_display_frame = 3 }
+			}	
+		}
+		remove_effect = {
+		}
+	}
+	EDO_decision_dsa = {		 #
+		#icon = ger_mefo_bills		
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0			
+	    }
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {  
+			add_popularity = {  #增加支持率
+				ideology = consociationalism 
+				popularity = -0.1 
+			}
+		}
+		remove_effect = {
+		}
+	}
+} 
+EDO_decision_l_1_rbxdh = {  #日本现代化 
+	EDO_decision_jjms_mgjs = { #民生建设
+		icon = GFX_decision_generic_factory
+		fire_only_once = no		
+		days_remove = 30
+		cost = 30
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		visible = {
+			check_variable = { EDO_map_selected_state = 282 }
+		}	
+		ai_will_do = {
+			factor = 0
+		}
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+
+			}
+		}
+		available = {
+
+		}
+		complete_effect = {  
+		}	
+		modifier = {
+			civilian_factory_use = 1
+	   	}
+		remove_effect = {
+			FROM = {								
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+			
+		}
+	}
+}

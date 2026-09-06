@@ -34,7 +34,7 @@ set_technology = {
 	naval_bomber1 = 1
 	early_bomber = 1
 	tactical_bomber1 = 1
-	mountaineers = 1
+	tech_mountaineers = 1
 }
 
 if = {
@@ -66,17 +66,17 @@ if = {
 		early_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		basic_medium_battery = 1
+		### basic_medium_battery = 1  # DLC tech, disabled
 		basic_heavy_battery = 1
 		basic_torpedo = 1
 		sonar = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
-		improved_secondary_battery = 1
+		### basic_secondary_battery = 1  # DLC tech, disabled
+		### improved_secondary_battery = 1  # DLC tech, disabled
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-		improved_airplane_launcher = 1
+		### improved_airplane_launcher = 1  # DLC tech, disabled
 	}
 }
 
@@ -95,65 +95,11 @@ set_popularities = {
 	vanguard_socialism = 3
 }
 
-create_country_leader = {
-	name = "宋子文"
-	desc = "POLITICS_SongZiWen_DESC"
-	picture = "Portrait_YZR_Song_Zi_Wen.png"
-	expire = "1965.1.1"
-	ideology = liberal_democracy_subtype
-}
-
-create_country_leader = {
-	name = "张自忠"
-	desc = "POLITICS_ZHANG_ZIZONG_DESC"
-	picture = "Portrait_YZR_Zhang_Zizhong.png"
-	expire = "1965.1.1"
-	ideology = leader_despotism_subtype
-}
-
-create_country_leader = {
-	name = "汤恩伯"
-	desc = "POLITICS_TANGENBO_DESC"
-	picture = "Portrait_YZR_Tangenbo.png"
-	expire = "1965.1.1"
-	ideology = national_corporatism_subtype
-}
-
-create_country_leader = {
-	name = "宋庆龄"
-	desc = "POLITICS_SONGQINGLING_DESC"
-	picture = "Portrait_YZR_Songqingling.png"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-}
-
-create_country_leader = {
-	name = "宋美龄"
-	desc = "POLITICS_SONGMEILING_DESC"
-	picture = "Portrait_YZR_Songmeiling.png"
-	expire = "1965.1.1"
-	ideology = authoritarian_oligarchy_subtype
-}
-
-create_country_leader = {
-	name = "林伯渠"
-	desc = "POLITICS_LINGBOQU_DESC"
-	picture = "Portrait_YZR_Lingboqu.png"
-	expire = "1965.1.1"
-	ideology = council_socialism_subtype
-}
-
-create_country_leader = {
-	name = "陈演生"
-	desc = "POLITICS_CHENGYANSHENG_DESC"
-	picture = "Portrait_YZR_Chengyansheng.png"
-	expire = "1965.1.1"
-	ideology = conservative_democracy_subtype
-}
+recruit_character = YZR_song_ziwen
 
 add_ideas = {
     free_trade
-	LibMrk_type
+	### LibMrk_type
 	YZR_West_Coast_Pearl
 	YZR_Song_Family_Group
 	YZR_yanzhou_revengeism
@@ -167,6 +113,7 @@ if = {
 	create_equipment_variant = {
 		name = "沙级"
 		type = submarine_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		parent_version = 0
 		upgrades = {
 			ship_reliability_upgrade = 3
@@ -179,6 +126,7 @@ if = {
 	create_equipment_variant = {
 		name = "妙屿级"
 		type = destroyer_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		parent_version = 0
 		upgrades = {
 			ship_torpedo_upgrade = 1
@@ -191,6 +139,7 @@ if = {
 	create_equipment_variant = {
 		name = "龙山级"
 		type = destroyer_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		parent_version = 0
 		upgrades = {
 			ship_torpedo_upgrade = 2
@@ -204,6 +153,7 @@ if = {
 	create_equipment_variant = {
 		name = "沃谷级"
 		type = light_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		parent_version = 0
 		upgrades = {
 			ship_reliability_upgrade = 3
@@ -217,6 +167,7 @@ if = {
 	create_equipment_variant = {
 		name = "蓬莱级"
 		type = heavy_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		parent_version = 0
 		upgrades = {
 			ship_reliability_upgrade = 2
@@ -229,6 +180,7 @@ if = {
 	create_equipment_variant = {
 		name = "徽山级"
 		type = battleship_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		parent_version = 0
 		upgrades = {
 			ship_reliability_upgrade = 3
@@ -241,6 +193,7 @@ if = {
 	create_equipment_variant = {
 		name = "金门级"
 		type = carrier_2
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		upgrades = {
 			ship_deckspace_upgrade = 1
 			carrier_armor_upgrade = 1
@@ -256,6 +209,7 @@ if = {
 	create_equipment_variant = {
 		name = "沙港级"
 		type = ship_hull_submarine_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		name_group = YZR_SS_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -268,6 +222,7 @@ if = {
 	create_equipment_variant = {
 		name = "妙屿级"
 		type = ship_hull_light_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		name_group = YZR_DD_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -285,6 +240,7 @@ if = {
 	create_equipment_variant = {
 		name = "龙岬级"
 		type = ship_hull_light_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		name_group = YZR_DD_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -302,6 +258,7 @@ if = {
 	create_equipment_variant = {
 		name = "沃谷级"
 		type = ship_hull_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		name_group = YZR_CL_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -321,6 +278,7 @@ if = {
 	create_equipment_variant = {
 		name = "蓬莱级"
 		type = ship_hull_cruiser_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		name_group = YZR_CA_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -340,6 +298,7 @@ if = {
 	create_equipment_variant = {
 		name = "徽山级"
 		type = ship_hull_heavy_1
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		name_group = YZR_BB_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -360,6 +319,7 @@ if = {
 	create_equipment_variant = {
 		name = "金门级"
 		type = ship_hull_carrier_conversion_bb
+				### icon = "gfx/interface/equipment/GFX_goal_unknown.dds"
 		name_group = YZR_CV_HISTORICAL
 		parent_version = 0
 		modules = {

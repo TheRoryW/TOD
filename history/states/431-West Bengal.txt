@@ -4,6 +4,7 @@ state={
 	name="STATE_431"
 	resources={
 		steel=13.000
+		coal=15
 	}
 
 	history={
@@ -15,7 +16,9 @@ state={
 			air_base = 2
 
 		}
-
+		victory_points = {
+			4516 1 
+		}
 	}
 
 	provinces={

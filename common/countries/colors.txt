@@ -139,8 +139,8 @@ MNG = {
 	color_ui = rgb { 202 155 66 }
 }
 MOB = {
-	color = rgb { 202 155 66 }
-	color_ui = rgb { 202 155 66 }
+	color = rgb { 47 144 185  }
+	color_ui = rgb { 47 144 185  }
 }
 MSR = {
 	color = rgb { 190 16 24 }
@@ -169,10 +169,6 @@ RYU = {
 SAR = {
 	color = rgb { 243 165 108 }
 	color_ui = rgb { 243 165 108 }
-}
-SIA = {
-	color = rgb { 150 180 150 }
-	color_ui = rgb { 150 180 150 }
 }
 SMT = {
 	color = rgb { 40 130 90 }
@@ -213,10 +209,6 @@ VEN = {
 WJP = {
 	color = rgb { 70 160 130 }
 	color_ui = rgb { 70 160 130 }
-}
-XBJ = {
-	color = rgb { 100 100 100 }
-	color_ui = rgb { 100 100 100 }
 }
 ZHR = {
 	color = rgb { 207 69 94 }
@@ -262,11 +254,15 @@ SPR =  {
 	color = rgb { 242  205  94 }
 	color_ui = rgb { 242  205  94 }
 }
-KSN = {
-	color = rgb { 218  210  116 }
-	color_ui = rgb { 218  210  116 }
+BAR = {
+	color = rgb { 167  215  140 }
+	color_ui = rgb { 167  215  140 }
 }
 POR = {
+	color = rgb { 5  148  79 }
+	color_ui = rgb { 5  148  79 }
+}
+VOP = {
 	color = rgb { 5  148  79 }
 	color_ui = rgb { 5  148  79 }
 }
@@ -426,14 +422,6 @@ OMA = {
 	color = rgb { 230 70 70 }
 	color_ui = rgb { 230 70 70 }
 }
-SYR = {
-	color = rgb { 67 127 63 }
-	color_ui = rgb { 67 127 63 }
-}
-ARM = {
-	color = rgb { 18 178 230 }
-	color_ui = rgb { 180 178 230 }
-}
 GEO = {
 	color = rgb { 170 150 150 }
 	color_ui = rgb { 170 150 150 }
@@ -458,9 +446,9 @@ JOF = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 57 113 228 }
 }
-AOI = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 57 113 228 }
+ADE = {
+	color = rgb { 47 107 51 }
+	color_ui = rgb { 87 165 82 }
 }
 TAC = {
 	color = rgb { 179 109 97 }
@@ -491,52 +479,61 @@ FET = {
 }
 
 #大明势力
-NAC = {#西北
+XBJ = {#西北
 	color = rgb { 247 238 214 }
 	color_ui = rgb { 247 238 214 }
 }
 GPS = {#关东司
-	color = rgb { 70 160 130 }
-	color_ui = rgb { 70 160 130 }
-}
+		color = rgb { 10 163 68 }
+		color_ui = rgb { 10 163 68 }
+	}
 SRC = {#红军
-	color = rgb { 222 41 16 }
-	color_ui = rgb { 222 41 16 }
+	color = rgb { 238 39 70 }
+	color_ui = rgb { 238 39 70 }
 }
 XIN = {#西南
-	color = rgb { 109 105 95 }
-	color_ui = rgb { 109 105 95 }
+	color = rgb {133 109 114 }
+	color_ui = rgb { 133 109 114 }
 }
 USC = {#共和军
 	color = rgb { 0 18 255 }
 	color_ui = rgb { 0 18 255 }
 }
 ROC = {#大同党
-	color = rgb { 46 109 71 }
-	color_ui = rgb { 46 109 71 }
+	color = rgb { 130 32 43 }
+	color_ui = rgb { 130 32 43 }
 }
-
+STG = {#顺天
+	color = rgb { 223 194 67 }
+	color_ui = rgb { 223 194 67 }
+}
+	SIC = {#川渝 
+		color = rgb { 81 154 115 }
+		color_ui = rgb { 81 154 115 }
+	}
+SCG = {
+	color = rgb { 160  45  45 }
+    color_ui = rgb { 160  45  45 }
+}
+GOS = {#应天
+	color = rgb { 134 112 24 }
+	color_ui = rgb { 134 112 24 }
+}
+### XNH = {#西南红 # XNH 未在 common/country_tags 中定义，保留旧配色以便后续恢复
+### 	color = rgb { 196 90 101 }
+### 	color_ui = rgb { 196 90 101 }
+### }
 FTS = {#法属突尼斯
-	color = rgb { 101  35  232 }
-	color_ui = rgb { 101  35  232 }
+	color = rgb { 56  113  228 }
+	color_ui = rgb { 56  113  228 }
 }
 SHE = {#希贾兹·哈希姆埃米尔国
 	color = rgb { 0 127 14 }
 	color_ui = rgb { 0 127 14 }
 }
-TSO = {#特鲁西尔·阿曼酋长国
-	color = rgb { 158 17 17 }
-	color_ui = rgb { 158 17 17 }
-}
-
-
 
 #reload countrycolors
 
-GER = {
-	color = HSV { 0.1 0.15 0.4 }
-	color_ui = rgb { 138 155 116 }
-}
 ENG = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 255 73 121 }
@@ -586,10 +583,6 @@ LAT = {
 	color = rgb { 75 77 186 }
 	color_ui = rgb { 124 125 184 }
 }
-SPR = {
-	color = rgb { 242 205 94 }
-	color_ui = rgb { 255 255 122 }
-}
 ITA = {
 	color = rgb { 67 127 63 }
 	color_ui = rgb { 87 165 82 }
@@ -630,10 +623,6 @@ BUL = {
 	color = rgb { 51 155 0 }
 	color_ui = rgb { 210 147 217 }
 }
-POR = {
-	color = rgb { 39 116 70 }
-	color_ui = rgb { 51 151 91 }
-}
 FIN = {
 	color = rgb { 205 212 228 }
 	color_ui = rgb { 255 255 255 }
@@ -663,8 +652,8 @@ BHU = {
 	color_ui = rgb { 172 122 88 }
 }
 BOL = {
-	color = hsv { 0.1 0.47 0.8 } #255 180 136
-	color_ui = rgb { 255 234 177 }
+	color = rgb { 245 168 124 }
+	color_ui = rgb { 245 168 124 }
 }
 BRA = {
 	color = rgb { 76 145 63 }
@@ -751,18 +740,14 @@ PHI = {
 	color_ui = rgb { 198 169 248 }
 }
 PRU = {
-	color = rgb { 196 189 204 }
-	color_ui = rgb { 255 246 255 }
+	color = rgb { 245 168 124 }
+	color_ui = rgb { 245 168 124 }
 }
 SAF = {
 	color = rgb { 195 107 160 }
 	color_ui = rgb { 198 169 248 }
 }
 SAU = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
-}
-SIA = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
@@ -775,8 +760,8 @@ TIB = {
 	color_ui = rgb { 222 247 198 }
 }
 URG = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 245 168 124 }
+	color_ui = rgb { 245 168 124 }
 }
 VEN = {
 	color = rgb { 171 190 152 }
@@ -790,7 +775,7 @@ USA = {
 	color = rgb { 20 133 237 }
 	color_ui = rgb { 87 160 255 }
 }
-MON = {
+MOB = {
 	#color = HSV { 0.1 0.15 0.4 }
 	color = rgb { 108 140 42 }
 	color_ui = rgb { 209 247 133 }
@@ -841,10 +826,10 @@ CRO = {
 	color_ui = rgb { 230 255 122 }
 }
 
-PRC = {
-	color = rgb { 245 12 55 }
-	color_ui = rgb { 178 34 60 }
-}
+### PRC = { # PRC 未在 common/country_tags 中定义，保留旧配色以便后续恢复
+### 	color = rgb { 245 12 55 }
+### 	color_ui = rgb { 178 34 60 }
+### }
 
 GXC = {
 	color = rgb { 71 113 97 }
@@ -886,11 +871,6 @@ JOR = {
 	color_ui = rgb { 111  55  78 }
 }
 
-SYR = {
-	color = rgb { 100  100  150 }
-	color_ui = rgb { 100  100  150 }
-}
-
 SER = {
 	color = rgb { 160 110 110 }
 	color_ui = rgb { 160 110 110 }
@@ -916,11 +896,6 @@ GEO = {
 	color_ui = rgb { 255  204  204 }
 }
 
-ARM = {
-	color = rgb { 176  102  180 }
-	color_ui = rgb { 176  102  180 }
-}
-
 LAO = {
 	color = rgb { 176  102  136 }
 	color_ui = rgb { 176  102  136 }
@@ -934,11 +909,6 @@ INS = {
 VIN = {
 	color = rgb { 230  223  50 }
 	color_ui = rgb { 230  223  50 }
-}
-
-CAM = {
-	color = rgb { 100  71  150 }
-	color_ui = rgb { 100  71  150 }
 }
 
 MAL = {
@@ -996,10 +966,6 @@ PAK = {
 #    color = rgb { 120 150 80 }
 #    color_ui = rgb { 150 180 120 }
 #}
-KOR = {
-	color = rgb { 255  240  195 }
-	color_ui = rgb { 255 248 229 }	
-}
 ISR = {
 	color = rgb { 152  130  191 }
 	color_ui = rgb { 152  130  191 }
@@ -1384,10 +1350,6 @@ KHA = {
 	color = rgb { 51 204 51 }
 	color_ui = rgb { 25 102 25 }
 }
-AOI = {
-	color = rgb { 0 153 51 }
-	color_ui = rgb { 0 77 26 }
-}
 LBV = {
 	color = rgb { 179 11 0 }
 	color_ui = rgb { 102 0 0 }
@@ -1412,3 +1374,8 @@ ALA = {
     color = rgb { 227 24 8 }
     color_ui = rgb { 227 24 8 }
 }
+
+### GJG = { # GJG 未在 common/country_tags 中定义，保留旧配色以便后续恢复
+### 	color = rgb { 227 24 8 }
+###     color_ui = rgb { 227 24 8 }
+### }

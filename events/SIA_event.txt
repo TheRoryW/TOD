@@ -1,0 +1,235 @@
+
+# SIA暹罗事件/新闻
+
+add_namespace = SIA_event
+add_namespace = SIA_news
+
+
+country_event = {   #内战事件
+	id = SIA_event.1
+	title = SIA_event.1.t
+	desc = SIA_event.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = SIA_event.1.a		
+		SIA_release_ROS = yes
+	}
+		
+	option = {
+		name = SIA_event.1.b
+		SIA_release_ROS = yes
+		ROS = { change_tag_from = ROOT }
+	}
+}
+
+country_event = {     #选边站事件
+	id = SIA_event.2
+	title = SIA_event.2.t
+	desc = SIA_event.2.d
+	picture = GFX_report_event_election_vote
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = SIA_event.2.a		
+		activate_mission = SIA_mission_1_bwdlljg
+	}
+		
+	option = {
+		name = SIA_event.2.b
+		activate_mission = SIA_mission_2_ghjjqkz
+	}
+}
+
+country_event = {   #内战事件
+	id = SIA_event.3
+	title = SIA_event.3.t
+	desc = SIA_event.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		date > 1937.1.1
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = SIA_event.3.a		
+		SIA_release_ROS = yes
+		country_event = { id = SIA_event.4 days = 30}
+		ROS = {
+			declare_war_on = { target = SIA type = annex_everything }
+		}
+		set_autonomy = { target = LAN autonomous_state = autonomy_free }
+		leave_faction = yes
+		SIA = {
+			transfer_units_fraction = {
+				target = ROS
+				size = 1
+				stockpile_ratio = 1
+				army_ratio = 0.5
+				air_ratio = 1
+			}
+		}
+	}
+		
+	option = {
+		name = SIA_event.3.b
+		SIA_release_ROS = yes
+		ROS = { change_tag_from = ROOT }
+		country_event = { id = SIA_event.4 days = 30}
+		ROS = {
+			declare_war_on = { target = SIA type = annex_everything }
+		}
+		SIA = {
+			set_autonomy = { target = LAN autonomous_state = autonomy_free }
+			leave_faction = yes
+		}
+		SIA = {
+			transfer_units_fraction = {
+				target = ROS
+				size = 1
+				stockpile_ratio = 1
+				army_ratio = 0.5
+				air_ratio = 1
+			}
+		}
+	}
+
+}
+
+country_event = {   #高棉起义
+	id = SIA_event.4
+	title = SIA_event.4.t
+	desc = SIA_event.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		
+	}
+	option = {
+		name = SIA_event.4.a		
+		741 = { 
+			add_core_of = CAM    #添加核心
+			remove_core_of = SIA	#移除核心
+			add_claim_by = SIA	#添加宣称
+			add_claim_by = ROS	#添加宣称
+			transfer_state_to = CAM		#转移控制权
+		}	
+		857 = {
+			add_core_of = CAM   
+		}
+		CAM = {
+			declare_war_on = { target = SIA type = take_state }
+			declare_war_on = { target = ROS type = take_state }
+		}
+		hidden_effect = {
+			858 = {
+				set_demilitarized_zone = yes
+			}
+			670 = {
+				set_demilitarized_zone = yes
+			}
+			1195 = {
+				set_demilitarized_zone = yes
+			}
+			CAM = {
+				division_template = {
+					name = "高棉复国军"   
+					regiments = {
+						infantry = { x = 0 y = 0 } 
+						infantry = { x = 0 y = 1 } 
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+				}
+				741 = {
+					create_unit = {
+						division = "name = \"高棉复国军第一师\" division_template = \"高棉复国军\" start_experience_factor = 1.0"
+						prioritize_location = 12191
+						owner = CAM
+					}
+					create_unit = {
+						division = "name = \"高棉复国军第二师\" division_template = \"高棉复国军\" start_experience_factor = 1.0"
+						prioritize_location = 12191
+						owner = CAM
+					}
+					create_unit = {
+						division = "name = \"高棉复国军第三师\" division_template = \"高棉复国军\" start_experience_factor = 1.0"
+						prioritize_location = 12191
+						owner = CAM
+					}
+				}
+			}
+		}
+	}
+		
+	option = {
+		name = SIA_event.4.b
+		741 = { 
+			add_core_of = CAM    
+			remove_core_of = SIA
+			add_claim_by = SIA
+			add_claim_by = ROS
+			transfer_state_to = CAM
+		}		
+		857 = {
+			add_core_of = CAM   
+		}
+		CAM = { change_tag_from = ROOT }
+		CAM = {
+			declare_war_on = { target = SIA type = take_state }
+			declare_war_on = { target = ROS type = take_state }
+		}
+		hidden_effect = {
+			858 = {
+				set_demilitarized_zone = yes
+			}
+			670 = {
+				set_demilitarized_zone = yes
+			}
+			1195 = {
+				set_demilitarized_zone = yes
+			}
+			CAM = {
+				division_template = {
+					name = "高棉复国军"   
+					regiments = {
+						infantry = { x = 0 y = 0 } 
+						infantry = { x = 0 y = 1 } 
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+				}
+				741 = {
+					create_unit = {
+						division = "name = \"高棉复国军第一师\" division_template = \"高棉复国军\" start_experience_factor = 1.0"
+						prioritize_location = 12191
+						owner = CAM
+					}
+					create_unit = {
+						division = "name = \"高棉复国军第二师\" division_template = \"高棉复国军\" start_experience_factor = 1.0"
+						prioritize_location = 12191
+						owner = CAM
+					}
+					create_unit = {
+						division = "name = \"高棉复国军第三师\" division_template = \"高棉复国军\" start_experience_factor = 1.0"
+						prioritize_location = 12191
+						owner = CAM
+					}
+				}
+			}
+		}
+	}
+
+}
+

@@ -1,0 +1,210 @@
+spriteTypes = {	
+
+	#国策
+	spriteType = {
+		name = "GFX_MNG_chengqianbihou"
+		texturefile = "gfx/MNG/focus/GFX_MNG_chengqianbihou.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_zaisiyurong"
+		texturefile = "gfx/MNG/focus/GFX_MNG_zaisiyurong.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_ziligengsheng"
+		texturefile = "gfx/MNG/focus/GFX_MNG_ziligengsheng.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_mengchongyuri"
+		texturefile = "gfx/MNG/focus/GFX_MNG_mengchongyuri.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_pianqifanyi"
+		texturefile = "gfx/MNG/focus/GFX_MNG_pianqifanyi.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_sidukuikui"
+		texturefile = "gfx/MNG/focus/GFX_MNG_sidukuikui.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_canluanyuhe"
+		texturefile = "gfx/MNG/focus/GFX_MNG_canluanyuhe.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_minyilaozhi"
+		texturefile = "gfx/MNG/focus/GFX_MNG_minyilaozhi.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_zhandingjietie"
+		texturefile = "gfx/MNG/focus/GFX_MNG_zhandingjietie.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_renzhiyijin"
+		texturefile = "gfx/MNG/focus/GFX_MNG_renzhiyijin.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_shajijinghou"
+		texturefile = "gfx/MNG/focus/GFX_MNG_shajijinghou.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_zhengdunguanchang"
+		texturefile = "gfx/MNG/focus/GFX_MNG_zhengdunguanchang.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_chizhuwufu"
+		texturefile = "gfx/MNG/focus/GFX_MNG_chizhuwufu.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_chugongfude"
+		texturefile = "gfx/MNG/focus/GFX_MNG_chugongfude.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_weixinxinfu"
+		texturefile = "gfx/MNG/focus/GFX_MNG_weixinxinfu.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_qingxinqinhuai"
+		texturefile = "gfx/MNG/focus/GFX_MNG_qingxinqinhuai.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_zhengqingrenhe"
+		texturefile = "gfx/MNG/focus/GFX_MNG_zhengqingrenhe.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_qidongjieyan"
+		texturefile = "gfx/MNG/focus/GFX_MNG_qidongjieyan.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_diaochataiziyuci"
+		texturefile = "gfx/MNG/focus/GFX_MNG_diaochataiziyuci.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_qingjiaotongchangonghui"
+		texturefile = "gfx/MNG/focus/GFX_MNG_qingjiaotongchangonghui.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_soubudatonghui"
+		texturefile = "gfx/MNG/focus/GFX_MNG_soubudatonghui.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_diaochasheanguanyuan"
+		texturefile = "gfx/MNG/focus/GFX_MNG_diaochasheanguanyuan.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_zhanjinshajue"
+		texturefile = "gfx/MNG/focus/GFX_MNG_zhanjinshajue.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_kaolvjichengren"
+		texturefile = "gfx/MNG/focus/GFX_MNG_kaolvjichengren.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_quanguodasoubu"
+		texturefile = "gfx/MNG/focus/GFX_MNG_quanguodasoubu.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_zhengdunguanyuan"
+		texturefile = "gfx/MNG/focus/GFX_MNG_zhengdunguanyuan.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_anfuminxin"
+		texturefile = "gfx/MNG/focus/GFX_MNG_anfuminxin.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_bingzhengjianguo"
+		texturefile = "gfx/MNG/focus/GFX_MNG_bingzhengjianguo.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_weizhengyide"
+		texturefile = "gfx/MNG/focus/GFX_MNG_weizhengyide.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_minweibangyi"
+		texturefile = "gfx/MNG/focus/GFX_MNG_minweibangyi.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_gongguzhichen"
+		texturefile = "gfx/MNG/focus/GFX_MNG_gongguzhichen.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_jiyangzhuoqing"
+		texturefile = "gfx/MNG/focus/GFX_MNG_jiyangzhuoqing.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_jiaoguogesu"
+		texturefile = "gfx/MNG/focus/GFX_MNG_jiaoguogesu.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_pojiulixin"
+		texturefile = "gfx/MNG/focus/GFX_MNG_pojiulixin.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_xixuegengge"
+		texturefile = "gfx/MNG/focus/GFX_MNG_xixuegengge.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_jiwangkailai"
+		texturefile = "gfx/MNG/focus/GFX_MNG_jiwangkailai.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_zhengjunchiwu"
+		texturefile = "gfx/MNG/focus/GFX_MNG_zhengjunchiwu.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_youbeiwuhuan"
+		texturefile = "gfx/MNG/focus/GFX_MNG_youbeiwuhuan.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_caitairongruo"
+		texturefile = "gfx/MNG/focus/GFX_MNG_caitairongruo.png"
+	}
+	spriteType = {
+		name = "GFX_MNG_chuyouzhiming"
+		texturefile = "gfx/MNG/focus/GFX_MNG_chuyouzhiming.png"
+	}
+	#国家精神
+	spriteType = {
+		name = "GFX_idea_MNG_pianqifanyi_1"
+		texturefile = "gfx/MNG/ideas/GFX_idea_MNG_pianqifanyi_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_MNG_sidukuikui"
+		texturefile = "gfx/MNG/ideas/GFX_idea_MNG_sidukuikui.png"
+	}
+	spriteType = {
+		name = "GFX_idea_MNG_Can_luan_yu_he"
+		texturefile = "gfx/MNG/ideas/GFX_idea_MNG_Can_luan_yu_he.png"
+	}
+	spriteType = {
+		name = "GFX_idea_MNG_consumer_goods_factor"
+		texturefile = "gfx/MNG/ideas/GFX_idea_MNG_consumer_goods_factor.png"
+	}
+	spriteType = {
+		name = "GFX_idea_MNG_mengchongyuri_1"
+		texturefile = "gfx/MNG/ideas/GFX_idea_MNG_mengchongyuri_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_MNG_Undesirable_economic_recovery"
+		texturefile = "gfx/interface/ideas/ideas/MNG_Undesirable_economic_recovery.dds"
+	}
+	spriteType = {
+		name = "MNG_gonghepaideweixie"
+		texturefile = "gfx/interface/ideas/ideas/MNG_Unsettled_Republicians.dds"
+	}
+	spriteType = {
+		name = "MNG_xianzhenghuidebuhe"
+		texturefile = "gfx/interface/ideas/ideas/MNG_Disharmony_within_the_Constitutional_Party.dds"
+	}
+	spriteType = {
+		name = "MNG_A_Suspected_Army"
+		texturefile = "gfx/interface/ideas/ideas/MNG_A_Suspected_Army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MNG_Dominant_power_of_Far_East"
+		texturefile = "gfx/interface/ideas/ideas/MNG_Dominant_power_of_Far_East.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MNG_wubeixijingsheng"
+		texturefile = "gfx/MNG/ideas/GFX_idea_MNG_wubeixijingsheng.png"
+	}
+	
+}

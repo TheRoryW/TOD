@@ -1,0 +1,28 @@
+air_wings = {
+	29 = {
+		fighter_equipment_0 = { owner = "FRA" amount = 192 }
+		fighter_equipment_0 = { owner = "FRA" amount = 192 }
+		tac_bomber_equipment_1 = { owner = "FRA" amount = 120 }
+	}
+	18 = {
+		fighter_equipment_0 = { owner = "FRA" amount = 192 }
+	}
+	21 = {
+		fighter_equipment_0 = { owner = "FRA" amount = 192 }
+		tac_bomber_equipment_1 = { owner = "FRA" amount = 180 }
+		tac_bomber_equipment_0 = { owner = "FRA" amount = 48 }
+	}
+	458 = {
+		fighter_equipment_0 = { owner = "FRA" amount = 96 }
+		tac_bomber_equipment_1 = { owner = "FRA" amount = 60 }
+	}
+	15 = {
+		nav_bomber_equipment_1 = { owner = "FRA" amount = 48 }
+	}
+	"Atlantique CV 01" = {
+		cv_fighter_equipment_0 = { owner = "FRA" amount = 20 }
+		cv_fighter_equipment_0 = { owner = "FRA" amount = 20 }
+		cv_nav_bomber_equipment_1 = { owner = "FRA" amount = 20 }
+		cv_nav_bomber_equipment_1 = { owner = "FRA" amount = 20 }
+	}
+}

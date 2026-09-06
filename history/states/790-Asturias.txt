@@ -3,21 +3,21 @@ state={
 	name="STATE_790"
 
 	history={
-		owner = KSN
+		owner = SPR
 		victory_points = {
 			11707 3
 		}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
-			arms_factory = 1
+			arms_factory = 2
 			11707 = {
 				naval_base = 2
 
 			}
 
 		}
-		add_core_of = SPR
+		add_core_of = SPR 
 
 	}
 

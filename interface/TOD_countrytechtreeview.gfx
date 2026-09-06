@@ -3,7 +3,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border_kr"
 		size= { x=192 y=192 }
-		textureFile = "gfx//interface//tiles//tiled_window_thin_border_kr2.dds"
+		textureFile = "gfx/interface/tiles/tiled_window_thin_border.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -96,6 +96,12 @@ spriteTypes = {
 		name = "GFX_technology_escort_ships_nonmtg_folder_small_researched_item_bg"
 		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_research_top_win"
+		textureFile = "gfx//interface//research_top_win.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}	
 
 	frameAnimatedSpriteType = {
 		name = "GFX_technology_escort_ships_nonmtg_folder_small_currently_researching_item_bg"

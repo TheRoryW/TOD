@@ -1,0 +1,26 @@
+capital = 963
+
+#军队编制
+
+oob = "empty"
+
+#政党比例
+
+MNG = {
+	set_autonomy = {
+		target = KAZ
+		autonomous_state = tod_ming_zhishudusi
+		freedom_level = 0
+	}
+}
+set_politics = {
+	ruling_party = authoritarian_oligarchy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}	
+
+set_popularities = {
+	authoritarian_oligarchy = 100
+}
+recruit_character = KAZ_zhang_peiyuan

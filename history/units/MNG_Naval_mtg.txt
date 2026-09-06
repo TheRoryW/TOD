@@ -7,119 +7,119 @@
 		task_force = {
 			name = "东洋舰队"
 			location = 9950 
-			ship = { name = "四辅" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = MNG version_name = "星级"} } 
+			ship = { name = "四辅 II" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = MNG version_name = "星级"} } 
 				
 			}
-			ship = { name = "黄山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG  version_name = "岳级"} } }
-			ship = { name = "庐山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
-			ship = { name = "雁荡山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
-			ship = { name = "泰山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
-			ship = { name = "华山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
-			ship = { name = "嵩山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
-			ship = { name = "衡山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
-			ship = { name = "恒山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
-			ship = { name = "长江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
-			ship = { name = "怒江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
-			ship = { name = "澜沧江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
-			ship = { name = "汾河" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
-			ship = { name = "珠江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
-			ship = { name = "汉江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
-			ship = { name = "黄河" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
-			ship = { name = "淮河" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
-			ship = { name = "西湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
-			ship = { name = "鄱阳湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
-			ship = { name = "洞庭湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
-			ship = { name = "青海湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
-			ship = { name = "巢湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
-			ship = { name = "日月潭" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
-			ship = { name = "滇池" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
-			ship = { name = "镜泊湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
-			ship = { name = "国风" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "周南" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "关雎" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "葛覃" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "卷耳" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "樛木" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "螽斯" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "桃夭" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "兔罝" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "芣苢" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "汉广" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "汝坟" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "巧笑" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "美目" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "采萧" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "麟之趾" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "召南" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "鹊巢" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "采蘩" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "草虫" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "采苹" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "甘棠" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "行露" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "羔羊" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "殷其雷" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "摽有梅" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "小星" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "江有汜" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "琼琚" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "雪霏" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "柳依" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "谷风" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "式微" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "旄丘" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "简兮" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "泉水" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "北门" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "北风" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "静女" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "新台" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "二子乘舟" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "鄘风" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "墙有茨" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "君子偕老" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "叶蓁" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "清扬" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "豳风" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "鸱鸮" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "破斧" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "伐柯" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "九罭" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "狼跋" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "茯苓" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "下泉" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "白芨" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "黄山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG  version_name = "岳级"} } }
+			ship = { name = "庐山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
+			ship = { name = "雁荡山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
+			ship = { name = "泰山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
+			ship = { name = "华山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
+			ship = { name = "嵩山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
+			ship = { name = "衡山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
+			ship = { name = "恒山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级"} } }
+			ship = { name = "长江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
+			ship = { name = "怒江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
+			ship = { name = "澜沧江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
+			ship = { name = "汾河 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
+			ship = { name = "珠江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
+			ship = { name = "汉江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
+			ship = { name = "黄河 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
+			ship = { name = "淮河 III" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级"} } }
+			ship = { name = "西湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
+			ship = { name = "鄱阳湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
+			ship = { name = "洞庭湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
+			ship = { name = "青海湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
+			ship = { name = "巢湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
+			ship = { name = "日月潭 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
+			ship = { name = "滇池 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
+			ship = { name = "镜泊湖 III" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级"} } }
+			ship = { name = "国风 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "周南 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "关雎 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "葛覃 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "卷耳 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "樛木 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "螽斯 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "桃夭 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "兔罝 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "芣苢 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "汉广 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "汝坟 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "巧笑 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "美目 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "采萧 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "麟之趾 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "召南 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "鹊巢 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "采蘩 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "草虫 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "采苹 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "甘棠 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "行露 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "羔羊 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "殷其雷 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "摽有梅 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "小星 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "江有汜 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "琼琚 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "雪霏 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "柳依 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "谷风 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "式微 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "旄丘 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "简兮 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "泉水 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "北门 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "北风 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "静女 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "新台 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "二子乘舟 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "鄘风 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "墙有茨 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "君子偕老 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "叶蓁 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "清扬 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "豳风 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "鸱鸮 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "破斧 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "伐柯 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "九罭 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "狼跋 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "茯苓 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "下泉 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "白芨 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
 		}
 		task_force = {				
 			name = "东洋潜艇支队"			
 			location = 9950
-			ship = { name = "吕" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "调" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "阳" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "云" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "腾" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "致" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "雨" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "露" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "结" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "为" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "霜" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "金" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "生" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "丽" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "水" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "玉" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "出" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "昆" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "冈" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "剑" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "巨" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "阙" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "珠" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "称" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "夜" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "光" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "吕 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "调 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "阳 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "云 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "腾 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "致 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "雨 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "露 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "结 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "为 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "霜 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "金 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "生 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "丽 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "水 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "玉 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "出 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "昆 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "冈 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "剑 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "号 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "巨 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "阙 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "珠 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "称 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "夜 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "光 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
 		}	
 	}
 
@@ -130,94 +130,94 @@
 		task_force = {
 			name = "西洋舰队"
 			location = 11929
-			ship = { name = "御女" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = MNG version_name = "星级"} } 
+			ship = { name = "御女 II" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = MNG version_name = "星级"} } 
 				
 			}
-			ship = { name = "五台山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }			
-			ship = { name = "峨眉山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }
-			ship = { name = "长白山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }
-			ship = { name = "普陀山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }
-			ship = { name = "武当山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }
-			ship = { name = "武夷山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }
-			ship = { name = "昆仑山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }
-			ship = { name = "伏牛山" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
-			ship = { name = "龙虎山" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
-			ship = { name = "蛇山" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
-			ship = { name = "龟山" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
-			ship = { name = "白马山" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
-			ship = { name = "鸡公山" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
-			ship = { name = "一江山" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
-			ship = { name = "渭河" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
-			ship = { name = "龙江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
-			ship = { name = "黄浦江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
-			ship = { name = "湘江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
-			ship = { name = "赣江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
-			ship = { name = "岷江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
-			ship = { name = "嘉陵江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
-			ship = { name = "纳木错" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }	
-			ship = { name = "天池" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }	
-			ship = { name = "太湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }	
-			ship = { name = "桑中" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "鹑之奔奔" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "定之方中" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "蝃蝀" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "相鼠" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "干旄" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }	
-			ship = { name = "载驰" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "卫风" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "淇奥" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "考盘" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "硕人" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "氓" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }	
-			ship = { name = "竹竿" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "芄兰" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "维鹊" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "维鸠" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "河广" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "伯兮" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }	
-			ship = { name = "有狐" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "木瓜" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "王风" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "黍离" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "君子于役" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "君子阳阳" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }	
-			ship = { name = "扬之水" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "中谷有蓷" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "兔爰" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "葛藟" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "采葛" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "大车" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }	
+			ship = { name = "五台山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }			
+			ship = { name = "峨眉山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }
+			ship = { name = "长白山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }
+			ship = { name = "普陀山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }
+			ship = { name = "武当山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }
+			ship = { name = "武夷山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }
+			ship = { name = "昆仑山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }
+			ship = { name = "伏牛山 II" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
+			ship = { name = "龙虎山 III" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
+			ship = { name = "蛇山 II" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
+			ship = { name = "龟山 II" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
+			ship = { name = "白马山 II" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
+			ship = { name = "鸡公山 II" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
+			ship = { name = "一江山 II" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "丘级" } } }
+			ship = { name = "渭河 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
+			ship = { name = "龙江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
+			ship = { name = "黄浦江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
+			ship = { name = "湘江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
+			ship = { name = "赣江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
+			ship = { name = "岷江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
+			ship = { name = "嘉陵江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }	
+			ship = { name = "纳木错 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }	
+			ship = { name = "天池 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }	
+			ship = { name = "太湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }	
+			ship = { name = "桑中 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "鹑之奔奔 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "定之方中 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "蝃蝀 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "相鼠 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "干旄 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }	
+			ship = { name = "载驰 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "卫风 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "淇奥 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "考盘 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "硕人 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "氓 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }	
+			ship = { name = "竹竿 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "芄兰 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "维鹊 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "维鸠 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "河广 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "伯兮 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }	
+			ship = { name = "有狐 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "木瓜 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "王风 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "黍离 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "君子于役 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "君子阳阳 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }	
+			ship = { name = "扬之水 IV" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "中谷有蓷 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "兔爰 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "葛藟 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "采葛 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "大车 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }	
 		}				
 		task_force = {				
 			name = "西洋潜艇支队"			
 			location = 11929
-			ship = { name = "天" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "地" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "玄" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "黄" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "宇" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "宙" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "洪" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "荒" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "日" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "月" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "盈" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "昃" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "辰" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "宿" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "寒" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "来" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "暑" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "往" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "秋" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "收" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "冬" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "藏" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "闰" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "余" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "成" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "岁" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
-			ship = { name = "律" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "天 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "地 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "玄 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "黄 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "宇 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "宙 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "洪 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "荒 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "日 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "月 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "盈 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "昃 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "辰 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "宿 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "寒 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "来 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "暑 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "往 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "秋 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "收 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "冬 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "藏 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "闰 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "余 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "成 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "岁 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
+			ship = { name = "律 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }
 		}				
 	}
 				
@@ -228,98 +228,98 @@
 		task_force = {
 			name = "南洋舰队"
 			location = 12299
-			ship = { name = "天怆" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = MNG version_name = "星级"} } 
+			ship = { name = "天怆 II" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = MNG version_name = "星级"} } 
 				
 			}
-			ship = { name = "傅舍" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = MNG version_name = "星级"} } 
+			ship = { name = "傅舍 II" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = MNG version_name = "星级"} } 
 				
 			}
-			ship = { name = "终南山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }		
-			ship = { name = "九华山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }		
-			ship = { name = "漓江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }
-			ship = { name = "桂江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }
-			ship = { name = "柳江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }
-			ship = { name = "淮河" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }
-			ship = { name = "嫩江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }
-			ship = { name = "松花江" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }
-			ship = { name = "阳澄湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
-			ship = { name = "星云湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
-			ship = { name = "兴凯湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
-			ship = { name = "呼伦湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
-			ship = { name = "洪泽湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
-			ship = { name = "洱海" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
-			ship = { name = "程海" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
-			ship = { name = "邛海" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
-			ship = { name = "长桥海" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
-			ship = { name = "千岛湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
-			ship = { name = "淀山湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
-			ship = { name = "扬之水" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "委蛇" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "竹猗" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "褧衣" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "柔荑" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "凝脂" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "出其" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "东门" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "野有" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "蔓草" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "溱洧" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "齐风" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "鸡鸣" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "还" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "著" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "东日" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "东明" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "南山" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "甫" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "田" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
-			ship = { name = "园有桃" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "陟岵" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "亩间" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "伐檀" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "硕鼠" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "仳离" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "三秋" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "佩玖" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "唐风" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "蟋蟀" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "山有枢" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "扬之水" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "椒聊" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "绸缪" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "杕杜" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "羔裘" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "鸨羽" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
-			ship = { name = "无衣" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "终南山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }		
+			ship = { name = "九华山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "岳级" } } }		
+			ship = { name = "漓江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }
+			ship = { name = "桂江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }
+			ship = { name = "柳江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }
+			ship = { name = "淮河 IV" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }
+			ship = { name = "嫩江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }
+			ship = { name = "松花江 II" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "江级" } } }
+			ship = { name = "阳澄湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
+			ship = { name = "星云湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
+			ship = { name = "兴凯湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
+			ship = { name = "呼伦湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
+			ship = { name = "洪泽湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
+			ship = { name = "洱海 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
+			ship = { name = "程海 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
+			ship = { name = "邛海 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
+			ship = { name = "长桥海 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
+			ship = { name = "千岛湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
+			ship = { name = "淀山湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "湖级" } } }
+			ship = { name = "扬之水 V" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "委蛇 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "竹猗 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "褧衣 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "柔荑 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "凝脂 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "出其 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "东门 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "野有 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "蔓草 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "溱洧 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "齐风 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "鸡鸣 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "还 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "著 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "东日 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "东明 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "南山 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "甫 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "田 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（甲型）"} } }
+			ship = { name = "园有桃 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "陟岵 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "亩间 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "伐檀 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "硕鼠 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "仳离 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "三秋 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "佩玖 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "唐风 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "蟋蟀 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "山有枢 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "扬之水 VI" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "椒聊 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "绸缪 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "杕杜 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "羔裘 III" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "鸨羽 II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
+			ship = { name = "无衣 III" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级"} } }
 		}				
 			
 		task_force = {				
 			name = "南洋舰队潜艇支队"			
 			location = 12299
-			ship = { name = "果" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "珍" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "李" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "柰" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "菜" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "重" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "芥" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "姜" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "海" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "咸" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "河" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "淡" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "鳞" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "潜" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "羽" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "翔" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "龙" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "师" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "火" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "帝" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "鸟" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "官" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }	
-			ship = { name = "人" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
-			ship = { name = "皇" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }	
+			ship = { name = "果 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "珍 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "李 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "柰 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "菜 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "重 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "芥 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "姜 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "海 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "咸 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "河 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "淡 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "鳞 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "潜 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "羽 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "翔 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "龙 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "师 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "火 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "帝 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "鸟 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "官 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }	
+			ship = { name = "人 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }		
+			ship = { name = "皇 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "贰佰千字文级" } } }	
 		}
 	}
 
@@ -330,65 +330,65 @@
 		task_force = {				
 			name = "北洋舰队"
 			location = 7532 
-			ship = { name = "敬亭山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "山级" } } }	
-			ship = { name = "龙虎山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "山级" } } }		
-			ship = { name = "青城山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "山级" } } }		
-			ship = { name = "齐云山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "山级" } } }		
-			ship = { name = "梵净山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "山级" } } }		
-			ship = { name = "三清山" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "山级" } } }					
-			ship = { name = "玄武湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
-			ship = { name = "镜泊湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
-			ship = { name = "微山湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
-			ship = { name = "巴尔喀什湖" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
-			ship = { name = "白洋淀" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
-			ship = { name = "中海" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
-			ship = { name = "北海" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
-			ship = { name = "南海" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
-			ship = { name = "蒹葭" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }		
-			ship = { name = "终南" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }	
-			ship = { name = "黄鸟" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }	
-			ship = { name = "晨风" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }	
-			ship = { name = "无衣" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }	
-			ship = { name = "渭阳" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }	
-			ship = { name = "权舆" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }	
-			ship = { name = "墓门" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "有鹊" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "月出" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "株林" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "泽陂" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "桧风" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "羔裘" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }		
-			ship = { name = "素冠" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "仲行" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "隰有" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "苌楚" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "匪风" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "曹风" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "蜉蝣" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "候人" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
-			ship = { name = "鸤鸠" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "敬亭山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "山级" } } }	
+			ship = { name = "龙虎山 IV" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "山级" } } }		
+			ship = { name = "青城山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "山级" } } }		
+			ship = { name = "齐云山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "山级" } } }		
+			ship = { name = "梵净山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "山级" } } }		
+			ship = { name = "三清山 II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = MNG version_name = "山级" } } }					
+			ship = { name = "玄武湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
+			ship = { name = "镜泊湖 IV" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
+			ship = { name = "微山湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
+			ship = { name = "巴尔喀什湖 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
+			ship = { name = "白洋淀 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
+			ship = { name = "中海 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
+			ship = { name = "北海 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
+			ship = { name = "南海 II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MNG version_name = "泊级" } } }
+			ship = { name = "蒹葭 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }		
+			ship = { name = "终南 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }	
+			ship = { name = "黄鸟 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }	
+			ship = { name = "晨风 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }	
+			ship = { name = "无衣 IV" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }	
+			ship = { name = "渭阳 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }	
+			ship = { name = "权舆 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（乙型）"} } }	
+			ship = { name = "墓门 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "有鹊 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "月出 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "株林 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "泽陂 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "桧风 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "羔裘 IV" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }		
+			ship = { name = "素冠 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "仲行 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "隰有 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "苌楚 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "匪风 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "曹风 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "蜉蝣 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "候人 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
+			ship = { name = "鸤鸠 II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MNG version_name = "国风级（丙型）"} } }	
 		}									
 		task_force = {				
 			name = "北洋舰队潜艇支队"			
 			location = 7532
-			ship = { name = "始" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "制" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "文" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "字" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "乃" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "服" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "衣" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "裳" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "推" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "位" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "让" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "国" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "有" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "虞" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "陶" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "唐" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "吊" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
-			ship = { name = "民" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "始 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "制 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "文 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "字 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "乃 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "服 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "衣 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "裳 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "推 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "位 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "让 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "国 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "有 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "虞 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "陶 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "唐 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "吊 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
+			ship = { name = "民 II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MNG version_name = "壹佰千字文级" } } }
 		}				
 	}
 }

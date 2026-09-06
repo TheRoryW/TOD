@@ -1,0 +1,20 @@
+#滇缅铁路决议
+XIN_dianmiantielu = {
+	icon = gre_faction_management
+
+	allowed = {
+		tag = XIN
+	}
+}
+#滇缅开战决议
+XIN_BRM_war = {
+	icon = gre_faction_management
+
+	allowed = {
+		OR = {
+			tag = XIN
+			tag = BRM
+		}
+		
+	}
+}

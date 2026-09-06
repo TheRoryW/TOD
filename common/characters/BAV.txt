@@ -1,5 +1,4 @@
 characters={
-
 	BAV_RUPPRECHT_I ={
 		name=BAV_RUPPRECHT_I
 		portraits={
@@ -8,8 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=authoritarian_oligarchy_subtype
-			desc = "POLITICS_RUPPRECHT_I_DESC"
+			ideology=leader_despotism_subtype
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

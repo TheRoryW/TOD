@@ -1,0 +1,670 @@
+ideas = {    
+	country = {
+     #开局民族精神    
+		GOS_idea_gengwucaihuangdeyubo = {#庚午财荒的余波
+			picture = GOS_gengwucaihuangdeyubo
+			modifier = {
+				consumer_goods_factor =	0.5
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+				industrial_capacity_factory = -0.1
+				political_power_gain = -0.1
+			}
+		}
+        GOS_idea_gengwucaihuangdeyubo_2 = {#庚午财荒的余波2
+			picture = GOS_gengwucaihuangdeyubo
+			modifier = {
+				consumer_goods_factor =	0.5
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}		
+		GOS_idea_datongdangzaixingdong = { #人心思变
+			picture = GOS_datongdangzaixingdong
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_gain = -0.1
+			}
+		}	
+		GOS_idea_huguangliangcang = { #湖广粮仓
+			picture = GOS_huguangliangcang
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				monthly_population = 0.1
+			}
+		}
+     #动态修正用假民族精神
+      #咨议院法案
+        GOS_idea_zyyfn_jia = { #咨议院法案	
+			modifier = {
+			}
+		}
+        GOS_idea_zyyfn_ql_jia = { #权利法案		
+			modifier = {
+				political_power_gain = 0.2
+			}
+		}
+        GOS_idea_zyyfn_rq_jia = { #人权法案		
+			modifier = {
+				war_support_factor = 0.1
+			}
+		}
+        GOS_idea_zyyfn_cc_jia = { #财产法案		
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+		}
+        GOS_idea_zyyfn_df_jia = { #地方法案		
+			modifier = {
+				conscription_factor = 0.2
+			}
+		}
+        GOS_idea_zyyfn_tz_jia = { #天子法案		
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+        GOS_idea_zyyfn_my_jia = { #贸易法案		
+			modifier = {
+				trade_opinion_factor = 0.2
+			}
+		}
+        GOS_idea_zyyfn_dgxf_jia = { #帝国宪法		
+			modifier = {
+				compliance_growth = 0.2
+			}
+		}
+        GOS_idea_zyyfn_js_jia = { #军事法案		
+			modifier = {
+				army_strength_factor = 0.1
+			}
+		}
+
+      #江南明军
+        GOS_idea_jnmj_jia = { #默认	
+            modifier = {
+            }
+        }
+        GOS_idea_jnmj_jia_2 = { #改名为江南明军	
+            modifier = {
+                army_org_factor = 0.1
+            }
+        }
+        GOS_idea_jnmj_jia_3 = { #改名为兴师北伐
+            modifier = {
+                breakthrough_factor = 0.1
+            }
+        }
+        GOS_idea_jnmj_jia_4 = { #参谋部改革	
+            modifier = {
+                command_power_gain_mult = 0.35
+            }
+        }
+        GOS_idea_jnmj_jia_5 = { #默认	
+            modifier = {
+                army_org_factor = 0.1
+            }
+        }
+        GOS_idea_jnmj_jia_6 = { #默认	
+            modifier = {
+                army_attack_factor = 0.1
+            }
+        }
+        GOS_idea_jnmj_jia_7 = { #默认	
+            modifier = {
+                army_defence_factor = 0.1
+            }
+        }
+        
+
+    
+     #民族精神 
+      #政治
+        GOS_idea_ngjsbd = { #内阁局势变动
+			picture = man_five_year_plan_air	
+			modifier = {
+				custom_modifier_tooltip = GOS_tooltip_idea_ngjsbd
+			}
+		}
+        GOS_idea_trqldzz_1 = { #王朝新气象
+			picture = GOS_wangchaoxinqixiang
+			modifier = {
+				defensive_war_stability_factor = 0.20     #防御战争对稳定度修正
+			}		
+		}
+        GOS_idea_trqldzz_2 = { #王朝新气象
+			picture = GOS_wangchaoxinqixiang
+			modifier = {
+				defensive_war_stability_factor = 0.20     #防御战争对稳定度修正
+                offensive_war_stability_factor = 0.10    #进攻战争对稳定度修正
+				war_support_factor = 0.1
+			}		
+		}
+      #陆军
+        GOS_idea_fyzz = { #防御作战
+			picture = GOS_fangyuzuozhan
+			modifier = {
+				dig_in_speed_factor = 0.20 #堑壕速度
+                max_dig_in_factor = 0.20 #堑壕上线修正
+				production_speed_bunker_factor = 0.20 #堡垒建造速度
+			}		
+		}
+        GOS_idea_phsc = { #军事生产遭到破坏
+			picture = GOS_junshishengchanzaodaopohuai
+			modifier = {
+                industrial_capacity_factory = -0.1
+			}		
+		}
+        GOS_idea_bmj = { #保密局
+			picture = GOS_baomiju
+			modifier = {
+                crypto_strength = 2 #加密等级
+                intelligence_agency_defense = 1 #反间谍
+			}		
+		}
+        GOS_idea_jgcyl_1 = { #军工产业链
+			picture = GOS_jungongchanyelian
+			modifier = {
+                production_speed_arms_factory_factor = 0.1 #军用工厂建造速度
+			}		
+		}
+        GOS_idea_jgcyl_2 = { #军工产业链
+			picture = GOS_jungongchanyelian
+			modifier = {
+                production_speed_arms_factory_factor = 0.1 #军用工厂建造速度
+                equipment_conversion_speed = 0.2     #改装速度
+			}		
+		}
+        GOS_idea_jgcyl_3 = { #军工产业链
+			picture = GOS_jungongchanyelian
+			modifier = {
+                production_speed_arms_factory_factor = 0.1 #军用工厂建造速度
+                equipment_conversion_speed = 0.2       #改装速度
+                industrial_capacity_factory = 0.1        #工厂产出
+			}		
+		}
+      #海空
+        GOS_idea_qshj_1 = { #七省海军
+			picture = GOS_idea_qshj
+			modifier = {
+                convoy_escort_efficiency = 0.1 #护航效率
+			}		
+		}
+        GOS_idea_qshj_2 = { #七省海军
+			picture = GOS_idea_qshj
+			modifier = {
+                convoy_escort_efficiency = 0.1 #护航效率
+                navy_carrier_air_agility_factor = 0.10 #航母舰载机机动性
+			}		
+		}
+        GOS_idea_qshj_3 = { #七省海军
+			picture = GOS_idea_qshj
+			modifier = {
+                convoy_escort_efficiency = 0.1 #护航效率
+                navy_carrier_air_agility_factor = 0.10 #航母舰载机机动性
+			}		
+            equipment_bonus = {	
+                ship_hull_carrier = {
+                    #instant = yes
+                    carrier_size = 1
+                }
+            }
+		}
+        GOS_idea_qshj_4 = { #海上霸主
+			picture = GOS_idea_haishangbazhu
+			modifier = {
+                convoy_escort_efficiency = 0.1 #护航效率
+                navy_carrier_air_agility_factor = 0.10 #航母舰载机机动性
+                naval_coordination = 0.05 #舰队协同性
+			}	
+            equipment_bonus = {	
+                ship_hull_carrier = {
+                    #instant = yes
+                    carrier_size = 1
+                }
+            }
+		}
+        GOS_idea_qshj_12 = { #七省海军
+			picture = GOS_idea_qshj
+			modifier = {
+                convoy_escort_efficiency = 0.1 #护航效率
+                navy_capital_ship_attack_factor = 0.1 #主力舰攻击
+			}		
+		}
+        GOS_idea_qshj_13 = { #七省海军
+			picture = GOS_idea_qshj
+			modifier = {
+                convoy_escort_efficiency = 0.1 #护航效率
+                navy_capital_ship_attack_factor = 0.1 #主力舰攻击
+                naval_enemy_fleet_size_ratio_penalty_factor = 0.1 #敌人舰队规模惩罚
+			}		
+		}
+        GOS_idea_qshj_14 = { #海上霸主
+			picture = GOS_idea_haishangbazhu
+			modifier = {
+                convoy_escort_efficiency = 0.1 #护航效率
+                naval_coordination = 0.05 #舰队协同性
+                navy_capital_ship_attack_factor = 0.1 #主力舰攻击
+                naval_enemy_fleet_size_ratio_penalty_factor = 0.1 #敌人舰队规模惩罚
+			}	
+		}
+        GOS_idea_qdtk = { #抢夺天空
+			picture = air_war_plans_division_focus
+			modifier = {
+                army_bonus_air_superiority_factor = 0.1 #空优
+			}	
+		}
+        GOS_idea_qskj_1 = { #七省空军
+			picture = GOS_idea_qskj
+			modifier = {
+                experience_gain_air_factor = 0.1 #空军经验增长
+                production_speed_air_base_factor = 0.2 #空军基地建造速度
+			}	
+		}
+        GOS_idea_qskj_2 = { #七省空军
+			picture = GOS_idea_qskj
+			modifier = {
+                experience_gain_air_factor = 0.1 #空军经验增长
+                production_speed_air_base_factor = 0.2 #空军基地建造速度
+                air_strategic_bomber_bombing_factor = 0.2 #战略轰炸
+			}	
+		}
+        GOS_idea_qskj_3 = { #七省空军
+			picture = GOS_idea_qskj
+			modifier = {
+                experience_gain_air_factor = 0.1 #空军经验增长
+                production_speed_air_base_factor = 0.2 #空军基地建造速度
+                air_cas_present_factor = 0.1 #对地支援
+			}	
+		}
+        GOS_idea_qskj_4 = { #天空霸主
+			picture = GOS_idea_qskj
+			modifier = {
+                experience_gain_air_factor = 0.1 #空军经验增长
+                production_speed_air_base_factor = 0.2 #空军基地建造速度
+                air_strategic_bomber_bombing_factor = 0.2 #战略轰炸
+			}	
+            equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+            equipment_bonus = {
+				medium_plane_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				large_plane_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+        GOS_idea_qskj_5 = { #天空霸主
+			picture = GOS_idea_qskj
+			modifier = {
+                experience_gain_air_factor = 0.1 #空军经验增长
+                production_speed_air_base_factor = 0.2 #空军基地建造速度
+                air_cas_present_factor = 0.1 #对地支援
+			}	
+            equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+            equipment_bonus = {
+				medium_plane_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				large_plane_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+       
+	}
+
+    industrial_concern = { #工业
+		GOS_zzs_lstm = { #灵山土木工程建筑集团
+			picture = lingshantumugongchengjianzhujituan
+			allowed = {
+				original_tag = GOS
+			}
+			available = {
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+			traits = {
+				industrial_concern
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		GOS_zzs_slsy = { #私立岳麓书院
+			picture = siliyuelushuyuan
+			allowed = {
+				original_tag = GOS
+			}
+			available = {
+			}
+			research_bonus = {
+			}
+			traits = {
+			}
+			modifier = {
+                research_speed_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+        GOS_zzs_ytzy = { #国立应天中央大学堂
+			picture = guoliyingtianzhongyangdaxuetang
+			allowed = {
+				original_tag = GOS
+			}
+			available = {
+			}
+			research_bonus = {
+			}
+			traits = {
+			}
+			modifier = {
+                research_speed_factor = 0.03
+                stability_factor = 0.05	
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		GOS_zzs_hjys = { #汉江有色金属制备集团
+			picture = hangjiangyousejinshuzhibeijituan
+			allowed = {
+				original_tag = GOS
+			}
+			available = {
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+			traits = {
+				industrial_concern
+			}
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.2
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		GOS_zzs_dgyz = { #帝国扬子电气化开发局
+			picture = diguoyangzidianqihuakaifaju
+			allowed = {
+				original_tag = GOS
+			}
+			available = {
+			}
+			research_bonus = {
+				electronics = 0.1
+			}
+			traits = {
+				electronics_concern
+			}
+			modifier = {
+                production_speed_radar_station_factor = 0.1 #雷达建造速度
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+#政府顾问
+	TOD_minister_head = { ### 政府首脑 ###
+        GOS_zjj = {#张静江
+			allowed = { original_tag = GOS }
+            available = { always = no }
+			cancel_if_invalid = no
+			traits = {
+				TOD_minister_head
+				GOS_traits_ytfy
+			}
+		}
+        GOS_gtq = {#郭泰祺
+            allowed = { original_tag = GOS }
+            available = { always = no }
+            cancel_if_invalid = no
+            traits = {
+                TOD_minister_head
+                GOS_traits_bmll
+            }
+        }
+        GOS_cgp = {#陈光甫
+            allowed = { original_tag = GOS }
+            available = { always = no }
+            cancel_if_invalid = no
+            traits = {
+                TOD_minister_head
+                GOS_traits_gt
+            }
+        }
+        GOS_lzc = {#李烛尘
+            allowed = { original_tag = GOS }
+            available = { always = no }
+            cancel_if_invalid = no
+            traits = {
+                TOD_minister_head
+                GOS_traits_jbqyj
+            }
+        }
+		GOS_zrc = {#章荣初
+            allowed = { original_tag = GOS }
+            available = { always = no }
+            cancel_if_invalid = no
+            traits = {
+                TOD_minister_head
+                GOS_traits_srxyz
+            }
+        }
+        GOS_lyz = {#柳亚子
+            allowed = { original_tag = GOS }
+            available = { always = no }
+            cancel_if_invalid = no
+            traits = {
+                TOD_minister_head
+                GOS_traits_nhzzz
+            }
+        }
+    }
+    TOD_foreign_minister = {### 外交部长 ###
+        GOS_lz = {#刘峙
+            allowed = { original_tag = GOS }
+            available = { }
+            cancel_if_invalid = no
+            traits = {
+                TOD_foreign_minister
+                GOS_traits_jzfdyr
+
+            }
+        }
+        GOS_txs = {#陶希圣
+            allowed = { original_tag = GOS }
+            available = { 
+				has_completed_focus = GOS_focus_1
+			}
+            cancel_if_invalid = no
+            traits = {
+                TOD_foreign_minister
+                GOS_traits_ylzzj
+
+            }
+        }
+        GOS_gwj = {#顾维钧
+            allowed = { original_tag = GOS }
+            available = { }
+            cancel_if_invalid = no
+            traits = {
+                TOD_foreign_minister
+                GOS_traits_cps
+
+            }
+        }
+		
+    }
+    TOD_economy_minister = {### 经济部长 ###
+        GOS_qym = {#钱永铭
+            allowed = { original_tag = GOS }
+            available = { }
+            cancel_if_invalid = no
+            traits = {
+                TOD_economy_minister
+                GOS_traits_nfdcf
+
+            }
+        }
+        GOS_zfh = {#周佛海
+            allowed = { original_tag = GOS }
+            available = { }
+            cancel_if_invalid = no
+            traits = {
+                TOD_economy_minister
+                GOS_traits_dtdpt
+
+            }
+        }
+        GOS_wyz = {#虞洽卿
+            allowed = { original_tag = GOS }
+            available = { }
+            cancel_if_invalid = no
+            traits = {
+                TOD_economy_minister
+                GOS_traits_cf
+
+            }
+        }
+        GOS_hjw = {#胡厥文
+            allowed = { original_tag = GOS }
+            available = { 
+				has_completed_focus = GOS_focus_1
+			}
+            cancel_if_invalid = no
+            traits = {
+                TOD_economy_minister
+                GOS_traits_dtdhsr
+
+            }
+        }
+        GOS_qcz = {#钱昌照
+            allowed = { original_tag = GOS }
+            available = { 
+				has_completed_focus = GOS_focus_1
+			}
+            cancel_if_invalid = no
+            traits = {
+                TOD_economy_minister
+                GOS_traits_jjbs
+
+            }
+        }
+    }
+    TOD_security_minister = {### 安全部长 ###
+        GOS_zbj = {#赵秉钧
+            allowed = { original_tag = GOS }
+            available = { }
+            cancel_if_invalid = no
+            traits = {
+                TOD_security_minister
+                GOS_traits_fdxgz
+
+            }
+        }
+        # GOS_hzh = {#贺衷寒
+        #     allowed = { original_tag = GOS }
+        #     available = { }
+        #     cancel_if_invalid = no
+        #     traits = {
+        #         TOD_security_minister
+        #         GOS_traits_fdxgz
+        #     }
+        # }
+        GOS_dys= {#杜月笙
+            allowed = { original_tag = GOS }
+            available = { }
+            cancel_if_invalid = no
+            traits = {
+                TOD_security_minister
+                GOS_traits_hb
+
+            }
+        }
+        GOS_hkz = {#华克之
+            allowed = { original_tag = GOS }
+            available = { has_completed_focus = GOS_focus_0 }
+            cancel_if_invalid = no
+            traits = {
+                TOD_security_minister
+                GOS_traits_tshw
+
+            }
+			on_add = {
+				set_country_flag = GOS_hkz_flag
+				GOS_scripted_effects_tzqw_js = yes
+			}
+			on_remove = {
+				clr_country_flag = GOS_hkz_flag
+				GOS_scripted_effects_tzqw_js = yes
+			}
+        }
+		GOS_zzz = {#张治中
+            allowed = { original_tag = GOS }
+            available = { 
+				has_completed_focus = GOS_focus_1
+			}
+            cancel_if_invalid = no
+            traits = {
+                TOD_security_minister
+                GOS_traits_dtdmy
+
+            }
+        }
+    }
+}

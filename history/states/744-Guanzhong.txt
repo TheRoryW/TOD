@@ -1,14 +1,13 @@
 
-state={
-	id=744
-	name="STATE_744"
-	resources={
-		aluminium=5
-		tungsten=20
-		steel=35
+state = {
+	id = 744
+	name = "STATE_744"
+	resources = {
+		tungsten = 4
+		steel = 4
 	}
 
-	history={
+	history = {
 		owner = MNG
 		add_core_of = MNG
 		buildings = {
@@ -20,27 +19,27 @@ state={
 
 		}
 		victory_points = {
-			13447 3
+			13447 10
 		}
 		victory_points = {
-			1976 2
+			1976 5
 		}
 		victory_points = {
-			7418 25 
+			7418 30 
 		}
 		victory_points = {
-			13440 3 
+			13440 5 
 		}
 		victory_points = {
-			13439 1 
+			13439 2 
 		}
 
 	}
 
-	provinces={
+	provinces = {
 		1976 2006 4256 5092 7406 7418 10257 13439 13440 13447 13448 13449
 	}
-	manpower=7527123
-	buildings_max_level_factor=1.000
-	state_category=ten
+	manpower = 7527123
+	buildings_max_level_factor = 1.000
+	state_category = ten
 }

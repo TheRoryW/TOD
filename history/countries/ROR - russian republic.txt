@@ -1,0 +1,9 @@
+# 俄罗斯共和国 —— 匈牙利东墙和约（TODhungary.36）扶植成立
+# 开局不存在，由事件划入俄国残余领土后成立
+
+recruit_character = ROR_Pavel_Nikolayevich_Milyukov # 俄罗斯共和国领袖
+
+set_politics = {
+	ruling_party = authoritarian_oligarchy
+	elections_allowed = no
+}

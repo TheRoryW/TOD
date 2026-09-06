@@ -1,8 +1,12 @@
 state={
 	id=1175
 	name="STATE_1175"
+	resources={
+		coal=7
+	}
 	history={
-		owner = RAJ
+		owner = ORI
+		add_core_of = ORI
 		buildings = {
 			infrastructure = 0
 

@@ -26,9 +26,10 @@ ConstantBuffer( 0, 0 )
 	float3		AmbientPosZ;
 	float3		AmbientNegZ;
 	float		CubemapIntensity;
-	float4		SunDiffuseIntensity
-	float4		MoonDiffuseIntensity
+	float4		SunDiffuseIntensity;
+	float4		MoonDiffuseIntensity;
 	float		GB_TextureHeight;
+	float		SunSpecularIntensity;
 };
 
 
@@ -233,21 +234,26 @@ PixelShader =
 	}
 
 	
-	float3 GetMudColor( in float3 vResult, in float4 vMudSnowColor, in float3 vPos, inout float3 vNormal, inout float vGlossiness, inout float vSpec, in sampler2D MudDiffuseGloss, in sampler2D MudNormalSpec )
+	float3 GetMudColor( in float3 vResult, in float4 vMudSnowColor, in float3 vPos, inout float3 vNormal, inout float vGlossiness, inout float vSpec,
+						 in sampler2D MudDiffuseGlossSampler, in sampler2D MudNormalSpecSampler, in float3 TerrainColor, in sampler2D SnowNoise )
 	{
+		float vOpacity = cam_distance( MUD_CAM_MIN, MUD_CAM_MAX );
+		float vNoise = lerp( 1.0, (0.5 + tex2D( SnowNoise, vPos.xz * 0.01f ).a) * 0.5, vOpacity);
+
 		float vMudCurrent = lerp( vMudSnowColor.r, vMudSnowColor.a, vFoWOpacity_FoWTime_SnowMudFade_MaxGameSpeed.z );
 		vMudCurrent *= 1.0 - saturate( saturate( vNormal.y - MUD_NORMAL_CUTOFF ) * ( ( 1.0 - MUD_NORMAL_CUTOFF ) * 1000.0 ) );
-		vMudCurrent = saturate( vMudCurrent * MUD_STRENGHTEN );
-		float4 vMudDiffuseGloss = tex2D( MudDiffuseGloss, vPos.xz * MUD_TILING );
-		float4 vMudNormalSpec = tex2D( MudNormalSpec, vPos.xz * MUD_TILING );
-		
+		vMudCurrent = saturate( vMudCurrent * MUD_STRENGHTEN * vNoise );
+		float4 vMudDiffuseGloss = tex2D( MudDiffuseGlossSampler, vPos.xz * MUD_TILING );
+		float4 vMudNormalSpec = tex2D( MudNormalSpecSampler, vPos.xz * MUD_TILING );	
+
 		float3 vMudNormal = normalize( vMudNormalSpec.rbg - 0.5 );
 		vMudNormal = normalize( RotateVectorByVector( vMudNormal, vNormal ) );
 		vNormal = normalize( lerp( vNormal, vMudNormal, vMudCurrent ) );
 		vGlossiness = lerp( vGlossiness, vMudDiffuseGloss.a, vMudCurrent );
 		vSpec = lerp( vSpec, vMudNormalSpec.a, vMudCurrent );
 		
-		return lerp( vResult, vMudDiffuseGloss.rgb, vMudCurrent );
+		float3 MudMix = GetOverlay( vMudDiffuseGloss.rgb, TerrainColor.rgb, COLORMAP_MUD_OVERLAY_STRENGTH );
+		return lerp( vResult, MudMix, vMudCurrent );
 	}
 
 	float GetSnow( float4 vMudSnowColor )
@@ -255,11 +261,12 @@ PixelShader =
 		return lerp( vMudSnowColor.b, vMudSnowColor.g, vFoWOpacity_FoWTime_SnowMudFade_MaxGameSpeed.z ); //Get winter;
 	}
 
-	float3 ApplySnow( float3 vColor, float3 vPos, inout float3 vNormal, float4 vMudSnowColor, in sampler2D SnowTexture, in sampler2D SnowNoise, inout float vGlossiness, inout float vSnowAlphaOut )
+	float3 ApplySnow( float3 vColor, float3 vPos, inout float3 vNormal, float4 vMudSnowColor, in sampler2D SnowTextureSampler,
+					 in sampler2D SnowNoise, inout float vGlossiness, inout float vSnowAlphaOut )
 	{
 		float vSnowFade = saturate( vPos.y - SNOW_START_HEIGHT );
 		float vNormalFade = saturate( saturate( vNormal.y - SNOW_NORMAL_START ) * SNOW_CLIFFS );
-		float4 vSnowTexture = tex2D( SnowTexture, vPos.xz * SNOW_TILING );
+		float4 vSnowTexture = tex2D( SnowTextureSampler, vPos.xz * SNOW_TILING );
 		float vNoise = tex2D( SnowNoise, vPos.xz * SNOW_NOISE_TILING ).a;
 		
 		float vIsSnow = GetSnow( vMudSnowColor );
@@ -353,7 +360,7 @@ PixelShader =
 		float vDot = dot( vGlobeNormal, DayNight_Hour_SunDir.yzw );
 		return saturate( ( vDot - vMin ) / ( vMax - vMin ) ) * vFoWOpacity_FoWTime_SnowMudFade_MaxGameSpeed.w;
 	}
-	
+
 
 	float DayNightFactor( float3 vGlobeNormal )
 	{
@@ -372,6 +379,7 @@ PixelShader =
 
 	    return vColor * NIGHT_DARKNESS;
 	}
+
 
 	float3 DayNightWithBlend( float3 vDayColor, float3 vGlobeNormal, float vBlend )
 	{	
@@ -498,14 +506,14 @@ PixelShader =
 		return SpecularColor + (max(vec3(Smoothness), SpecularColor) - SpecularColor) * pow(1.0 - saturate(dot(E, N)), 5.0);
 	}
 
-	float3 MetalnessToDiffuse(float Metalness, float3 Diffuse)
+	float3 MetalnessToDiffuse(float Metalness, float3 DiffuseValue)
 	{
-		return lerp(Diffuse, vec3(0.0), Metalness);
+		return lerp(DiffuseValue, vec3(0.0), Metalness);
 	}
 
-	float3 MetalnessToSpec(float Metalness, float3 Diffuse, float Spec)
+	float3 MetalnessToSpec(float Metalness, float3 DiffuseValue, float Spec)
 	{
-		return lerp(vec3(Spec), Diffuse, Metalness);
+		return lerp(vec3(Spec), DiffuseValue, Metalness);
 	}
 
 	//------------------------------
@@ -640,8 +648,9 @@ PixelShader =
 
 		float3 sunIntensity = 
 			SunDiffuseIntensity.rgb * SunDiffuseIntensity.a * aShadowTerm * vDayFactor
-			+ MoonDiffuseIntensity.rgb * MoonDiffuseIntensity.a * aShadowTerm * vNightFactor;	
+			+ MoonDiffuseIntensity.rgb * MoonDiffuseIntensity.a * aShadowTerm * vNightFactor;
 		//sunIntensity += 0.6f * (1.0f - (vDayFactor  * aShadowTerm + vNightFactor));
+
 
 	#ifdef PDX_IMPROVED_BLINN_PHONG
 		ImprovedBlinnPhong(sunIntensity, -vLightSourceDirection, aProperties, aDiffuseLightOut, aSpecularLightOut);
@@ -649,6 +658,7 @@ PixelShader =
 		aDiffuseLightOut = CalculateLight(aProperties._Normal, vLightSourceDirection, sunIntensity);
 		aSpecularLightOut = CalculatePBRSpecularPower(aProperties._WorldSpacePos, aProperties._Normal, aProperties._SpecularColor, aProperties._Glossiness, sunIntensity, vLightSourceDirection);
 	#endif
+		aSpecularLightOut *= SunSpecularIntensity;
 	}
 
 	void CalculateSunLight(LightingProperties aProperties, float aShadowTerm, out float3 aDiffuseLightOut, out float3 aSpecularLightOut )
@@ -672,7 +682,7 @@ PixelShader =
 
 		float3 vAmbientColor = AmbientLight(aProperties._Normal, vDayNight);
 		float3 diffuse = ((vAmbientColor + aDiffuseLight) * aProperties._Diffuse) * HdrRange;
-		float3 specular = 0.0 * aSpecularLight;
+		float3 specular = aSpecularLight;
 
 		return diffuse + specular;
 	}
@@ -832,11 +842,11 @@ PixelShader =
 		vCh = vInit;
 
 		const float PulseSpeedMult = 3.5f;
-		float FX = tex2D( gbTex2, uv ).b;
-		vStrength *= lerp( lerp( 0.45f, 1.0f, 1.0f - FX ), 1.0f, ( sin( vGlobalTime * PulseSpeedMult ) + 1.0f ) / 2 );
+		float2 FX_Alpha = tex2D( gbTex2, uv ).bg;
+		vStrength *= lerp( lerp( 0.45f, 1.0f, 1.0f - FX_Alpha.r ), 1.0f, ( sin( vGlobalTime * PulseSpeedMult ) + 1.0f ) / 2 );
 
-		float vFullWidth = 5.25f / 255.0f;//lerp( 5.25f, 0.01f, FX ) / 255.f;
-		float vGradientWidth = 0.5f / 255.0f;//lerp( 0.5f, 0.1f, FX ) / 255.f;
+		float vFullWidth = 5.25f / 255.0f;//lerp( 5.25f, 0.01f, FX_Alpha.r ) / 255.f;
+		float vGradientWidth = 0.5f / 255.0f;//lerp( 0.5f, 0.1f, FX_Alpha.r ) / 255.f;
 
 		// Grab multisampled border color
 		float4 vGBDist = gradient_border_multisample_alpha( tex2D( gbTex, uv ), gbTex, uv );
@@ -867,14 +877,10 @@ PixelShader =
 
 		vCh = lerp( vCh, vGBDist.rgb, max( vMaxGradient, vThick )* vStrength);
 
-		// Compensate the brightness since the 2nd layer is now black (not white) although it's alpha is 0
-		vCh *= 1.15f;
-		vCh = min( vCh, float3( 1, 1, 1 ) );
-
 		// Make the outline edge darker
 		vCh = lerp( vCh, vCh * .5, vThick );
 
-		return max( vMaxGradient, vThick );
+		return max( vMaxGradient, vThick ) * FX_Alpha.g;
 	}
 
 	void gradient_border_apply( inout float3 vColor, float3 vNormal, float2 vUV, 
@@ -901,14 +907,17 @@ PixelShader =
 
 		// Calculate color and transparency of both channels
 		float3 vGradMix;
+		
 		float vAlpha1 = gradient_border_process_channel( vGradMix, vColor, vGBCamDistCh1, vNormal, vUV, TexCh1, TexCh2, vOutlineMult, vOutlineCutoff.x, GB_STRENGTH_CH1 );
-		float vAlpha2 = gradient_border_process_channel( vGradMix, vGradMix, vGBCamDistCh2, vNormal, vUV2, TexCh1, TexCh2, vOutlineMult, vOutlineCutoff.y, (1.0 - vAlpha1 * GB_STRENGTH_CH1 * GB_FIRST_LAYER_PRIORITY) * GB_STRENGTH_CH2 );
-				
 		// Now mix, the resultat with background
-		float TranspA = 1.0f - tex2D( TexCh2, vUV ).g;
-		float TranspB = 1.0f - tex2D( TexCh2, vUV2 ).g;
-		float GlobalTransp = min( TranspA, TranspB );
-		vColor = lerp( vColor, vGradMix, ( GB_OPACITY_NEAR + ( 1.0f - vGBCamDist ) * ( GB_OPACITY_FAR - GB_OPACITY_NEAR ) ) * GlobalTransp );
+		float TranspA = tex2D( TexCh2, vUV ).g;		
+		vColor = lerp( vColor, vGradMix, ( GB_OPACITY_NEAR + ( 1.0f - vGBCamDist ) * ( GB_OPACITY_FAR - GB_OPACITY_NEAR ) ) * TranspA );
+		
+		
+		float vAlpha2 = gradient_border_process_channel( vGradMix, vColor, vGBCamDistCh2, vNormal, vUV2, TexCh1, TexCh2, vOutlineMult, vOutlineCutoff.y, (1.0 - vAlpha1 * GB_STRENGTH_CH1 * GB_FIRST_LAYER_PRIORITY) * GB_STRENGTH_CH2 );
+		float TranspB = tex2D( TexCh2, vUV2 ).g;
+		vColor = lerp( vColor, vGradMix, ( GB_OPACITY_NEAR + ( 1.0f - vGBCamDist ) * ( GB_OPACITY_FAR - GB_OPACITY_NEAR ) ) * TranspB );
+		
 	//vColor = GetOverlay( vColor, ToLinear(vGradMix), 0.80);
 
 		// Return some alpha, so the postprocess will ignore gradient borders
@@ -967,14 +976,89 @@ PixelShader =
 		return stripeVal;
 	}	
 	
-	void secondary_color_mask( inout float3 vColor, float3 vNormal, float2 vUV, in sampler2D TexMask, inout float vBloomAlpha )
+	void secondary_color_mask( inout float3 vColor, float3 vNormal, float2 vUV, in sampler2D TexMaskSampler, inout float vBloomAlpha )
 	{
-		float4 vColorMask = tex2D( TexMask, vUV ).rgba;
+		float4 vColorMask = tex2D( TexMaskSampler, vUV ).rgba;
 
 		float vOccupationMask = CalculateOccupationMask( vUV );
 		vOccupationMask *= vColorMask.a;
 		vBloomAlpha = vBloomAlpha * ( 1.0f - vOccupationMask );
 		vColor = lerp( vColor, vColorMask.rgb, vOccupationMask );
+	}
+	
+	void dominance_fx_apply(inout float3 Color, float3 Normal, float2 UV, in sampler2D Texture1, in sampler2D Texture2, in sampler2D Texture3, float2 OutlineCutoff, float2 CameraDistOverride, float OutlineMult)
+	{
+		// Since the gradient border texture is divided in two vertically, we need to map the UV to the expected part
+
+		float HalfPix = 0.5f / GB_TextureHeight;
+		float2 GBUV = float2(UV.x, UV.y * 0.5f - HalfPix);
+		
+		float4 Sample = tex2D( Texture2, GBUV );
+		float4 ColorMask = float4(ToGamma(Sample.rgb),saturate(ceil(Sample.a*2)*0.5f));
+
+		// Some constants, defining them here probably isn't best practice, 
+		// but they only impact this function, and it seems excessive to try to 
+		// send any of these except potentially TexSize through the constant buffer.
+		const float FadeSpeed = 1.5f;
+		const float ContestedPulseSpeed = 2.5f;
+		const float MinFade = 0.2;
+		const float MaxFade = 0.23;
+
+		float3 EnemyColor = tex2D(Texture3, float2(0,0)).rgb;
+		float3 FriendlyColor = tex2D(Texture3, float2(1,0)).rgb;
+
+		// Calculate the pulsating effect, very simple sine function with some parameters.
+		float Opacity = lerp( MinFade, MaxFade, ( sin( vGlobalTime * FadeSpeed ) + 1 ) * 0.5);
+		float ContestedIntensity = lerp( 0.8f, 1.5f, ( sin( vGlobalTime * FadeSpeed*2 ) + 1 ) * 0.5);
+
+		// Mapped direction is whether the dominance is increasing or decreasing, where 1 is increasing, -1 is decreasing, and 0 is neither.
+		// ColorMask.a will be in 0-1 space, where 0-0.49999... will be neither. values of 0.5 - 1.0 will be mapped to -1 and 1. 
+		// We do a bit of math magic to transpose it to the desired values.
+		// Control of the region is the same, but with the red channel instead of the alpha
+		float ContestedBy = round(Sample.a) * ( Sample.a * 4.f - 3.f );
+		float Control = round(ColorMask.r) * ( ColorMask.r * 4.f - 3.f );
+		float3 OverlayColor = abs(Control)*lerp(EnemyColor, FriendlyColor, (Control + 1)/2);
+		
+		/* This part is taken from the gradient_border_apply function */ 
+		/* It calculates the actual border gradient, and we use it for the alpha*/
+		float4 GBDist =  gradient_border_multisample_alpha(tex2D( Texture1, GBUV ), Texture1, GBUV );
+		float Alpha = GBDist.a;
+	
+		float IsRegionRelevant = saturate(abs(Control) + abs(ContestedBy))* (1- floor(Alpha));
+		if (IsRegionRelevant < 0.99)
+		{
+			return;
+		}
+	
+		float ColorOpacity = Levels( Alpha, 0.0f, OutlineCutoff.x );
+		float Outline = 1.0f - Levels( Alpha,OutlineCutoff.x, 1.0f );
+		float OldOutline = Outline;
+		Outline *= floor(ColorOpacity);
+		if (Outline > 0)
+		{
+			return;
+		}
+		Outline *= OutlineMult;
+
+		float GBCamDist = gradient_border_camera_distance();
+		float SaturatedCamDistOveride = saturate( ( GBCamDist * int( 1.0f - CameraDistOverride.x ) ) + CameraDistOverride.x );
+		ColorOpacity = gradient_border_distance_to_alpha( ColorOpacity, SaturatedCamDistOveride );
+		ColorOpacity *= floor(OldOutline);
+		float MaxGradient = max(ColorOpacity,Outline);
+
+		float OuterFade = max(1.f - (MaxGradient + 0.05f), 0.0f);
+		if (abs(ContestedBy) > 0.7f)
+		{
+			float3 ContestedColor = lerp(EnemyColor, FriendlyColor, (ContestedBy + 1)/2);
+			OverlayColor = lerp(OverlayColor, ContestedColor,saturate(MaxGradient * ContestedIntensity));
+			OuterFade = saturate(OuterFade * 2);
+		}
+ 		/* ------------------------------------------------------------ */
+
+		// Finally, we apply it to the input color by interpolating our resulting color, 
+		// using our numerous alphas as the t value. Most of them are either 1 or 0, 
+		// which essentially filters out the effect for regions that shouldn't be affected by it
+		Color = lerp( Color, OverlayColor, Opacity * OuterFade);
 	}
 
 	// Taken out from pdxmap.lua so other shaders can have access to it
@@ -1092,14 +1176,14 @@ PixelShader =
 		Mout.z = M1.z*t2 + M2.z*u2 + t*u*B1.x*B2.y + t*u*B1.y*B2.x;
 	}
 
-	void SampleLEAN( float2 uv, out float2 Bout, out float3 Mout, in sampler2D LeanTexture1, in sampler2D LeanTexture2 )
+	void SampleLEAN( float2 uv, out float2 Bout, out float3 Mout, in sampler2D LeanTexture1Sampler, in sampler2D LeanTexture2Sampler )
 	{
-		float4 lean1 = tex2D( LeanTexture1, uv );
-		float4 lean2 = tex2D( LeanTexture2, uv );
+		float4 lean1 = tex2D( LeanTexture1Sampler, uv );
+		float4 lean2 = tex2D( LeanTexture2Sampler, uv );
 
 		float vScale = 1.7f;
 		Bout = ( 2*lean2.xy - 1 ) * vScale;
-		Mout = float3( lean2.zw, 2*lean1.w - 1 ) * vScale * vScale;
+		Mout = float3( lean2.zw, ( 2*lean1.w - 1 ) * 0.5) * vScale * vScale;
 	}
 
 	void SampleBlendLEAN( float t, float2 uv1, float2 uv2, out float2 Bout, out float3 Mout, in sampler2D Lean1, in sampler2D Lean2 )

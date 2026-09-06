@@ -1,0 +1,32 @@
+﻿capital = 829
+
+#军队编制
+
+oob = "empty"
+
+#政党比例
+
+set_politics = {
+	ruling_party = leader_despotism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}	
+
+set_popularities = {
+	leader_despotism = 75
+	national_corporatism = 25
+}
+
+recruit_character = ACH_Daud_Syah_II
+#recruit_character = ACH_chen_lianbo
+#recruit_character = ACH_chen_lianbo
+
+add_ideas = {
+    ACH_1
+	ACH_2
+	ACH_3
+	ACH_4
+	ACH_5
+}
+

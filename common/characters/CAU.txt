@@ -37,9 +37,21 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=national_corporatism_subtype
+			ideology=authoritarian_oligarchy_subtype
 			desc = "POLITICS_CAU_CAU_Aleksei_Maximovich_Kaledin_DESC"
 			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAU_Semyon_Mikhailovich_Budyonny={
+		name=CAU_Semyon_Mikhailovich_Budyonny
+		portraits={
+			civilian={ large="gfx/leaders/CAU/Portrait_CAU_Anton_Ivanovich_Denikin.png" }
+		}
+		country_leader={
+			ideology=vanguard_socialism_subtype
+			desc="POLITICS_CAU_Semyon_Mikhailovich_Budyonny_DESC"
 			expire="1965.1.1.1"
 			id=-1
 		}

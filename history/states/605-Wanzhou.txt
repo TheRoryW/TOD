@@ -1,0 +1,29 @@
+
+state = {
+	id = 605
+	name = "STATE_605"
+	resources = {
+		coal = 5
+	}
+	history = {
+		owner = MNG
+		add_core_of = MNG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			11865 1 
+		}
+		victory_points = {
+			10144 2 
+		}
+	}
+
+	provinces = {
+		10144 11865 13322 13642
+	}
+	manpower = 3856714
+	buildings_max_level_factor = 1.000
+	state_category = three
+}

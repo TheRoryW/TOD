@@ -1,0 +1,575 @@
+spriteTypes = {
+
+	#国策	
+	spriteType = {
+		name = "GFX_SRC_wuzhuangqilai"
+		texturefile = "gfx/SRC/focus/GFX_SRC_wuzhuangqilai.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_shouwohuongzhang"
+		texturefile = "gfx/SRC/focus/GFX_SRC_shouwohuongzhang.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_liaodongteweichengli"
+		texturefile = "gfx/SRC/focus/GFX_SRC_liaodongteweichengli.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_dongyuangongrenminbing"
+		texturefile = "gfx/SRC/focus/GFX_SRC_dongyuangongrenminbing.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_chenglizhongguogongnonghongjun"
+		texturefile = "gfx/SRC/focus/GFX_SRC_chenglizhongguogongnonghongjun.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_gongnonggemingjunshiweiyuanhui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_gongnonggemingjunshiweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_zhengbiantouchengbudui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_zhengbiantouchengbudui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_shiwanjingqizhanyanluo"
+		texturefile = "gfx/SRC/focus/GFX_SRC_shiwanjingqizhanyanluo.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_dongbeilinshigemingzhengfu"
+		texturefile = "gfx/SRC/focus/GFX_SRC_dongbeilinshigemingzhengfu.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_linshijunguanweiyuanhui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_linshijunguanweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_junshiyouxian"
+		texturefile = "gfx/SRC/focus/GFX_SRC_junshiyouxian.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_zujiangongchangweiyuanhui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_zujiangongchangweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_huifugongchangshengchan"
+		texturefile = "gfx/SRC/focus/GFX_SRC_huifugongchangshengchan.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_liaodongteweichengli"
+		texturefile = "gfx/SRC/focus/GFX_SRC_liaodongteweichengli.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_tongchangonghuizhongyangdida"
+		texturefile = "gfx/SRC/focus/GFX_SRC_tongchangonghuizhongyangdida.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_tongchangonghuizhongyangdida"
+		texturefile = "gfx/SRC/focus/GFX_SRC_tongchangonghuizhongyangdida.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_renfuchenzhuxi"
+		texturefile = "gfx/SRC/focus/GFX_SRC_renfuchenzhuxi.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_zhongyangjihuaweiyuanhui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_zhongyangjihuaweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_gongyeguoyouhua"
+		texturefile = "gfx/SRC/focus/GFX_SRC_gongyeguoyouhua.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_nongyejitihua"
+		texturefile = "gfx/SRC/focus/GFX_SRC_nongyejitihua.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_yiwujihua"
+		texturefile = "gfx/SRC/focus/GFX_SRC_yiwujihua.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_jianchilingdaoquan"
+		texturefile = "gfx/SRC/focus/GFX_SRC_jianchilingdaoquan.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_zhengfengyundong"
+		texturefile = "gfx/SRC/focus/GFX_SRC_zhengfengyundong.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_gongxieshidaxue"
+		texturefile = "gfx/SRC/focus/GFX_SRC_gongxieshidaxue.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_qunzhong"
+		texturefile = "gfx/SRC/focus/GFX_SRC_qunzhong.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_dongbeirenmindaxue"
+		texturefile = "gfx/SRC/focus/GFX_SRC_dongbeirenmindaxue.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_dongbeigeminggezhiyuan"
+		texturefile = "gfx/SRC/focus/GFX_SRC_dongbeigeminggezhiyuan.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_jianjuefanduigerenchongbai"
+		texturefile = "gfx/SRC/focus/GFX_SRC_jianjuefanduigerenchongbai.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_xinwenhuayundong"
+		texturefile = "gfx/SRC/focus/GFX_SRC_xinwenhuayundong.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_hongxingzhaoyaodongfang"
+		texturefile = "gfx/SRC/focus/GFX_SRC_hongxingzhaoyaodongfang.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_lidazhaozhuxi"
+		texturefile = "gfx/SRC/focus/GFX_SRC_lidazhaozhuxi.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_dongbeigaoxiaozizhihui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_dongbeigaoxiaozizhihui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_dongbeigezhiyuanweiyuanhui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_dongbeigezhiyuanweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_xinwenhuasichao"
+		texturefile = "gfx/SRC/focus/GFX_SRC_xinwenhuasichao.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_jicengminzhu"
+		texturefile = "gfx/SRC/focus/GFX_SRC_jicengminzhu.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_gemingweiyuanhui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_gemingweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_renmindaibiaodahui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_renmindaibiaodahui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_zhengzhidaminzhu"
+		texturefile = "gfx/SRC/focus/GFX_SRC_zhengzhidaminzhu.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_qunzhongzhijiejiandu"
+		texturefile = "gfx/SRC/focus/GFX_SRC_qunzhongzhijiejiandu.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_guojiajingjiweiyuanhui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_guojiajingjiweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_guanxizaipingheng"
+		texturefile = "gfx/SRC/focus/GFX_SRC_guanxizaipingheng.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_nongyehezuohua"
+		texturefile = "gfx/SRC/focus/GFX_SRC_nongyehezuohua.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_zhaokaijingweidahui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_zhaokaijingweidahui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_chiqizhiyinweilai"
+		texturefile = "gfx/SRC/focus/GFX_SRC_chiqizhiyinweilai.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_chenduxiuzhuxi"
+		texturefile = "gfx/SRC/focus/GFX_SRC_chenduxiuzhuxi.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_xueshuwenhuageminghua"
+		texturefile = "gfx/SRC/focus/GFX_SRC_xueshuwenhuageminghua.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_dongbeilaodongdaxue"
+		texturefile = "gfx/SRC/focus/GFX_SRC_dongbeilaodongdaxue.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_qianghuaqingniangongzuo"
+		texturefile = "gfx/SRC/focus/GFX_SRC_qianghuaqingniangongzuo.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_shehuizhuyijiebanren"
+		texturefile = "gfx/SRC/focus/GFX_SRC_shehuizhuyijiebanren.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_gemingtongyizhanxian"
+		texturefile = "gfx/SRC/focus/GFX_SRC_gemingtongyizhanxian.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_goujianfanditongmeng"
+		texturefile = "gfx/SRC/focus/GFX_SRC_goujianfanditongmeng.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_gaizaozichanjieji"
+		texturefile = "gfx/SRC/focus/GFX_SRC_gaizaozichanjieji.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_dagtonshijieguodu"
+		texturefile = "gfx/SRC/focus/GFX_SRC_dagtonshijieguodu.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_guojiagaigeweiyuanhui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_guojiagaigeweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_shumaiqiye"
+		texturefile = "gfx/SRC/focus/GFX_SRC_shumaiqiye.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_tudigaige"
+		texturefile = "gfx/SRC/focus/GFX_SRC_tudigaige.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_tieguodundae"
+		texturefile = "gfx/SRC/focus/GFX_SRC_tieguodundae.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_zhumenhuanxintian"
+		texturefile = "gfx/SRC/focus/GFX_SRC_zhumenhuanxintian.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_zhonghuagongnonghongjun"
+		texturefile = "gfx/SRC/focus/GFX_SRC_zhonghuagongnonghongjun.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_qianghuajunduisixiangjianshe"
+		texturefile = "gfx/SRC/focus/GFX_SRC_qianghuajunduisixiangjianshe.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_lizugongrenjiuchadui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_lizugongrenjiuchadui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_shelizhengwei"
+		texturefile = "gfx/SRC/focus/GFX_SRC_shelizhengwei.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_fuquanshibingweiyuanhui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_fuquanshibingweiyuanhui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_qianghuajunshiminzhu"
+		texturefile = "gfx/SRC/focus/GFX_SRC_qianghuajunshiminzhu.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_quelidangweizhi"
+		texturefile = "gfx/SRC/focus/GFX_SRC_quelidangweizhi.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_zhibujianzailianshang"
+		texturefile = "gfx/SRC/focus/GFX_SRC_zhibujianzailianshang.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_guanbingyilvpingdeng"
+		texturefile = "gfx/SRC/focus/GFX_SRC_guanbingyilvpingdeng.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_gemingjunxinzuofeng"
+		texturefile = "gfx/SRC/focus/GFX_SRC_gemingjunxinzuofeng.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_yilaizhiyejunguan"
+		texturefile = "gfx/SRC/focus/GFX_SRC_yilaizhiyejunguan.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_junshiyizhangzhi"
+		texturefile = "gfx/SRC/focus/GFX_SRC_junshiyizhangzhi.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_gemingjunguanruhui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_gemingjunguanruhui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_qianghuajunweilingdao"
+		texturefile = "gfx/SRC/focus/GFX_SRC_qianghuajunweilingdao.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_quelijunxianzhi"
+		texturefile = "gfx/SRC/focus/GFX_SRC_quelijunxianzhi.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_wuzhuangliliangzhengguihua"
+		texturefile = "gfx/SRC/focus/GFX_SRC_wuzhuangliliangzhengguihua.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_jianligemingjunshixueyuan"
+		texturefile = "gfx/SRC/focus/GFX_SRC_jianligemingjunshixueyuan.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_junshililungexin"
+		texturefile = "gfx/SRC/focus/GFX_SRC_junshililungexin.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_hongjunhouqinbu"
+		texturefile = "gfx/SRC/focus/GFX_SRC_hongjunhouqinbu.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_goujianbujiwangluo"
+		texturefile = "gfx/SRC/focus/GFX_SRC_goujianbujiwangluo.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_wanshanshengchantixi"
+		texturefile = "gfx/SRC/focus/GFX_SRC_wanshanshengchantixi.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_shengchanyanjiugexin"
+		texturefile = "gfx/SRC/focus/GFX_SRC_shengchanyanjiugexin.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_shiyanxinshibianzhi"
+		texturefile = "gfx/SRC/focus/GFX_SRC_shiyanxinshibianzhi.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_kuodahuopaochanye"
+		texturefile = "gfx/SRC/focus/GFX_SRC_kuodahuopaochanye.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_qianghuazhuangjiayanjiu"
+		texturefile = "gfx/SRC/focus/GFX_SRC_qianghuazhuangjiayanjiu.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_xiandaigemingjundui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_xiandaigemingjundui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_chengligemingkongjun"
+		texturefile = "gfx/SRC/focus/GFX_SRC_chengligemingkongjun.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_jieshoujichangyufeiji"
+		texturefile = "gfx/SRC/focus/GFX_SRC_jieshoujichangyufeiji.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_xinageminghangkongdui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_xinageminghangkongdui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_hanweitiankong"
+		texturefile = "gfx/SRC/focus/GFX_SRC_hanweitiankong.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_jianliliaoyanghangxiao"
+		texturefile = "gfx/SRC/focus/GFX_SRC_jianliliaoyanghangxiao.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_chenglidongbeikongtiandaxue"
+		texturefile = "gfx/SRC/focus/GFX_SRC_chenglidongbeikongtiandaxue.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_changkongaoxiang"
+		texturefile = "gfx/SRC/focus/GFX_SRC_changkongaoxiang.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_chenglihonghaijun"
+		texturefile = "gfx/SRC/focus/GFX_SRC_chenglihonghaijun.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_jieshoujianting"
+		texturefile = "gfx/SRC/focus/GFX_SRC_jieshoujianting.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_gaibianbeiyangjianduishiguan"
+		texturefile = "gfx/SRC/focus/GFX_SRC_gaibianbeiyangjianduishiguan.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_yinrudatonghuihaijunrencai"
+		texturefile = "gfx/SRC/focus/GFX_SRC_yinrudatonghuihaijunrencai.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_baozhengguojibujixian"
+		texturefile = "gfx/SRC/focus/GFX_SRC_baozhengguojibujixian.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_chenglihaijunxuexiao"
+		texturefile = "gfx/SRC/focus/GFX_SRC_chenglihaijunxuexiao.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_shelihaijunyanjiusuo"
+		texturefile = "gfx/SRC/focus/GFX_SRC_shelihaijunyanjiusuo.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_qianghuajianchuanyanjiu"
+		texturefile = "gfx/SRC/focus/GFX_SRC_qianghuajianchuanyanjiu.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_kuojiandaliangangkou"
+		texturefile = "gfx/SRC/focus/GFX_SRC_kuojiandaliangangkou.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_haijunlilungexin"
+		texturefile = "gfx/SRC/focus/GFX_SRC_haijunlilungexin.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_fazhanhaijunrencai"
+		texturefile = "gfx/SRC/focus/GFX_SRC_fazhanhaijunrencai.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_xianqichiselangchao"
+		texturefile = "gfx/SRC/focus/GFX_SRC_xianqichiselangchao.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_fangyantianxia"
+		texturefile = "gfx/SRC/focus/GFX_SRC_fangyantianxia.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_yudisanguojijiaqianghezuo"
+		texturefile = "gfx/SRC/focus/GFX_SRC_yudisanguojijiaqianghezuo.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_lianluoguanneigemingzhe"
+		texturefile = "gfx/SRC/focus/GFX_SRC_lianluoguanneigemingzhe.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_zhiyuandongyanggeming"
+		texturefile = "gfx/SRC/focus/GFX_SRC_zhiyuandongyanggeming.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_huishiruguan"
+		texturefile = "gfx/SRC/focus/GFX_SRC_huishiruguan.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_zhaokaitongyidahui"
+		texturefile = "gfx/SRC/focus/GFX_SRC_zhaokaitongyidahui.png"
+	}
+	spriteType = {
+		name = "GFX_SRC_gemingjinxindaodi"
+		texturefile = "gfx/SRC/focus/GFX_SRC_gemingjinxindaodi.png"
+	}
+
+    #顾问#
+	spriteType = {
+		name = "GFX_idea_SRC_deng_zhongxia"
+		texturefile = "gfx/SRC/advisors/SRC_deng_zhongxia.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_qian_wangchao"
+		texturefile = "gfx/SRC/advisors/SRC_qian_wangchao.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_chen_duxiu"
+		texturefile = "gfx/SRC/advisors/SRC_chen_duxiu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_he_mengxiong"
+		texturefile = "gfx/SRC/advisors/SRC_he_mengxiong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_yu_fangzhou"
+		texturefile = "gfx/SRC/advisors/SRC_yu_fangzhou.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_cai_hesen"
+		texturefile = "gfx/SRC/advisors/SRC_cai_hesen.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_chen_tanqiu"
+		texturefile = "gfx/SRC/advisors/SRC_chen_tanqiu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_deng_enming"
+		texturefile = "gfx/SRC/advisors/SRC_deng_enming.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_hou_lijian"
+		texturefile = "gfx/SRC/advisors/SRC_hou_lijian.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_zhang_tailei"
+		texturefile = "gfx/SRC/advisors/SRC_zhang_tailei.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_deng_hegao"
+		texturefile = "gfx/SRC/advisors/SRC_deng_hegao.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_tang_hongjing"
+		texturefile = "gfx/SRC/advisors/SRC_tang_hongjing.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_wang_jinmei"
+		texturefile = "gfx/SRC/advisors/SRC_wang_jinmei.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_xin_peiyuan"
+		texturefile = "gfx/SRC/advisors/SRC_xin_peiyuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_fu_jingyang"
+		texturefile = "gfx/SRC/advisors/SRC_fu_jingyang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_deng_fa"
+		texturefile = "gfx/SRC/advisors/SRC_deng_fa.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_he_shuheng"
+		texturefile = "gfx/SRC/advisors/SRC_he_shuheng.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_wei_changkui"
+		texturefile = "gfx/SRC/advisors/SRC_wei_changkui.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_wang_ligong"
+		texturefile = "gfx/SRC/advisors/SRC_wang_ligong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_xie_juezai"
+		texturefile = "gfx/SRC/advisors/SRC_xie_juezai.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_zhao_wuchen"
+		texturefile = "gfx/SRC/advisors/SRC_zhao_wuchen.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_yang_song"
+		texturefile = "gfx/SRC/advisors/SRC_yang_song.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_red_cadre_school_spirit"
+		texturefile = "gfx/SRC/ideas/SRC_red_cadre_school_spirit.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_people_war_spirit"
+		texturefile = "gfx/SRC/ideas/SRC_people_war_spirit.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SRC_frontline_party_branch_spirit"
+		texturefile = "gfx/SRC/ideas/SRC_frontline_party_branch_spirit.png"
+	}    
+	spriteType = {
+        name = "GFX_doctrine_SRC_revolutionary_warfare_medium"
+        texturefile = "gfx/SRC/doctrine_SRC_revolutionary_warfare.png"
+        alwaystransparent = yes
+    }
+
+    spriteType = {
+        name = "GFX_doctrine_SRC_revolutionary_army_construction_medium"
+        texturefile = "gfx/SRC/doctrine_SRC_revolutionary_army_construction_manual_rifles.png"
+        alwaystransparent = yes
+    }
+
+    spriteType = {
+        name = "GFX_doctrine_SRC_operational_command_medium"
+        texturefile = "gfx/SRC/doctrine_SRC_operational_command.png"
+        alwaystransparent = yes
+    }
+
+    spriteType = {
+        name = "GFX_doctrine_SRC_people_arsenal_support_medium"
+        texturefile = "gfx/SRC/doctrine_SRC_people_arsenal_support.png"
+        alwaystransparent = yes
+    }
+
+    spriteType = {
+        name = "GFX_doctrine_SRC_armored_assault_medium"
+        texturefile = "gfx/SRC/doctrine_SRC_armored_assault.png"
+        alwaystransparent = yes
+    }
+}

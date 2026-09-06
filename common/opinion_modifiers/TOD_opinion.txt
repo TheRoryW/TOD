@@ -1,0 +1,16 @@
+
+opinion_modifiers = {
+    SIC_zunwangtaojian = { value = 25 }
+    HUN_duiaohejie = { value = 25 }
+    HUN_baojialiyaguanxi = { value = 50 }
+    HUN_bolanyouyi = { value = 50 }
+    HUN_wukelanyouyi = { value = 50 }
+    HUN_austrian_military_mission = { value = 35 }
+    HUN_italian_danubian_exchange = { value = 40 }
+    HUN_french_reassessment = { value = 25 }
+    HUN_balkan_conference = { value = 30 }
+    SIC_yonghugonghe = { value = 25 }
+    SIC_chulihuangshi = { value = -25 }
+    SIC_yonghudaming = { value = 25 }
+    SIC_fandongpai = { value = -25 }
+}

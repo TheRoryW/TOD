@@ -1,16 +1,16 @@
-﻿
+
 focus_tree = {
 	id = hungarian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 11
 			tag = HUN
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 2000 y = 2000 }
@@ -22,9 +22,9 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
-#		cost = 10
+#		cost = 5
 #
 #		ai_will_do = {
 #			factor = 1
@@ -33,7 +33,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -53,25 +53,25 @@ focus_tree = {
 	#准备1936年大选
 	focus = {
 		id = HUN_zhunbei1936daxuan
-		icon = GFX_HUN_zhengzhigaige
+		icon = GFX_HUN_zhunbeidaxuan
 		x = 21
 		y = 1
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 100}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_political_power = 150 }
 	}
 	#放开媒体
 	focus = {
 		id = HUN_fangkaimeiti
-		icon = GFX_HUN_weidaxuanzaoshi
+		icon = GFX_HUN_fangkaimeiti
 		prerequisite = { focus = HUN_zhunbei1936daxuan}
 		x = 20
 		y = 2
@@ -79,13 +79,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		mutually_exclusive = { focus =  HUN_shoujinmeiti}
 		cost = 5
-		
-		ai_will_do = {factor = 100}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {add_ideas = HUN_ziyoudechunfeng }
 	}
 	#收紧媒体
@@ -100,21 +100,21 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		mutually_exclusive = { focus =  HUN_fangkaimeiti}
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 100}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { 
-			add_political_power = -50 
+
+		completion_reward = {
+			add_political_power = -50
 			add_stability = 0.1
 		}
 	}
 	#蒂萨的身后事
 	focus = {
 		id = HUN_disadeshenhoushi
-		icon = GFX_HUN_zhengzhigaige
+		icon = GFX_HUN_disadeshenhoushi
 		prerequisite = {  focus =  HUN_fangkaimeiti focus =  HUN_shoujinmeiti}
 		x = 21
 		y = 3
@@ -122,21 +122,21 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 100}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { 
+
+		completion_reward = {
 			add_political_power = 50
-			HUN = {country_event = { id = TODHungary.1}}
+			HUN = {country_event = { id = TODhungary.1}}
 		}
 	}
 	#右翼的行动
 	focus = {
 		id = HUN_youyidexingdong
-		icon = GFX_HUN_anzhonglianxiyoupai
+		icon = GFX_HUN_youyidexingdong
 		prerequisite = { focus = HUN_disadeshenhoushi}
 		x = 21
 		y = 4
@@ -144,19 +144,19 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		select_effect = {country_event = { id = TODHungary.2 days = 7}}
-		
+		select_effect = {country_event = { id = TODhungary.2 days = 7}}
+
 		cost = 5
-		
-		ai_will_do = {factor = 100}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { custom_effect_tooltip = HUN.1.tt }
 	}
 	#左翼的对策
 	focus = {
 		id = HUN_zuoyideduice
-		icon = GFX_HUN_anzhonglianxizuopai
+		icon = GFX_HUN_zuoyideduice
 		prerequisite = { focus = HUN_youyidexingdong}
 		x = 21
 		y = 5
@@ -164,13 +164,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		select_effect = {country_event = { id = TODHungary.5 days = 7}}
-		
-		ai_will_do = {factor = 100}
+		select_effect = {country_event = { id = TODhungary.5 days = 7}}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { custom_effect_tooltip = HUN.2.tt }
 	}
 	#举行大选
@@ -184,13 +184,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 100}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { 
+
+		completion_reward = {
 			set_variable = { HUN_daxuanjieguo = 0 }
 			set_variable = { HUN_huoshengdangpai = 0 }
 			set_variable = { HUN_youyizhichi = 0 }
@@ -291,13 +291,14 @@ focus_tree = {
 				limit = {check_variable = { HUN_huoshengdangpai = 8 compare = equals }}
 				set_country_flag = HUN_zuoyilianmenghuodeshengli
 			}
-			country_event = { id = TODHungary.8 }
+			country_event = { id = TODhungary.8 }
+			remove_ideas = HUN_ziyoudechunfeng
 		}
 	}
 	#右翼的胜利
 	focus = {
 		id = HUN_youyideshengli
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_youyideshengli
 		prerequisite = { focus = HUN_juxing1936daxuan}
 		mutually_exclusive = { focus =  HUN_zuoyidenixi}
 		x = 12
@@ -306,42 +307,42 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 0
-		
-		ai_will_do = {factor = 10}
-		available = { 
+
+		ai_will_do = {base = 10}
+		available = {
 			OR = {
-				has_country_flag = HUN_minzutuanjiedanghuodeshengli 
-				has_country_flag = HUN_baoshoudanghuodeshengli 
-				has_country_flag = HUN_xiaonongdanghuodeshengli 
-				has_country_flag = HUN_youyilianmenghuodeshengli 
+				has_country_flag = HUN_minzutuanjiedanghuodeshengli
+				has_country_flag = HUN_baoshoudanghuodeshengli
+				has_country_flag = HUN_xiaonongdanghuodeshengli
+				has_country_flag = HUN_youyilianmenghuodeshengli
 			}
 		}
-		
-		completion_reward = { 
+
+		completion_reward = {
 			if = {
 				limit = { has_country_flag = HUN_minzutuanjiedanghuodeshengli }
-				country_event = { id = TODHungary.9}
+				country_event = { id = TODhungary.9}
 			}
 			if = {
 				limit = { has_country_flag = HUN_baoshoudanghuodeshengli }
-				country_event = { id = TODHungary.10}
+				country_event = { id = TODhungary.10}
 			}
 			if = {
 				limit = { has_country_flag = HUN_xiaonongdanghuodeshengli }
-				country_event = { id = TODHungary.11}
+				country_event = { id = TODhungary.11}
 			}
 			if = {
 				limit = { has_country_flag = HUN_youyilianmenghuodeshengli }
-				country_event = { id = TODHungary.12}
+				country_event = { id = TODhungary.12}
 			}
 		}
 	}
 	#政治调整
 	focus = {
 		id = HUN_zhengzhitiaozheng
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_zhengzhitiaozheng
 		prerequisite = { focus = HUN_youyideshengli}
 		x = 5
 		y = 8
@@ -349,19 +350,19 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		select_effect = {country_event = { id = TODHungary.13 }}
-		
-		ai_will_do = {factor = 10}
+		select_effect = {country_event = { id = TODhungary.13 }}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { custom_effect_tooltip = HUN.3.tt }
 	}
 	#盖博斯的计划
 	focus = {
 		id = HUN_gaibosidejihua
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_gaibosidejihua
 		prerequisite = { focus = HUN_zhengzhitiaozheng}
 		x = 3
 		y = 9
@@ -371,18 +372,18 @@ focus_tree = {
 		available_if_capitulated = no
 		mutually_exclusive = { focus =  HUN_beitelundejueding}
 		mutually_exclusive = { focus =  HUN_xiaonongdangdexiangfa}
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = { has_government = national_corporatism }
-		
+
 		completion_reward = { add_political_power = 150 }
 	}
 	#国家工作计划
 	focus = {
 		id = HUN_guojiagongzuojihua
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_guojiagongzuojihua
 		prerequisite = { focus = HUN_gaibosidejihua}
 		x = 3
 		y = 10
@@ -390,18 +391,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { unlock_decision_category_tooltip = HUN_guojiagongzuojihuajueyi }
 	}
 	#97原则
 	focus = {
 		id = HUN_97yuanze
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_97yuanze
 		prerequisite = { focus = HUN_guojiagongzuojihua}
 		x = 3
 		y = 11
@@ -409,21 +410,21 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {
-			add_political_power = 100 
+			add_political_power = 100
 			add_stability = 0.05
 		}
 	}
 	#团结的匈牙利
 	focus = {
 		id = HUN_tuanjiedexiongyali
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_tuanjiedexiongyali
 		prerequisite = { focus = HUN_97yuanze}
 		x = 3
 		y = 12
@@ -431,21 +432,21 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {
 			add_stability = 0.05
-			add_war_support = 0.10 
+			add_war_support = 0.10
 		}
 	}
 	#贝特伦的决定
 	focus = {
 		id = HUN_beitelundejueding
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_beitelundejueding
 		prerequisite = { focus = HUN_zhengzhitiaozheng}
 		x = 5
 		y = 9
@@ -455,18 +456,18 @@ focus_tree = {
 		available_if_capitulated = no
 		mutually_exclusive = { focus =  HUN_gaibosidejihua}
 		mutually_exclusive = { focus =  HUN_xiaonongdangdexiangfa}
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = { has_government = conservative_democracy }
-		
+
 		completion_reward = { add_political_power = 150 }
 	}
 	#修建水利
 	focus = {
 		id = HUN_xiujianshuili
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_xiujianshuili
 		prerequisite = { focus = HUN_beitelundejueding}
 		x = 5
 		y = 10
@@ -474,31 +475,31 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {
 			add_political_power = -150
 			add_stability = 0.1
 			154 = {
-				add_building_construction = {	
+				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
 			45 = {
-				add_building_construction = {	
+				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
 			980 = {
-				add_building_construction = {	
+				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
@@ -509,7 +510,7 @@ focus_tree = {
 	#蚂蚁合作社
 	focus = {
 		id = HUN_mayihezuoshe
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_mayihezuoshe
 		prerequisite = { focus = HUN_xiujianshuili}
 		x = 5
 		y = 11
@@ -517,18 +518,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { add_ideas = HUN_mayihezuoshe_idea }
+
+		completion_reward = { add_ideas = HUN_mayihezuoshe }
 	}
 	#稳定的匈牙利
 	focus = {
 		id = HUN_wendingdexiongyali
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_wendingdexiongyali
 		prerequisite = { focus = HUN_mayihezuoshe}
 		x = 5
 		y = 12
@@ -536,12 +537,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {
 			add_stability = 0.2
 			add_war_support = 0.1
@@ -550,7 +551,7 @@ focus_tree = {
 	#小农党的想法
 	focus = {
 		id = HUN_xiaonongdangdexiangfa
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_xiaonongdangdexiangfa
 		prerequisite = { focus = HUN_zhengzhitiaozheng}
 		x = 7
 		y = 9
@@ -560,18 +561,18 @@ focus_tree = {
 		available_if_capitulated = no
 		mutually_exclusive = { focus =  HUN_gaibosidejihua}
 		mutually_exclusive = { focus =  HUN_beitelundejueding}
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = { has_government = agroindustrial_socialism }
-		
+
 		completion_reward = {add_political_power = 150 }
 	}
 	#对农业的调整
 	focus = {
 		id = HUN_duinongyedetiaozheng
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_duinongyedetiaozheng
 		prerequisite = { focus = HUN_xiaonongdangdexiangfa}
 		x = 7
 		y = 10
@@ -579,18 +580,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = {add_ideas = HUN_tudigaige_idea }
+
+		completion_reward = {add_ideas = HUN_tudigaige }
 	}
 	#解决贫困
 	focus = {
 		id = HUN_jiejuepinkun
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_jiejuepinkun
 		prerequisite = { focus = HUN_duinongyedetiaozheng}
 		x = 7
 		y = 11
@@ -598,21 +599,21 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {
-			add_political_power = -100 
-			add_ideas = HUN_jiejuepinkun_idea
+			add_political_power = -100
+			add_ideas = HUN_jiejuepinkun
 		}
 	}
 	#繁荣的匈牙利
 	focus = {
 		id = HUN_fanrongdexiongyali
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_fanrongdexiongyali
 		prerequisite = { focus = HUN_jiejuepinkun}
 		x = 7
 		y = 12
@@ -620,23 +621,23 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = HUN_jiejuepinkun
-				add_idea = HUN_fanrongdexiongyali_idea
+				add_idea = HUN_fanrongdexiongyali
 			}
 		}
 	}
 	#从经济危机中恢复
 	focus = {
 		id = HUN_congjingjiweijizhonghuifu
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_congjingjiweijizhonghuifu
 		prerequisite = { focus = HUN_youyideshengli}
 		x = 12
 		y = 8
@@ -644,18 +645,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { remove_ideas = HUN_jinjiweijideyubo }
 	}
 	#gyor计划
 	focus = {
 		id = HUN_gyorjihua
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_gyorjihua
 		prerequisite = { focus = HUN_congjingjiweijizhonghuifu}
 		x = 9
 		y = 9
@@ -663,17 +664,17 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { unlock_decision_category_tooltip = HUN_gyorjihuajueyi }
 	}
 	#投资多瑙河经济带
 	focus = {
-		id = HUN_touziduonaohejingjidai
+		id = HUN_fazhanduonaohejinjidai
 		icon = GFX_HUN_fazhanduonaohejinjidai
 		prerequisite = { focus = HUN_gyorjihua}
 		x = 9
@@ -682,14 +683,15 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {
 			custom_effect_tooltip = HUN.4.tt
+			country_event = { id = HUN.101 }
 			155 = { set_state_flag = HUN_duonaoheliuyu }
 			664 = { set_state_flag = HUN_duonaoheliuyu }
 			43 = { set_state_flag = HUN_duonaoheliuyu }
@@ -701,26 +703,26 @@ focus_tree = {
 	#带动其他地区发展
 	focus = {
 		id = HUN_daidongqitadiqu
-		icon = GFX_HUN_fazhanduonaohejinjidai
-		prerequisite = { focus = HUN_touziduonaohejingjidai}
+		icon = GFX_HUN_daidongqitadiqu
+		prerequisite = { focus = HUN_fazhanduonaohejinjidai}
 		x = 9
 		y = 11
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { custom_effect_tooltip = HUN.5.tt }
 	}
 	#科技投资
 	focus = {
 		id = HUN_kejitouzi
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_kejitouzi
 		prerequisite = { focus = HUN_congjingjiweijizhonghuifu}
 		x = 12
 		y = 9
@@ -728,18 +730,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { country_event = { id = TODhungary.16} }
 	}
 	#布达佩斯技术大学
 	focus = {
 		id = HUN_jishudaxue
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_jishudaxue
 		prerequisite = { focus = HUN_kejitouzi}
 		x = 12
 		y = 10
@@ -747,38 +749,38 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_research_slot = 1 }
 	}
 	#工业技术研究所
 	focus = {
 		id = HUN_gongyejishuyanjiusuo
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_gongyejishuyanjiusuo
 		prerequisite = { focus = HUN_jishudaxue}
-		prerequisite = { focus = HUN_touziduonaohejingjidai}
+		prerequisite = { focus = HUN_fazhanduonaohejinjidai}
 		x = 11
 		y = 11
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { add_ideas = HUN_gongyejishuyanjiusuo_idea }
+
+		completion_reward = { add_ideas = HUN_gongyejishuyanjiusuo }
 	}
 	#农业发展研究所
 	focus = {
 		id = HUN_nongyefazhanyanjiusuo
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_nongyefazhanyanjiusuo
 		prerequisite = { focus = HUN_jishudaxue}
 		prerequisite = { focus = HUN_fuzhunongye}
 		x = 13
@@ -787,18 +789,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { add_ideas = HUN_nongyefazhanyanjiusuo_idea }
+
+		completion_reward = { add_ideas = HUN_nongyefazhanyanjiusuo }
 	}
 	#布达佩斯研究中心
 	focus = {
 		id = HUN_budapesiyanjiuzhongxin
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_budapesiyanjiuzhongxin
 		prerequisite = { focus = HUN_gongyejishuyanjiusuo focus = HUN_nongyefazhanyanjiusuo}
 		x = 12
 		y = 12
@@ -806,18 +808,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_research_slot = 1 }
 	}
 	#消费券
 	focus = {
 		id = HUN_xiaofeiquan
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_xiaofeiquan
 		prerequisite = { focus = HUN_congjingjiweijizhonghuifu}
 		x = 15
 		y = 9
@@ -825,18 +827,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { add_timed_idea = { idea = HUN_xiaofeiquan_idea days = 730} }
+
+		completion_reward = { add_timed_idea = { idea = HUN_xiaofeiquan days = 730} }
 	}
 	#扶助农业
 	focus = {
 		id = HUN_fuzhunongye
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_fuzhunongye
 		prerequisite = { focus = HUN_xiaofeiquan}
 		x = 15
 		y = 10
@@ -844,21 +846,21 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {
 			remove_ideas = HUN_nongyeguojia
-			add_timed_idea = { idea = HUN_fuzhunongye_idea days = 365 }
+			add_timed_idea = { idea = HUN_fuzhunongye days = 365 }
 		}
 	}
 	#农业现代化
 	focus = {
 		id = HUN_nongyexiandaihua
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_nongyexiandaihua
 		prerequisite = { focus = HUN_fuzhunongye}
 		x = 15
 		y = 11
@@ -866,15 +868,15 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
-		available = { 
-			has_equipment = { motorized_equipment > 1499 } 
-			NOT = { has_idea = HUN_fuzhunongye_idea }
+
+		ai_will_do = {base = 10}
+		available = {
+			has_equipment = { motorized_equipment > 1499 }
+			NOT = { has_idea = HUN_fuzhunongye }
 		}
-		
+
 		completion_reward = {
 			add_equipment_to_stockpile = { type = motorized_equipment amount = -1500 producer = HUN }
 			add_ideas = HUN_nongyexiandahua_idea
@@ -883,7 +885,7 @@ focus_tree = {
 	#不，不，绝不！
 	focus = {
 		id = HUN_bubujuebu
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_bubujuebu
 		prerequisite = { focus = HUN_youyideshengli}
 		x = 19
 		y = 8
@@ -891,21 +893,21 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { 
-			add_political_power = 50 
+
+		completion_reward = {
+			add_political_power = 50
 			add_war_support = 0.1
 		}
 	}
 	#稳固斯洛伐克
 	focus = {
 		id = HUN_wengusilfake
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_wengusilfake
 		prerequisite = { focus = HUN_bubujuebu}
 		x = 19
 		y = 9
@@ -913,21 +915,21 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {
-			add_political_power = -50 
+			add_political_power = -50
 			add_stability = 0.05
 		}
 	}
 	#解决罗马尼亚
 	focus = {
 		id = HUN_jiejueluomaniya
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_jiejueluomaniya
 		prerequisite = { focus = HUN_bubujuebu}
 		x = 17
 		y = 9
@@ -935,18 +937,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { custom_effect_tooltip = HUN_jiejueluomaniyashaominwenti }
 	}
 	#处理摩尔多瓦
 	focus = {
 		id = HUN_chulimoerduowa
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_chulimoerduowa
 		prerequisite = { focus = HUN_bubujuebu}
 		x = 21
 		y = 9
@@ -954,18 +956,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { custom_effect_tooltip = HUN_jiejuemoerduowashaominwenti }
 	}
 	#培植亲匈势力
 	focus = {
 		id = HUN_peizhiqinxiongshili
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_peizhiqinxiongshili
 		prerequisite = { focus = HUN_jiejueluomaniya focus = HUN_wengusilfake}
 		prerequisite = { focus = HUN_chulimoerduowa }
 		x = 20
@@ -974,18 +976,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_political_power = 150 }
 	}
 	#增加马扎儿移民
 	focus = {
 		id = HUN_zengjiamazhaeryimin
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_zengjiamazhaeryimin
 		prerequisite = { focus = HUN_chulimoerduowa focus = HUN_wengusilfake}
 		prerequisite = { focus = HUN_jiejueluomaniya }
 		x = 18
@@ -994,18 +996,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { custom_effect_tooltip = HUN.7.tt }
 	}
 	#建立少民军队
 	focus = {
 		id = HUN_jianlishaominjundui
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_jianlishaominjundui
 		prerequisite = { focus = HUN_peizhiqinxiongshili }
 		prerequisite = { focus = HUN_zengjiamazhaeryimin }
 		x = 18
@@ -1014,18 +1016,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = { NOT = {any_owned_state = { has_dynamic_modifier = HUN_shaoshuminzufenzheng }}}
-		
+
 		completion_reward = { custom_effect_tooltip = HUN_jianlishaominjundui }
 	}
 	#发展当地产业
 	focus = {
 		id = HUN_fazhandangdichanye
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_fazhandangdichanye
 		prerequisite = { focus = HUN_peizhiqinxiongshili }
 		prerequisite = { focus = HUN_zengjiamazhaeryimin }
 		x = 20
@@ -1034,18 +1036,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { unlock_decision_category_tooltip = HUN_fazhanchanye }
 	}
 	#解决克罗地亚和达尔马提亚问题
 	focus = {
 		id = HUN_jiejuekeluodiyahedaermatiyawenti
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_jiejuekeluodiyahedaermatiyawenti
 		prerequisite = {focus = HUN_fazhandangdichanye}
 		prerequisite = { focus = HUN_jianlishaominjundui}
 		x = 18
@@ -1054,18 +1056,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {add_political_power = 150 }
 	}
 	#向比萨拉比亚进军
 	focus = {
 		id = HUN_xiangbisalabiyajinjun
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_xiangbisalabiyajinjun
 		prerequisite = {focus = HUN_fazhandangdichanye}
 		prerequisite = { focus = HUN_jianlishaominjundui}
 		x = 20
@@ -1074,12 +1076,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {
 			HUN = {
 				create_wargoal = {
@@ -1087,13 +1089,13 @@ focus_tree = {
 					target = MOL
 					expire = 0
 				}
-			} 
+			}
 		}
 	}
 	#左翼的逆袭
 	focus = {
 		id = HUN_zuoyidenixi
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_zuoyidenixi
 		prerequisite = { focus = HUN_juxing1936daxuan}
 		x = 30
 		y = 7
@@ -1102,10 +1104,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		mutually_exclusive = { focus =  HUN_youyideshengli}
-		
+
 		cost = 0
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {
 			OR = {
 				has_country_flag = HUN_zuoyilianmenghuodeshengli
@@ -1114,30 +1116,30 @@ focus_tree = {
 				has_country_flag = HUN_jidujiaolianmenghuodeshengli
 			}
 		}
-		
+
 		completion_reward = {
 			if = {
 				limit = { has_country_flag = HUN_48danghuodeshengli }
-				country_event = { id = TODHungary.9}
+				country_event = { id = TODhungary.20}
 			}
 			if = {
 				limit = { has_country_flag = HUN_jidujiaolianmenghuodeshengli }
-				country_event = { id = TODHungary.10}
+				country_event = { id = TODhungary.21}
 			}
 			if = {
 				limit = { has_country_flag = HUN_shemindanghuodeshengli }
-				country_event = { id = TODHungary.11}
+				country_event = { id = TODhungary.22}
 			}
 			if = {
 				limit = { has_country_flag = HUN_zuoyilianmenghuodeshengli }
-				country_event = { id = TODHungary.12}
+				country_event = { id = TODhungary.23}
 			}
 		}
 	}
 	#政治改革
 	focus = {
 		id = HUN_zhengzhigaige
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_zhengzhigaige
 		prerequisite = { focus = HUN_zuoyidenixi}
 		x = 25
 		y = 8
@@ -1145,19 +1147,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		mutually_exclusive = { focus =  HUN_youyideshengli}
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {add_political_power = 150 }
 	}
 	#科苏特的理想
 	focus = {
 		id = HUN_kesutedelixiang
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_kesutedelixiang
 		prerequisite = { focus = HUN_zhengzhigaige}
 		x = 23
 		y = 9
@@ -1167,18 +1168,18 @@ focus_tree = {
 		available_if_capitulated = no
 		mutually_exclusive = { focus =  HUN_jidudelixiang}
 		mutually_exclusive = { focus =  HUN_fulankeerdeyichan }
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = { has_government = liberal_democracy }
-		
+
 		completion_reward = {add_political_power = 150 }
 	}
 	#强化民主
 	focus = {
 		id = HUN_qianghuaminzhu
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_qianghuaminzhu
 		prerequisite = { focus = HUN_zhengzhigaige}
 		x = 23
 		y = 10
@@ -1186,18 +1187,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_stability = 0.1 }
 	}
 	#自由平等
 	focus = {
 		id = HUN_ziyoupingdeng
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_ziyoupingdeng
 		prerequisite = { focus = HUN_qianghuaminzhu}
 		x = 23
 		y = 11
@@ -1205,18 +1206,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_ideas = HUN_minzhusixiang }
 	}
 	#民主的匈牙利
 	focus = {
 		id = HUN_minzhudexiongyali
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_minzhudexiongyali
 		prerequisite = { focus = HUN_ziyoupingdeng}
 		x = 23
 		y = 12
@@ -1224,13 +1225,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { 
+
+		completion_reward = {
 			swap_ideas = {
 				remove_idea = HUN_minzhusixiang
 				add_idea = HUN_minzhudexiongyali
@@ -1240,7 +1241,7 @@ focus_tree = {
 	#基督的事业
 	focus = {
 		id = HUN_jidudelixiang
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_jidudelixiang
 		prerequisite = { focus = HUN_zhengzhigaige}
 		x = 25
 		y = 9
@@ -1250,18 +1251,18 @@ focus_tree = {
 		available_if_capitulated = no
 		mutually_exclusive = { focus =  HUN_fulankeerdeyichan }
 		mutually_exclusive = { focus =  HUN_kesutedelixiang}
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = { has_government = sacred_revivalism }
-		
+
 		completion_reward = { add_political_power = 150 }
 	}
 	#与教会合作
 	focus = {
 		id = HUN_yujiaohuihezuo
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_yujiaohuihezuo
 		prerequisite = { focus = HUN_jidudelixiang}
 		x = 25
 		y = 10
@@ -1269,21 +1270,21 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { 
-			add_stability = 0.1 
-			add_popularity = { ideology = sacred_revivalism popularity = 0.2 }
+
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = { ideology = sacred_revivalism popularity = 0.1 }
 		}
 	}
 	#基督教特色社会主义
 	focus = {
 		id = HUN_jidujiaoteseshehuizhuyi
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_jidujiaoteseshehuizhuyi
 		prerequisite = { focus = HUN_yujiaohuihezuo}
 		x = 25
 		y = 11
@@ -1291,18 +1292,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_ideas = HUN_tesheshehuizhuyi }
 	}
 	#天主之盾
 	focus = {
 		id = HUN_tianzhuzhidun
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_tianzhuzhidun
 		prerequisite = { focus = HUN_jidujiaoteseshehuizhuyi}
 		x = 25
 		y = 12
@@ -1310,18 +1311,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_ideas = HUN_tianzhuzhidun }
 	}
 	#弗兰克尔的遗产
 	focus = {
 		id = HUN_fulankeerdeyichan
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_fulankeerdeyichan
 		prerequisite = { focus = HUN_zhengzhigaige}
 		x = 27
 		y = 9
@@ -1331,18 +1332,18 @@ focus_tree = {
 		available_if_capitulated = no
 		mutually_exclusive = { focus =  HUN_jidudelixiang}
 		mutually_exclusive = { focus =  HUN_kesutedelixiang}
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = { has_government = social_democrat }
-		
+
 		completion_reward = { add_political_power = 150 }
 	}
 	#无产阶级的诉求
 	focus = {
 		id = HUN_wuchanjiejidesuqiu
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_wuchanjiejidesuqiu
 		prerequisite = { focus = HUN_fulankeerdeyichan}
 		x = 27
 		y = 10
@@ -1350,18 +1351,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_timed_idea = { idea = HUN_shenchuyuanshou days = 730} }
 	}
 	#共产党合法化
 	focus = {
 		id = HUN_gongchandanghefahua
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_gongchandanghefahua
 		prerequisite = { focus = HUN_fulankeerdeyichan}
 		x = 29
 		y = 10
@@ -1369,13 +1370,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { 
+
+		completion_reward = {
 			add_popularity = { ideology = social_democrat popularity = 0.05 }
 			add_popularity = { ideology = moderate_socialism popularity = 0.01 }
 			add_popularity = { ideology = council_socialism popularity = 0.03 }
@@ -1385,7 +1386,7 @@ focus_tree = {
 	#乌托邦理想的实现
 	focus = {
 		id = HUN_wutuobanglixiangdeshixian
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_wutuobanglixiangdeshixian
 		prerequisite = { focus = HUN_wuchanjiejidesuqiu}
 		x = 27
 		y = 11
@@ -1393,13 +1394,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { 
+
+		completion_reward = {
 			add_stability = 0.1
 			add_war_support = 0.1
 		}
@@ -1407,7 +1408,7 @@ focus_tree = {
 	#人民的匈牙利
 	focus = {
 		id = HUN_renmindexiongyali
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_renmindexiongyali
 		prerequisite = { focus = HUN_wutuobanglixiangdeshixian}
 		x = 27
 		y = 12
@@ -1415,18 +1416,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_ideas = HUN_renmindexiongyali }
 	}
 	#新经济政策
 	focus = {
 		id = HUN_xinjingjizhengce
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_xinjingjizhengce
 		prerequisite = { focus = HUN_zuoyidenixi}
 		x = 34
 		y = 8
@@ -1434,18 +1435,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { remove_ideas = HUN_jinjiweijideyubo }
 	}
 	#采取政府调控
 	focus = {
 		id = HUN_caiquzhengfutiaokong
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_caiquzhengfutiaokong
 		prerequisite = { focus = HUN_xinjingjizhengce}
 		x = 31
 		y = 9
@@ -1453,18 +1454,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_timed_idea = { idea = HUN_zhengfutiaokong days = 180 }  }
 	}
 	#企业国有化
 	focus = {
 		id = HUN_qiyeguoyouhua
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_qiyeguoyouhua
 		prerequisite = { focus = HUN_caiquzhengfutiaokong}
 		x = 31
 		y = 10
@@ -1472,13 +1473,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { 
+
+		completion_reward = {
 			add_political_power = -150
 			add_ideas = HUN_guoyouhuaqiye
 		}
@@ -1486,7 +1487,7 @@ focus_tree = {
 	#建立工人苏维埃
 	focus = {
 		id = HUN_jianligongrensuweiai
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_jianligongrensuweiai
 		prerequisite = { focus = HUN_qiyeguoyouhua}
 		prerequisite = { focus = HUN_gongchandanghefahua}
 		mutually_exclusive = { focus =  HUN_yugonghuihezuo}
@@ -1496,18 +1497,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_ideas = HUN_gongrensuweiai }
 	}
 	#与工会合作
 	focus = {
 		id = HUN_yugonghuihezuo
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_yugonghuihezuo
 		prerequisite = { focus = HUN_qiyeguoyouhua}
 		mutually_exclusive = { focus =  HUN_jianligongrensuweiai}
 		x = 32
@@ -1516,18 +1517,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_ideas = HUN_huangsegonghui }
 	}
 	#计划型经济
 	focus = {
 		id = HUN_jihuaxingjingji
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_jihuaxingjingji
 		prerequisite = { focus = HUN_yugonghuihezuo focus = HUN_jianligongrensuweiai}
 		x = 31
 		y = 12
@@ -1535,18 +1536,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_ideas = HUN_jihuajinji }
 	}
 	#伽利略圈
 	focus = {
 		id = HUN_jialiluequan
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_jialiluequan
 		prerequisite = { focus = HUN_xinjingjizhengce}
 		x = 34
 		y = 9
@@ -1554,18 +1555,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_research_slot = 1 }
 	}
 	#学生蜂房
 	focus = {
 		id = HUN_xueshengfengfang
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_xueshengfengfang
 		prerequisite = { focus = HUN_jialiluequan}
 		x = 34
 		y = 10
@@ -1573,18 +1574,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_ideas = HUN_xueshengfengfang }
 	}
 	#教育平等
 	focus = {
 		id = HUN_jiaoyupingdeng
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_jiaoyupingdeng
 		prerequisite = { focus = HUN_xueshengfengfang}
 		x = 34
 		y = 11
@@ -1592,18 +1593,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_ideas = HUN_jiaoyupingdeng}
 	}
 	#人民教育
 	focus = {
 		id = HUN_renminjiaoyu
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_renminjiaoyu
 		prerequisite = {focus = HUN_jiaoyupingdeng}
 		x = 34
 		y = 12
@@ -1611,18 +1612,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_research_slot = 1 }
 	}
 	#农业统计局
 	focus = {
 		id = HUN_nongyetongjiju
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_nongyetongjiju
 		prerequisite = { focus = HUN_xinjingjizhengce}
 		x = 37
 		y = 9
@@ -1630,21 +1631,21 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { 
-			add_political_power = -100 
+
+		completion_reward = {
+			add_political_power = -100
 			add_timed_idea = { idea = HUN_tudiqingcha days = 180 }
 		}
 	}
 	#土地改革
 	focus = {
 		id = HUN_tudigaige
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_tudigaige
 		prerequisite = { focus = HUN_nongyetongjiju}
 		x = 37
 		y = 10
@@ -1652,18 +1653,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = { NOT = {has_idea = HUN_tudiqingcha }}
-		
+
 		completion_reward = { add_ideas = HUN_tudigaige }
 	}
 	#帮助贫农
 	focus = {
 		id = HUN_bangzhupinnong
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_bangzhupinnong
 		prerequisite = { focus = HUN_tudigaige}
 		x = 36
 		y = 11
@@ -1671,18 +1672,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { add_timed_idea = { idea = HUN_bangzhupinnong days = 180 } }
+
+		completion_reward = { add_timed_idea = { idea = HUN_bangzhu days = 180 } }
 	}
 	#打击地主
 	focus = {
 		id = HUN_dajidizhu
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_dajidizhu
 		prerequisite = { focus = HUN_tudigaige}
 		x = 38
 		y = 11
@@ -1690,18 +1691,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { add_timed_idea = { idea = HUN_dajidizhu days = 180 } }
+
+		completion_reward = { add_timed_idea = { idea = HUN_daji days = 180 } }
 	}
 	#新农业模式
 	focus = {
 		id = HUN_xinnongyemoshi
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_xinnongyemoshi
 		prerequisite = { focus = HUN_bangzhupinnong}
 		prerequisite = { focus = HUN_dajidizhu}
 		x = 37
@@ -1710,13 +1711,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { 
+
+		completion_reward = {
 			swap_ideas = {
 				remove_idea = HUN_nongyeguojia
 				add_idea = HUN_xinnongyemoshi
@@ -1726,7 +1727,7 @@ focus_tree = {
 	#重新审视民族政策
 	focus = {
 		id = HUN_chongxinshenshiminzuzhengce
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_chongxinshenshiminzuzhengce
 		prerequisite = { focus = HUN_zuoyidenixi}
 		x = 40
 		y = 8
@@ -1734,12 +1735,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {
 			country_event = { id = TODhungary.27 }
 			country_event = { id = TODhungary.28 }
@@ -1749,7 +1750,7 @@ focus_tree = {
 	#为过去提出补偿
 	focus = {
 		id = HUN_weiguoqutichubuchang
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_weiguoqutichubuchang
 		prerequisite = { focus = HUN_chongxinshenshiminzuzhengce}
 		x = 40
 		y = 9
@@ -1757,18 +1758,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		cost = 5
-		
-		ai_will_do = {factor = 10}
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_political_power = 150 }
 	}
 	#各民族平等
 	focus = {
 		id = HUN_geminzupingdeng
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_geminzupingdeng
 		prerequisite = { focus = HUN_weiguoqutichubuchang}
 		x = 40
 		y = 10
@@ -1776,22 +1777,23 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
-		completion_reward = { 
+
+		completion_reward = {
 			add_stability = 0.1
 			add_war_support = 0.1
-			add_to_variable = { HUN_shaominfankang = 0.3 }
+			custom_effect_tooltip = HUN_geminzupingdeng_xiaoguo
+			country_event = { id = HUN.102 }
 		}
 	}
 	#尊重民族自决
 	focus = {
 		id = HUN_zunzhongminzuzijue
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_zunzhongminzuzijue
 		prerequisite = { focus = HUN_geminzupingdeng}
 		x = 40
 		y = 11
@@ -1799,44 +1801,64 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = {
-			custom_effect_tooltip = HUN.6.tt
+			custom_effect_tooltip = HUN_zunzhongminzuzijue_xiaoguo
+			HUN_clear_left_minority_disputes_effect = yes
 			hidden_effect = {
 				if = {
-					limit = { NOT = { has_idea = HUN_buchangsiluofake } }
-
+					limit = { has_idea = HUN_buchangsiluofake }
+					989 = { add_core_of = HUN }
+					71 = { add_core_of = HUN }
+					73 = { add_core_of = HUN }
+					70 = { add_core_of = HUN }
+					664 = { add_core_of = HUN }
 				}
 				if = {
-					limit = { NOT = {has_idea = HUN_buchangluomaniya } }
-					ROM = {
-						set_state_owner = 84	
-						set_state_owner = 83	
-						set_state_owner = 82	
+					limit = {
+						has_country_flag = HUN_release_romania_as_puppet
+						NOT = { country_exists = ROM }
 					}
+					release_puppet = ROM
 				}
 				if = {
-					limit = { NOT = { has_idea = HUN_buchangmoerduowa } }
-					MOL = {
-						set_state_owner = 79	
-						set_state_owner = 979	
-						set_state_owner = 956	
-						set_state_owner = 80	
+					limit = {
+						has_country_flag = HUN_release_romania_as_puppet
+						ROM = { is_subject_of = HUN }
 					}
-					if = {
-						limit = { NOT = { has_idea = HUN_buchangluomaniya } }
-						ROM = {
-							set_state_owner = 79	
-							set_state_owner = 979	
-							set_state_owner = 956	
-							set_state_owner = 80		
-						}
+					set_autonomy = { target = ROM autonomous_state = autonomy_puppet }
+				}
+				if = {
+					limit = { has_idea = HUN_buchangluomaniya }
+					84 = { add_core_of = HUN }
+					83 = { add_core_of = HUN }
+					82 = { add_core_of = HUN }
+				}
+				if = {
+					limit = {
+						has_country_flag = HUN_release_moldova_as_puppet
+						NOT = { country_exists = MOL }
 					}
+					release_puppet = MOL
+				}
+				if = {
+					limit = {
+						has_country_flag = HUN_release_moldova_as_puppet
+						MOL = { is_subject_of = HUN }
+					}
+					set_autonomy = { target = MOL autonomous_state = autonomy_puppet }
+				}
+				if = {
+					limit = { has_idea = HUN_buchangmoerduowa }
+					79 = { add_core_of = HUN }
+					979 = { add_core_of = HUN }
+					956 = { add_core_of = HUN }
+					80 = { add_core_of = HUN }
 				}
 			}
 		}
@@ -1844,7 +1866,7 @@ focus_tree = {
 	#划定争议地区
 	focus = {
 		id = HUN_huadingzhengyidiqu
-		icon = GFX_HUN_juxingdaxuan
+		icon = GFX_HUN_huadingzhengyidiqu
 		prerequisite = { focus = HUN_zunzhongminzuzijue}
 		x = 40
 		y = 12
@@ -1852,12 +1874,1741 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		cost = 10
-		
-		ai_will_do = {factor = 10}
+
+		cost = 5
+
+		ai_will_do = {base = 10}
 		available = {}
-		
+
 		completion_reward = { add_political_power = 150 }
+	}
+	#重组航空业
+	focus = {
+		id = HUN_chongzuhangkongye
+		icon = GFX_HUN_juxingdaxuan
+		x = 44
+		y = 1
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = { has_completed_focus = HUN_juxing1936daxuan }
+
+		completion_reward = {  air_experience = 50 }
+	}
+	#马扎儿之翼
+	focus = {
+		id = HUN_mazhaerzhiyi
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_chongzuhangkongye}
+		x = 43
+		y = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = light_air
+				category = transport_planes_cat
+				category = medium_air
+				category = heavy_air
+			}
+		}
+	}
+	#改善国内条件
+	focus = {
+		id = HUN_gaishanguoneitiaojian
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_chongzuhangkongye}
+		x = 45
+		y = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		 }
+	}
+	#引进外国工程师
+	focus = {
+		id = HUN_yinjinwaiguo
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_mazhaerzhiyi}
+		prerequisite = { focus = HUN_gaishanguoneitiaojian}
+		mutually_exclusive = { focus = HUN_jianchibenguo}
+		x = 43
+		y = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {}
+	}
+	#坚持本国制造
+	focus = {
+		id = HUN_jianchibenguo
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_mazhaerzhiyi}
+		prerequisite = { focus = HUN_gaishanguoneitiaojian}
+		mutually_exclusive = { focus = HUN_yinjinwaiguo}
+		x = 45
+		y = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = { add_ideas = HUN_benguozhizao }
+	}
+	#引入外国生产线
+	focus = {
+		id = HUN_waiguoshengchanxian
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_yinjinwaiguo}
+		mutually_exclusive = { focus = HUN_lianhefeiji}
+		mutually_exclusive = { focus = HUN_qiangdiaozizhusheji}
+		x = 42
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+		}
+	}
+	#联合飞机研发
+	focus = {
+		id = HUN_lianhefeiji
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_yinjinwaiguo focus = HUN_jianchibenguo }
+		mutually_exclusive = { focus = HUN_waiguoshengchanxian}
+		mutually_exclusive = { focus = HUN_qiangdiaozizhusheji}
+		x = 44
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			custom_effect_tooltip = HUN_lianhefeiji_xiaoguo
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = air_equipment
+			}
+			every_country = {
+				limit = {
+					has_opinion = {
+						target = HUN
+						value > 30
+					}
+				}
+				country_event = { id = TODhungary.34 }
+			}
+		}
+	}
+	#强调自主设计
+	focus = {
+		id = HUN_qiangdiaozizhusheji
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jianchibenguo }
+		mutually_exclusive = { focus = HUN_waiguoshengchanxian}
+		mutually_exclusive = { focus = HUN_lianhefeiji}
+		x = 46
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HUN_heavy_fighter_effort
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 2
+				category = light_air
+				category = transport_planes_cat
+				category = medium_air
+				category = heavy_air
+			}
+		}
+	}
+	#加强飞行员培训
+	focus = {
+		id = HUN_jiaqiangpeixun
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_qiangdiaozizhusheji focus = HUN_lianhefeiji focus = HUN_waiguoshengchanxian}
+		x = 43
+		y = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = { add_timed_idea = { idea = HUN_feixingyuan days = 730 }  }
+	}
+	#航空技术研究所
+	focus = {
+		id = HUN_hangkongyanjiusuo
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_qiangdiaozizhusheji focus = HUN_lianhefeiji focus = HUN_waiguoshengchanxian}
+		x = 45
+		y = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = { add_ideas = HUN_hangkongjishuyanjiusuo }
+	}
+	#声敏火箭弹
+	focus = {
+		id = HUN_shengmin
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jiaqiangpeixun }
+		prerequisite = { focus = HUN_hangkongyanjiusuo }
+		x = 44
+		y = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = { add_ideas = HUN_huojiandan }
+	}
+	#军事重组
+	focus = {
+		id = HUN_junshichongzu
+		icon = GFX_HUN_juxingdaxuan
+		x = 55
+		y = 1
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = { has_completed_focus = HUN_juxing1936daxuan }
+
+		completion_reward = { army_experience = 50 }
+	}
+	#精兵战术
+	focus = {
+		id = HUN_jingbingzhanshu
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_junshichongzu }
+		mutually_exclusive = { focus = HUN_baochiguimo }
+		x = 51
+		y = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			remove_ideas = HUN_pangdadejundui
+			add_dynamic_modifier = { modifier = HUN_jingruishibing }
+			custom_effect_tooltip = HUN_caijun
+							hidden_effect = {
+							}
+		}
+	}
+	#保持规模
+	focus = {
+		id = HUN_baochiguimo
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_junshichongzu }
+		mutually_exclusive = { focus = HUN_jingbingzhanshu }
+		x = 59
+		y = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+				custom_effect_tooltip = HUN.8.tt
+				country_lock_all_division_template = no
+		 }
+	}
+	#特种化作战
+	focus = {
+		id = HUN_tezhonghuazuozhan
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jingbingzhanshu }
+		x = 50
+		y = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			custom_effect_tooltip = HUN.9.tt
+			army_experience = 25
+			country_event = { id = HUN.103 }
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = special_forces_doctrine
+			}
+		 }
+	}
+	#山地训练
+	focus = {
+		id = HUN_shandixunlian
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_tezhonghuazuozhan }
+		x = 48
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			custom_effect_tooltip = HUN.10.tt
+			army_experience = 20
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = special_forces_doctrine
+			}
+		 }
+	}
+	#气候适应
+	focus = {
+		id = HUN_qihoushiyin
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_tezhonghuazuozhan }
+		x = 50
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			custom_effect_tooltip = HUN.11.tt
+			army_experience = 15
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		 }
+	}
+	#伞兵组建
+	focus = {
+		id = HUN_sanbingzujian
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_tezhonghuazuozhan }
+		x = 52
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = para_tech
+			}
+		}
+	}
+	#扩大生产
+	focus = {
+		id = HUN_kuodashengchan
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_baochiguimo }
+		x = 60
+		y = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_ideas = HUN_zhuangbeishengchan
+		 }
+	}
+	#工兵支援
+	focus = {
+		id = HUN_gongbingzhiyuan
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_kuodashengchan }
+		x = 58
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = support_tech
+			}
+		 }
+	}
+	#装备研究
+	focus = {
+		id = HUN_zhuangbeiyanjiu
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_kuodashengchan }
+		x = 60
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	#后勤保障
+	focus = {
+		id = HUN_houqinbaozhang
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_kuodashengchan }
+		x = 62
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = train_tech
+			}
+		 }
+	}
+	#加强火力
+	focus = {
+		id = HUN_jiaqianghuoli
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jingbingzhanshu focus = HUN_baochiguimo }
+		x = 53
+		y = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = cat_anti_tank
+			}
+		 }
+	}
+	#达努维亚冲锋枪
+	focus = {
+		id = HUN_danuweiya
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jiaqianghuoli}
+		x = 54
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+			}
+		 }
+	}
+	#攻坚克难
+	focus = {
+		id = HUN_gongjiankenan
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_danuweiya}
+		x = 54
+		y = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+		 }
+	}
+	#机械骑兵
+	focus = {
+		id = HUN_jixieqibing
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jingbingzhanshu focus = HUN_baochiguimo }
+		x = 57
+		y = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = armor
+			}
+		 }
+	}
+	#阜博通卡车
+	focus = {
+		id = HUN_fubotong
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jixieqibing }
+		x = 56
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {}
+	}
+	#钢铁巨兽
+	focus = {
+		id = HUN_gangtiejushou
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_fubotong }
+		x = 56
+		y = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 2
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		 }
+	}
+	#通讯畅通
+	focus = {
+		id = HUN_tongxunchangtong
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_gongjiankenan }
+		x = 53
+		y = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	#战场突破
+	focus = {
+		id = HUN_zhanchangtupo
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_gongjiankenan focus = HUN_gangtiejushou }
+		x = 55
+		y = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {
+			has_tech = improved_medium_tank_chassis
+			has_tech = artillery1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_medium_armor
+			}
+			create_equipment_variant = {
+				name = "Zrinyi"
+				type = medium_tank_artillery_chassis_2
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_medium_howitzer
+					turret_type_slot = tank_medium_fixed_superstructure_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_diesel_engine
+					special_type_slot_1 = sloped_armor
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 10
+					tank_nsb_armor_upgrade = 8
+				}
+				icon = "GFX_HUN_improved_medium_art_medium"
+			}
+		 }
+	}
+	#防空火力
+	focus = {
+		id = HUN_fangkonghuoli
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_gangtiejushou }
+		x = 57
+		y = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {
+			has_tech = improved_light_tank_chassis
+			has_tech = antiair2
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_anti_air
+			}
+			create_equipment_variant = {
+				name = "Vadasz"
+				type = medium_tank_aa_chassis_2
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_anti_air_cannon_2
+					turret_type_slot = tank_light_two_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_diesel_engine
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 12
+					tank_nsb_armor_upgrade = 6
+				}
+			}
+		}
+	}
+	#重建海军部门
+	focus = {
+		id = HUN_chongjianhaijun
+		icon = GFX_HUN_juxingdaxuan
+		x = 67
+		y = 1
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {
+			any_state = {
+				is_controlled_by = HUN
+				is_coastal = yes
+			}
+			has_completed_focus = HUN_juxing1936daxuan
+		}
+
+		completion_reward = { navy_experience = 50 }
+	}
+	#加强海军建设
+	focus = {
+		id = HUN_jiaqinaghaijunjianshe
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_chongjianhaijun }
+		x = 65
+		y = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = { add_timed_idea = { idea = HUN_haijunjianshe days = 365 } }
+	}
+	#达尔马提亚军港重建
+	focus = {
+		id = HUN_jungangchongjian
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jiaqinaghaijunjianshe }
+		x = 64
+		y = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {
+			or = {
+				has_full_control_of_state = 763
+				has_full_control_of_state = 1214
+				has_full_control_of_state = 1212
+				has_full_control_of_state = 103
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#新建黑海舰队
+	focus = {
+		id = HUN_xinjianheihaijiandui
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jiaqinaghaijunjianshe }
+		x = 66
+		y = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {
+			has_full_control_of_state = 766
+		}
+
+		completion_reward = {
+			766 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		 }
+	}
+	#从国外购置舰艇
+	focus = {
+		id = HUN_waiguojianting
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jungangchongjian focus = HUN_xinjianheihaijiandui }
+		x = 64
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = { navy_experience = 50 }
+	}
+	#启用造船设备
+	focus = {
+		id = HUN_qiyongzaochuan
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jungangchongjian focus = HUN_xinjianheihaijiandui }
+		x = 66
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_dynamic_modifier = { modifier = HUN_chongfandayang}
+		 }
+	}
+	#招募海军人员
+	focus = {
+		id = HUN_zhaomuhaijunrenyuan
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_chongjianhaijun }
+		x = 69
+		y = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			custom_effect_tooltip = HUN.12.tt
+			add_manpower = 10000
+			navy_experience = 25
+			country_event = { id = HUN.104 }
+		 }
+	}
+	#成立海军研究院
+	focus = {
+		id = HUN_haijunyanjiuyuan
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_zhaomuhaijunrenyuan }
+		x = 70
+		y = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+	#从内河舰队中抽调人手
+	focus = {
+		id = HUN_choudiaorenshou
+		icon = GFX_HUN_choudiaorenshou
+		prerequisite = { focus = HUN_zhaomuhaijunrenyuan }
+		x = 68
+		y = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+	#重启霍尔蒂
+	focus = {
+		id = HUN_chongqihuoerdi
+		icon = GFX_HUN_chongqihuoerdi
+		prerequisite = { focus = HUN_choudiaorenshou }
+		x = 70
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			hidden_effect = { HUN_miklos_horthy = {set_nationality = HUN}}
+			add_naval_commander_role = {
+				character = HUN_miklos_horthy
+				traits = { gunnery_expert navy_media_personality superior_tactician }
+				skill = 3
+				legacy_id = 556 #Navy Miklos
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 4
+			}
+		}
+	}
+	#加强人员培训
+	focus = {
+		id = HUN_jiaqiangrenyuanpeixun
+		icon = GFX_HUN_jiaqiangrenyuanpeixun
+		prerequisite = { focus = HUN_haijunyanjiuyuan }
+		x = 68
+		y = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			custom_effect_tooltip = HUN.13.tt
+			navy_experience = 25
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		 }
+	}
+	#宣告海军成立
+	focus = {
+		id = HUN_xuangaohaijunchengli
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jiaqiangrenyuanpeixun }
+		prerequisite = { focus = HUN_qiyongzaochuan focus = HUN_waiguojianting }
+		x = 67
+		y = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = { navy_experience = 50 }
+	}
+	#重新审视对外政策
+	focus = {
+		id = HUN_duiwaizhengce
+		icon = GFX_HUN_juxingdaxuan
+		x = 55
+		y = 7
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+			modifier = {add = 20}
+		}
+		available = { has_completed_focus = HUN_juxing1936daxuan }
+
+		completion_reward = {
+			add_political_power = 100
+			country_event = { id = HUN.105 }
+		}
+	}
+	#向西交流
+	focus = {
+		id = HUN_xiangxijiaoliu
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_duiwaizhengce }
+		x = 51
+		y = 8
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 0
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = { add_political_power = 50 }
+	}
+	#重启对奥谈判
+	focus = {
+		id = HUN_chongqiduiaotanpan
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_xiangxijiaoliu }
+		x = 49
+		y = 9
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_opinion_modifier = {
+				target = AUS
+				modifier = HUN_duiaohejie
+			}
+		}
+	}
+	#共同的敌人
+	focus = {
+		id = HUN_gongtongdediren
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_chongqiduiaotanpan }
+		x = 49
+		y = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {
+			AUS = {
+				has_opinion = {
+					target = HUN
+					value > 30
+				}
+			}
+		}
+		completion_reward = {
+			give_guarantee = AUS
+			AUS = { give_guarantee = HUN }
+		}
+	}
+	#军事合作
+	focus = {
+		id = HUN_junshihezuo
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_gongtongdediren }
+		x = 49
+		y = 11
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+			if = {
+				limit = { country_exists = AUS AUS = { NOT = { has_war_with = HUN } } }
+				add_opinion_modifier = { target = AUS modifier = HUN_austrian_military_mission }
+				AUS = { add_opinion_modifier = { target = HUN modifier = HUN_austrian_military_mission } }
+			}
+			country_event = { id = HUN.106 }
+		}
+	}
+	#对意交流
+	focus = {
+		id = HUN_duiyijiaoliu
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_xiangxijiaoliu }
+		x = 51
+		y = 9
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_political_power = 25
+			if = {
+				limit = { country_exists = ITA ITA = { NOT = { has_war_with = HUN } } }
+				add_opinion_modifier = { target = ITA modifier = HUN_italian_danubian_exchange }
+				ITA = { add_opinion_modifier = { target = HUN modifier = HUN_italian_danubian_exchange } }
+			}
+			country_event = { id = HUN.107 }
+		}
+	}
+	#夺回克罗地亚
+	focus = {
+		id = HUN_duohuikeluodiya
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_duiyijiaoliu }
+		x = 51
+		y = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_state_claim = 103
+			add_state_claim = 109
+			army_experience = 10
+		}
+	}
+	#干预意大利内战
+	focus = {
+		id = HUN_ganyuyidali
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_duohuikeluodiya }
+		x = 51
+		y = 11
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
+			if = {
+				limit = { country_exists = ITA ITA = { NOT = { has_war_with = HUN } } }
+				ITA = { add_opinion_modifier = { target = HUN modifier = HUN_italian_danubian_exchange } }
+			}
+		}
+	}
+	#向南扩张
+	focus = {
+		id = HUN_xiangnankuozhang
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_duiwaizhengce }
+		x = 55
+		y = 8
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {
+			base = 100
+			modifier = { add = 100 }
+		}
+		available = {}
+
+		completion_reward = {
+			add_state_claim = 105
+			add_state_claim = 108
+			add_war_support = 0.05
+			add_political_power = 25
+		}
+	}
+	#重新评估法国
+	focus = {
+		id = HUN_pinggufaguo
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_xiangxijiaoliu focus = HUN_xiangnankuozhang }
+		x = 53
+		y = 9
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_political_power = 50
+			if = {
+				limit = { country_exists = FRA FRA = { NOT = { has_war_with = HUN } } }
+				add_opinion_modifier = { target = FRA modifier = HUN_french_reassessment }
+				FRA = { add_opinion_modifier = { target = HUN modifier = HUN_french_reassessment } }
+			}
+		}
+	}
+	#稳固塞尔维亚
+	focus = {
+		id = HUN_wengusaierweiya
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_xiangnankuozhang }
+		x = 55
+		y = 9
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_stability = 0.05
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+			if = {
+				limit = { country_exists = SER SER = { NOT = { has_war_with = HUN } } }
+				add_opinion_modifier = { target = SER modifier = HUN_balkan_conference }
+				SER = { add_opinion_modifier = { target = HUN modifier = HUN_balkan_conference } }
+			}
+		}
+	}
+	#加强与保加利亚关系
+	focus = {
+		id = HUN_baojialiya
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_xiangnankuozhang focus = HUN_xiangdonghezuo}
+		x = 57
+		y = 9
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+			modifier = {add = 20}
+		}
+		available = {}
+
+		completion_reward = {
+			BUL = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = HUN_baojialiyaguanxi
+				}
+			}
+		}
+	}
+	#介入巴尔干冲突
+	focus = {
+		id = HUN_jierubaergan
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_pinggufaguo }
+		prerequisite = { focus = HUN_wengusaierweiya }
+		x = 54
+		y = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_political_power = 25
+			country_event = { id = HUN.108 }
+		}
+	}
+	#进军瓦拉几亚
+	focus = {
+		id = HUN_jinjunwalajiya
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_pinggufaguo }
+		prerequisite = { focus = HUN_baojialiya }
+		x = 56
+		y = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward =  {annex_country = { target = ROM transfer_troops = no }}
+	}
+	#新的巴尔干霸权
+	focus = {
+		id = HUN_baerganbaquan
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jierubaergan }
+		prerequisite = { focus = HUN_jinjunwalajiya }
+		x = 55
+		y = 11
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {base = 10}
+		available = {}
+
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.05
+			army_experience = 25
+			if = {
+				limit = { country_exists = SER SER = { NOT = { has_war_with = HUN } } }
+				SER = { add_opinion_modifier = { target = HUN modifier = HUN_balkan_conference } }
+			}
+		}
+	}
+	#向东合作
+	focus = {
+		id = HUN_xiangdonghezuo
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_duiwaizhengce }
+		x = 59
+		y = 8
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+			modifier = {add = 20}
+		}
+		available = {}
+
+		completion_reward = {
+			UKR = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = HUN_bolanyouyi
+				}
+			}
+		}
+	}
+	#重叙旧友谊
+	focus = {
+		id = HUN_chongxujiuyouyi
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_xiangdonghezuo }
+		x = 59
+		y = 9
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+			modifier = {add = 20}
+		}
+		available = {}
+
+		completion_reward = {
+			POL = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = HUN_bolanyouyi
+				}
+			}
+		}
+	}
+	#结交新朋友
+	focus = {
+		id = HUN_jiejiaoxinpengyou
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_xiangdonghezuo }
+		x = 61
+		y = 9
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+			modifier = {add = 20}
+		}
+		available = {}
+
+		completion_reward = {
+			UKR = {
+				add_opinion_modifier = {
+					target = HUN
+					modifier = HUN_wukelanyouyi
+				}
+			}
+		}
+	}
+	#科技合作
+	focus = {
+		id = HUN_kejihezuo
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jiejiaoxinpengyou focus = HUN_chongxujiuyouyi focus = HUN_baojialiya }
+		x = 58
+		y = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+			modifier = {add = 20}
+		}
+		available = {}
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+		}
+	}
+	#军事交流
+	focus = {
+		id = HUN_junshijiaoliu
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_jiejiaoxinpengyou focus = HUN_chongxujiuyouyi focus = HUN_baojialiya }
+		x = 60
+		y = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {
+			base = 10
+			modifier = {add = 20}
+		}
+		available = {}
+
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+		}
+	}
+	#“东墙”
+	focus = {
+		id = HUN_dongqiang
+		icon = GFX_HUN_juxingdaxuan
+		prerequisite = { focus = HUN_kejihezuo }
+		prerequisite = { focus = HUN_junshijiaoliu }
+		x = 59
+		y = 11
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		cost = 5
+
+		ai_will_do = {
+			base = 100
+			modifier = { add = 100 }
+		}
+		available = {}
+
+		completion_reward = {
+			create_faction = EAST_WALL
+			every_neighbor_country = {
+				limit = {
+					has_opinion = {
+						target = HUN
+						value > 30
+					}
+				}
+				leave_faction = yes
+				HUN = { add_to_faction = PREV }
+			}
+			if = {
+				limit = {
+					country_exists = UKR
+					UKR = {
+						NOT = { has_war_with = HUN }
+						NOT = { is_in_faction_with = HUN }
+					}
+				}
+				UKR = {
+					if = {
+						limit = { is_in_faction = yes NOT = { is_in_faction_with = HUN } }
+						leave_faction = yes
+					}
+				}
+				add_to_faction = UKR
+			}
+			# 东墙的既定成员：波兰。波兰可能已经在法国阵营，先退出旧阵营再加入。
+			if = {
+				limit = {
+					country_exists = POL
+					POL = {
+						NOT = { has_war_with = HUN }
+						NOT = { is_in_faction_with = HUN }
+					}
+				}
+				POL = {
+					if = {
+						limit = { is_in_faction = yes NOT = { is_in_faction_with = HUN } }
+						leave_faction = yes
+					}
+				}
+				add_to_faction = POL
+				POL = { set_country_flag = TOD_EAST_WALL_POLAND_MEMBER }
+			}
+			if = {
+				limit = {
+					country_exists = BLR
+					BLR = {
+						NOT = { has_war_with = HUN }
+						NOT = { is_in_faction_with = HUN }
+					}
+				}
+				BLR = {
+					if = {
+						limit = { is_in_faction = yes NOT = { is_in_faction_with = HUN } }
+						leave_faction = yes
+					}
+				}
+				add_to_faction = BLR
+			}
+			news_event = { id = TODhungary.35 }
+		 }
 	}
 }

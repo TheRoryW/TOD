@@ -1,0 +1,4145 @@
+add_namespace = ROC_focus
+add_namespace = ROC_start
+add_namespace = ROC_datong
+add_namespace = ROC_pingheng
+
+#海军部的争论！
+country_event = { 
+	id = ROC_focus.1
+	title = ROC_focus.1.t
+	desc = ROC_focus.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.1.a #战列舰
+        add_tech_bonus = {
+            bonus = 1.0
+            uses = 1
+            category = bb_tech
+        }
+        swap_ideas = {
+            add_idea = ROC_idea_nanyangzhijian_1
+            remove_idea = ROC_idea_nanyangzhijian
+        }
+	}
+    option = {
+		name = ROC_focus.1.b #航母
+        add_tech_bonus = {
+            bonus = 1.0
+            uses = 1
+            category = cv_tech
+        }
+        swap_ideas = {
+            add_idea = ROC_idea_nanyangzhijian_2
+            remove_idea = ROC_idea_nanyangzhijian
+        }
+	}
+}
+#共和武装
+country_event = { 
+	id = ROC_focus.2
+	title = ROC_focus.2.t
+	desc = ROC_focus.2.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.2.a 
+        army_experience = 30
+	}
+}
+#改革前景
+country_event = { 
+	id = ROC_focus.3
+	title = ROC_focus.3.t
+	desc = ROC_focus.3.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.3.a 
+		ROC = {country_event = { id = ROC_focus.23 }}
+	}
+}
+#集约化经营
+country_event = { 
+	id = ROC_focus.4
+	title = ROC_focus.4.t
+	desc = ROC_focus.4.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.4.a 
+		country_event = { days = 7 id = ROC_focus.24 }
+	}
+}
+#土地改革
+country_event = { 
+	id = ROC_focus.5
+	title = ROC_focus.5.t
+	desc = ROC_focus.5.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.5.a 
+		country_event = { days = 7 id = ROC_focus.28 }
+	}
+}
+#联合商会
+country_event = { 
+	id = ROC_focus.6
+	title = ROC_focus.6.t
+	desc = ROC_focus.6.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.6.a 
+	}
+}
+#节制资本
+country_event = { 
+	id = ROC_focus.7
+	title = ROC_focus.7.t
+	desc = ROC_focus.7.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.7.a 
+	}
+}
+#委员会政治
+country_event = { 
+	id = ROC_focus.8
+	title = ROC_focus.8.t
+	desc = ROC_focus.8.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.8.a 
+		complete_national_focus = guangzhougemingweiyuanhui
+	}
+}
+#会政关系再讨论
+country_event = { 
+	id = ROC_focus.9
+	title = ROC_focus.9.t
+	desc = ROC_focus.9.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.9.a 
+		country_event = { days = 15 id = ROC_focus.33 }
+	}
+}
+#省议院会议
+country_event = { 
+	id = ROC_focus.10
+	title = ROC_focus.10.t
+	desc = ROC_focus.10.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.10.a 
+	}
+}
+#县委会工作
+country_event = { 
+	id = ROC_focus.11
+	title = ROC_focus.11.t
+	desc = ROC_focus.11.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.11.a
+		country_event = { id = ROC_focus.35 } 
+	}
+}
+#革命三段论
+country_event = { 
+	id = ROC_focus.12
+	title = ROC_focus.12.t
+	desc = ROC_focus.12.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.12.a 
+	}
+}
+#临时制宪会议
+country_event = { 
+	id = ROC_focus.13
+	title = ROC_focus.13.t
+	desc = ROC_focus.13.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.13.a 
+	}
+}
+#大同会紧急全会
+country_event = { 
+	id = ROC_focus.14
+	title = ROC_focus.14.t
+	desc = ROC_focus.14.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.14.a 
+		country_event = { id = ROC_datong.1 }
+		country_event = { days = 20 id = ROC_datong.2 }
+		add_political_power = 25
+	}
+	option = {
+		name = ROC_focus.14.b
+		country_event = { days = 20 id = ROC_datong.2 }
+	}
+}
+#大同会国际会议
+country_event = { 
+	id = ROC_focus.15
+	title = ROC_focus.15.t
+	desc = ROC_focus.15.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.15.a 
+		country_event = { days = 2 id = ROC_datong.3 }
+	}
+}
+#来自周饶的支持
+country_event = { 
+	id = ROC_focus.16
+	title = ROC_focus.16.t
+	desc = ROC_focus.16.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.16.a 
+	}
+}
+#规模初成的组织
+country_event = { 
+	id = ROC_focus.17
+	title = ROC_focus.17.t
+	desc = ROC_focus.17.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.17.a 
+        add_ideas = ROC_idea_guimochuchengdezuzhi
+	}
+}
+#大同主义再思考
+country_event = { 
+	id = ROC_focus.18
+	title = ROC_focus.18.t
+	desc = ROC_focus.18.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.18.a 
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = 0.15
+		}
+	}
+	option = {
+		name = ROC_focus.18.b 
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < -0.15
+				}
+			}
+			add_power_balance_value = {
+				id = ROC_power_balance
+				value = 0.15
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.15
+				}
+			}
+			add_power_balance_value = {
+				id = ROC_power_balance
+				value = -0.15
+			}
+		}
+	}
+	option = {
+		name = ROC_focus.18.c 
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = -0.15
+		}
+	}
+}
+#利用名单
+country_event = { 
+	id = ROC_focus.19
+	title = ROC_focus.19.t
+	desc = ROC_focus.19.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {tag = ROC}
+	option = {
+		name = ROC_focus.19.a 
+		country_event = { id = ROC_focus.36 }
+	}
+}
+#解放应天
+country_event = { 
+	id = ROC_focus.20
+	title = ROC_focus.20.t
+	desc = ROC_focus.20.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+		NOT = { country_exists = GOS }
+	}
+	option = {
+		name = ROC_focus.20.a 
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						has_war_with = XBJ
+					}
+					NOT = {
+						has_war_with = STG
+					}
+				}
+				has_dynamic_modifier = ROC_dynamic_modifiers_nanguozhengfa
+			}
+			remove_dynamic_modifier = {
+				modifier = ROC_dynamic_modifiers_nanguozhengfa
+			}
+			clr_country_flag = ROC_decision_fangyu
+		}
+		if = {
+			limit = {
+				has_idea = ROC_idea_zhonghuagonghezhenyingdebaolei
+			}
+			swap_ideas = {
+				remove_idea = ROC_idea_zhonghuagonghezhenyingdebaolei
+				add_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_A
+			}
+		}
+		else_if ={
+			limit = {
+				has_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_1
+			}
+			swap_ideas = {
+				remove_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_1
+				add_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_A_1
+			}
+		}
+		else_if ={
+			limit = {
+				has_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_10
+			}
+			swap_ideas = {
+				remove_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_10
+				add_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_A_10
+			}
+		}
+		else_if ={
+			limit = {
+				has_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_11
+			}
+			swap_ideas = {
+				remove_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_11
+				add_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_A_11
+			}
+		}
+		else_if ={
+			limit = {
+				has_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_20
+			}
+			swap_ideas = {
+				remove_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_20
+				add_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_A_20
+			}
+		}
+		else_if ={
+			limit = {
+				has_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_21
+			}
+			swap_ideas = {
+				remove_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_21
+				add_idea = ROC_idea_zhonghuagonghezhenyingdebaolei_A_21
+			}
+		}
+		swap_ideas = {
+			remove_idea = ROC_idea_datongdangdequanwei
+			add_idea = ROC_idea_datongdangdequanwei_1
+		}
+		clr_country_flag = FLAG_ROC_decision_gonggubianjie_unlocked
+	}
+}
+#兴师北伐
+country_event = { 
+	id = ROC_focus.21
+	title = ROC_focus.21.t
+	desc = ROC_focus.21.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+		OR = {
+			has_war_with = XBJ
+			has_war_with = STG
+		}
+	}
+	option = {
+		name = ROC_focus.21.a 
+		set_country_flag = FLAG_ROC_decision_beifa_unlocked
+		if = {
+			limit = {
+				NOT = { has_dynamic_modifier = 	ROC_dynamic_modifiers_nanguozhengfa }
+			}
+			add_dynamic_modifier = {
+				modifier = ROC_dynamic_modifiers_nanguozhengfa
+			}
+			set_variable = {#速度
+				ROC_VAR_nanguo_speed_factor = 0
+			}
+			set_variable = {#进攻
+				ROC_VAR_nanguo_attack_factor = 0
+			}
+			set_variable = {#防御
+				ROC_VAR_nanguo_defence_factor = 0
+			}
+			ROC_scripted_effects_gonggubianjie = yes
+		}
+		custom_effect_tooltip = ROC_custom_beifa
+	}
+}
+#解放顺天
+country_event = { 
+	id = ROC_focus.22
+	title = ROC_focus.22.t
+	desc = ROC_focus.22.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+		has_country_flag = FLAG_ROC_decision_beifa_unlocked
+		NOT = { country_exists = XBJ }
+		NOT = { country_exists = STG }
+	}
+	option = {
+		name = ROC_focus.22.a 
+		clr_country_flag = FLAG_ROC_decision_gonggubianjie_unlocked
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						has_war_with = GOS
+					}
+				}
+			}
+			remove_dynamic_modifier = {
+				modifier = ROC_dynamic_modifiers_nanguozhengfa
+			}
+			clr_country_flag = ROC_decision_fangyu
+		}
+	}
+}
+#改革前景（2）
+country_event = { 
+	id = ROC_focus.23
+	title = ROC_focus.23.t
+	desc = ROC_focus.23.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.23.a 
+		complete_national_focus = gaizaojingjidezhunbei
+		set_power_balance = {
+			id = ROC_power_balance
+			left_side = ROC_left_side
+			right_side = ROC_right_side
+			set_default = yes 
+		}
+		set_variable = {
+			VAR_ROC_jianshe_pp_factor = 1
+		}
+		set_variable = {
+			VAR_ROC_jianshe_days_factor = 1
+		}
+		country_event = { id = ROC_pingheng.9997 }
+	}
+}
+#农业改革方案
+country_event = { 
+	id = ROC_focus.24
+	title = ROC_focus.24.t
+	desc = ROC_focus.24.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.24.a 
+		country_event = { days = 15 id = ROC_focus.25 }
+	}
+}
+#大同会农场改制干部日记（1）
+country_event = { 
+	id = ROC_focus.25
+	title = ROC_focus.25.t
+	desc = ROC_focus.25.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.25.a 
+		country_event = { days = 15 id = ROC_focus.26 }
+	}
+}
+#大同会农场改制干部日记（2）
+country_event = { 
+	id = ROC_focus.26
+	title = ROC_focus.26.t
+	desc = ROC_focus.26.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.26.a 
+		country_event = { days = 30 id = ROC_focus.27 }
+	}
+}
+#大同会农场改制干部日记（3）
+country_event = { 
+	id = ROC_focus.27
+	title = ROC_focus.27.t
+	desc = ROC_focus.27.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.27.a 
+		add_political_power = 20
+	}
+}
+#土地改革—合作化农业改革方案
+country_event = { 
+	id = ROC_focus.28
+	title = ROC_focus.28.t
+	desc = ROC_focus.28.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.28.a 
+		country_event = { days = 15 id = ROC_focus.29 }
+	}
+}
+#农会干部日记：土地改革与农业合作化进程（一）
+country_event = { 
+	id = ROC_focus.29
+	title = ROC_focus.29.t
+	desc = ROC_focus.29.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.29.a 
+		country_event = { days = 15 id = ROC_focus.30 }
+	}
+}
+#农会干部日记：土地改革与农业合作化进程（二）
+country_event = { 
+	id = ROC_focus.30
+	title = ROC_focus.30.t
+	desc = ROC_focus.30.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.30.a 
+		country_event = { days = 30 id = ROC_focus.31 }
+	}
+}
+#农会干部日记：土地改革与农业合作化进程（三）
+country_event = { 
+	id = ROC_focus.31
+	title = ROC_focus.31.t
+	desc = ROC_focus.31.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.31.a 
+		add_political_power = 20
+	}
+}
+#扩大“民生产业促进会”范围
+country_event = { 
+	id = ROC_focus.32
+	title = ROC_focus.32.t
+	desc = ROC_focus.32.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.32.a 
+	}
+}
+#革命政府公务员选拔条例（1)
+country_event = { 
+	id = ROC_focus.33
+	title = ROC_focus.33.t
+	desc = ROC_focus.33.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.33.a 
+		country_event = { id = ROC_focus.34 }
+	}
+}
+#革命政府公务员选拔条例（1)
+country_event = { 
+	id = ROC_focus.34
+	title = ROC_focus.34.t
+	desc = ROC_focus.34.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.34.a 
+	}
+}
+#县委员会工作报告（2）
+country_event = { 
+	id = ROC_focus.35
+	title = ROC_focus.35.t
+	desc = ROC_focus.35.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.35.a 
+	}
+}
+#旧军队再教育
+country_event = { 
+	id = ROC_focus.36
+	title = ROC_focus.36.t
+	desc = ROC_focus.36.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.36.a 
+	}
+}
+#南洋舰队的联络
+country_event = { 
+	id = ROC_focus.37
+	title = ROC_focus.37.t
+	desc = ROC_focus.37.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.37.a 
+		complete_national_focus = cedongnanyangjianduicanyugeming
+		# load_oob = ROC_NAVAL
+	}
+}
+#第三届大同会全会
+country_event = { 
+	id = ROC_focus.38
+	title = ROC_focus.38.t
+	desc = ROC_focus.38.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_focus.38.a 
+		set_politics = {
+			ruling_party = moderate_socialism
+			elections_allowed = no
+		}
+		add_ideas = {
+			ROC_idea_YangMingzhai
+			ROC_idea_ZhangBoling
+			ROC_idea_RuanXiaoxian
+			ROC_idea_ZhangShenchuan
+		}
+		trigger = {
+			power_balance_value = {
+				id = ROC_power_balance
+				value > 0.33
+			}
+		}
+	}
+	option = {
+		name = ROC_focus.38.b 
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		add_ideas = {
+			# ROC_idea_TanPingshan
+			ROC_idea_ChenYouren
+			ROC_idea_LiuErsong
+			ROC_idea_YuShude
+		}
+		add_country_leader_trait = {
+			ideology = social_democrat
+			trait = ROC_traits_datongzhuyijianxingzhe
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value >0
+				}
+			}
+			add_ideas = {
+				ROC_idea_TanPingshan
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value <0.001
+				}
+			}
+			add_ideas = {
+				ROC_idea_Xuqian
+			}
+		}
+		trigger = {
+			AND = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value >-0.34
+				}
+			}
+		}
+	}
+	option = {
+		name = ROC_focus.38.c 
+		set_politics = {
+			ruling_party = liberal_democracy
+			elections_allowed = no
+		}
+		add_ideas = {
+			ROC_idea_TaoXingzhi
+			ROC_idea_ChuFucheng
+			ROC_idea_XiaoZheng
+			ROC_idea_DaiLi
+		}
+		trigger = {
+			power_balance_value = {
+				id = ROC_power_balance
+				value < -0.33
+			}
+		}
+	}
+}
+
+
+
+#一、黄埔之夜
+country_event = { 
+	id = ROC_start.1
+	title = ROC_start.1.t
+	desc = ROC_start.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+		date > 1937.8.21
+	}
+	option = {
+		name = ROC_start.1.a 
+		every_state = {
+			limit = {
+				is_owned_and_controlled_by = ROC
+			}
+			set_demilitarized_zone = yes
+		}
+		delete_unit = {}
+	}
+}
+#二、广州兴师
+country_event = { 
+	id = ROC_start.2
+	title = ROC_start.2.t
+	desc = ROC_start.2.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+		date > 1937.8.29
+	}
+	option = {
+		name = ROC_start.2.a 
+		add_political_power = 15
+		complete_national_focus = guangzhouqiyi
+		country_event = { id = ROC_focus.37 }
+		set_country_flag = guangzhouqiyi_flag
+		set_country_flag = { flag = ROC_pingheng_economy_minister value = 1 days = 360 }
+		592 = {
+			set_demilitarized_zone = no
+		}			
+		add_ideas = {#内阁
+			ROC_idea_DongBiwu
+			ROC_idea_WangZhengting
+			ROC_idea_YuShude
+			ROC_idea_FangShengdong
+		}
+		add_ideas = {#国家精神
+			ROC_idea_zhonghuagonghezhenyingdebaolei
+			ROC_idea_gonghejun
+			ROC_idea_meihuazhihai
+			ROC_idea_zhudatonghuizhizongzhu
+			ROC_idea_weigongheerzhan
+			ROC_idea_minzhongduidatonglixiangrenkedu_A
+			ROC_idea_datongdangdequanwei
+		}
+		set_cosmetic_tag = gonghejun
+		load_focus_tree = ROC_gonghe
+		hidden_effect = {
+			set_politics = {
+				ruling_party =  social_democrat
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+					##先锋
+					vanguard_socialism = 1
+					##委员会
+					council_socialism = 4
+					##温和
+					moderate_socialism = 18
+					##工农
+					agroindustrial_socialism = 5
+					##社民
+					social_democrat = 40
+					##调和民主
+					consociationalism = 4
+					##自由民
+					liberal_democracy = 16
+					##保保
+					conservative_democracy = 5
+					##寡头专制
+					authoritarian_oligarchy = 5
+					##领袖意识
+					leader_despotism = 1
+					##神圣复兴
+					sacred_revivalism = 1
+					##国家法团主义
+					national_corporatism = 0
+			}
+			remove_ideas = {
+				MNG_Unsettled_Republicians
+				ROC_Unsettled_Republicians
+				ROC_Unsettled_Republicians_1
+				ROC_Unsettled_Republicians_2
+				ROC_Unsettled_Republicians_3
+				ROC_Unsettled_Republicians_4
+				ROC_Unsettled_Republicians_5
+				ROC_idea_huanandasoubu
+				ROC_idea_huanandasoubu_1
+			}
+			ROC = {
+				ROC_zhangxiaozhun = { set_nationality = ROC }
+				ROC_zhangshaozeng = { set_nationality = ROC }
+				ROC_dengkeng = { set_nationality = ROC }
+				ROC_lijishen = { set_nationality = ROC }
+				ROC_chenmingshu = { set_nationality = ROC }
+				ROC_yuzuobai = { set_nationality = ROC }
+				ROC_dengyanda = { set_nationality = ROC }
+				ROC_xueyue = { set_nationality = ROC }
+				ROC_limingrui = { set_nationality = ROC }
+				ROC_jiangxianyun = { set_nationality = ROC }
+				ROC_helong = { set_nationality = ROC }
+				ROC_zhangfakui = { set_nationality = ROC }
+				ROC_chengeng = { set_nationality = ROC }
+				ROC_zhoushidi = { set_nationality = ROC }
+				ROC_ludeming = { set_nationality = ROC }
+				ROC_wangerzhuo = { set_nationality = ROC }
+				ROC_wangyaowu = { set_nationality = ROC }
+				ROC_lizhangda = { set_nationality = ROC }
+				ROC_jinfozhuang = { set_nationality = ROC }
+				ROC_guanlinzheng = { set_nationality = ROC }
+				ROC_xujishen = { set_nationality = ROC }
+				ROC_duyuming = { set_nationality = ROC }
+				ROC_zhuyunqing = { set_nationality = ROC }
+				ROC_huangqixiang = { set_nationality = ROC }
+				ROC_caoyuan = { set_nationality = ROC }
+				ROC_huangzaixin = { set_nationality = ROC }
+				ROC_xuguangda = { set_nationality = ROC }
+				ROC_liuchouxi = { set_nationality = ROC }
+				ROC_duandechang = { set_nationality = ROC }
+				ROC_caishenxi = { set_nationality = ROC }
+				ROC_linjianzhang = { set_nationality = ROC }
+				ROC_chengbiguang = { set_nationality = ROC }
+				ROC_yangshuzhuang = { set_nationality = ROC }
+				ROC_chenshaokuan = { set_nationality = ROC }
+### 				ROC_chence = { set_nationality = ROC }
+				ROC_lizhilong = { set_nationality = ROC }
+				ROC_duxigui = { set_nationality = ROC }
+				ROC_chenjiliang = { set_nationality = ROC }
+				ROC_linzun = { set_nationality = ROC }
+				ROC_zhaosheng = { set_nationality = ROC }
+				ROC_tangrongbing = { set_nationality = ROC }
+				ROC_wuzhixin = { set_nationality = ROC }
+				ROC_lishijia = { set_nationality = ROC }
+				ROC_xufengzao = { set_nationality = ROC }
+				ROC_caozhongyuan = { set_nationality = ROC }
+				ROC_anjiaju = { set_nationality = ROC }
+				ROC_wangganchang = { set_nationality = ROC }
+				ROC_fengru = { set_nationality = ROC }
+				ROC_wuyouxun = { set_nationality = ROC }
+				#部长，理论家
+				ROC_yangxianyi = { set_nationality = ROC }
+				ROC_huangguangrui = { set_nationality = ROC }
+				ROC_wangbi = { set_nationality = ROC }
+				ROC_changqiankun = { set_nationality = ROC }
+				ROC_liufuji = { set_nationality = ROC }
+			}	
+			GOS = {
+				GOS_zzx = { set_nationality = ROC }
+			}
+		}
+		country_event = { id = ROC_focus.23 days = 30}
+		country_event = { id = ROC_focus.8 days = 60}
+	}
+}
+#三、黄埔誓师
+country_event = { 
+	id = ROC_start.3
+	title = ROC_start.3.t
+	desc = ROC_start.3.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+		date > 1937.8.30
+	}
+	option = {
+		name = ROC_start.3.a 
+	}
+}
+#四、李准肇庆树大旗
+country_event = { 
+	id = ROC_start.4
+	title = ROC_start.4.t
+	desc = ROC_start.4.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+		date > 1937.9.3
+	}
+	option = {
+		name = ROC_start.4.a 
+	}
+}
+#五、李总督兵败佛冈县
+country_event = { 
+	id = ROC_start.5
+	title = ROC_start.5.t
+	desc = ROC_start.5.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+		date > 1937.9.20
+	}
+	option = {
+		name = ROC_start.5.a 
+		army_experience = 15
+		every_state = {
+			limit = {
+				OR = {
+					state = 1115
+					state = 729
+					state = 728
+					state = 818
+					state = 599
+					state = 817
+					state = 591
+					state = 594
+				}
+			}
+			set_demilitarized_zone = no
+		}
+	}
+}
+#六、宝安港党人施连环计
+country_event = { 
+	id = ROC_start.6
+	title = ROC_start.6.t
+	desc = ROC_start.6.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+		date > 1937.9.30
+	}
+	option = {
+		name = ROC_start.6.a 
+		every_state = {
+			limit = {
+				OR = {
+					state = 593
+					state = 326
+				}
+			}
+			set_demilitarized_zone = no
+		}
+	}
+}
+#七、厦门港总督坐艄
+# country_event = { 
+# 	id = ROC_start.7
+# 	title = ROC_start.7.t
+# 	desc = ROC_start.7.d
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+	
+# 	trigger = {
+# 		tag = ROC
+# 		date > 1937.10.5
+# 	}
+# 	option = {
+# 		name = ROC_start.7.a 
+# 		every_state = {
+# 			limit = {
+# 				OR = {
+# 					state = 1114
+# 					state = 814
+# 					state = 595
+# 					state = 813
+# 				}
+# 			}
+# 			set_demilitarized_zone = no
+# 		}
+# 	}
+# }
+#八、李总督淡水城被捕【新闻】
+# country_event = { 
+# 	id = ROC_start.8
+# 	title = ROC_start.8.t
+# 	desc = ROC_start.8.d
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+	
+# 	trigger = {
+# 		tag = ROC
+# 		date > 1937.9.21
+# 	}
+# 	option = {
+# 		name = ROC_start.8.a 
+# 		every_state = {
+# 			limit = {
+# 				OR = {
+# 					state = 1117
+# 					state = 524
+# 				}
+# 			}
+# 			set_demilitarized_zone = no
+# 		}
+# 	}
+# }
+#九、中务局追逃火车站【新闻】
+country_event = { 
+	id = ROC_start.9
+	title = ROC_start.9.t
+	desc = ROC_start.9.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+		date > 1937.10.5
+	}
+	option = {
+		name = ROC_start.9.a 
+		every_state = {
+			limit = {
+				OR = {
+					state = 1114
+					state = 814
+					state = 595
+					state = 813
+					state = 1117
+					state = 524
+				}
+			}
+			set_demilitarized_zone = no
+		}
+		load_oob = "ROC_gonghe_1937"
+		load_oob = "ROC_air"
+		hidden_effect = {
+				delete_unit_template_and_units = { division_template = "昌德卌四年型近卫步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型甲种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型省军步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型卫戍步兵旅" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型骑行步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌八年实验机动步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型山地步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型海军陆战队师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型乙种步兵师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型甲种战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌四年型乙种战车师" }
+				delete_unit_template_and_units = { division_template = "昌德卌五年型近卫战车师" }
+		}
+	}
+}
+#十、赣州城农协出击
+country_event = { 
+	id = ROC_start.10
+	title = ROC_start.10.t
+	desc = ROC_start.10.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+		date > 1937.11.5
+	}
+
+	option = {
+		name = ROC_start.10.a 
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = MNG_nongminyundongbeidaji
+				}
+			}
+			transfer_state = 822
+			add_state_core = 822
+			transfer_state = 815
+			add_state_core = 815
+		}
+	}
+}
+#十一、李总督井冈山尽忠
+country_event = { 
+	id = ROC_start.11
+	title = ROC_start.11.t
+	desc = ROC_start.11.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ROC
+		date > 1937.11.20
+	}
+	option = {
+		name = ROC_start.11.a 
+		every_state = {
+			limit = {
+				AND = {
+					is_owned_and_controlled_by = ROC
+					is_demilitarized_zone = yes
+				}
+			}
+			set_demilitarized_zone = no
+		}
+		hidden_effect = {
+
+		}
+		retire_character = ROC_characters_lizhun
+
+		ROC_characters_huananjiaofusi = { set_nationality = ROC }
+		promote_character = {
+			character = ROC_characters_huananjiaofusi
+			ideology = leader_despotism_subtype
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+#大同会本土大区情况
+country_event = { 
+	id = ROC_datong.1
+	title = ROC_datong.1.t
+	desc = ROC_datong.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ROC_datong.1.a 
+		add_political_power = 25
+	}
+}
+#会议召开
+country_event = { 
+	id = ROC_datong.2
+	title = ROC_datong.2.t
+	desc = ROC_datong.2.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_datong.2.a 
+		add_stability = 0.02
+	}
+}
+#北美大区呼吁关注北美革命
+country_event = { 
+	id = ROC_datong.3
+	title = ROC_datong.3.t
+	desc = ROC_datong.3.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_datong.3.a 
+		country_event = { days = 2 id = ROC_datong.4 }
+	}
+}
+#天竺大区希望大同国际支援武装革命
+country_event = { 
+	id = ROC_datong.4
+	title = ROC_datong.4.t
+	desc = ROC_datong.4.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		trigger = {
+			has_equipment = { infantry_equipment > 1999 }
+		}
+		name = ROC_datong.4.a 
+		send_equipment = { target = BNG type = infantry_equipment amount = 2000 }
+		country_event = { days = 2 id = ROC_datong.5 }
+	}
+	option = {
+		name = ROC_datong.4.b
+		country_event = { days = 2 id = ROC_datong.5 }
+	}
+}
+#南美大区强调当地革命的独特性
+country_event = { 
+	id = ROC_datong.5
+	title = ROC_datong.5.t
+	desc = ROC_datong.5.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_datong.5.a 
+		country_event = { days = 2 id = ROC_datong.6 }
+	}
+}
+#南洋大区聚焦兰芳革命
+country_event = { 
+	id = ROC_datong.6
+	title = ROC_datong.6.t
+	desc = ROC_datong.6.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_datong.6.a 
+		country_event = { days = 2 id = ROC_datong.7 }
+	}
+}
+#中南大区与王室合作
+country_event = { 
+	id = ROC_datong.7
+	title = ROC_datong.7.t
+	desc = ROC_datong.7.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_datong.7.a 
+		country_event = { days = 2 id = ROC_datong.8 }
+	}
+}
+#东洋大区再燃革命烽火（1）
+country_event = { 
+	id = ROC_datong.8
+	title = ROC_datong.8.t
+	desc = ROC_datong.8.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_datong.8.a 
+		country_event = { id = ROC_datong.9 }
+	}
+}
+#东洋大区再燃革命烽火（2）
+country_event = { 
+	id = ROC_datong.9
+	title = ROC_datong.9.t
+	desc = ROC_datong.9.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_datong.9.a 
+	}
+}
+
+
+
+#谭平山
+country_event = { 
+	id = ROC_pingheng.1001
+	title = ROC_pingheng.1001.t
+	desc = ROC_pingheng.1001.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+		has_completed_focus = guangzhouqiyi
+		NOT = {has_country_flag = ROC_pingheng_economy_minister}
+		NOT = {has_country_flag = ROC_pingheng_end}
+		power_balance_value = {
+			id = ROC_power_balance
+			value < 0.5
+		}
+		power_balance_value = {
+			id = ROC_power_balance
+			value > 0
+		}
+		NOT = {has_idea = ROC_idea_TanPingshan}
+	}
+	immediate = {
+		set_country_flag = { flag = ROC_pingheng_economy_minister value = 1 days = 360 }
+	}
+	option = {
+		name = ROC_pingheng.1001.a 
+		add_ideas = ROC_idea_TanPingshan
+	}
+	option = {
+		name = ROC_pingheng.1001.b
+		add_stability = -0.05
+	}
+}
+#董必武
+country_event = { 
+	id = ROC_pingheng.1002
+	title = ROC_pingheng.1002.t
+	desc = ROC_pingheng.1002.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+		has_completed_focus = guangzhouqiyi
+		NOT = {has_country_flag = ROC_pingheng_economy_minister}
+		NOT = {has_country_flag = ROC_pingheng_end}
+		tag = ROC
+		power_balance_value = {
+			id = ROC_power_balance
+			value > 0.499
+		}
+		NOT = {has_idea = ROC_idea_DongBiwu}
+	}
+	immediate = {
+		set_country_flag = { flag = ROC_pingheng_economy_minister value = 1 days = 360 }
+	}
+	option = {
+		name = ROC_pingheng.1002.a 
+		add_ideas = ROC_idea_DongBiwu
+	}
+	option = {
+		name = ROC_pingheng.1002.b
+		add_stability = -0.05
+	}
+}
+#徐谦
+country_event = { 
+	id = ROC_pingheng.1003
+	title = ROC_pingheng.1003.t
+	desc = ROC_pingheng.1003.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+		has_completed_focus = guangzhouqiyi
+		NOT = {has_country_flag = ROC_pingheng_economy_minister}
+		NOT = {has_country_flag = ROC_pingheng_end}
+		tag = ROC
+		power_balance_value = {
+			id = ROC_power_balance
+			value < 0
+		}
+		power_balance_value = {
+			id = ROC_power_balance
+			value > -0.5
+		}
+		NOT = {has_idea = ROC_idea_Xuqian}
+	}
+	immediate = {
+		set_country_flag = { flag = ROC_pingheng_economy_minister value = 1 days = 360 }
+	}
+	option = {
+		name = ROC_pingheng.1003.a 
+		add_ideas = ROC_idea_Xuqian
+	}
+	option = {
+		name = ROC_pingheng.1003.b
+		add_stability = -0.05
+	}
+}
+#黄炎培
+country_event = { 
+	id = ROC_pingheng.1004
+	title = ROC_pingheng.1004.t
+	desc = ROC_pingheng.1004.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+		has_completed_focus = guangzhouqiyi
+		NOT = {has_country_flag = ROC_pingheng_economy_minister}
+		NOT = {has_country_flag = ROC_pingheng_end}
+		tag = ROC
+		power_balance_value = {
+			id = ROC_power_balance
+			value < -0.499
+		}
+		NOT = {has_idea = ROC_idea_HuangYanpei}
+	}
+	immediate = {
+		set_country_flag = { flag = ROC_pingheng_economy_minister value = 1 days = 360 }
+	}
+	option = {
+		name = ROC_pingheng.1004.a 
+		add_ideas = ROC_idea_HuangYanpei
+	}
+	option = {
+		name = ROC_pingheng.1004.b
+		add_stability = -0.05
+	}
+}
+#经济部长
+country_event = { 
+	id = ROC_pingheng.9997
+	title = ROC_pingheng.9997.t
+	desc = ROC_pingheng.9997.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.9997.a 
+		add_ideas = ROC_idea_YuShude
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < -0.34
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > -0.339
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.02
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9997.b 
+		add_ideas = ROC_idea_YanYangchu
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.02
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9997.c 
+		add_ideas = ROC_idea_ChenZanxian
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.02
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.1
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9997.e
+		add_ideas = ROC_idea_RuanXiaoxian
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.08
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9997.f
+		add_ideas = ROC_idea_XiaoZheng
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < -0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.02
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > -0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.1
+			}
+		}
+	}
+}
+#经济部长
+country_event = { 
+	id = ROC_pingheng.9998
+	title = ROC_pingheng.9998.t
+	desc = ROC_pingheng.9998.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	immediate = {
+		set_country_flag = country_flag_jingjidahui_1
+	}
+	option = {
+		name = ROC_pingheng.9998.a 
+		add_ideas = ROC_idea_YuShude
+		trigger = {
+			NOT ={has_idea = ROC_idea_YuShude}
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < -0.34
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > -0.339
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.02
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9998.b 
+		add_ideas = ROC_idea_YanYangchu
+		trigger = {
+			NOT ={has_idea = ROC_idea_YanYangchu}
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.02
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9998.c 
+		add_ideas = ROC_idea_ChenZanxian
+		trigger = {
+			NOT ={has_idea = ROC_idea_ChenZanxian}
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.02
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.1
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9998.k 
+		add_ideas = ROC_idea_RuanXiaoxian
+		trigger = {
+			NOT ={has_idea = ROC_idea_RuanXiaoxian}
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.08
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9998.e 
+		add_ideas = ROC_idea_XiaoZheng
+		trigger = {
+			NOT ={has_idea = ROC_idea_XiaoZheng}
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < -0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.02
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > -0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.1
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9998.f 
+		add_ideas = ROC_idea_YuShude
+		trigger = {
+			has_idea = ROC_idea_YuShude
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < -0.34
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > -0.339
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.02
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9998.g 
+		add_ideas = ROC_idea_YanYangchu
+		trigger = {
+			has_idea = ROC_idea_YanYangchu
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.02
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9998.h 
+		add_ideas = ROC_idea_ChenZanxian
+		trigger = {
+			has_idea = ROC_idea_ChenZanxian
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.02
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.1
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9998.i 
+		add_ideas = ROC_idea_RuanXiaoxian
+		trigger = {
+			has_idea = ROC_idea_RuanXiaoxian
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.08
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9998.j 
+		add_ideas = ROC_idea_XiaoZheng
+		trigger = {
+			has_idea = ROC_idea_XiaoZheng
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < -0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.02
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > -0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > -0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.1
+			}
+		}
+	}
+}
+#经济部长
+country_event = { 
+	id = ROC_pingheng.9999
+	title = ROC_pingheng.9999.t
+	desc = ROC_pingheng.9999.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.9999.a 
+		add_ideas = ROC_idea_YuShude
+		trigger = {
+			NOT ={has_idea = ROC_idea_YuShude}
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < -0.34
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > -0.339
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.02
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9999.b 
+		add_ideas = ROC_idea_YanYangchu
+		trigger = {
+			NOT ={has_idea = ROC_idea_YanYangchu}
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.02
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9999.c 
+		add_ideas = ROC_idea_ChenZanxian
+		trigger = {
+			NOT ={has_idea = ROC_idea_ChenZanxian}
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.02
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.1
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9999.k 
+		add_ideas = ROC_idea_RuanXiaoxian
+		trigger = {
+			NOT ={has_idea = ROC_idea_RuanXiaoxian}
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.08
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9999.e 
+		add_ideas = ROC_idea_XiaoZheng
+		trigger = {
+			NOT ={has_idea = ROC_idea_XiaoZheng}
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < -0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.02
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > -0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.1
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9999.f 
+		add_ideas = ROC_idea_YuShude
+		trigger = {
+			has_idea = ROC_idea_YuShude
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < -0.34
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > -0.339
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.02
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9999.g 
+		add_ideas = ROC_idea_YanYangchu
+		trigger = {
+			has_idea = ROC_idea_YanYangchu
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.02
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9999.h 
+		add_ideas = ROC_idea_ChenZanxian
+		trigger = {
+			has_idea = ROC_idea_ChenZanxian
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.02
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.1
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9999.i 
+		add_ideas = ROC_idea_RuanXiaoxian
+		trigger = {
+			has_idea = ROC_idea_RuanXiaoxian
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = 0.08
+			}
+		}
+	}
+	option = {
+		name = ROC_pingheng.9999.j 
+		add_ideas = ROC_idea_XiaoZheng
+		trigger = {
+			has_idea = ROC_idea_XiaoZheng
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value < -0.339
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.02
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > -0.34
+				}
+				power_balance_value = {
+					id = ROC_power_balance
+					value < 0
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.05
+			}
+		}
+		else_if = {
+			limit = {
+				power_balance_value = {
+					id = ROC_power_balance
+					value > -0.001
+				}
+			}
+			add_power_balance_value = {
+			    id = ROC_power_balance
+			    value = -0.1
+			}
+		}
+	}
+}
+#经济缓进方略
+country_event = { 
+	id = ROC_pingheng.1
+	title = ROC_pingheng.1.t
+	desc = ROC_pingheng.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.1.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_zuo_1
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = -0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_you_1
+	}
+	option = {
+		name = ROC_pingheng.1.b 
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = 0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#要求保障民企利益
+country_event = { 
+	id = ROC_pingheng.2
+	title = ROC_pingheng.2.t
+	desc = ROC_pingheng.2.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.2.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_zuo_2
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = -0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_you_2
+	}
+	option = {
+		name = ROC_pingheng.2.b 
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = 0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#接纳大企业家入会
+country_event = { 
+	id = ROC_pingheng.3
+	title = ROC_pingheng.3.t
+	desc = ROC_pingheng.3.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.3.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_zuo_3
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = -0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_you_3
+	}
+	option = {
+		name = ROC_pingheng.3.b 
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = 0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#提议恢复广交所
+country_event = { 
+	id = ROC_pingheng.4
+	title = ROC_pingheng.4.t
+	desc = ROC_pingheng.4.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.4.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_zuo_4
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = -0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_you_4
+	}
+	option = {
+		name = ROC_pingheng.4.b 
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = 0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#缓和乡村斗争
+country_event = { 
+	id = ROC_pingheng.5
+	title = ROC_pingheng.5.t
+	desc = ROC_pingheng.5.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.5.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_zuo_5
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = -0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_you_5
+	}
+	option = {
+		name = ROC_pingheng.5.b 
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = 0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#推动农会经济化转向
+country_event = { 
+	id = ROC_pingheng.6
+	title = ROC_pingheng.6.t
+	desc = ROC_pingheng.6.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.6.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_zuo_6
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = -0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_you_6
+	}
+	option = {
+		name = ROC_pingheng.6.b 
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = 0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#提案土地流转权
+country_event = { 
+	id = ROC_pingheng.7
+	title = ROC_pingheng.7.t
+	desc = ROC_pingheng.7.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.7.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_zuo_7
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = -0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_you_7
+	}
+	option = {
+		name = ROC_pingheng.7.b 
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = 0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#革命自由化
+country_event = { 
+	id = ROC_pingheng.8
+	title = ROC_pingheng.8.t
+	desc = ROC_pingheng.8.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.8.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_zuo_8
+			}
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_you_8
+	}
+	option = {
+		name = ROC_pingheng.8.b 
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#宣扬“政治民主”
+country_event = { 
+	id = ROC_pingheng.9
+	title = ROC_pingheng.9.t
+	desc = ROC_pingheng.9.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.9.b 
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#要求速行宪政
+country_event = { 
+	id = ROC_pingheng.10
+	title = ROC_pingheng.10.t
+	desc = ROC_pingheng.10.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.10.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_zuo_10
+			}
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_you_10
+	}
+	option = {
+		name = ROC_pingheng.10.b 
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#放宽组党审核
+country_event = { 
+	id = ROC_pingheng.11
+	title = ROC_pingheng.11.t
+	desc = ROC_pingheng.11.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.11.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_zuo_11
+			}
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_you_11
+	}
+	option = {
+		name = ROC_pingheng.11.b 
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#质疑大同会地位
+country_event = { 
+	id = ROC_pingheng.12
+	title = ROC_pingheng.12.t
+	desc = ROC_pingheng.12.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.12.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_zuo_12
+			}
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_you_12
+	}
+	option = {
+		name = ROC_pingheng.12.b 
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#轮流坐庄
+country_event = { 
+	id = ROC_pingheng.13
+	title = ROC_pingheng.13.t
+	desc = ROC_pingheng.13.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.13.b 
+		country_event = { id = ROC_pingheng.45 days = 5 }
+	}
+}
+#推进所有制革命
+country_event = { 
+	id = ROC_pingheng.14
+	title = ROC_pingheng.14.t
+	desc = ROC_pingheng.14.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.14.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_you_1
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = 0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_zuo_1
+	}
+	option = {
+		name = ROC_pingheng.14.b 
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#加快公私合营进程
+country_event = { 
+	id = ROC_pingheng.15
+	title = ROC_pingheng.15.t
+	desc = ROC_pingheng.15.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.15.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_you_2
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = 0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_zuo_2
+	}
+	option = {
+		name = ROC_pingheng.15.b 
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#强化工会革命性
+country_event = { 
+	id = ROC_pingheng.16
+	title = ROC_pingheng.16.t
+	desc = ROC_pingheng.16.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.16.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_you_3
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = 0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_zuo_3
+	}
+	option = {
+		name = ROC_pingheng.16.b 
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#确立公有制经济主体地位
+country_event = { 
+	id = ROC_pingheng.17
+	title = ROC_pingheng.17.t
+	desc = ROC_pingheng.17.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.17.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_you_4
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = 0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_zuo_4
+	}
+	option = {
+		name = ROC_pingheng.17.b 
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#土地改革激进化
+country_event = { 
+	id = ROC_pingheng.18
+	title = ROC_pingheng.18.t
+	desc = ROC_pingheng.18.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.18.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_you_5
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = 0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_zuo_5
+	}
+	option = {
+		name = ROC_pingheng.18.b 
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#维持农会武装
+country_event = { 
+	id = ROC_pingheng.19
+	title = ROC_pingheng.19.t
+	desc = ROC_pingheng.19.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.19.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_you_6
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = 0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_zuo_6
+	}
+	option = {
+		name = ROC_pingheng.19.b 
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#扩大农村合作社规模
+country_event = { 
+	id = ROC_pingheng.20
+	title = ROC_pingheng.20.t
+	desc = ROC_pingheng.20.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.20.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_you_7
+			}
+		}
+		add_power_balance_value = {
+			id = ROC_power_balance
+			value = 0.05
+		}
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_zuo_7
+	}
+	option = {
+		name = ROC_pingheng.20.b 
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#革命激进化
+country_event = { 
+	id = ROC_pingheng.21
+	title = ROC_pingheng.21.t
+	desc = ROC_pingheng.21.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.21.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_you_8
+			}
+		}
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_zuo_8
+	}
+	option = {
+		name = ROC_pingheng.21.b 
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#优先工农权益
+country_event = { 
+	id = ROC_pingheng.22
+	title = ROC_pingheng.22.t
+	desc = ROC_pingheng.22.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.22.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_you_9
+			}
+		}
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_zuo_9
+	}
+	option = {
+		name = ROC_pingheng.22.b 
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#争夺革命领导权
+country_event = { 
+	id = ROC_pingheng.23
+	title = ROC_pingheng.23.t
+	desc = ROC_pingheng.23.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.23.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_you_10
+			}
+		}
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_zuo_10
+	}
+	option = {
+		name = ROC_pingheng.23.b 
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#掀起理论论战
+country_event = { 
+	id = ROC_pingheng.24
+	title = ROC_pingheng.24.t
+	desc = ROC_pingheng.24.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.24.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_you_11
+			}
+		}
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_zuo_11
+	}
+	option = {
+		name = ROC_pingheng.24.b 
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+	}
+}
+#打击修正分子
+country_event = { 
+	id = ROC_pingheng.25
+	title = ROC_pingheng.25.t
+	desc = ROC_pingheng.25.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.25.a 
+		trigger = {
+			NOT = {
+				has_country_flag = ROC_flag_sanpai_you_12
+			}
+		}
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = -0.05
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		set_country_flag = ROC_flag_sanpai_zuo_12
+		country_event = {
+			id = ROC_pingheng.52
+		}
+	}
+	option = {
+		name = ROC_pingheng.25.b 
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = 0.08
+		}
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		country_event = {
+			id = ROC_pingheng.53
+		}
+	}
+}
+#继续革命
+country_event = { 
+	id = ROC_pingheng.26
+	title = ROC_pingheng.26.t
+	desc = ROC_pingheng.26.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.26.b 
+		add_to_variable = {
+            var = ROC_VAR_zuoyi_base
+            value = 1
+		}
+		add_political_power = -200
+		add_war_support = -0.15
+	    ROC_scripted_effects_youyi = yes
+        ROC_scripted_effects_zuoyi = yes
+		country_event = {
+			id = ROC_pingheng.54
+			days = 10
+		}
+	}
+}
+#革命统一战线
+country_event = { 
+	id = ROC_pingheng.27
+	title = ROC_pingheng.27.t
+	desc = ROC_pingheng.27.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.27.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#强化政治团结
+country_event = { 
+	id = ROC_pingheng.28
+	title = ROC_pingheng.28.t
+	desc = ROC_pingheng.28.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.28.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#积极参政议政
+country_event = { 
+	id = ROC_pingheng.29
+	title = ROC_pingheng.29.t
+	desc = ROC_pingheng.29.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.29.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#协助工业改造
+country_event = { 
+	id = ROC_pingheng.30
+	title = ROC_pingheng.30.t
+	desc = ROC_pingheng.30.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.30.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#协助农业改造
+country_event = { 
+	id = ROC_pingheng.31
+	title = ROC_pingheng.31.t
+	desc = ROC_pingheng.31.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.31.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#落实新经济法
+country_event = { 
+	id = ROC_pingheng.32
+	title = ROC_pingheng.32.t
+	desc = ROC_pingheng.32.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.32.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#支持三三制政府
+country_event = { 
+	id = ROC_pingheng.33
+	title = ROC_pingheng.33.t
+	desc = ROC_pingheng.33.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.33.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#基层支部合作
+country_event = { 
+	id = ROC_pingheng.34
+	title = ROC_pingheng.34.t
+	desc = ROC_pingheng.34.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.34.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#推进跨党工作
+country_event = { 
+	id = ROC_pingheng.35
+	title = ROC_pingheng.35.t
+	desc = ROC_pingheng.35.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.35.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#压制分裂主义
+country_event = { 
+	id = ROC_pingheng.36
+	title = ROC_pingheng.36.t
+	desc = ROC_pingheng.36.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.36.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#配合开展群众运动
+country_event = { 
+	id = ROC_pingheng.37
+	title = ROC_pingheng.37.t
+	desc = ROC_pingheng.37.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.37.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#强化合作宣传
+country_event = { 
+	id = ROC_pingheng.38
+	title = ROC_pingheng.38.t
+	desc = ROC_pingheng.38.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.38.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#研讨革命理论
+country_event = { 
+	id = ROC_pingheng.39
+	title = ROC_pingheng.39.t
+	desc = ROC_pingheng.39.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.39.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#研讨革命理论
+country_event = { 
+	id = ROC_pingheng.40
+	title = ROC_pingheng.40.t
+	desc = ROC_pingheng.40.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.40.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.02
+		}
+	}
+}
+#研讨革命理论
+country_event = { 
+	id = ROC_pingheng.41
+	title = ROC_pingheng.41.t
+	desc = ROC_pingheng.41.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.41.a
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.1
+		}
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = -0.1
+		}
+	}
+}
+country_event = { 
+	id = ROC_pingheng.42
+	title = ROC_pingheng.42.t
+	desc = ROC_pingheng.42.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.42.b
+		add_stability = 0.05
+	}
+}
+country_event = { 
+	id = ROC_pingheng.43
+	title = ROC_pingheng.43.t
+	desc = ROC_pingheng.43.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.43.b 
+
+	}
+}
+country_event = { 
+	id = ROC_pingheng.44
+	title = ROC_pingheng.44.t
+	desc = ROC_pingheng.44.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.44.a
+		country_event = { id = ROC_pingheng.7 days = 5 }
+	}
+}
+country_event = { 
+	id = ROC_pingheng.45
+	title = ROC_pingheng.45.t
+	desc = ROC_pingheng.45.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.45.a
+		country_event = { id = ROC_pingheng.46 days = 10 }
+	}
+	option = {
+		name = ROC_pingheng.45.b
+		country_event = { id = ROC_pingheng.46 days = 10 }
+	}
+}
+country_event = { 
+	id = ROC_pingheng.46
+	title = ROC_pingheng.46.t
+	desc = ROC_pingheng.46.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.46.a
+		add_political_power = -200
+		add_stability = -0.15
+		add_to_variable = {
+            var = ROC_VAR_youyi_base
+            value = 1
+		}
+	}
+}
+country_event = { 
+	id = ROC_pingheng.47
+	title = ROC_pingheng.47.t
+	desc = ROC_pingheng.47.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.47.a
+		country_event = {
+			id = ROC_pingheng.27
+		}
+	}
+}
+country_event = { 
+	id = ROC_pingheng.48
+	title = ROC_pingheng.48.t
+	desc = ROC_pingheng.48.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.48.a
+		country_event = {
+			id = ROC_pingheng.37
+		}
+	}
+}
+country_event = { 
+	id = ROC_pingheng.49
+	title = ROC_pingheng.49.t
+	desc = ROC_pingheng.49.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.49.a
+		add_war_support = 0.05
+	}
+}
+country_event = { 
+	id = ROC_pingheng.50
+	title = ROC_pingheng.50.t
+	desc = ROC_pingheng.50.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.50.a
+		add_political_power = 50
+	}
+}
+country_event = { 
+	id = ROC_pingheng.51
+	title = ROC_pingheng.51.t
+	desc = ROC_pingheng.51.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.51.a
+		country_event = { id = ROC_pingheng.15 }
+	}
+}
+country_event = { 
+	id = ROC_pingheng.52
+	title = ROC_pingheng.52.t
+	desc = ROC_pingheng.52.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.52.a
+	}
+}
+country_event = { 
+	id = ROC_pingheng.53
+	title = ROC_pingheng.53.t
+	desc = ROC_pingheng.53.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.53.a
+	}
+}
+country_event = { 
+	id = ROC_pingheng.54
+	title = ROC_pingheng.54.t
+	desc = ROC_pingheng.54.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	option = {
+		name = ROC_pingheng.54.a
+	}
+}
+# country_event = { 
+# 	id = ROC_pingheng.9888
+# 	title = ROC_pingheng.9888.t
+# 	desc = ROC_pingheng.9888.d
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		tag = ROC
+# 	}
+# 	option = {
+# 		name = ROC_pingheng.9888.a 
+# 		add_stability = ROC_VAR_youyi_base
+# 	}
+# }

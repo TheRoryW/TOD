@@ -1,5 +1,15 @@
 ideas = {
 	country = {
+		#资源开采潜力
+		UKR_jifaqianneng = {
+			name = UKR_jifaqianneng
+			picture = UKR_fayuancheli
+			removal_cost = -1
+			allowed = { original_tag = UKR }
+			modifier = {
+		local_resources_factor = 0.10
+			}
+		}
 		#独立精神
 		UKR_dulijingshen1 = {
 			name = UKR_dulijingshen
@@ -315,10 +325,10 @@ ideas = {
 			allowed = { original_tag = UKR }
 			modifier = {
 				conscription_factor = 0.1
-				cavalry_speed_factor = 0.05
+				### cavalry_speed_factor = 0.05  # not a valid modifier
 				cavalry_attack_factor = 0.1
 				supply_consumption_factor = -0.05
-				conscription_factor = 0.1
+### 				conscription_factor = 0.1  # duplicate
 			}
 		}
 		#尚武精神3
@@ -329,10 +339,10 @@ ideas = {
 			allowed = { original_tag = UKR }
 			modifier = {
 				conscription_factor = 0.1
-				cavalry_speed_factor = 0.05
+				### cavalry_speed_factor = 0.05  # not a valid modifier
 				cavalry_attack_factor = 0.1
 				supply_consumption_factor = -0.05
-				conscription_factor = 0.1
+### 				conscription_factor = 0.1  # duplicate
 				resistance_damage_to_garrison_on_our_occupied_states = -0.15
 			}
 		}
@@ -351,7 +361,7 @@ ideas = {
 			removal_cost = -1	
 			allowed = { original_tag = UKR }
 			modifier = { 
-				research_bonus = {industry = 0.1}
+				### research_bonus = {industry = 0.1}  # not valid as modifier
 				production_factory_max_efficiency_factor = 0.1 
 				production_factory_efficiency_gain_factor  = 0.1
 			}
@@ -386,16 +396,16 @@ ideas = {
 			allowed = { original_tag = UKR }
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
-				equipment_bonus = {
-					infantry_equipment = {
-						build_cost_ic = -0.1
-						instant = yes
-					}
-					support_equipment = {
-						build_cost_ic = -0.1
-						instant = yes
-					}
-				}
+				### equipment_bonus = {  # not valid as modifier
+				### infantry_equipment = {
+				### 	build_cost_ic = -0.1
+				### 	instant = yes
+				### }
+				### support_equipment = {
+				### 	build_cost_ic = -0.1
+				### 	instant = yes
+				### }
+			### }
 			}
 		}
 		#全新的国防军

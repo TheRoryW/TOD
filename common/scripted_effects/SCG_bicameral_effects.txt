@@ -1,0 +1,85 @@
+# 根据人民大会授权与政党会协调度，更新两院政治的即时状态。
+SCG_liangyuan_zhengzhi_gengxin = {
+	hidden_effect = {
+		if = {
+			limit = { check_variable = { SCG.renmin_shouquan > 100 } }
+			set_variable = { SCG.renmin_shouquan = 100 }
+		}
+		else_if = {
+			limit = { check_variable = { SCG.renmin_shouquan < 0 } }
+			set_variable = { SCG.renmin_shouquan = 0 }
+		}
+		if = {
+			limit = { check_variable = { SCG.dangji_xietiao > 100 } }
+			set_variable = { SCG.dangji_xietiao = 100 }
+		}
+		else_if = {
+			limit = { check_variable = { SCG.dangji_xietiao < 0 } }
+			set_variable = { SCG.dangji_xietiao = 0 }
+		}
+		if = {
+			limit = { check_variable = { SCG.chongjian > 100 } }
+			set_variable = { SCG.chongjian = 100 }
+		}
+		else_if = {
+			limit = { check_variable = { SCG.chongjian < 0 } }
+			set_variable = { SCG.chongjian = 0 }
+		}
+		if = { limit = { has_idea = SCG_liangyuan_zhengzhi_zhengchang } remove_ideas = SCG_liangyuan_zhengzhi_zhengchang }
+		if = { limit = { has_idea = SCG_liangyuan_zhengzhi_weiji } remove_ideas = SCG_liangyuan_zhengzhi_weiji }
+		if = {
+			limit = {
+				check_variable = { SCG.renmin_shouquan > 69 }
+				check_variable = { SCG.dangji_xietiao > 69 }
+			}
+			add_ideas = SCG_liangyuan_zhengzhi_zhengchang
+			set_variable = { SCG_liangyuan_zhengzhi_wending = 0.08 }
+			set_variable = { SCG_liangyuan_zhengzhi_zhengzhi = 0.08 }
+			set_variable = { SCG_liangyuan_zhengzhi_chanchu = 0.03 }
+			set_variable = { SCG_liangyuan_zhengzhi_xiaofei = -0.02 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { SCG.renmin_shouquan < 30 }
+					check_variable = { SCG.dangji_xietiao < 30 }
+				}
+			}
+			add_ideas = SCG_liangyuan_zhengzhi_weiji
+			set_variable = { SCG_liangyuan_zhengzhi_wending = -0.08 }
+			set_variable = { SCG_liangyuan_zhengzhi_zhengzhi = -0.08 }
+			set_variable = { SCG_liangyuan_zhengzhi_chanchu = -0.03 }
+			set_variable = { SCG_liangyuan_zhengzhi_xiaofei = 0.03 }
+		}
+		else = {
+			add_ideas = SCG_liangyuan_zhengzhi_zhengchang
+			set_variable = { SCG_liangyuan_zhengzhi_wending = 0.00 }
+			set_variable = { SCG_liangyuan_zhengzhi_zhengzhi = 0.03 }
+			set_variable = { SCG_liangyuan_zhengzhi_chanchu = 0.00 }
+			set_variable = { SCG_liangyuan_zhengzhi_xiaofei = 0.00 }
+		}
+	}
+}
+
+# 革命声望反映四川革命政府在全国范围内的政治信誉，始终限制为 0—100。
+SCG_geming_shengwang_gengxin = {
+	hidden_effect = {
+		if = {
+			limit = { check_variable = { SCG.geming_shengwang > 100 } }
+			set_variable = { SCG.geming_shengwang = 100 }
+		}
+		else_if = {
+			limit = { check_variable = { SCG.geming_shengwang < 0 } }
+			set_variable = { SCG.geming_shengwang = 0 }
+		}
+	}
+}
+
+# 全国整合成功后由合并事件统一调用，避免只进行裸吞并。
+SCG_Sichuan_integration_effect = {
+	set_country_flag = SCG_wancheng_zhengquan_zhenghe
+	clr_country_flag = SCG_hebing_tanpan_jinxingzhong
+	add_stability = 0.02
+	add_political_power = 35
+	SCG_liangyuan_zhengzhi_gengxin = yes
+}

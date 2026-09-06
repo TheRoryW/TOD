@@ -1,0 +1,20 @@
+﻿capital = 303
+
+oob = "PRU_1936"
+
+set_politics = {
+	ruling_party = authoritarian_oligarchy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	authoritarian_oligarchy = 100
+}
+
+recruit_character = PRU_Dolores_Cacuango
+
+add_ideas = {
+	#
+}

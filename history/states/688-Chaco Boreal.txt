@@ -11,11 +11,10 @@ state={
 	}
 
 	history={
-		owner = PAR
+		owner = BOL
 		buildings = {
 			infrastructure = 0
 		}
-		add_core_of = PAR
 		add_core_of = BOL
 	}
 	

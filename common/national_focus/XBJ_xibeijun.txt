@@ -1,0 +1,1220 @@
+focus_tree = {
+	id = XBJ_xibeijun
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XBJ
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 2000
+		y = 2000
+	}
+	focus = {#未雨绸缪
+		id = XBJ_weiyuchoumou
+		text = XBJ_weiyuchoumou
+		icon = GFX_weiyuchoumou
+		cost = 1
+		x = 12
+		y = 0
+		search_filters = { FOCUS_FILTER_POLITICAL } #政治筛选器
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = XBJ_jieruchou
+		text = XBJ_jieruchou
+		icon = GFX_jieruchou
+		cost = 10
+		mutually_exclusive = {
+			focus = XBJ_nixiahangou
+		}
+		prerequisite = {
+			focus = XBJ_yingquanermu
+		}
+		x = 8
+		y = 6
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = XBJ_nixiahangou
+		text = XBJ_nixiahangou
+		icon = GFX_nixiahangou
+		cost = 10
+		mutually_exclusive = {
+			focus = XBJ_jieruchou
+		}
+		prerequisite = {
+			focus = XBJ_yingquanermu
+		}
+		x = 10
+		y = 6
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = XBJ_jueshengqianli
+		text = XBJ_jueshengqianli
+		icon = GFX_jueshengqianli
+		cost = 10
+		prerequisite = {
+			focus = XBJ_bichangbujing
+		}
+		prerequisite = {
+			focus = XBJ_chuleibacui
+		}
+		x = 23
+		y = 7
+		completion_reward = {
+			1210 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes 
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	# focus = {
+	# 	id = XBJ_chuanxitianxia
+	# 	text = XBJ_chuanxitianxia
+	# 	icon = GFX_chuanxitianxia
+	# 	cost = 0
+	# 	x = 29
+	# 	y = 0
+	# }
+	focus = {#舞棍弄棒
+		id = XBJ_wugunnongbang
+		text = XBJ_wugunnongbang
+		icon = GFX_wugunnongbang
+		cost = 2
+		search_filters = { FOCUS_FILTER_MANPOWER } #人力筛选器
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = -0.05
+			custom_effect_tooltip = XBJ_wugunnongbang_tt
+			hidden_effect = {
+				1193 = {
+					create_unit = {
+						division = "name = \"第一治安警备骑兵队\" division_template = \"昌德卌四年型治安骑警旅\" start_experience_factor = 0.3"
+						prioritize_location = 13498
+						owner = XBJ
+					}
+					create_unit = {
+						division = "name = \"第二治安警备骑兵队\" division_template = \"昌德卌四年型治安骑警旅\" start_experience_factor = 0.3"
+						prioritize_location = 4709
+						owner = XBJ
+					}
+					create_unit = {
+						division = "name = \"第三治安警备骑兵队\" division_template = \"昌德卌四年型治安骑警旅\" start_experience_factor = 0.3"
+						prioritize_location = 12656
+						owner = XBJ
+					}
+				}
+			}
+		}				
+		prerequisite = {
+			focus = XBJ_weiyuchoumou
+		}
+		mutually_exclusive = {
+			focus = XBJ_jiezeeryu
+		}
+		x = 9
+		y = 1
+	}
+	focus = {
+		id = XBJ_jiezeeryu
+		text = XBJ_jiezeeryu
+		icon = GFX_jiezeeryu
+		cost = 2
+		prerequisite = {
+			focus = XBJ_weiyuchoumou
+		}
+		mutually_exclusive = {
+			focus = XBJ_wugunnongbang
+		}
+		x = 15
+		y = 1
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = -0.05
+			hidden_effect = {
+				744 = {
+					create_unit = {
+						division = "name = \"近卫第9步兵师\" division_template = \"昌德卌四年型近卫步兵师\" start_experience_factor = 0.3"
+						prioritize_location = 7418
+						owner = XBJ
+					}
+				}
+			}
+			custom_effect_tooltip = XBJ_jiezeeryu_tt
+		}
+	}
+	focus = {#济时拯世
+		id = XBJ_jishizhengshi
+		text = XBJ_jishizhengshi
+		icon = GFX_jishizhengshi
+		cost = 2
+		search_filters = { FOCUS_FILTER_POLITICAL }	#政治筛选器
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = civilian_economy
+    			add_idea = partial_economic_mobilisation
+			}
+			add_timed_idea = { idea = XBJ_duanshitongku days = 180 }
+			unlock_decision_category_tooltip = XBJ_quanmian_jieguan
+		}
+		prerequisite = {
+			focus = XBJ_wugunnongbang
+			focus = XBJ_jiezeeryu
+		}
+		x = 2
+		y = 2
+	}
+	focus = {#兴利节用
+		id = XBJ_xinglijieyong
+		text = XBJ_xinglijieyong
+		icon = GFX_xinglijieyong
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }	#政治筛选器
+		completion_reward = {
+			modify_timed_idea = { idea = XBJ_duanshitongku days = 180 }
+			unlock_decision_category_tooltip = XBJ_kaiyuan_jieliu
+		}
+		prerequisite = {
+			focus = XBJ_jishizhengshi
+		}
+		x = 2
+		y = 3
+	}
+	focus = {#器物救国
+		id = XBJ_qiwujiuguo
+		text = XBJ_qiwujiuguo
+		icon = GFX_qiwujiuguo
+		cost = 5
+		prerequisite = {
+			focus = XBJ_xinglijieyong
+		}
+		mutually_exclusive = {
+			focus = XBJ_liyuexingguo
+		}
+		completion_reward = {
+			add_tech_bonus ={
+				bonus = 1
+				uses = 2
+				category = industry
+				name = industry
+			}
+			swap_ideas = {
+				remove_idea = XBJ_Backward_Region_1
+    			add_idea = XBJ_Backward_Region_2
+			}
+		}
+		x = 0
+		y = 4
+	}
+	focus = {#礼乐兴国
+		id = XBJ_liyuexingguo
+		text = XBJ_liyuexingguo
+		icon = GFX_liyuexingguo
+		cost = 5
+		prerequisite = {
+			focus = XBJ_xinglijieyong
+		}
+		mutually_exclusive = {
+			focus = XBJ_qiwujiuguo
+		}
+		completion_reward = {
+			add_tech_bonus ={
+				bonus = 1
+				uses = 2
+				category = electronics
+				name = electronics
+			}
+			swap_ideas = {
+				remove_idea = XBJ_Backward_Region_1
+    			add_idea = XBJ_Backward_Region_2
+			}
+		}
+		x = 4
+		y = 4
+	}
+	focus = {#六畜兴旺
+		id = XBJ_liuchuxingwang
+		text = XBJ_liuchuxingwang
+		icon = GFX_liuchuxingwang
+		cost = 7
+		prerequisite = {
+			focus = XBJ_liyuexingguo
+			focus = XBJ_qiwujiuguo
+		}
+		completion_reward = {
+			add_stability = 0.05
+			unlock_decision_category_tooltip = XBJ_nongye_zhenxing
+		}
+		x = 2
+		y = 5
+	}
+	focus = {#曲突徙薪
+		id = XBJ_qutuxixin
+		text = XBJ_qutuxixin
+		icon = GFX_qutuxixin
+		cost = 7
+		prerequisite = {
+			focus = XBJ_qiwujiuguo
+			focus = XBJ_liyuexingguo
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XBJ_Backward_Region_2
+    			add_idea = XBJ_Backward_Region_3
+			}
+			unlock_decision_category_tooltip = XBJ_jiyi_gaijin
+		}
+		x = 0
+		y = 5
+	}
+	focus = {#一日千里
+		id = XBJ_yiriqianli
+		text = XBJ_yiriqianli
+		icon = GFX_yiriqianli
+		cost = 7
+		prerequisite = {
+			focus = XBJ_liuchuxingwang
+		}
+		prerequisite = {
+			focus = XBJ_qutuxixin
+		}
+		available = {
+			# has_country_flag = FLAG_XBJ_neizhan
+		}
+		completion_reward = {
+			add_stability = 0.05
+			unlock_decision_category_tooltip = XBJ_jiaotong_fazhan
+		}
+		x = 2
+		y = 6
+	}
+
+	focus = {
+		id = XBJ_zhoujingmuxun
+		text = XBJ_zhoujingmuxun
+		icon = GFX_zhoujingmuxun
+		cost = 2
+		prerequisite = {
+			focus = XBJ_wugunnongbang
+			focus = XBJ_jiezeeryu
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+		x = 7
+		y = 2
+	}
+	focus = {
+		id = XBJ_yichuidingyin
+		text = XBJ_yichuidingyin
+		icon = GFX_yichuidingyin
+		cost = 4
+		prerequisite = {
+			focus = XBJ_zhoujingmuxun
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		x = 5
+		y = 3
+	}
+	focus = {
+		id = XBJ_kongtouzhipiao
+		text = XBJ_kongtouzhipiao
+		icon = GFX_kongtouzhipiao
+		cost = 4
+		prerequisite = {
+			focus = XBJ_zhoujingmuxun
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			add_ideas = XBJ_idea_xibeijundudufu_1
+		}
+	}
+	focus = {#恩威并施
+		id = XBJ_enweibingshi
+		text = XBJ_enweibingshi
+		icon = GFX_enweibingshi
+		cost = 10
+		prerequisite = {
+			focus = XBJ_yichuidingyin
+		}
+		prerequisite = {
+			focus = XBJ_kongtouzhipiao
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+				if = {
+					limit = {
+						has_completed_focus = XBJ_jinzhongshanqun
+					}
+					swap_ideas = {
+						remove_idea = XBJ_Multinational_Melting_Pot_2
+						add_idea = XBJ_Multinational_Melting_Pot_3
+					}
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = XBJ_Multinational_Melting_Pot_1
+						add_idea = XBJ_Multinational_Melting_Pot_2
+					}
+				}
+		}
+		x = 6
+		y = 5
+	}
+	focus = {#同袍连襟
+		id = XBJ_tongpaolianjin
+		text = XBJ_tongpaolianjin
+		icon = GFX_tongpaolianjin
+		cost = 10
+		prerequisite = {
+			focus = XBJ_jinzhongshanqun
+		}
+		prerequisite = {
+			focus = XBJ_enweibingshi
+		}
+		mutually_exclusive = {
+			focus = XBJ_huayiyuzhi
+		}
+		available = {
+			has_country_flag = FLAG_XBJ_decision_guangshi_jiaohua_4
+		}
+		available = {
+			# has_country_flag = FLAG_XBJ_dongluan_pingxi
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XBJ_Multinational_Melting_Pot_4
+				add_idea = XBJ_Multinational_Melting_Pot_5
+			}
+		}
+		x = 4
+		y = 6
+	}
+	focus = {
+		id = XBJ_huayiyuzhi
+		text = XBJ_huayiyuzhi
+		icon = GFX_huayiyuzhi
+		cost = 10
+		prerequisite = {
+			focus = XBJ_enweibingshi
+		}
+		prerequisite = {
+			focus = XBJ_jinzhongshanqun
+		}
+		mutually_exclusive = {
+			focus = XBJ_tongpaolianjin
+		}
+		available = {
+			has_country_flag = FLAG_XBJ_decision_guangshi_jiaohua_4
+		}
+		available = {
+			# has_country_flag = FLAG_XBJ_dongluan_pingxi
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XBJ_Multinational_Melting_Pot_4
+				add_idea = XBJ_Multinational_Melting_Pot_5
+			}
+		}
+		x = 6
+		y = 6
+	}
+	focus = {
+		id = XBJ_yingquanermu
+		text = XBJ_yingquanermu
+		icon = GFX_yingquanermu
+		cost = 5
+		prerequisite = {
+			focus = XBJ_kongtouzhipiao
+		}
+		prerequisite = {
+			focus = XBJ_yichuidingyin
+		}
+		prerequisite = {
+			focus = XBJ_kongtouzhipiao
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+			hidden_effect = {
+				set_variable = { xbj_diaochaju_poyi = 0.05 }
+				add_dynamic_modifier = { modifier = XBJ_diaochaju }
+			}
+			create_intelligence_agency = yes
+			custom_effect_tooltip = XBJ_yingquanermu_tt
+		}
+	}
+	focus = {
+		id = XBJ_gongshangguoshi
+		text = XBJ_gongshangguoshi
+		icon = GFX_gongshangguoshi
+		cost = 2
+		prerequisite = {
+			focus = XBJ_jiezeeryu
+			focus = XBJ_wugunnongbang
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 }
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = XBJ_bamaolianru
+		text = XBJ_bamaolianru
+		icon = GFX_bamaolianru
+		cost = 4
+		prerequisite = {
+			focus = XBJ_gongshangguoshi
+		}
+		x = 15
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_to_variable = { #危机度
+				xbj_bianjun_research = 0.05
+			}
+		}
+	}
+	focus = {
+		id = XBJ_yuqiuzhendao
+		text = XBJ_yuqiuzhendao
+		icon = GFX_yuqiuzhendao
+		cost = 5
+		prerequisite = {
+			focus = XBJ_kongtouzhipiao
+		}
+		prerequisite = {
+			focus = XBJ_bamaolianru
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+			add_to_variable = { #危机度
+				xbj_bianjun_research = 0.1
+			}
+			custom_effect_tooltip = XBJ_yuqiuzhendao_tt
+		}
+	}
+	focus = {
+		id = XBJ_zonghengbaihe
+		text = XBJ_zonghengbaihe
+		icon = GFX_zonghengbaihe
+		cost = 4
+		prerequisite = {
+			focus = XBJ_gongshangguoshi
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+			set_variable = {xbj_diaochaju_gaishan = 0.3}
+			custom_effect_tooltip = XBJ_zonghengbaihe_tt
+		}
+	}
+	focus = {
+		id = XBJ_hunshuimoyu
+		text = XBJ_hunshuimoyu
+		icon = GFX_hunshuimoyu
+		cost = 5
+		prerequisite = {
+			focus = XBJ_bamaolianru
+		}
+		prerequisite = {
+			focus = XBJ_zonghengbaihe
+		}
+		x = 15
+		y = 5
+		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							tag = MOB
+							tag = GOS
+							tag = XIN
+							tag = SIC
+							tag = GPS
+							tag = DAW
+							tag = KAZ
+						}
+					}
+					add_ideas = {
+						xbj_idea_hunshuimoyu
+					}
+				}
+			}
+			custom_effect_tooltip = XBJ_hunshuimoyu_tt
+		}
+	}
+	focus = {
+		id = XBJ_shanfengdianhuo
+		text = XBJ_shanfengdianhuo
+		icon = GFX_shanfengdianhuo
+		cost = 5
+		prerequisite = {
+			focus = XBJ_hunshuimoyu
+		}
+		mutually_exclusive = {
+			focus = XBJ_mulinyouhao
+		}
+		x = 14
+		y = 6
+		completion_reward = {
+			set_variable = { xbj_diaochaju_tegong = 1 }
+			custom_effect_tooltip = XBJ_shanfengdianhuo_tt
+		}
+	}
+	focus = {
+		id = XBJ_mulinyouhao
+		text = XBJ_mulinyouhao
+		icon = GFX_mulinyouhao
+		cost = 5
+		prerequisite = {
+			focus = XBJ_hunshuimoyu
+		}
+		mutually_exclusive = {
+			focus = XBJ_shanfengdianhuo
+		}
+		x = 16
+		y = 6
+	}
+	focus = {
+		id = XBJ_hujiahuwei
+		text = XBJ_hujiahuwei
+		icon = GFX_hujiahuwei
+		cost = 5
+		prerequisite = {
+			focus = XBJ_zonghengbaihe
+		}
+		prerequisite = {
+			focus = XBJ_bamaolianru
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = volunteer_only
+				}
+				swap_ideas = {
+					remove_idea = volunteer_only
+					add_idea = limited_conscription
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = limited_conscription
+				}
+				swap_ideas = {
+					remove_idea = limited_conscription
+					add_idea = extensive_conscription
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = extensive_conscription
+				}
+				swap_ideas = {
+					remove_idea = extensive_conscription
+					add_idea = service_by_requirement
+				}
+			}
+			744 = {
+				create_unit = {
+					division = "name = \"西北甲种第9步兵师\" division_template = \"昌德卌四年型甲种步兵师\" start_experience_factor = 0.3"
+					prioritize_location = 7418
+					owner = XBJ
+				}
+				create_unit = {
+					division = "name = \"西北甲种第10步兵师\" division_template = \"昌德卌四年型甲种步兵师\" start_experience_factor = 0.3"
+					prioritize_location = 7418
+					owner = XBJ
+				}
+			}
+		}
+	}
+	focus = {
+		id = XBJ_chengtianzhiwei
+		text = XBJ_chengtianzhiwei
+		icon = GFX_chengtianzhiwei
+		cost = 2
+		prerequisite = {
+			focus = XBJ_wugunnongbang
+			focus = XBJ_jiezeeryu
+		}
+		x = 22
+		y = 2
+		completion_reward = {
+			add_to_variable = {
+				xbj_bianjun_manpower = 100
+			}
+			add_to_variable = {
+				xbj_bianjun_pp = 0.1
+			}
+			custom_effect_tooltip = XBJ_chengtianzhiwei_tt
+		}
+	}
+	focus = {
+		id = XBJ_toulianghuanzhu
+		text = XBJ_toulianghuanzhu
+		icon = GFX_toulianghuanzhu
+		cost = 4
+		prerequisite = {
+			focus = XBJ_chengtianzhiwei
+		}
+		x = 22
+		y = 3
+		completion_reward = {
+			add_to_variable = {
+				xbj_bianjun_good = -0.15
+			}
+			custom_effect_tooltip = XBJ_toulianghuanzhu_tt
+		}
+	}
+	focus = {
+		id = XBJ_xiaoguicaosui
+		text = XBJ_xiaoguicaosui
+		icon = GFX_xiaoguicaosui
+		cost = 5
+		prerequisite = {
+			focus = XBJ_toulianghuanzhu
+		}
+		mutually_exclusive = {
+			focus = XBJ_houshengkewei
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = XBJ_houshengkewei
+		text = XBJ_houshengkewei
+		icon = GFX_houshengkewei
+		cost = 5
+		prerequisite = {
+			focus = XBJ_toulianghuanzhu
+		}
+		mutually_exclusive = {
+			focus = XBJ_xiaoguicaosui
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = XBJ_kumufengchun
+		text = XBJ_kumufengchun
+		icon = GFX_kumufengchun
+		cost = 10
+		prerequisite = {
+			focus = XBJ_xiaoguicaosui
+			focus = XBJ_houshengkewei
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+			add_to_variable = {
+				xbj_bianjun_plan_speed = 0.2
+			}
+			custom_effect_tooltip = XBJ_kumufengchun_tt
+			add_doctrine_cost_reduction = {
+				name = land_doctrine
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = XBJ_xihejinche
+		text = XBJ_xihejinche
+		icon = GFX_xihejinche
+		cost = 10
+		prerequisite = {
+			focus = XBJ_xiaoguicaosui
+			focus = XBJ_houshengkewei
+		}
+		x = 24
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = air_equipment
+			}
+			744 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes 
+					# province = 小地块代码
+				}
+			}
+			842 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes 
+					# province = 小地块代码
+				}
+			}
+			844 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes 
+					# province = 小地块代码
+				}
+			}
+			1130 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes 
+					# province = 小地块代码
+				}
+			}
+		}
+	}
+	focus = {
+		id = XBJ_bichangbujing
+		text = XBJ_bichangbujing
+		icon = GFX_bichangbujing
+		cost = 10
+		prerequisite = {
+			focus = XBJ_kumufengchun
+		}
+		prerequisite = {
+			focus = XBJ_xihejinche
+		}
+		x = 22
+		y = 6
+		completion_reward = {
+			add_to_variable = {
+				xbj_bianjun_research = 0.1
+			}
+			add_to_variable = {
+				xbj_bianjun_pp = 0.1
+			}
+			custom_effect_tooltip = XBJ_bichangbujing_tt
+		}
+	}
+	focus = {
+		id = XBJ_chuleibacui
+		text = XBJ_chuleibacui
+		icon = GFX_chuleibacui
+		cost = 10
+		prerequisite = {
+			focus = XBJ_kumufengchun
+		}
+		prerequisite = {
+			focus = XBJ_xihejinche
+		}
+		x = 24
+		y = 6
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mountaineers_doctrine
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_marines_doctrine
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_paratroopers_doctrine
+			}
+		}
+	}
+	# focus = {
+	# 	id = XBJ_busuzhike
+	# 	text = XBJ_busuzhike
+	# 	icon = GFX_busuzhike
+	# 	cost = 0
+	# 	prerequisite = {
+	# 		focus = XBJ_chuanxitianxia
+	# 	}
+	# 	x = 27
+	# 	y = 1
+	# }
+	# focus = {
+	# 	id = XBJ_piananyiyu
+	# 	text = XBJ_piananyiyu
+	# 	icon = GFX_piananyiyu
+	# 	cost = 0
+	# 	prerequisite = {
+	# 		focus = XBJ_chuanxitianxia
+	# 	}
+	# 	x = 31
+	# 	y = 1
+	# }
+	# focus = {
+	# 	id = XBJ_tianzhuguozei
+	# 	text = XBJ_tianzhuguozei
+	# 	icon = GFX_tianzhuguozei
+	# 	cost = 0
+	# 	prerequisite = {
+	# 		focus = XBJ_busuzhike
+	# 		focus = XBJ_piananyiyu
+	# 	}
+	# 	x = 27
+	# 	y = 2
+	# }
+	focus = { #摘山煮海
+		id = XBJ_zhaishanzhuhai
+		text = XBJ_zhaishanzhuhai
+		icon = GFX_zhaishanzhuhai
+		cost = 7
+		prerequisite = {
+			focus = XBJ_liuchuxingwang
+		}
+		prerequisite = {
+			focus = XBJ_qutuxixin
+		}
+		available = {
+			has_country_flag = FLAG_XBJ_decision_jiyi_gaijin_6
+			# has_country_flag = FLAG_XBJ_neizhan
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XBJ_Backward_Region_4
+    			add_idea = XBJ_Backward_Region_5
+			}
+			unlock_decision_category_tooltip = XBJ_kuangchan_kaifa
+		}
+		x = 0
+		y = 6
+	}
+	focus = {#旧貌新颜
+		id = XBJ_jiumaoxinyan
+		text = XBJ_jiumaoxinyan
+		icon = GFX_jiumaoxinyan
+		cost = 7
+		prerequisite = {
+			focus = XBJ_yiriqianli
+		}
+		prerequisite = {
+			focus = XBJ_zhaishanzhuhai
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = XBJ_qiwujiuguo
+				}
+				swap_ideas = {
+					remove_idea = XBJ_Backward_Region_5
+					add_idea = XBJ_xibei_yougaolou_1
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = XBJ_Backward_Region_5
+					add_idea = XBJ_xibei_yougaolou_2
+				}
+			}
+		}
+		x = 1
+		y = 7
+	}
+	focus = {#神州舜尧
+		id = XBJ_shenzhoushunyao
+		text = XBJ_shenzhoushunyao
+		icon = GFX_shenzhoushunyao
+		cost = 10
+		prerequisite = {
+			focus = XBJ_tongpaolianjin
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XBJ_Multinational_Melting_Pot_5
+				add_idea = XBJ_xibei_zhuxia
+			}
+		}
+		x = 4
+		y = 7
+	}
+	focus = {
+		id = XBJ_yishitongren
+		text = XBJ_yishitongren
+		icon = GFX_yishitongren
+		cost = 10
+		prerequisite = {
+			focus = XBJ_huayiyuzhi
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XBJ_Multinational_Melting_Pot_5
+				add_idea = XBJ_huayi_yijia
+			}
+		}
+		x = 6
+		y = 7
+	}
+	focus = {
+		id = XBJ_gegudingxin
+		text = XBJ_gegudingxin
+		icon = GFX_gegudingxin
+		cost = 10
+		prerequisite = {
+			focus = XBJ_jieruchou
+		}
+		x = 8
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XBJ_idea_xibeijundudufu_1
+				add_idea = XBJ_idea_xibeijundudufu_2
+			}
+		}
+	}
+	focus = {
+		id = XBJ_yiyinhuoguang
+		text = XBJ_yiyinhuoguang
+		icon = GFX_yiyinhuoguang
+		cost = 10
+		prerequisite = {
+			focus = XBJ_nixiahangou
+		}
+		x = 10
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XBJ_idea_xibeijundudufu_1
+				add_idea = XBJ_idea_xibeijundudufu_3
+			}
+		}
+	}
+	focus = {
+		id = XBJ_bocaizhongchang
+		text = XBJ_bocaizhongchang
+		icon = GFX_bocaizhongchang
+		cost = 10
+		prerequisite = {
+			focus = XBJ_laomashitu
+		}
+		x = 12
+		y = 7
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = XBJ_laomashitu
+		text = XBJ_laomashitu
+		icon = GFX_laomashitu
+		cost = 10
+		prerequisite = {
+			focus = XBJ_yuqiuzhendao
+		}
+		x = 12
+		y = 5
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = XBJ_suiyuanbizhu
+		text = XBJ_suiyuanbizhu
+		icon = GFX_suiyuanbizhu
+		cost = 10
+		prerequisite = {
+			focus = XBJ_shanfengdianhuo
+		}
+		x = 14
+		y = 7
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = XBJ_chunwangchihan
+		text = XBJ_chunwangchihan
+		icon = GFX_chunwangchihan
+		cost = 10
+		prerequisite = {
+			focus = XBJ_mulinyouhao
+		}
+		x = 16
+		y = 7
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = XBJ_renyizhishi
+		text = XBJ_renyizhishi
+		icon = GFX_renyizhishi
+		cost = 10
+		prerequisite = {
+			focus = XBJ_zhongguanbairi
+		}
+		x = 18
+		y = 7
+		completion_reward = {
+			set_variable = {xbj_bianjun_shouxun = -0.33}
+			set_variable = {xbj_bianjun_jingyanshibing = -0.05}
+			custom_effect_tooltip = XBJ_renyizhishi_tt
+		}
+	}
+	focus = {
+		id = XBJ_zhongguanbairi
+		text = XBJ_zhongguanbairi
+		icon = GFX_zhongguanbairi
+		cost = 10
+		prerequisite = {
+			focus = XBJ_hujiahuwei
+		}
+		prerequisite = {
+			focus = XBJ_tongchoudikai
+		}
+		mutually_exclusive = {
+			focus = XBJ_tieshixinchang
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+			set_variable = { xbj_bianjun_paobing = 0.1 }
+			custom_effect_tooltip = XBJ_zhongguanbairi_tt
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = XBJ_xiongpibaiwan
+		text = XBJ_xiongpibaiwan
+		icon = GFX_xiongpibaiwan
+		cost = 10
+		prerequisite = {
+			focus = XBJ_tieshixinchang
+		}
+		x = 20
+		y = 7
+		completion_reward = {
+			set_variable = {xbj_bianjun_touxiang = 0.1}
+			custom_effect_tooltip = XBJ_xiongpibaiwan_tt
+		}
+	}
+	focus = {
+		id = XBJ_tieshixinchang
+		text = XBJ_tieshixinchang
+		icon = GFX_tieshixinchang
+		cost = 10
+		prerequisite = {
+			focus = XBJ_tongchoudikai
+		}
+		prerequisite = {
+			focus = XBJ_hujiahuwei
+		}
+		mutually_exclusive = {
+			focus = XBJ_zhongguanbairi
+		}
+		x = 20
+		y = 6
+		completion_reward = {
+			set_variable = {xbj_bianjun_zuzhiduhuifu = 0.1}
+			custom_effect_tooltip = XBJ_tieshixinchang_tt
+		}
+	}
+	focus = {
+		id = XBJ_tongchoudikai
+		text = XBJ_tongchoudikai
+		icon = GFX_tongchoudikai
+		cost = 5
+		prerequisite = {
+			focus = XBJ_xiaoguicaosui
+			focus = XBJ_houshengkewei
+		}
+		x = 20
+		y = 5
+		completion_reward = {
+			add_to_variable = {
+				xbj_bianjun_pp = 0.1
+			}
+			custom_effect_tooltip = XBJ_tongchoudikai_tt
+		}
+	}
+	# focus = {
+	# 	id = XBJ_zhechongzunzu
+	# 	text = XBJ_zhechongzunzu
+	# 	icon = GFX_zhechongzunzu
+	# 	cost = 0
+	# 	prerequisite = {
+	# 		focus = XBJ_piananyiyu
+	# 	}
+	# 	x = 31
+	# 	y = 2
+	# }
+	focus = {#进种善群
+		id = XBJ_jinzhongshanqun
+		text = XBJ_jinzhongshanqun
+		icon = GFX_jinzhongshanqun
+		cost = 7
+		prerequisite = {
+			focus = XBJ_liyuexingguo
+			focus = XBJ_qiwujiuguo
+		}
+		completion_reward = {
+			add_stability = 0.05
+			unlock_decision_category_tooltip = XBJ_guangshi_jiaohua
+				if = {
+					limit = {
+						has_completed_focus = XBJ_enweibingshi
+					}
+					swap_ideas = {
+						remove_idea = XBJ_Multinational_Melting_Pot_2
+						add_idea = XBJ_Multinational_Melting_Pot_3
+					}
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = XBJ_Multinational_Melting_Pot_1
+						add_idea = XBJ_Multinational_Melting_Pot_2
+					}
+				}
+		}
+		x = 4
+		y = 5
+	}
+}

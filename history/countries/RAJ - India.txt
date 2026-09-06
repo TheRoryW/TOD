@@ -33,7 +33,7 @@ set_technology = {
 	electronic_mechanical_engineering = 1
 	radio = 1
 	marines = 1
-	mountaineers = 1
+	tech_mountaineers = 1
 }
 
 if = {
@@ -69,66 +69,37 @@ if = {
 		basic_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		basic_medium_battery = 1
+		### basic_medium_battery = 1  # DLC tech, disabled
 		basic_heavy_battery = 1
 		basic_torpedo = 1
 		sonar = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
-		improved_secondary_battery = 1
+		### basic_secondary_battery = 1  # DLC tech, disabled
+		### improved_secondary_battery = 1  # DLC tech, disabled
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-		improved_airplane_launcher = 1
+		### improved_airplane_launcher = 1  # DLC tech, disabled
 	}
 }
 
 set_politics = {
-	ruling_party = reformism
+	ruling_party = leader_despotism
 	last_election = "1932.12.30"
 	election_frequency = 68
 	elections_allowed = yes
 }
 
 set_popularities = {
-	totalism = 0
-	despotism = 0
-	authoritarianism = 0
-	conservatism = 1
-	liberalism = 46
-	reformism = 47
-	socialism = 6
-	radicalism = 0
+	national_corporatism = 0
+	leader_despotism = 100
+	authoritarian_oligarchy = 0
 }
 
-create_country_leader = {
-	name = "哈米杜拉·欣"
-	desc = "POLITICS_hamidula_DESC"
-	picture = "Portrait_ZHR_Xie_Kanghe.png"
-	expire = "1965.1.1"
-	ideology = reformism_subtype
-}
+recruit_character = RAJ_Mirza_Bedar_Bukht
 
 add_ideas = {
-	RefTon_type
-	LibMrk type
+	### RefTon_type
+	### LibMrk type
 
-}
-
-# DIPLOMACY
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = AFG
-		autonomous_state =  kr_default_puppet
-		freedom_level = 0.2
-	}
-	else = {
-		puppet = AFG
-	}
 }

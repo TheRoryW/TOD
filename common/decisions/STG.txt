@@ -1,0 +1,998 @@
+#地方军阀
+STG_difangjunfa = {
+	#联系四川
+	STG_lianxisichuan = {
+		icon = ger_military_buildup
+		
+		visible = { country_exists = SIC}
+		allowed = { tag = STG } 
+		available = { country_exists = SIC }
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 831 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
+		remove_effect = { 
+			country_event = { id = TOD_STG.42 }
+			set_country_flag = STG_lianxisichuan
+		}
+	}
+	#联系漠北
+	STG_lianximobei = {
+		icon = ger_military_buildup
+		
+		visible = {country_exists = MOB}
+		allowed = { tag = STG } 
+		available = { country_exists = MOB }
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 330 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
+		remove_effect = { 
+			country_event = { id = TOD_STG.47 }
+			set_country_flag = STG_lianximobei
+		}
+	}
+	#联系西南
+	STG_lianxixinan = {
+		icon = ger_military_buildup
+		
+		visible = {country_exists = XIN}
+		allowed = { tag = STG } 
+		available = { }
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 325 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
+		remove_effect = { 
+			country_event = { id = TOD_STG.51 }
+			set_country_flag = STG_lianxixinan
+		}
+	}
+	#联系七省
+	#STG_lianxiqishen = {
+	#	icon = ger_military_buildup
+	#	
+	#	visible = {country_exists = GOS}
+	#	allowed = { tag = STG } 
+	#	available = { }
+	#	cost = 15 
+	#	on_map_mode = map_and_decisions_view
+	#	
+	#	state_target = yes
+	#	targets = { state = 613 }
+	#	days_remove = 30
+	#	fire_only_once = yes
+	#	remove_effect = { 
+	#		country_event = { id = TOD_STG.55 }
+	#	}
+	#}
+	#联系关东
+	STG_lianxiguandong= {
+		icon = ger_military_buildup
+		
+		visible = {country_exists = GPS}
+		allowed = { tag = STG } 
+		available = { }
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 328 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
+		remove_effect = { 
+			country_event = { id = TOD_STG.59 }
+			set_country_flag = STG_lianxiguandong
+		}
+	}
+	#施压四川
+	STG_shiyasichuan= {
+		icon = ger_military_buildup
+		
+		visible = {country_exists = SIC}
+		allowed = { tag = STG } 
+		available = { 
+			has_country_flag = STG_lianxisichuan
+			NOT = {country_exists = XBJ}
+		}
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 831 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
+		remove_effect = { 
+			country_event = { id = TOD_STG.63 }
+		}
+	}
+	#施压漠北都司
+	STG_shiyamobei= {
+		icon = ger_military_buildup
+		
+		visible = {country_exists = MOB}
+		allowed = { tag = STG } 
+		available = { 
+			has_country_flag = STG_lianximobei 
+			NOT = {country_exists = XBJ}
+		}
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 330 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
+		remove_effect = { 
+			country_event = { id = TOD_STG.67 }
+		}
+	}
+	#施压西南
+	STG_shiyaxinan= {
+		icon = ger_military_buildup
+		
+		visible = {country_exists = XIN}
+		allowed = { tag = STG } 
+		available = { 
+			has_country_flag = STG_lianxixinan
+			NOT = {country_exists = XBJ}
+		}
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 325 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
+		remove_effect = { 
+			country_event = { id = TOD_STG.71 }
+		}
+	}
+	#施压关东
+	STG_shiyaguandong= {
+		icon = ger_military_buildup
+		
+		visible = {country_exists = GPS}
+		allowed = { tag = STG } 
+		available = {
+			has_country_flag = STG_lianxiguandong
+			NOT = {country_exists = XBJ}
+		}
+		cost = 15 
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 328 }
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
+		remove_effect = {
+			country_event = { id = TOD_STG.75 }
+		}
+	}
+	# 征讨云南：云南存在时显示；AI 仅在无其他战争时发动。
+	STG_zhengtaoyunnan = {
+		icon = ger_military_buildup
+		visible = { country_exists = YUN }
+		allowed = { tag = STG }
+		available = {
+			country_exists = YUN
+			NOT = { has_war = yes }
+		}
+		cost = 15
+		on_map_mode = map_and_decisions_view
+		days_remove = 30
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 0 has_war = yes }
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					country_exists = YUN
+					NOT = { has_war = yes }
+				}
+				declare_war_on = { target = YUN type = annex_everything }
+			}
+		}
+	}
+}
+#展开会战
+STG_zhankaihuizhan = {
+	#陕中会战
+	STG_shanzhonghuizhan = {
+		icon = ger_military_buildup
+		allowed = { tag = STG }
+		target_trigger = { 
+			NOT = { has_full_control_of_state = 1116 } 
+			1116 = {any_neighbor_state = {is_controlled_by = STG}}
+		}
+		cost = 30
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 1116 }
+		days_remove = 30
+		days_re_enable = 30
+		ai_will_do = { base = 10 }
+		
+		complete_effect = { 
+ 			1116 = {
+	 			add_dynamic_modifier = {
+	 				modifier = STG_huizhan
+	 				scope = STG
+	 				days = 30
+	 			}
+	 		}
+		}
+	}
+	#陕北会战
+	STG_shanbeihuizhan = {
+		icon = ger_military_buildup
+		allowed = { tag = STG }
+		target_trigger = { 
+			NOT = { has_full_control_of_state = 622 } 
+			622 = {any_neighbor_state = {is_controlled_by = STG}}
+		}
+		cost = 30
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 622 }
+		days_remove = 30
+		days_re_enable = 30
+		ai_will_do = { base = 10 }
+		
+		complete_effect = { 
+ 			622 = {
+	 			add_dynamic_modifier = {
+	 				modifier = STG_huizhan
+	 				scope = STG
+	 				days = 30
+	 			}
+	 		}
+		}
+	}
+	#关中会战
+	STG_guanzhonghuizhan = {
+		icon = ger_military_buildup
+		allowed = { tag = STG }
+		target_trigger = { 
+			NOT = { has_full_control_of_state = 744 } 
+			744 = {any_neighbor_state = {is_controlled_by = STG}}
+		}
+		cost = 30
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 744 }
+		days_remove = 30
+		days_re_enable = 30
+		ai_will_do = { base = 10 }
+		
+		complete_effect = { 
+ 			744 = {
+	 			add_dynamic_modifier = {
+	 				modifier = STG_huizhan
+	 				scope = STG
+	 				days = 30
+	 			}
+	 		}
+		}
+	}
+	#汉中会战
+	STG_hanzhonghuizhan = {
+		icon = ger_military_buildup
+		allowed = { tag = STG }
+		target_trigger = { 
+			NOT = { has_full_control_of_state = 842 } 
+			842 = {any_neighbor_state = {is_controlled_by = STG}}
+		}
+		cost = 30
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 842 }
+		days_remove = 30
+		days_re_enable = 30
+		ai_will_do = { base = 10 }
+		
+		complete_effect = { 
+ 			842 = {
+	 			add_dynamic_modifier = {
+	 				modifier = STG_huizhan
+	 				scope = STG
+	 				days = 30
+	 			}
+	 		}
+		}
+	}
+	#陇南会战
+	STG_longnanhuizhan = {
+		icon = ger_military_buildup
+		allowed = { tag = STG }
+		target_trigger = { 
+			NOT = { has_full_control_of_state = 753 } 
+			753 = {any_neighbor_state = {is_controlled_by = STG}}
+		}
+		cost = 30
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 753 }
+		days_remove = 30
+		days_re_enable = 30
+		ai_will_do = { base = 10 }
+		
+		complete_effect = { 
+ 			753 = {
+	 			add_dynamic_modifier = {
+	 				modifier = STG_huizhan
+	 				scope = STG
+	 				days = 30
+	 			}
+	 		}
+		}
+	}
+	#陇东会战
+	STG_longdonghuizhan = {
+		icon = ger_military_buildup
+		allowed = { tag = STG }
+		target_trigger = { 
+			NOT = { has_full_control_of_state = 283 } 
+			283 = {any_neighbor_state = {is_controlled_by = STG}}
+		}
+		cost = 30
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 283 }
+		days_remove = 30
+		days_re_enable = 30
+		ai_will_do = { base = 10 }
+		
+		complete_effect = { 
+ 			283 = {
+	 			add_dynamic_modifier = {
+	 				modifier = STG_huizhan
+	 				scope = STG
+	 				days = 30
+	 			}
+	 		}
+		}
+	}
+	#宁夏会战
+	STG_ningxiahuizhan = {
+		icon = ger_military_buildup
+		allowed = { tag = STG }
+		target_trigger = { 
+			NOT = { has_full_control_of_state = 843 } 
+			843 = {any_neighbor_state = {is_controlled_by = STG}}
+		}
+		cost = 30
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 843 }
+		days_remove = 30
+		days_re_enable = 30
+		ai_will_do = { base = 10 }
+		
+		complete_effect = { 
+ 			843 = {
+	 			add_dynamic_modifier = {
+	 				modifier = STG_huizhan
+	 				scope = STG
+	 				days = 30
+	 			}
+	 		}
+		}
+	}
+	#陇右会战
+	STG_longyouhuizhan = {
+		icon = ger_military_buildup
+		allowed = { tag = STG }
+		target_trigger = { 
+			NOT = { has_full_control_of_state = 1210 } 
+			1210 = {any_neighbor_state = {is_controlled_by = STG}}
+		}
+		cost = 30
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 1210 }
+		days_remove = 30
+		days_re_enable = 30
+		ai_will_do = { base = 10 }
+		
+		complete_effect = { 
+ 			1210 = {
+	 			add_dynamic_modifier = {
+	 				modifier = STG_huizhan
+	 				scope = STG
+	 				days = 30
+	 			}
+	 		}
+		}
+	}
+	#海东会战
+	STG_haidonghuizhan = {
+		icon = ger_military_buildup
+		allowed = { tag = STG }
+		target_trigger = { 
+			NOT = { has_full_control_of_state = 754 } 
+			754 = {any_neighbor_state = {is_controlled_by = STG}}
+		}
+		cost = 30
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 754 }
+		days_remove = 30
+		days_re_enable = 30
+		ai_will_do = { base = 10 }
+		
+		complete_effect = { 
+ 			754 = {
+	 			add_dynamic_modifier = {
+	 				modifier = STG_huizhan
+	 				scope = STG
+	 				days = 30
+	 			}
+	 		}
+		}
+	}
+	#河西会战
+	STG_hexihuizhan = {
+		icon = ger_military_buildup
+		allowed = { tag = STG }
+		target_trigger = { 
+			NOT = { has_full_control_of_state = 756 } 
+			756 = {any_neighbor_state = {is_controlled_by = STG}}
+		}
+		cost = 30
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 756 }
+		days_remove = 30
+		days_re_enable = 30
+		ai_will_do = { base = 10 }
+		
+		complete_effect = { 
+ 			756 = {
+	 			add_dynamic_modifier = {
+	 				modifier = STG_huizhan
+	 				scope = STG
+	 				days = 30
+	 			}
+	 		}
+		}
+	}
+}
+#至高皇权
+STG_zhigaohuangquan = {
+	#敲打勋贵派系
+	STG_qiaodaxunguipaixi = {
+		icon = ger_military_buildup
+		fire_only_once = yes  
+		visible = {
+			tag = STG
+			has_completed_focus = STG_shengxinduduan
+		}
+        cost = 10
+		modifier = { }
+		ai_will_do = { base = 10 }
+		days_remove =  14
+		complete_effect = {
+			add_stability = -0.02
+			add_popularity = { ideology = authoritarian_oligarchy popularity = -0.05 }
+			country_event = {id = TOD_STG.94}
+		}
+	}
+	#集中指挥权力
+	STG_jizhongzhihuiquanli = {
+		icon = ger_military_buildup
+		fire_only_once = yes  
+		visible = {
+			tag = STG
+			has_completed_focus = STG_shengxinduduan
+		}
+        cost = 10
+		modifier = { }
+		ai_will_do = { base = 10 }
+		days_remove =  14
+		complete_effect = {
+			add_stability = -0.02
+			add_popularity = { ideology = authoritarian_oligarchy popularity = -0.03 }
+			add_popularity = { ideology = national_corporatism popularity = -0.02 }
+			country_event = {id = TOD_STG.95}
+		}
+	}
+	#执行陛下的战争经济学
+	STG_bixiadezhanzhengjingjixue = {
+		icon = ger_military_buildup
+		fire_only_once = yes  
+		visible = { has_completed_focus = STG_tiaozhengzhengfujigou }
+        cost = 100
+		modifier = { civilian_factory_use = 3}
+		ai_will_do = { base = 10 }
+		days_remove =  60
+		complete_effect = {
+			add_ideas = MNG_zhurongkun_jingji
+			country_event = {id = TOD_STG.105}
+		}
+	}
+	#忠诚的内阁
+	STG_zhongchengdeneige = {
+		icon = ger_military_buildup
+		fire_only_once = yes  
+		visible = { has_completed_focus = STG_tiaozhengzhengfujigou }
+        cost = 200
+		days_remove =  60
+		ai_will_do = { base = 10 }
+		complete_effect = {
+			add_ideas = MNG_zhurongkun_neizheng
+			country_event = {id = TOD_STG.104}
+		}
+	}
+	#无可质疑的三军统帅
+	STG_wukezhiyidesanjuntongshuai = {
+		icon = ger_military_buildup
+		fire_only_once = yes  
+		visible = { has_completed_focus = STG_tiaozhengzhengfujigou }
+		custom_cost_trigger = {
+			has_army_experience > 10
+			has_navy_experience > 10
+			has_air_experience > 10
+		}
+		custom_cost_text = army_xp_more_than_10
+		custom_cost_text = air_xp_more_than_10
+		custom_cost_text = navy_xp_more_than_10
+        cost = 300
+		days_remove =  60
+		ai_will_do = { base = 10 }
+		complete_effect = {
+			hidden_effect = {
+				army_experience = -10
+				navy_experience = -10
+				air_experience = -10
+			}
+			add_ideas = STG_zhu_rongkun
+			add_ideas = STG_zhu_rongkun_kongjun
+			add_ideas = STG_zhu_rongkun_haijun
+			country_event = {id = TOD_STG.106}
+		}
+	}
+}
+#武备会议
+STG_wubeihuiyi = {
+	#注重工艺革新
+	STG_zhuzhonggongyigexin = {
+		icon = ger_military_buildup
+		fire_only_once = yes  
+		available = {NOT = {has_country_flag = STG_wubeihuiyi_jinxing}}
+		ai_will_do = { base = 10 }
+		complete_effect = {set_country_flag = STG_wubeihuiyi_jinxing}
+		remove_effect = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = industry
+				name = industry
+			}
+			clr_country_flag = STG_wubeihuiyi_jinxing
+			country_event = {id = TOD_STG.1666}
+		}
+        cost = 100
+		days_remove =  180
+	}
+	#增加军购订单
+	STG_zengjiajungoudingdan = {
+		icon = ger_military_buildup
+		fire_only_once = yes  
+		available = {NOT = {has_country_flag = STG_wubeihuiyi_jinxing}}
+		modifier = {local_resources_factor = 0.01}
+		ai_will_do = { base = 10 }
+		complete_effect = {set_country_flag = STG_wubeihuiyi_jinxing}
+		remove_effect = {
+			clr_country_flag = STG_wubeihuiyi_jinxing
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+			}
+			country_event = {id = TOD_STG.167}
+		}
+		visible = {}
+        cost = 200
+		days_remove =  180
+	}
+	#发展实体经济
+	STG_fazhanshitijingji = {
+		icon = ger_military_buildup
+		available = {NOT = {has_country_flag = STG_wubeihuiyi_jinxing}}
+		complete_effect = {set_country_flag = STG_wubeihuiyi_jinxing}
+		ai_will_do = { base = 10 }
+		remove_effect = {
+			clr_country_flag = STG_wubeihuiyi_jinxing
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			country_event = {id = TOD_STG.168}
+		}
+		visible = {}
+        cost = 200
+		days_remove =  180
+		days_re_enable = 360
+	}
+	#加订军用机床
+	STG_jiadingjunyongjichuang = {
+		icon = ger_military_buildup
+		available = {NOT = {has_country_flag = STG_wubeihuiyi_jinxing}}
+		complete_effect = {set_country_flag = STG_wubeihuiyi_jinxing}
+		ai_will_do = { base = 10 }
+		remove_effect = {
+			clr_country_flag = STG_wubeihuiyi_jinxing
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			country_event = {id = TOD_STG.169}
+		}
+		visible = {}
+        cost = 200
+		days_remove =  180
+		days_re_enable = 360
+	}
+	#扩建电报网
+	STG_kuojiandianbaowang = {
+		icon = ger_military_buildup
+		available = {
+			NOT = {has_country_flag = STG_wubeihuiyi_jinxing}
+			has_tech = radio_detection
+		}
+		ai_will_do = { base = 10 }
+		complete_effect = {set_country_flag = STG_wubeihuiyi_jinxing}
+		remove_effect = {
+			clr_country_flag = STG_wubeihuiyi_jinxing
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			country_event = {id = TOD_STG.170}
+		}
+		visible = {}
+        cost = 200
+		days_remove =  180
+		days_re_enable = 360
+	}
+	#鼓励降本增效
+	STG_gulijiangbenzengxiao = {
+		icon = ger_military_buildup
+		available = {NOT = {has_country_flag = STG_wubeihuiyi_jinxing}}
+		modifier = {consumer_goods_factor = -0.1}
+		complete_effect = {set_country_flag = STG_wubeihuiyi_jinxing}
+		remove_effect = {
+			clr_country_flag = STG_wubeihuiyi_jinxing
+			country_event = {id = TOD_STG.171}
+		}
+		ai_will_do = { base = 10 }
+		visible = {}
+        cost = 100
+		days_remove =  180
+		days_re_enable = 360
+	}
+	#整顿朝廷秩序
+	STG_zhengdunchaotingzhixu = {
+		icon = ger_military_buildup
+		available = {NOT = {has_country_flag = STG_wubeihuiyi_jinxing}}
+		modifier = {
+			political_power_gain = 0.4
+			stability_weekly = -0.001
+		}
+		complete_effect = {set_country_flag = STG_wubeihuiyi_jinxing}
+		remove_effect = {
+			clr_country_flag = STG_wubeihuiyi_jinxing
+			country_event = {id = TOD_STG.172}
+		}
+		ai_will_do = { base = 10 }
+		visible = {}
+        cost = 100
+		days_remove =  180
+		days_re_enable = 360
+	}
+}
+
+#整顿直隶军区
+STG_zhengdunzhilijunqu = {
+	#现代化监军体制
+	STG_xiandaihuajianjuntizhi = {
+		icon = ger_military_buildup
+		fire_only_once = yes  
+		available = { NOT = { has_country_flag = STG_zhengdunzhilijunqu_1 } }
+		remove_effect = {
+			add_to_variable = { STG_jingying_zuzhiduhuifu = 0.15 }
+			set_country_flag = STG_zhengdunzhilijunqu_1
+		}
+		ai_will_do = { base = 10 }
+        cost = 50
+		days_remove =  60
+	}
+	#成立联合参谋总部
+	STG_chenglilianhecanmouzongbu = {
+		icon = ger_military_buildup
+		fire_only_once = yes  
+		available = { 
+			has_country_flag = STG_zhengdunzhilijunqu_1 
+			has_equipment = { support_equipment > 99 }
+			command_power > 49
+		}
+		ai_will_do = { base = 10 }
+		complete_effect = { 
+			set_country_flag = STG_zhengdunzhilijunqu_1 
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -100
+			}
+			add_command_power = -50
+		}
+		remove_effect = {
+			add_to_variable = { STG_jingying_jihuashangxian = 0.10 }
+			add_to_variable = { STG_jingying_zengyuanlv = 0.03 }
+			set_country_flag = STG_zhengdunzhilijunqu_2
+		}
+        cost = 50
+		days_remove =  60
+	}
+	#组建战略支援部队
+	STG_zujianzhanluezhiyuanbudui= {
+		icon = ger_military_buildup
+		fire_only_once = yes  
+		available = {
+			has_country_flag = STG_zhengdunzhilijunqu_2
+				OR = {
+					has_doctrine = new_mobile_warfare
+					has_doctrine = superior_firepower
+					has_doctrine = grand_battleplan
+					has_doctrine = mass_assault
+				}
+			}
+		ai_will_do = { base = 10 }
+		remove_effect = {
+			add_to_variable = { STG_jingying_zuzhiduhuifu = 0.15 }
+			set_country_flag = STG_zhengdunzhilijunqu_3
+		}
+        cost = 50
+		days_remove =  60
+	}
+}
+#军工发展
+STG_jungongfazhan = {
+	#集中税赋
+	STG_jizhongshuifu = {
+		visible = {always = no}
+	}
+	#轻武器实验
+	STG_qingwuqishiyan = {
+		visible = {always = no}
+	}
+	#新炮试射
+	STG_xinpaoshishe = {
+		visible = {always = no}
+	}
+	#制空权演练
+	STG_zhikongquanyanlian = {
+		visible = {always = no}
+	}
+	#抵近支援
+	STG_dijingzhiyuan = {
+		visible = {always = no}
+	}
+	#易更换组件研制
+	STG_yigenghuanzujianyanzhii = {
+		visible = {always = no}
+	}
+}
+#靖难
+STG_jingnan = {
+	#开战
+	STG_kaizhan = {
+		available = {
+			NOT = { country_exists = XBJ }
+		}
+        activation = {
+             country_exists = XBJ
+        }
+		days_mission_timeout = 30
+        fire_only_once = yes
+		timeout_effect = {
+			country_event = { id = TOD_STG.3 }
+            XBJ = {declare_war_on = { target = STG type = annex_everything }}
+        }
+	}
+	#共和军开战
+	STG_gonghejunkaizhan= {
+		icon = ger_military_buildup
+		
+		visible = {country_exists = ROC}
+		allowed = { tag = STG } 
+		available = {
+			NOT = {country_exists = XBJ}
+			is_neighbor_of = ROC
+		}
+		cost = 15 
+		ai_will_do = {
+			base = 0
+			modifier = {
+				NOT = {country_exists = XBJ}
+				is_neighbor_of = ROC
+				country_exists = ROC
+				NOT= {has_war = yes}
+				factor = 20
+			}
+		}
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 592 }
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+            declare_war_on = { target = ROC type = annex_everything }
+		}
+	}
+	#东北红军开战
+	STG_dongbeihongjunkaizhan= {
+		icon = ger_military_buildup
+		
+		visible = {country_exists = SRC}
+		allowed = { tag = STG } 
+		available = {
+			NOT = {country_exists = XBJ}
+			is_neighbor_of = SRC
+		}
+		cost = 15 
+		ai_will_do = {
+			base = 0
+			modifier = {
+				NOT = {country_exists = XBJ}
+				is_neighbor_of = SRC
+				country_exists = SRC
+				NOT= {has_war = yes}
+				factor = 20
+			}
+		}
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 846 }
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = { 
+            declare_war_on = { target = SRC type = annex_everything }
+		}
+	}
+	#四川红军开战
+	STG_sichuanhongjunkaizhan= {
+		icon = ger_military_buildup
+		
+		visible = {country_exists = SCG}
+		allowed = { tag = STG } 
+		available = {
+			NOT = {country_exists = XBJ}
+			is_neighbor_of = SCG
+		}
+		cost = 15 
+		ai_will_do = {
+			base = 0
+			modifier = {
+				NOT = {country_exists = XBJ}
+				is_neighbor_of = SCG
+				country_exists = SCG
+				NOT= {has_war = yes}
+				factor = 20
+			}
+		}
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 831 }
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = { 
+            declare_war_on = { target = SCG type = annex_everything }
+		}
+	}
+	#七省开战
+	STG_qishengkaizhan= {
+		icon = ger_military_buildup
+		
+		visible = {country_exists = GOS}
+		allowed = { tag = STG } 
+		available = {
+			NOT = {country_exists = XBJ}
+			is_neighbor_of = GOS
+		}
+		cost = 15 
+		ai_will_do = {
+			base = 0
+			modifier = {
+				NOT = {country_exists = XBJ}
+				is_neighbor_of = GOS
+				country_exists = GOS
+				NOT= {has_war = yes}
+				factor = 20
+			}
+		}
+		on_map_mode = map_and_decisions_view
+		
+		state_target = yes
+		targets = { state = 613 }
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+            declare_war_on = { target = GOS type = annex_everything }
+		}
+	}
+}

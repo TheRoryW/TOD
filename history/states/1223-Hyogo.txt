@@ -1,0 +1,35 @@
+state = {
+	id = 1223
+	name = "STATE_1223"
+	manpower = 4923249
+	state_category = nine
+	local_supplies = 9.0
+
+	resources = {
+		steel = 12
+		aluminium = 8
+	}
+
+	history = {
+		owner = EDO
+		add_core_of = EDO
+
+		add_to_array = { state_victory_points = 12031 }
+		victory_points = { 12031 20 } 
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 2
+			synthetic_refinery = 1
+
+			air_base = 6
+			1136 = { naval_base = 6 }
+		}
+	}
+
+	provinces = {
+		1136 9985 12031 13543 13542 
+	}
+}
